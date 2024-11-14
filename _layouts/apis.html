@@ -2,10 +2,31 @@
 layout: default
 ---
 {% assign date_format = site.date_format | default: "%b %-d, %Y" %}
-<h1>{{ page.name }}</h1>
+<a name="{{ page.name }}"></a>
+<h3>{{ page.name }}</h3>
 <img src="{{ page.image }}" width="45%" align="right" style="padding: 25px;">
 <p><i>{{ page.modified | date: date_format }}</i></p>
-{{ page.description }}
+<p>{{ page.description | strip_html | strip_newlines }}</p> 
+<h4>Properties</h4>
+<ul id="">
+    <li><a href="{{ page.humanURL }}">Human URL</a></li>
+    {% if page.baseURL != 'https://api.example.com' %}
+        <li><a href="{{ page.baseURL }}">Base URL</a></li>
+    {% endif %}
+    {% for property in page.properties %}
+        <li><a href="{{ property.url }}">{{ property.type }}</a></li>
+    {% endfor %}    
+</ul>             
+
+<h4>Tags</h4>
+<ul id="">
+    {% for tag in page.tags %}
+        {% if tag != '' %}
+            <li>{{ tag }}</li>
+        {% endif %}
+    {% endfor %}    
+</ul> 
+
 <br>
 <hr>
 <br>
