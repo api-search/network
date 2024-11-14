@@ -1,0 +1,11 @@
+aid: microsoft-azure:azure-easm
+name: Azure EASM
+description: >-
+  EASM discovers and maps your digital attack surface to provide an "outside-in"
+  perspective using probes to discover assets. The assets are provided with
+  detailed metadata associated, including vulnerabilities, configurations and
+  web components, allowing customers to view and prioritize external risk. The
+  EASM REST API enables you to develop clients that integrate with your
+  application.
+url: >-
+  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure-2/apis.md

@@ -1,0 +1,4 @@
+aid: lufthansa:lufthansa
+name: Lufthansa Flight API
+description: This API provides Lufthansa's flight schedule information.
+url: https://example.com/apis/lufthansa-developer-center-io-docs.yml

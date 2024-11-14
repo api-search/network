@@ -1,0 +1,8 @@
+aid: microsoft-azure:networkcloud
+name: NetworkCloud
+description: >-
+  The Network Cloud APIs provide management of the on-premises clusters and
+  their resources, such as, racks, bare metal hosts, virtual machines, workload
+  networks and more.
+url: >-
+  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure-2/apis.md

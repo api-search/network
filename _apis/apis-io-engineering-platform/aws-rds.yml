@@ -1,0 +1,7 @@
+aid: apis-io-engineering-platform:aws-rds
+name: AWS RDS
+description: >-
+  Amazon Relational Database Service (Amazon RDS) is an easy-to-manage
+  relational database service optimized for total cost of ownership.
+url: >-
+  https://raw.githubusercontent.com/api-search/engineering-platform/refs/heads/main/apis.yml

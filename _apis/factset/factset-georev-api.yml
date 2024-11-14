@@ -1,0 +1,7 @@
+aid: factset:factset-georev-api
+name: FactSet GeoRev API
+description: >-
+  FactSet Revere Geographic Revenue ("GeoRev") Exposure data provides a highly
+  structured and normalized display of companies' revenues by geography.
+url: >-
+  https://raw.githubusercontent.com/api-search/financial/main/_apis/factset/apis.md

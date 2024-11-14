@@ -1,0 +1,4 @@
+aid: box:box-tasks-api
+name: Box Tasks API
+description: Needs a description
+url: https://raw.githubusercontent.com/apis-json/artisanal/main/apis/box.yml

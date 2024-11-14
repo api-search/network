@@ -1,0 +1,5 @@
+aid: microsoft-azure:recommendationsservice
+name: RecommendationsService
+description: Dynamics 365 Recommendations Service resource provider
+url: >-
+  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure-2/apis.md

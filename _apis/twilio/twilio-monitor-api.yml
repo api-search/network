@@ -1,0 +1,8 @@
+aid: twilio:twilio-monitor-api
+name: Twilio Monitor API
+description: >-
+  An Alert resource instance represents a single log entry for an error or
+  warning encountered when Twilio makes a webhook request to your server, or
+  when your application makes a request to the REST API.
+url: >-
+  https://raw.githubusercontent.com/api-search/messaging/main/_data/discord/overlays/apis-io-search.yml

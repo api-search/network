@@ -1,0 +1,7 @@
+aid: lane-api:lane-api
+name: Lane API
+description: >-
+  Lane is a pure-play SaaS product with a secure RESTful API. The API can be
+  consumed by invoking the methods available in the subscription using this
+  OpenAPI ...
+url: https://raw.githubusercontent.com/api-search/lane-api/refs/heads/main/apis.yml

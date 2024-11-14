@@ -1,0 +1,8 @@
+aid: stripe:stripe-accounts-api
+name: Stripe Accounts API
+description: >-
+  This is an object representing a Stripe account. You can retrieve it to see
+  properties on the account like its current requirements or if the account is
+  enabled to make live charges or receive payouts.
+url: >-
+  https://raw.githubusercontent.com/api-search/payments/main/_apis/stripe/apis.md

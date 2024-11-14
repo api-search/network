@@ -1,0 +1,4 @@
+aid: bunq:bunq-export-annual-overview-api
+name: Bunq Export Annual Overview API
+description: Used to retrieve the raw content of an annual overview.
+url: https://raw.githubusercontent.com/api-search/banking/main/_apis/bunq/apis.md

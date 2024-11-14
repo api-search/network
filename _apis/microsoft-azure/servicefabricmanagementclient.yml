@@ -1,0 +1,5 @@
+aid: microsoft-azure:servicefabricmanagementclient
+name: ServiceFabricManagementClient
+description: Azure Service Fabric Resource Provider API Client
+url: >-
+  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure-2/apis.md

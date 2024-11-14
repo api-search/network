@@ -1,0 +1,8 @@
+aid: cloudmersive:cloudmersive
+name: Cloudmersive
+description: >-
+  Use our advanced Deep Learning APIs to automatically identify and extract the
+  text from an image. Examples include locating documents and receipts in
+  photos, ...
+url: >-
+  https://raw.githubusercontent.com/api-search/cloudmersive/refs/heads/main/apis.yml

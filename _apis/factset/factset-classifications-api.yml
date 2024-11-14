@@ -1,0 +1,5 @@
+aid: factset:factset-classifications-api
+name: FactSet Classifications API
+description: Get Industry Classifications from a variety of vendors
+url: >-
+  https://raw.githubusercontent.com/api-search/financial/main/_apis/factset/apis.md

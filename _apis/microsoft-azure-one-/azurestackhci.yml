@@ -1,0 +1,5 @@
+aid: microsoft-azure-one-:azurestackhci
+name: AzureStackHCI
+description: Azure Stack HCI management service
+url: >-
+  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure/apis.md

@@ -1,0 +1,4 @@
+aid: box:box-oauth2-api
+name: Box Oauth2 API
+description: Needs a description
+url: https://raw.githubusercontent.com/apis-json/artisanal/main/apis/box.yml

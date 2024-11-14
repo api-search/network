@@ -1,0 +1,4 @@
+aid: plaid:plaid-wallet-api
+name: Plaid Wallet API
+description: API reference for Virtual Accounts endpoints and webhooks
+url: https://raw.githubusercontent.com/api-search/banking/main/_apis/plaid/apis.md

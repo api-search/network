@@ -1,0 +1,4 @@
+aid: apis-io-maintainers:maintainer-api
+name: APIs.io Maintainer API
+description: This is the API for powering APIs.io.
+url: https://github.com/api-search/maintainer-api/blob/main/apis.yml

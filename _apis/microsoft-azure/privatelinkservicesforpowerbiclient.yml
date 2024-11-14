@@ -1,0 +1,7 @@
+aid: microsoft-azure:privatelinkservicesforpowerbiclient
+name: PrivateLinkServicesForPowerBIClient
+description: >-
+  Client to manage Power BI Private Link Service resources and connection
+  members.
+url: >-
+  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure-2/apis.md

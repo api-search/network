@@ -1,0 +1,8 @@
+aid: microsoft-azure:scopeconnections
+name: ScopeConnections
+description: >-
+  The Microsoft Azure Virtual Network Manager API provides a RESTful set of web
+  services that interact with Microsoft Azure Network Manager service to manage
+  your network resources.
+url: >-
+  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure-2/apis.md

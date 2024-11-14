@@ -1,0 +1,6 @@
+aid: tesla-fleet-api:fleet-api
+name: Fleet API
+description: >-
+  Provides access to Tesla vehicles and energy devices for data and command
+  functionality.
+url: https://developer.tesla.com/

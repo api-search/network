@@ -1,0 +1,9 @@
+aid: microsoft-azure:azure-analytics-purview-data-map
+name: Azure Analytics Purview Data Map
+description: |-
+  Purview Data Map Service is a fully managed cloud service whose users can
+  discover the data sources they need and understand the data sources they find.
+  At the same time, Data Map helps organizations get more value from their
+  existing investments. This spec defines REST API of Purview Data Map Service.
+url: >-
+  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure-2/apis.md

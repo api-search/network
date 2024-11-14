@@ -1,0 +1,4 @@
+aid: geoapify:boundaries-api
+name: Boundaries API
+description: Retrieve boundary data for administrative regions.
+url: https://www.geoapify.com/

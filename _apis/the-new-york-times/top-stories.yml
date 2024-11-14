@@ -1,0 +1,7 @@
+aid: the-new-york-times:top-stories
+name: Top Stories
+description: >-
+  The Top Stories API returns an array of articles currently on the specified
+  section (arts, business, ...).
+url: >-
+  https://raw.githubusercontent.com/api-search/news/main/_apis/new-york-times/apis.md

@@ -1,0 +1,8 @@
+aid: stripe:stripe-disputes-api
+name: Stripe Disputes API
+description: >-
+  A dispute occurs when a customer questions your charge with their card issuer.
+  When this happens, you have the opportunity to respond to the dispute with
+  evidence that shows that the charge is legitimate.
+url: >-
+  https://raw.githubusercontent.com/api-search/payments/main/_apis/stripe/apis.md

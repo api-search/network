@@ -1,0 +1,9 @@
+aid: goldman-sachs:goldman-sachs-portfolio-services-api
+name: Goldman Sachs Portfolio Services API
+description: >-
+  Programmatically manage your portfolio lifecycle from creation and update to
+  scheduling reports with full control over visibility and sharing. Automate
+  your portfolio workflow using our APIs - leaving you to focus on the alpha
+  driving decisions.
+url: >-
+  https://raw.githubusercontent.com/apis-json/artisanal/main/apis/factset/apis.yml

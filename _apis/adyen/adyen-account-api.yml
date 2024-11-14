@@ -1,0 +1,10 @@
+aid: adyen:adyen-account-api
+name: Adyen Account API
+description: >-
+  This API is used for the classic integration. If you are just starting your
+  implementation, refer to our new integration guide instead. The Account API
+  provides endpoints for managing account-related entities on your platform.
+  These related entities include account holders, accounts, bank accounts,
+  shareholders, and verification-related documents. The management operations
+  include actions such as creation, retrieval, updating, and deletion of them.
+url: https://raw.githubusercontent.com/api-search/payments/main/_apis/adyen/apis.md

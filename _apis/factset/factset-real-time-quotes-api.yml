@@ -1,0 +1,8 @@
+aid: factset:factset-real-time-quotes-api
+name: FactSet Real-Time Quotes API
+description: >-
+  The Quotes API combines endpoints for retrieving security end-of-day, delayed,
+  and realtime prices with performance key figures and basic reference data on
+  the security and market level.
+url: >-
+  https://raw.githubusercontent.com/api-search/financial/main/_apis/factset/apis.md

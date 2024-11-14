@@ -1,0 +1,9 @@
+aid: microsoft-azure:networkmanagereffectiveconfiguration
+name: NetworkManagerEffectiveConfiguration
+description: >-
+  The Microsoft Azure Network Manager effective configuration API provides a
+  RESTful set of web services that interact with Microsoft Azure Networks
+  service to manage your network resources. The API has entities that capture
+  the relationship between an end user and the Microsoft Azure Networks service.
+url: >-
+  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure-2/apis.md

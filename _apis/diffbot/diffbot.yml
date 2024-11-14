@@ -1,0 +1,6 @@
+aid: diffbot:diffbot
+name: Diffbot
+description: >-
+  The Image API identifies the primary image(s) of a submitted web page and
+  returns comprehensive information and metadata for each image.
+url: https://raw.githubusercontent.com/api-search/diffbot/refs/heads/main/apis.yml

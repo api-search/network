@@ -1,0 +1,8 @@
+aid: offenderlist:offenderlist
+name: OffenderList
+description: >-
+  OffenderList provides security and information-focused organizations API
+  access, batch requests, remote access & internal access to a national sex
+  offender ...
+url: >-
+  https://raw.githubusercontent.com/api-search/offenderlist/refs/heads/main/apis.yml

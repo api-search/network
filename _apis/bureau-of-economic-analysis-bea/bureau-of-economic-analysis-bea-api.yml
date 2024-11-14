@@ -1,0 +1,11 @@
+aid: bureau-of-economic-analysis-bea:bureau-of-economic-analysis-bea-api
+name: Bureau of Economic Analysis (BEA) API
+description: >-
+  The data API provides programmatic access to BEA published economic statistics
+  using industry-standard methods and procedures. BEA's data API includes
+  methods for retrieving a subset of our statistical data and the meta-data that
+  describes it. The data API and its documentation are for programmers who are
+  familiar with the concepts and techniques of retrieving data from Web
+  Services.
+url: >-
+  https://raw.githubusercontent.com/api-search/us-federal-government/main/_apis/bureau-of-economic-analysis/apis.md

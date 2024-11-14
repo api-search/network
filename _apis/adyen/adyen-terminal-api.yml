@@ -1,0 +1,7 @@
+aid: adyen:adyen-terminal-api
+name: Adyen Terminal API
+description: >-
+  The Adyen Terminal API lets you make payments, issue refunds, collect shopper
+  information, and perform other shopper-terminal interactions using a payment
+  terminal supplied by Adyen.
+url: https://raw.githubusercontent.com/api-search/payments/main/_apis/adyen/apis.md

@@ -1,0 +1,8 @@
+aid: walmart:walmart-order-api
+name: Walmart Orders API
+description: >-
+  The Walmart Order Management APIs help Sellers to manage customer's Sales
+  Orders and to stay up-to-date on orders fulfillment, which orders to fulfill,
+  and when to fulfill them.
+url: >-
+  https://raw.githubusercontent.com/api-search/commerce/main/_apis/walmart/apis.md

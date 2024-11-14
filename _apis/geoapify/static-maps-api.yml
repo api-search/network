@@ -1,0 +1,4 @@
+aid: geoapify:static-maps-api
+name: Static Maps API
+description: Generate static map images for embedding in applications.
+url: https://www.geoapify.com/

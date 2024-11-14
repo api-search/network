@@ -1,0 +1,9 @@
+aid: factset:factset-fundamentals-api
+name: FactSet Fundamentals API
+description: >-
+  Gain access to current, comprehensive, and comparative information on
+  securities in worldwide developed and emerging markets. Composed of annual and
+  interim/quarterly data and detailed historical financial statement content,
+  FactSet Fundamentals_
+url: >-
+  https://raw.githubusercontent.com/api-search/financial/main/_apis/factset/apis.md

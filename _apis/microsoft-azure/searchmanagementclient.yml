@@ -1,0 +1,5 @@
+aid: microsoft-azure:searchmanagementclient
+name: SearchManagementClient
+description: Client that can be used to manage Azure Search services and API keys.
+url: >-
+  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure-2/apis.md

@@ -1,0 +1,7 @@
+aid: walmart:walmart-inventory-api
+name: Walmart Inventory API
+description: >-
+  Maintaining up-to-date inventory for your items on Walmart.com ensures a great
+  experience for your customers and greater sales opportunities for you.
+url: >-
+  https://raw.githubusercontent.com/api-search/commerce/main/_apis/walmart/apis.md

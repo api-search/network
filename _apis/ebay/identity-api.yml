@@ -1,0 +1,9 @@
+aid: ebay:identity-api
+name: Identity API
+description: >-
+  The Identity API returns data for an authenticated user (user access token)
+  based on the OAuth scopes provided. Non-confidential information, such as eBay
+  userID is returned using the default scope. Confidential data for an
+  individual, such as address, email, phone, etc. are returned based on the
+  OAuth scope you use in the call. 
+url: https://raw.githubusercontent.com/api-search/commerce/main/_apis/ebay/apis.md

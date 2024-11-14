@@ -1,0 +1,4 @@
+aid: zoom:zoom-metrics-api
+name: Zoom Metrics API
+description: Access and manage all of the metrics associate with operating on Zoom.
+url: https://raw.githubusercontent.com/api-search/videos/main/_apis/zoom/apis.md

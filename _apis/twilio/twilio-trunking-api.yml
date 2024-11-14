@@ -1,0 +1,9 @@
+aid: twilio:twilio-trunking-api
+name: Twilio Elastic SIP Trunking API
+description: >-
+  Twilio Elastic SIP Trunking is a cloud-based solution that provides
+  connectivity for IP-based communications infrastructure to connect to the
+  PSTN. Using Elastic SIP Trunking you can make and receive phone calls to the
+  rest of the world via any broadband internet connection.
+url: >-
+  https://raw.githubusercontent.com/api-search/messaging/main/_data/discord/overlays/apis-io-search.yml

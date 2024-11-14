@@ -1,0 +1,9 @@
+aid: spacex-api:spacex-api
+name: SpaceX API
+description: >-
+  The International Space Station is moving at close to 28,000 km/h so its
+  location changes really fast! Where is it right now? ISS astronauts, current
+  location API. You get up to date information of current location, the pass
+  time and current number of people traveling in the space.
+url: >-
+  https://raw.githubusercontent.com/api-search/spacex-api/refs/heads/main/apis.yml

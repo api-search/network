@@ -1,0 +1,9 @@
+aid: stripe:stripe-payment-intents-api
+name: Stripe Payment Intents API
+description: >-
+  A PaymentIntent guides you through the process of collecting a payment from
+  your customer. We recommend that you create exactly one PaymentIntent for each
+  order or customer session in your system. You can reference the PaymentIntent
+  later to see the history of payment attempts for a particular session.
+url: >-
+  https://raw.githubusercontent.com/api-search/payments/main/_apis/stripe/apis.md

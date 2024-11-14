@@ -1,0 +1,8 @@
+aid: stripe:stripe-link-api
+name: Stripe Link API
+description: >-
+  You can use the Payment Links API to create a payment link that you can share
+  with your customers. Stripe redirects customers who open this link to a
+  Stripe-hosted payment page.
+url: >-
+  https://raw.githubusercontent.com/api-search/payments/main/_apis/stripe/apis.md

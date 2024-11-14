@@ -1,0 +1,7 @@
+aid: microsoft-azure:azure-log-analytics-query-packs
+name: Azure Log Analytics Query Packs
+description: >-
+  Azure Log Analytics API reference for management of saved Queries within Query
+  Packs.
+url: >-
+  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure-2/apis.md

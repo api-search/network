@@ -1,0 +1,5 @@
+aid: seed:sales-tracking
+name: Sales Tracking
+description: Retrieve real-time sales data for analysis and reporting.
+url: >-
+  https://raw.githubusercontent.com/api-search/seed-platform/refs/heads/main/apis.yml

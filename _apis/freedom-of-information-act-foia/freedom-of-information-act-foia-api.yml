@@ -1,0 +1,5 @@
+aid: freedom-of-information-act-foia:freedom-of-information-act-foia-api
+name: Freedom of Information Act (FOIA) API
+description: This is the description.
+url: >-
+  https://raw.githubusercontent.com/api-search/us-federal-government/main/_apis/freedom-of-information-act/apis.md

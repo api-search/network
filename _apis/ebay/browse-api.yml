@@ -1,0 +1,6 @@
+aid: ebay:browse-api
+name: Browse API
+description: >-
+  Using the Browse API, you can create a rich selection of items for your buyers
+  to browse with keyword and category searches.
+url: https://raw.githubusercontent.com/api-search/commerce/main/_apis/ebay/apis.md

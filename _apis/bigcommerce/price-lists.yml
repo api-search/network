@@ -1,0 +1,5 @@
+aid: bigcommerce:price-lists
+name: Price Lists
+description: Needs a description
+url: >-
+  https://raw.githubusercontent.com/apis-json/artisanal/main/apis/bigcommerce.yml

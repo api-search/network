@@ -1,0 +1,7 @@
+aid: factset:factset-event-calendar-api
+name: FactSet Event Calendar API
+description: >-
+  Accessing Event Calendar content along with business logic contained in the
+  workstation experience
+url: >-
+  https://raw.githubusercontent.com/api-search/financial/main/_apis/factset/apis.md

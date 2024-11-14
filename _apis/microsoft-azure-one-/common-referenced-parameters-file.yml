@@ -1,0 +1,5 @@
+aid: microsoft-azure-one-:common-referenced-parameters-file
+name: Common Referenced Parameters File
+description: File containing commonly referenced parameters.
+url: >-
+  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure/apis.md

@@ -1,0 +1,7 @@
+aid: factset:factset-content-feeds-data-dictionary
+name: FactSet Content Feeds Data Dictionary
+description: >-
+  Browse data items and definitions available through FactSet's off platform
+  product offerings.
+url: >-
+  https://raw.githubusercontent.com/api-search/financial/main/_apis/factset/apis.md

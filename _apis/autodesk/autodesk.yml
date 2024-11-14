@@ -1,0 +1,6 @@
+aid: autodesk:autodesk
+name: Autodesk
+description: >-
+  It provides a single, unified place to view and manage photos and videos in
+  Autodesk Build. This is useful, such as for documenting progress photos.
+url: https://raw.githubusercontent.com/api-search/autodesk/refs/heads/main/apis.yml

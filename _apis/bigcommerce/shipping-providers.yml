@@ -1,0 +1,5 @@
+aid: bigcommerce:shipping-providers
+name: Shipping Providers
+description: Needs a description
+url: >-
+  https://raw.githubusercontent.com/apis-json/artisanal/main/apis/bigcommerce.yml

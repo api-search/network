@@ -1,0 +1,10 @@
+aid: ebay:order-api
+name: Order API
+description: >-
+  The Order API is part of the eBay Buy APIs. It is used to purchase items and
+  track the purchase orders. The Order API supports the complete guest checkout
+  process. Use the Order API with the other Buy APIs to create a buying
+  application that lets guest users buy from eBay sellers without visiting the
+  eBay site. The Buy APIs provide the ability to purchase eBay items from your
+  app or website.
+url: https://raw.githubusercontent.com/api-search/commerce/main/_apis/ebay/apis.md

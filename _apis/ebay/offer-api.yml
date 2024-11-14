@@ -1,0 +1,6 @@
+aid: ebay:offer-api
+name: Offer API
+description: >-
+  The Offer API provides the ability to place and retract a proxy bid for a
+  buyer and to retrieve all the auctions where the buyer is bidding.
+url: https://raw.githubusercontent.com/api-search/commerce/main/_apis/ebay/apis.md

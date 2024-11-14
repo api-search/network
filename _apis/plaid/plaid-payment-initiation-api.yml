@@ -1,0 +1,7 @@
+aid: plaid:plaid-payment-initiation-api
+name: Plaid Payment Initiation API
+description: >-
+  Make payment transfers from your app. Plaid supports both domestic payments
+  denominated in local currencies and international payments, generally
+  denominated in Euro. 
+url: https://raw.githubusercontent.com/api-search/banking/main/_apis/plaid/apis.md

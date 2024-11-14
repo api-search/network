@@ -1,0 +1,5 @@
+aid: microsoft-azure-one-:azure-alerts-management-service-resource-provider
+name: Azure Alerts Management Service Resource Provider
+description: APIs for Azure Smart Detector Alert Rules CRUD operations.
+url: >-
+  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure/apis.md

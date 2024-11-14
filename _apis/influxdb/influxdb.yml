@@ -1,0 +1,8 @@
+aid: influxdb:influxdb
+name: InfluxDB API
+description: >-
+  We are the company building InfluxDB, the open source time series database
+  used by more than a million developers around the world. Our mission is to
+  help developers build intelligent, real-time systems with their time series
+  data.
+url: http://example.com/apis.json

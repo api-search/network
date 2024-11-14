@@ -1,0 +1,9 @@
+aid: twilio:twilio-accounts-api
+name: Twilio Accounts API
+description: >-
+  When you first sign up with Twilio, you have just one account, your main
+  account. But you can also create more accounts... subaccounts are useful for
+  things like segmenting phone numbers and usage data for your customers and
+  controlling access to data.
+url: >-
+  https://raw.githubusercontent.com/api-search/messaging/main/_data/discord/overlays/apis-io-search.yml

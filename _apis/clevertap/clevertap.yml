@@ -1,0 +1,7 @@
+aid: clevertap:clevertap
+name: CleverTap
+description: >-
+  This endpoint enables you to raise a Bulletin after a business event is
+  triggered. 
+url: >-
+  https://raw.githubusercontent.com/api-search/clevertap/refs/heads/main/apis.yml

@@ -1,0 +1,7 @@
+aid: paypal:paypal-orders-api
+name: Paypal Orders API
+description: >-
+  An order represents a payment between two or more parties. Use the Orders API
+  to create, update, retrieve, authorize, and capture orders.
+url: >-
+  https://raw.githubusercontent.com/api-search/payments/main/_apis/paypal/apis.md

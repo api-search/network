@@ -1,0 +1,4 @@
+aid: plaid:plaid-bank-transfer-api
+name: Plaid Bank Transfer API
+description: API reference for Transfer endpoints and webhooks.
+url: https://raw.githubusercontent.com/api-search/banking/main/_apis/plaid/apis.md

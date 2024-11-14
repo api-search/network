@@ -1,0 +1,8 @@
+aid: accuweather:accuweather-api
+name: AccuWeather API
+description: >-
+  AccuWeather provides the world's most sophisticated weather intelligence to
+  make lives simpler, safer, and better. Our mission is to save lives and
+  protect property.
+url: >-
+  https://raw.githubusercontent.com/api-search/weather/main/_apis/accuweather/apis.md

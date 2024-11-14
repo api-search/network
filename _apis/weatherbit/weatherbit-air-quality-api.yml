@@ -1,0 +1,8 @@
+aid: weatherbit:weatherbit-air-quality-api
+name: Weatherbit Air Quality API
+description: >
+  Enrich your business applications with high quality air quality data derived
+  from the world's most advanced global, and regional air quality models. As
+  well as thousands of air quality monitoring stations around the world.
+url: >-
+  https://raw.githubusercontent.com/api-search/weather/main/_apis/weatherbit/apis.md

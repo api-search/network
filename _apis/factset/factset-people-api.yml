@@ -1,0 +1,7 @@
+aid: factset:factset-people-api
+name: FactSet People API
+description: >-
+  Fetch People Profiles, Job History, or get associated positions and names of
+  companies.
+url: >-
+  https://raw.githubusercontent.com/api-search/financial/main/_apis/factset/apis.md

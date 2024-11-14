@@ -1,0 +1,5 @@
+aid: microsoft-azure-one-:azure-stack-azure-bridge-client
+name: Azure Stack Azure Bridge Client
+description: null
+url: >-
+  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure/apis.md

@@ -1,0 +1,7 @@
+aid: the-new-york-times:books-api
+name: Books API
+description: >-
+  The Books API provides information about book reviews and The New York Times
+  Best Sellers lists.
+url: >-
+  https://raw.githubusercontent.com/api-search/news/main/_apis/new-york-times/apis.md

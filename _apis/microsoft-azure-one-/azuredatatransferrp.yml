@@ -1,0 +1,5 @@
+aid: microsoft-azure-one-:azuredatatransferrp
+name: azuredatatransferrp
+description: Azure Data Transfer service resource provider
+url: >-
+  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure/apis.md

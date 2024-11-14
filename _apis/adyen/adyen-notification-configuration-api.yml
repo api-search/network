@@ -1,0 +1,12 @@
+aid: adyen:adyen-notification-configuration-api
+name: Adyen Notification Configuration API
+description: >-
+  This API is used for the classic integration. If you are just starting your
+  implementation, refer to our [new integration
+  guide](https://docs.adyen.com/marketplaces-and-platforms) instead.\n\nThe
+  Notification Configuration API provides endpoints for setting up and testing
+  notifications that inform you of events on your platform, for example when a
+  verification check or a payout has been completed.\n\nFor more information,
+  refer to our
+  [documentation](https://docs.adyen.com/marketplaces-and-platforms/classic/notifications).
+url: https://raw.githubusercontent.com/api-search/payments/main/_apis/adyen/apis.md

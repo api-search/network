@@ -1,0 +1,8 @@
+aid: twilio:twilio-sync-api
+name: Twilio Sync API
+description: >-
+  The Sync REST API allows you to control your Sync applications from backend
+  servers in much the same way you can from the client. You can create, update
+  and manage your documents, lists and maps using these resources.
+url: >-
+  https://raw.githubusercontent.com/api-search/messaging/main/_data/discord/overlays/apis-io-search.yml

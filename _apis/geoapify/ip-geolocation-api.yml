@@ -1,0 +1,4 @@
+aid: geoapify:ip-geolocation-api
+name: IP Geolocation API
+description: Identify the location of an IP address.
+url: https://www.geoapify.com/

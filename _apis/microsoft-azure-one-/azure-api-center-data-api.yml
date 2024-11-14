@@ -1,0 +1,5 @@
+aid: microsoft-azure-one-:azure-api-center-data-api
+name: Azure API Center Data API
+description: Data API introduces endpoints to manage your API Center resources.
+url: >-
+  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure/apis.md

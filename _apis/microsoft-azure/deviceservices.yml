@@ -1,0 +1,7 @@
+aid: microsoft-azure:deviceservices
+name: DeviceServices
+description: >-
+  Use this API to manage the Windows IoT device services in your Azure
+  subscription.
+url: >-
+  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure-2/apis.md

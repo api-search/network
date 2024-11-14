@@ -1,0 +1,7 @@
+aid: stripe:stripe-terminal-api
+name: Stripe Terminal API
+description: >-
+  Use Stripe Terminal to accept in-person payments and extend Stripe payments to
+  your point of sale.
+url: >-
+  https://raw.githubusercontent.com/api-search/payments/main/_apis/stripe/apis.md

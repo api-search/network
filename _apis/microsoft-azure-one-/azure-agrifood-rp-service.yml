@@ -1,0 +1,5 @@
+aid: microsoft-azure-one-:azure-agrifood-rp-service
+name: Azure AgriFood RP Service
+description: APIs documentation for Azure AgriFood Resource Provider Service.
+url: >-
+  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure/apis.md

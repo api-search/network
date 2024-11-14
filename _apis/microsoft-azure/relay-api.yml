@@ -1,0 +1,5 @@
+aid: microsoft-azure:relay-api
+name: Relay API
+description: Use these API to manage Azure Relay resources through Azure Resource Manager.
+url: >-
+  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure-2/apis.md

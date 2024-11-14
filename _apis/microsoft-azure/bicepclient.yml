@@ -1,0 +1,7 @@
+aid: microsoft-azure:bicepclient
+name: BicepClient
+description: >-
+  The APIs listed in this specification can be used to manage Bicep related
+  operations through the Azure Resource Manager.
+url: >-
+  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure-2/apis.md

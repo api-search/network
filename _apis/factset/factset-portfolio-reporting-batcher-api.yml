@@ -1,0 +1,5 @@
+aid: factset:factset-portfolio-reporting-batcher-api
+name: FactSet Portfolio Reporting Batcher API
+description: The PRB API allows clients to trigger existing PRB jobs.
+url: >-
+  https://raw.githubusercontent.com/api-search/financial/main/_apis/factset/apis.md

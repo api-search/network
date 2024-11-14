@@ -1,0 +1,4 @@
+aid: plaid:plaid-statements-api
+name: Plaid Statements API
+description: API reference for Statements endpoints and webhooks.
+url: https://raw.githubusercontent.com/api-search/banking/main/_apis/plaid/apis.md

@@ -1,0 +1,8 @@
+aid: stripe:stripe-test-helpers-api
+name: Stripe Test Helpers API
+description: >-
+  Stripe provides a number of resources for testing your integration. Make sure
+  to test the following use cases before launch, and use our Postman collection
+  to make the testing process simpler.
+url: >-
+  https://raw.githubusercontent.com/api-search/payments/main/_apis/stripe/apis.md

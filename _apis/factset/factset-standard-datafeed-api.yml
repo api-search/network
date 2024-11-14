@@ -1,0 +1,5 @@
+aid: factset:factset-standard-datafeed-api
+name: FactSet Standard Datafeed API
+description: Download standard datafeed tables and schemas based on user subscription
+url: >-
+  https://raw.githubusercontent.com/api-search/financial/main/_apis/factset/apis.md

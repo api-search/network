@@ -1,0 +1,8 @@
+aid: elsevier:elsevier-sciencedirect-apis
+name: Elsevier ScienceDirect APIs
+description: >+
+  ScienceDirect APIs expose peer-reviewed full-text scientific, technical and
+  medical content from all scholarly publications indexed by ScienceDirect,
+  Elsevier's premier scientific platform.
+
+url: https://raw.githubusercontent.com/apis-json/artisanal/main/apis/elsevier.yml

@@ -1,0 +1,10 @@
+aid: roblox-engine-api:roblox-engine-api
+name: Roblox Engine API
+description: >-
+  Build logic into your experiences with Roblox Engine APIs. This API Reference
+  documents all of the classes, data types, enumerations, functions, events,
+  callbacks, and properties that you can use when creating on Roblox. Classes.
+  Classes represent core objects and services in the Roblox engine. They contain
+  properties, methods, events, and ...
+url: >-
+  https://raw.githubusercontent.com/api-search/roblox-engine-api/refs/heads/main/apis.yml

@@ -1,0 +1,7 @@
+aid: plaid:plaid-dashboard-user-api
+name: Plaid Dashboard User API
+description: >-
+  The Plaid Dashboard Activity Log shows the past 14 days of API activity. Using
+  the dashboard, you can see a record of all requests and responses, as well as
+  all webhooks sent by the Plaid API, and all Link events.
+url: https://raw.githubusercontent.com/api-search/banking/main/_apis/plaid/apis.md

@@ -1,0 +1,5 @@
+aid: microsoft-azure:azure-migrate
+name: Azure Migrate
+description: Move your workloads to Azure.
+url: >-
+  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure-2/apis.md

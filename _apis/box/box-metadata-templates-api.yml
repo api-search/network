@@ -1,0 +1,4 @@
+aid: box:box-metadata-templates-api
+name: Box Metadata Templates API
+description: Needs a description
+url: https://raw.githubusercontent.com/apis-json/artisanal/main/apis/box.yml

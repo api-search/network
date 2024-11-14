@@ -1,0 +1,8 @@
+aid: adyen:adyen-recurring-api
+name: Adyen Recurring API
+description: >-
+  The Recurring APIs allow you to manage and remove your tokens or saved payment
+  details. Tokens should be created with validation during a payment request.
+  For more information, refer to our [Tokenization
+  documentation](https://docs.adyen.com/online-payments/tokenization).
+url: https://raw.githubusercontent.com/api-search/payments/main/_apis/adyen/apis.md

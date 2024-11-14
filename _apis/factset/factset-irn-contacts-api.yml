@@ -1,0 +1,7 @@
+aid: factset:factset-irn-contacts-api
+name: FactSet IRN Contacts API
+description: >-
+  Contacts API allows users to create, update and delete Contacts as well as
+  configure settings in the Internal Research Notes Contacts application.
+url: >-
+  https://raw.githubusercontent.com/api-search/financial/main/_apis/factset/apis.md

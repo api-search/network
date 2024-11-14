@@ -1,0 +1,4 @@
+aid: bunq:bunq-challenge-request-api
+name: Bunq Challenge Request API
+description: Managing the challenge requests for a user.
+url: https://raw.githubusercontent.com/api-search/banking/main/_apis/bunq/apis.md

@@ -1,0 +1,5 @@
+aid: microsoft-azure-one-:azure-large-instance
+name: Azure Large Instance
+description: The AzureLargeInstance Management client
+url: >-
+  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure/apis.md

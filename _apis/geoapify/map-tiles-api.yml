@@ -1,0 +1,4 @@
+aid: geoapify:map-tiles-api
+name: Map Tiles API
+description: Retrieve map tiles for various types and styles.
+url: https://www.geoapify.com/

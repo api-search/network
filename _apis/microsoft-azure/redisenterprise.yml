@@ -1,0 +1,5 @@
+aid: microsoft-azure:redisenterprise
+name: redisEnterprise
+description: REST API for managing Redis Enterprise resources in Azure.
+url: >-
+  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure-2/apis.md

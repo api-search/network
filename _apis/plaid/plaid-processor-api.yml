@@ -1,0 +1,7 @@
+aid: plaid:plaid-processor-api
+name: Plaid Processor API
+description: >-
+  Partner processor endpoints are used by Plaid partners to integrate with
+  Plaid. Instead of using an access_token associated with a Plaid Item, these
+  endpoints use a processor_token to identify a single financial account. 
+url: https://raw.githubusercontent.com/api-search/banking/main/_apis/plaid/apis.md

@@ -1,0 +1,5 @@
+aid: microsoft-azure-one-:workbookclient
+name: WorkbookClient
+description: Azure client for Workbook.
+url: >-
+  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure/apis.md

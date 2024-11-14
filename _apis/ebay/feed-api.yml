@@ -1,0 +1,8 @@
+aid: ebay:feed-api
+name: Feed API
+description: >-
+  Manage your eBay business by downloading or uploading inventory, order, and
+  customer service metric files, and creating schedules. This API is designed to
+  make a large merchant's workflow more efficient by leveraging eBay
+  infrastructure to use parallel execution and to automatically retry on errors.
+url: https://raw.githubusercontent.com/api-search/commerce/main/_apis/ebay/apis.md

@@ -1,0 +1,7 @@
+aid: ion-group:acuris-entities-api
+name: Acuris Entities API
+description: >-
+  The Acuris Entities API allows you to search over 1M records of private and
+  public companies, firms, assets, and private investors.
+url: >-
+  https://raw.githubusercontent.com/api-search/financial/main/_apis/ion-group/apis.md

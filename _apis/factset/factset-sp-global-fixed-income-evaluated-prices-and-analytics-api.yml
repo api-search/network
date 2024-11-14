@@ -1,0 +1,9 @@
+aid: factset:factset-sp-global-fixed-income-evaluated-prices-and-analytics-api
+name: FactSet S&P Global Fixed Income Evaluated Prices and Analytics API
+description: >-
+  S&P Global Fixed Income Evaluated Prices & Analytics API provides access to
+  evaluated pricing and analytics data for Corporate Bonds, Municipal Bonds and
+  Asset Backed Securities(ABS). Perform quick analytics by controlling the date
+  ranges, frequency.
+url: >-
+  https://raw.githubusercontent.com/api-search/financial/main/_apis/factset/apis.md

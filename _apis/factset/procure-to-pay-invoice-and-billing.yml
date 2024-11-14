@@ -1,0 +1,5 @@
+aid: factset:procure-to-pay-invoice-and-billing
+name: Procure to Pay Invoice and Billing
+description: 'List and download available PDF invoices. Generate custom billing reports. '
+url: >-
+  https://raw.githubusercontent.com/api-search/financial/main/_apis/factset/apis.md

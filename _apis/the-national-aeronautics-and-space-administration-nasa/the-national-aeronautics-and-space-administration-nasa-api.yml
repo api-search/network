@@ -1,0 +1,10 @@
+aid: >-
+  the-national-aeronautics-and-space-administration-nasa:the-national-aeronautics-and-space-administration-nasa-api
+name: The National Aeronautics and Space Administration (NASA) API
+description: >-
+  Welcome to the NASA API portal. The objective of this site is to make NASA
+  data, including imagery, eminently accessible to application developers. This
+  catalog focuses on broadly useful and user friendly APIs and does not hold
+  every NASA API.
+url: >-
+  https://raw.githubusercontent.com/api-search/us-federal-government/main/_apis/national-aeronautics-and-space-administration/apis.md

@@ -1,0 +1,10 @@
+aid: precisely-apis:precisely-apis
+name: Precisely APIs
+description: >-
+  Demographics. Audience Enrichment. Add local demographics and lifestyle
+  segmentation to your audience profiles. The Demographics API returns household
+  demographics and lifestyle characteristics with the input of an address,
+  location coordinate, or geographic boundary. This service covers select
+  countries.
+url: >-
+  https://raw.githubusercontent.com/api-search/precisely-apis/refs/heads/main/apis.yml

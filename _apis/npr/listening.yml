@@ -1,0 +1,4 @@
+aid: npr:listening
+name: Listening
+description: Audio recommendations tailored to a user's preferences.
+url: https://raw.githubusercontent.com/api-search/news/main/_apis/npr/apis.md

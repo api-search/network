@@ -1,0 +1,8 @@
+aid: twilio:twilio-notify-api
+name: Twilio Notify API
+description: >-
+  The Notify REST API allows you to control your notifications workflow from
+  your server. You can create bindings, credentials, and services, as well as
+  send notifications using the endpoints in this REST API.
+url: >-
+  https://raw.githubusercontent.com/api-search/messaging/main/_data/discord/overlays/apis-io-search.yml

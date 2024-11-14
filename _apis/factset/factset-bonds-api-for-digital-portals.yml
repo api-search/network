@@ -1,0 +1,7 @@
+aid: factset:factset-bonds-api-for-digital-portals
+name: FactSet Bonds API for Digital Portals
+description: >-
+  Search for fixed income instruments, using a criteria-based screener. The API
+  provides also fundamental data and key figures.
+url: >-
+  https://raw.githubusercontent.com/api-search/financial/main/_apis/factset/apis.md

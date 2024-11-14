@@ -1,0 +1,4 @@
+aid: bunq:bunq-confirmation-of-funds-api
+name: Bunq Confirmation Of Funds API
+description: Used to confirm availability of funds on an account.
+url: https://raw.githubusercontent.com/api-search/banking/main/_apis/bunq/apis.md

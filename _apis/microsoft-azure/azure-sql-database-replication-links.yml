@@ -1,0 +1,7 @@
+aid: microsoft-azure:azure-sql-database-replication-links
+name: Azure SQL Database replication links
+description: >-
+  Provides read, delete, and failover functionality for Azure SQL Database
+  replication links.
+url: >-
+  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure-2/apis.md

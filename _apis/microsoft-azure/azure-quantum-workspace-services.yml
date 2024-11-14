@@ -1,0 +1,5 @@
+aid: microsoft-azure:azure-quantum-workspace-services
+name: Azure Quantum Workspace Services
+description: Azure Quantum Workspace Services
+url: >-
+  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure-2/apis.md

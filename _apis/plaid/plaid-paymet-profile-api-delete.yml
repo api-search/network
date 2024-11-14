@@ -1,0 +1,4 @@
+aid: plaid:plaid-paymet-profile-api-delete
+name: Plaid Paymet Profile API - DELETE
+description: Needs description.
+url: https://raw.githubusercontent.com/api-search/banking/main/_apis/plaid/apis.md

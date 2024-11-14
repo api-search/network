@@ -1,0 +1,5 @@
+aid: microsoft-azure:saas
+name: SaaS
+description: REST APIs for Azure Marketplace SaaS Offers
+url: >-
+  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure-2/apis.md

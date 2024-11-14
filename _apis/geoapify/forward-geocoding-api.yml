@@ -1,0 +1,4 @@
+aid: geoapify:forward-geocoding-api
+name: Forward Geocoding API
+description: Convert addresses into geographic coordinates.
+url: https://www.geoapify.com/

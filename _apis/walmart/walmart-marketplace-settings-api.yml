@@ -1,0 +1,9 @@
+aid: walmart:walmart-marketplace-settings-api
+name: Walmart Marketplace Settings API
+description: >-
+  The Settings API allows you to configure shipping delivery and fulfillment
+  settings. You can create shipping templates to specify the precise delivery
+  speed for your items. You can specify fulfillment center choices for your
+  items. 
+url: >-
+  https://raw.githubusercontent.com/api-search/commerce/main/_apis/walmart/apis.md

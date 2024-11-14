@@ -1,0 +1,4 @@
+aid: bunq:bunq-server-error-api
+name: Bunq Server Error API
+description: Needs description.
+url: https://raw.githubusercontent.com/api-search/banking/main/_apis/bunq/apis.md

@@ -1,0 +1,5 @@
+aid: microsoft-azure:azure-monitor-workspaces-control-plane-api
+name: Azure Monitor Workspaces Control Plane API
+description: Provides operations for working with Azure Monitor Workspaces
+url: >-
+  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure-2/apis.md

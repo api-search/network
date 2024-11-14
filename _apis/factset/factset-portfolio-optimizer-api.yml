@@ -1,0 +1,8 @@
+aid: factset:factset-portfolio-optimizer-api
+name: FactSet Portfolio Optimizer API
+description: >-
+  The FactSet Portfolio Optimizer (FPO) offers full multi-asset class portfolio
+  optimization,  balancing a client's investment objectives within the confines
+  of the established constraints within the investment strategy.
+url: >-
+  https://raw.githubusercontent.com/api-search/financial/main/_apis/factset/apis.md

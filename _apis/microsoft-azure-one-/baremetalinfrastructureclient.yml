@@ -1,0 +1,5 @@
+aid: microsoft-azure-one-:baremetalinfrastructureclient
+name: bareMetalInfrastructureClient
+description: The Bare Metal Infrastructure Management client
+url: >-
+  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure/apis.md

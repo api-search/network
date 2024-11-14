@@ -1,0 +1,10 @@
+aid: mastercard:mastercard-bill-pay-api
+name: Mastercard Bill Pay API
+description: >-
+  The Mastercard Bill Pay Experience Design Guide was created to provide you,
+  our customer, with our best user experience recommendations and cutting edge
+  resources for implementation. You will find white label Figma flows to improve
+  the speed, quality and cost of implementation and scale. Our goal is to make
+  it easier than ever to go to market efficiently and effectively and achieve
+  adoption and long-term use of Mastercard Bill Pay.
+url: https://raw.githubusercontent.com/apis-json/artisanal/main/apis/mastercard.yml

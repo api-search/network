@@ -1,0 +1,7 @@
+aid: factset:factset-fixed-income-analytics-batcher-api
+name: FactSet Fixed Income Analytics Batcher API
+description: >-
+  The Fixed Income Analytics Batcher API allows the user to enrich portfolio
+  holdings with fixed income analytics and monitor requests interactively.
+url: >-
+  https://raw.githubusercontent.com/api-search/financial/main/_apis/factset/apis.md

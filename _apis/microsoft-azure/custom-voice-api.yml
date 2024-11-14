@@ -1,0 +1,5 @@
+aid: microsoft-azure:custom-voice-api
+name: Custom voice API
+description: Custom voice API to create and deploy your voice.
+url: >-
+  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure-2/apis.md

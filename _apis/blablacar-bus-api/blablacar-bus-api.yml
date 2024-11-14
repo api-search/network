@@ -1,0 +1,8 @@
+aid: blablacar-bus-api:blablacar-bus-api
+name: BlaBlaCar Bus API
+description: >-
+  We assume that you are already familiar with BlaBlaCar Bus which operates
+  coach services in Europe. We also assume that you have some experience with
+  programming, including communicating with HTTP endpoints. 
+url: >-
+  https://raw.githubusercontent.com/api-search/blablacar-bus-api/refs/heads/main/apis.yml

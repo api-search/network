@@ -1,0 +1,4 @@
+aid: apis-io-ratings:ratings-api
+name: APIs.io Ratings API
+description: This is the API for powering APIs.io.
+url: https://github.com/api-search/ratings-api/blob/main/apis.yml

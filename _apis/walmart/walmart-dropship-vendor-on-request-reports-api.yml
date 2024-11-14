@@ -1,0 +1,8 @@
+aid: walmart:walmart-dropship-vendor-on-request-reports-api
+name: Walmart Dropship Vendor On-Request Reports API
+description: >-
+  The On Request Reports API lets users request item reports. Request a report
+  at any time, subscribe to notifications when the report is ready, and download
+  the requested report.
+url: >-
+  https://raw.githubusercontent.com/api-search/commerce/main/_apis/walmart/apis.md

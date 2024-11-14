@@ -1,0 +1,7 @@
+aid: stripe:stripe-promotion-codes-api
+name: Stripe Promotion Codes API
+description: >-
+  A Promotion Code represents a customer-redeemable code for a coupon. It can be
+  used to create multiple codes for a single coupon.
+url: >-
+  https://raw.githubusercontent.com/api-search/payments/main/_apis/stripe/apis.md

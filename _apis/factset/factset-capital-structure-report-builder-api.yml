@@ -1,0 +1,5 @@
+aid: factset:factset-capital-structure-report-builder-api
+name: FactSet Capital Structure Report Builder API
+description: Curated data from multiple sources for comprehensive capital analysis reports
+url: >-
+  https://raw.githubusercontent.com/api-search/financial/main/_apis/factset/apis.md

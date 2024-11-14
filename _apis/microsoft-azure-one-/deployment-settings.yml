@@ -1,0 +1,5 @@
+aid: microsoft-azure-one-:deployment-settings
+name: Deployment Settings
+description: Azure Stack HCI Deployment Settings.
+url: >-
+  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure/apis.md

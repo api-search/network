@@ -1,0 +1,4 @@
+aid: brex:brex
+name: Brex
+description: 'The budgets API lets you manage your Brex Budgets and Spend Limits. '
+url: https://raw.githubusercontent.com/api-search/brex/refs/heads/main/apis.yml

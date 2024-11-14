@@ -1,0 +1,6 @@
+aid: ebay:key-management-api
+name: Key Management API
+description: >-
+  The Key Management API creates keypairs that are required when creating
+  digital signatures for multiple APIs.
+url: https://raw.githubusercontent.com/api-search/commerce/main/_apis/ebay/apis.md

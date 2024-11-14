@@ -1,0 +1,5 @@
+aid: microsoft-azure:azure-log-analytics
+name: Azure Log Analytics
+description: Azure Log Analytics API reference
+url: >-
+  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure-2/apis.md

@@ -1,0 +1,8 @@
+aid: walmart:walmart-items-api
+name: Walmart Marketplace Items API
+description: >-
+  The Item Management APIs enable you to set up and manage items on Walmart.com.
+  Once you have completed Registration and have access to your Consumer ID and
+  Private Key, you can get started with the integration process
+url: >-
+  https://raw.githubusercontent.com/api-search/commerce/main/_apis/walmart/apis.md

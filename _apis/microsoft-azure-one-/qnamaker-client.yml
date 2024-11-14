@@ -1,0 +1,5 @@
+aid: microsoft-azure-one-:qnamaker-client
+name: QnAMaker Client
+description: An API for QnAMaker Service
+url: >-
+  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure/apis.md

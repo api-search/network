@@ -1,0 +1,7 @@
+aid: campflare:campflare
+name: Campflare
+description: >-
+  Integrate availability alerts and outdoor data into your application, for
+  free. 
+url: >-
+  https://raw.githubusercontent.com/api-search/campflare/refs/heads/main/apis.yml

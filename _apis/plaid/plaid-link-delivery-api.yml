@@ -1,0 +1,8 @@
+aid: plaid:plaid-link-delivery-api
+name: Plaid Link Delivery API
+description: >-
+  Hosted Link is the easiest and fastest way to integrate with Plaid. With
+  Hosted Link, Plaid hosts the Link experience. Customers can use this link in
+  web browsers or open it in a secure web context within a mobile app,
+  eliminating the need for front-end implementation work. 
+url: https://raw.githubusercontent.com/api-search/banking/main/_apis/plaid/apis.md

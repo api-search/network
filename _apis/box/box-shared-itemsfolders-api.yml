@@ -1,0 +1,4 @@
+aid: box:box-shared-itemsfolders-api
+name: Box Shared Items#folders API
+description: Needs a description
+url: https://raw.githubusercontent.com/apis-json/artisanal/main/apis/box.yml

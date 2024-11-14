@@ -1,0 +1,7 @@
+aid: microsoft-azure:purview-distribution-service-rest-api-document
+name: Purview Distribution Service REST API Document
+description: >-
+  Purview distribution service enables various Azure RPs to fetch the policies
+  and attributes for data governance.
+url: >-
+  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure-2/apis.md

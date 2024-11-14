@@ -1,0 +1,9 @@
+aid: stack-exchange:stack-exchange-api
+name: Stack Exchange API
+description: >-
+  This is the documentation for the v2.3 Stack Exchange API (with both
+  authentication and write support). If you have additional questions, or
+  believe you have encountered a bug, don't hesitate to post a question on Stack
+  Apps.
+url: >-
+  https://raw.githubusercontent.com/api-search/code/main/_apis/stack-exchange/apis.md

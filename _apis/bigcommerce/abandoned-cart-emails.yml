@@ -1,0 +1,5 @@
+aid: bigcommerce:abandoned-cart-emails
+name: Abandoned Cart Emails
+description: Needs a description
+url: >-
+  https://raw.githubusercontent.com/apis-json/artisanal/main/apis/bigcommerce.yml

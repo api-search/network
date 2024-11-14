@@ -1,0 +1,8 @@
+aid: >-
+  microsoft-azure-one-:tenant-level-activity-log-alert-rules-in-alertsmanagement-resource-provider
+name: Tenant Level Activity Log Alert Rules in AlertsManagement Resource Provider
+description: >-
+  Tenant Level Activity Log Alert Rules provides rules creation on management
+  group level.
+url: >-
+  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure/apis.md

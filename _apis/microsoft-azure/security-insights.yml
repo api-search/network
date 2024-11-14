@@ -1,0 +1,7 @@
+aid: microsoft-azure:security-insights
+name: Security Insights
+description: >-
+  API spec for Microsoft.SecurityInsights (Azure Security Insights) resource
+  provider
+url: >-
+  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure-2/apis.md

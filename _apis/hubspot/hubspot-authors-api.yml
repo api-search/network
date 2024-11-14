@@ -1,0 +1,4 @@
+aid: hubspot:hubspot-authors-api
+name: HubSpot Authors API
+description: 'Use the blog authors API to manage author information for your blog posts. '
+url: https://raw.githubusercontent.com/apis-json/artisanal/main/apis/hubspot.yml

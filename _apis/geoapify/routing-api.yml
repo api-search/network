@@ -1,0 +1,4 @@
+aid: geoapify:routing-api
+name: Routing API
+description: Provides routing directions between multiple points.
+url: https://www.geoapify.com/

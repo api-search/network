@@ -1,0 +1,7 @@
+aid: stripe:stripe-plans-api
+name: Stripe Plans API
+description: >-
+  You can now model subscriptions more flexibly using the Prices API. It
+  replaces the Plans API and is backwards compatible to simplify your migration.
+url: >-
+  https://raw.githubusercontent.com/api-search/payments/main/_apis/stripe/apis.md

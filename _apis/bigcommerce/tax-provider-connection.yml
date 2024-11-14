@@ -1,0 +1,5 @@
+aid: bigcommerce:tax-provider-connection
+name: Tax Provider Connection
+description: Needs a description
+url: >-
+  https://raw.githubusercontent.com/apis-json/artisanal/main/apis/bigcommerce.yml

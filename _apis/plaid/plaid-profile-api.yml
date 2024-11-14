@@ -1,0 +1,4 @@
+aid: plaid:plaid-profile-api
+name: Plaid Profile API
+description: Use to manage Plaid profile data.
+url: https://raw.githubusercontent.com/api-search/banking/main/_apis/plaid/apis.md

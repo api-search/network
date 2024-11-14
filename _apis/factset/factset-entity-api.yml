@@ -1,0 +1,9 @@
+aid: factset:factset-entity-api
+name: FactSet Entity API
+description: >-
+  FactSets Entity API provides access to FactSet's complete security and entity
+  level symbology, comprehensive entity reference data, and all of the necessary
+  relationships and connections to create a foundation that tightly correlates
+  disparate sources
+url: >-
+  https://raw.githubusercontent.com/api-search/financial/main/_apis/factset/apis.md

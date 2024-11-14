@@ -1,0 +1,6 @@
+aid: resend:resend
+name: Resend
+description: >-
+  Resend is transforming email for developers. Simple interface, easy
+  integrations, handy templates. 
+url: https://raw.githubusercontent.com/api-search/resend/refs/heads/main/apis.yml

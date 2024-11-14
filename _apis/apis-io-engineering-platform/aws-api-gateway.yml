@@ -1,0 +1,8 @@
+aid: apis-io-engineering-platform:aws-api-gateway
+name: AWS API Gateway
+description: >-
+  Amazon API Gateway is a fully managed service that makes it easy for
+  developers to create, publish, maintain, monitor, and secure APIs at any
+  scale.
+url: >-
+  https://raw.githubusercontent.com/api-search/engineering-platform/refs/heads/main/apis.yml

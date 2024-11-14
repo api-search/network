@@ -1,0 +1,8 @@
+aid: walmart:walmart-prices-api
+name: Walmart Marketplace Prices API
+description: >-
+  The price is a fundamental building block for your listing on Walmart.com. You
+  can use the price management APIs to set up and manage the price for a given
+  item
+url: >-
+  https://raw.githubusercontent.com/api-search/commerce/main/_apis/walmart/apis.md

@@ -1,0 +1,7 @@
+aid: symphony:symphony-pod-api
+name: Symphony Pod API
+description: >-
+  The Symphony Pod API is used to build tools in order to manage and administer
+  Symphony for your organization. 
+url: >-
+  https://raw.githubusercontent.com/api-search/financial/main/_apis/symphony/apis.md

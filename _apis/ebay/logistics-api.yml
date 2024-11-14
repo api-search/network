@@ -1,0 +1,7 @@
+aid: ebay:logistics-api
+name: Logistics API
+description: >-
+  The Logistics API helps sellers streamline the process of delivering ecommerce
+  orders by offering shipping labels for a range of shipping services, all
+  priced with eBay-negotiated shipping rates.
+url: https://raw.githubusercontent.com/api-search/commerce/main/_apis/ebay/apis.md

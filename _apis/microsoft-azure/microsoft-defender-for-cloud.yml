@@ -1,0 +1,7 @@
+aid: microsoft-azure:microsoft-defender-for-cloud
+name: Microsoft Defender for Cloud
+description: >-
+  API spec for Microsoft.Security (Microsoft Defender for Cloud) resource
+  provider
+url: >-
+  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure-2/apis.md

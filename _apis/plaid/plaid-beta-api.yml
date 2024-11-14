@@ -1,0 +1,4 @@
+aid: plaid:plaid-beta-api
+name: Plaid Beta API
+description: Beta API operations that are available.
+url: https://raw.githubusercontent.com/api-search/banking/main/_apis/plaid/apis.md

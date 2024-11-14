@@ -1,0 +1,9 @@
+aid: envestnet:evestnet-account-token-api
+name: Envestnet Account Token APIs
+description: >-
+  Financial institutions (FIs) or FinTech customers using the account
+  verification product to provide digital payment services can eliminate the
+  risk of storing users' sensitive financial account information using Account
+  Token endpoints. The endpoints allow customers to create an account-specific
+  token that the payment processors can use to retrieve account information.
+url: https://raw.githubusercontent.com/apis-json/artisanal/main/apis/envestnet.yml

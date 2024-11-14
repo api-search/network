@@ -1,0 +1,9 @@
+aid: stripe:stripe-financial-connections-api
+name: Stripe Financial Connections API
+description: >-
+  Financial Connections lets your users securely share their financial data by
+  linking their financial accounts to your business. Use Financial Connections
+  to access user-permissioned account data such as tokenized account and routing
+  numbers, balances, ownerships details, and transactions.
+url: >-
+  https://raw.githubusercontent.com/api-search/payments/main/_apis/stripe/apis.md

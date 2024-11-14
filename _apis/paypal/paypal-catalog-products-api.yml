@@ -1,0 +1,7 @@
+aid: paypal:paypal-catalog-products-api
+name: Paypal Catalog Products API
+description: >-
+  Merchants can use the Catalog Products API to create products, which are goods
+  and services.
+url: >-
+  https://raw.githubusercontent.com/api-search/payments/main/_apis/paypal/apis.md

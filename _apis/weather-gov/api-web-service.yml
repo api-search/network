@@ -1,0 +1,4 @@
+aid: weather-gov:api-web-service
+name: API Web Service
+description: The weather.gov API.
+url: https://example.com/apis/api-web-service.yml

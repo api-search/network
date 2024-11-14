@@ -1,0 +1,8 @@
+aid: okta:okta-api
+name: Okta API
+description: >-
+  The Core Okta API is the primary way that apps and services interact with
+  Okta. You can use it to implement basic auth functions such as signing in your
+  users and programmatically managing your Okta objects.
+url: >-
+  https://raw.githubusercontent.com/api-search/infrastructure/main/_apis/okta/apis.md

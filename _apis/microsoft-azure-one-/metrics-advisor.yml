@@ -1,0 +1,5 @@
+aid: microsoft-azure-one-:metrics-advisor
+name: Metrics Advisor
+description: Microsoft Azure Metrics Advisor REST API (OpenAPI v2)
+url: >-
+  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure/apis.md

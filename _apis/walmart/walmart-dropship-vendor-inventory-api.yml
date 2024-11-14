@@ -1,0 +1,11 @@
+aid: walmart:walmart-dropship-vendor-inventory-api
+name: Walmart Dropship Vendor Inventory API
+description: >-
+  Walmart's Inventory Management API provide drop ship vending (DSV) suppliers
+  with mechanisms to update and view current item inventory levels at each ship
+  node, also known as fulfillment centers. Suppliers assign each item they
+  fulfill drop ship vending (DSV) through one or more ship nodes. Suppliers must
+  accurately maintain the item's inventory level at each ship node to ensure
+  availability for customer orders.
+url: >-
+  https://raw.githubusercontent.com/api-search/commerce/main/_apis/walmart/apis.md

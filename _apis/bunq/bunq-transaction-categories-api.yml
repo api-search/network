@@ -1,0 +1,4 @@
+aid: bunq:bunq-transaction-categories-api
+name: Bunq Transaction Categories API
+description: Manage additional information transactional categories.
+url: https://raw.githubusercontent.com/api-search/banking/main/_apis/bunq/apis.md

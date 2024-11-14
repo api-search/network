@@ -1,0 +1,8 @@
+aid: musixmatch:musixmatch-api
+name: Musixmatch API
+description: >-
+  The most powerful and legal way to display lyrics on your website or in your
+  application. Musixmatch lyrics API is a robust service that permits you to
+  search and retrieve lyrics in the simplest possible way.
+url: >-
+  https://raw.githubusercontent.com/api-search/music/main/_apis/musixmatch/apis.md

@@ -1,0 +1,7 @@
+aid: handwrite-io:handwrite-io
+name: Handwrite IO
+description: >-
+  Welcome to the Handwrite API!You can use our API to send handwritten notes in
+  an automated manner, using our REST endpoints. 
+url: >-
+  https://raw.githubusercontent.com/api-search/handwrite-io/refs/heads/main/apis.yml

@@ -1,0 +1,5 @@
+aid: factset:factset-ownership-report-builder-api
+name: FactSet Ownership Report Builder API
+description: Returns top holders of company and fund equity
+url: >-
+  https://raw.githubusercontent.com/api-search/financial/main/_apis/factset/apis.md

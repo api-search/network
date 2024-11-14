@@ -1,0 +1,7 @@
+aid: twilio:twilio-messaging-api
+name: Twilio Messaging API
+description: >-
+  Send and receive messages via SMS, MMS, WhatsApp, Facebook Messenger, and more
+  through our Messaging and Conversations APIs.
+url: >-
+  https://raw.githubusercontent.com/api-search/messaging/main/_data/discord/overlays/apis-io-search.yml

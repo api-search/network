@@ -1,0 +1,7 @@
+aid: factset:factset-natural-language-processing-api
+name: FactSet Natural Language Processing API
+description: >-
+  These APIs leverage natural language processing to help extract meaningful
+  data from unstructured text
+url: >-
+  https://raw.githubusercontent.com/api-search/financial/main/_apis/factset/apis.md

@@ -1,0 +1,6 @@
+aid: ebay:recommendation-api
+name: Recommendation API
+description: >-
+  The Recommendation API returns information that sellers can use to configure
+  Promoted Listings ad campaigns.
+url: https://raw.githubusercontent.com/api-search/commerce/main/_apis/ebay/apis.md

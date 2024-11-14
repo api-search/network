@@ -1,0 +1,4 @@
+aid: apis-io-tags:tags-api
+name: APIs.io Tags API
+description: This is the API for powering APIs.io.
+url: https://github.com/api-search/tags-api/blob/main/apis.yml

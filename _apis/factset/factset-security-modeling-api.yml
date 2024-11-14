@@ -1,0 +1,7 @@
+aid: factset:factset-security-modeling-api
+name: FactSet Security Modeling API
+description: >-
+  The Security Modeling (SM) API allows clients to programmatically work with
+  the terms and conditions (t&c's) stored in the Security Modeling application
+url: >-
+  https://raw.githubusercontent.com/api-search/financial/main/_apis/factset/apis.md

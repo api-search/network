@@ -1,0 +1,8 @@
+aid: factset:factset-options-api
+name: FactSet Options API
+description: >-
+  The FactSet Options API provides Chains and related pricing data such as mid
+  bid-ask price, reference data (e.g., strike price), and risk measures (e.g.,
+  Greeks and implied volatility).
+url: >-
+  https://raw.githubusercontent.com/api-search/financial/main/_apis/factset/apis.md

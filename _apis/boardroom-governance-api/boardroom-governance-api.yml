@@ -1,0 +1,6 @@
+aid: boardroom-governance-api:boardroom-governance-api
+name: Boardroom Governance API
+description: >-
+  The Boardroom Governance API helps developers fetch and display governance
+  data across DAOs and networks for your users in minutes.
+url: https://example.com/apis/overview-governance-api.yml

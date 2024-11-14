@@ -1,0 +1,8 @@
+aid: microsoft-azure-one-:custom-image-search-client
+name: Custom Image Search Client
+description: >-
+  The Bing Custom Image Search API lets you send an image search query to Bing
+  and get back image search results customized to meet your custom search
+  definition.
+url: >-
+  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure/apis.md

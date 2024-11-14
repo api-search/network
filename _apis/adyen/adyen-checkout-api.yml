@@ -1,0 +1,8 @@
+aid: adyen:adyen-checkout-api
+name: Adyen Checkout API
+description: >-
+  Adyen Checkout API provides a simple and flexible way to initiate and
+  authorise online payments. You can use the same integration for payments made
+  with cards (including 3D Secure), mobile wallets, and local payment methods
+  (for example, iDEAL and Sofort).
+url: https://raw.githubusercontent.com/api-search/payments/main/_apis/adyen/apis.md

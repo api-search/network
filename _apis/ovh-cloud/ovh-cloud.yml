@@ -1,0 +1,7 @@
+aid: ovh-cloud:ovh-cloud
+name: OVH Cloud API
+description: >
+  Bare-metal servers for your most demanding use-cases. Customize your hardware,
+  configure your connectivity and install your preferred distribution.
+url: >-
+  https://raw.githubusercontent.com/api-search/cloud/main/_apis/ovh-cloud/apis.md

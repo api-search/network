@@ -1,0 +1,11 @@
+aid: envestnet:evestnet-account-verification-api
+name: Envestnet Account Verification APIs
+description: >-
+  This guide will show the basics of verifying accounts using Yodlee. Account
+  verification can help enable payments, avoid overdrafts, reduce fraud, and
+  more.  Verifying an account simply means your user has authenticated against
+  the account, and then you get detailed information for the problem you're
+  trying to solve. For instance, for payments, you might want to prove a user
+  has access to an account, get the account routing number, and check the amount
+  of money in it.
+url: https://raw.githubusercontent.com/apis-json/artisanal/main/apis/envestnet.yml

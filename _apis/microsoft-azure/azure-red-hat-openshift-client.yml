@@ -1,0 +1,5 @@
+aid: microsoft-azure:azure-red-hat-openshift-client
+name: Azure Red Hat OpenShift Client
+description: Rest API for Azure Red Hat OpenShift 4
+url: >-
+  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure-2/apis.md

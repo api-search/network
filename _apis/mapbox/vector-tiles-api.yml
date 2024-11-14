@@ -1,0 +1,6 @@
+aid: mapbox:vector-tiles-api
+name: Vector Tiles API
+description: >-
+  The Mapbox Vector Tiles API serves vector tiles from Mapbox-hosted vector
+  tilesets.
+url: https://raw.githubusercontent.com/apis-json/artisanal/main/apis/mapbox.yml

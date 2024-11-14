@@ -1,0 +1,5 @@
+aid: microsoft-azure-one-:batchserviceclient
+name: BatchServiceClient
+description: A client for issuing REST requests to the Azure Batch service.
+url: >-
+  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure/apis.md

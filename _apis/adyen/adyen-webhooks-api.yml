@@ -1,0 +1,8 @@
+aid: adyen:adyen-webhooks-api
+name: Adyen Webhooks API
+description: >-
+  We use webhooks to send you updates about payment status updates, newly
+  available reports, and other events that you can subscribe to. For more
+  information, refer to our
+  [documentation](https://docs.adyen.com/development-resources/webhooks).
+url: https://raw.githubusercontent.com/api-search/payments/main/_apis/adyen/apis.md

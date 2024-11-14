@@ -1,0 +1,4 @@
+aid: plaid:plaid-credit-api
+name: Plaid Credit API
+description: API reference for credit endpoints and webhooks
+url: https://raw.githubusercontent.com/api-search/banking/main/_apis/plaid/apis.md

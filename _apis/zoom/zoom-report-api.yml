@@ -1,0 +1,4 @@
+aid: zoom:zoom-report-api
+name: Zoom Report API
+description: Access and manage reports associated with using Zoom.
+url: https://raw.githubusercontent.com/api-search/videos/main/_apis/zoom/apis.md

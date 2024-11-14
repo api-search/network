@@ -1,0 +1,7 @@
+aid: factset:factset-direct-streaming-of-transaction-messages-api
+name: FactSet Direct Streaming of Transaction Messages API
+description: >-
+  Connect transaction data from your OMS to be leveraged in FactSet's PMP and
+  Portfolio Analytics applications
+url: >-
+  https://raw.githubusercontent.com/api-search/financial/main/_apis/factset/apis.md

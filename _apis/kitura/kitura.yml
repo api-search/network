@@ -1,0 +1,7 @@
+aid: kitura:kitura
+name: Kitura
+description: >-
+  Kitura is an open source web framework for server-side Swift. Use your Swift
+  skills to build web applications and REST APIs, with full support for
+  databases, WebSockets, OpenAPI and much more.
+url: https://raw.githubusercontent.com/api-search/kitura/refs/heads/main/apis.yml

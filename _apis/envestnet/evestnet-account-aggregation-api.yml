@@ -1,0 +1,8 @@
+aid: envestnet:evestnet-account-aggregation-api
+name: Envestnet Account Aggregation API
+description: >-
+  Our Aggregation APIs give you the power to access accounts at most
+  institutions in the industry combined with the industry's best data enrichment
+  augmented by powerful AI-driven data analysis, all from a single
+  open-banking-ready platform.
+url: https://raw.githubusercontent.com/apis-json/artisanal/main/apis/envestnet.yml

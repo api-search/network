@@ -1,0 +1,4 @@
+aid: plaid:plaid-partner-api
+name: Plaid Partner API
+description: Create and manage end customers
+url: https://raw.githubusercontent.com/api-search/banking/main/_apis/plaid/apis.md

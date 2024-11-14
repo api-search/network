@@ -1,0 +1,7 @@
+aid: open-brewery-db:open-brewery-db
+name: Open Brewery DB
+description: >-
+  Open Brewery DB is a free dataset and API with public information on
+  breweries, cideries, brewpubs, and bottleshops. 
+url: >-
+  https://raw.githubusercontent.com/api-search/open-brewery-db/refs/heads/main/apis.yml

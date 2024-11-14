@@ -1,0 +1,7 @@
+aid: microsoft-azure-one-:custom-search-client
+name: Custom Search Client
+description: >-
+  The Bing Custom Search API lets you send a search query to Bing and get back
+  search results customized to meet your custom search definition.
+url: >-
+  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure/apis.md

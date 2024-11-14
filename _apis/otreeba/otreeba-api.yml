@@ -1,0 +1,8 @@
+aid: otreeba:otreeba-api
+name: Otreeba API
+description: >-
+  Open Cannabis Data for Your Technology Otreeba comes from the word "abierto"
+  which means "open." We offer standardized cannabis data and normalization for
+  cannabis seed companies, strains, brands, products, batches, retailers, and
+  studies through a REST API.
+url: https://github.com/api-search/otreeba/apis.yml

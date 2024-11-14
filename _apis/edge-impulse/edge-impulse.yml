@@ -1,0 +1,8 @@
+aid: edge-impulse:edge-impulse
+name: Edge Impulse
+description: >-
+  Build datasets, train models, and optimize libraries to run directly on
+  device; from the smallest microcontrollers to gateways with the latest neural
+  accelerators (and anything in between).
+url: >-
+  https://raw.githubusercontent.com/api-search/edge-impulse/refs/heads/main/apis.yml

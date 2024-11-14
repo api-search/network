@@ -1,0 +1,8 @@
+aid: factset:factset-quant-factor-library-api
+name: FactSet Quant Factor Library API
+description: >-
+  The FactSet Quant Factor Library (QFL) API helps to detect investment themes
+  across global equity markets, incorporate ideas into your portfolio
+  construction process, and transform raw data into actionable intelligence.
+url: >-
+  https://raw.githubusercontent.com/api-search/financial/main/_apis/factset/apis.md

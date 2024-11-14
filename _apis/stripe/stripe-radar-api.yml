@@ -1,0 +1,8 @@
+aid: stripe:stripe-radar-api
+name: Stripe Radar API
+description: >-
+  Stripe Radar provides real-time fraud protection and requires no additional
+  development time. Fraud professionals can add Radar for Fraud Teams to
+  customize protection and get deeper insights.
+url: >-
+  https://raw.githubusercontent.com/api-search/payments/main/_apis/stripe/apis.md

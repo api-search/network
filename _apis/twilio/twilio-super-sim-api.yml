@@ -1,0 +1,9 @@
+aid: twilio:twilio-super-sim-api
+name: Twilio Super SIM API
+description: >-
+  Twilio IoT's Super SIM API empowers you to manage and deploy massive fleets of
+  IoT devices around the world. Using this REST API, you can activate and
+  deactivate Super SIMs, control the capabilities of individual Super SIMs or
+  groups of Super SIMs, send machine-to-machine (M2M) messages, and query usage.
+url: >-
+  https://raw.githubusercontent.com/api-search/messaging/main/_data/discord/overlays/apis-io-search.yml

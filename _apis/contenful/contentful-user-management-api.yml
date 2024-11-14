@@ -1,0 +1,7 @@
+aid: contenful:contentful-user-management-api
+name: Contentful User Management API
+description: >-
+  Contentful's User Management API helps organizations programmatically manage
+  their organizations, organization memberships, teams, space memberships and
+  more.
+url: https://raw.githubusercontent.com/apis-json/artisanal/main/apis/contentful.yml

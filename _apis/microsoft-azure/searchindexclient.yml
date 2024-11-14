@@ -1,0 +1,7 @@
+aid: microsoft-azure:searchindexclient
+name: SearchIndexClient
+description: >-
+  Client that can be used to query an index and upload, merge, or delete
+  documents.
+url: >-
+  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure-2/apis.md

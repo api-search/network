@@ -1,0 +1,9 @@
+aid: mastercard:mastercard-universal-specification-submission-api
+name: Mastercard Universal Specification Submission API
+description: >-
+  The Universal Specification Submission API is currently being used by
+  Mastercard Issuers to submit PAN related events for the Account Level
+  Management suite of services: Enhanced Value, Product Graduation Plus,
+  Consumer Product Monitoring Service, World High Value, Small Business Spend,
+  and Affluent Shortfall for World and World Elite Mastercard cards.
+url: https://raw.githubusercontent.com/apis-json/artisanal/main/apis/mastercard.yml

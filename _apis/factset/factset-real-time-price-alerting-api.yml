@@ -1,0 +1,8 @@
+aid: factset:factset-real-time-price-alerting-api
+name: FactSet Real-Time Price Alerting API
+description: >-
+  Basic Price Alerting deals with generation of alerts based on current price
+  data. Users can define an upper or lower limit and choose on which price type
+  those limit conditions apply.
+url: >-
+  https://raw.githubusercontent.com/api-search/financial/main/_apis/factset/apis.md

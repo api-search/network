@@ -1,0 +1,7 @@
+aid: twilio:twilio-assistant-api
+name: Twilio Assistant API
+description: >-
+  Twilio AI Assistants are an opinionated framework to build and host
+  conversational AI Assistants for your customer-facing use cases.
+url: >-
+  https://raw.githubusercontent.com/api-search/messaging/main/_data/discord/overlays/apis-io-search.yml

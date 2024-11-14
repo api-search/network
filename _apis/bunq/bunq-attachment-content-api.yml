@@ -1,0 +1,4 @@
+aid: bunq:bunq-attachment-content-api
+name: Bunq Attachment Content API
+description: Used to manage the attachment content for an A/PI.
+url: https://raw.githubusercontent.com/api-search/banking/main/_apis/bunq/apis.md

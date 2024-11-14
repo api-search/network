@@ -1,0 +1,8 @@
+aid: cloudinary:cloudinary
+name: Cloudinary
+description: >-
+  Cloudinarys image API enables the creation of automated workflows with preset
+  configurations. This saves time and ensures that files are transformed and
+  ready ...
+url: >-
+  https://raw.githubusercontent.com/api-search/cloudinary/refs/heads/main/apis.yml

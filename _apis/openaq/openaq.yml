@@ -1,0 +1,7 @@
+aid: openaq:openaq
+name: OpenAQ
+description: >-
+  OpenAQ is a nonprofit organization providing universal access to air quality
+  data to empower a global community of changemakers to solve air inequality-the
+  unequal access to clean air.
+url: https://github.com/api-search/openaq/raw/refs/heads/main/apis.yml

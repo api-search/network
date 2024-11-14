@@ -1,0 +1,8 @@
+aid: plaid:plaid-auth-api
+name: Plaid Auth API
+description: >+
+  Retrieve bank account information to set up electronic funds transfers, such
+  as ACH payments in the US, EFT payments in Canada, BACS payments in the UK,
+  and IBAN / SIC payments in the EU.
+
+url: https://raw.githubusercontent.com/api-search/banking/main/_apis/plaid/apis.md

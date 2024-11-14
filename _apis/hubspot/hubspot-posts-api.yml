@@ -1,0 +1,6 @@
+aid: hubspot:hubspot-posts-api
+name: HubSpot Posts API
+description: >-
+  Use these endpoints for interacting with Blog Posts, Blog Authors, and Blog
+  Tags.
+url: https://raw.githubusercontent.com/apis-json/artisanal/main/apis/hubspot.yml

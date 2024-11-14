@@ -1,0 +1,8 @@
+aid: shutterstock:shutterstock-api
+name: Shutterstock API
+description: |-
+  The Shutterstock API powers leading tech
+  companies across video, advertising,
+  web design, and more.
+url: >-
+  https://raw.githubusercontent.com/api-search/images/main/_apis/shutterstock/apis.md

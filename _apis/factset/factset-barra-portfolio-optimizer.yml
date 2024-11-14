@@ -1,0 +1,5 @@
+aid: factset:factset-barra-portfolio-optimizer
+name: FactSet Barra Portfolio Optimizer
+description: Barra Portfolio Optimizer (BPM) API
+url: >-
+  https://raw.githubusercontent.com/api-search/financial/main/_apis/factset/apis.md

@@ -1,0 +1,4 @@
+aid: deepl:deepl
+name: DeepL
+description: "The DeepL API provides programmatic access to DeepL\x19 s machine translation technology, making it possible to bring high quality translation capabilities directly to your websites and applications."
+url: https://raw.githubusercontent.com/api-search/deepl/refs/heads/main/apis.yml

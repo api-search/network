@@ -1,0 +1,9 @@
+aid: openai:openai-images-api
+name: OpenAI Images API
+description: >-
+  Learn how to generate or manipulate images with DALL_E in the API. The Images
+  API provides three methods for interacting with images - creating images from
+  scratch based on a text prompt, creating edited versions of images by having
+  the model replace some areas of a pre-existing image, based on a new text
+  prompt, Creating variations of an existing image.
+url: https://raw.githubusercontent.com/api-search/ai/main/_apis/openai/apis.md

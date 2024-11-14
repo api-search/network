@@ -1,0 +1,7 @@
+aid: stripe:stripe-invoice-api
+name: Stripe Invoice API
+description: >-
+  Invoices are statements of amounts owed by a customer, and are either
+  generated one-off, or generated periodically from a subscription.
+url: >-
+  https://raw.githubusercontent.com/api-search/payments/main/_apis/stripe/apis.md

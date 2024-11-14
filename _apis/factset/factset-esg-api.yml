@@ -1,0 +1,5 @@
+aid: factset:factset-esg-api
+name: FactSet ESG API
+description: FactSet ESG API giving access to SASB & SDG Score data
+url: >-
+  https://raw.githubusercontent.com/api-search/financial/main/_apis/factset/apis.md

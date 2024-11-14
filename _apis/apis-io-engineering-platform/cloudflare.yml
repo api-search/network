@@ -1,0 +1,9 @@
+aid: apis-io-engineering-platform:cloudflare
+name: Cloudflare
+description: >-
+  Cloudflare, Inc. is an American company that provides content delivery network
+  services, cloud cybersecurity, DDoS mitigation, wide area network services,
+  reverse proxies, Domain Name Service, and ICANN-accredited domain registration
+  services.
+url: >-
+  https://raw.githubusercontent.com/api-search/engineering-platform/refs/heads/main/apis.yml

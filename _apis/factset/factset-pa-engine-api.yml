@@ -1,0 +1,8 @@
+aid: factset:factset-pa-engine-api
+name: Factset PA Engine API
+description: >-
+  Through the PA Engine API, request analytics for multi-asset class
+  performance, attribution, and risk, including the flexibility of choosing your
+  portfolio, benchmark, return period, and more.
+url: >-
+  https://raw.githubusercontent.com/api-search/financial/main/_apis/factset/apis.md

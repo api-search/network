@@ -1,0 +1,4 @@
+aid: bunq:bunq-session-server-api
+name: Bunq Session Server API
+description: Needs description.
+url: https://raw.githubusercontent.com/api-search/banking/main/_apis/bunq/apis.md

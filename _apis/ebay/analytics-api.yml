@@ -1,0 +1,7 @@
+aid: ebay:analytics-api
+name: Analytics API
+description: >-
+  Provides information about an individual seller's business performance through
+  different report and data gathering resources including customer service
+  metrics, traffic reports, and seller profiles.
+url: https://raw.githubusercontent.com/api-search/commerce/main/_apis/ebay/apis.md

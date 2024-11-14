@@ -1,0 +1,7 @@
+aid: factset:factset-fixed-income-calculation-api
+name: FactSet Fixed Income Calculation API
+description: >-
+  Leverage FactSet's Fixed Income Calculation Engine to derive analytics on the
+  fly
+url: >-
+  https://raw.githubusercontent.com/api-search/financial/main/_apis/factset/apis.md

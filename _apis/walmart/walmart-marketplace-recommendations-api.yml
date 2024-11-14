@@ -1,0 +1,9 @@
+aid: walmart:walmart-marketplace-recommendations-api
+name: Walmart Marketplace Recommendations API
+description: >-
+  Assortment recommendations empower sellers understand and identify the
+  customer demand in Walmart & market by curating personalised seller
+  recommendations by leveraging demand signals such as Internal and external
+  search, Best Sellers, Trending items, and more.
+url: >-
+  https://raw.githubusercontent.com/api-search/commerce/main/_apis/walmart/apis.md

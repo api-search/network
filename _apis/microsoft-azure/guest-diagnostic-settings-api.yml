@@ -1,0 +1,5 @@
+aid: microsoft-azure:guest-diagnostic-settings-api
+name: Guest Diagnostic Settings API
+description: API to Add/Remove/List Guest Diagnostics Configuration to Azure Resources
+url: >-
+  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure-2/apis.md

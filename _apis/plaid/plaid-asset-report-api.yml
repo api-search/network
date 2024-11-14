@@ -1,0 +1,6 @@
+aid: plaid:plaid-asset-report-api
+name: Plaid Asset Report API
+description: >-
+  Create, delete, retrieve and share Asset Reports with information about a
+  user's assets and transactions.
+url: https://raw.githubusercontent.com/api-search/banking/main/_apis/plaid/apis.md

@@ -1,0 +1,7 @@
+aid: twilio:twilio-pricing-api
+name: Twilio Pricing API
+description: >-
+  The Pricing Voice resource provides a simple API to pull real-time,
+  account-specific pricing for Twilio's Programmable Voice product.
+url: >-
+  https://raw.githubusercontent.com/api-search/messaging/main/_data/discord/overlays/apis-io-search.yml

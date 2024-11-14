@@ -1,0 +1,10 @@
+aid: macrostrat:macrostrat
+name: Macrostrat
+description: >-
+  Macrostrat is a platform for the aggregation and distribution of geological
+  data relevant to the spatial and temporal distribution of sedimentary,
+  igneous, and metamorphic rocks as well as data extracted from them. It is
+  linked to the xDD (formly GeoDeepDive) digital library and machine reading
+  system, and it aims to become a community resource ...
+url: >-
+  https://raw.githubusercontent.com/api-search/macrostrat/refs/heads/main/apis.yml

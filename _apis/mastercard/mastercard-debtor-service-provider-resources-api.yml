@@ -1,0 +1,11 @@
+aid: mastercard:mastercard-debtor-service-provider-resources-api
+name: Mastercard Debtor Service Provider Resources API
+description: >-
+  Online checkouts can be frustrating and tedious. As shopping habits shift to
+  digital, consumers and merchants require secure and streamlined online
+  experiences. Mastercard Account to Account Commerce enables debtor service
+  providers (DSP) to provide their debtors (customers) with a fast, secure, and
+  convenient way to pay using their mobile banking app.= Through Account to
+  Account Commerce, the debtors can view their balance before checkout, initiate
+  refunds, and use their accounts for recurring payments or frequent purchases.
+url: https://raw.githubusercontent.com/apis-json/artisanal/main/apis/mastercard.yml

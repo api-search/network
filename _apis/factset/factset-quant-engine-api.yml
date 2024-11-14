@@ -1,0 +1,7 @@
+aid: factset:factset-quant-engine-api
+name: FactSet Quant Engine API
+description: >-
+  Use Quant Engine API to retrieve quantitative dataset from FactSet Content
+  Database
+url: >-
+  https://raw.githubusercontent.com/api-search/financial/main/_apis/factset/apis.md

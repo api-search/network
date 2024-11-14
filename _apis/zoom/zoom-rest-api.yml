@@ -1,0 +1,6 @@
+aid: zoom:zoom-rest-api
+name: Zoom Rest API
+description: >-
+  Our REST APIs are organized based on Zoom product, but the base URL for all
+  Zoom REST API requests is https://api.zoom.us/v2/ across products.
+url: https://raw.githubusercontent.com/api-search/videos/main/_apis/zoom/apis.md

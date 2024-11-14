@@ -1,0 +1,5 @@
+aid: microsoft-azure:infrastructureinsightsmanagementclient
+name: InfrastructureInsightsManagementClient
+description: Alert operation endpoints and objects.
+url: >-
+  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure-2/apis.md

@@ -1,0 +1,7 @@
+aid: factset:factset-real-time-news-api
+name: FactSet Real-Time News API
+description: >-
+  Retrieve news by category, identifier, and keyword, for a specific date or
+  range of dates. Endpoints can be subscribed for streamed updates.
+url: >-
+  https://raw.githubusercontent.com/api-search/financial/main/_apis/factset/apis.md

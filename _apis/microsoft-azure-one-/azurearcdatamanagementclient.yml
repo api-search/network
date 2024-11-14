@@ -1,0 +1,7 @@
+aid: microsoft-azure-one-:azurearcdatamanagementclient
+name: AzureArcDataManagementClient
+description: >-
+  The AzureArcData management API provides a RESTful set of web APIs to manage
+  Azure Data Services on Azure Arc Resources.
+url: >-
+  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure/apis.md

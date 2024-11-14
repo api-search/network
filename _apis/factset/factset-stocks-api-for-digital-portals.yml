@@ -1,0 +1,8 @@
+aid: factset:factset-stocks-api-for-digital-portals
+name: FactSet Stocks API for Digital Portals
+description: >-
+  Search for equity instruments based on stock-specific parameters, request EOD
+  benchmark key figures and selected fundamentals (end of fiscal year and
+  potential daily updates).
+url: >-
+  https://raw.githubusercontent.com/api-search/financial/main/_apis/factset/apis.md

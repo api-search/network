@@ -1,0 +1,4 @@
+aid: plaid:plaid-application-api
+name: Plaid Application API
+description: For managing application data.
+url: https://raw.githubusercontent.com/api-search/banking/main/_apis/plaid/apis.md

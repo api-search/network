@@ -1,0 +1,4 @@
+aid: plaid:plaid-entity-verification-api
+name: Plaid Entity Verification API
+description: API reference for Identity Verification endpoints and webhooks.
+url: https://raw.githubusercontent.com/api-search/banking/main/_apis/plaid/apis.md

@@ -1,0 +1,8 @@
+aid: stripe:stripe-application-fees-api
+name: Stripe Application Fees API
+description: >-
+  When you collect a transaction fee on top of a charge made for your user
+  (using Connect), an Application Fee object is created in your account. You can
+  list, retrieve, and refund application fees.
+url: >-
+  https://raw.githubusercontent.com/api-search/payments/main/_apis/stripe/apis.md

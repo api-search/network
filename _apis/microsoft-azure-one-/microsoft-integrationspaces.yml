@@ -1,0 +1,5 @@
+aid: microsoft-azure-one-:microsoft-integrationspaces
+name: Microsoft.IntegrationSpaces
+description: The azure integration spaces resource provider.
+url: >-
+  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure/apis.md

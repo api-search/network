@@ -1,0 +1,9 @@
+aid: >-
+  united-states-department-of-agriculture:united-states-department-of-agriculture
+name: United States Department of Agriculture
+description: >-
+  The FoodData Central API provides REST access to FoodData Central (FDC). It is
+  intended primarily to assist application developers wishing to incorporate
+  nutrient data into their applications or websites. 
+url: >-
+  https://raw.githubusercontent.com/api-search/united-states-department-of-agriculture/refs/heads/main/apis.yml

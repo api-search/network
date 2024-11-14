@@ -1,0 +1,5 @@
+aid: factset:factset-investment-banking-office-refresh-api
+name: FactSet Investment Banking Office Refresh API
+description: Refresh FactSet models (e.g., Excel templates with =FDS codes).
+url: >-
+  https://raw.githubusercontent.com/api-search/financial/main/_apis/factset/apis.md

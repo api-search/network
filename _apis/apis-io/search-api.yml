@@ -1,0 +1,6 @@
+aid: apis-io:search-api
+name: APIs.io Search API
+description: >-
+  This is the API to access APIs.io API search engine, from the product
+  management perspective.
+url: https://github.com/api-search/search-api/blob/main/apis.yml

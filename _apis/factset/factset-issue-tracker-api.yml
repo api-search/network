@@ -1,0 +1,7 @@
+aid: factset:factset-issue-tracker-api
+name: FactSet Issue Tracker API
+description: >-
+  Through Issue Tracker API, Clients can Create, Read and Update the Issue
+  Tracker Issues programmatically.
+url: >-
+  https://raw.githubusercontent.com/api-search/financial/main/_apis/factset/apis.md

@@ -1,0 +1,6 @@
+aid: zoom:zoom-chat-api
+name: Zoom Chat API
+description: >-
+  Developers can use the Zoom Chat API to access chat and chat channel data to
+  build private services or public applications on the Zoom App Marketplace.
+url: https://raw.githubusercontent.com/api-search/videos/main/_apis/zoom/apis.md

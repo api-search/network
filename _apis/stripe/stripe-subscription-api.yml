@@ -1,0 +1,5 @@
+aid: stripe:stripe-subscription-api
+name: Stripe Subscription API
+description: Subscriptions allow you to charge a customer on a recurring basis.
+url: >-
+  https://raw.githubusercontent.com/api-search/payments/main/_apis/stripe/apis.md

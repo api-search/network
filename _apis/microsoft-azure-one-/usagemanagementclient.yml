@@ -1,0 +1,5 @@
+aid: microsoft-azure-one-:usagemanagementclient
+name: UsageManagementClient
+description: null
+url: >-
+  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure/apis.md

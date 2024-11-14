@@ -1,0 +1,8 @@
+aid: adyen:adyen-payments-api
+name: Adyen Payments API
+description: >-
+  A set of API endpoints that allow you to initiate, settle, and modify payments
+  on the Adyen payments platform. You can use the API to accept card payments
+  (including One-Click and 3D Secure), bank transfers, ewallets, and many other
+  payment methods.
+url: https://raw.githubusercontent.com/api-search/payments/main/_apis/adyen/apis.md

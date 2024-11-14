@@ -1,0 +1,7 @@
+aid: apis-io-engineering-platform:microsoft-bing
+name: Microsoft Bing Search
+description: >-
+  Amazon S3 is used for centralized object storage, managing all images, video,
+  and audio across sites via public and private buckets.
+url: >-
+  https://raw.githubusercontent.com/api-search/engineering-platform/refs/heads/main/apis.yml

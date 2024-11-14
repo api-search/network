@@ -1,0 +1,9 @@
+aid: factset:factset-ownership-api
+name: FactSet Ownership API
+description: >-
+  FactSet's Fund Ownership API gives access to underlying fund holding details
+  for a specified fund ID or list of IDs. Holdings details include industry
+  codes, security identifiers, adjusted market value, adjusted shares held, and
+  issue type.
+url: >-
+  https://raw.githubusercontent.com/api-search/financial/main/_apis/factset/apis.md

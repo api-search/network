@@ -1,0 +1,4 @@
+aid: geoapify:map-matching-api
+name: Map Matching API
+description: Map GPS traces to roads and paths.
+url: https://www.geoapify.com/

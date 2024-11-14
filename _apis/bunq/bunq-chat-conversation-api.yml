@@ -1,0 +1,4 @@
+aid: bunq:bunq-chat-conversation-api
+name: Bunq Chat Conversation API
+description: Managing the chat conversations for a user account.
+url: https://raw.githubusercontent.com/api-search/banking/main/_apis/bunq/apis.md

@@ -1,0 +1,4 @@
+aid: box:box-collaboration-whitelist-exempt-targets-api
+name: Box Collaboration Whitelist Exempt Targets API
+description: Needs a description
+url: https://raw.githubusercontent.com/apis-json/artisanal/main/apis/box.yml

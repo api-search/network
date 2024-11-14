@@ -1,0 +1,10 @@
+aid: stripe:stripe-reporting-api
+name: Stripe Reporting API
+description: >-
+  The financial reports in the Dashboard provide downloadable reports in CSV
+  format for a variety of accounting and reconciliation tasks. These reports are
+  also available through the API, so you can schedule them to run automatically
+  or run them whenever you need to receive the associated report files for
+  accounting purposes.
+url: >-
+  https://raw.githubusercontent.com/api-search/payments/main/_apis/stripe/apis.md

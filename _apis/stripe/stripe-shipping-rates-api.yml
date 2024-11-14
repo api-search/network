@@ -1,0 +1,7 @@
+aid: stripe:stripe-shipping-rates-api
+name: Stripe Shipping Rates API
+description: >-
+  Shipping rates describe the price of shipping presented to your customers and
+  applied to a purchase.
+url: >-
+  https://raw.githubusercontent.com/api-search/payments/main/_apis/stripe/apis.md

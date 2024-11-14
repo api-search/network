@@ -1,0 +1,7 @@
+aid: hubspot:hubspot-domains-api
+name: HubSpot Domains API
+description: >-
+  These endpoints allow you to return information about the domains connected to
+  a particular HubSpot CMS site. You can return data for a list of domains or
+  specify a domain by ID.
+url: https://raw.githubusercontent.com/apis-json/artisanal/main/apis/hubspot.yml

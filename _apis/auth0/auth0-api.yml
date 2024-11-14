@@ -1,0 +1,7 @@
+aid: auth0:auth0-api
+name: Auth0 API
+description: >-
+  Auth0 exposes the following APIs for developers to consume in their
+  applications.
+url: >-
+  https://raw.githubusercontent.com/api-search/infrastructure/main/_apis/auth0/apis.md

@@ -1,0 +1,8 @@
+aid: microsoft-azure:mysqlmanagementclient
+name: MySQLManagementClient
+description: >-
+  The Microsoft Azure management API provides create, read, update, and delete
+  functionality for Azure MySQL resources including servers, databases, firewall
+  rules and configurations.
+url: >-
+  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure-2/apis.md

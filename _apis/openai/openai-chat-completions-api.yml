@@ -1,0 +1,8 @@
+aid: openai:openai-chat-completions-api
+name: OpenAI Chat Completions API
+description: >-
+  Chat models take a list of messages as input and return a model-generated
+  message as output. Although the chat format is designed to make multi-turn
+  conversations easy, it's just as useful for single-turn tasks without any
+  conversation.
+url: https://raw.githubusercontent.com/api-search/ai/main/_apis/openai/apis.md

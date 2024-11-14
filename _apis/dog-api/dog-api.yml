@@ -1,0 +1,6 @@
+aid: dog-api:dog-api
+name: Dog API
+description: >-
+  The internets biggest collection of open source dog pictures. Fetching you
+  over 20000 dog images accessible by over 120 breeds. 
+url: https://raw.githubusercontent.com/api-search/dog-api/refs/heads/main/apis.yml

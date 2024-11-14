@@ -1,0 +1,6 @@
+aid: ebay:notification-api
+name: Notification API
+description: >-
+  The eBay Notification API allows users to manage notifications using the
+  primary method and fields listed in the sections that follow.
+url: https://raw.githubusercontent.com/api-search/commerce/main/_apis/ebay/apis.md

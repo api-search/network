@@ -1,0 +1,6 @@
+aid: openai:openai-embeddings-api
+name: OpenAI Embeddings API
+description: >-
+  Learn how to turn text into numbers, unlocking use cases like search. OpenAI's
+  text embeddings measure the relatedness of text strings.
+url: https://raw.githubusercontent.com/api-search/ai/main/_apis/openai/apis.md

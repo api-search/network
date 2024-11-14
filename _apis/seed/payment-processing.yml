@@ -1,0 +1,7 @@
+aid: seed:payment-processing
+name: Payment Processing
+description: >-
+  Process cashless payments through various methods, including debit/credit
+  cards, digital wallets, and NFC.
+url: >-
+  https://raw.githubusercontent.com/api-search/seed-platform/refs/heads/main/apis.yml

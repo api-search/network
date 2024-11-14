@@ -1,0 +1,5 @@
+aid: microsoft-azure:azure-maps-web-feature-service
+name: Azure Maps Web Feature Service
+description: Azure Maps Web Feature REST APIs
+url: >-
+  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure-2/apis.md

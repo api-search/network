@@ -1,0 +1,7 @@
+aid: stripe:stripe-reviews-api
+name: Stripe Reviews API
+description: >-
+  Reviews can be used to supplement automated fraud detection with human
+  expertise.
+url: >-
+  https://raw.githubusercontent.com/api-search/payments/main/_apis/stripe/apis.md

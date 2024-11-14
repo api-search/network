@@ -1,0 +1,7 @@
+aid: the-new-york-times:movie-reviews-api
+name: Movie Reviews API
+description: >-
+  As an alternative, use the Article Search API to get New York Times movie
+  reviews using the following filter query.
+url: >-
+  https://raw.githubusercontent.com/api-search/news/main/_apis/new-york-times/apis.md

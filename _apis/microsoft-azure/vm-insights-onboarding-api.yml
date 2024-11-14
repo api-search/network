@@ -1,0 +1,5 @@
+aid: microsoft-azure:vm-insights-onboarding-api
+name: VM Insights Onboarding API
+description: API to manage VM Insights Onboarding
+url: >-
+  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure-2/apis.md

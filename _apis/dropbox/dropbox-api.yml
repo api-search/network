@@ -1,0 +1,8 @@
+aid: dropbox:dropbox-api
+name: Dropbox API
+description: >-
+  Dropbox is a file hosting service operated by the American company Dropbox,
+  Inc., headquartered in San Francisco, California, U.S. that offers cloud
+  storage, file synchronization, personal cloud, and client software.
+url: >-
+  https://raw.githubusercontent.com/api-search/documents/main/_apis/dropbox/apis.md

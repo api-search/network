@@ -1,0 +1,4 @@
+aid: gitlab:api-v4-application
+name: ' api/v4/application'
+description: Needs description.
+url: https://raw.githubusercontent.com/api-search/code/main/_apis/gitlab/apis.md

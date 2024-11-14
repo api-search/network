@@ -1,0 +1,9 @@
+aid: nutrition-exercise-api:nutrition-exercise-api
+name: Nutrition & Exercise API
+description: >-
+  The Dietagram Nutrition API is designed to simplify the integration of your
+  application with Dietagram extensive food database and nutritional standards.
+  Rather than developing and maintaining your own nutrient database, you can
+  rely on Dietagram for high-quality source data. ~
+  http://dietagram.com/api-page
+url: https://example.com/apis/nutrition-exercise-api.yml

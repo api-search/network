@@ -1,0 +1,11 @@
+aid: microsoft-azure:purview-workflow-service
+name: Purview Workflow Service
+description: >-
+  Workflows are automated, repeatable business processes which allow
+  organizations to track changes, enforce policy compliance, and ensure quality
+  data across their data landscape.Workflow service is a micro service within
+  Microsoft Purview to validate and orchestrate CUD (create, update, delete)
+  operations on their data entities. This spec defines REST API of Purview
+  Workflow Service, which could used for creating Purview workflow client.
+url: >-
+  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure-2/apis.md

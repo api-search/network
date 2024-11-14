@@ -1,0 +1,7 @@
+aid: factset:factset-funds-api-for-digital-portals
+name: FactSet Funds API for Digital Portals
+description: >-
+  Search for mutual funds and ETFs using one single consolidated API, including
+  a criteria-based screener.
+url: >-
+  https://raw.githubusercontent.com/api-search/financial/main/_apis/factset/apis.md

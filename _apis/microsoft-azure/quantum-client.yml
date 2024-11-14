@@ -1,0 +1,5 @@
+aid: microsoft-azure:quantum-client
+name: Quantum Client
+description: Azure Quantum REST API client
+url: >-
+  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure-2/apis.md

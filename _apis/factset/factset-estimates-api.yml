@@ -1,0 +1,9 @@
+aid: factset:factset-estimates-api
+name: FactSet Estimates API
+description: >-
+  20+ years of comprehensive estimates and statistics on a wide variety of
+  financial statement items as well as industry-specific metrics. FactSet's
+  consensus estimates are aggregated from a wide base of contributors and cover
+  over 19,000 active_
+url: >-
+  https://raw.githubusercontent.com/api-search/financial/main/_apis/factset/apis.md

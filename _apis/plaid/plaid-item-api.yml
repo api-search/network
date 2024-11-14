@@ -1,0 +1,4 @@
+aid: plaid:plaid-item-api
+name: Plaid Item API
+description: API reference for retrieving and deleting Items.
+url: https://raw.githubusercontent.com/api-search/banking/main/_apis/plaid/apis.md

@@ -1,0 +1,5 @@
+aid: microsoft-azure-one-:definitions-file
+name: Definitions file
+description: A spec file containing all the definitions
+url: >-
+  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure/apis.md

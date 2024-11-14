@@ -1,0 +1,5 @@
+aid: department-of-veterans-affairs-va:department-of-veterans-affairs-va-api
+name: Department of Veterans Affairs (VA) API
+description: This is the description.
+url: >-
+  https://raw.githubusercontent.com/api-search/us-federal-government/main/_apis/department-of-veterans-affairs/apis.md

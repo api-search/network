@@ -1,0 +1,8 @@
+aid: factset:factset-universal-screening-api
+name: FactSet Universal Screening API
+description: >-
+  Use the Universal Screening API to calculate your saved screens and then
+  output the results in a convenient JSON format or archive the results to an
+  Open FactSet Database (OFDB) file
+url: >-
+  https://raw.githubusercontent.com/api-search/financial/main/_apis/factset/apis.md

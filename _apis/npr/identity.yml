@@ -1,0 +1,4 @@
+aid: npr:identity
+name: Identity
+description: User management API.
+url: https://raw.githubusercontent.com/api-search/news/main/_apis/npr/apis.md

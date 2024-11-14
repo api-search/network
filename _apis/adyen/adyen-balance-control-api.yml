@@ -1,0 +1,6 @@
+aid: adyen:adyen-balance-control-api
+name: Adyen Balance Control API
+description: >-
+  The Balance Control API lets you transfer funds between merchant accounts that
+  belong to the same legal entity and are under the same company account.
+url: https://raw.githubusercontent.com/api-search/payments/main/_apis/adyen/apis.md

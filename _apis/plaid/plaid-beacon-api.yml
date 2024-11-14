@@ -1,0 +1,4 @@
+aid: plaid:plaid-beacon-api
+name: Plaid Beacon API
+description: API reference for Beacon endpoints and webhooks.
+url: https://raw.githubusercontent.com/api-search/banking/main/_apis/plaid/apis.md
