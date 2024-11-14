@@ -4,10 +4,10 @@ layout: default
 {% assign date_format = site.date_format | default: "%b %-d, %Y" %}
 <a name="{{ page.name }}"></a>
 <h3>{{ page.name }}</h3>
-<img src="{{ page.image }}" width="45%" align="right" style="padding: 25px;">
+<img src="{{ page.image }}" width="25%" align="right" style="padding: 25px;">{{ page.image }}
 <p><i>{{ page.modified | date: date_format }}</i></p>
 <p>{{ page.description | strip_html | strip_newlines }}</p> 
-<h4>Properties</h4>
+<h4>Base Properties</h4>
 <ul id="">
     <li><a href="{{ page.humanURL }}">Human URL</a></li>
     {% if page.baseURL != 'https://api.example.com' %}
@@ -27,9 +27,6 @@ layout: default
     {% endfor %}    
 </ul> 
 
-<br>
-<hr>
-<br>
 <div class="container text-center" style="width: 75%;margin-top:50px;"></div>
     {% include partner.html %} 
 </div>
