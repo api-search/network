@@ -1,0 +1,14 @@
+---
+layout: default
+---
+{% assign date_format = site.date_format | default: "%b %-d, %Y" %}
+<h1>{{ page.name }}</h1>
+<img src="{{ page.image }}" width="45%" align="right" style="padding: 25px;">
+<p><i>{{ page.modified | date: date_format }}</i></p>
+{{ page.description }}
+<br>
+<hr>
+<br>
+<div class="container text-center" style="width: 75%;margin-top:50px;"></div>
+    {% include partner.html %} 
+</div>
