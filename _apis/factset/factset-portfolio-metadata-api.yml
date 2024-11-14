@@ -1,7 +1,0 @@
-aid: factset:factset-portfolio-metadata-api
-name: FactSet Portfolio Metadata API
-description: >-
-  The Portfolio Metadata API will allow users to read, write, and edit ACCTs and
-  ACCT properties as well as ACTMs and components.
-url: >-
-  https://raw.githubusercontent.com/api-search/financial/main/_apis/factset/apis.md

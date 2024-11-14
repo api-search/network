@@ -1,7 +1,0 @@
-aid: openweather:openweather
-name: OpenWeather
-description: >-
-  Air Pollution API provides current, forecast and historical air pollution data
-  for any coordinates on the globe. Besides basic Air Quality Index, the API ...
-url: >-
-  https://raw.githubusercontent.com/api-search/openweather/refs/heads/main/apis.yml

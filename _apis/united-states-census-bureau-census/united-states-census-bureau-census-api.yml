@@ -1,9 +1,0 @@
-aid: united-states-census-bureau-census:united-states-census-bureau-census-api
-name: United States Census Bureau (Census) API
-description: >-
-  The Census Bureau has begun rolling out our datasets via APIs.  Check out our
-  Discovery Tool. Sign up for our newsletter to get the latest updates and
-  newest dataset addition. We also invite you to make requests for features /
-  data via our forum.
-url: >-
-  https://raw.githubusercontent.com/api-search/us-federal-government/main/_apis/united-states-census-bureau/apis.md

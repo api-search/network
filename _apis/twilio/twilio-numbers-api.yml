@@ -1,9 +1,0 @@
-aid: twilio:twilio-numbers-api
-name: Twilio Numbers API
-description: >-
-  Twilio's virtual phone numbers give you instant access to local, national,
-  mobile, and toll-free phone numbers in over 100 countries for your voice call
-  and messaging applications. Leverage local phone numbers for your customers to
-  call and text, or use your own number.
-url: >-
-  https://raw.githubusercontent.com/api-search/messaging/main/_data/discord/overlays/apis-io-search.yml

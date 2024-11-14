@@ -1,4 +1,0 @@
-aid: bunq:bunq-attachments-api
-name: Bunq Attachments API
-description: An API for managing attachments associated with a Bunq account.
-url: https://raw.githubusercontent.com/api-search/banking/main/_apis/bunq/apis.md

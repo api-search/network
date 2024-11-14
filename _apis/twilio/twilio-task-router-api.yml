@@ -1,7 +1,0 @@
-aid: twilio:twilio-task-router-api
-name: Twilio Task Router API
-description: >-
-  TaskRouter's REST API enables you to interact with TaskRouter resources from
-  your server-side applications.
-url: >-
-  https://raw.githubusercontent.com/api-search/messaging/main/_data/discord/overlays/apis-io-search.yml

@@ -1,7 +1,0 @@
-aid: stripe:stripe-tax-api
-name: Stripe Tax API
-description: >-
-  Automate sales tax, VAT, and GST compliance on all your transactions-low or no
-  code integrations available.
-url: >-
-  https://raw.githubusercontent.com/api-search/payments/main/_apis/stripe/apis.md

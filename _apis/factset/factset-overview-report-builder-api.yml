@@ -1,7 +1,0 @@
-aid: factset:factset-overview-report-builder-api
-name: FactSet Overview Report Builder API
-description: >-
-  Relevant industry-specific data for high level analysis of public and private
-  companies 
-url: >-
-  https://raw.githubusercontent.com/api-search/financial/main/_apis/factset/apis.md

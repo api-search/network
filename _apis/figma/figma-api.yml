@@ -1,8 +1,0 @@
-aid: figma:figma-api
-name: Figma API
-description: >-
-  Figma allows designers to create and prototype their digital experiences -
-  together in real-time and in one place - helping them turn their ideas and
-  visions into products, faster. Figma's mission is to make design accessible to
-  everyone. The Figma API is one of the ways we aim to do that.
-url: https://raw.githubusercontent.com/apis-json/artisanal/main/apis/figma.yml

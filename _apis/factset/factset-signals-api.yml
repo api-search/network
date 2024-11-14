@@ -1,8 +1,0 @@
-aid: factset:factset-signals-api
-name: FactSet Signals API
-description: >-
-  Leverage Signals to identify material events for a company. Signals are
-  derived from FactSet's core data,  cognitive computing technology, and our 3rd
-  party partners. 
-url: >-
-  https://raw.githubusercontent.com/api-search/financial/main/_apis/factset/apis.md

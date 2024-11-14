@@ -1,7 +1,0 @@
-aid: symphony:symphony-agent-api
-name: Symphony Agent API
-description: >-
-  The Symphony Agent is responsible for encryption and decryption of messages
-  and content sent to and from a bot.
-url: >-
-  https://raw.githubusercontent.com/api-search/financial/main/_apis/symphony/apis.md

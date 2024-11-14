@@ -1,5 +1,0 @@
-aid: microsoft-azure:professionalservice
-name: ProfessionalService
-description: REST APIs for Marketplace Professional Service Offers
-url: >-
-  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure-2/apis.md

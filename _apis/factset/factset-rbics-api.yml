@@ -1,9 +1,0 @@
-aid: factset:factset-rbics-api
-name: FactSet RBICS API
-description: >-
-  A Comprehensive structured taxonomy to classify companies by what they
-  primarily do. FactSet Revere Business Industry Classification System (RBICS)
-  delivers a granular view for investors by classifying companies using a
-  bottom-up approach_
-url: >-
-  https://raw.githubusercontent.com/api-search/financial/main/_apis/factset/apis.md

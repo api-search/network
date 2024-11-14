@@ -1,9 +1,0 @@
-aid: factset:factset-symbology-api
-name: FactSet Symbology API
-description: >-
-  FactSet Symbology API provides symbol resolution services, allowing users to
-  translate from familiar market symbols to FactSet's native symbology.
-  FactSet's symbology sits at the center of its hub-and-spoke data model,
-  enabling you to quickly_
-url: >-
-  https://raw.githubusercontent.com/api-search/financial/main/_apis/factset/apis.md

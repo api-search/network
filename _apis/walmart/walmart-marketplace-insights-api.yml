@@ -1,9 +1,0 @@
-aid: walmart:walmart-marketplace-insights-api
-name: Walmart Marketplace Insights API
-description: >-
-  To grow your business, you can use Insights API to learn actionable
-  information critical to building your business and catalog offerings. With the
-  Insights API you can learn actionable information about your current listings:
-  Top trending items, unpublished items, and quality of item listings.
-url: >-
-  https://raw.githubusercontent.com/api-search/commerce/main/_apis/walmart/apis.md

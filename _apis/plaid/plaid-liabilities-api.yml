@@ -1,4 +1,0 @@
-aid: plaid:plaid-liabilities-api
-name: Plaid Liabilities API
-description: API reference for Liabilities endpoints and webhooks.
-url: https://raw.githubusercontent.com/api-search/banking/main/_apis/plaid/apis.md

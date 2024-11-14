@@ -1,7 +1,0 @@
-aid: stripe:stripe-issuing-api
-name: Stripe Issuing API
-description: >-
-  An API for businesses to instantly create, manage, and distribute payment
-  cards.
-url: >-
-  https://raw.githubusercontent.com/api-search/payments/main/_apis/stripe/apis.md

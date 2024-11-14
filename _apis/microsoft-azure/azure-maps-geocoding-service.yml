@@ -1,5 +1,0 @@
-aid: microsoft-azure:azure-maps-geocoding-service
-name: Azure Maps Geocoding Service
-description: Azure Maps Geocoding REST APIs
-url: >-
-  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure-2/apis.md

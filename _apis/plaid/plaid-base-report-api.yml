@@ -1,4 +1,0 @@
-aid: plaid:plaid-base-report-api
-name: Plaid Base Report API
-description: API for retrieving a base report for an account.
-url: https://raw.githubusercontent.com/api-search/banking/main/_apis/plaid/apis.md

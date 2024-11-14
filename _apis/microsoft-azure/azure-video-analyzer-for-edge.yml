@@ -1,7 +1,0 @@
-aid: microsoft-azure:azure-video-analyzer-for-edge
-name: Azure Video Analyzer for Edge
-description: >-
-  Azure Video Analyzer resources which can be utilized when performing direct
-  method calls through Azure IoT Edge.
-url: >-
-  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure-2/apis.md

@@ -1,9 +1,0 @@
-aid: weatherbit:weatherbit-current-weather-api
-name: Weatherbit Current Weather API
-description: >-
-  This API returns current conditions from our network of sub-hourly reporting
-  weather stations, as well as relevant atmospheric meso-analyses (For example,
-  the RTMA). Every API request will return the nearest, and most recent
-  observation.
-url: >-
-  https://raw.githubusercontent.com/api-search/weather/main/_apis/weatherbit/apis.md

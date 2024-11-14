@@ -1,7 +1,0 @@
-aid: getty-images:getty-images
-name: Getty Images
-description: >-
-  Developer resources for the Getty Images API including SDK, documentation,
-  release notes, status, notifications and sample code.
-url: >-
-  https://raw.githubusercontent.com/api-search/getty-images/refs/heads/main/apis.yml

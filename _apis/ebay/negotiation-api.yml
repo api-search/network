@@ -1,9 +1,0 @@
-aid: ebay:negotiation-api
-name: Negotiation API
-description: >-
-  The Negotiation API gives sellers the ability to engage in sales negotiations
-  with buyers. The API currently supports only the ability for sellers to extend
-  offers to buyers who have shown an interest in their listings. The ability to
-  partake in more detailed negotiations will increase as the functionality of
-  the API is expanded.
-url: https://raw.githubusercontent.com/api-search/commerce/main/_apis/ebay/apis.md

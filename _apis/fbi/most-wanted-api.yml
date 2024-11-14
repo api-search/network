@@ -1,6 +1,0 @@
-aid: fbi:most-wanted-api
-name: Most Wanted API
-description: >-
-  The FBI Wanted API is designed to help developers easily get information on
-  the FBI Wanted program.
-url: http://example.com/apis.json

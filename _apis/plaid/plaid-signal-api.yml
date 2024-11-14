@@ -1,5 +1,0 @@
-aid: plaid:plaid-signal-api
-name: Plaid Signal API
-description: |
-  Assess the return risk of an ACH debit to prevent NSFs and other returns
-url: https://raw.githubusercontent.com/api-search/banking/main/_apis/plaid/apis.md

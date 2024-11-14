@@ -1,8 +1,0 @@
-aid: factset:factset-axioma-equity-optimizer-api
-name: FactSet Axioma Equity Optimizer API
-description: >-
-  The Axioma Equity API offers equity-based portfolio optimizations, balancing a
-  client's investment objectives within the confines of the established
-  constraints within their investment strategy.
-url: >-
-  https://raw.githubusercontent.com/api-search/financial/main/_apis/factset/apis.md

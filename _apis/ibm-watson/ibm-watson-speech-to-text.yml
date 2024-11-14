@@ -1,6 +1,0 @@
-aid: ibm-watson:ibm-watson-speech-to-text
-name: IBM Watson Speech to Text
-description: >-
-  Convert speech into text using AI-powered speech recognition and transcription
-  ~ https://www.ibm.com/products/speech-to-text
-url: https://example.com/apis/ibm-watson-speech-to-text.yml

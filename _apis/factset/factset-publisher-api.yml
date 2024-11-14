@@ -1,8 +1,0 @@
-aid: factset:factset-publisher-api
-name: FactSet Publisher API
-description: >-
-  Through the Publisher API, you can optimize your reporting workflows by
-  calculating customized, presentation-ready documents that integrate Portfolio
-  Analysis, SPAR, commentary, risk, as well as your firm's proprietary data.
-url: >-
-  https://raw.githubusercontent.com/api-search/financial/main/_apis/factset/apis.md

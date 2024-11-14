@@ -1,7 +1,0 @@
-aid: envestnet:evestnet-insights-api
-name: Envestnet Insights API
-description: >-
-  Financial Insights APIs provide intelligent, personalized, and actionable
-  insights to your end-users. This document details the APIs offered as part of
-  the insights product.
-url: https://raw.githubusercontent.com/apis-json/artisanal/main/apis/envestnet.yml

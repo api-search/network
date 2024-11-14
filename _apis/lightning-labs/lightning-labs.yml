@@ -1,8 +1,0 @@
-aid: lightning-labs:lightning-labs
-name: Lightning Labs
-description: >-
-  This site features the API documentation for lncli (CLI), Python, and
-  JavaScript in order to communicate with a local lnd instance through gRPC and
-  REST. It is ...
-url: >-
-  https://raw.githubusercontent.com/api-search/lightning-labs/refs/heads/main/apis.yml

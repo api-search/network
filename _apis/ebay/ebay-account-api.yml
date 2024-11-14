@@ -1,8 +1,0 @@
-aid: ebay:ebay-account-api
-name: eBay Account API
-description: >-
-  The Account API gives sellers the ability to configure their eBay seller
-  accounts, including the seller's policies (eBay business policies and
-  seller-defined custom policies), opt in and out of eBay seller programs,
-  configure sales tax tables, and get account information. 
-url: https://raw.githubusercontent.com/api-search/commerce/main/_apis/ebay/apis.md

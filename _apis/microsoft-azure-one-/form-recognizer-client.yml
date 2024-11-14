@@ -1,5 +1,0 @@
-aid: microsoft-azure-one-:form-recognizer-client
-name: Form Recognizer Client
-description: Extracts information from forms and images into structured data.
-url: >-
-  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure/apis.md

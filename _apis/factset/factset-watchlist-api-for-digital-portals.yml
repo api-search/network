@@ -1,7 +1,0 @@
-aid: factset:factset-watchlist-api-for-digital-portals
-name: FactSet Watchlist API for Digital Portals
-description: >-
-  Watchlists keeps track of users_ individual investment objectives in
-  self-directed wealth management applications.
-url: >-
-  https://raw.githubusercontent.com/api-search/financial/main/_apis/factset/apis.md

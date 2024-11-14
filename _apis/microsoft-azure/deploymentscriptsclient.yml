@@ -1,7 +1,0 @@
-aid: microsoft-azure:deploymentscriptsclient
-name: DeploymentScriptsClient
-description: >-
-  The APIs listed in this specification can be used to manage Deployment Scripts
-  resource through the Azure Resource Manager.
-url: >-
-  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure-2/apis.md

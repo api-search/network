@@ -1,5 +1,0 @@
-aid: microsoft-azure:azuresphereproviderclient
-name: AzureSphereProviderClient
-description: Azure Sphere resource management API.
-url: >-
-  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure-2/apis.md

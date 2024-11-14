@@ -1,9 +1,0 @@
-aid: fraud-net:fraud-net
-name: Fraud NET
-description: >-
-  The Fraud.net API allows you to obtain critical insight into the validity of a
-  Cart (pre-authorization, e-commerce) or a Transaction. To mitigate fraud, we
-  require data on a Cart and/or a Transaction. Data is shared via our Check and
-  Update API requests. 
-url: >-
-  https://raw.githubusercontent.com/api-search/fraud-net/refs/heads/main/apis.yml

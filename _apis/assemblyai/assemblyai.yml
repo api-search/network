@@ -1,8 +1,0 @@
-aid: assemblyai:assemblyai
-name: AssemblyAI API
-description: >-
-  Built by AI experts, AssemblyAI's Speech AI models include accurate
-  speech-to-text for voice data (such as calls, virtual meetings, and podcasts),
-  speaker detection, sentiment analysis, chapter detection, PII redaction, and
-  more.
-url: https://raw.githubusercontent.com/api-search/ai/main/_apis/assemblyai/apis.md

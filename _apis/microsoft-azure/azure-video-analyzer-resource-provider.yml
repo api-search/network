@@ -1,5 +1,0 @@
-aid: microsoft-azure:azure-video-analyzer-resource-provider
-name: Azure Video Analyzer Resource Provider
-description: Azure Video Analyzer resource provider API definition.
-url: >-
-  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure-2/apis.md

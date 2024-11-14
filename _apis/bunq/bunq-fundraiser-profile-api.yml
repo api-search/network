@@ -1,4 +1,0 @@
-aid: bunq:bunq-fundraiser-profile-api
-name: Bunq Fundraiser Profile API
-description: The /me profile for the Bunq user.
-url: https://raw.githubusercontent.com/api-search/banking/main/_apis/bunq/apis.md

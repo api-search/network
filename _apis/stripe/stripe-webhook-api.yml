@@ -1,7 +1,0 @@
-aid: stripe:stripe-webhook-api
-name: Stripe Webhook API
-description: >-
-  You can configure webhook endpoints via the API to be notified about events
-  that happen in your Stripe account or connected accounts.
-url: >-
-  https://raw.githubusercontent.com/api-search/payments/main/_apis/stripe/apis.md

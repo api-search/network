@@ -1,8 +1,0 @@
-aid: stripe:stripe-refunds-api
-name: Stripe Refunds API
-description: >-
-  Refund objects allow you to refund a previously created charge that isn't
-  refunded yet. Funds are refunded to the credit or debit card that's initially
-  charged.
-url: >-
-  https://raw.githubusercontent.com/api-search/payments/main/_apis/stripe/apis.md

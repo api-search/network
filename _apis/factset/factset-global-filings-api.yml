@@ -1,5 +1,0 @@
-aid: factset:factset-global-filings-api
-name: FactSet Global Filings API
-description: ' This API is designed to expose document search and document retrieval functionality'
-url: >-
-  https://raw.githubusercontent.com/api-search/financial/main/_apis/factset/apis.md

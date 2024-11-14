@@ -1,8 +1,0 @@
-aid: stripe:stripe-setup-api
-name: Stripe Setup API
-description: >-
-  Use the Setup Intents API to set up a payment method for future payments. It's
-  similar to a payment, but no charge is created. Set up a payment method for
-  future payments now.
-url: >-
-  https://raw.githubusercontent.com/api-search/payments/main/_apis/stripe/apis.md

@@ -1,9 +1,0 @@
-aid: factset:factset-prices-api
-name: FactSet Prices API
-description: >-
-  Gain access to comprehensive global coverage for equity prices, returns,
-  volume, shares, splits, and dividends. Security types include Common Stock,
-  ADR, GDR, Preferred, Closed-ended Fund, Exchange Traded Fund, Unit, Open-ended
-  Fund, Exchange_
-url: >-
-  https://raw.githubusercontent.com/api-search/financial/main/_apis/factset/apis.md

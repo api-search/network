@@ -1,9 +1,0 @@
-aid: microsoft-azure:expressroutecrossconnection-rest-apis
-name: ExpressRouteCrossConnection REST APIs
-description: >-
-  The Microsoft Azure ExpressRouteCrossConnection Resource Provider REST APIs
-  describes the operations for the connectivity provider to provision
-  ExpressRoute circuit, create and modify BGP peering entities and troubleshoot
-  connectivity on customer's ExpressRoute circuit. 
-url: >-
-  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure-2/apis.md

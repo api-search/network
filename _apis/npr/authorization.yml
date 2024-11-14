@@ -1,4 +1,0 @@
-aid: npr:authorization
-name: Authorization
-description: API Authorization.
-url: https://raw.githubusercontent.com/api-search/news/main/_apis/npr/apis.md

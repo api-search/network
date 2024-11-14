@@ -1,7 +1,0 @@
-aid: factset:factset-benchmarks-api
-name: FactSet Benchmarks API
-description: >-
-  Returns Benchmark Constituent data including weights, price, and market value
-  for a specified date.
-url: >-
-  https://raw.githubusercontent.com/api-search/financial/main/_apis/factset/apis.md

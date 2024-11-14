@@ -1,6 +1,0 @@
-aid: plaid:plaid-transactions-api
-name: Plaid Transactions API
-description: >-
-  Retrieve and refresh up to 24 months of historical transaction data, including
-  geolocation, merchant, and category information.
-url: https://raw.githubusercontent.com/api-search/banking/main/_apis/plaid/apis.md

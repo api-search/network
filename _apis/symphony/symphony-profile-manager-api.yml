@@ -1,5 +1,0 @@
-aid: symphony:symphony-profile-manager-api
-name: Symphony Profile Manager API
-description: Profile Manager is a microservice to manage users profile and groups.
-url: >-
-  https://raw.githubusercontent.com/api-search/financial/main/_apis/symphony/apis.md

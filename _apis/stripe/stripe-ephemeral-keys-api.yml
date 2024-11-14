@@ -1,8 +1,0 @@
-aid: stripe:stripe-ephemeral-keys-api
-name: Stripe Ephemeral Keys API
-description: >-
-  Stripe.js uses ephemeral keys to securely retrieve Card information from the
-  Stripe API without publicly exposing your secret keys. You need to do some of
-  the ephemeral key exchange on the server-side to set this up.
-url: >-
-  https://raw.githubusercontent.com/api-search/payments/main/_apis/stripe/apis.md

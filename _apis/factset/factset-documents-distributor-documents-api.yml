@@ -1,7 +1,0 @@
-aid: factset:factset-documents-distributor-documents-api
-name: FactSet Documents Distributor - Documents API
-description: >-
-  Documents APIs that provide filings such as Global Filings and XML files such
-  as StreetAccount
-url: >-
-  https://raw.githubusercontent.com/api-search/financial/main/_apis/factset/apis.md

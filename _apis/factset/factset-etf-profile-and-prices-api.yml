@@ -1,7 +1,0 @@
-aid: factset:factset-etf-profile-and-prices-api
-name: FactSet ETF Profile and Prices API
-description: >-
-  Access FactSet-collected profile data and pricing for Exchange Traded Funds
-  (ETFs).
-url: >-
-  https://raw.githubusercontent.com/api-search/financial/main/_apis/factset/apis.md

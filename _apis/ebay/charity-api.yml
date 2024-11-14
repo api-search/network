@@ -1,6 +1,0 @@
-aid: ebay:charity-api
-name: Charity API
-description: >-
-  The Charity API allows third-party developers to search for and access details
-  on supported charitable organizations.
-url: https://raw.githubusercontent.com/api-search/commerce/main/_apis/ebay/apis.md

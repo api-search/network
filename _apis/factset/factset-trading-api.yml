@@ -1,5 +1,0 @@
-aid: factset:factset-trading-api
-name: FactSet Trading API
-description: This Trading API gives programmatic access to FactSet's trading platform
-url: >-
-  https://raw.githubusercontent.com/api-search/financial/main/_apis/factset/apis.md

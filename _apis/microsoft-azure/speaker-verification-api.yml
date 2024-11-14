@@ -1,9 +1,0 @@
-aid: microsoft-azure:speaker-verification-api
-name: Speaker Verification API
-description: >-
-  The Azure Cognitive Service Speaker Recognition service provides algorithms
-  that verify and identify speakers by their unique voice characteristics.
-
-  Speaker Recognition is used to answer the question "who is speaking?"
-url: >-
-  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure-2/apis.md

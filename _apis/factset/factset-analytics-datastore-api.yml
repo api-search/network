@@ -1,7 +1,0 @@
-aid: factset:factset-analytics-datastore-api
-name: FactSet Analytics Datastore API
-description: >-
-  Request pre-calculated Portfolio Analytics data saved in FactSet's Analytics
-  Datastore, via deterministic URLs.
-url: >-
-  https://raw.githubusercontent.com/api-search/financial/main/_apis/factset/apis.md

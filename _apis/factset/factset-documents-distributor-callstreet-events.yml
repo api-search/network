@@ -1,7 +1,0 @@
-aid: factset:factset-documents-distributor-callstreet-events
-name: FactSet Documents Distributor - CallStreet Events
-description: >-
-  CallStreet Events contains all the Documents Distributor APIs that offer
-  events data such as Events Audio and Near Real-Time Transcripts.
-url: >-
-  https://raw.githubusercontent.com/api-search/financial/main/_apis/factset/apis.md

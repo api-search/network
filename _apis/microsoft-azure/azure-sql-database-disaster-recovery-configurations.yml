@@ -1,7 +1,0 @@
-aid: microsoft-azure:azure-sql-database-disaster-recovery-configurations
-name: Azure SQL Database disaster recovery configurations
-description: >-
-  Provides create, read, update, delete, and failover functionality for Azure
-  SQL Database disaster recovery configurations.
-url: >-
-  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure-2/apis.md

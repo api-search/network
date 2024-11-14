@@ -1,7 +1,0 @@
-aid: klaviyo:klaviyo
-name: Klaviyo
-description: >-
-  Build custom integrations to bring data into Klaviyo to create personalized
-  experiences. Integrate with point-of-sale software, inventory management
-  systems, scheduling apps, and more.
-url: https://raw.githubusercontent.com/api-search/klaviyo/refs/heads/main/apis.yml

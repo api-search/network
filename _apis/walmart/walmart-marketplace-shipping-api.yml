@@ -1,8 +1,0 @@
-aid: walmart:walmart-marketplace-shipping-api
-name: Walmart Marketplace Shipping API
-description: >-
-  The Ship With Walmart for US API enables walmart.com sellers to buy shipping
-  at competitively discounted rates directly from Walmart to ship their goods to
-  US customers.  
-url: >-
-  https://raw.githubusercontent.com/api-search/commerce/main/_apis/walmart/apis.md

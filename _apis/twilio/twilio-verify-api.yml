@@ -1,9 +1,0 @@
-aid: twilio:twilio-verify-api
-name: Twilio Verify API
-description: >-
-  Set up SMS or voice verifications to quickly authenticate users, fight fraud,
-  and protect user accounts. As part of Twilio's account security offerings, the
-  Twilio Verify API makes it simple to add user verification to your web
-  application.
-url: >-
-  https://raw.githubusercontent.com/api-search/messaging/main/_data/discord/overlays/apis-io-search.yml

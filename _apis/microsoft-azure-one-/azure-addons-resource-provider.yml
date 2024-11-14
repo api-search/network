@@ -1,5 +1,0 @@
-aid: microsoft-azure-one-:azure-addons-resource-provider
-name: Azure Addons Resource Provider
-description: The service for managing third party addons.
-url: >-
-  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure/apis.md

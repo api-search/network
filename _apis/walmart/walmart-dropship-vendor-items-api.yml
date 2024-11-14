@@ -1,7 +1,0 @@
-aid: walmart:walmart-dropship-vendor-items-api
-name: Walmart Dropship Vendor Items API
-description: >-
-  The Walmart Order Management API help 1P suppliers stay up to date on order
-  fulfillment.
-url: >-
-  https://raw.githubusercontent.com/api-search/commerce/main/_apis/walmart/apis.md

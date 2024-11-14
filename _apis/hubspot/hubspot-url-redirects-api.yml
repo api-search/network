@@ -1,7 +1,0 @@
-aid: hubspot:hubspot-url-redirects-api
-name: HubSpot URL Redirects API
-description: >-
-  URL redirects allow you to redirect traffic from a HubSpot-hosted page or blog
-  post to any URL. You can also update URL redirects in bulk and use a flexible
-  pattern redirect to dynamically update the structure of URLs.
-url: https://raw.githubusercontent.com/apis-json/artisanal/main/apis/hubspot.yml

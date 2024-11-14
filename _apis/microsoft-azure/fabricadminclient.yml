@@ -1,5 +1,0 @@
-aid: microsoft-azure:fabricadminclient
-name: FabricAdminClient
-description: Application operation results.
-url: >-
-  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure-2/apis.md

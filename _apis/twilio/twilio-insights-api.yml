@@ -1,9 +1,0 @@
-aid: twilio:twilio-insights-api
-name: Twilio Insights API
-description: >-
-  Voice Insights provides call quality analytics and aggregation tools for
-  investigating Twilio calls and conferences. Sensors in the Twilio Voice SDKs
-  and on Twilio media gateways gather call metrics and events and send them to
-  the Voice Insights platform for analysis and aggregation.
-url: >-
-  https://raw.githubusercontent.com/api-search/messaging/main/_data/discord/overlays/apis-io-search.yml

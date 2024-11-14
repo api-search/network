@@ -1,5 +1,0 @@
-aid: microsoft-azure:azure-sql-database-backup
-name: Azure SQL Database Backup
-description: Provides read functionality for Azure SQL Database Backups
-url: >-
-  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure-2/apis.md

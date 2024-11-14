@@ -1,9 +1,0 @@
-aid: factset:factset-id-lookup-api
-name: FactSet ID Lookup API
-description: >-
-  FactSet Identifier Lookup API exposes the service that powers the search
-  functionality in FactSet WorkStation and FactSet Web. Clients can leverage
-  this API for their search functionality to return tickers, entity names, and
-  other identifiers_
-url: >-
-  https://raw.githubusercontent.com/api-search/financial/main/_apis/factset/apis.md

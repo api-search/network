@@ -1,7 +1,0 @@
-aid: factset:factset-recommendation-list-api-for-digital-portals
-name: FactSet Recommendation List API for Digital Portals
-description: >-
-  Manage lists of financial products via a CMS or upload job, including revision
-  control.
-url: >-
-  https://raw.githubusercontent.com/api-search/financial/main/_apis/factset/apis.md

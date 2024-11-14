@@ -1,8 +1,0 @@
-aid: goldman-sachs:goldman-sachs-content-services-api
-name: Goldman Sachs Content Services API
-description: >-
-  Leverage insights from across Goldman Sachs with client-focused content on
-  equity, fixed income, currency and commodities markets. Clients can access
-  both historical and real-time fundamental insights and analysis.
-url: >-
-  https://raw.githubusercontent.com/apis-json/artisanal/main/apis/factset/apis.yml

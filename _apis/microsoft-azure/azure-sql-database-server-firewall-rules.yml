@@ -1,7 +1,0 @@
-aid: microsoft-azure:azure-sql-database-server-firewall-rules
-name: Azure SQL Database server firewall rules
-description: >-
-  Provides create, read, update, and delete functionality for Azure SQL Database
-  server firewall rules.
-url: >-
-  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure-2/apis.md

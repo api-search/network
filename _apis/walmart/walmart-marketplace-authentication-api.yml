@@ -1,8 +1,0 @@
-aid: walmart:walmart-marketplace-authentication-api
-name: Walmart Marketplace Authentication API
-description: >-
-  Authentication creates and manages access tokens to ensure users are verified.
-  The Walmart 1P Supplier APIs use open authorization (OAuth 2.0) for
-  token-based authentication.
-url: >-
-  https://raw.githubusercontent.com/api-search/commerce/main/_apis/walmart/apis.md

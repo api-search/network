@@ -1,8 +1,0 @@
-aid: microsoft-azure-one-:azure-health-insights
-name: Azure Health Insights
-description: >-
-  Azure Health Insights provides an API that serves insight models, specific for
-  Health & Life Sciences, that perform analysis and provide inferences to be
-  used by a human.
-url: >-
-  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure/apis.md

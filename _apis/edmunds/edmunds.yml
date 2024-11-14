@@ -1,8 +1,0 @@
-aid: edmunds:edmunds
-name: Edmunds
-description: >-
-  To access Edmunds content, REST APIs are used to retrieve a JSON data object
-  that contains a rich set of content elements that can be parsed and integrated
-  into your website. 
-url: >-
-  https://example.com/apis/edmunds-developer-network-welcome-to-the-edmunds-api-edmunds-developer-portal.yml

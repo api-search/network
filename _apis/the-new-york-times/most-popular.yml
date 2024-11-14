@@ -1,7 +1,0 @@
-aid: the-new-york-times:most-popular
-name: Most Popular
-description: >-
-  Provides services for getting the most popular articles on NYTimes.com based
-  on emails, shares, or views.
-url: >-
-  https://raw.githubusercontent.com/api-search/news/main/_apis/new-york-times/apis.md

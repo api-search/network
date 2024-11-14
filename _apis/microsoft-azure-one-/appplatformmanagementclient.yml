@@ -1,5 +1,0 @@
-aid: microsoft-azure-one-:appplatformmanagementclient
-name: AppPlatformManagementClient
-description: REST API for Azure Spring Cloud
-url: >-
-  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure/apis.md

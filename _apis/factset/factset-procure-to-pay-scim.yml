@@ -1,5 +1,0 @@
-aid: factset:factset-procure-to-pay-scim
-name: FactSet Procure to Pay SCIM
-description: Create users and manage user attributes, entitlements and security settings
-url: >-
-  https://raw.githubusercontent.com/api-search/financial/main/_apis/factset/apis.md

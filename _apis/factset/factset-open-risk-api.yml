@@ -1,8 +1,0 @@
-aid: factset:factset-open-risk-api
-name: FactSet Open Risk API
-description: >-
-  Through this API one can get a comprehensive access to factor-based linear
-  risk analytics engine, offering flexible and powerful risk analyses with full
-  capability.
-url: >-
-  https://raw.githubusercontent.com/api-search/financial/main/_apis/factset/apis.md

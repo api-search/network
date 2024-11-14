@@ -1,8 +1,0 @@
-aid: weatherbit:weatherbit-ag-weather-api
-name: Weatherbit Ag-Weather API
-description: >-
-  Use our service to retrieve derived data specific to the agriculture industry.
-  This API utilizes the state of the art GLDAS re-analysis to provide global
-  coverage at a spatial resolution of 0.25 degrees.
-url: >-
-  https://raw.githubusercontent.com/api-search/weather/main/_apis/weatherbit/apis.md

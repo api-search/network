@@ -1,5 +1,0 @@
-aid: microsoft-azure:azure-reservation-api
-name: Azure Reservation API
-description: This API describe Azure Reservation
-url: >-
-  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure-2/apis.md

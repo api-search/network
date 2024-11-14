@@ -1,4 +1,0 @@
-aid: npr:station
-name: Station
-description: NPR Station information.
-url: https://raw.githubusercontent.com/api-search/news/main/_apis/npr/apis.md

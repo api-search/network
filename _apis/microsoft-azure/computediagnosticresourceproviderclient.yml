@@ -1,5 +1,0 @@
-aid: microsoft-azure:computediagnosticresourceproviderclient
-name: ComputeDiagnosticResourceProviderClient
-description: The Compute Diagnostic Resource Provider Client
-url: >-
-  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure-2/apis.md

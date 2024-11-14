@@ -1,7 +1,0 @@
-aid: factset:factset-search-answers
-name: FactSet Search Answers
-description: >-
-  The FactSet Search Answers API provides answers to search queries, reflecting
-  the data shown within FactSet Search Answers.
-url: >-
-  https://raw.githubusercontent.com/api-search/financial/main/_apis/factset/apis.md

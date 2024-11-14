@@ -1,6 +1,0 @@
-aid: contenful:contentful-images-api
-name: Contentful Images API
-description: >-
-  The Contentful Images API allows the retrieval and manipulation of image files
-  referenced from assets.
-url: https://raw.githubusercontent.com/apis-json/artisanal/main/apis/contentful.yml

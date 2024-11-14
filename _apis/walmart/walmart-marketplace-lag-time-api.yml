@@ -1,8 +1,0 @@
-aid: walmart:walmart-marketplace-lag-time-api
-name: Walmart Marketplace Lag Time API
-description: >-
-  Lag Time is the number of days between the date an item is ordered and when it
-  is shipped. During Item Setup, Lag Time can be set to 0 days or 1 day. Any
-  other value used will be defaulted to 1 day.
-url: >-
-  https://raw.githubusercontent.com/api-search/commerce/main/_apis/walmart/apis.md

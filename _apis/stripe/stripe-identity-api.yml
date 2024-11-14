@@ -1,7 +1,0 @@
-aid: stripe:stripe-identity-api
-name: Stripe Identity API
-description: >-
-  Use Stripe Identity to confirm the identity of global users to prevent fraud,
-  streamline risk operations, and increase trust and safety.
-url: >-
-  https://raw.githubusercontent.com/api-search/payments/main/_apis/stripe/apis.md

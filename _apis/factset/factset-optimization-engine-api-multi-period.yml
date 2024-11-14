@@ -1,8 +1,0 @@
-aid: factset:factset-optimization-engine-api-multi-period
-name: FactSet Optimization Engine API (Multi-period)
-description: >-
-  The Optimization Engine API (Multi-period) allows users to execute
-  multi-period optimization, with client provided data, to solve dynamic asset
-  allocation problems
-url: >-
-  https://raw.githubusercontent.com/api-search/financial/main/_apis/factset/apis.md

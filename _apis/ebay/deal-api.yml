@@ -1,7 +1,0 @@
-aid: ebay:deal-api
-name: Deal API
-description: >-
-  This API allows third-party developers to search for and retrieve details
-  about eBay deals and events, as well as the items associated with those deals
-  and events.
-url: https://raw.githubusercontent.com/api-search/commerce/main/_apis/ebay/apis.md

@@ -1,7 +1,0 @@
-aid: factset:factset-entity-report-builder-api
-name: FactSet Entity Report Builder API
-description: >-
-  Create entity tree reports that display complex ownership structures through
-  the FactSet Entity Report Builder API.
-url: >-
-  https://raw.githubusercontent.com/api-search/financial/main/_apis/factset/apis.md

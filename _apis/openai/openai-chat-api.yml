@@ -1,6 +1,0 @@
-aid: openai:openai-chat-api
-name: OpenAI Chat API
-description: >-
-  Given a list of messages comprising a conversation, the model will return a
-  response., providing an AI chat interface you can use to engage with users.
-url: https://raw.githubusercontent.com/api-search/ai/main/_apis/openai/apis.md

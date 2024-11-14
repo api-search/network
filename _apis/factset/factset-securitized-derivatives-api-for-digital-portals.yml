@@ -1,7 +1,0 @@
-aid: factset:factset-securitized-derivatives-api-for-digital-portals
-name: FactSet Securitized Derivatives API for Digital Portals
-description: >-
-  Fundamental data for a single securitized derivative. Notation-based key
-  figures of a securitized derivative.
-url: >-
-  https://raw.githubusercontent.com/api-search/financial/main/_apis/factset/apis.md

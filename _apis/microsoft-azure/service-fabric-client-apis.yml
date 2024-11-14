@@ -1,7 +1,0 @@
-aid: microsoft-azure:service-fabric-client-apis
-name: Service Fabric Client APIs
-description: >-
-  Service Fabric REST Client APIs allows management of Service Fabric clusters,
-  applications and services.
-url: >-
-  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure-2/apis.md

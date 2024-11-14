@@ -1,6 +1,0 @@
-aid: adyen:adyen-legal-entity-api
-name: Adyen Legal Entity API
-description: >-
-  The Legal Entity Management API enables you to manage legal entities that
-  contain information required for verification.
-url: https://raw.githubusercontent.com/api-search/payments/main/_apis/adyen/apis.md

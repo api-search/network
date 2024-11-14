@@ -1,8 +1,0 @@
-aid: walmart:walmart-marketplace-utilities-api
-name: Walmart Marketplace Utilities API
-description: >-
-  The Utility APIs allow you to search for all Walmart item departments, all
-  categories within a department, or retrieve the taxonomy of categories per
-  Feed type.
-url: >-
-  https://raw.githubusercontent.com/api-search/commerce/main/_apis/walmart/apis.md

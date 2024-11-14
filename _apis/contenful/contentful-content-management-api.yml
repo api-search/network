@@ -1,7 +1,0 @@
-aid: contenful:contentful-content-management-api
-name: Contentful Content Management API
-description: >-
-  Contentful's Content Management API (CMA) helps you manage content in your
-  spaces. To learn more about how to model your content, read our modeling
-  guide.
-url: https://raw.githubusercontent.com/apis-json/artisanal/main/apis/contentful.yml

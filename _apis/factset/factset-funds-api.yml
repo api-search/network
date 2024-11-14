@@ -1,5 +1,0 @@
-aid: factset:factset-funds-api
-name: FactSet Funds API
-description: Reference and Time Series Mutual Fund Data
-url: >-
-  https://raw.githubusercontent.com/api-search/financial/main/_apis/factset/apis.md

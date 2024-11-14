@@ -1,5 +1,0 @@
-aid: microsoft-azure:batch-synthesis-api
-name: Batch synthesis API
-description: Batch synthesis API for text-to-speech.
-url: >-
-  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure-2/apis.md

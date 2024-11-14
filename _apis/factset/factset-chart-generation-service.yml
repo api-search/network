@@ -1,8 +1,0 @@
-aid: factset:factset-chart-generation-service
-name: FactSet Chart Generation Service
-description: >-
-  An API for getting chart images in the form of png or jpg based on various
-  parameters like ticker, benchmark, currency, frequency, start and end date
-  etc.
-url: >-
-  https://raw.githubusercontent.com/api-search/financial/main/_apis/factset/apis.md

@@ -1,7 +1,0 @@
-aid: microsoft-azure:database-threat-detection-policy-apis
-name: Database Threat Detection Policy APIs
-description: >-
-  Provides create, read and update functionality for database Threat Detection
-  policies.
-url: >-
-  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure-2/apis.md

@@ -1,7 +1,0 @@
-aid: microsoft-azure:azure-sql-database-capabilities
-name: Azure SQL Database capabilities
-description: >-
-  Describes the Azure SQL capabilities available to a subscription for a given
-  location.
-url: >-
-  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure-2/apis.md

@@ -1,5 +1,0 @@
-aid: factset:open-factset-partners-documents
-name: Open FactSet Partners - Documents
-description: 'Access to all job listing files provided by the OFM Partners: LinkUp'
-url: >-
-  https://raw.githubusercontent.com/api-search/financial/main/_apis/factset/apis.md

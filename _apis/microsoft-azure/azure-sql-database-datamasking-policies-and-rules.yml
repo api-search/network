@@ -1,7 +1,0 @@
-aid: microsoft-azure:azure-sql-database-datamasking-policies-and-rules
-name: Azure SQL Database Datamasking Policies and Rules
-description: >-
-  Provides create, read, update and delete functionality for Azure SQL Database
-  datamasking policies and rules.
-url: >-
-  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure-2/apis.md

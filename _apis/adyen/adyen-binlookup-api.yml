@@ -1,6 +1,0 @@
-aid: adyen:adyen-binlookup-api
-name: Adyen BinLookup API
-description: >-
-  The BIN Lookup API provides endpoints for retrieving information, such as cost
-  estimates, and 3D Secure supported version based on a given BIN.
-url: https://raw.githubusercontent.com/api-search/payments/main/_apis/adyen/apis.md

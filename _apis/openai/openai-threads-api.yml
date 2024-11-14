@@ -1,4 +1,0 @@
-aid: openai:openai-threads-api
-name: OpenAI Threads API
-description: Create threads that assistants can interact with.
-url: https://raw.githubusercontent.com/api-search/ai/main/_apis/openai/apis.md

@@ -1,8 +1,0 @@
-aid: stripe:stripe-climate-api
-name: Stripe Climate API
-description: >-
-  Stripe Climate is the easiest way to help promising permanent carbon removal
-  technologies launch and scale. Join a growing group of ambitious businesses
-  that are changing the course of carbon removal.
-url: >-
-  https://raw.githubusercontent.com/api-search/payments/main/_apis/stripe/apis.md

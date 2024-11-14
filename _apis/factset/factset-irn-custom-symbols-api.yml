@@ -1,8 +1,0 @@
-aid: factset:factset-irn-custom-symbols-api
-name: FactSet IRN Custom Symbols API
-description: >-
-  This API allows users to create, read, edit and delete IRN custom symbols as
-  well as configure settings in the Internal Research Notes Symbol Manager
-  application.
-url: >-
-  https://raw.githubusercontent.com/api-search/financial/main/_apis/factset/apis.md

@@ -1,5 +1,0 @@
-aid: microsoft-azure:dataplaneaccountclient
-name: DataPlaneAccountClient
-description: Creates a Microsoft.Purview data plane account client.
-url: >-
-  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure-2/apis.md

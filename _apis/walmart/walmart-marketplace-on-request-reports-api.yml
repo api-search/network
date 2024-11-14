@@ -1,9 +1,0 @@
-aid: walmart:walmart-marketplace-on-request-reports-api
-name: Walmart Marketplace On-Request Reports API
-description: >-
-  The On-request Reports API enables you to request item reports immediately
-  about your items for faster retrieval. Now you can request a report at any
-  time, subscribe to notifications that report is ready, and then you can
-  download it.
-url: >-
-  https://raw.githubusercontent.com/api-search/commerce/main/_apis/walmart/apis.md

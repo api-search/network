@@ -1,4 +1,0 @@
-aid: bunq:bunq-oauth-client-api
-name: Bunq Oauth Client API
-description: For managing OAuth clients through an API.
-url: https://raw.githubusercontent.com/api-search/banking/main/_apis/bunq/apis.md

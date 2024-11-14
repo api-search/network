@@ -1,7 +1,0 @@
-aid: factset:factset-open-factset-marketplace-api
-name: FactSet Open FactSet Marketplace API
-description: >-
-  Access FactSet's comprehensive catalog of Data Feeds, APIs and Technology
-  Solutions available on the Open FactSet Marketplace.
-url: >-
-  https://raw.githubusercontent.com/api-search/financial/main/_apis/factset/apis.md

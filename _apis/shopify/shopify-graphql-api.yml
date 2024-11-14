@@ -1,7 +1,0 @@
-aid: shopify:shopify-graphql-api
-name: Shopify GraphQL API
-description: >-
-  The Admin API lets you build apps and integrations that extend and enhance the
-  Shopify admin.
-url: >-
-  https://raw.githubusercontent.com/api-search/commerce/main/_apis/shopify/apis.md

@@ -1,7 +1,0 @@
-aid: seed:billing
-name: Billing
-description: >-
-  Streamline transaction processing and generate billing reports across multiple
-  business channels.
-url: >-
-  https://raw.githubusercontent.com/api-search/seed-platform/refs/heads/main/apis.yml

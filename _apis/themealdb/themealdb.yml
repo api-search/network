@@ -1,9 +1,0 @@
-aid: themealdb:themealdb
-name: TheMealDB
-description: >-
-  Free Recipe API Support. The API and site will always remain free at point of
-  access. Test API Keys. You can use the test API key 1 during development of
-  your app or for educational use (see test links below). However you must
-  become a supporter if releasing publicly on an appstore.
-url: >-
-  https://raw.githubusercontent.com/api-search/themealdb/refs/heads/main/apis.yml

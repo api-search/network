@@ -1,5 +1,0 @@
-aid: microsoft-azure-one-:applicationinsightscomponentlinkedstorageaccountsclient
-name: ApplicationInsightsComponentLinkedStorageAccountsClient
-description: Azure Application Insights client for setting linked storage account.
-url: >-
-  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure/apis.md

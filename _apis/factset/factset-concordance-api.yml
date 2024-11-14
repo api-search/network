@@ -1,8 +1,0 @@
-aid: factset:factset-concordance-api
-name: FactSet Concordance API
-description: >-
-  The FactSet Concordance API helps our users discover the respective FactSet
-  Entity & People identifier for a specific entity based off of a list of
-  provided corresponding attributes, such as Names, URLs, and Location.
-url: >-
-  https://raw.githubusercontent.com/api-search/financial/main/_apis/factset/apis.md

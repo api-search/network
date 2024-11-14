@@ -1,7 +1,0 @@
-aid: microsoft-azure-one-:attestationmanagementclient
-name: AttestationManagementClient
-description: >-
-  Various APIs for managing resources in attestation service. This primarily
-  encompasses per-provider management.
-url: >-
-  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure/apis.md

@@ -1,5 +1,0 @@
-aid: microsoft-azure-one-:application-insights-data-plane
-name: Application Insights Data Plane
-description: This API exposes AI metric & event information and associated metadata
-url: >-
-  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure/apis.md

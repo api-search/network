@@ -1,5 +1,0 @@
-aid: microsoft-azure-one-:azure-metrics
-name: Azure Metrics
-description: A client for issuing REST requests to the Azure metrics service.
-url: >-
-  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure/apis.md

@@ -1,7 +1,0 @@
-aid: stripe:stripe-credit-notes-api
-name: Stripe Credit Notes API
-description: >-
-  Issue a credit note to adjust an invoice's amount after the invoice is
-  finalized.
-url: >-
-  https://raw.githubusercontent.com/api-search/payments/main/_apis/stripe/apis.md

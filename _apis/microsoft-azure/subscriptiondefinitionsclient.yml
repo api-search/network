@@ -1,7 +1,0 @@
-aid: microsoft-azure:subscriptiondefinitionsclient
-name: SubscriptionDefinitionsClient
-description: >-
-  Subscription definitions client provides an interface to create, modify and
-  retrieve azure subscriptions programmatically.
-url: >-
-  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure-2/apis.md

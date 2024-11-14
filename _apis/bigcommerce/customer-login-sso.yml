@@ -1,5 +1,0 @@
-aid: bigcommerce:customer-login-sso
-name: Customer Login (SSO)
-description: Needs a description
-url: >-
-  https://raw.githubusercontent.com/apis-json/artisanal/main/apis/bigcommerce.yml

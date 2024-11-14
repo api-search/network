@@ -1,8 +1,0 @@
-aid: factset:factset-bookbuilder-api
-name: FactSet BookBuilder API
-description: >-
-  The BookBuilder API is a powerful tool that quickly combines FactSet's
-  detailed reports for companies of interest into polished pdfs that can be
-  read, saved down, and shared with others.
-url: >-
-  https://raw.githubusercontent.com/api-search/financial/main/_apis/factset/apis.md

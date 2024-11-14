@@ -1,7 +1,0 @@
-aid: stripe:stripe-customers-api
-name: Stripe Customers API
-description: >-
-  This object represents a customer of your business. Use it to create recurring
-  charges and track payments that belong to the same customer.
-url: >-
-  https://raw.githubusercontent.com/api-search/payments/main/_apis/stripe/apis.md

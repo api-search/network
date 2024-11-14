@@ -1,7 +1,0 @@
-aid: microsoft-azure:azure-schema-registry
-name: Azure Schema Registry
-description: >-
-  SchemaRegistryClient is a client for registering and retrieving schemas from
-  the Azure Schema Registry service.
-url: >-
-  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure-2/apis.md

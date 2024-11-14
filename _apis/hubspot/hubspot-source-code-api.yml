@@ -1,7 +1,0 @@
-aid: hubspot:hubspot-source-code-api
-name: HubSpot Source Code API
-description: >-
-  Endpoints for interacting with files in the CMS Developer File System. These
-  files include HTML templates, CSS, JS, modules, and other assets which are
-  used to create CMS content.
-url: https://raw.githubusercontent.com/apis-json/artisanal/main/apis/hubspot.yml

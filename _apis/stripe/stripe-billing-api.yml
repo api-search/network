@@ -1,5 +1,0 @@
-aid: stripe:stripe-billing-api
-name: Stripe Billing API
-description: Create and manage subscriptions, recurring payments, and recurring revenue.
-url: >-
-  https://raw.githubusercontent.com/api-search/payments/main/_apis/stripe/apis.md

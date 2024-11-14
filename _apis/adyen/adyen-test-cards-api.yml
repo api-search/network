@@ -1,8 +1,0 @@
-aid: adyen:adyen-test-cards-api
-name: Adyen Test Cards API
-description: >-
-  The Test Cards API provides endpoints for generating custom test card numbers.
-  For more information, refer to [Custom test
-  cards](https://docs.adyen.com/development-resources/testing/create-test-cards)
-  documentation.
-url: https://raw.githubusercontent.com/api-search/payments/main/_apis/adyen/apis.md

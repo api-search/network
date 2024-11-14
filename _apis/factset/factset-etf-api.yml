@@ -1,5 +1,0 @@
-aid: factset:factset-etf-api
-name: FactSet ETF API
-description: ETF Reference Data
-url: >-
-  https://raw.githubusercontent.com/api-search/financial/main/_apis/factset/apis.md

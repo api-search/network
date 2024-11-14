@@ -1,8 +1,0 @@
-aid: adyen:adyen-accounting-notifications-api
-name: Adyen Accounting Notifications API
-description: >-
-  Adyen sends notifications through webhooks to inform your system about
-  incoming and outgoing transfers in your platform. You can use these webhooks
-  to build your implementation. For example, you can use this information to
-  update balances in your own dashboards or to keep track of incoming funds.
-url: https://raw.githubusercontent.com/api-search/payments/main/_apis/adyen/apis.md

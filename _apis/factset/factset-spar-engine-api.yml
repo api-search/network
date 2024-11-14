@@ -1,9 +1,0 @@
-aid: factset:factset-spar-engine-api
-name: FactSet SPAR Engine API
-description: >-
-  Through the SPAR API (Style, Performance, and Risk) monitor your portfolios'
-  returns against equity and fixed income benchmarks, and peer universes, with
-  MPT risk statistics such as beta, standard deviation, r-squared, alpha, and
-  tracking error_
-url: >-
-  https://raw.githubusercontent.com/api-search/financial/main/_apis/factset/apis.md

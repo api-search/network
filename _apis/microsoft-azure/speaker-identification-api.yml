@@ -1,8 +1,0 @@
-aid: microsoft-azure:speaker-identification-api
-name: Speaker Identification API
-description: |-
-  This API is currently available in:
-
-  * West US - westus.api.cognitive.microsoft.com
-url: >-
-  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure-2/apis.md

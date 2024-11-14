@@ -1,8 +1,0 @@
-aid: factset:factset-real-time-time-series-api
-name: FactSet Real-Time Time Series API
-description: >-
-  Time series data, end-of-day or intraday, tick-by-tick or subsampled.
-  Additional vendor-specific endpoints provide a modified interface for seamless
-  integration with the ChartIQ chart library.
-url: >-
-  https://raw.githubusercontent.com/api-search/financial/main/_apis/factset/apis.md

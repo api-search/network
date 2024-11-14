@@ -1,6 +1,0 @@
-aid: blockfrost:blockfrost
-name: Blockfrost API
-description: >-
-  Tap into Cardano's potential with our comprehensive set of API endpoints.
-  Create dApps, transact and explore the blockchain.
-url: https://github.com/api-search/blockfrost/apis.yml

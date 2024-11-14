@@ -1,7 +1,0 @@
-aid: factset:factset-conversational-api-powered-by-factset-mercury
-name: FactSet Conversational API Powered by FactSet Mercury
-description: >-
-  The FactSet Conversational API allows clients to white-label core FactSet
-  Mercury capabilities in a client's chatbot experience.
-url: >-
-  https://raw.githubusercontent.com/api-search/financial/main/_apis/factset/apis.md

@@ -1,8 +1,0 @@
-aid: factset:factset-vault-api
-name: FactSet Vault API
-description: >-
-  Through the Vault API, request validated pre-calculated returns and
-  attribution data archived in Portfolio Vault to streamline your official
-  performance and reporting workflows.
-url: >-
-  https://raw.githubusercontent.com/api-search/financial/main/_apis/factset/apis.md

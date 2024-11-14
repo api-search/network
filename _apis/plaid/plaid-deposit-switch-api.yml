@@ -1,4 +1,0 @@
-aid: plaid:plaid-deposit-switch-api
-name: Plaid Deposit Switch API
-description: For managing deposit swtiches.
-url: https://raw.githubusercontent.com/api-search/banking/main/_apis/plaid/apis.md

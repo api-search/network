@@ -1,7 +1,0 @@
-aid: microsoft-azure-one-:paymentmanagementclient
-name: PaymentManagementClient
-description: >-
-  The billing client allows you to view and manage your billing details
-  programmatically.
-url: >-
-  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure/apis.md

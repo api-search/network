@@ -1,8 +1,0 @@
-aid: wolfram-alpha:llm-api
-name: Wolfram|Alpha LLM API
-description: >-
-  Get results optimized for use by a large language model with the LLM API.
-  Built on the same technology as the , the LLM API is built for use
-  specifically with large language models and chat products. It is implemented
-  in a standard REST protocol using HTTP GET requests.
-url: http://example.com/apis.json

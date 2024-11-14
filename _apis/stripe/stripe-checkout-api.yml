@@ -1,9 +1,0 @@
-aid: stripe:stripe-checkout-api
-name: Stripe Checkout API
-description: >-
-  Checkout is a low-code payment integration that creates a customizable form
-  for collecting payments. You can embed Checkout directly in your website or
-  redirect customers to a Stripe-hosted payment page. It supports one-time
-  payments and subscriptions and accepts over 40 local payment methods.
-url: >-
-  https://raw.githubusercontent.com/api-search/payments/main/_apis/stripe/apis.md

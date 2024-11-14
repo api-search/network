@@ -1,7 +1,0 @@
-aid: mapbox:mapbox-raster-tiles-api
-name: Mapbox Raster Tiles API
-description: >-
-  The Mapbox Raster Tiles API serves raster tiles generated from satellite
-  imagery tilesets and tilesets generated from raster data uploaded to
-  Mapbox.com.
-url: https://raw.githubusercontent.com/apis-json/artisanal/main/apis/mapbox.yml

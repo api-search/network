@@ -1,8 +1,0 @@
-aid: boycott-israeli-consumer-goods-dataset:boycott-israeli-consumer-goods-dataset
-name: Boycott Israeli Consumer Goods Dataset
-description: >-
-  Collating all consumer boycott and alternatives data into a single,
-  golden-source, version-controlled repository. This can be consumed by software
-  products and services. 
-url: >-
-  https://raw.githubusercontent.com/api-search/boycott-israeli-consumer-goods-dataset/refs/heads/main/apis.yml

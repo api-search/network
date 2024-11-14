@@ -1,7 +1,0 @@
-aid: plaid:plaid-sandb-ox-api
-name: Plaid Sandb ox API
-description: >-
-  The Plaid Sandbox is a free and fully-featured environment for application
-  development and testing. All Plaid functionality of both the Plaid API and
-  Plaid Link is supported in the Sandbox environment. 
-url: https://raw.githubusercontent.com/api-search/banking/main/_apis/plaid/apis.md

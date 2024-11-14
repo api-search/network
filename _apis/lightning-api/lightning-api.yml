@@ -1,8 +1,0 @@
-aid: lightning-api:lightning-api
-name: Lightning API
-description: >-
-  The Xweather lightning API delivers the precise location and characteristics
-  of every lightning strike globally. Get your lightning data directly from the
-  ...
-url: >-
-  https://raw.githubusercontent.com/api-search/lightning-api/refs/heads/main/apis.yml

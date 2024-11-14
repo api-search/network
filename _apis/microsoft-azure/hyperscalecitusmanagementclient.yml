@@ -1,9 +1,0 @@
-aid: microsoft-azure:hyperscalecitusmanagementclient
-name: HyperscaleCitusManagementClient
-description: >-
-  The Microsoft Azure management API provides create, read, update, and delete
-  functionality for Azure PostgreSQL Hyperscale (Citus) resources including
-  server groups, servers, databases, firewall rules, VNET rules, security alert
-  policies, log files and configurations.
-url: >-
-  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure-2/apis.md

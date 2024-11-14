@@ -1,8 +1,0 @@
-aid: microsoft-azure:azure-sql-server-api-spec
-name: Azure SQL Server API spec
-description: >-
-  The Azure SQL Server management API provides a RESTful set of web services
-  that interact with Azure SQL Server services to manage your databases. The API
-  enables users update server connection policy.
-url: >-
-  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure-2/apis.md

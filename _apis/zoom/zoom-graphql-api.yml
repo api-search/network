@@ -1,7 +1,0 @@
-aid: zoom:zoom-graphql-api
-name: Zoom GraphQL API
-description: >-
-  Zoom GraphQL is in a public beta. See the GraphQL beta FAQ for details.
-  GraphQL is a query language for APIs as well as a runtime environment for
-  filling those queries with data.
-url: https://raw.githubusercontent.com/api-search/videos/main/_apis/zoom/apis.md

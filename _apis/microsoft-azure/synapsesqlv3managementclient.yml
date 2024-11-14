@@ -1,5 +1,0 @@
-aid: microsoft-azure:synapsesqlv3managementclient
-name: SynapseSqlV3ManagementClient
-description: Azure Synapse Analytics APIs
-url: >-
-  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure-2/apis.md

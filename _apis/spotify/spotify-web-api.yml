@@ -1,7 +1,0 @@
-aid: spotify:spotify-web-api
-name: Spotify Web API
-description: >-
-  Spotify Web API enables the creation of applications that can interact with
-  Spotify's streaming service, such as retrieving content metadata, getting
-  recommendations, creating and managing playlists, or controlling playback.
-url: https://raw.githubusercontent.com/api-search/music/main/_apis/spotify/apis.md

@@ -1,7 +1,0 @@
-aid: factset:factset-portfolio
-name: FactSet Portfolio
-description: >-
-  Through the Portfolio API, you can accomplish what-if analysis by uploading a
-  paper portfolio to test out a new strategy or prospective opportunity.
-url: >-
-  https://raw.githubusercontent.com/api-search/financial/main/_apis/factset/apis.md

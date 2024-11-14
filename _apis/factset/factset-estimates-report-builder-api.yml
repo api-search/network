@@ -1,7 +1,0 @@
-aid: factset:factset-estimates-report-builder-api
-name: FactSet Estimates Report Builder API
-description: >-
-  The FactSet Estimates Report Builder APIs return consensus estimate data with
-  fiscal periods and line items structured in a presentation-ready format.
-url: >-
-  https://raw.githubusercontent.com/api-search/financial/main/_apis/factset/apis.md

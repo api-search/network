@@ -1,8 +1,0 @@
-aid: factset:factset-formula-api
-name: Factset Formula API
-description: >-
-  Use FactSet's flexible, formula-based API to retrieve data from almost all
-  available content sets FactSet offers through FactSet's FQL and Screening
-  formulas.
-url: >-
-  https://raw.githubusercontent.com/api-search/financial/main/_apis/factset/apis.md

@@ -1,7 +1,0 @@
-aid: stripe:stripe-events-api
-name: Stripe Events API
-description: >-
-  Events are our way of letting you know when something interesting happens in
-  your account. When an interesting event occurs, we create a new Event object.
-url: >-
-  https://raw.githubusercontent.com/api-search/payments/main/_apis/stripe/apis.md

@@ -1,7 +1,0 @@
-aid: factset:factset-irn-meetings-api
-name: FactSet IRN Meetings API
-description: >-
-  Meetings API allows users to extract, create, update and delete their meetings
-  and appointments in Internal Research Notes application.
-url: >-
-  https://raw.githubusercontent.com/api-search/financial/main/_apis/factset/apis.md

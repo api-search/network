@@ -1,6 +1,0 @@
-aid: plaid:plaid-accounts-api
-name: Plaid Accounts API
-description: >-
-  API reference for retrieving account information and seeing all possible
-  account types and subtypes
-url: https://raw.githubusercontent.com/api-search/banking/main/_apis/plaid/apis.md

@@ -1,5 +1,0 @@
-aid: factset:factset-company-logo-api-for-digital-portals
-name: FactSet Company Logo API for Digital Portals
-description: Logo images of listed companies (US, CA, EU)
-url: >-
-  https://raw.githubusercontent.com/api-search/financial/main/_apis/factset/apis.md

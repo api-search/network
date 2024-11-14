@@ -1,8 +1,0 @@
-aid: factset:factset-global-prices-api
-name: FactSet Global Prices API
-description: >-
-  FactSet Global Prices API currently covers listing and composite level prices,
-  volume, turnover, and VWAP data on a seven day week basis for a global equity
-  universe.
-url: >-
-  https://raw.githubusercontent.com/api-search/financial/main/_apis/factset/apis.md

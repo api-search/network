@@ -1,8 +1,0 @@
-aid: microsoft-azure-one-:azureanalysisservices
-name: AzureAnalysisServices
-description: >-
-  The Azure Analysis Services Web API provides a RESTful set of web services
-  that enables users to create, retrieve, update, and delete Analysis Services
-  servers
-url: >-
-  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure/apis.md

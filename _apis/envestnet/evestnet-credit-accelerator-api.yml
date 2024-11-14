@@ -1,8 +1,0 @@
-aid: envestnet:evestnet-credit-accelerator-api
-name: Envestnet Credit Accelerator API
-description: >-
-  The Envestnet D&A Credit LLC Credit Accelerator solution allows consumers to
-  link their accounts across financial institution(s) and generate a Credit
-  Accelerator File for use in loan underwriting or another credit review and
-  approval process.
-url: https://raw.githubusercontent.com/apis-json/artisanal/main/apis/envestnet.yml

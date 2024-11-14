@@ -1,8 +1,0 @@
-aid: plaid:plaid-consumer-report-api
-name: Plaid Consumer Report API
-description: >-
-  Consumer Report provides lenders, property managers, and buy now pay later
-  providers real-time visibility into a borrower's finances, along with signals
-  only made possible through our vantage point as the leading open banking
-  network.
-url: https://raw.githubusercontent.com/api-search/banking/main/_apis/plaid/apis.md

@@ -1,8 +1,0 @@
-aid: apis-io-engineering-platform:vscode
-name: VSCode
-description: >-
-  Visual Studio Code, also commonly referred to as VS Code, is an integrated
-  development environment developed by Microsoft for Windows, Linux, macOS and
-  web browsers.
-url: >-
-  https://raw.githubusercontent.com/api-search/engineering-platform/refs/heads/main/apis.yml

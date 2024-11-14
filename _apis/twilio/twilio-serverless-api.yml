@@ -1,7 +1,0 @@
-aid: twilio:twilio-serverless-api
-name: Twilio Serverless API
-description: >-
-  The new Serverless API empowers you to deploy Twilio Functions and Assets
-  programmatically.
-url: >-
-  https://raw.githubusercontent.com/api-search/messaging/main/_data/discord/overlays/apis-io-search.yml

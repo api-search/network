@@ -1,9 +1,0 @@
-aid: digital-ocean:digital-ocean-api
-name: Digital Ocean API
-description: >
-  The DigitalOcean API lets you programmatically manage your Droplets and other
-  resources using conventional HTTP requests. Any action that you can perform
-  through the DigitalOcean Control Panel (except for creating personal access
-  tokens) can also be performed with the API.
-url: >-
-  https://raw.githubusercontent.com/api-search/cloud/main/_apis/digital-ocean/apis.md

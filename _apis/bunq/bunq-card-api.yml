@@ -1,4 +1,0 @@
-aid: bunq:bunq-card-api
-name: Bunq Card API
-description: Managing cards and transactions made via cards.
-url: https://raw.githubusercontent.com/api-search/banking/main/_apis/bunq/apis.md

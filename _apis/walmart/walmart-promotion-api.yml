@@ -1,8 +1,0 @@
-aid: walmart:walmart-promotion-api
-name: Walmart Promotions API
-description: >-
-  Sellers can set regular or promotional prices for their items. Setting the
-  Promotional prices is an option to create unique pricing for events such as
-  clearance sales or to call out a comparison price
-url: >-
-  https://raw.githubusercontent.com/api-search/commerce/main/_apis/walmart/apis.md

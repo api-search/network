@@ -1,5 +1,0 @@
-aid: microsoft-azure:azure-site-recovery-management-service-api
-name: Azure Site Recovery Management Service API
-description: A first party Azure service enabling the data replication.
-url: >-
-  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure-2/apis.md

@@ -1,6 +1,0 @@
-aid: adyen:adyen-management-api
-name: Adyen Management API
-description: >-
-  Configure and manage your Adyen company and merchant accounts, stores, and
-  payment terminals.
-url: https://raw.githubusercontent.com/api-search/payments/main/_apis/adyen/apis.md

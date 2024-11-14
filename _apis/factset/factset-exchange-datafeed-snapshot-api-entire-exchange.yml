@@ -1,7 +1,0 @@
-aid: factset:factset-exchange-datafeed-snapshot-api-entire-exchange
-name: FactSet Exchange DataFeed Snapshot API - Entire Exchange
-description: >-
-  Provides clients access to Snapshot files created at 15-minute intervals for
-  an entire exchange
-url: >-
-  https://raw.githubusercontent.com/api-search/financial/main/_apis/factset/apis.md

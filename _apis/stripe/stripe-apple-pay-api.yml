@@ -1,9 +1,0 @@
-aid: stripe:stripe-apple-pay-api
-name: Stripe Apple Pay API
-description: >-
-  Stripe users can accept Apple Pay in iOS applications in iOS 9 and above, and
-  on the web in Safari starting with iOS 10 or macOS Sierra. There are no
-  additional fees to process Apple Pay payments, and the pricing is the same as
-  other card transactions.
-url: >-
-  https://raw.githubusercontent.com/api-search/payments/main/_apis/stripe/apis.md

@@ -1,8 +1,0 @@
-aid: openai:openai-files-api
-name: OpenAI Files API
-description: >-
-  Files are used to upload documents that can be used with features like
-  Assistants and Fine-tuning. Upload a file that can be used across various
-  endpoints. The size of all the files uploaded by one organization can be up to
-  100 GB.
-url: https://raw.githubusercontent.com/api-search/ai/main/_apis/openai/apis.md

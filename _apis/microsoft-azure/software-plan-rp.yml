@@ -1,7 +1,0 @@
-aid: microsoft-azure:software-plan-rp
-name: Software Plan RP
-description: >-
-  Azure software plans let users create and manage licenses for various software
-  used in Azure.
-url: >-
-  https://raw.githubusercontent.com/api-search/cloud/main/_apis/microsoft-azure-2/apis.md

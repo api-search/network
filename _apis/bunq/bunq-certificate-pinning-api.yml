@@ -1,4 +1,0 @@
-aid: bunq:bunq-certificate-pinning-api
-name: Bunq Certificate Pinning API
-description: Managing the pinned certificates for a user.
-url: https://raw.githubusercontent.com/api-search/banking/main/_apis/bunq/apis.md

@@ -1,6 +1,0 @@
-aid: weaviate:weaviate
-name: Weaviate API
-description: >-
-  Weaviate is an open source, AI-native vector database that helps developers
-  create intuitive and reliable AI-powered applications.
-url: https://raw.githubusercontent.com/api-search/ai/main/_apis/weaviate/apis.md

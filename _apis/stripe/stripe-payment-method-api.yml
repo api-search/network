@@ -1,8 +1,0 @@
-aid: stripe:stripe-payment-method-api
-name: Stripe Payment Method API
-description: >-
-  The Payment Methods API allows you to accept a variety of payment methods
-  through a single API. A PaymentMethod object contains the payment method
-  details to create payments.
-url: >-
-  https://raw.githubusercontent.com/api-search/payments/main/_apis/stripe/apis.md

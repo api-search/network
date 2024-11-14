@@ -1,7 +1,0 @@
-aid: apis-io-engineering-platform:aws-lambda
-name: AWS Lambda
-description: >-
-  AWS Lambda is an event-driven, serverless Function as a Service provided by
-  Amazon as a part of Amazon Web Services.
-url: >-
-  https://raw.githubusercontent.com/api-search/engineering-platform/refs/heads/main/apis.yml

@@ -1,7 +1,0 @@
-aid: stripe:stripe-transfers-api
-name: Stripe Transfers API
-description: >-
-  A Transfer object is created when you move funds between Stripe accounts as
-  part of Connect.
-url: >-
-  https://raw.githubusercontent.com/api-search/payments/main/_apis/stripe/apis.md

@@ -1,6 +1,0 @@
-aid: plaid:plaid-webhook-verification-api
-name: Plaid Webhook Verification API
-description: >-
-  Plaid signs all outgoing webhooks so that you can verify the authenticity of
-  any incoming webhooks to your application. 
-url: https://raw.githubusercontent.com/api-search/banking/main/_apis/plaid/apis.md

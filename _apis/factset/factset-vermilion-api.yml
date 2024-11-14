@@ -1,9 +1,0 @@
-aid: factset:factset-vermilion-api
-name: FactSet Vermilion API
-description: >-
-  The Vermilion API, enables users to programmatically access FactSet's
-  Vermilion Reporting Suite (VRS) and seamlessly integrate into customer's 3rd
-  party applications. The API is referred to as two key product initiatives, the
-  REST API and the SCIM API.
-url: >-
-  https://raw.githubusercontent.com/api-search/financial/main/_apis/factset/apis.md

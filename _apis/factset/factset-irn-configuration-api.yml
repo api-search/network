@@ -1,7 +1,0 @@
-aid: factset:factset-irn-configuration-api
-name: FactSet IRN Configuration API
-description: >-
-  Config API allows users to read and update configuration and settings of the
-  Internal Research Notes.
-url: >-
-  https://raw.githubusercontent.com/api-search/financial/main/_apis/factset/apis.md

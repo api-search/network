@@ -1,6 +1,0 @@
-aid: fulcrum:fulcrum
-name: Fulcrum
-description: >-
-  The Photos API gives you access to a records photos, including thumbnails. In
-  order to upload a record with photos, you must first upload each photo ...
-url: https://raw.githubusercontent.com/api-search/fulcrum/refs/heads/main/apis.yml

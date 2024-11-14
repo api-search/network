@@ -1,7 +1,0 @@
-aid: ebay:media-api
-name: Media API
-description: >-
-  The Media API allows third-party developers to create, upload, and fetch
-  videos using the primary methods and fields listed in the sections that
-  follow.
-url: https://raw.githubusercontent.com/api-search/commerce/main/_apis/ebay/apis.md

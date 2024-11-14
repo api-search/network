@@ -1,6 +1,0 @@
-aid: bubbles:bubbles
-name: Bubbles
-description: >-
-  Bubbles API features allow you to set up incoming and outgoing requests to
-  communicate with other applications and services 
-url: https://raw.githubusercontent.com/api-search/bubbles/refs/heads/main/apis.yml

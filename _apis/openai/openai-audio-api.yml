@@ -1,7 +1,0 @@
-aid: openai:openai-audio-api
-name: OpenAI Audio API
-description: >-
-  The Audio API provides two speech to text endpoints, transcriptions and
-  translations, based on our state-of-the-art open source large-v2 Whisper
-  model.
-url: https://raw.githubusercontent.com/api-search/ai/main/_apis/openai/apis.md

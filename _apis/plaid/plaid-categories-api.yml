@@ -1,6 +1,0 @@
-aid: plaid:plaid-categories-api
-name: Plaid Categories API
-description: >-
-  To access detailed information on categories returned by Plaid, simply make a
-  request to the /categories/get endpoint of the API.
-url: https://raw.githubusercontent.com/api-search/banking/main/_apis/plaid/apis.md

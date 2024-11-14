@@ -1,7 +1,0 @@
-aid: alpha-vantage:alpha-vantage
-name: Alpha Vantage
-description: >-
-  API Documentation for Alpha Vantage. Alpha Vantage offers free JSON APIs for
-  realtime and historical stock market data & options data with ...
-url: >-
-  https://raw.githubusercontent.com/api-search/alpha-vantage/refs/heads/main/apis.yml
