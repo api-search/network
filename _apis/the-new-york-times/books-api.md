@@ -1,4 +1,5 @@
 ---
+aid: the-new-york-times:books-api
 name: Books API
 tags: []
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg

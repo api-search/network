@@ -17,9 +17,10 @@ properties:
     type: GitHubActions
   - url: https://developer.apis.io/documentation/
     type: Documentation
-  - url: >-
-      https://github.com/api-search/authentication-api/blob/main/properties/openapi.yml
+  - url: properties/openapi.yml
     type: OpenAPI
-description: 'This is the API for authenticating with APIs.io APIs. '
+description: >-
+  This is the API for managing authentication that are used to govern the
+  APIs.io search engine.
 
 ---

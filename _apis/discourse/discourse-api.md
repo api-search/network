@@ -1,19 +1,14 @@
 ---
 aid: discourse:discourse-api
 name: Discourse API
-tags:
-  - Forums
-  - Community
+tags: []
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 baseURL: https://api.example.com
 contact:
   - FN: Discourse Support
     url: https://meta.discourse.org/t/what-is-discourse-api/166416
     email: ''
-humanURL: https://developer.example.com
-overlays:
-  - url: overlays/https://docs.discourse.org/openapi.json-openapi-search.yml
-    type: APIs.io Search
+humanURL: https://www.discourse.org/
 properties:
   - url: https://docs.discourse.org/
     type: Documentation

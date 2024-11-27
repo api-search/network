@@ -2,45 +2,8 @@
 aid: adyen:adyen-checkout-api
 name: Adyen Checkout API
 tags:
-  - Amount
-  - Apple
-  - Authorised
-  - Available
-  - Balance
-  - Brands
-  - Cancel
-  - Cancels
-  - Capture
-  - Captured
-  - Captures
-  - Cards
-  - Details
-  - Domains
-  - Donations
-  - Gifts
-  - Keys
-  - Link
-  - Links
-  - Methods
-  - 'On'
-  - Orders
-  - Origin
-  - Pay
+  - Checkout
   - Payments
-  - Psp
-  - References
-  - Refunds
-  - Results
-  - Reversals
-  - Sessions
-  - Status
-  - Stored
-  - Submit
-  - The
-  - Tokens
-  - Transactions
-  - Values
-  - Verify
 humanURL: https://docs.adyen.com/api-explorer/Checkout/latest/overview
 overlays:
   - url: overlays/checkout-openapi-search.yml

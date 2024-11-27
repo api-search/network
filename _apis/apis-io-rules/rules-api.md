@@ -4,7 +4,12 @@ name: APIs.io Rules API
 tags:
   - Rules
 image: https://kinlane-productions2.s3.amazonaws.com/apis-io/apis-io-api-logo.jpg
-rules:
+baseURL: https://rules-api.apis.io
+contact:
+  - FN: APIs.io
+    email: info@apis.io
+humanURL: https://developer.apis.io/documentation
+properties:
   - url: https://github.com/api-search/rules-api
     type: GitHubRepository
   - url: >-
@@ -12,13 +17,10 @@ rules:
     type: GitHubActions
   - url: https://developer.apis.io/documentation/
     type: Documentation
-  - url: https://github.com/api-search/rules-api/blob/main/rules/openapi.yml
+  - url: properties/openapi.yml
     type: OpenAPI
-baseURL: https://rules-api.apis.io
-contact:
-  - FN: APIs.io
-    email: info@apis.io
-humanURL: https://developer.apis.io/documentation
-description: This is the API for powering APIs.io.
+description: >-
+  This is the API for managing rules that are used to govern the APIs.io search
+  engine.
 
 ---

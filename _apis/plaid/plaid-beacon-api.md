@@ -23,4 +23,9 @@ properties:
   - url: https://plaid.com/docs/api/products/beacon/
     type: Documentation
 description: API reference for Beacon endpoints and webhooks.
+
+---/
+    type: Documentation
+description: API reference for Beacon endpoints and webhooks.
+
 ---

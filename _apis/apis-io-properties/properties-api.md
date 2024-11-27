@@ -17,8 +17,7 @@ properties:
     type: GitHubActions
   - url: https://developer.apis.io/documentation/
     type: Documentation
-  - url: >-
-      https://github.com/api-search/properties-api/blob/main/properties/openapi.yml
+  - url: properties/openapi.yml
     type: OpenAPI
 description: This is the API for powering APIs.io.
 

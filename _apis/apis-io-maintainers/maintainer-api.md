@@ -1,6 +1,6 @@
 ---
 aid: apis-io-maintainers:maintainer-api
-name: APIs.io Maintainer API
+name: APIs.io Maintainers API
 tags:
   - Maintainer
 image: https://kinlane-productions2.s3.amazonaws.com/apis-io/apis-io-api-logo.jpg
@@ -17,9 +17,10 @@ properties:
     type: GitHubActions
   - url: https://developer.apis.io/documentation/
     type: Documentation
-  - url: >-
-      https://github.com/api-search/maintainer-api/blob/main/properties/openapi.yml
+  - url: properties/openapi.yml
     type: OpenAPI
-description: This is the API for powering APIs.io.
+description: >-
+  This is the API for managing all the maintainers who are indexed as part of
+  the APIs.io search engine.
 
 ---

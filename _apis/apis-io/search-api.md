@@ -12,34 +12,34 @@ contact:
     email: info@apis.io
 humanURL: https://developer.apis.io/documentation
 properties:
-  - url: https://github.com/api-search/search-api/blob/main/team.yml
+  - url: https://github.com/api-evangelist/search-api/blob/main/team.yml
     type: Teams
-  - url: https://github.com/api-search/search-api
+  - url: https://github.com/api-evangelist/search-api
     type: GitHubRepository
   - url: >-
-      https://github.com/api-search/search-api/blob/main/.github/workflows/pipeline.yml
+      https://github.com/api-evangelist/search-api/blob/main/.github/workflows/pipeline.yml
     type: GitHubActions
   - url: https://developer.apis.io/documentation/
     type: Documentation
-  - url: https://github.com/api-search/search-api/blob/main/openapi.yml
+  - url: https://github.com/api-evangelist/search-api/blob/main/openapi.yml
     type: OpenAPI
   - url: >-
-      https://www.postman.com/api-evangelist/apis-io-api-search-engine/collection/hn8xpmd/apis-io-search-api
+      https://www.postman.com/api-evangelist/apis-io-api-evangelist-engine/collection/hn8xpmd/apis-io-search-api
     type: PostmanCollection
   - url: >-
       https://us-east-1.console.aws.amazon.com/apigateway/main/apis/ibmwu99rx3/stages
     type: Gateway
   - url: >-
-      https://www.postman.com/api-evangelist/apis-io-api-search-engine/environment/35240-f6035e55-e9f8-41b8-a2d8-b7ac4cd127bb/production
+      https://www.postman.com/api-evangelist/apis-io-api-evangelist-engine/environment/35240-f6035e55-e9f8-41b8-a2d8-b7ac4cd127bb/production
     type: StagingEnvironment
   - url: >-
-      https://www.postman.com/api-evangelist/apis-io-api-search-engine/environment/35240-f6035e55-e9f8-41b8-a2d8-b7ac4cd127bb/production
+      https://www.postman.com/api-evangelist/apis-io-api-evangelist-engine/environment/35240-f6035e55-e9f8-41b8-a2d8-b7ac4cd127bb/production
     type: GatewayEnvironment
-  - url: https://github.com/api-search/search-api/labels/change-log
+  - url: https://github.com/api-evangelist/search-api/labels/change-log
     type: ChangeLog
-  - url: https://github.com/api-search/search-api/labels/road-map
+  - url: https://github.com/api-evangelist/search-api/labels/road-map
     type: RoadMap
-  - url: https://github.com/api-search/search-api/blob/main/use-cases.yml
+  - url: https://github.com/api-evangelist/search-api/blob/main/use-cases.yml
     type: UseCases
   - url: >-
       https://www.postman.com/api-evangelist/apis-io/monitor/APIs-io-Search---Status~1ef6bc29-9da9-4040-b98b-cef03be1155e

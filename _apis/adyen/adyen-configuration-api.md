@@ -2,43 +2,11 @@
 aid: adyen:adyen-configuration-api
 name: Adyen Configuration API
 tags:
-  - Accounts
-  - Available
-  - Balance
-  - Bank
-  - Calculate
-  - Card Orders
+  - Configurations
   - Cards
-  - Change
-  - Forms
-  - Grants
-  - Groups
-  - Holders
-  - Identification
-  - Instruments
-  - Items
-  - Keys
-  - Linked
-  - Networks
-  - Offers
-  - Orders
-  - Payments
-  - Pin
-  - Pins
-  - Platforms
-  - Public
-  - Reveal
-  - Routes
-  - Rules
-  - Sweep
-  - Sweeps
-  - Taxes
-  - The
-  - Tokens
-  - Transactions
-  - Transfers
-  - Under
-  - Validate
+  - Balance Accounts
+  - Business Accounts
+  - Accounts
 overlays:
   - url: overlays/configuration-openapi-search.yml
     type: APIs.io Search

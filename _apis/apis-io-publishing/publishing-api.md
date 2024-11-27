@@ -9,7 +9,7 @@ contact:
   - FN: APIs.io
     email: info@apis.io
 humanURL: https://developer.apis.io/documentation
-publishing:
+properties:
   - url: https://github.com/api-search/publishing-api
     type: GitHubRepository
   - url: >-
@@ -17,8 +17,7 @@ publishing:
     type: GitHubActions
   - url: https://developer.apis.io/documentation/
     type: Documentation
-  - url: >-
-      https://github.com/api-search/publishing-api/blob/main/publishing/openapi.yml
+  - url: properties/openapi.yml
     type: OpenAPI
 description: This is the API for powering APIs.io.
 
