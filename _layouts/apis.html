@@ -4,12 +4,14 @@ layout: default
 {% assign date_format = site.date_format | default: "%b %-d, %Y" %}
 <a name="{{ page.name }}"></a>
 <h3>{{ page.name }}</h3>
-<img src="{{ page.image }}" width="25%" align="right" style="padding: 25px;">{{ page.image }}
 <p><i>{{ page.modified | date: date_format }}</i></p>
 <p>{{ page.description | strip_html | strip_newlines }}</p> 
-<h4>Base Properties</h4>
+<h4>Properties</h4>
+{% assign aid = page.aid | split: ":" %}
 <ul id="">
     <li><a href="{{ page.humanURL }}">Human URL</a></li>
+    <li><a href="https://github.com/api-evangelist/{{ aid[0] }}">GitHub Repo</a></li>
+    <li><a href="https://github.com/api-evangelist/{{ aid[0] }}/apis.yml">APIs.json Index</a></li>
     {% if page.baseURL != 'https://api.example.com' %}
         <li><a href="{{ page.baseURL }}">Base URL</a></li>
     {% endif %}
@@ -17,7 +19,8 @@ layout: default
         <li><a href="{{ property.url }}">{{ property.type }}</a></li>
     {% endfor %}    
 </ul>             
-
+{% assign number_of_tags = page.tags | size %}
+{% if number_of_tags > 0 %}
 <h4>Tags</h4>
 <ul id="">
     {% for tag in page.tags %}
@@ -26,6 +29,7 @@ layout: default
         {% endif %}
     {% endfor %}    
 </ul> 
+{% endif %}
 
 <div class="container text-center" style="width: 75%;margin-top:50px;"></div>
     {% include partner.html %} 
