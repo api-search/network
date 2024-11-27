@@ -6,7 +6,6 @@ image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jp
 baseURL: https://api.example.com
 humanURL: >-
   https://developer.mastercard.com/account-to-account-commerce-for-dsp/documentation/
-overlays: []
 properties:
   - url: >-
       https://developer.mastercard.com/account-to-account-commerce-for-dsp/documentation/
