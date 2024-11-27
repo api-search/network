@@ -11,6 +11,54 @@ properties:
   - url: >-
       https://developer.mastercard.com/account-to-account-commerce-for-dsp/documentation/
     type: Documentation
+  - url: >-
+      https://developer.mastercard.com/account-to-account-commerce-for-dsp/documentation/getting-started/
+    name: >-
+      Getting Started | Account to Account Commerce for Debtor Service Providers
+      | Mastercard Developers
+    type: GettingStarted
+  - url: >-
+      https://developer.mastercard.com/account-to-account-commerce-for-dsp/documentation/use-cases/
+    name: >-
+      Use Cases | Account to Account Commerce for Debtor Service Providers |
+      Mastercard Developers
+    type: UseCases
+  - url: >-
+      https://developer.mastercard.com/account-to-account-commerce-for-dsp/documentation/tutorials-and-guides/
+    name: >-
+      Tutorials and Guides | Account to Account Commerce for Debtor Service
+      Providers | Mastercard Developers
+    type: Tutorials
+  - url: >-
+      https://developer.mastercard.com/account-to-account-commerce-for-dsp/documentation/testing/
+    name: >-
+      Testing | Account to Account Commerce for Debtor Service Providers |
+      Mastercard Developers
+    type: Testing
+  - url: >-
+      https://developer.mastercard.com/account-to-account-commerce-for-dsp/documentation/code-and-formats/error-codes/
+    name: >-
+      Error Codes | Account to Account Commerce for Debtor Service Providers |
+      Mastercard Developers
+    type: Errors
+  - url: >-
+      https://developer.mastercard.com/account-to-account-commerce-for-dsp/documentation/support/#faq
+    name: >-
+      Support | Account to Account Commerce for Debtor Service Providers |
+      Mastercard Developers
+    type: FAQ
+  - url: >-
+      https://developer.mastercard.com/account-to-account-commerce-for-dsp/documentation/support/#get-help
+    name: >-
+      Support | Account to Account Commerce for Debtor Service Providers |
+      Mastercard Developers
+    type: Support
+  - url: >-
+      https://developer.mastercard.com/account-to-account-commerce-for-dsp/documentation/release-history/
+    name: >-
+      Release History | Account to Account Commerce for Debtor Service Providers
+      | Mastercard Developers
+    type: ChangeLog
 description: >-
   Online checkouts can be frustrating and tedious. As shopping habits shift to
   digital, consumers and merchants require secure and streamlined online
