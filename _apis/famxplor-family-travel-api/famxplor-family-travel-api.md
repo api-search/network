@@ -3,9 +3,9 @@ aid: famxplor-family-travel-api:famxplor-family-travel-api
 name: Famxplor Family Travel API
 tags:
   - API
-humanURL: http://famxplor.com/apis.yml
+humanURL: https://famxplor.com/
 properties:
-  - url: http://famxplor.com/apis.yml
+  - url: https://famxplor.com/api
     type: Documentation
 description: >-
   The First API 100% Dedicated to Family Travel. Designed for developers, travel
