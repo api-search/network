@@ -2,7 +2,9 @@
 aid: famxplor-family-travel-api:famxplor-family-travel-api
 name: Famxplor Family Travel API
 tags:
-  - API
+  - Travel
+  - Family
+  - Activities
 humanURL: https://famxplor.com/
 properties:
   - url: https://famxplor.com/api
