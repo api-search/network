@@ -11,9 +11,11 @@ layout: default
 <ul id="">
     <li><a href="{{ page.humanURL }}">Human URL</a></li>
     <li><a href="https://github.com/api-evangelist/{{ aid[0] }}">GitHub Repo</a></li>
-    <li><a href="https://github.com/api-evangelist/{{ aid[0] }}/apis.yml">APIs.json Index</a></li>
-    {% if page.baseURL != 'https://api.example.com' %}
-        <li><a href="{{ page.baseURL }}">Base URL</a></li>
+    <li><a href="https://github.com/api-evangelist/{{ aid[0] }}/blob/main/apis.yml">APIs.json Index</a></li>
+    {% if page.baseURL %}
+        {% if page.baseURL != 'https://api.example.com' %}
+            <li><a href="{{ page.baseURL }}">Base URL</a></li>
+        {% endif %}
     {% endif %}
     {% for property in page.properties %}
         <li><a href="{{ property.url }}">{{ property.type }}</a></li>
