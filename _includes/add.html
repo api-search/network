@@ -36,19 +36,19 @@
                 }
                 response.json().then(function(data) {	
 
-                    if(data.response == 'The API has been added to the APIs.io inbox for review.'){
+                    if(data.message == 'The API has been added to the APIs.io inbox for review.'){
                         var display_response = data.response + ' (<a href="' + data.issue + '" target="_blank">Issue</a>)';
                         document.getElementById("success-alert").innerHTML = display_response;
                         document.getElementById("success-alert").style.display = '';
                         //setTimeout(hideAlert, 5000);  
                     }
-                    else if(data.response == 'APIs.json has already been indexed.'){
+                    else if(data.message == 'APIs.json has already been indexed.'){
                         document.getElementById("warning-alert").innerHTML = data.response;
                         document.getElementById("warning-alert").style.display = '';
                         setTimeout(hideAlert, 5000);  
                     }      
                     else{
-                        if(data.response){
+                        if(data.message){
                             document.getElementById("danger-alert").innerHTML = data.response;
                             document.getElementById("danger-alert").style.display = '';
                             setTimeout(hideAlert, 5000);  
