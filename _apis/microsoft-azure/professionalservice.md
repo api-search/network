@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:professionalservice
 name: ProfessionalService
 tags:
   - Tag

@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:azure-openai-api-version-2022-12-01
 name: Azure OpenAI API version 2022-12-01
 tags:
   - Tag

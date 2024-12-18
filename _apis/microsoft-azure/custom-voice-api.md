@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:custom-voice-api
 name: Custom voice API
 tags:
   - Tag

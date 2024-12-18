@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:azuresphereproviderclient
 name: AzureSphereProviderClient
 tags:
   - Tag

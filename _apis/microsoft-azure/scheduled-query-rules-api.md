@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:scheduled-query-rules-api
 name: Scheduled Query Rules API
 tags:
   - Tag

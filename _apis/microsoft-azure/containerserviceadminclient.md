@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:containerserviceadminclient
 name: ContainerServiceAdminClient
 tags:
   - Tag

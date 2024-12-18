@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:managedprivateendpointsclient
 name: ManagedPrivateEndpointsClient
 tags:
   - Tag

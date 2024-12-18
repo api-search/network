@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:storsimple8000seriesmanagementclient
 name: StorSimple8000SeriesManagementClient
 tags:
   - Tag

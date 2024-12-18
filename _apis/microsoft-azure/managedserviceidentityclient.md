@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:managedserviceidentityclient
 name: ManagedServiceIdentityClient
 tags:
   - Tag

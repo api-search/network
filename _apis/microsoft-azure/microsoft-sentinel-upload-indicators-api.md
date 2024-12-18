@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:microsoft-sentinel-upload-indicators-api
 name: Microsoft Sentinel Upload Indicators API
 tags:
   - Tag

@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:networkmanager
 name: NetworkManager
 tags:
   - Tag

@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:azure-openai-api-version-2023-03-15-preview
 name: Azure OpenAI API version 2023-03-15-preview
 tags:
   - Tag

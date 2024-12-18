@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:programmable-connectivity
 name: Programmable Connectivity
 tags:
   - Tag

@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:azure-video-analyzer
 name: Azure Video Analyzer
 tags:
   - Tag

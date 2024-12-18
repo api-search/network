@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:hyperscalecitusmanagementclient
 name: HyperscaleCitusManagementClient
 tags:
   - Tag

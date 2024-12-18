@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:purview-share-client
 name: Purview Share Client
 tags:
   - Tag

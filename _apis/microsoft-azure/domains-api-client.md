@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:domains-api-client
 name: Domains API Client
 tags:
   - Tag

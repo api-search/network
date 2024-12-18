@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:microsoft-playwrighttesting-authmanager-service-api
 name: Microsoft PlaywrightTesting AuthManager Service API
 tags:
   - Tag

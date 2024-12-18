@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:backupmanagementclient
 name: BackupManagementClient
 tags:
   - Tag

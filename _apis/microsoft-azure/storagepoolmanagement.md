@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:storagepoolmanagement
 name: StoragePoolManagement
 tags:
   - Tag

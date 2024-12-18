@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:azure-blob-storage
 name: Azure Blob Storage
 tags:
   - Tag

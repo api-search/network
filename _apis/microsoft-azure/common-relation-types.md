@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:common-relation-types
 name: Common Relation types
 tags:
   - Tag

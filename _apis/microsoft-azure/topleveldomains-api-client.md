@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:topleveldomains-api-client
 name: TopLevelDomains API Client
 tags:
   - Tag

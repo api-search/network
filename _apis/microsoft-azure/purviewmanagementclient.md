@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:purviewmanagementclient
 name: PurviewManagementClient
 tags:
   - Tag

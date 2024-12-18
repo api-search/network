@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:guest-diagnostic-settings-api
 name: Guest Diagnostic Settings API
 tags:
   - Tag

@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:sqlmanagementclient
 name: SqlManagementClient
 tags:
   - Tag

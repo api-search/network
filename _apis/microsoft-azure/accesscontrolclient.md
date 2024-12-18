@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:accesscontrolclient
 name: AccessControlClient
 tags:
   - Tag

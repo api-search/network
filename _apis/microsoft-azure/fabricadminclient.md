@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:fabricadminclient
 name: FabricAdminClient
 tags:
   - Tag

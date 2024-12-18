@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:policyeventsclient
 name: PolicyEventsClient
 tags:
   - Tag

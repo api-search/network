@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:custom-vision-training-client
 name: Custom Vision Training Client
 tags:
   - Tag

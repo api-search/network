@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:azure-maps-web-feature-service
 name: Azure Maps Web Feature Service
 tags:
   - Tag

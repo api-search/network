@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:storage-cache-mgmt-client
 name: Storage Cache Mgmt Client
 tags:
   - Tag

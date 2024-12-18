@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:azure-orbital
 name: Azure Orbital
 tags:
   - Tag

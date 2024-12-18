@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:containerappsrevisions-api-client
 name: ContainerAppsRevisions API Client
 tags:
   - Tag

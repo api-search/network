@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:vm-insights-onboarding-api
 name: VM Insights Onboarding API
 tags:
   - Tag

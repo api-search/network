@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:purview-distribution-service-rest-api-document
 name: Purview Distribution Service REST API Document
 tags:
   - Tag

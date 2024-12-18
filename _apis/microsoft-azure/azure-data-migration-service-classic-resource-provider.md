@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:azure-data-migration-service-classic-resource-provider
 name: Azure Data Migration Service (classic) Resource Provider
 tags:
   - Tag

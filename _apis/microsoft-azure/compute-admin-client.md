@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:compute-admin-client
 name: Compute Admin Client
 tags:
   - Tag

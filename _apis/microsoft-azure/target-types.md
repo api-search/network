@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:target-types
 name: Target Types
 tags:
   - Tag

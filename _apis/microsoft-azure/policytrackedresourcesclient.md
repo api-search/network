@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:policytrackedresourcesclient
 name: PolicyTrackedResourcesClient
 tags:
   - Tag

@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:recommendationsservice
 name: RecommendationsService
 tags:
   - Tag

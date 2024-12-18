@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:powerbidedicated
 name: PowerBIDedicated
 tags:
   - Tag

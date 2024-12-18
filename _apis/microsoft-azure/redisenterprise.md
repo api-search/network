@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:redisenterprise
 name: redisEnterprise
 tags:
   - Tag

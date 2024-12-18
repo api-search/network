@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:sqlvirtualmachinemanagementclient
 name: SqlVirtualMachineManagementClient
 tags:
   - Tag

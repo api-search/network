@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:microsoft-netapp
 name: Microsoft NetApp
 tags:
   - Tag

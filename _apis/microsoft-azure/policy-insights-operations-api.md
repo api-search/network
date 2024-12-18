@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:policy-insights-operations-api
 name: Policy Insights Operations API
 tags:
   - Tag

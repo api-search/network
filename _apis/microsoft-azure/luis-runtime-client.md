@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:luis-runtime-client
 name: LUIS Runtime Client
 tags:
   - Tag

@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:storageactionsmanagementclient
 name: StorageActionsManagementClient
 tags:
   - Tag

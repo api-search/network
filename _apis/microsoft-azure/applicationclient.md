@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:applicationclient
 name: ApplicationClient
 tags:
   - Tag

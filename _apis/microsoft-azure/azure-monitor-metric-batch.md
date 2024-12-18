@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:azure-monitor-metric-batch
 name: Azure Monitor Metric Batch
 tags:
   - Tag

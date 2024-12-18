@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:securityadminconfiguration
 name: SecurityAdminConfiguration
 tags:
   - Tag

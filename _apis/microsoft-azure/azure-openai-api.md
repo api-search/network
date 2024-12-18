@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:azure-openai-api
 name: Azure OpenAI API
 tags:
   - Tag

@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:microsoft-azureplaywrightservice-management-api
 name: Microsoft AzurePlaywrightService Management API
 tags:
   - Tag

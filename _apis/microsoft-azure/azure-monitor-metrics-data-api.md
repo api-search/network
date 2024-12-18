@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:azure-monitor-metrics-data-api
 name: Azure Monitor Metrics Data API
 tags:
   - Tag

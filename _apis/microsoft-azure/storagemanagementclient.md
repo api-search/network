@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:storagemanagementclient
 name: StorageManagementClient
 tags:
   - Tag

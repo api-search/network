@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:hdinsight-on-aks-management-client
 name: HDInsight on AKS Management Client
 tags:
   - Tag

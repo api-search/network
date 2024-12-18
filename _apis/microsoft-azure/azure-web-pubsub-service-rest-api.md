@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:azure-web-pubsub-service-rest-api
 name: Azure Web PubSub Service REST API
 tags:
   - Tag

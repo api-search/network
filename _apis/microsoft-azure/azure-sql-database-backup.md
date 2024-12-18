@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:azure-sql-database-backup
 name: Azure SQL Database Backup
 tags:
   - Tag

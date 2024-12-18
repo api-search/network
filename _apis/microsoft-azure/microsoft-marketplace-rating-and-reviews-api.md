@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:microsoft-marketplace-rating-and-reviews-api
 name: Microsoft Marketplace Rating And Reviews API
 tags:
   - Tag

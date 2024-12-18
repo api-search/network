@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:azure-queue-storage
 name: Azure Queue Storage
 tags:
   - Tag

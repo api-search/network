@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:azure-sql-database-datamasking-policies-and-rules
 name: Azure SQL Database Datamasking Policies and Rules
 tags:
   - Tag

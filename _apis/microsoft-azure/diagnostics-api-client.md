@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:diagnostics-api-client
 name: Diagnostics API Client
 tags:
   - Tag

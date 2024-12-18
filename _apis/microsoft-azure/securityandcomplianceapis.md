@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:securityandcomplianceapis
 name: SecurityAndComplianceAPIs
 tags:
   - Tag

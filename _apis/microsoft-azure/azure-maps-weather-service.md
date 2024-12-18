@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:azure-maps-weather-service
 name: Azure Maps Weather Service
 tags:
   - Tag

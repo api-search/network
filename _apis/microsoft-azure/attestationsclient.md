@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:attestationsclient
 name: AttestationsClient
 tags:
   - Tag

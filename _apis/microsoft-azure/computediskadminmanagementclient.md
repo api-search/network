@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:computediskadminmanagementclient
 name: ComputeDiskAdminManagementClient
 tags:
   - Tag

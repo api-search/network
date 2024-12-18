@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:managedapplicationclient
 name: ManagedApplicationClient
 tags:
   - Tag

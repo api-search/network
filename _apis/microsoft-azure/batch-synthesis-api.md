@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:batch-synthesis-api
 name: Batch synthesis API
 tags:
   - Tag

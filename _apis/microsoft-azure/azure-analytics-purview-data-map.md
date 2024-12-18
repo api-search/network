@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:azure-analytics-purview-data-map
 name: Azure Analytics Purview Data Map
 tags:
   - Tag

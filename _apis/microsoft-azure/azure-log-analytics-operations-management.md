@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:azure-log-analytics-operations-management
 name: Azure Log Analytics - Operations Management
 tags:
   - Tag

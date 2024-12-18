@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:changesclient
 name: ChangesClient
 tags:
   - Tag

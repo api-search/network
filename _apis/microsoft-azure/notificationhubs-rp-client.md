@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:notificationhubs-rp-client
 name: NotificationHubs RP Client
 tags:
   - Tag

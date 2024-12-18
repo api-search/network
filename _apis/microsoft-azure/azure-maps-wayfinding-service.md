@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:azure-maps-wayfinding-service
 name: Azure Maps Wayfinding Service
 tags:
   - Tag

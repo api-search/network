@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:policystatesclient
 name: PolicyStatesClient
 tags:
   - Tag

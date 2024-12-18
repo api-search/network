@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:purviewpolicyclient
 name: PurviewPolicyClient
 tags:
   - Tag

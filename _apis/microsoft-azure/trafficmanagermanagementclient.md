@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:trafficmanagermanagementclient
 name: TrafficManagerManagementClient
 tags:
   - Tag

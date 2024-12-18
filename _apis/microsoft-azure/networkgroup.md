@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:networkgroup
 name: NetworkGroup
 tags:
   - Tag

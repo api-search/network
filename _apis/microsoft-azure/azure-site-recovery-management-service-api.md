@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:azure-site-recovery-management-service-api
 name: Azure Site Recovery Management Service API
 tags:
   - Tag

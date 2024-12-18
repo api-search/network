@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:azure-vmware-solution-api
 name: Azure VMware Solution API
 tags:
   - Tag

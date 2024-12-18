@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:mediaservicesmanagementclient
 name: MediaServicesManagementClient
 tags:
   - Tag

@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:global-api-client
 name: Global API Client
 tags:
   - Tag

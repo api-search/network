@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:servicefabricmanagementclient
 name: ServiceFabricManagementClient
 tags:
   - Tag

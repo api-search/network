@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:scvmm
 name: SCVMM
 tags:
   - Tag

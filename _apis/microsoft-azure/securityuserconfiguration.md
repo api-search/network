@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:securityuserconfiguration
 name: SecurityUserConfiguration
 tags:
   - Tag

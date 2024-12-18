@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:common-types
 name: Common Types
 tags:
   - Tag

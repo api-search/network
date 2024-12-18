@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:diskresourceproviderclient
 name: DiskResourceProviderClient
 tags:
   - Tag

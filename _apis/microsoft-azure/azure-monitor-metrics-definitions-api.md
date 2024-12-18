@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:azure-monitor-metrics-definitions-api
 name: Azure Monitor Metrics Definitions API
 tags:
   - Tag

@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:monitorclient
 name: MonitorClient
 tags:
   - Tag

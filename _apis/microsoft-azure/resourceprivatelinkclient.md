@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:resourceprivatelinkclient
 name: ResourcePrivateLinkClient
 tags:
   - Tag

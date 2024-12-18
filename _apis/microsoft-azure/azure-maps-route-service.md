@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:azure-maps-route-service
 name: Azure Maps Route Service
 tags:
   - Tag

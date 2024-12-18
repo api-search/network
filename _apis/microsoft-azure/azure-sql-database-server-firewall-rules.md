@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:azure-sql-database-server-firewall-rules
 name: Azure SQL Database server firewall rules
 tags:
   - Tag

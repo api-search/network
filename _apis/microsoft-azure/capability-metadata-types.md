@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:capability-metadata-types
 name: Capability Metadata Types
 tags:
   - Tag

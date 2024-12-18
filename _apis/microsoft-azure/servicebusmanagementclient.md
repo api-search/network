@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:servicebusmanagementclient
 name: ServiceBusManagementClient
 tags:
   - Tag

@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:domainregistrationprovider-api-client
 name: DomainRegistrationProvider API Client
 tags:
   - Tag

@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:redisenterprisemanagementclient
 name: RedisEnterpriseManagementClient
 tags:
   - Tag

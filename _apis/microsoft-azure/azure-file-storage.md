@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:azure-file-storage
 name: Azure File Storage
 tags:
   - Tag

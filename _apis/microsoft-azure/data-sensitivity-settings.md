@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:data-sensitivity-settings
 name: Data Sensitivity Settings
 tags:
   - Tag

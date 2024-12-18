@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:speaker-identification-api
 name: Speaker Identification API
 tags:
   - Tag

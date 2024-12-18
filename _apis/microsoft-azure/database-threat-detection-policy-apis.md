@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:database-threat-detection-policy-apis
 name: Database Threat Detection Policy APIs
 tags:
   - Tag

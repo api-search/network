@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:purview-devops-policies-rest-api-document
 name: Purview devops policies REST API Document
 tags:
   - Tag

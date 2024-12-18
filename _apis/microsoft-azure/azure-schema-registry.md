@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:azure-schema-registry
 name: Azure Schema Registry
 tags:
   - Tag

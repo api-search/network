@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:azure-easm
 name: Azure EASM
 tags:
   - Tag

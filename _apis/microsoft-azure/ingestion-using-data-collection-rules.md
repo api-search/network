@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:ingestion-using-data-collection-rules
 name: Ingestion Using Data Collection Rules
 tags:
   - Tag

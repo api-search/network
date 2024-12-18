@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:custom-vision-prediction-client
 name: Custom Vision Prediction Client
 tags:
   - Tag

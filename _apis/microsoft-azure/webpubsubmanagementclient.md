@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:webpubsubmanagementclient
 name: WebPubSubManagementClient
 tags:
   - Tag

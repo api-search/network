@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:managementlinkclient
 name: ManagementLinkClient
 tags:
   - Tag

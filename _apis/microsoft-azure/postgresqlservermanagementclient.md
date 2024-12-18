@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:postgresqlservermanagementclient
 name: PostgreSQLServerManagementClient
 tags:
   - Tag

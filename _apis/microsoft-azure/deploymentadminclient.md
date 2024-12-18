@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:deploymentadminclient
 name: DeploymentAdminClient
 tags:
   - Tag

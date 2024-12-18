@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:privatednsmanagementclient
 name: PrivateDnsManagementClient
 tags:
   - Tag

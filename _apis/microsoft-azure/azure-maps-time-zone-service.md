@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:azure-maps-time-zone-service
 name: Azure Maps Time Zone Service
 tags:
   - Tag

@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:gallerymanagementclient
 name: GalleryManagementClient
 tags:
   - Tag

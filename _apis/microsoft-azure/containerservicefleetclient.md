@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:containerservicefleetclient
 name: ContainerServiceFleetClient
 tags:
   - Tag

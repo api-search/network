@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:logicappsmanagementclient
 name: LogicAppsManagementClient
 tags:
   - Tag

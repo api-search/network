@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:security-center
 name: Security Center
 tags:
   - Tag

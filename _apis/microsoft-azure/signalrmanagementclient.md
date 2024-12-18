@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:signalrmanagementclient
 name: SignalRManagementClient
 tags:
   - Tag

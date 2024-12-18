@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:resourcehealthmetadata-api-client
 name: ResourceHealthMetadata API Client
 tags:
   - Tag

@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:powerplatform
 name: PowerPlatform
 tags:
   - Tag

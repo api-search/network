@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:providerhub
 name: ProviderHub
 tags:
   - Tag

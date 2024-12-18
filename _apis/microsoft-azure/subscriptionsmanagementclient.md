@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:subscriptionsmanagementclient
 name: SubscriptionsManagementClient
 tags:
   - Tag

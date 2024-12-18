@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:azure-cosmos-db-for-postgresql
 name: Azure Cosmos DB for PostgreSQL
 tags:
   - Tag

@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:vi
 name: vi
 tags:
   - Tag

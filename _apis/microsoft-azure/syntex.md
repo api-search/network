@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:syntex
 name: Syntex
 tags:
   - Tag

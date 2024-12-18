@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:portal
 name: portal
 tags:
   - Tag

@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:website-management-client
 name: WebSite Management Client
 tags:
   - Tag

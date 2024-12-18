@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:infrastructureinsightsmanagementclient
 name: InfrastructureInsightsManagementClient
 tags:
   - Tag

@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:azure-red-hat-openshift-client
 name: Azure Red Hat OpenShift Client
 tags:
   - Tag

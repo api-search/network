@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:policymetadataclient
 name: PolicyMetadataClient
 tags:
   - Tag

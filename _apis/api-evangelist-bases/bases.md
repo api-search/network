@@ -21,7 +21,7 @@ properties:
   - url: https://github.com/api-evangelist/bases/blob/main/openapi.yml
     type: OpenAPI
 description: >-
-  This is the API base for the API Evangelist bases API, inventorying all of the
-  APIs managed through the platform.
+  This is the API base for the API Evangelist Bases API, providing base
+  implementations that others can follow.
 
 ---

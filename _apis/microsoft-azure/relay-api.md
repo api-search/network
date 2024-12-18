@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:relay-api
 name: Relay API
 tags:
   - Tag

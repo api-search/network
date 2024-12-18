@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:provider-api-client
 name: Provider API Client
 tags:
   - Tag

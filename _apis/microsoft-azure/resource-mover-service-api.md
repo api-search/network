@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:resource-mover-service-api
 name: Resource Mover Service API
 tags:
   - Tag

@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:webapps-api-client
 name: WebApps API Client
 tags:
   - Tag

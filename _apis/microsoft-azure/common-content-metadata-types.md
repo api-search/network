@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:common-content-metadata-types
 name: Common content metadata types
 tags:
   - Tag

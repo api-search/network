@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:azure-media-services
 name: Azure Media Services
 tags:
   - Tag

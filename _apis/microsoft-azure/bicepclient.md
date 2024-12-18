@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:bicepclient
 name: BicepClient
 tags:
   - Tag

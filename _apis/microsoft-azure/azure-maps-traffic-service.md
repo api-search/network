@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:azure-maps-traffic-service
 name: Azure Maps Traffic Service
 tags:
   - Tag

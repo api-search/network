@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:storageimportexport
 name: StorageImportExport
 tags:
   - Tag

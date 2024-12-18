@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:azure-monitor-operations-api
 name: Azure Monitor Operations API
 tags:
   - Tag

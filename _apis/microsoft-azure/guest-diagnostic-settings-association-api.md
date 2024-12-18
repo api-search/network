@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:guest-diagnostic-settings-association-api
 name: Guest Diagnostic Settings Association API
 tags:
   - Tag

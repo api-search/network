@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:snapshotsclient
 name: SnapshotsClient
 tags:
   - Tag

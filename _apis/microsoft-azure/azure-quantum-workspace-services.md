@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:azure-quantum-workspace-services
 name: Azure Quantum Workspace Services
 tags:
   - Tag

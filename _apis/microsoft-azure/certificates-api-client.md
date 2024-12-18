@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:certificates-api-client
 name: Certificates API Client
 tags:
   - Tag

@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:recommendations-api-client
 name: Recommendations API Client
 tags:
   - Tag

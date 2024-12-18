@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:microsoft-insights-api
 name: Microsoft Insights API
 tags:
   - Tag

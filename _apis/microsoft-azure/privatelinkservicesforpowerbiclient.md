@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:privatelinkservicesforpowerbiclient
 name: PrivateLinkServicesForPowerBIClient
 tags:
   - Tag

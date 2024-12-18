@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:managementlockclient
 name: ManagementLockClient
 tags:
   - Tag

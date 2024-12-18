@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:siterecoverymanagementclient
 name: SiteRecoveryManagementClient
 tags:
   - Tag

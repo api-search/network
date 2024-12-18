@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:componentpolicystatesclient
 name: ComponentPolicyStatesClient
 tags:
   - Tag

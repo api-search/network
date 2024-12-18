@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:runcommandsclient
 name: RunCommandsClient
 tags:
   - Tag

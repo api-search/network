@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:azure-migrate
 name: Azure Migrate
 tags:
   - Tag

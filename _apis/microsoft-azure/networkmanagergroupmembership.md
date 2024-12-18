@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:networkmanagergroupmembership
 name: NetworkManagerGroupMembership
 tags:
   - Tag

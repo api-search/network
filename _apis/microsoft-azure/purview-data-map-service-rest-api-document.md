@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:purview-data-map-service-rest-api-document
 name: Purview Data Map Service REST API Document
 tags:
   - Tag

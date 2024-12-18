@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:storagemoverclient
 name: StorageMoverClient
 tags:
   - Tag

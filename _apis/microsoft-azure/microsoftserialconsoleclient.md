@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:microsoftserialconsoleclient
 name: MicrosoftSerialConsoleClient
 tags:
   - Tag

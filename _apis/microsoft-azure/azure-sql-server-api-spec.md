@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:azure-sql-server-api-spec
 name: Azure SQL Server API spec
 tags:
   - Tag

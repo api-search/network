@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:security-insights
 name: Security Insights
 tags:
   - Tag

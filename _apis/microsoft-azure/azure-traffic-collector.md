@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:azure-traffic-collector
 name: Azure Traffic Collector
 tags:
   - Tag

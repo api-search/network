@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:subscriptionclient
 name: SubscriptionClient
 tags:
   - Tag

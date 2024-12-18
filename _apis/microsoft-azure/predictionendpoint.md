@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:predictionendpoint
 name: PredictionEndpoint
 tags:
   - Tag

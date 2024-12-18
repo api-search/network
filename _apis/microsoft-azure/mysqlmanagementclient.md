@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:mysqlmanagementclient
 name: MySQLManagementClient
 tags:
   - Tag

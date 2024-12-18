@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:seabreezemanagementclient
 name: SeaBreezeManagementClient
 tags:
   - Tag

@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:azure-monitor-workspaces-control-plane-api
 name: Azure Monitor Workspaces Control Plane API
 tags:
   - Tag

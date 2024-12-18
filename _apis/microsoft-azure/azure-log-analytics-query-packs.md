@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:azure-log-analytics-query-packs
 name: Azure Log Analytics Query Packs
 tags:
   - Tag

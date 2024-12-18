@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:networkmanageractiveconfiguration
 name: NetworkManagerActiveConfiguration
 tags:
   - Tag

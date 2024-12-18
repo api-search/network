@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:expressroutecrossconnection-rest-apis
 name: ExpressRouteCrossConnection REST APIs
 tags:
   - Tag

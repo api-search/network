@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:synapsesqlv3managementclient
 name: SynapseSqlV3ManagementClient
 tags:
   - Tag

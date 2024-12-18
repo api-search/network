@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:networksecurityperimeter
 name: NetworkSecurityPerimeter
 tags:
   - Tag

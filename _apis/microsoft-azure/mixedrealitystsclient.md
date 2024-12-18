@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:mixedrealitystsclient
 name: MixedRealityStsClient
 tags:
   - Tag

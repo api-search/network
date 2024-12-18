@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:defender-easm
 name: Defender EASM
 tags:
   - Tag

@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:workloads-client
 name: Workloads Client
 tags:
   - Tag

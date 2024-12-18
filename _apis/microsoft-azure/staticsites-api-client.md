@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:staticsites-api-client
 name: StaticSites API Client
 tags:
   - Tag

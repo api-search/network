@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:azure-maps-search-service
 name: Azure Maps Search Service
 tags:
   - Tag

@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:purview-catalog-service-rest-api-document
 name: Purview Catalog Service REST API Document
 tags:
   - Tag

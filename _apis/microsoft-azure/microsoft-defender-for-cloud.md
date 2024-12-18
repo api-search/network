@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:microsoft-defender-for-cloud
 name: Microsoft Defender for Cloud
 tags:
   - Tag

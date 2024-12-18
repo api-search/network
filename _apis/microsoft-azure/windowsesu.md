@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:windowsesu
 name: windowsesu
 tags:
   - Tag

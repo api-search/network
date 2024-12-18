@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:arg-query-generation
 name: ARG Query Generation
 tags:
   - Tag

@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:azure-log-analytics
 name: Azure Log Analytics
 tags:
   - Tag

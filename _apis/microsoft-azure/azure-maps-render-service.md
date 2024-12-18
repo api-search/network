@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:azure-maps-render-service
 name: Azure Maps Render Service
 tags:
   - Tag

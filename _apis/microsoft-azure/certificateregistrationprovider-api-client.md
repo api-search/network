@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:certificateregistrationprovider-api-client
 name: CertificateRegistrationProvider API Client
 tags:
   - Tag

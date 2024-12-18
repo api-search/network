@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:azure-openai-api-version-2022-06-01-preview
 name: Azure OpenAI API version 2022-06-01-preview
 tags:
   - Tag

@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:notificationhubsmanagementclient
 name: NotificationHubsManagementClient
 tags:
   - Tag

@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:kubeenvironments-api-client
 name: KubeEnvironments API Client
 tags:
   - Tag

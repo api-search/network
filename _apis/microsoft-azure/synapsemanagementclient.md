@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:synapsemanagementclient
 name: SynapseManagementClient
 tags:
   - Tag

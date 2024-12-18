@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:azure-data-lake-storage-rest-api
 name: Azure Data Lake Storage REST API
 tags:
   - Tag

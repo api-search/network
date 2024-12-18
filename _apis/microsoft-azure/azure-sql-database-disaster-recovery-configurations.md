@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:azure-sql-database-disaster-recovery-configurations
 name: Azure SQL Database disaster recovery configurations
 tags:
   - Tag

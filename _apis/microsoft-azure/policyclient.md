@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:policyclient
 name: PolicyClient
 tags:
   - Tag

@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:azure-migrate-assessment-service
 name: Azure Migrate Assessment Service
 tags:
   - Tag

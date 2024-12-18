@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:power-bi-embedded-management-client
 name: Power BI Embedded Management Client
 tags:
   - Tag

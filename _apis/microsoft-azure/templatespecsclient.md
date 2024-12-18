@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:templatespecsclient
 name: TemplateSpecsClient
 tags:
   - Tag

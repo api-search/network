@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:azure-sql-database-replication-links
 name: Azure SQL Database replication links
 tags:
   - Tag

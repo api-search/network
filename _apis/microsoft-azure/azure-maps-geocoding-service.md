@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:azure-maps-geocoding-service
 name: Azure Maps Geocoding Service
 tags:
   - Tag

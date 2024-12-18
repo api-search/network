@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:saas
 name: SaaS
 tags:
   - Tag

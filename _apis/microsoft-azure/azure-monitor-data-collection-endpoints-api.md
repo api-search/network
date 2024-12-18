@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:azure-monitor-data-collection-endpoints-api
 name: Azure Monitor Data Collection Endpoints API
 tags:
   - Tag

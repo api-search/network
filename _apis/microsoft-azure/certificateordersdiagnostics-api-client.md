@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:certificateordersdiagnostics-api-client
 name: CertificateOrdersDiagnostics API Client
 tags:
   - Tag

@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:common-definitions
 name: Common Definitions
 tags:
   - Tag

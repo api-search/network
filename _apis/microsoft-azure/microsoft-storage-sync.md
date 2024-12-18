@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:microsoft-storage-sync
 name: Microsoft Storage Sync
 tags:
   - Tag

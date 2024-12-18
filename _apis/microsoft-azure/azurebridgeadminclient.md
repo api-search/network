@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:azurebridgeadminclient
 name: AzureBridgeAdminClient
 tags:
   - Tag

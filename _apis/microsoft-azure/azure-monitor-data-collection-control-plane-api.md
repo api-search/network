@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:azure-monitor-data-collection-control-plane-api
 name: Azure Monitor Data Collection Control Plane API
 tags:
   - Tag

@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:computediagnosticresourceproviderclient
 name: ComputeDiagnosticResourceProviderClient
 tags:
   - Tag

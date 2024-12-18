@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:cloudservicemanagementclient
 name: CloudServiceManagementClient
 tags:
   - Tag

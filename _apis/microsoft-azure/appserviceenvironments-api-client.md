@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:appserviceenvironments-api-client
 name: AppServiceEnvironments API Client
 tags:
   - Tag

@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:purview-metadata-policies-service-rest-api-document
 name: Purview Metadata Policies Service REST API Document
 tags:
   - Tag

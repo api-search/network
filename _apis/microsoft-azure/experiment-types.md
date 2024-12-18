@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:experiment-types
 name: Experiment Types
 tags:
   - Tag

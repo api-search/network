@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:capability-types
 name: Capability Types
 tags:
   - Tag

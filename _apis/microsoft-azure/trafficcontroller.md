@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:trafficcontroller
 name: TrafficController
 tags:
   - Tag

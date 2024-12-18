@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:azure-action-groups-api
 name: Azure Action Groups API
 tags:
   - Tag

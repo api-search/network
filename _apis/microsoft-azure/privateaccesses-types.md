@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:privateaccesses-types
 name: PrivateAccesses types
 tags:
   - Tag

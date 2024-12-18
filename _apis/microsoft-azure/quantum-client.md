@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:quantum-client
 name: Quantum Client
 tags:
   - Tag

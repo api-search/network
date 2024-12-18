@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:featureclient
 name: FeatureClient
 tags:
   - Tag

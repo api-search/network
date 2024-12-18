@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:common-alert-types
 name: Common Alert types
 tags:
   - Tag

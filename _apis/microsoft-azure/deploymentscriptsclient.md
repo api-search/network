@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:deploymentscriptsclient
 name: DeploymentScriptsClient
 tags:
   - Tag

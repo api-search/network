@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:networkmanagereffectiveconfiguration
 name: NetworkManagerEffectiveConfiguration
 tags:
   - Tag

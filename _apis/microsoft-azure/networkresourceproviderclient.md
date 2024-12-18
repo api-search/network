@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:networkresourceproviderclient
 name: NetworkResourceProviderClient
 tags:
   - Tag

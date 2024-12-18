@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:communitygalleryserviceclient
 name: CommunityGalleryServiceClient
 tags:
   - Tag

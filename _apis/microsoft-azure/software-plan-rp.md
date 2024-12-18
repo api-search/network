@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:software-plan-rp
 name: Software Plan RP
 tags:
   - Tag

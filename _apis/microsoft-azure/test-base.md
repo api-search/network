@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:test-base
 name: Test Base
 tags:
   - Tag

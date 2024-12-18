@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:sparkclient
 name: SparkClient
 tags:
   - Tag

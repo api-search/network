@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:offazurespringboot
 name: OffAzureSpringBoot
 tags:
   - Tag

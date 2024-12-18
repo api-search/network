@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:azure-sql-database
 name: Azure SQL Database
 tags:
   - Tag

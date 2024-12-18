@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:api-client
 name: ' API Client'
 tags:
   - Tag

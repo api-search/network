@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:azure-maps-tileset-service
 name: Azure Maps Tileset Service
 tags:
   - Tag

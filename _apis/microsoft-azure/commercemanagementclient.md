@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:commercemanagementclient
 name: CommerceManagementClient
 tags:
   - Tag

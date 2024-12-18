@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:artifactsclient
 name: ArtifactsClient
 tags:
   - Tag

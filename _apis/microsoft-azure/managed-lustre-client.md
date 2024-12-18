@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:managed-lustre-client
 name: Managed Lustre client
 tags:
   - Tag

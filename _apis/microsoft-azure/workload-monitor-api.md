@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:workload-monitor-api
 name: Workload Monitor API
 tags:
   - Tag

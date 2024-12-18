@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:azure-activity-log-alerts-api
 name: Azure Activity Log Alerts API
 tags:
   - Tag

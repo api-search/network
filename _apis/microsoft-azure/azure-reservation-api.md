@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:azure-reservation-api
 name: Azure Reservation API
 tags:
   - Tag

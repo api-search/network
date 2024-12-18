@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:mixedrealityremoterendering
 name: MixedRealityRemoteRendering
 tags:
   - Tag

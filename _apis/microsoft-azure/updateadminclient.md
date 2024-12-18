@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:updateadminclient
 name: UpdateAdminClient
 tags:
   - Tag

@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:purview-workflow-service
 name: Purview Workflow Service
 tags:
   - Tag

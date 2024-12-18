@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:speaker-verification-api
 name: Speaker Verification API
 tags:
   - Tag

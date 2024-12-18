@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:storage
 name: Storage
 tags:
   - Tag

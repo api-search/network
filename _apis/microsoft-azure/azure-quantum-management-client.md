@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:azure-quantum-management-client
 name: Azure Quantum Management Client
 tags:
   - Tag

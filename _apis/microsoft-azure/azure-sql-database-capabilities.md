@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:azure-sql-database-capabilities
 name: Azure SQL Database capabilities
 tags:
   - Tag

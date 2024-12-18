@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:sharedgalleryserviceclient
 name: SharedGalleryServiceClient
 tags:
   - Tag

@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:service-fabric-client-apis
 name: Service Fabric Client APIs
 tags:
   - Tag

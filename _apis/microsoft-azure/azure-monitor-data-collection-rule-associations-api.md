@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:azure-monitor-data-collection-rule-associations-api
 name: Azure Monitor Data Collection Rule Associations API
 tags:
   - Tag

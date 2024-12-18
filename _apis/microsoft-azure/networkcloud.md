@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:networkcloud
 name: NetworkCloud
 tags:
   - Tag

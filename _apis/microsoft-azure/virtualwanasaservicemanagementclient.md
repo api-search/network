@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:virtualwanasaservicemanagementclient
 name: VirtualWANAsAServiceManagementClient
 tags:
   - Tag

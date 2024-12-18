@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:resourcemanagementclient
 name: ResourceManagementClient
 tags:
   - Tag

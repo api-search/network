@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:deploymentstacksclient
 name: DeploymentStacksClient
 tags:
   - Tag

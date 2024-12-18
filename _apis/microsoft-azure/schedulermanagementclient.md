@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:schedulermanagementclient
 name: SchedulerManagementClient
 tags:
   - Tag

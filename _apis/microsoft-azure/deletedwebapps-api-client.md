@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:deletedwebapps-api-client
 name: DeletedWebApps API Client
 tags:
   - Tag

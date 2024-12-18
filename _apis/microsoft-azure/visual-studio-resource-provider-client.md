@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:visual-studio-resource-provider-client
 name: Visual Studio Resource Provider Client
 tags:
   - Tag

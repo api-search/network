@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:searchserviceclient
 name: SearchServiceClient
 tags:
   - Tag

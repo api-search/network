@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:common-incident-types
 name: Common Incident types
 tags:
   - Tag

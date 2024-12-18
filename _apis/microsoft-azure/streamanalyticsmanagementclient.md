@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:streamanalyticsmanagementclient
 name: StreamAnalyticsManagementClient
 tags:
   - Tag

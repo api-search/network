@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:azure-video-analyzer-for-edge
 name: Azure Video Analyzer for Edge
 tags:
   - Tag

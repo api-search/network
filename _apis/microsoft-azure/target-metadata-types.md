@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:target-metadata-types
 name: Target Metadata Types
 tags:
   - Tag

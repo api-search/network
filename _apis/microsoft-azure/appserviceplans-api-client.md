@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:appserviceplans-api-client
 name: AppServicePlans API Client
 tags:
   - Tag

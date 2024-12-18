@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:azure-tenant-action-groups-api
 name: Azure Tenant Action Groups API
 tags:
   - Tag

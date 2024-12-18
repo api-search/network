@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:vnetclient
 name: VnetClient
 tags:
   - Tag

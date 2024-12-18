@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:storagemanagement
 name: StorageManagement
 tags:
   - Tag

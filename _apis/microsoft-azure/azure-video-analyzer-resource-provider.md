@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:azure-video-analyzer-resource-provider
 name: Azure Video Analyzer Resource Provider
 tags:
   - Tag

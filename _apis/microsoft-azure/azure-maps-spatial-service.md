@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:azure-maps-spatial-service
 name: Azure Maps Spatial Service
 tags:
   - Tag

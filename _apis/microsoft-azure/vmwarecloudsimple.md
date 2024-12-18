@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:vmwarecloudsimple
 name: VMwareCloudSimple
 tags:
   - Tag

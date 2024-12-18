@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:peeringmanagementclient
 name: PeeringManagementClient
 tags:
   - Tag

@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:recoveryservicesclient
 name: RecoveryServicesClient
 tags:
   - Tag

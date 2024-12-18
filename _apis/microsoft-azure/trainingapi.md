@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:trainingapi
 name: TrainingApi
 tags:
   - Tag

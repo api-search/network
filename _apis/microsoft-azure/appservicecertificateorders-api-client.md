@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:appservicecertificateorders-api-client
 name: AppServiceCertificateOrders API Client
 tags:
   - Tag

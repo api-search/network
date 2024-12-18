@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:purview-self-service-policies-rest-api-document
 name: Purview self-service Policies REST API Document
 tags:
   - Tag

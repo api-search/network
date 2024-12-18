@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:appliances
 name: appliances
 tags:
   - Tag

@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:dataplaneaccountclient
 name: DataPlaneAccountClient
 tags:
   - Tag

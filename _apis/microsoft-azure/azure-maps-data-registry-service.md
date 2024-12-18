@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:azure-maps-data-registry-service
 name: Azure Maps Data Registry Service
 tags:
   - Tag

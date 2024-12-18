@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:searchindexclient
 name: SearchIndexClient
 tags:
   - Tag

@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:checkpolicyrestrictionsclient
 name: CheckPolicyRestrictionsClient
 tags:
   - Tag

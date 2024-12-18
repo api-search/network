@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:remediationsclient
 name: RemediationsClient
 tags:
   - Tag

@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:common-entity-types
 name: Common Entity types
 tags:
   - Tag

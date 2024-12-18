@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:open-energy-platform-management-service-apis
 name: Open Energy Platform Management Service APIs
 tags:
   - Tag

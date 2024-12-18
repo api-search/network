@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:storsimplemanagementclient
 name: StorSimpleManagementClient
 tags:
   - Tag

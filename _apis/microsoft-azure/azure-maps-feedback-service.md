@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:azure-maps-feedback-service
 name: Azure Maps Feedback Service
 tags:
   - Tag

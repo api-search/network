@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:aoa-front-end-apis
 name: AOA front end APIs
 tags:
   - Tag

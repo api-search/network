@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:luis-authoring-client
 name: LUIS Authoring Client
 tags:
   - Tag

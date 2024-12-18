@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:service-map
 name: Service Map
 tags:
   - Tag

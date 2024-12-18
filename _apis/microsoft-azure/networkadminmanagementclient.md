@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:networkadminmanagementclient
 name: NetworkAdminManagementClient
 tags:
   - Tag

@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:scopeconnections
 name: ScopeConnections
 tags:
   - Tag

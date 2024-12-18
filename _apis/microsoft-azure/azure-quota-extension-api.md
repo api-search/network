@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:azure-quota-extension-api
 name: Azure Quota Extension API
 tags:
   - Tag

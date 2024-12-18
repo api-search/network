@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:azure-resource-graph
 name: Azure Resource Graph
 tags:
   - Tag

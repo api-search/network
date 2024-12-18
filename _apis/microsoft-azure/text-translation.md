@@ -1,4 +1,5 @@
 ---
+aid: microsoft-azure:text-translation
 name: Text Translation
 tags:
   - Tag
