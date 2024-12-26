@@ -263,7 +263,7 @@ Searching across <div id="total_networks" style="display: inline;">0</div> netwo
                 }
             };	
     
-        fetch('{{ site.search_url }}?search=' + query,options)
+        fetch('{{ site.search_url }}?search=' + query + "&searchFields=name,description,tags",options)
             .then(function(response) {
                 if (!response.ok) {
                     console.log('Error with Status Code: ' + response.status);
