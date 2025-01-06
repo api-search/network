@@ -1,6 +1,6 @@
 ---
 aid: microsoft-azure:policytrackedresourcesclient
-name: PolicyTrackedResourcesClient
+name: Microsoft Azure PolicyTrackedResourcesClient
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -9,7 +9,7 @@ humanURL: https://example.com
 properties:
   - url: https://example.com
     type: Documentation
-  - url: properties/policytrackedresourcesclient-openapi-original.yml
+  - url: openapi/policytrackedresourcesclient-openapi-original.yml
     type: OpenAPI
 
 ---

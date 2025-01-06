@@ -49,12 +49,13 @@ properties:
     type: Code Snippets
   - url: https://developer.factset.com/api-catalog/vermilion-api#changelog
     type: Change Log
-  - url: properties/vermilion-openapi-original.yml
+  - url: openapi/vermilion-openapi-original.yml
     type: OpenAPI
-description: >-
+description: |-
+
   The Vermilion API, enables users to programmatically access FactSet's
-  Vermilion Reporting Suite (VRS) and seamlessly integrate into customer's 3rd
-  party applications. The API is referred to as two key product initiatives, the
-  REST API and the SCIM API.
+  Vermilion Reporting Suite (VRS) and seamlessly integrate into customer's
+  3rd party applications. The API is referred to as two key product
+  initiatives, the REST API and the SCIM API.
 
 ---

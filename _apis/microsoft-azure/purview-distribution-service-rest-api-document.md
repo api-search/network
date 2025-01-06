@@ -1,6 +1,6 @@
 ---
 aid: microsoft-azure:purview-distribution-service-rest-api-document
-name: Purview Distribution Service REST API Document
+name: Microsoft Azure Purview Distribution Service REST API Document
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -9,8 +9,7 @@ humanURL: https://example.com
 properties:
   - url: https://example.com
     type: Documentation
-  - url: >-
-      properties/purview-distribution-service-rest-api-document-openapi-original.yml
+  - url: openapipurview-distribution-service-rest-api-document-openapi-original.yml
     type: OpenAPI
 description: >-
   Purview distribution service enables various Azure RPs to fetch the policies

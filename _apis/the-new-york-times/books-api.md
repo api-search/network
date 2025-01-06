@@ -8,7 +8,7 @@ humanURL: https://developer.nytimes.com/docs/books-product/1/overview
 properties:
   - url: https://developer.nytimes.com/docs/books-product/1/overview
     type: Documentation
-  - url: properties/new-york-times-books-openapi-original.yml
+  - url: openapi/new-york-times-books-openapi-original.yml
     type: OpenAPI
 description: >-
   The Books API provides information about book reviews and The New York Times

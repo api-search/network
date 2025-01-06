@@ -1,6 +1,6 @@
 ---
 aid: microsoft-azure:luis-authoring-client
-name: LUIS Authoring Client
+name: Microsoft Azure LUIS Authoring Client
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -9,7 +9,7 @@ humanURL: https://example.com
 properties:
   - url: https://example.com
     type: Documentation
-  - url: properties/luis-authoring-client-openapi-original.yml
+  - url: openapi/luis-authoring-client-openapi-original.yml
     type: OpenAPI
 
 ---

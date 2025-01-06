@@ -17,8 +17,9 @@ properties:
     type: Code Snippets
   - url: https://developer.factset.com/api-catalog/data-monitor-api#changelog
     type: Change Log
-description: >-
-  Data Monitor is an SDK that provides access to the same, trusted, information
-  available within FactSet's Workstation and Web offerings.
+description: |-
+
+  Data Monitor is an SDK that provides access to the same, trusted,
+  information available within FactSet's Workstation and Web offerings.
 
 ---

@@ -11,15 +11,20 @@ tags:
   - Users
   - Sets
 baseURL: https://api.github.com/
-humanURL: https://docs.github.com/en/rest/activity/notifications?apiVersion=2022-11-28
+humanURL: |-
+
+  https://docs.github.com/en/rest/activity/notifications?apiVersion=2022-11-28
 overlays:
   - url: overlays/github-notifications--openapi-search.yml
     type: OpenAPI
 properties:
-  - url: properties/github-notifications--openapi-original.yml
+  - url: openapi/github-notifications--openapi-original.yml
     type: OpenAPI
 description: |+
+
   Use the REST API to manage GitHub notifications.
+
+
 
 
 ---

@@ -26,9 +26,10 @@ overlays:
   - url: overlays/github-issues--openapi-search.yml
     type: OpenAPI
 properties:
-  - url: properties/github-issues--openapi-original.yml
+  - url: openapi/github-issues--openapi-original.yml
     type: OpenAPI
-description: >-
+description: |-
+
   Use the REST API to view and manage issues, including issue assignees,
   comments, labels, and milestones.
 

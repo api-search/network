@@ -9,9 +9,10 @@ overlays:
   - url: overlays/github-licenses--openapi-search.yml
     type: OpenAPI
 properties:
-  - url: properties/github-licenses--openapi-original.yml
+  - url: openapi/github-licenses--openapi-original.yml
     type: OpenAPI
-description: >-
+description: |-
+
   Use the REST API to retrieve popular open source licenses and information
   about a particular project's license file.
 

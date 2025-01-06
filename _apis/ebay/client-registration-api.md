@@ -10,7 +10,7 @@ properties:
   - url: >-
       https://developer.ebay.com/api-docs/developer/client-registration/overview.html
     type: Documentation
-  - url: properties/ebay-client-registration-openapi-original.yml
+  - url: openapi/ebay-client-registration-openapi-original.yml
     type: OpenAPI
   - url: >-
       https://developer.ebay.com/api-docs/commerce/client-registration/release-notes.html

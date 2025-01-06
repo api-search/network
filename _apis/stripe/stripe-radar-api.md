@@ -9,15 +9,10 @@ tags:
   - Warning
   - Items
   - Value
-overlays:
-  - url: overlays/radar-openapi-search.yml
-    type: APIs.io Search
-  - url: overlays/radar-openapi-api-evangelist-ratings.yml
-    type: API Evangelist Ratings
 properties:
   - url: https://stripe.com/docs/radar
     type: Documentation
-  - url: properties/radar-openapi-original.yml
+  - url: openapi/radar-openapi-original.yml
     type: OpenAPI
 description: >-
   Stripe Radar provides real-time fraud protection and requires no additional

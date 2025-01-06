@@ -1,23 +1,17 @@
 ---
 aid: adyen:adyen-transfers-api
 name: Adyen Transfers API
-tags:
-  - Accounts
-  - Capital
-  - Details
-  - Funds
-  - Grants
-  - Grants""
-  - Payouts
-  - References
-  - Returns
-  - Transactions
-  - Transfers
-overlays:
-  - url: overlays/transfers-openapi-search.yml
-    type: APIs.io Search
-  - url: overlays/transfers-openapi-api-evangelist-ratings.yml
-    type: API Evangelist Ratings
+tags: []
+image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+baseURL: https://api.example.com
+humanURL: >-
+  https://docs.adyen.com/marketplaces-and-platforms/payout-to-users/on-demand-payouts
+properties:
+  - url: >-
+      https://docs.adyen.com/marketplaces-and-platforms/payout-to-users/on-demand-payouts
+    type: Documentation
+  - url: openapi/transfers-openapi-original.yml
+    type: OpenAPI
 description: >-
   This API provides endpoints that you can use to transfer funds, whether when
   [paying out to a transfer

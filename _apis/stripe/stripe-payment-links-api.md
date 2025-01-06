@@ -7,15 +7,10 @@ tags:
   - Link
   - Items
   - Line
-overlays:
-  - url: overlays/payment-links-openapi-search.yml
-    type: APIs.io Search
-  - url: overlays/payment-links-openapi-api-evangelist-ratings.yml
-    type: API Evangelist Ratings
 properties:
   - url: https://stripe.com/docs/api/payment_links/payment_links
     type: Documentation
-  - url: properties/payment-links-openapi-original.yml
+  - url: openapi/payment-links-openapi-original.yml
     type: OpenAPI
 description: >-
   A payment link is a shareable URL that will take your customers to a hosted

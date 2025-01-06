@@ -10,7 +10,7 @@ properties:
   - url: https://example.com
     type: Documentation
   - url: >-
-      properties/microsoft-azureplaywrightservice-management-api-openapi-original.yml
+      openapimicrosoft-azureplaywrightservice-management-api-openapi-original.yml
     type: OpenAPI
 description: Microsoft.AzurePlaywrightService Resource Provider management API.
 

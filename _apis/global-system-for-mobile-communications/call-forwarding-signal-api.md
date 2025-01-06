@@ -13,7 +13,7 @@ properties:
   - url: >-
       https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/camaraproject/CallForwardingSignal/r1.3/code/API_definitions/call-forwarding-signal.yaml&nocors
     type: Documentation
-  - url: properties/call-forwarding-signal-api-openapi.yml
+  - url: openapi/call-forwarding-signal-api-openapi.yml
     type: OpenAPI
   - url: bruno/GSMA Camara Project Call Forwarding Signal API/bruno.json
     type: BrunoCollection

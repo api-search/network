@@ -1,6 +1,6 @@
 ---
 aid: microsoft-azure:storage
-name: Storage
+name: Microsoft Azure Storage
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -9,7 +9,7 @@ humanURL: https://example.com
 properties:
   - url: https://example.com
     type: Documentation
-  - url: properties/storage-openapi-original.yml
+  - url: openapi/storage-openapi-original.yml
     type: OpenAPI
 description: Storage Resource Provider API Common Types
 

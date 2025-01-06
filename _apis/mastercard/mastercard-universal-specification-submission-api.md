@@ -5,7 +5,6 @@ tags: []
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 baseURL: https://api.example.com
 humanURL: https://developer.mastercard.com/product/account-services-catalogue/
-overlays: []
 properties:
   - url: https://developer.mastercard.com/product/account-services-catalogue/
     type: Documentation

@@ -1,6 +1,6 @@
 ---
 aid: microsoft-azure:storagemanagement
-name: StorageManagement
+name: Microsoft Azure StorageManagement
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -9,7 +9,7 @@ humanURL: https://example.com
 properties:
   - url: https://example.com
     type: Documentation
-  - url: properties/storagemanagement-openapi-original.yml
+  - url: openapi/storagemanagement-openapi-original.yml
     type: OpenAPI
 description: The Azure Storage Management API.
 

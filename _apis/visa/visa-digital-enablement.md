@@ -8,14 +8,14 @@ tags:
   - Digital Wallet
 humanURL: https://developer.visa.com/capabilities/visa-digital-enablement-lite
 properties:
-  - url: properties/visa-digital-enablement.yml
+  - url: openapi/visa-digital-enablement.yml
     type: OpenAPI
   - url: >-
       https://developer.visa.com/capabilities/visa-digital-enablement-lite/product-terms
     name: Visa Digital Enablement Lite App Product Terms
     type: TermsOfService
   - url: >-
-      https://developer.visa.com/capabilities/visa-digital-enablement-lite/reference#tag/URL-Generation-API_/paths/~1inapp~1provision~1appclip~1url/post_v1%20-%20Latest
+      https://developer.visa.com/capabilities/visa-digital-enablement-lite/reference#tag/URL-Generation-API_/paths/1inapp1provision1appclip1url/post_v1%20-%20Latest
     name: Visa Digital Enablement Lite App API Reference
     type: Documentation
 description: >-

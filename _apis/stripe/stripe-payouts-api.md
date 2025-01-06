@@ -5,15 +5,10 @@ tags:
   - Payouts
   - Cancel
   - Reverse
-overlays:
-  - url: overlays/payouts-openapi-search.yml
-    type: APIs.io Search
-  - url: overlays/payouts-openapi-api-evangelist-ratings.yml
-    type: API Evangelist Ratings
 properties:
   - url: https://stripe.com/docs/api/payouts
     type: Documentation
-  - url: properties/payouts-openapi-original.yml
+  - url: openapi/payouts-openapi-original.yml
     type: OpenAPI
 description: >-
   A Payout object is created when you receive funds from Stripe, or when you

@@ -36,12 +36,14 @@ overlays:
 properties:
   - url: https://aws.amazon.com/amplify/
     type: Documentation
-  - url: properties/amplify-openapi-original.yml
+  - url: openapi/amplify-openapi-original.yml
     type: OpenAPI
-description: >-
+description: |-
+
   Amplify is an API designed to facilitate the development and deployment of
-  cloud-powered mobile and web applications. Amplify Hosting offers a continuous
-  delivery and hosting service specifically tailored for web applications. To
-  learn more about Amplify Hosting, refer to the user guide. 
+  cloud-powered mobile and web applications. Amplify Hosting offers a
+  continuous delivery and hosting service specifically tailored for web
+  applications. To learn more about Amplify Hosting, refer to the user
+  guide. 
 
 ---

@@ -1,6 +1,6 @@
 ---
 aid: microsoft-azure:microsofteasm
-name: Microsoft.Easm
+name: Microsoft Azure Microsoft.Easm
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -9,7 +9,7 @@ humanURL: https://example.com
 properties:
   - url: https://example.com
     type: Documentation
-  - url: properties/microsofteasm-openapi-original.yml
+  - url: openapi/microsofteasm-openapi-original.yml
     type: OpenAPI
 description: REST APIs for Easm
 

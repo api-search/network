@@ -11,11 +11,10 @@ tags:
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 baseURL: https://api.example.com
 humanURL: https://developer.walmart.com/doc/us/mp/us-mp-notifications/
-overlays: []
 properties:
   - url: https://developer.walmart.com/doc/us/mp/us-mp-notifications/
     type: Documentation
-  - url: properties/walmart-marketplace-notifications-openapi-original.yml
+  - url: openapi/walmart-marketplace-notifications-openapi-original.yml
     type: OpenAPI
 description: >-
   Push notifications or Web Hooks trigger alerts to seller applications when

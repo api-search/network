@@ -1,6 +1,6 @@
 ---
 aid: microsoft-azure:appliances
-name: appliances
+name: Microsoft Azure appliances
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -9,7 +9,7 @@ humanURL: https://example.com
 properties:
   - url: https://example.com
     type: Documentation
-  - url: properties/appliances-openapi-original.yml
+  - url: openapi/appliances-openapi-original.yml
     type: OpenAPI
 description: The appliances Rest API spec.
 

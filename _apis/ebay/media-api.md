@@ -8,7 +8,7 @@ humanURL: https://developer.ebay.com/api-docs/commerce/media/overview.html
 properties:
   - url: https://developer.ebay.com/api-docs/commerce/media/overview.html
     type: Documentation
-  - url: properties/ebay-media-openapi-original.yml
+  - url: openapi/ebay-media-openapi-original.yml
     type: OpenAPI
   - url: https://developer.ebay.com/api-docs/commerce/media/release-notes.html
     type: Release Notes

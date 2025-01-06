@@ -1,6 +1,6 @@
 ---
 aid: microsoft-azure:componentpolicystatesclient
-name: ComponentPolicyStatesClient
+name: Microsoft Azure ComponentPolicyStatesClient
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -9,7 +9,7 @@ humanURL: https://example.com
 properties:
   - url: https://example.com
     type: Documentation
-  - url: properties/componentpolicystatesclient-openapi-original.yml
+  - url: openapi/componentpolicystatesclient-openapi-original.yml
     type: OpenAPI
 description: >-
   Query component policy states at varying resource scopes for Resource Provider

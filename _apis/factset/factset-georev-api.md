@@ -15,18 +15,24 @@ overlays:
 properties:
   - url: https://developer.factset.com/api-catalog/factset-georev-api#overview
     type: Documentation
-  - url: https://developer.factset.com/api-catalog/factset-georev-api#sdkLibrary
+  - url: |-
+
+      https://developer.factset.com/api-catalog/factset-georev-api#sdkLibrary
     type: SDKs
   - url: https://developer.factset.com/api-catalog/factset-georev-api#notebooks
     type: Jupyter Notebooks
-  - url: https://developer.factset.com/api-catalog/factset-georev-api#codeSnippet
+  - url: |-
+
+      https://developer.factset.com/api-catalog/factset-georev-api#codeSnippet
     type: Code Snippets
   - url: https://developer.factset.com/api-catalog/factset-georev-api#changelog
     type: Change Log
-  - url: properties/georev-openapi-original.yml
+  - url: openapi/georev-openapi-original.yml
     type: OpenAPI
-description: >-
-  FactSet Revere Geographic Revenue ("GeoRev") Exposure data provides a highly
-  structured and normalized display of companies' revenues by geography.
+description: |-
+
+  FactSet Revere Geographic Revenue ("GeoRev") Exposure data provides a
+  highly structured and normalized display of companies' revenues by
+  geography.
 
 ---

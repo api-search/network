@@ -9,7 +9,7 @@ humanURL: https://httpstat.us/
 properties:
   - url: https://httpstat.us/
     type: Documentation
-  - url: properties/httpstat.yml
+  - url: openapi/httpstat.yml
     name: OpenAPI
     type: OpenAPI
   - url: httpstat/collection.bru

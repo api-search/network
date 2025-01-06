@@ -46,12 +46,13 @@ properties:
     type: Code Snippets
   - url: https://developer.factset.com/api-catalog/spar-engine-api#changelog
     type: Change Log
-  - url: properties/spar-engine-openapi-original.yml
+  - url: openapi/spar-engine-openapi-original.yml
     type: OpenAPI
-description: >-
-  Through the SPAR API (Style, Performance, and Risk) monitor your portfolios'
-  returns against equity and fixed income benchmarks, and peer universes, with
-  MPT risk statistics such as beta, standard deviation, r-squared, alpha, and
-  tracking error_
+description: |-
+
+  Through the SPAR API (Style, Performance, and Risk) monitor your
+  portfolios' returns against equity and fixed income benchmarks, and peer
+  universes, with MPT risk statistics such as beta, standard deviation,
+  r-squared, alpha, and tracking error_
 
 ---

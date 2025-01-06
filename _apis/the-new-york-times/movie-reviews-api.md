@@ -18,7 +18,7 @@ humanURL: https://developer.nytimes.com/docs/movie-reviews-api/1/overview
 properties:
   - url: https://example.com/documentation
     type: Documentation
-  - url: properties/new-york-times-movie-review-openapi-original.yml
+  - url: openapi/new-york-times-movie-review-openapi-original.yml
     type: OpenAPI
 description: >-
   As an alternative, use the Article Search API to get New York Times movie

@@ -8,10 +8,10 @@ properties:
   - url: https://www.nass.usda.gov/developer/index.php
     type: Documentation
 description: >-
-  The National Agricultural Statistics Services mission is to serve the United
-  States, its agriculture, and its rural communities by providing meaningful,
-  accurate, and objective statistical information and services. ... Ag Census
-  Web Maps - This API gives developers direct access to county-level data
-  available through a set of geospatial maps ...
+  The mission of the National Agricultural Statistics Service (NASS) is to
+  support the United States, its agricultural sector, and rural communities by
+  providing accurate, objective, and meaningful statistical information and
+  services. The Ag Census Web Maps API allows developers direct access to
+  county-level data through a collection of geospatial maps.
 
 ---

@@ -1,13 +1,11 @@
 ---
+aid: zoom:zoom-chat-api
 name: Zoom Chat API
 tags:
   - Chat
 humanURL: https://developers.zoom.us/docs/api/rest/chat-api/
-overlays:
-  - url: overlays/zoom-chat--openapi-search.yml
-    type: OpenAPI
 properties:
-  - url: properties/zoom-chat--openapi-original.yml
+  - url: openapi/zoom-chat--openapi-original.yml
     type: OpenAPI
   - url: https://developers.zoom.us/docs/api/rest/chat-api/
     type: Documentation

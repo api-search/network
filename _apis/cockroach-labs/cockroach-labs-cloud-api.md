@@ -7,7 +7,7 @@ humanURL: https://www.cockroachlabs.com/docs/api/cloud/v1#get-/api/scim/v2/Group
 properties:
   - url: https://www.cockroachlabs.com/docs/cockroachcloud/cloud-api
     type: Documentation
-  - url: properties/cockroach-labs-cloud-api-openapi.yml
+  - url: openapi/cockroach-labs-cloud-api-openapi.yml
     type: OpenAPI
 description: An API for managing CockroachDB Cloud resources
 

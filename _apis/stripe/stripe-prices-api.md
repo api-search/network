@@ -4,15 +4,10 @@ name: Stripe Prices API
 tags:
   - Prices
   - Search
-overlays:
-  - url: overlays/prices-openapi-search.yml
-    type: APIs.io Search
-  - url: overlays/prices-openapi-api-evangelist-ratings.yml
-    type: API Evangelist Ratings
 properties:
   - url: https://stripe.com/docs/api/prices
     type: Documentation
-  - url: properties/prices-openapi-original.yml
+  - url: openapi/prices-openapi-original.yml
     type: OpenAPI
 description: >-
   Prices define the unit cost, currency, and (optional) billing cycle for both

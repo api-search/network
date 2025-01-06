@@ -8,7 +8,7 @@ humanURL: https://developer.ebay.com/api-docs/sell/analytics/static/overview.htm
 properties:
   - url: https://developer.ebay.com/api-docs/sell/analytics/static/overview.html
     type: Documentation
-  - url: properties/ebay-analytics-openapi-original.yml
+  - url: openapi/ebay-analytics-openapi-original.yml
     type: OpenAPI
 description: >-
   Provides information about an individual seller's business performance through

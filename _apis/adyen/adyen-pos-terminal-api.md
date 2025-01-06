@@ -1,21 +1,15 @@
 ---
 aid: adyen:adyen-pos-terminal-api
 name: Adyen POS Terminal API
-tags:
-  - Accounts
-  - Assign
-  - Details
-  - Store
-  - Stores
-  - Terminal
-  - Terminals
-  - The
-  - Under
-overlays:
-  - url: overlays/pos-terminal-openapi-search.yml
-    type: APIs.io Search
-  - url: overlays/pos-terminal-openapi-api-evangelist-ratings.yml
-    type: API Evangelist Ratings
+tags: []
+image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+baseURL: https://api.example.com
+humanURL: https://docs.adyen.com/point-of-sale/design-your-integration/terminal-api/
+properties:
+  - url: https://docs.adyen.com/point-of-sale/design-your-integration/terminal-api/
+    type: Documentation
+  - url: openapi/pos-terminal-openapi-original.yml
+    type: OpenAPI
 description: >-
   This API provides endpoints for managing your point-of-sale (POS) payment
   terminals. You can use the API to obtain information about a specific

@@ -17,7 +17,7 @@ overlays:
   - url: overlays/github-events--openapi-search.yml
     type: OpenAPI
 properties:
-  - url: properties/github-events--openapi-original.yml
+  - url: openapi/github-events--openapi-original.yml
     type: OpenAPI
 description: Use the REST API to interact with GitHub events.
 

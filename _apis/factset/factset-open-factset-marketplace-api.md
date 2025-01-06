@@ -12,23 +12,29 @@ overlays:
     type: API Evangelist Ratings
 properties:
   - url: >-
+
       https://developer.factset.com/api-catalog/openfactset-marketplace-api#overview
     type: Documentation
   - url: >-
+
       https://developer.factset.com/api-catalog/openfactset-marketplace-api#sdkLibrary
     type: SDKs
   - url: >-
+
       https://developer.factset.com/api-catalog/openfactset-marketplace-api#notebooks
     type: Jupyter Notebooks
   - url: >-
+
       https://developer.factset.com/api-catalog/openfactset-marketplace-api#codeSnippet
     type: Code Snippets
   - url: >-
+
       https://developer.factset.com/api-catalog/openfactset-marketplace-api#changelog
     type: Change Log
-  - url: properties/open-marketplace-openapi-original.yml
+  - url: openapi/open-marketplace-openapi-original.yml
     type: OpenAPI
-description: >-
+description: |-
+
   Access FactSet's comprehensive catalog of Data Feeds, APIs and Technology
   Solutions available on the Open FactSet Marketplace.
 

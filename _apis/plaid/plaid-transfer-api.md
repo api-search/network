@@ -84,10 +84,18 @@ overlays:
   - url: overlays/plaid-transfer--openapi-api-evangelist-ratings.yml
     type: API Evangelist Ratings
 properties:
-  - url: properties/plaid-transfer--openapi-original.yml
+  - url: openapi/plaid-transfer--openapi-original.yml
     type: OpenAPI
   - url: https://plaid.com/docs/api/products/transfer/
     type: Documentation
-description: API reference for Transfer endpoints and webhooks.
+description: >-
+  Plaid Transfer API is a powerful tool that enables developers to easily
+  integrate ACH (Automated Clearing House) payments into their applications.
+  This API allows users to securely link their bank accounts and initiate
+  transfers with just a few lines of code. With Plaid Transfer API, developers
+  can automate payment processes, streamline financial transactions, and provide
+  a seamless user experience. By leveraging the capabilities of this API,
+  businesses can improve efficiency, reduce manual tasks, and enhance the
+  overall payment experience for their customers.
 
 ---

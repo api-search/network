@@ -7,15 +7,10 @@ tags:
   - Expire
   - Items
   - Line
-overlays:
-  - url: overlays/checkout-openapi-search.yml
-    type: APIs.io Search
-  - url: overlays/checkout-openapi-api-evangelist-ratings.yml
-    type: API Evangelist Ratings
 properties:
   - url: https://stripe.com/docs/payments/checkout
     type: Documentation
-  - url: properties/checkout-openapi-original.yml
+  - url: openapi/checkout-openapi-original.yml
     type: OpenAPI
 description: >-
   Checkout is a low-code payment integration that creates a customizable form

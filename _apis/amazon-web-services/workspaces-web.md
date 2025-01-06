@@ -38,7 +38,7 @@ overlays:
 properties:
   - url: https://aws.amazon.com/workspaces/web/
     type: Documentation
-  - url: properties/workspaces-web-openapi-original.yml
+  - url: openapi/workspaces-web-openapi-original.yml
     type: OpenAPI
   - url: https://aws.amazon.com/workspaces/web/pricing/
     type: Pricing
@@ -46,10 +46,12 @@ properties:
     type: FAQ
   - url: https://aws.amazon.com/workspaces/web/resources/
     type: Resources
-description: >-
-  The WorkSpaces Web API is a cost-effective, fully managed solution designed to
-  support secure web-based workloads. It streamlines the process of granting
-  employees access to internal websites and SaaS web applications without the
-  need for complex appliances or specialized client software. 
+description: |-
+
+  The WorkSpaces Web API is a cost-effective, fully managed solution
+  designed to support secure web-based workloads. It streamlines the process
+  of granting employees access to internal websites and SaaS web
+  applications without the need for complex appliances or specialized client
+  software. 
 
 ---

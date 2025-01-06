@@ -8,7 +8,7 @@ humanURL: https://mobile.fmcsa.dot.gov/QCDevsite/docs/apiAccess
 properties:
   - url: https://mobile.fmcsa.dot.gov/QCDevsite/docs/apiAccess
     type: Documentation
-description: >-
+description: |-
   API Access Access to FMCSA API resources uses an API webkey for
   authentication. A webkey must be included as a query parameter in all API
   calls to successfully complete all transactions. ... Federal Motor Carrier

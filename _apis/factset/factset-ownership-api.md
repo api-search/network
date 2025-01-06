@@ -11,23 +11,33 @@ overlays:
   - url: overlays/ownership-openapi-api-evangelist-ratings.yml
     type: API Evangelist Ratings
 properties:
-  - url: https://developer.factset.com/api-catalog/factset-ownership-api#overview
+  - url: |-
+
+      https://developer.factset.com/api-catalog/factset-ownership-api#overview
     type: Documentation
-  - url: https://developer.factset.com/api-catalog/factset-ownership-api#sdkLibrary
+  - url: |-
+
+      https://developer.factset.com/api-catalog/factset-ownership-api#sdkLibrary
     type: SDKs
-  - url: https://developer.factset.com/api-catalog/factset-ownership-api#notebooks
+  - url: |-
+
+      https://developer.factset.com/api-catalog/factset-ownership-api#notebooks
     type: Jupyter Notebooks
   - url: >-
+
       https://developer.factset.com/api-catalog/factset-ownership-api#codeSnippet
     type: Code Snippets
-  - url: https://developer.factset.com/api-catalog/factset-ownership-api#changelog
+  - url: |-
+
+      https://developer.factset.com/api-catalog/factset-ownership-api#changelog
     type: Change Log
-  - url: properties/ownership-openapi-original.yml
+  - url: openapi/ownership-openapi-original.yml
     type: OpenAPI
-description: >-
-  FactSet's Fund Ownership API gives access to underlying fund holding details
-  for a specified fund ID or list of IDs. Holdings details include industry
-  codes, security identifiers, adjusted market value, adjusted shares held, and
-  issue type.
+description: |-
+
+  FactSet's Fund Ownership API gives access to underlying fund holding
+  details for a specified fund ID or list of IDs. Holdings details include
+  industry codes, security identifiers, adjusted market value, adjusted
+  shares held, and issue type.
 
 ---

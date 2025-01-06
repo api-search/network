@@ -8,13 +8,9 @@ tags:
   - Monetary
   - Share
   - Users
-overlays:
-  - url: >-
-      overlays/bunq-user-userid-share-invite-monetary-account-response-openapi-search.yml
-    type: OpenAPI
 properties:
   - url: >-
-      properties/bunq-user-userid-share-invite-monetary-account-response-openapi-original.yml
+      openapibunq-user-userid-share-invite-monetary-account-response-openapi-original.yml
     type: OpenAPI
 description: Needs description.
 

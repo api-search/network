@@ -1,6 +1,6 @@
 ---
 aid: microsoft-azure:expressroutecrossconnection-rest-apis
-name: ExpressRouteCrossConnection REST APIs
+name: Microsoft Azure ExpressRouteCrossConnection REST APIs
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -9,7 +9,7 @@ humanURL: https://example.com
 properties:
   - url: https://example.com
     type: Documentation
-  - url: properties/expressroutecrossconnection-rest-apis-openapi-original.yml
+  - url: openapi/expressroutecrossconnection-rest-apis-openapi-original.yml
     type: OpenAPI
 description: >-
   The Microsoft Azure ExpressRouteCrossConnection Resource Provider REST APIs

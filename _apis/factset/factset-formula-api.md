@@ -34,9 +34,10 @@ properties:
     type: Code Snippets
   - url: https://developer.factset.com/api-catalog/formula-api#changelog
     type: Change Log
-  - url: properties/formula-openapi-original.yml
+  - url: openapi/formula-openapi-original.yml
     type: OpenAPI
-description: >-
+description: |-
+
   Use FactSet's flexible, formula-based API to retrieve data from almost all
   available content sets FactSet offers through FactSet's FQL and Screening
   formulas.

@@ -8,7 +8,7 @@ humanURL: https://developer.ebay.com/api-docs/developer/key-management/overview.
 properties:
   - url: https://developer.ebay.com/api-docs/developer/key-management/overview.html
     type: Documentation
-  - url: properties/ebay-key-management-openapi-original.yml
+  - url: openapi/ebay-key-management-openapi-original.yml
     type: OpenAPI
   - url: >-
       https://developer.ebay.com/api-docs/commerce/key-management/release-notes.html

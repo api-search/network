@@ -8,7 +8,7 @@ humanURL: https://developer.ebay.com/api-docs/sell/feed/resources/methods
 properties:
   - url: https://developer.ebay.com/api-docs/sell/feed/resources/methods
     type: Documentation
-  - url: properties/ebay-feed-openapi-original.yml
+  - url: openapi/ebay-feed-openapi-original.yml
     type: OpenAPI
 description: >-
   Manage your eBay business by downloading or uploading inventory, order, and

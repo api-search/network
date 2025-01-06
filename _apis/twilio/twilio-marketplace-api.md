@@ -7,15 +7,10 @@ tags:
   - Extensions
   - 'On'
   - Installed
-overlays:
-  - url: overlays/marketplace-openapi-search.yml
-    type: APIs.io Search
-  - url: overlays/marketplace-openapi-api-evangelist-ratings.yml
-    type: API Evangelist Ratings
 properties:
   - url: https://www.twilio.com/docs/add-ons/marketplace
     type: Documentation
-  - url: properties/marketplace-openapi-original.yml
+  - url: openapi/marketplace-openapi-original.yml
     type: OpenAPI
 description: >-
   Add-ons are available through the Twilio Marketplace. At a functional level,

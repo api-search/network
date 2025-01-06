@@ -15,15 +15,10 @@ tags:
   - Rooms
   - Videos
 humanURL: https://www.twilio.com/docs/voice/voice-insights
-overlays:
-  - url: overlays/insights-openapi-search.yml
-    type: APIs.io Search
-  - url: overlays/insights-openapi-api-evangelist-ratings.yml
-    type: API Evangelist Ratings
 properties:
   - url: https://www.twilio.com/docs/
     type: Documentation
-  - url: properties/insights-openapi-original.yml
+  - url: openapi/insights-openapi-original.yml
     type: OpenAPI
 description: >-
   Voice Insights provides call quality analytics and aggregation tools for

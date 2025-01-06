@@ -2,11 +2,15 @@
 aid: adyen:adyen-notification-webhooks-api
 name: Adyen Notification Webhooks API
 tags: []
-overlays:
-  - url: overlays/notification-webhooks-openapi-search.yml
-    type: APIs.io Search
-  - url: overlays/notification-webhooks-openapi-api-evangelist-ratings.yml
-    type: API Evangelist Ratings
+image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+baseURL: https://api.example.com
+humanURL: https://docs.adyen.com/point-of-sale/design-your-integration/notifications/
+properties:
+  - url: >-
+      https://docs.adyen.com/point-of-sale/design-your-integration/notifications/
+    type: Documentation
+  - url: openapi/notification-webhooks-openapi-original.yml
+    type: OpenAPI
 description: >-
   Adyen sends notifications through webhooks to inform your system about events
   that occur in the balance platform. These events include, for example, a card

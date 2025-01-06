@@ -1,6 +1,6 @@
 ---
 aid: microsoft-azure:certificateregistrationprovider-api-client
-name: CertificateRegistrationProvider API Client
+name: Microsoft Azure CertificateRegistrationProvider API Client
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -9,7 +9,7 @@ humanURL: https://example.com
 properties:
   - url: https://example.com
     type: Documentation
-  - url: properties/certificateregistrationprovider-api-client-openapi-original.yml
+  - url: openapi/certificateregistrationprovider-api-client-openapi-original.yml
     type: OpenAPI
 
 ---

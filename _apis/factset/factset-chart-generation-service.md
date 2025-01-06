@@ -25,23 +25,29 @@ overlays:
     type: API Evangelist Ratings
 properties:
   - url: >-
+
       https://developer.factset.com/api-catalog/chart-generation-service#overview
     type: Documentation
   - url: >-
+
       https://developer.factset.com/api-catalog/chart-generation-service#sdkLibrary
     type: SDKs
   - url: >-
+
       https://developer.factset.com/api-catalog/chart-generation-service#notebooks
     type: Jupyter Notebooks
   - url: >-
+
       https://developer.factset.com/api-catalog/chart-generation-service#codeSnippet
     type: Code Snippets
   - url: >-
+
       https://developer.factset.com/api-catalog/chart-generation-service#changelog
     type: Change Log
-  - url: properties/chart-generation-service-openapi-original.yml
+  - url: openapi/chart-generation-service-openapi-original.yml
     type: OpenAPI
-description: >-
+description: |-
+
   An API for getting chart images in the form of png or jpg based on various
   parameters like ticker, benchmark, currency, frequency, start and end date
   etc.

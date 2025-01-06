@@ -10,12 +10,11 @@ tags:
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 baseURL: https://api.example.com
 humanURL: https://developer.walmart.com/doc/us/us-supplier/us-supplier-onrequestreports/
-overlays: []
 properties:
   - url: >-
       https://developer.walmart.com/doc/us/us-supplier/us-supplier-onrequestreports/
     type: Documentation
-  - url: properties/walmart-dropship-vendor-on-request-reports-openapi-original.yml
+  - url: openapi/walmart-dropship-vendor-on-request-reports-openapi-original.yml
     type: OpenAPI
 description: >-
   The On Request Reports API lets users request item reports. Request a report

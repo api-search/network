@@ -8,7 +8,7 @@ humanURL: https://developer.ebay.com/api-docs/sell/metadata/overview.html
 properties:
   - url: https://developer.ebay.com/api-docs/sell/metadata/overview.html
     type: Documentation
-  - url: properties/ebay-metadata-openapi-original.yml
+  - url: openapi/ebay-metadata-openapi-original.yml
     type: OpenAPI
   - url: https://developer.ebay.com/api-docs/sell/metadata/release-notes.html
     type: Release Notes

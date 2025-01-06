@@ -9,7 +9,7 @@ humanURL: https://products.wolframalpha.com/llm-api/documentation
 properties:
   - url: https://products.wolframalpha.com/llm-api/documentation
     type: Documentation
-  - url: openapi.yml
+  - url: openapi/.yml
     type: OpenAPI
 description: >-
   Get results optimized for use by a large language model with the LLM API.

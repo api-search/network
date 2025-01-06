@@ -5,7 +5,6 @@ tags: []
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 baseURL: https://api.weatherbit.io
 humanURL: https://www.weatherbit.io/api/alerts
-overlays: []
 properties:
   - url: https://www.weatherbit.io/api/alerts
     type: Documentation

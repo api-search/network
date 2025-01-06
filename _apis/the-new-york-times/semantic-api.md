@@ -13,13 +13,12 @@ humanURL: https://developer.nytimes.com/docs/semantic-api-product/1/overview
 properties:
   - url: https://developer.nytimes.com/docs/semantic-api-product/1/overview
     type: Documentation
-  - url: properties/new-york-times-semantic-openapi-original.yml
+  - url: openapi/new-york-times-semantic-openapi-original.yml
     type: OpenAPI
 description: >-
   The Semantic API complements the Articles API. With the Semantic API, you get
   access to the long list of people, places, organizations and other locations,
   entities and descriptors that make up the controlled vocabulary used as
-  metadata by The New York Times (sometimes referred to as Times Tags and used
-  for Times Topics pages.
+  metadata by The New York Times.
 
 ---

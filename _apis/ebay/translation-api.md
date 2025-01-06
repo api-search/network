@@ -8,7 +8,7 @@ humanURL: https://developer.ebay.com/api-docs/commerce/translation/overview.html
 properties:
   - url: https://developer.ebay.com/api-docs/commerce/translation/overview.html
     type: Documentation
-  - url: properties/ebay-translation-openapi-original.yml
+  - url: openapi/ebay-translation-openapi-original.yml
     type: OpenAPI
   - url: >-
       https://developer.ebay.com/api-docs/commerce/translation/release-notes.html

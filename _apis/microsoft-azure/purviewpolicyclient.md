@@ -1,6 +1,6 @@
 ---
 aid: microsoft-azure:purviewpolicyclient
-name: PurviewPolicyClient
+name: Microsoft Azure PurviewPolicyClient
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -9,7 +9,7 @@ humanURL: https://example.com
 properties:
   - url: https://example.com
     type: Documentation
-  - url: properties/purviewpolicyclient-openapi-original.yml
+  - url: openapi/purviewpolicyclient-openapi-original.yml
     type: OpenAPI
 description: Creates a Microsoft.Purview management client.
 

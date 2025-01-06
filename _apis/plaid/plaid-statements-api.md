@@ -18,10 +18,18 @@ overlays:
   - url: overlays/plaid-statements--openapi-api-evangelist-ratings.yml
     type: API Evangelist Ratings
 properties:
-  - url: properties/plaid-statements--openapi-original.yml
+  - url: openapi/plaid-statements--openapi-original.yml
     type: OpenAPI
   - url: https://plaid.com/docs/api/products/statements/
     type: Documentation
-description: API reference for Statements endpoints and webhooks.
+description: >-
+  Plaid Statements API allows developers to access and retrieve bank statement
+  data from their users' bank accounts. This data includes information such as
+  transaction history, account balances, and pending transactions. By
+  integrating with the Plaid Statements API, developers can offer their users a
+  comprehensive and real-time view of their financial transactions, making it
+  easier for them to track their spending, budget effectively, and manage their
+  money more efficiently. Additionally, Plaid's robust security measures ensure
+  that sensitive financial information is securely transmitted and protected.
 
 ---

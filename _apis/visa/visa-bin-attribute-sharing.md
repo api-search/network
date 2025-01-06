@@ -7,7 +7,7 @@ tags:
   - Fraud
 humanURL: https://developer.visa.com/capabilities/visa-bin-attribute-sharing-service
 properties:
-  - url: properties/visa-bin-attribute-sharing.yml
+  - url: openapi/visa-bin-attribute-sharing.yml
     type: OpenAPI
   - url: >-
       https://developer.visa.com/capabilities/visa-bin-attribute-sharing-service/docs-getting-started

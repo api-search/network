@@ -15,14 +15,19 @@ overlays:
   - url: overlays/plaid-fdx--openapi-api-evangelist-ratings.yml
     type: API Evangelist Ratings
 properties:
-  - url: properties/plaid-fdx--openapi-original.yml
+  - url: openapi/plaid-fdx--openapi-original.yml
     type: OpenAPI
   - url: https://plaid.github.io/core-exchange/api-versions/six-dot-zero
     type: Documentation
 description: >-
-  The Core Exchange API specifications are a subset of the Financial Data
-  Exchange (FDX) API specification, the usage thereof (or any part thereof)
-  constitutes acceptance of the FDX API License Agreement, which can be found at
-  https://financialdataexchange.org/.
+  Plaid FDX API is a powerful tool that allows developers to easily access
+  financial data from a variety of sources, including banks, credit unions, and
+  other financial institutions. This API provides a secure and efficient way to
+  retrieve information such as account balances, transaction history, and user
+  profiles. By using Plaid FDX API, developers can create innovative financial
+  applications that help users better manage their money and make informed
+  decisions about their finances. With its robust set of features and
+  comprehensive data coverage, Plaid FDX API is an essential tool for any
+  developer looking to build cutting-edge financial technology solutions.
 
 ---

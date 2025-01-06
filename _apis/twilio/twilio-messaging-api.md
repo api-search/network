@@ -27,17 +27,12 @@ tags:
   - Compliance
   - Use Cases
 humanURL: https://www.twilio.com/docs/messaging/api
-overlays:
-  - url: overlays/messaging-openapi-search.yml
-    type: APIs.io Search
-  - url: overlays/messaging-openapi-api-evangelist-ratings.yml
-    type: API Evangelist Ratings
 properties:
   - url: https://www.twilio.com/en-us/messaging
     type: Documentation
   - url: https://www.twilio.com/en-us/sms/pricing/us
     type: Pricing
-  - url: properties/messaging-openapi-original.yml
+  - url: openapi/messaging-openapi-original.yml
     type: OpenAPI
 description: >-
   Send and receive messages via SMS, MMS, WhatsApp, Facebook Messenger, and more

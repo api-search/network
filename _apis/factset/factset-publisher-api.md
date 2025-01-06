@@ -21,11 +21,13 @@ properties:
     type: Code Snippets
   - url: https://developer.factset.com/api-catalog/publisher-api#changelog
     type: Change Log
-  - url: properties/publisher-openapi-original.yml
+  - url: openapi/publisher-openapi-original.yml
     type: OpenAPI
-description: >-
+description: |-
+
   Through the Publisher API, you can optimize your reporting workflows by
-  calculating customized, presentation-ready documents that integrate Portfolio
-  Analysis, SPAR, commentary, risk, as well as your firm's proprietary data.
+  calculating customized, presentation-ready documents that integrate
+  Portfolio Analysis, SPAR, commentary, risk, as well as your firm's
+  proprietary data.
 
 ---

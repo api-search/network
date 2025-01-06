@@ -5,15 +5,10 @@ tags:
   - Apple
   - Domains
   - Pay
-overlays:
-  - url: overlays/apple-pay-openapi-search.yml
-    type: APIs.io Search
-  - url: overlays/apple-pay-openapi-api-evangelist-ratings.yml
-    type: API Evangelist Ratings
 properties:
   - url: https://stripe.com/docs/apple-pay
     type: Documentation
-  - url: properties/apple-pay-openapi-original.yml
+  - url: openapi/apple-pay-openapi-original.yml
     type: OpenAPI
 description: >-
   Stripe users can accept Apple Pay in iOS applications in iOS 9 and above, and

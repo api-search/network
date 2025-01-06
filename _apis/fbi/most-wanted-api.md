@@ -11,7 +11,7 @@ humanURL: https://www.fbi.gov/wanted/api
 properties:
   - url: https://www.fbi.gov/wanted/api
     type: Documentation
-  - url: openapi.yml
+  - url: openapi/.yml
     type: OpenAPI
 description: >-
   The FBI Wanted API is designed to help developers easily get information on

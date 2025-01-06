@@ -1,4 +1,5 @@
 ---
+aid: linkedin:linkedin-marketing-api
 name: LinkedIn Marketing API
 tags: []
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -12,30 +13,33 @@ properties:
   - url: https://learn.microsoft.com/en-us/linkedin/marketing/usecases/
     type: Use Cases
   - url: >-
+
       https://learn.microsoft.com/en-us/linkedin/marketing/integrations/recent-changes
     type: Change Log
-  - url: properties/linkedin-marketing-audience-insights.yml
+  - url: openapi/linkedin-marketing-audience-insights.yml
     type: OpenAPI
-  - url: properties/linkedin-marketing-audience.yml
+  - url: openapi/linkedin-marketing-audience.yml
     type: OpenAPI
-  - url: properties/linkedin-marketing-campaigns.yml
+  - url: openapi/linkedin-marketing-campaigns.yml
     type: OpenAPI
-  - url: properties/linkedin-marketing-community.yml
+  - url: openapi/linkedin-marketing-community.yml
     type: OpenAPI
-  - url: properties/linkedin-marketing-content.yml
+  - url: openapi/linkedin-marketing-content.yml
     type: OpenAPI
-  - url: properties/linkedin-marketing-conversions.yml
+  - url: openapi/linkedin-marketing-conversions.yml
     type: OpenAPI
-  - url: properties/linkedin-marketing-leads.yml
+  - url: openapi/linkedin-marketing-leads.yml
     type: OpenAPI
-  - url: properties/linkedin-marketing-media-planning.yml
+  - url: openapi/linkedin-marketing-media-planning.yml
     type: OpenAPI
-  - url: properties/linkedin-marketing-reporting-roi.yml
+  - url: openapi/linkedin-marketing-reporting-roi.yml
     type: OpenAPI
   - url: >-
+
       https://www.postman.com/linkedin-developer-apis/workspace/linkedin-marketing-solutions-versioned-apis/overview
     type: Postman Workspace
-description: >-
+description: |-
+
   Grow your business by building scalable solutions that drive workflow
   efficiency, streamline marketing activities, deliver unique insights, and
   maximize results for B2B marketers.

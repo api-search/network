@@ -9,7 +9,7 @@ humanURL: https://developer.lufthansa.com
 properties:
   - url: https://developer.lufthansa.com/io-docs
     type: Documentation
-  - url: properties/lufthansa-openapi.yml
+  - url: openapi/lufthansa-openapi.yml
     type: OpenAPI
 description: This API provides Lufthansa's flight schedule information.
 

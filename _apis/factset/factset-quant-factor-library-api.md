@@ -12,25 +12,31 @@ overlays:
     type: API Evangelist Ratings
 properties:
   - url: >-
+
       https://developer.factset.com/api-catalog/factset-quant-factor-library-api#overview
     type: Documentation
   - url: >-
+
       https://developer.factset.com/api-catalog/factset-quant-factor-library-api#sdkLibrary
     type: SDKs
   - url: >-
+
       https://developer.factset.com/api-catalog/factset-quant-factor-library-api#notebooks
     type: Jupyter Notebooks
   - url: >-
+
       https://developer.factset.com/api-catalog/factset-quant-factor-library-api#codeSnippet
     type: Code Snippets
   - url: >-
+
       https://developer.factset.com/api-catalog/factset-quant-factor-library-api#changelog
     type: Change Log
-  - url: properties/quant-factor-library-openapi-original.yml
+  - url: openapi/quant-factor-library-openapi-original.yml
     type: OpenAPI
-description: >-
-  The FactSet Quant Factor Library (QFL) API helps to detect investment themes
-  across global equity markets, incorporate ideas into your portfolio
+description: |-
+
+  The FactSet Quant Factor Library (QFL) API helps to detect investment
+  themes across global equity markets, incorporate ideas into your portfolio
   construction process, and transform raw data into actionable intelligence.
 
 ---

@@ -1,6 +1,6 @@
 ---
 aid: microsoft-azure:storage-cache-mgmt-client
-name: Storage Cache Mgmt Client
+name: Microsoft Azure Storage Cache Mgmt Client
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -9,7 +9,7 @@ humanURL: https://example.com
 properties:
   - url: https://example.com
     type: Documentation
-  - url: properties/storage-cache-mgmt-client-openapi-original.yml
+  - url: openapi/storage-cache-mgmt-client-openapi-original.yml
     type: OpenAPI
 description: >-
   A Storage Cache provides scalable caching service for NAS clients, serving

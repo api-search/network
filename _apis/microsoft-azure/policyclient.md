@@ -1,6 +1,6 @@
 ---
 aid: microsoft-azure:policyclient
-name: PolicyClient
+name: Microsoft Azure PolicyClient
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -9,7 +9,7 @@ humanURL: https://example.com
 properties:
   - url: https://example.com
     type: Documentation
-  - url: properties/policyclient-openapi-original.yml
+  - url: openapi/policyclient-openapi-original.yml
     type: OpenAPI
 description: >-
   To manage and control access to your resources, you can define customized

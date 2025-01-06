@@ -1,6 +1,6 @@
 ---
 aid: microsoft-azure:networkmanageractiveconfiguration
-name: NetworkManagerActiveConfiguration
+name: Microsoft Azure NetworkManagerActiveConfiguration
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -9,7 +9,7 @@ humanURL: https://example.com
 properties:
   - url: https://example.com
     type: Documentation
-  - url: properties/networkmanageractiveconfiguration-openapi-original.yml
+  - url: openapi/networkmanageractiveconfiguration-openapi-original.yml
     type: OpenAPI
 description: >-
   The Microsoft Azure Network Manager Active Configuration API provides a

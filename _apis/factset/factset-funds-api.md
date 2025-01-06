@@ -17,11 +17,13 @@ properties:
     type: SDKs
   - url: https://developer.factset.com/api-catalog/factset-funds-api#notebooks
     type: Jupyter Notebooks
-  - url: https://developer.factset.com/api-catalog/factset-funds-api#codeSnippet
+  - url: |-
+
+      https://developer.factset.com/api-catalog/factset-funds-api#codeSnippet
     type: Code Snippets
   - url: https://developer.factset.com/api-catalog/factset-funds-api#changelog
     type: Change Log
-  - url: properties/funds-openapi-original.yml
+  - url: openapi/funds-openapi-original.yml
     type: OpenAPI
 description: Reference and Time Series Mutual Fund Data
 

@@ -1,6 +1,6 @@
 ---
 aid: microsoft-azure:timeseriesinsightsclient
-name: TimeSeriesInsightsClient
+name: Microsoft Azure TimeSeriesInsightsClient
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -9,7 +9,7 @@ humanURL: https://example.com
 properties:
   - url: https://example.com
     type: Documentation
-  - url: properties/timeseriesinsightsclient-openapi-original.yml
+  - url: openapi/timeseriesinsightsclient-openapi-original.yml
     type: OpenAPI
 description: Time Series Insights client
 

@@ -16,15 +16,10 @@ tags:
   - Rules
   - Subscribe
   - Subscribed
-overlays:
-  - url: overlays/video-openapi-search.yml
-    type: APIs.io Search
-  - url: overlays/video-openapi-api-evangelist-ratings.yml
-    type: API Evangelist Ratings
 properties:
   - url: https://www.twilio.com/docs/video
     type: Documentation
-  - url: properties/video-openapi-original.yml
+  - url: openapi/video-openapi-original.yml
     type: OpenAPI
 description: >-
   Twilio Video is a programmable real-time communications platform that allows

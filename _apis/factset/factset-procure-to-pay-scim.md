@@ -11,22 +11,31 @@ overlays:
   - url: overlays/procure-to-pay-api-scim-openapi-api-evangelist-ratings.yml
     type: API Evangelist Ratings
 properties:
-  - url: https://developer.factset.com/api-catalog/procure-to-pay-api-scim#overview
+  - url: |-
+
+      https://developer.factset.com/api-catalog/procure-to-pay-api-scim#overview
     type: Documentation
   - url: >-
+
       https://developer.factset.com/api-catalog/procure-to-pay-api-scim#sdkLibrary
     type: SDKs
   - url: >-
+
       https://developer.factset.com/api-catalog/procure-to-pay-api-scim#notebooks
     type: Jupyter Notebooks
   - url: >-
+
       https://developer.factset.com/api-catalog/procure-to-pay-api-scim#codeSnippet
     type: Code Snippets
   - url: >-
+
       https://developer.factset.com/api-catalog/procure-to-pay-api-scim#changelog
     type: Change Log
-  - url: properties/procure-to-pay-api-scim-openapi-original.yml
+  - url: openapi/procure-to-pay-api-scim-openapi-original.yml
     type: OpenAPI
-description: Create users and manage user attributes, entitlements and security settings
+description: |-
+
+  Create users and manage user attributes, entitlements and security
+  settings
 
 ---

@@ -1,6 +1,6 @@
 ---
 aid: microsoft-azure:azure-easm
-name: Azure EASM
+name: Microsoft Azure EASM
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -9,7 +9,7 @@ humanURL: https://example.com
 properties:
   - url: https://example.com
     type: Documentation
-  - url: properties/azure-easm-openapi-original.yml
+  - url: openapi/azure-easm-openapi-original.yml
     type: OpenAPI
 description: >-
   EASM discovers and maps your digital attack surface to provide an "outside-in"

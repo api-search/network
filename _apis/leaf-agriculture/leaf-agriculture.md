@@ -5,7 +5,7 @@ humanURL: https://withleaf.io
 properties:
   - url: https://withleaf.io
     type: Documentation
-  - url: properties/agrio-openapi-original.yml
+  - url: openapi/agrio-openapi-original.yml
     type: OpenAPI
 description: >-
   We are Leaf Agriculture, provider of a unified farm data API. After

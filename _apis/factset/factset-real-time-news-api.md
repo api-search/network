@@ -35,17 +35,22 @@ overlays:
 properties:
   - url: https://developer.factset.com/api-catalog/real-time-news-api#overview
     type: Documentation
-  - url: https://developer.factset.com/api-catalog/real-time-news-api#sdkLibrary
+  - url: |-
+
+      https://developer.factset.com/api-catalog/real-time-news-api#sdkLibrary
     type: SDKs
   - url: https://developer.factset.com/api-catalog/real-time-news-api#notebooks
     type: Jupyter Notebooks
-  - url: https://developer.factset.com/api-catalog/real-time-news-api#codeSnippet
+  - url: |-
+
+      https://developer.factset.com/api-catalog/real-time-news-api#codeSnippet
     type: Code Snippets
   - url: https://developer.factset.com/api-catalog/real-time-news-api#changelog
     type: Change Log
-  - url: properties/real-time-news-openapi-original.yml
+  - url: openapi/real-time-news-openapi-original.yml
     type: OpenAPI
-description: >-
+description: |-
+
   Retrieve news by category, identifier, and keyword, for a specific date or
   range of dates. Endpoints can be subscribed for streamed updates.
 

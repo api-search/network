@@ -9,7 +9,8 @@ overlays: []
 properties:
   - url: https://docs.mapbox.com/api/maps/raster-tiles/
     type: Documentation
-description: >-
+description: |-
+
   The Mapbox Raster Tiles API serves raster tiles generated from satellite
   imagery tilesets and tilesets generated from raster data uploaded to
   Mapbox.com.

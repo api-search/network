@@ -1,6 +1,6 @@
 ---
 aid: microsoft-azure:subscriptionclient
-name: SubscriptionClient
+name: Microsoft Azure SubscriptionClient
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -9,7 +9,7 @@ humanURL: https://example.com
 properties:
   - url: https://example.com
     type: Documentation
-  - url: properties/subscriptionclient-openapi-original.yml
+  - url: openapi/subscriptionclient-openapi-original.yml
     type: OpenAPI
 description: >-
   All resource groups and resources exist within subscriptions. These operation

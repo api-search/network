@@ -21,15 +21,10 @@ tags:
   - Removes
   - Secondary
 humanURL: https://www.twilio.com/docs/iam/api/account
-overlays:
-  - url: overlays/accounts-openapi-search.yml
-    type: APIs.io Search
-  - url: overlays/accounts-openapi-api-evangelist-ratings.yml
-    type: API Evangelist Ratings
 properties:
   - url: https://www.twilio.com/docs/iam/api/account
     type: Documentation
-  - url: properties/accounts-openapi-original.yml
+  - url: openapi/accounts-openapi-original.yml
     type: OpenAPI
 description: >-
   When you first sign up with Twilio, you have just one account, your main

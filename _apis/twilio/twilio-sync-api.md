@@ -14,15 +14,10 @@ tags:
   - Maps
   - Keys
 humanURL: https://www.twilio.com/docs/sync/api
-overlays:
-  - url: overlays/sync-openapi-search.yml
-    type: APIs.io Search
-  - url: overlays/sync-openapi-api-evangelist-ratings.yml
-    type: API Evangelist Ratings
 properties:
   - url: https://www.twilio.com/docs/
     type: Documentation
-  - url: properties/sync-openapi-original.yml
+  - url: openapi/sync-openapi-original.yml
     type: OpenAPI
 description: >-
   The Sync REST API allows you to control your Sync applications from backend

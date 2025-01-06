@@ -1,6 +1,6 @@
 ---
 aid: microsoft-azure:managementlinkclient
-name: ManagementLinkClient
+name: Microsoft Azure ManagementLinkClient
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -9,7 +9,7 @@ humanURL: https://example.com
 properties:
   - url: https://example.com
     type: Documentation
-  - url: properties/managementlinkclient-openapi-original.yml
+  - url: openapi/managementlinkclient-openapi-original.yml
     type: OpenAPI
 description: >-
   Azure resources can be linked together to form logical relationships. You can

@@ -5,7 +5,6 @@ tags: []
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 baseURL: https://api.example.com
 humanURL: https://www.foia.gov/developer/
-overlays: []
 properties:
   - url: https://www.foia.gov/developer/
     type: Documentation

@@ -54,11 +54,8 @@ tags:
   - Whitelist
 baseURL: https://public-api.sandbox.bunq.com/
 humanURL: https://doc.bunq.com/#/monetary-account
-overlays:
-  - url: overlays/bunq-user-userid-monetary-account-openapi-search.yml
-    type: OpenAPI
 properties:
-  - url: properties/bunq-user-userid-monetary-account-openapi-original.yml
+  - url: openapi/bunq-user-userid-monetary-account-openapi-original.yml
     type: OpenAPI
   - url: https://doc.bunq.com/
     type: Documentation

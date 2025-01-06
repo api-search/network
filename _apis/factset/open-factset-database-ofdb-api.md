@@ -30,10 +30,11 @@ properties:
     type: Code Snippets
   - url: https://developer.factset.com/api-catalog/ofdb-api#changelog
     type: Change Log
-  - url: properties/ofdb-openapi-original.yml
+  - url: openapi/ofdb-openapi-original.yml
     type: OpenAPI
-description: >-
-  Through Open FactSet Database (OFDB) API, users can create, modify and view
-  non portfolio databases.
+description: |-
+
+  Through Open FactSet Database (OFDB) API, users can create, modify and
+  view non portfolio databases.
 
 ---

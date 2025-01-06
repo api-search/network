@@ -15,11 +15,10 @@ tags:
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 baseURL: https://api.example.com
 humanURL: https://developer.walmart.com/doc/us/us-supplier/us-supplier-inventory/
-overlays: []
 properties:
   - url: https://developer.walmart.com/doc/us/us-supplier/us-supplier-inventory/
     type: Documentation
-  - url: properties/walmart-dropship-vendor-inventory-openapi-original.yml
+  - url: openapi/walmart-dropship-vendor-inventory-openapi-original.yml
     type: OpenAPI
 description: >-
   Walmart's Inventory Management API provide drop ship vending (DSV) suppliers

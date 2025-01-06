@@ -11,22 +11,31 @@ overlays:
   - url: overlays/benchmarks-openapi-api-evangelist-ratings.yml
     type: API Evangelist Ratings
 properties:
-  - url: https://developer.factset.com/api-catalog/factset-benchmarks-api#overview
+  - url: |-
+
+      https://developer.factset.com/api-catalog/factset-benchmarks-api#overview
     type: Documentation
   - url: >-
+
       https://developer.factset.com/api-catalog/factset-benchmarks-api#sdkLibrary
     type: SDKs
-  - url: https://developer.factset.com/api-catalog/factset-benchmarks-api#notebooks
+  - url: |-
+
+      https://developer.factset.com/api-catalog/factset-benchmarks-api#notebooks
     type: Jupyter Notebooks
   - url: >-
+
       https://developer.factset.com/api-catalog/factset-benchmarks-api#codeSnippet
     type: Code Snippets
-  - url: https://developer.factset.com/api-catalog/factset-benchmarks-api#changelog
+  - url: |-
+
+      https://developer.factset.com/api-catalog/factset-benchmarks-api#changelog
     type: Change Log
-  - url: properties/benchmarks-openapi-original.yml
+  - url: openapi/benchmarks-openapi-original.yml
     type: OpenAPI
-description: >-
-  Returns Benchmark Constituent data including weights, price, and market value
-  for a specified date.
+description: |-
+
+  Returns Benchmark Constituent data including weights, price, and market
+  value for a specified date.
 
 ---

@@ -13,19 +13,28 @@ overlays:
 properties:
   - url: https://developer.factset.com/api-catalog/factset-options-api#overview
     type: Documentation
-  - url: https://developer.factset.com/api-catalog/factset-options-api#sdkLibrary
+  - url: |-
+
+      https://developer.factset.com/api-catalog/factset-options-api#sdkLibrary
     type: SDKs
-  - url: https://developer.factset.com/api-catalog/factset-options-api#notebooks
+  - url: |-
+
+      https://developer.factset.com/api-catalog/factset-options-api#notebooks
     type: Jupyter Notebooks
-  - url: https://developer.factset.com/api-catalog/factset-options-api#codeSnippet
+  - url: |-
+
+      https://developer.factset.com/api-catalog/factset-options-api#codeSnippet
     type: Code Snippets
-  - url: https://developer.factset.com/api-catalog/factset-options-api#changelog
+  - url: |-
+
+      https://developer.factset.com/api-catalog/factset-options-api#changelog
     type: Change Log
-  - url: properties/options-openapi-original.yml
+  - url: openapi/options-openapi-original.yml
     type: OpenAPI
-description: >-
-  The FactSet Options API provides Chains and related pricing data such as mid
-  bid-ask price, reference data (e.g., strike price), and risk measures (e.g.,
-  Greeks and implied volatility).
+description: |-
+
+  The FactSet Options API provides Chains and related pricing data such as
+  mid bid-ask price, reference data (e.g., strike price), and risk measures
+  (e.g., Greeks and implied volatility).
 
 ---

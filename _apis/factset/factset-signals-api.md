@@ -32,11 +32,12 @@ properties:
     type: Code Snippets
   - url: https://developer.factset.com/api-catalog/signals-api#changelog
     type: Change Log
-  - url: properties/signals-openapi-original.yml
+  - url: openapi/signals-openapi-original.yml
     type: OpenAPI
-description: >-
+description: |-
+
   Leverage Signals to identify material events for a company. Signals are
-  derived from FactSet's core data,  cognitive computing technology, and our 3rd
-  party partners. 
+  derived from FactSet's core data,  cognitive computing technology, and our
+  3rd party partners. 
 
 ---

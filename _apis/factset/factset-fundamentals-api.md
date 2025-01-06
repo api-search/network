@@ -12,26 +12,32 @@ overlays:
     type: API Evangelist Ratings
 properties:
   - url: >-
+
       https://developer.factset.com/api-catalog/factset-fundamentals-api#overview
     type: Documentation
   - url: >-
+
       https://developer.factset.com/api-catalog/factset-fundamentals-api#sdkLibrary
     type: SDKs
   - url: >-
+
       https://developer.factset.com/api-catalog/factset-fundamentals-api#notebooks
     type: Jupyter Notebooks
   - url: >-
+
       https://developer.factset.com/api-catalog/factset-fundamentals-api#codeSnippet
     type: Code Snippets
   - url: >-
+
       https://developer.factset.com/api-catalog/factset-fundamentals-api#changelog
     type: Change Log
-  - url: properties/fundamentals-openapi-original.yml
+  - url: openapi/fundamentals-openapi-original.yml
     type: OpenAPI
-description: >-
+description: |-
+
   Gain access to current, comprehensive, and comparative information on
-  securities in worldwide developed and emerging markets. Composed of annual and
-  interim/quarterly data and detailed historical financial statement content,
-  FactSet Fundamentals_
+  securities in worldwide developed and emerging markets. Composed of annual
+  and interim/quarterly data and detailed historical financial statement
+  content, FactSet Fundamentals_
 
 ---

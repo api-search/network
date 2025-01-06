@@ -1,6 +1,6 @@
 ---
 aid: microsoft-azure:peeringmanagementclient
-name: PeeringManagementClient
+name: Microsoft Azure PeeringManagementClient
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -9,7 +9,7 @@ humanURL: https://example.com
 properties:
   - url: https://example.com
     type: Documentation
-  - url: properties/peeringmanagementclient-openapi-original.yml
+  - url: openapi/peeringmanagementclient-openapi-original.yml
     type: OpenAPI
 description: APIs to manage Peering resources through the Azure Resource Manager.
 

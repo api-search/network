@@ -13,10 +13,13 @@ overlays:
   - url: overlays/github-markdown--openapi-search.yml
     type: OpenAPI
 properties:
-  - url: properties/github-markdown--openapi-original.yml
+  - url: openapi/github-markdown--openapi-original.yml
     type: OpenAPI
   - url: https://docs.github.com/en/rest/markdown
     type: Documentation
-description: Use the REST API to render a Markdown document as an HTML page or as raw text.
+description: |-
+
+  Use the REST API to render a Markdown document as an HTML page or as raw
+  text.
 
 ---

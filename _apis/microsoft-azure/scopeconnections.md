@@ -1,6 +1,6 @@
 ---
 aid: microsoft-azure:scopeconnections
-name: ScopeConnections
+name: Microsoft Azure ScopeConnections
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -9,7 +9,7 @@ humanURL: https://example.com
 properties:
   - url: https://example.com
     type: Documentation
-  - url: properties/scopeconnections-openapi-original.yml
+  - url: openapi/scopeconnections-openapi-original.yml
     type: OpenAPI
 description: >-
   The Microsoft Azure Virtual Network Manager API provides a RESTful set of web

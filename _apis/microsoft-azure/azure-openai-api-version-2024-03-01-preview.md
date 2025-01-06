@@ -1,6 +1,6 @@
 ---
 aid: microsoft-azure:azure-openai-api-version-2024-03-01-preview
-name: Azure OpenAI API version 2024-03-01-preview
+name: Microsoft Azure OpenAI API version 2024-03-01-preview
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -9,8 +9,7 @@ humanURL: https://example.com
 properties:
   - url: https://example.com
     type: Documentation
-  - url: >-
-      properties/azure-openai-api-version-2024-03-01-preview-openapi-original.yml
+  - url: openapiazure-openai-api-version-2024-03-01-preview-openapi-original.yml
     type: OpenAPI
 description: APIs for fine-tuning and managing deployments of OpenAI models.
 

@@ -1,6 +1,6 @@
 ---
 aid: microsoft-azure:networkmanagergroupmembership
-name: NetworkManagerGroupMembership
+name: Microsoft Azure NetworkManagerGroupMembership
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -9,7 +9,7 @@ humanURL: https://example.com
 properties:
   - url: https://example.com
     type: Documentation
-  - url: properties/networkmanagergroupmembership-openapi-original.yml
+  - url: openapi/networkmanagergroupmembership-openapi-original.yml
     type: OpenAPI
 description: >-
   The Microsoft Azure Network Manager Group Membership API provides a RESTful

@@ -5,11 +5,8 @@ tags:
   - Ideal
   - Tokens
   - Users
-overlays:
-  - url: overlays/bunq-user-userid-token-qr-request-ideal-openapi-search.yml
-    type: OpenAPI
 properties:
-  - url: properties/bunq-user-userid-token-qr-request-ideal-openapi-original.yml
+  - url: openapi/bunq-user-userid-token-qr-request-ideal-openapi-original.yml
     type: OpenAPI
 description: Needs description.
 

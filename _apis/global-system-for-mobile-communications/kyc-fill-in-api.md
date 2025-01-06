@@ -14,7 +14,7 @@ properties:
   - url: >-
       https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/camaraproject/KnowYourCustomer/r1.3/code/API_definitions/kyc-match.yaml&nocors
     type: Documentation
-  - url: properties/kyc-match-openapi.yml
+  - url: openapi/kyc-match-openapi.yml
     type: OpenAPI
   - url: bruno/GSMA Camara Project Know Your Customer Match/bruno.json
     type: BrunoCollection

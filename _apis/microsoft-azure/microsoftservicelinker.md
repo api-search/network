@@ -1,6 +1,6 @@
 ---
 aid: microsoft-azure:microsoftservicelinker
-name: Microsoft.ServiceLinker
+name: Microsoft Azure Microsoft.ServiceLinker
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -9,7 +9,7 @@ humanURL: https://example.com
 properties:
   - url: https://example.com
     type: Documentation
-  - url: properties/microsoftservicelinker-openapi-original.yml
+  - url: openapi/microsoftservicelinker-openapi-original.yml
     type: OpenAPI
 description: Microsoft.ServiceLinker provider
 

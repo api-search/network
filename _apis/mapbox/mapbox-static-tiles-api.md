@@ -9,11 +9,12 @@ overlays: []
 properties:
   - url: https://docs.mapbox.com/api/maps/static-tiles/
     type: Documentation
-description: >-
-  The Mapbox Static Tiles API serves raster tiles generated from Mapbox Studio
-  styles. Raster tiles can be used in traditional web mapping libraries like
-  Mapbox.js, Leaflet, OpenLayers, and others to create interactive slippy maps.
-  The Static Tiles API is well-suited for maps with limited interactivity or use
-  on devices that do not support WebGL.
+description: |-
+
+  The Mapbox Static Tiles API serves raster tiles generated from Mapbox
+  Studio styles. Raster tiles can be used in traditional web mapping
+  libraries like Mapbox.js, Leaflet, OpenLayers, and others to create
+  interactive slippy maps. The Static Tiles API is well-suited for maps with
+  limited interactivity or use on devices that do not support WebGL.
 
 ---

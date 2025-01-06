@@ -15,14 +15,21 @@ overlays:
   - url: overlays/plaid-link-delivery--openapi-api-evangelist-ratings.yml
     type: API Evangelist Ratings
 properties:
-  - url: properties/plaid-link-delivery--openapi-original.yml
+  - url: openapi/plaid-link-delivery--openapi-original.yml
     type: OpenAPI
   - url: https://plaid.com/docs/link/hosted-link/
     type: Documentation
 description: >-
-  Hosted Link is the easiest and fastest way to integrate with Plaid. With
-  Hosted Link, Plaid hosts the Link experience. Customers can use this link in
-  web browsers or open it in a secure web context within a mobile app,
-  eliminating the need for front-end implementation work. 
+  Plaid Link Delivery API is a powerful tool that allows developers to
+  seamlessly integrate Plaid's account linking technology into their
+  applications. This API streamlines the process of connecting users' bank
+  accounts to financial services, making it easy for users to securely and
+  quickly access their financial data. With Plaid Link Delivery API, developers
+  can customize the account linking experience to match their brand and user
+  experience requirements, while maintaining strict security protocols to
+  protect sensitive information. By leveraging this API, developers can provide
+  a user-friendly and efficient way for customers to connect their accounts and
+  access their financial information, ultimately enhancing the overall user
+  experience of their applications.
 
 ---

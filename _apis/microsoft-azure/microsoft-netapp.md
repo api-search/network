@@ -1,6 +1,6 @@
 ---
 aid: microsoft-azure:microsoft-netapp
-name: Microsoft NetApp
+name: Microsoft Azure Microsoft NetApp
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -9,7 +9,7 @@ humanURL: https://example.com
 properties:
   - url: https://example.com
     type: Documentation
-  - url: properties/microsoft-netapp-openapi-original.yml
+  - url: openapi/microsoft-netapp-openapi-original.yml
     type: OpenAPI
 description: Microsoft NetApp Azure Resource Provider specification
 

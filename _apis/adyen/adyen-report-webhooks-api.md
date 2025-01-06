@@ -2,11 +2,14 @@
 aid: adyen:adyen-report-webhooks-api
 name: Adyen Report Webhooks API
 tags: []
-overlays:
-  - url: overlays/report-webhooks-openapi-search.yml
-    type: APIs.io Search
-  - url: overlays/report-webhooks-openapi-api-evangelist-ratings.yml
-    type: API Evangelist Ratings
+image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+baseURL: https://api.example.com
+humanURL: https://docs.adyen.com/api-explorer/report-webhooks/1/overview
+properties:
+  - url: https://docs.adyen.com/api-explorer/report-webhooks/1/overview
+    type: Documentation
+  - url: openapi/report-webhooks-openapi-original.yml
+    type: OpenAPI
 description: >-
   Adyen sends webhooks to inform your system that reports were generated and are
   ready to be downloaded. You can download reports programmatically by making an

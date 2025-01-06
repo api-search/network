@@ -14,7 +14,7 @@ properties:
   - url: >-
       https://github.com/camaraproject/ShortMessageService/blob/6fd0ff0e79a3e26244e5f026c8e40260b0a47494/documentation/API_documentation/Text_SMS_User_Story.md
     type: Documentation
-  - url: properties/sms-delivery-notification-subscription-api-openapi.yml
+  - url: openapi/sms-delivery-notification-subscription-api-openapi.yml
     type: OpenAPI
   - url: >-
       bruno/GSMA Camara Project SMS Delivery Notification Subscription

@@ -16,7 +16,7 @@ properties:
   - url: >-
       https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/camaraproject/DeviceLocation/r1.2/code/API_definitions/geofencing-subscriptions.yaml&nocors
     type: Documentation
-  - url: properties/device-geofencing-subscriptions-api-openapi.yml
+  - url: openapi/device-geofencing-subscriptions-api-openapi.yml
     type: OpenAPI
   - url: bruno/GSMA Camara Project Device Geofencing Subscriptions API/bruno.json
     type: BrunoCollection

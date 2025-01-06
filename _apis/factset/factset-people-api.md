@@ -15,18 +15,23 @@ overlays:
 properties:
   - url: https://developer.factset.com/api-catalog/factset-people-api#overview
     type: Documentation
-  - url: https://developer.factset.com/api-catalog/factset-people-api#sdkLibrary
+  - url: |-
+
+      https://developer.factset.com/api-catalog/factset-people-api#sdkLibrary
     type: SDKs
   - url: https://developer.factset.com/api-catalog/factset-people-api#notebooks
     type: Jupyter Notebooks
-  - url: https://developer.factset.com/api-catalog/factset-people-api#codeSnippet
+  - url: |-
+
+      https://developer.factset.com/api-catalog/factset-people-api#codeSnippet
     type: Code Snippets
   - url: https://developer.factset.com/api-catalog/factset-people-api#changelog
     type: Change Log
-  - url: properties/people-openapi-original.yml
+  - url: openapi/people-openapi-original.yml
     type: OpenAPI
-description: >-
-  Fetch People Profiles, Job History, or get associated positions and names of
-  companies.
+description: |-
+
+  Fetch People Profiles, Job History, or get associated positions and names
+  of companies.
 
 ---

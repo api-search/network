@@ -30,21 +30,26 @@ overlays:
     type: API Evangelist Ratings
 properties:
   - url: >-
+
       https://developer.factset.com/api-catalog/barra-portfolio-optimizer#overview
     type: Documentation
   - url: >-
+
       https://developer.factset.com/api-catalog/barra-portfolio-optimizer#sdkLibrary
     type: SDKs
   - url: >-
+
       https://developer.factset.com/api-catalog/barra-portfolio-optimizer#notebooks
     type: Jupyter Notebooks
   - url: >-
+
       https://developer.factset.com/api-catalog/barra-portfolio-optimizer#codeSnippet
     type: Code Snippets
   - url: >-
+
       https://developer.factset.com/api-catalog/barra-portfolio-optimizer#changelog
     type: Change Log
-  - url: properties/barra-portfolio-optimizer-openapi-original.yml
+  - url: openapi/barra-portfolio-optimizer-openapi-original.yml
     type: OpenAPI
 description: Barra Portfolio Optimizer (BPM) API
 

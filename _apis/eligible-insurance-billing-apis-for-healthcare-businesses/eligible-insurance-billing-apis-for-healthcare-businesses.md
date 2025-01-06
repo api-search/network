@@ -4,6 +4,6 @@ image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jp
 humanURL: https://eligible.com/
 description: >-
   Eligible APIs enable the integration of insurance billing experiences into
-  healthcare applications. ~ https://eligible.com/
+  healthcare applications.  https://eligible.com/
 
 ---

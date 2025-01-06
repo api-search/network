@@ -9,15 +9,10 @@ tags:
   - Disputes
   - Close
   - Refunds
-overlays:
-  - url: overlays/charges-openapi-search.yml
-    type: APIs.io Search
-  - url: overlays/charges-openapi-api-evangelist-ratings.yml
-    type: API Evangelist Ratings
 properties:
   - url: https://stripe.com/docs/api/charges
     type: Documentation
-  - url: properties/charges-openapi-original.yml
+  - url: openapi/charges-openapi-original.yml
     type: OpenAPI
 description: >-
   The Charge object represents a single attempt to move money into your Stripe

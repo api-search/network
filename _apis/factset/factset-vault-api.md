@@ -42,9 +42,10 @@ properties:
     type: Code Snippets
   - url: https://developer.factset.com/api-catalog/vault-api#changelog
     type: Change Log
-  - url: properties/vault-openapi-original.yml
+  - url: openapi/vault-openapi-original.yml
     type: OpenAPI
-description: >-
+description: |-
+
   Through the Vault API, request validated pre-calculated returns and
   attribution data archived in Portfolio Vault to streamline your official
   performance and reporting workflows.

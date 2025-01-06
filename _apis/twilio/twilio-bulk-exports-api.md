@@ -10,15 +10,10 @@ tags:
   - Resources
   - Types
 humanURL: https://www.twilio.com/docs/usage/bulkexport
-overlays:
-  - url: overlays/bulk-exports-openapi-search.yml
-    type: APIs.io Search
-  - url: overlays/bulk-exports-openapi-api-evangelist-ratings.yml
-    type: API Evangelist Ratings
 properties:
   - url: https://www.twilio.com/docs/
     type: Documentation
-  - url: properties/bulk-exports-openapi-original.yml
+  - url: openapi/bulk-exports-openapi-original.yml
     type: OpenAPI
 description: >-
   The BulkExport API allows users to easily retrieve all activity logs from the

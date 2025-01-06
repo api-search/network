@@ -42,10 +42,10 @@ properties:
   - url: https://github.com/api-evangelist/search-api/blob/main/use-cases.yml
     type: UseCases
   - url: >-
-      https://www.postman.com/api-evangelist/apis-io/monitor/APIs-io-Search---Status~1ef6bc29-9da9-4040-b98b-cef03be1155e
+      https://www.postman.com/api-evangelist/apis-io/monitor/APIs-io-Search---Status1ef6bc29-9da9-4040-b98b-cef03be1155e
     type: Status
   - url: >-
-      https://www.postman.com/api-evangelist/apis-io/monitor/APIs-io-Search---Performance~1ef6bc38-c969-4bd0-815b-25b7d1b1a503
+      https://www.postman.com/api-evangelist/apis-io/monitor/APIs-io-Search---Performance1ef6bc38-c969-4bd0-815b-25b7d1b1a503
     type: Performance
 description: >-
   This is the API to access APIs.io API search engine, from the product

@@ -1,4 +1,5 @@
 ---
+aid: zoom:zoom-metrics-api
 name: Zoom Metrics API
 tags:
   - Crc
@@ -11,11 +12,8 @@ tags:
   - Zoomroomdetail
   - Zoomrooms
 humanURL: https://developers.zoom.us/docs/api/
-overlays:
-  - url: overlays/zoom-metrics--openapi-search.yml
-    type: OpenAPI
 properties:
-  - url: properties/zoom-metrics--openapi-original.yml
+  - url: openapi/zoom-metrics--openapi-original.yml
     type: OpenAPI
 description: Access and manage all of the metrics associate with operating on Zoom.
 

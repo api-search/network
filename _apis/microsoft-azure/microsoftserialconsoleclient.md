@@ -1,6 +1,6 @@
 ---
 aid: microsoft-azure:microsoftserialconsoleclient
-name: MicrosoftSerialConsoleClient
+name: Microsoft Azure MicrosoftSerialConsoleClient
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -9,7 +9,7 @@ humanURL: https://example.com
 properties:
   - url: https://example.com
     type: Documentation
-  - url: properties/microsoftserialconsoleclient-openapi-original.yml
+  - url: openapi/microsoftserialconsoleclient-openapi-original.yml
     type: OpenAPI
 description: >-
   The Azure Serial Console allows you to access the serial console of a Virtual

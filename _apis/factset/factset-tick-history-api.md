@@ -12,24 +12,30 @@ overlays:
     type: API Evangelist Ratings
 properties:
   - url: >-
+
       https://developer.factset.com/api-catalog/factset-tick-history-api#overview
     type: Documentation
   - url: >-
+
       https://developer.factset.com/api-catalog/factset-tick-history-api#sdkLibrary
     type: SDKs
   - url: >-
+
       https://developer.factset.com/api-catalog/factset-tick-history-api#notebooks
     type: Jupyter Notebooks
   - url: >-
+
       https://developer.factset.com/api-catalog/factset-tick-history-api#codeSnippet
     type: Code Snippets
   - url: >-
+
       https://developer.factset.com/api-catalog/factset-tick-history-api#changelog
     type: Change Log
-  - url: properties/tick-history-openapi-original.yml
+  - url: openapi/tick-history-openapi-original.yml
     type: OpenAPI
-description: >-
-  Tick History provides dynamic access to historical tick data for a specific
-  security for specific dates or date range.
+description: |-
+
+  Tick History provides dynamic access to historical tick data for a
+  specific security for specific dates or date range.
 
 ---

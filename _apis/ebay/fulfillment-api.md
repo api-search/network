@@ -8,7 +8,7 @@ humanURL: https://developer.ebay.com/api-docs/sell/fulfillment/overview.html
 properties:
   - url: https://developer.ebay.com/api-docs/sell/fulfillment/overview.html
     type: Documentation
-  - url: properties/ebay-fulfillment-openapi-original.yml
+  - url: openapi/ebay-fulfillment-openapi-original.yml
     type: OpenAPI
   - url: https://developer.ebay.com/api-docs/sell/fulfillment/release-notes.html
     type: Release Notes

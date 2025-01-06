@@ -8,19 +8,19 @@ humanURL: https://developer.ebay.com/api-docs/commerce/notification/overview.htm
 properties:
   - url: https://developer.ebay.com/api-docs/commerce/notification/overview.html
     type: Documentation
-  - url: properties/ebay-notification-openapi-original.yml
+  - url: openapi/ebay-notification-openapi-original.yml
     type: OpenAPI
-  - url: properties/ebay-priority-listing-revisions-asyncapi-original.yml
+  - url: openapi/ebay-priority-listing-revisions-asyncapi-original.yml
     type: AsyncAPI
-  - url: properties/ebay-market-account-deletion-asyncapi-original.yml
+  - url: openapi/ebay-market-account-deletion-asyncapi-original.yml
     type: AsyncAPI
-  - url: properties/ebay-item-price-asyncapi-original.yml
+  - url: openapi/ebay-item-price-asyncapi-original.yml
     type: AsyncAPI
-  - url: properties/ebay-item-availability-asyncapi-original.yml
+  - url: openapi/ebay-item-availability-asyncapi-original.yml
     type: AsyncAPI
-  - url: properties/ebay-campaign-budget-status-asyncapi-original.yml
+  - url: openapi/ebay-campaign-budget-status-asyncapi-original.yml
     type: AsyncAPI
-  - url: properties/ebay-authorization-revocation-asyncapi-original.yml
+  - url: openapi/ebay-authorization-revocation-asyncapi-original.yml
     type: AsyncAPI
   - url: >-
       https://developer.ebay.com/api-docs/commerce/notification/release-notes.html

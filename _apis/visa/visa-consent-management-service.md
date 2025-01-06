@@ -5,7 +5,7 @@ tags:
   - Consent
 humanURL: https://developer.visa.com/capabilities/vcms
 properties:
-  - url: properties/visa-consent-management-service.yml
+  - url: openapi/visa-consent-management-service.yml
     type: OpenAPI
   - url: https://developer.visa.com/capabilities/vcms/docs-getting-started
     name: Getting Started

@@ -12,24 +12,30 @@ overlays:
     type: API Evangelist Ratings
 properties:
   - url: >-
+
       https://developer.factset.com/api-catalog/overview-report-builder-api#overview
     type: Documentation
   - url: >-
+
       https://developer.factset.com/api-catalog/overview-report-builder-api#sdkLibrary
     type: SDKs
   - url: >-
+
       https://developer.factset.com/api-catalog/overview-report-builder-api#notebooks
     type: Jupyter Notebooks
   - url: >-
+
       https://developer.factset.com/api-catalog/overview-report-builder-api#codeSnippet
     type: Code Snippets
   - url: >-
+
       https://developer.factset.com/api-catalog/overview-report-builder-api#changelog
     type: Change Log
-  - url: properties/overview-report-builder-openapi-original.yml
+  - url: openapi/overview-report-builder-openapi-original.yml
     type: OpenAPI
-description: >-
-  Relevant industry-specific data for high level analysis of public and private
-  companies 
+description: |-
+
+  Relevant industry-specific data for high level analysis of public and
+  private companies 
 
 ---

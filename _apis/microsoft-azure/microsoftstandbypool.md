@@ -1,6 +1,6 @@
 ---
 aid: microsoft-azure:microsoftstandbypool
-name: Microsoft.StandbyPool
+name: Microsoft Azure Microsoft.StandbyPool
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -9,7 +9,7 @@ humanURL: https://example.com
 properties:
   - url: https://example.com
     type: Documentation
-  - url: properties/microsoftstandbypool-openapi-original.yml
+  - url: openapi/microsoftstandbypool-openapi-original.yml
     type: OpenAPI
 
 ---

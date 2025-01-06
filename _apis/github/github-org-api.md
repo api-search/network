@@ -124,7 +124,7 @@ overlays:
   - url: overlays/github-org-openapi-search.yml
     type: OpenAPI
 properties:
-  - url: properties/github-org-openapi-original.yml
+  - url: openapi/github-org-openapi-original.yml
     type: OpenAPI
 description: Use the REST API to control and manage all your GitHub organizations.
 

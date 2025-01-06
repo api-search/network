@@ -2,12 +2,23 @@
 aid: resend:resend
 name: Resend
 tags:
-  - API
+  - Emails
+  - ' Cancel'
+  - ' Batch'
+  - ' Domains'
+  - ' Verify'
+  - ' Audiences'
+  - ' Audience'
+  - ' Contacts'
+  - ' Send'
 humanURL: https://resend.com/
 properties:
   - url: https://resend.com/
     type: Documentation
-description: >-
+  - url: properties/resend-openapi.yml
+    type: OpenAPI
+description: |-
+
   Resend is transforming email for developers. Simple interface, easy
   integrations, handy templates. 
 

@@ -38,10 +38,12 @@ properties:
     type: Code Snippets
   - url: https://developer.factset.com/api-catalog/portfolio-api#changelog
     type: Change Log
-  - url: properties/portfolio-openapi-original.yml
+  - url: openapi/portfolio-openapi-original.yml
     type: OpenAPI
-description: >-
-  Through the Portfolio API, you can accomplish what-if analysis by uploading a
-  paper portfolio to test out a new strategy or prospective opportunity.
+description: |-
+
+  Through the Portfolio API, you can accomplish what-if analysis by
+  uploading a paper portfolio to test out a new strategy or prospective
+  opportunity.
 
 ---

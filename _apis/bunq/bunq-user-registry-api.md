@@ -6,11 +6,8 @@ tags:
   - Settlements
   - Users
   - Items
-overlays:
-  - url: overlays/bunq-user-userid-registry-openapi-search.yml
-    type: OpenAPI
 properties:
-  - url: properties/bunq-user-userid-registry-openapi-original.yml
+  - url: openapi/bunq-user-userid-registry-openapi-original.yml
     type: OpenAPI
 description: Needs description.
 

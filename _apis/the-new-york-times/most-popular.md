@@ -8,7 +8,7 @@ humanURL: https://developer.nytimes.com/docs/most-popular-product/1/overview
 properties:
   - url: https://developer.nytimes.com/docs/most-popular-product/1/overview
     type: Documentation
-  - url: properties/new-york-times-most-popular-openapi-original.yml
+  - url: openapi/new-york-times-most-popular-openapi-original.yml
     type: OpenAPI
 description: >-
   Provides services for getting the most popular articles on NYTimes.com based

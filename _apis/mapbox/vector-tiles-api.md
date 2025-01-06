@@ -9,7 +9,8 @@ overlays: []
 properties:
   - url: https://docs.mapbox.com/api/maps/vector-tiles/
     type: Documentation
-description: >-
+description: |-
+
   The Mapbox Vector Tiles API serves vector tiles from Mapbox-hosted vector
   tilesets.
 

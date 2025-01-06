@@ -15,15 +15,10 @@ tags:
   - Exposed
   - Discount
   - Resume
-overlays:
-  - url: overlays/subscription-openapi-search.yml
-    type: APIs.io Search
-  - url: overlays/subscription-openapi-api-evangelist-ratings.yml
-    type: API Evangelist Ratings
 properties:
   - url: https://stripe.com/docs/api/subscriptions
     type: Documentation
-  - url: properties/subscription-openapi-original.yml
+  - url: openapi/subscription-openapi-original.yml
     type: OpenAPI
 description: Subscriptions allow you to charge a customer on a recurring basis.
 

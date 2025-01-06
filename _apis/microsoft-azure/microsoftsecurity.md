@@ -1,6 +1,6 @@
 ---
 aid: microsoft-azure:microsoftsecurity
-name: Microsoft.Security
+name: Microsoft Azure Microsoft.Security
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -9,7 +9,7 @@ humanURL: https://example.com
 properties:
   - url: https://example.com
     type: Documentation
-  - url: properties/microsoftsecurity-openapi-original.yml
+  - url: openapi/microsoftsecurity-openapi-original.yml
     type: OpenAPI
 description: REST APIs for Defender for DevOps
 

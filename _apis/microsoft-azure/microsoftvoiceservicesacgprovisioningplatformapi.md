@@ -1,6 +1,6 @@
 ---
 aid: microsoft-azure:microsoftvoiceservicesacgprovisioningplatformapi
-name: Microsoft.VoiceServices.ACG.ProvisioningPlatform.API
+name: Microsoft Azure Microsoft.VoiceServices.ACG.ProvisioningPlatform.API
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -10,7 +10,7 @@ properties:
   - url: https://example.com
     type: Documentation
   - url: >-
-      properties/microsoftvoiceservicesacgprovisioningplatformapi-openapi-original.yml
+      openapimicrosoftvoiceservicesacgprovisioningplatformapi-openapi-original.yml
     type: OpenAPI
 
 ---

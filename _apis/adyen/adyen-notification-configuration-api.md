@@ -1,17 +1,15 @@
 ---
 aid: adyen:adyen-notification-configuration-api
 name: Adyen Notification Configuration API
-tags:
-  - Configurations
-  - Notifications
-  - Subscribe
-  - Subscriptions
-  - Tests
-overlays:
-  - url: overlays/notification-configurations-openapi-search.yml
-    type: APIs.io Search
-  - url: overlays/notification-configurations-openapi-api-evangelist-ratings.yml
-    type: API Evangelist Ratings
+tags: []
+image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+baseURL: https://api.example.com
+humanURL: https://docs.adyen.com/marketplaces-and-platforms/classic/notifications
+properties:
+  - url: https://docs.adyen.com/marketplaces-and-platforms/classic/notifications
+    type: Documentation
+  - url: openapi/notification-configurations-openapi-original.yml
+    type: OpenAPI
 description: >-
   This API is used for the classic integration. If you are just starting your
   implementation, refer to our [new integration

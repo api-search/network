@@ -29,8 +29,8 @@ overlays:
   - url: overlays/github-setup-openapi-search.yml
     type: OpenAPI
 properties:
-  - url: properties/github-setup-openapi-original.yml
+  - url: openapi/github-setup-openapi-original.yml
     type: OpenAPI
-description: Needs description.
+description: Use the REST API to create and manage teams in your GitHub organization.
 
 ---

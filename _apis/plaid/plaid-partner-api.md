@@ -27,10 +27,21 @@ overlays:
   - url: overlays/plaid-partner--openapi-api-evangelist-ratings.yml
     type: API Evangelist Ratings
 properties:
-  - url: properties/plaid-partner--openapi-original.yml
+  - url: openapi/plaid-partner--openapi-original.yml
     type: OpenAPI
   - url: https://plaid.com/docs/api/partner/
     type: Documentation
-description: Create and manage end customers
+description: >-
+  The Plaid Partner API is a powerful tool that allows developers to seamlessly
+  integrate financial services and applications with their own platforms. By
+  providing a secure and reliable way to connect to banks and financial
+  institutions, the Plaid Partner API enables users to access and manage their
+  financial data in real-time. With features such as account verification,
+  transaction history, and balance reporting, the API streamlines the process of
+  interacting with financial information, making it easier for businesses to
+  create innovative financial products and services for their customers.
+  Overall, the Plaid Partner API helps to democratize access to financial data
+  and empower developers to build cutting-edge financial solutions for
+  consumers.
 
 ---

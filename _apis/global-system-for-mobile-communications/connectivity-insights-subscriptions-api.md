@@ -14,7 +14,7 @@ properties:
   - url: >-
       https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/camaraproject/ConnectivityInsights/r1.2/code/API_definitions/connectivity-insights-subscriptions.yaml&nocors
     type: Documentation
-  - url: properties/connectivity-insights-subscriptions-api-openapi.yml
+  - url: openapi/connectivity-insights-subscriptions-api-openapi.yml
     type: OpenAPI
   - url: >-
       bruno/GSMA Camara Project Connectivity Insights Subscriptions

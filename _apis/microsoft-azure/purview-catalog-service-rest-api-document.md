@@ -1,6 +1,6 @@
 ---
 aid: microsoft-azure:purview-catalog-service-rest-api-document
-name: Purview Catalog Service REST API Document
+name: Microsoft Azure Purview Catalog Service REST API Document
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -9,7 +9,7 @@ humanURL: https://example.com
 properties:
   - url: https://example.com
     type: Documentation
-  - url: properties/purview-catalog-service-rest-api-document-openapi-original.yml
+  - url: openapi/purview-catalog-service-rest-api-document-openapi-original.yml
     type: OpenAPI
 description: >-
   Purview Catalog Service is a fully managed cloud service whose users can

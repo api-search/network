@@ -1,6 +1,6 @@
 ---
 aid: microsoft-azure:common-alert-types
-name: Common Alert types
+name: Microsoft Azure Common Alert types
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -9,7 +9,7 @@ humanURL: https://example.com
 properties:
   - url: https://example.com
     type: Documentation
-  - url: properties/common-alert-types-openapi-original.yml
+  - url: openapi/common-alert-types-openapi-original.yml
     type: OpenAPI
 
 ---

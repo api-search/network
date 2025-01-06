@@ -1,6 +1,6 @@
 ---
 aid: microsoft-azure:hyperscalecitusmanagementclient
-name: HyperscaleCitusManagementClient
+name: Microsoft Azure HyperscaleCitusManagementClient
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -9,7 +9,7 @@ humanURL: https://example.com
 properties:
   - url: https://example.com
     type: Documentation
-  - url: properties/hyperscalecitusmanagementclient-openapi-original.yml
+  - url: openapi/hyperscalecitusmanagementclient-openapi-original.yml
     type: OpenAPI
 description: >-
   The Microsoft Azure management API provides create, read, update, and delete

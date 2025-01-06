@@ -14,7 +14,7 @@ properties:
   - url: >-
       https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/camaraproject/SimSwap/r1.3/code/API_definitions/sim-swap.yaml&nocors
     type: Documentation
-  - url: properties/sim-swap-notification-subscription-api-openapi.yml
+  - url: openapi/sim-swap-notification-subscription-api-openapi.yml
     type: OpenAPI
   - url: >-
       bruno/GSMA Camara Project SIM Swap Notification Subscription

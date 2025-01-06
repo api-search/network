@@ -1,6 +1,6 @@
 ---
 aid: microsoft-azure:service-map
-name: Service Map
+name: Microsoft Azure Service Map
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -9,7 +9,7 @@ humanURL: https://example.com
 properties:
   - url: https://example.com
     type: Documentation
-  - url: properties/service-map-openapi-original.yml
+  - url: openapi/service-map-openapi-original.yml
     type: OpenAPI
 description: Service Map API Reference
 

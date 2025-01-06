@@ -1,10 +1,14 @@
 ---
 aid: symphony:symphony-authenticator-api
 name: Symphony Authenticator API
-tags: []
-overlays:
-  - url: overlays/authenticator-openapi-search.yml
-    type: APIs.io Search
+tags:
+  - Pod
+  - Authentication
+properties:
+  - url: https://developers.symphony.com/
+    type: Documentation
+  - url: properties/symphony-authenticator-api-openapi.yml
+    type: OpenAPI
 description: >-
   Tailor your portfolio exposures and risks using our hedging and optimization
   tools. Dynamically manage objectives and constraints while controlling for

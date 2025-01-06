@@ -15,7 +15,7 @@ properties:
   - url: >-
       https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/camaraproject/DeviceLocation/r1.2/code/API_definitions/location-retrieval.yaml&nocors
     type: Documentation
-  - url: properties/device-location-retrieval-api-openapi.yml
+  - url: openapi/device-location-retrieval-api-openapi.yml
     type: OpenAPI
   - url: bruno/GSMA Camara Project Device Location Retrieval API/bruno.json
     type: BrunoCollection

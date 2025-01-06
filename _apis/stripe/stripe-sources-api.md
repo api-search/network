@@ -7,15 +7,10 @@ tags:
   - Notifications
   - Transactions
   - Verify
-overlays:
-  - url: overlays/sources-openapi-search.yml
-    type: APIs.io Search
-  - url: overlays/sources-openapi-api-evangelist-ratings.yml
-    type: API Evangelist Ratings
 properties:
   - url: https://stripe.com/docs/api/sources
     type: Documentation
-  - url: properties/sources-openapi-original.yml
+  - url: openapi/sources-openapi-original.yml
     type: OpenAPI
 description: >-
   Source objects allow you to accept a variety of payment methods. They

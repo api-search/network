@@ -1,6 +1,6 @@
 ---
 aid: microsoft-azure:speaker-verification-api
-name: Speaker Verification API
+name: Microsoft Azure Speaker Verification API
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -9,7 +9,7 @@ humanURL: https://example.com
 properties:
   - url: https://example.com
     type: Documentation
-  - url: properties/speaker-verification-api-openapi-original.yml
+  - url: openapi/speaker-verification-api-openapi-original.yml
     type: OpenAPI
 description: >-
   The Azure Cognitive Service Speaker Recognition service provides algorithms

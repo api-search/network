@@ -11,6 +11,6 @@ description: >-
   that bridges the gap between tools like TensorFlow and PyTorch --- which work
   great for a single researcher with a single GPU --- to the challenges that
   arise when doing deep learning at scale, as teams, clusters, and data sets all
-  increase in size. ~ https://docs.determined.ai/0.24.0/rest-api/index.html
+  increase in size.
 
 ---

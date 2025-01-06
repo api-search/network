@@ -1,6 +1,6 @@
 ---
 aid: microsoft-azure:staticsites-api-client
-name: StaticSites API Client
+name: Microsoft Azure StaticSites API Client
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -9,7 +9,7 @@ humanURL: https://example.com
 properties:
   - url: https://example.com
     type: Documentation
-  - url: properties/staticsites-api-client-openapi-original.yml
+  - url: openapi/staticsites-api-client-openapi-original.yml
     type: OpenAPI
 
 ---

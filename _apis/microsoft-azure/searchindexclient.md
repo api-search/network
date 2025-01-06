@@ -1,6 +1,6 @@
 ---
 aid: microsoft-azure:searchindexclient
-name: SearchIndexClient
+name: Microsoft Azure SearchIndexClient
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -9,7 +9,7 @@ humanURL: https://example.com
 properties:
   - url: https://example.com
     type: Documentation
-  - url: properties/searchindexclient-openapi-original.yml
+  - url: openapi/searchindexclient-openapi-original.yml
     type: OpenAPI
 description: >-
   Client that can be used to query an index and upload, merge, or delete

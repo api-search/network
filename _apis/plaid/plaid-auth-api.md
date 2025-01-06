@@ -11,14 +11,20 @@ overlays:
   - url: overlays/plaid-auth--openapi-api-evangelist-ratings.yml
     type: API Evangelist Ratings
 properties:
-  - url: properties/plaid-auth--openapi-original.yml
+  - url: openapi/plaid-auth--openapi-original.yml
     type: OpenAPI
   - url: https://plaid.com/docs/api/products/auth/
     type: Documentation
-description: >+
-  Retrieve bank account information to set up electronic funds transfers, such
-  as ACH payments in the US, EFT payments in Canada, BACS payments in the UK,
-  and IBAN / SIC payments in the EU.
-
+description: >-
+  Plaid Auth API is a powerful tool that allows developers to securely access
+  and retrieve financial data from users bank accounts. By integrating with this
+  API, developers can streamline the account verification process and provide a
+  seamless user experience. The API handles the authentication process and
+  retrieves transaction history, account balances, and other financial
+  information in a secure and compliant manner. This enables developers to build
+  innovative financial applications, such as budgeting tools, payment solutions,
+  and personalized financial advice services. Plaid Auth API helps developers to
+  securely access and leverage financial data, ultimately enhancing the
+  capabilities of their applications and delivering valuable insights to users.
 
 ---

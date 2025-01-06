@@ -1,6 +1,6 @@
 ---
 aid: microsoft-azure:quantum-client
-name: Quantum Client
+name: Microsoft Azure Quantum Client
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -9,7 +9,7 @@ humanURL: https://example.com
 properties:
   - url: https://example.com
     type: Documentation
-  - url: properties/quantum-client-openapi-original.yml
+  - url: openapi/quantum-client-openapi-original.yml
     type: OpenAPI
 description: Azure Quantum REST API client
 

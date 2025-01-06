@@ -9,7 +9,7 @@ properties:
   - url: >-
       https://developer.ebay.com/api-docs/buy/marketplace-insights/resources/methods
     type: Documentation
-  - url: properties/ebay-marketplace-insights-openapi-original.yml
+  - url: openapi/ebay-marketplace-insights-openapi-original.yml
     type: OpenAPI
   - url: >-
       https://developer.ebay.com/api-docs/buy/marketplace-insights/release-notes.html

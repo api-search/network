@@ -1,18 +1,34 @@
 ---
 aid: paypal:paypal-billing-subscriptions-api
 name: Paypal Billing Subscriptions API
-tags: []
-overlays:
-  - url: >-
-      overlays/https://raw.githubusercontent.com/paypal/paypal-rest-api-specifications/main/openapi/billing_subscriptions_v1.json-openapi-search.yml
-    type: APIs.io Search
+tags:
+  - Billing
+  - Plans
+  - Activate
+  - Deactivate
+  - Pricing
+  - Schemes
+  - Subscriptions
+  - Revise
+  - Suspend
+  - Cancel
+  - Capture
+  - Transactions
+properties:
+  - url: properties/paypal-billing-subscriptions-api-openapi.yml
+    type: OpenAPI
+  - url: https://developer.paypal.com/docs/api/subscriptions/v1/
+    type: Documentation
 description: >-
-  You can use billing plans and subscriptions to create subscriptions that
-  process recurring PayPal payments for physical or digital goods, or services.
-  A plan includes pricing and billing cycle information that defines the amount
-  and frequency of charge for a subscription. You can also define a fixed plan,
-  such as a $5 basic plan or a volume- or graduated-based plan with pricing
-  tiers based on the quantity purchased. For more information, see <a
-  href=\"/docs/subscriptions/\">Subscriptions Overview</a>.
+  The Paypal Billing Subscriptions API is a tool that allows businesses to
+  easily create, manage, and track customer subscriptions and recurring payments
+  within their Paypal accounts. This API enables businesses to set up automated
+  billing schedules, update customer details, and handle failed payments without
+  manual intervention. By integrating this API, businesses can provide a
+  seamless and convenient subscription service for their customers, increasing
+  retention rates and streamlining their payment processes. Additionally, the
+  Paypal Billing Subscriptions API offers robust reporting and analytics tools
+  to help businesses monitor subscription performance and make informed
+  decisions to optimize their subscription models.
 
 ---

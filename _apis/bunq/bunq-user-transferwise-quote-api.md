@@ -10,11 +10,8 @@ tags:
   - Recipient
   - Requirements
   - Transfers
-overlays:
-  - url: overlays/bunq-user-userid-transferwise-quote-openapi-search.yml
-    type: OpenAPI
 properties:
-  - url: properties/bunq-user-userid-transferwise-quote-openapi-original.yml
+  - url: openapi/bunq-user-userid-transferwise-quote-openapi-original.yml
     type: OpenAPI
 description: Needs description.
 

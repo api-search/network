@@ -1,6 +1,6 @@
 ---
 aid: microsoft-azure:infrastructureinsightsmanagementclient
-name: InfrastructureInsightsManagementClient
+name: Microsoft Azure InfrastructureInsightsManagementClient
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -9,7 +9,7 @@ humanURL: https://example.com
 properties:
   - url: https://example.com
     type: Documentation
-  - url: properties/infrastructureinsightsmanagementclient-openapi-original.yml
+  - url: openapi/infrastructureinsightsmanagementclient-openapi-original.yml
     type: OpenAPI
 description: Alert operation endpoints and objects.
 

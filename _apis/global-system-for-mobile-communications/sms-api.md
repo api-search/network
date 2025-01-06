@@ -10,7 +10,7 @@ humanURL: >-
 properties:
   - url: https://github.com/camaraproject/ShortMessageService/tree/main
     type: GitHubRepository
-  - url: properties/sms-api-openapi.yml
+  - url: openapi/sms-api-openapi.yml
     type: OpenAPI
   - url: bruno/GSMA Camara Project SMS API/bruno.json
     type: BrunoCollection

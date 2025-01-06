@@ -15,7 +15,7 @@ properties:
   - url: >-
       https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/camaraproject/NumberVerification/r1.3/code/API_definitions/number-verification.yaml&nocors
     type: Documentation
-  - url: properties/number-verification-api-openapi.yml
+  - url: openapi/number-verification-api-openapi.yml
     type: OpenAPI
   - url: bruno/GSMA Camara Project Number Verification/bruno.json
     type: BrunoCollection

@@ -7,9 +7,11 @@ humanURL: https://www.arts.gov
 properties:
   - url: https://www.arts.gov
     type: Documentation
-description: >-
+description: |-
+
   The National Endowment for the Arts is an independent federal agency that
-  funds, promotes, and strengthens the creative capacity of our communities by
-  providing all Americans with diverse opportunities for arts participation.
+  funds, promotes, and strengthens the creative capacity of our communities
+  by providing all Americans with diverse opportunities for arts
+  participation.
 
 ---

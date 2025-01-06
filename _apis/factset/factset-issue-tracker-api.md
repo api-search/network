@@ -24,13 +24,16 @@ properties:
     type: SDKs
   - url: https://developer.factset.com/api-catalog/issue-tracker-api#notebooks
     type: Jupyter Notebooks
-  - url: https://developer.factset.com/api-catalog/issue-tracker-api#codeSnippet
+  - url: |-
+
+      https://developer.factset.com/api-catalog/issue-tracker-api#codeSnippet
     type: Code Snippets
   - url: https://developer.factset.com/api-catalog/issue-tracker-api#changelog
     type: Change Log
-  - url: properties/issue-tracker-openapi-original.yml
+  - url: openapi/issue-tracker-openapi-original.yml
     type: OpenAPI
-description: >-
+description: |-
+
   Through Issue Tracker API, Clients can Create, Read and Update the Issue
   Tracker Issues programmatically.
 

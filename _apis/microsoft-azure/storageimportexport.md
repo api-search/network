@@ -1,6 +1,6 @@
 ---
 aid: microsoft-azure:storageimportexport
-name: StorageImportExport
+name: Microsoft Azure StorageImportExport
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -9,7 +9,7 @@ humanURL: https://example.com
 properties:
   - url: https://example.com
     type: Documentation
-  - url: properties/storageimportexport-openapi-original.yml
+  - url: openapi/storageimportexport-openapi-original.yml
     type: OpenAPI
 description: The Storage Import/Export Resource Provider API.
 

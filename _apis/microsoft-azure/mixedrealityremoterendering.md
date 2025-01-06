@@ -1,6 +1,6 @@
 ---
 aid: microsoft-azure:mixedrealityremoterendering
-name: MixedRealityRemoteRendering
+name: Microsoft Azure MixedRealityRemoteRendering
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -9,7 +9,7 @@ humanURL: https://example.com
 properties:
   - url: https://example.com
     type: Documentation
-  - url: properties/mixedrealityremoterendering-openapi-original.yml
+  - url: openapi/mixedrealityremoterendering-openapi-original.yml
     type: OpenAPI
 description: >
   Describing the [Azure Remote

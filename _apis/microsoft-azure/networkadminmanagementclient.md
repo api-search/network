@@ -1,6 +1,6 @@
 ---
 aid: microsoft-azure:networkadminmanagementclient
-name: NetworkAdminManagementClient
+name: Microsoft Azure NetworkAdminManagementClient
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -9,7 +9,7 @@ humanURL: https://example.com
 properties:
   - url: https://example.com
     type: Documentation
-  - url: properties/networkadminmanagementclient-openapi-original.yml
+  - url: openapi/networkadminmanagementclient-openapi-original.yml
     type: OpenAPI
 description: Load balancer admin operation endpoints and objects.
 

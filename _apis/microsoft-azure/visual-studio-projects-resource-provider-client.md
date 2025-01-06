@@ -1,6 +1,6 @@
 ---
 aid: microsoft-azure:visual-studio-projects-resource-provider-client
-name: Visual Studio Projects Resource Provider Client
+name: Microsoft Azure Visual Studio Projects Resource Provider Client
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -10,7 +10,7 @@ properties:
   - url: https://example.com
     type: Documentation
   - url: >-
-      properties/visual-studio-projects-resource-provider-client-openapi-original.yml
+      openapivisual-studio-projects-resource-provider-client-openapi-original.yml
     type: OpenAPI
 description: >-
   Use these APIs to manage Visual Studio Team Services resources through the

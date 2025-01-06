@@ -21,7 +21,7 @@ properties:
     type: Code Snippets
   - url: https://developer.factset.com/api-catalog/factset-etf-api#changelog
     type: Change Log
-  - url: properties/etf-openapi-original.yml
+  - url: openapi/etf-openapi-original.yml
     type: OpenAPI
 description: ETF Reference Data
 

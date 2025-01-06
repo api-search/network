@@ -11,7 +11,7 @@ humanURL: https://calorieninjas.com/
 properties:
   - url: https://calorieninjas.com/
     type: Documentation
-  - url: properties/calorieninjas-openapi.yml
+  - url: openapi/calorieninjas-openapi.yml
     type: OpenAPI
 description: Get nutrition and recipe data for 100,000  foods and beverages.
 

@@ -17,7 +17,7 @@ properties:
   - url: >-
       https://github.com/camaraproject/SimpleEdgeDiscovery/blob/main/documentation/API_documentation/SimpleEdgeDiscovery_User_Story.md
     type: Documentation
-  - url: properties/simple-edge-discovery-api-openapi.yml
+  - url: openapi/simple-edge-discovery-api-openapi.yml
     type: OpenAPI
   - url: bruno/GSMA Camara Project Simple Edge Discovery/bruno.json
     type: BrunoCollection

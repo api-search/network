@@ -1,6 +1,6 @@
 ---
 aid: microsoft-azure:commercemanagementclient
-name: CommerceManagementClient
+name: Microsoft Azure CommerceManagementClient
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -9,7 +9,7 @@ humanURL: https://example.com
 properties:
   - url: https://example.com
     type: Documentation
-  - url: properties/commercemanagementclient-openapi-original.yml
+  - url: openapi/commercemanagementclient-openapi-original.yml
     type: OpenAPI
 description: The Admin Commerce Management Client.
 

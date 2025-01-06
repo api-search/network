@@ -21,9 +21,10 @@ properties:
     type: Code Snippets
   - url: https://developer.factset.com/api-catalog/quant-engine-api#changelog
     type: Change Log
-  - url: properties/quant-engine-openapi-original.yml
+  - url: openapi/quant-engine-openapi-original.yml
     type: OpenAPI
-description: >-
+description: |-
+
   Use Quant Engine API to retrieve quantitative dataset from FactSet Content
   Database
 

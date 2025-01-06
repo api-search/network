@@ -5,7 +5,6 @@ tags: []
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 baseURL: https://api.example.com
 humanURL: https://www.bea.gov/tools/
-overlays: []
 properties:
   - url: https://www.bea.gov/tools/
     type: Documentation

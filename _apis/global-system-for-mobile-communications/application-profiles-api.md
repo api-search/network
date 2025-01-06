@@ -10,7 +10,7 @@ humanURL: >-
 properties:
   - url: https://github.com/camaraproject/ConnectivityInsights/releases/tag/r1.2
     type: GitHub Repository
-  - url: properties/application-profiles-api-openapi.yml
+  - url: openapi/application-profiles-api-openapi.yml
     type: OpenAPI
   - url: bruno/GSMA Camara Project Application Profiles API/bruno.json
     type: BrunoCollection

@@ -1,6 +1,6 @@
 ---
 aid: npr:station
-name: Station
+name: NPR Station
 tags: []
 contact:
   - FN: ''

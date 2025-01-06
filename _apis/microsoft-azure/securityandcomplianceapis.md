@@ -1,6 +1,6 @@
 ---
 aid: microsoft-azure:securityandcomplianceapis
-name: SecurityAndComplianceAPIs
+name: Microsoft Azure SecurityAndComplianceAPIs
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -9,7 +9,7 @@ humanURL: https://example.com
 properties:
   - url: https://example.com
     type: Documentation
-  - url: properties/securityandcomplianceapis-openapi-original.yml
+  - url: openapi/securityandcomplianceapis-openapi-original.yml
     type: OpenAPI
 
 ---

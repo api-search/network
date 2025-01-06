@@ -8,21 +8,27 @@ humanURL: https://developer.factset.com/api-catalog/watchlist-api-digital-portal
 overlays: []
 properties:
   - url: >-
+
       https://developer.factset.com/api-catalog/watchlist-api-digital-portals#overview
     type: Documentation
   - url: >-
+
       https://developer.factset.com/api-catalog/watchlist-api-digital-portals#sdkLibrary
     type: SDKs
   - url: >-
+
       https://developer.factset.com/api-catalog/watchlist-api-digital-portals#notebooks
     type: Jupyter Notebooks
   - url: >-
+
       https://developer.factset.com/api-catalog/watchlist-api-digital-portals#codeSnippet
     type: Code Snippets
   - url: >-
+
       https://developer.factset.com/api-catalog/watchlist-api-digital-portals#changelog         
     type: Change Log
-description: >-
+description: |-
+
   Watchlists keeps track of users_ individual investment objectives in
   self-directed wealth management applications.
 

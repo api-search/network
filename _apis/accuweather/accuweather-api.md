@@ -10,11 +10,11 @@ overlays: []
 properties:
   - url: https://developer.accuweather.com/accuweather-locations-api/apis
     type: Documentation
-  - url: properties/accuweather-openapi-original.yml
+  - url: openapi/accuweather-openapi-original.yml
     type: OpenAPI
-description: >-
-  AccuWeather provides the world's most sophisticated weather intelligence to
-  make lives simpler, safer, and better. Our mission is to save lives and
+description: |-
+  AccuWeather provides the world's most sophisticated weather intelligence
+  to make lives simpler, safer, and better. Our mission is to save lives and
   protect property.
 
 ---

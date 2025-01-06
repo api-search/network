@@ -1,6 +1,6 @@
 ---
 aid: microsoft-azure:azure-analytics-purview-data-map
-name: Azure Analytics Purview Data Map
+name: Microsoft Azure Analytics Purview Data Map
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -9,7 +9,7 @@ humanURL: https://example.com
 properties:
   - url: https://example.com
     type: Documentation
-  - url: properties/azure-analytics-purview-data-map-openapi-original.yml
+  - url: openapi/azure-analytics-purview-data-map-openapi-original.yml
     type: OpenAPI
 description: |-
   Purview Data Map Service is a fully managed cloud service whose users can

@@ -1,6 +1,6 @@
 ---
 aid: microsoft-azure:azure-quota-extension-api
-name: Azure Quota Extension API
+name: Microsoft Azure Quota Extension API
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -9,7 +9,7 @@ humanURL: https://example.com
 properties:
   - url: https://example.com
     type: Documentation
-  - url: properties/azure-quota-extension-api-openapi-original.yml
+  - url: openapi/azure-quota-extension-api-openapi-original.yml
     type: OpenAPI
 description: Microsoft Azure Quota Resource Provider
 

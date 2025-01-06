@@ -20,7 +20,7 @@ overlays:
   - url: overlays/github-manage-openapi-search.yml
     type: OpenAPI
 properties:
-  - url: properties/github-manage-openapi-original.yml
+  - url: openapi/github-manage-openapi-original.yml
     type: OpenAPI
 description: Needs description.
 

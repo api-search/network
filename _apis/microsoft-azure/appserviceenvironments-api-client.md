@@ -1,6 +1,6 @@
 ---
 aid: microsoft-azure:appserviceenvironments-api-client
-name: AppServiceEnvironments API Client
+name: Microsoft Azure AppServiceEnvironments API Client
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -9,7 +9,7 @@ humanURL: https://example.com
 properties:
   - url: https://example.com
     type: Documentation
-  - url: properties/appserviceenvironments-api-client-openapi-original.yml
+  - url: openapi/appserviceenvironments-api-client-openapi-original.yml
     type: OpenAPI
 
 ---

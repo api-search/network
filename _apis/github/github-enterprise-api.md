@@ -8,11 +8,14 @@ overlays:
   - url: overlays/github-enterprise-openapi-search.yml
     type: OpenAPI
 properties:
-  - url: properties/github-enterprise-openapi-original.yml
+  - url: openapi/github-enterprise-openapi-original.yml
     type: OpenAPI
-  - url: https://docs.github.com/en/enterprise-cloud@latest/rest/enterprise-admin
+  - url: |-
+
+      https://docs.github.com/en/enterprise-cloud@latest/rest/enterprise-admin
     type: Documentation
-description: >-
+description: |-
+
   Create integrations, retrieve data, and automate your workflows with the
   GitHub REST API.
 

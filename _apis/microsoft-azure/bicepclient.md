@@ -1,6 +1,6 @@
 ---
 aid: microsoft-azure:bicepclient
-name: BicepClient
+name: Microsoft Azure BicepClient
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -9,7 +9,7 @@ humanURL: https://example.com
 properties:
   - url: https://example.com
     type: Documentation
-  - url: properties/bicepclient-openapi-original.yml
+  - url: openapi/bicepclient-openapi-original.yml
     type: OpenAPI
 description: >-
   The APIs listed in this specification can be used to manage Bicep related

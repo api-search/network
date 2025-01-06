@@ -7,7 +7,7 @@ humanURL: https://www.cockroachlabs.com/docs/api/cloud/v1#get-/api/scim/v2/Group
 properties:
   - url: https://www.cockroachlabs.com/docs/api/cluster/v2
     type: Documentation
-  - url: properties/cockroach-labs-cluster-api-openapi.yml
+  - url: openapi/cockroach-labs-cluster-api-openapi.yml
     type: OpenAPI
 description: >-
   REST API for querying information about CockroachDB cluster health, nodes,

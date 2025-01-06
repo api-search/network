@@ -13,15 +13,19 @@ overlays:
 properties:
   - url: https://developer.factset.com/api-catalog/global-filings-api#overview
     type: Documentation
-  - url: https://developer.factset.com/api-catalog/global-filings-api#sdkLibrary
+  - url: |-
+
+      https://developer.factset.com/api-catalog/global-filings-api#sdkLibrary
     type: SDKs
   - url: https://developer.factset.com/api-catalog/global-filings-api#notebooks
     type: Jupyter Notebooks
-  - url: https://developer.factset.com/api-catalog/global-filings-api#codeSnippet
+  - url: |-
+
+      https://developer.factset.com/api-catalog/global-filings-api#codeSnippet
     type: Code Snippets
   - url: https://developer.factset.com/api-catalog/global-filings-api#changelog
     type: Change Log
-  - url: properties/global-filings-openapi-original.yml
+  - url: openapi/global-filings-openapi-original.yml
     type: OpenAPI
 description: ' This API is designed to expose document search and document retrieval functionality'
 

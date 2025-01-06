@@ -1,6 +1,6 @@
 ---
 aid: microsoft-azure:networkresourceproviderclient
-name: NetworkResourceProviderClient
+name: Microsoft Azure NetworkResourceProviderClient
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -9,7 +9,7 @@ humanURL: https://example.com
 properties:
   - url: https://example.com
     type: Documentation
-  - url: properties/networkresourceproviderclient-openapi-original.yml
+  - url: openapi/networkresourceproviderclient-openapi-original.yml
     type: OpenAPI
 description: >-
   The Windows Azure Network management API provides a RESTful set of web

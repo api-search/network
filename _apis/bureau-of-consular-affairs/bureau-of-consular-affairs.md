@@ -9,7 +9,7 @@ properties:
     type: Documentation
 description: >-
   You can also access this registry using the API (see API Docs). About Bureau
-  of Consular Affairs Â· CKAN API Â· CKAN Association Â· Open Data Â· Privacy
-  Policy - US ...
+  of Consular Affairs  CKAN API  CKAN Association  Open Data  Privacy Policy -
+  US ...
 
 ---

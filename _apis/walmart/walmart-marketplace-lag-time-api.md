@@ -9,11 +9,10 @@ tags:
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 baseURL: https://api.example.com
 humanURL: https://developer.walmart.com/doc/us/mp/us-mp-lagtime/
-overlays: []
 properties:
   - url: https://developer.walmart.com/doc/us/mp/us-mp-lagtime/
     type: Documentation
-  - url: properties/walmart-marketplace-lag-time-openapi-original.yml
+  - url: openapi/walmart-marketplace-lag-time-openapi-original.yml
     type: OpenAPI
 description: >-
   Lag Time is the number of days between the date an item is ordered and when it

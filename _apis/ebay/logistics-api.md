@@ -8,7 +8,7 @@ humanURL: https://developer.ebay.com/api-docs/sell/logistics/overview.html
 properties:
   - url: https://developer.ebay.com/api-docs/sell/logistics/overview.html
     type: Documentation
-  - url: properties/ebay-logistics-openapi-original.yml
+  - url: openapi/ebay-logistics-openapi-original.yml
     type: OpenAPI
   - url: https://developer.ebay.com/api-docs/sell/logistics/release-notes.html
     type: Release Notes

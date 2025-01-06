@@ -1,6 +1,6 @@
 ---
 aid: microsoft-azure:certificates-api-client
-name: Certificates API Client
+name: Microsoft Azure Certificates API Client
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -9,7 +9,7 @@ humanURL: https://example.com
 properties:
   - url: https://example.com
     type: Documentation
-  - url: properties/certificates-api-client-openapi-original.yml
+  - url: openapi/certificates-api-client-openapi-original.yml
     type: OpenAPI
 
 ---

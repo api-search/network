@@ -43,11 +43,10 @@ tags:
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 baseURL: https://api.example.com
 humanURL: https://developer.walmart.com/doc/us/mp/us-mp-fulfillment/
-overlays: []
 properties:
   - url: https://developer.walmart.com/doc/us/mp/us-mp-fulfillment/
     type: Documentation
-  - url: properties/walmart-marketplace-fulfillment-openapi-original.yml
+  - url: openapi/walmart-marketplace-fulfillment-openapi-original.yml
     type: OpenAPI
 description: >-
   The Walmarts Multichannel Solution is an extension of Walmart Fulfillment

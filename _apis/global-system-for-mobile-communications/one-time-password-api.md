@@ -14,7 +14,7 @@ properties:
   - url: >-
       https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/camaraproject/OTPValidation/r1.2/code/API_definitions/one-time-password-sms.yaml&nocors
     type: Documentation
-  - url: properties/one-time-password-api-openapi.yml
+  - url: openapi/one-time-password-api-openapi.yml
     type: OpenAPI
   - url: bruno/GSMA Camara Project One Time Password SMS/bruno.json
     type: BrunoCollection

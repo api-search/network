@@ -8,7 +8,7 @@ humanURL: https://developer.ebay.com/api-docs/sell/compliance/resources/methods
 properties:
   - url: https://developer.ebay.com/api-docs/sell/compliance/resources/methods
     type: Documentation
-  - url: properties/ebay-compliance-openapi-original.yml
+  - url: openapi/ebay-compliance-openapi-original.yml
     type: OpenAPI
 description: >-
   Provides tools for validating listings to help sellers keep their listings in

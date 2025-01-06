@@ -13,7 +13,7 @@ overlays:
   - url: overlays/github-networks-openapi-search.yml
     type: OpenAPI
 properties:
-  - url: properties/github-networks-openapi-original.yml
+  - url: openapi/github-networks-openapi-original.yml
     type: OpenAPI
 description: Needs description.
 

@@ -4,15 +4,10 @@ name: Stripe Exchange Rates API
 tags:
   - Exchange
   - Rates
-overlays:
-  - url: overlays/exchange-rates-openapi-search.yml
-    type: APIs.io Search
-  - url: overlays/exchange-rates-openapi-api-evangelist-ratings.yml
-    type: API Evangelist Ratings
 properties:
   - url: https://stripe.com/docs/currencies/conversions
     type: Documentation
-  - url: properties/exchange-rates-openapi-original.yml
+  - url: openapi/exchange-rates-openapi-original.yml
     type: OpenAPI
 description: >-
   Stripe supports processing charges in 135+ currencies allowing you to present

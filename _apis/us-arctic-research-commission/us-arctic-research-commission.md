@@ -9,7 +9,7 @@ properties:
     type: Documentation
 description: >-
   An independent federal agency that advises the President and Congress on
-  domestic and international Arctic research. Â· An independent federal agency
+  domestic and international Arctic research.  An independent federal agency
   that advises ...
 
 ---

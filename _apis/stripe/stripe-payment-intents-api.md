@@ -15,15 +15,10 @@ tags:
   - Increment
   - Microdeposits
   - Verify
-overlays:
-  - url: overlays/payment-intents-openapi-search.yml
-    type: APIs.io Search
-  - url: overlays/payment-intents-openapi-api-evangelist-ratings.yml
-    type: API Evangelist Ratings
 properties:
   - url: https://stripe.com/docs/api/payment_intents
     type: Documentation
-  - url: properties/payment-intents-openapi-original.yml
+  - url: openapi/payment-intents-openapi-original.yml
     type: OpenAPI
 description: >-
   A PaymentIntent guides you through the process of collecting a payment from

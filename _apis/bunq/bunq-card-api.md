@@ -17,11 +17,8 @@ tags:
   - PDF
   - Generated
 humanURL: https://doc.bunq.com/#/card
-overlays:
-  - url: overlays/bunq-user-userid-card-openapi-search.yml
-    type: OpenAPI
 properties:
-  - url: properties/bunq-user-userid-card-openapi-original.yml
+  - url: openapi/bunq-user-userid-card-openapi-original.yml
     type: OpenAPI
   - url: https://doc.bunq.com/
     type: Documentation

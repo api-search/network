@@ -1,6 +1,6 @@
 ---
 aid: microsoft-azure:kubeenvironments-api-client
-name: KubeEnvironments API Client
+name: Microsoft Azure KubeEnvironments API Client
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -9,7 +9,7 @@ humanURL: https://example.com
 properties:
   - url: https://example.com
     type: Documentation
-  - url: properties/kubeenvironments-api-client-openapi-original.yml
+  - url: openapi/kubeenvironments-api-client-openapi-original.yml
     type: OpenAPI
 
 ---

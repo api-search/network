@@ -8,7 +8,7 @@ humanURL: https://developers.docusign.com/docs/esign-rest-api/reference/
 properties:
   - url: https://developers.docusign.com/docs/esign-rest-api/reference/
     type: Documentation
-  - url: properties/docusign-admin-openapi-original.yml
+  - url: openapi/docusign-admin-openapi-original.yml
     type: OpenAPI
 description: Needs description.
 

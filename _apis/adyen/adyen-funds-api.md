@@ -1,37 +1,15 @@
 ---
 aid: adyen:adyen-funds-api
 name: Adyen Funds API
-tags:
-  - Accounts
-  - Balance
-  - Balances
-  - Benefactor's
-  - Beneficiary
-  - Between
-  - Current
-  - Debit
-  - Designate
-  - Direct
-  - Funds
-  - Holders
-  - Most
-  - Out
-  - Paid
-  - Pay
-  - Payouts
-  - Platforms
-  - Recent
-  - Refunds
-  - Send
-  - Since
-  - The
-  - Transactions
-  - Transfers
-overlays:
-  - url: overlays/funds-openapi-search.yml
-    type: APIs.io Search
-  - url: overlays/funds-openapi-api-evangelist-ratings.yml
-    type: API Evangelist Ratings
+tags: []
+image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+baseURL: https://api.example.com
+humanURL: https://docs.adyen.com/marketplaces-and-platforms/classic/fund-transfer/
+properties:
+  - url: https://docs.adyen.com/marketplaces-and-platforms/classic/fund-transfer/
+    type: Documentation
+  - url: openapi/funds-openapi-original.yml
+    type: OpenAPI
 description: >-
   The Fund API provides endpoints for managing the funds in the accounts on your
   platform. These management operations include, for example, the transfer of

@@ -2,14 +2,16 @@
 aid: adyen:adyen-data-protection-api
 name: Adyen Data Protection API
 tags:
-  - Erasure
-  - Subjects
-  - Submit
-overlays:
-  - url: overlays/data-protection-openapi-search.yml
-    type: APIs.io Search
-  - url: overlays/data-protection-openapi-api-evangelist-ratings.yml
-    type: API Evangelist Ratings
+  - ' Subjects'
+  - ' Erasure'
+image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+baseURL: https://api.example.com
+humanURL: https://gdpr-info.eu/art-17-gdpr/
+properties:
+  - url: https://gdpr-info.eu/art-17-gdpr/
+    type: Documentation
+  - url: properties/adyen-data-protection-api-openapi.yml
+    type: OpenAPI
 description: >-
   Adyen Data Protection API provides a way for you to process [Subject Erasure
   Requests](https://gdpr-info.eu/art-17-gdpr/) as mandated in GDPR. Use our API

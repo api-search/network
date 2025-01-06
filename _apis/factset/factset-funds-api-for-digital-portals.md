@@ -8,22 +8,28 @@ humanURL: https://developer.factset.com/api-catalog/funds-api-digital-portals
 overlays: []
 properties:
   - url: >-
+
       https://developer.factset.com/api-catalog/funds-api-digital-portals#overview
     type: Documentation
   - url: >-
+
       https://developer.factset.com/api-catalog/funds-api-digital-portals#sdkLibrary
     type: SDKs
   - url: >-
+
       https://developer.factset.com/api-catalog/funds-api-digital-portals#notebooks
     type: Jupyter Notebooks
   - url: >-
+
       https://developer.factset.com/api-catalog/funds-api-digital-portals#codeSnippet
     type: Code Snippets
   - url: >-
+
       https://developer.factset.com/api-catalog/funds-api-digital-portals#changelog       
     type: Change Log
-description: >-
-  Search for mutual funds and ETFs using one single consolidated API, including
-  a criteria-based screener.
+description: |-
+
+  Search for mutual funds and ETFs using one single consolidated API,
+  including a criteria-based screener.
 
 ---

@@ -1,6 +1,6 @@
 ---
 aid: microsoft-azure:communitygalleryserviceclient
-name: CommunityGalleryServiceClient
+name: Microsoft Azure CommunityGalleryServiceClient
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -9,7 +9,7 @@ humanURL: https://example.com
 properties:
   - url: https://example.com
     type: Documentation
-  - url: properties/communitygalleryserviceclient-openapi-original.yml
+  - url: openapi/communitygalleryserviceclient-openapi-original.yml
     type: OpenAPI
 description: Community Gallery Service Client.
 

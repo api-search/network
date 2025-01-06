@@ -8,7 +8,7 @@ humanURL: https://developer.ebay.com/api-docs/buy/marketing/resources/methods
 properties:
   - url: https://developer.ebay.com/api-docs/buy/marketing/resources/methods
     type: Documentation
-  - url: properties/ebay-market-openapi-original.yml
+  - url: openapi/ebay-market-openapi-original.yml
     type: OpenAPI
   - url: https://developer.ebay.com/api-docs/buy/marketing/release-notes.html
     type: Release Notes

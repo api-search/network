@@ -8,11 +8,8 @@ tags:
   - Content
 baseURL: https://public-api.sandbox.bunq.com/
 humanURL: https://doc.bunq.com/#/attachment
-overlays:
-  - url: overlays/bunq-user-userid-attachment-openapi-search.yml
-    type: OpenAPI
 properties:
-  - url: properties/bunq-user-userid-attachment-openapi-original.yml
+  - url: openapi/bunq-user-userid-attachment-openapi-original.yml
     type: OpenAPI
   - url: https://doc.bunq.com/
     type: Documentation

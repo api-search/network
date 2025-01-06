@@ -19,21 +19,31 @@ overlays:
   - url: overlays/digital-cards-openapi-api-evangelist-ratings.yml
     type: API Evangelist Ratings
 properties:
-  - url: https://developer.factset.com/api-catalog/factset-digital-cards#overview
+  - url: |-
+
+      https://developer.factset.com/api-catalog/factset-digital-cards#overview
     type: Documentation
-  - url: https://developer.factset.com/api-catalog/factset-digital-cards#sdkLibrary
+  - url: |-
+
+      https://developer.factset.com/api-catalog/factset-digital-cards#sdkLibrary
     type: SDKs
-  - url: https://developer.factset.com/api-catalog/factset-digital-cards#notebooks
+  - url: |-
+
+      https://developer.factset.com/api-catalog/factset-digital-cards#notebooks
     type: Jupyter Notebooks
   - url: >-
+
       https://developer.factset.com/api-catalog/factset-digital-cards#codeSnippet
     type: Code Snippets
-  - url: https://developer.factset.com/api-catalog/factset-digital-cards#changelog
+  - url: |-
+
+      https://developer.factset.com/api-catalog/factset-digital-cards#changelog
     type: Change Log
-  - url: properties/digital-cards-openapi-original.yml
+  - url: openapi/digital-cards-openapi-original.yml
     type: OpenAPI
-description: >-
-  The FactSet Digital Cards API provides quick access to key company information
-  and market data in an easily consumable and sharable format.
+description: |-
+
+  The FactSet Digital Cards API provides quick access to key company
+  information and market data in an easily consumable and sharable format.
 
 ---

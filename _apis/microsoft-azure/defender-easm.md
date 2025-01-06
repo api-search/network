@@ -1,6 +1,6 @@
 ---
 aid: microsoft-azure:defender-easm
-name: Defender EASM
+name: Microsoft Azure Defender EASM
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -9,7 +9,7 @@ humanURL: https://example.com
 properties:
   - url: https://example.com
     type: Documentation
-  - url: properties/defender-easm-openapi-original.yml
+  - url: openapi/defender-easm-openapi-original.yml
     type: OpenAPI
 description: >-
   Defender EASM discovers and maps your digital attack surface to provide an

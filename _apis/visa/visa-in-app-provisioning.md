@@ -7,7 +7,7 @@ tags:
   - Applications
 humanURL: https://developer.visa.com/capabilities/visa-in-app-provisioning
 properties:
-  - url: properties/visa-in-app-provisioning.yml
+  - url: openapi/visa-in-app-provisioning.yml
     type: OpenAPI
 description: ''
 

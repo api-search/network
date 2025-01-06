@@ -13,15 +13,23 @@ overlays:
 properties:
   - url: https://developer.factset.com/api-catalog/factset-trading-api#overview
     type: Documentation
-  - url: https://developer.factset.com/api-catalog/factset-trading-api#sdkLibrary
+  - url: |-
+
+      https://developer.factset.com/api-catalog/factset-trading-api#sdkLibrary
     type: SDKs
-  - url: https://developer.factset.com/api-catalog/factset-trading-api#notebooks
+  - url: |-
+
+      https://developer.factset.com/api-catalog/factset-trading-api#notebooks
     type: Jupyter Notebooks
-  - url: https://developer.factset.com/api-catalog/factset-trading-api#codeSnippet
+  - url: |-
+
+      https://developer.factset.com/api-catalog/factset-trading-api#codeSnippet
     type: Code Snippets
-  - url: https://developer.factset.com/api-catalog/factset-trading-api#changelog
+  - url: |-
+
+      https://developer.factset.com/api-catalog/factset-trading-api#changelog
     type: Change Log
-  - url: properties/trading-openapi-original.yml
+  - url: openapi/trading-openapi-original.yml
     type: OpenAPI
 description: This Trading API gives programmatic access to FactSet's trading platform
 

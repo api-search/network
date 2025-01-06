@@ -93,7 +93,7 @@ properties:
     type: Code Snippets
   - url: https://developer.factset.com/api-catalog/factset-esg-api#changelog
     type: Change Log
-  - url: properties/esg-openapi-original.yml
+  - url: openapi/esg-openapi-original.yml
     type: OpenAPI
 description: FactSet ESG API giving access to SASB & SDG Score data
 

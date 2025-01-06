@@ -19,15 +19,10 @@ tags:
   - Debits
   - Entries
   - Transactions
-overlays:
-  - url: overlays/treasury-openapi-search.yml
-    type: APIs.io Search
-  - url: overlays/treasury-openapi-api-evangelist-ratings.yml
-    type: API Evangelist Ratings
 properties:
   - url: https://stripe.com/docs/treasury
     type: Documentation
-  - url: properties/treasury-openapi-original.yml
+  - url: openapi/treasury-openapi-original.yml
     type: OpenAPI
 description: >-
   Stripe Treasury is a banking-as-a-service API that lets you embed financial

@@ -1,6 +1,6 @@
 ---
 aid: microsoft-azure:guest-diagnostic-settings-api
-name: Guest Diagnostic Settings API
+name: Microsoft Azure Guest Diagnostic Settings API
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -9,7 +9,7 @@ humanURL: https://example.com
 properties:
   - url: https://example.com
     type: Documentation
-  - url: properties/guest-diagnostic-settings-api-openapi-original.yml
+  - url: openapi/guest-diagnostic-settings-api-openapi-original.yml
     type: OpenAPI
 description: API to Add/Remove/List Guest Diagnostics Configuration to Azure Resources
 

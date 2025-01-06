@@ -12,25 +12,31 @@ overlays:
     type: API Evangelist Ratings
 properties:
   - url: >-
+
       https://developer.factset.com/api-catalog/real-time-time-series-api#overview
     type: Documentation
   - url: >-
+
       https://developer.factset.com/api-catalog/real-time-time-series-api#sdkLibrary
     type: SDKs
   - url: >-
+
       https://developer.factset.com/api-catalog/real-time-time-series-api#notebooks
     type: Jupyter Notebooks
   - url: >-
+
       https://developer.factset.com/api-catalog/real-time-time-series-api#codeSnippet
     type: Code Snippets
   - url: >-
+
       https://developer.factset.com/api-catalog/real-time-time-series-api#changelog
     type: Change Log
-  - url: properties/real-time-time-series-openapi-original.yml
+  - url: openapi/real-time-time-series-openapi-original.yml
     type: OpenAPI
-description: >-
+description: |-
+
   Time series data, end-of-day or intraday, tick-by-tick or subsampled.
-  Additional vendor-specific endpoints provide a modified interface for seamless
-  integration with the ChartIQ chart library.
+  Additional vendor-specific endpoints provide a modified interface for
+  seamless integration with the ChartIQ chart library.
 
 ---

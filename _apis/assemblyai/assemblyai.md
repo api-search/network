@@ -8,9 +8,9 @@ humanURL: https://www.assemblyai.com/docs/
 properties:
   - url: https://www.assemblyai.com/docs/
     type: Documentation
-  - url: properties/assemblyai-openapi-original.yml
+  - url: openapi/assemblyai-openapi-original.yml
     type: OpenAPI
-  - url: properties/assemblyai-asyncapi-original.yml
+  - url: openapi/assemblyai-asyncapi-original.yml
     type: AsyncAPI
 description: >-
   Built by AI experts, AssemblyAI's Speech AI models include accurate

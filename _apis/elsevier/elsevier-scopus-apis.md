@@ -13,14 +13,15 @@ properties:
     type: Documentation
   - url: https://dev.elsevier.com/elsdoc/scopus
     type: OpenAPI
-description: >-
+description: |-
+
   Scopus delivers a comprehensive view of the world of research. Scopus.com
-  allows you to track analyze and visualize research data from 5000 different
-  publishers. It covers 78 million items including records from journals, books
-  and book series, conference proceedings and trade publications across 16
-  million Author Profiles and 70,000 Institutional Profiles All of this comes
-  together to power your research and help you to stay abreast with current
-  publications, find co-authors, analyze journals to publish in and track and
-  monitor global trends
+  allows you to track analyze and visualize research data from 5000
+  different publishers. It covers 78 million items including records from
+  journals, books and book series, conference proceedings and trade
+  publications across 16 million Author Profiles and 70,000 Institutional
+  Profiles All of this comes together to power your research and help you to
+  stay abreast with current publications, find co-authors, analyze journals
+  to publish in and track and monitor global trends
 
 ---

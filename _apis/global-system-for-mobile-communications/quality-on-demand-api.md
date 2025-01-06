@@ -14,7 +14,7 @@ properties:
   - url: >-
       https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/camaraproject/QualityOnDemand/r1.2/code/API_definitions/quality-on-demand.yaml&nocors
     type: Documentation
-  - url: properties/quality-on-demand-api-openapi.yml
+  - url: openapi/quality-on-demand-api-openapi.yml
     type: OpenAPI
   - url: bruno/GSMA Camara Project Quality on Demand API/bruno.json
     type: BrunoCollection

@@ -269,9 +269,10 @@ overlays:
   - url: overlays/github-repos-openapi-search.yml
     type: OpenAPI
 properties:
-  - url: properties/github-repos-openapi-original.yml
+  - url: openapi/github-repos-openapi-original.yml
     type: OpenAPI
-description: >-
+description: |-
+
   Use the REST API to create, manage and control the workflow of public and
   private GitHub repositories.
 

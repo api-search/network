@@ -31,25 +31,31 @@ overlays:
     type: API Evangelist Ratings
 properties:
   - url: >-
+
       https://developer.factset.com/api-catalog/axioma-equity-optimizer-api#overview
     type: Documentation
   - url: >-
+
       https://developer.factset.com/api-catalog/axioma-equity-optimizer-api#sdkLibrary
     type: SDKs
   - url: >-
+
       https://developer.factset.com/api-catalog/axioma-equity-optimizer-api#notebooks
     type: Jupyter Notebooks
   - url: >-
+
       https://developer.factset.com/api-catalog/axioma-equity-optimizer-api#codeSnippet
     type: Code Snippets
   - url: >-
+
       https://developer.factset.com/api-catalog/axioma-equity-optimizer-api#changelog
     type: Change Log
-  - url: properties/axioma-equity-optimizer-openapi-original.yml
+  - url: openapi/axioma-equity-optimizer-openapi-original.yml
     type: OpenAPI
-description: >-
-  The Axioma Equity API offers equity-based portfolio optimizations, balancing a
-  client's investment objectives within the confines of the established
-  constraints within their investment strategy.
+description: |-
+
+  The Axioma Equity API offers equity-based portfolio optimizations,
+  balancing a client's investment objectives within the confines of the
+  established constraints within their investment strategy.
 
 ---

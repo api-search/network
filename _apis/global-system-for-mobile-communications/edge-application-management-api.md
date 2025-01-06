@@ -12,7 +12,7 @@ humanURL: >-
 properties:
   - url: https://github.com/camaraproject/EdgeCloud
     type: GitHubRepository
-  - url: properties/edge-application-management-api-openapi.yml
+  - url: openapi/edge-application-management-api-openapi.yml
     type: OpenAPI
   - url: bruno/GSMA Camara Project Edge Application Management API/bruno.json
     type: BrunoCollection

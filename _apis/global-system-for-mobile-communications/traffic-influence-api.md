@@ -17,7 +17,7 @@ properties:
   - url: >-
       https://github.com/camaraproject/EdgeCloud/blob/main/documentation/API_documentation/Simple_Edge_Discovery_API_Readiness_Checklist.md
     type: Documentation
-  - url: properties/traffic-influence-api-openapi.yml
+  - url: openapi/traffic-influence-api-openapi.yml
     type: OpenAPI
   - url: bruno/GSMA Camara Project Traffic Influence API/bruno.json
     type: BrunoCollection

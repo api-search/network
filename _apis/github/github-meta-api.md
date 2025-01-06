@@ -8,11 +8,12 @@ overlays:
   - url: overlays/github-meta--openapi-search.yml
     type: OpenAPI
 properties:
-  - url: properties/github-meta--openapi-original.yml
+  - url: openapi/github-meta--openapi-original.yml
     type: OpenAPI
   - url: https://docs.github.com/en/rest/meta
     type: Documentation
-description: >-
+description: |-
+
   Use the REST API to get meta information about GitHub, including the IP
   addresses of GitHub services.
 

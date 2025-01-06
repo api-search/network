@@ -8,7 +8,7 @@ humanURL: https://developer.ebay.com/api-docs/buy/order/overview.html
 properties:
   - url: https://developer.ebay.com/api-docs/buy/order/overview.html
     type: Documentation
-  - url: properties/ebay-order-openapi-original.yml
+  - url: openapi/ebay-order-openapi-original.yml
     type: OpenAPI
   - url: https://developer.ebay.com/api-docs/buy/order/release-notes.html
     type: Release Notes

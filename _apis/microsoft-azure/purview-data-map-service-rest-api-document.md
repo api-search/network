@@ -1,6 +1,6 @@
 ---
 aid: microsoft-azure:purview-data-map-service-rest-api-document
-name: Purview Data Map Service REST API Document
+name: Microsoft Azure Purview Data Map Service REST API Document
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -9,7 +9,7 @@ humanURL: https://example.com
 properties:
   - url: https://example.com
     type: Documentation
-  - url: properties/purview-data-map-service-rest-api-document-openapi-original.yml
+  - url: openapi/purview-data-map-service-rest-api-document-openapi-original.yml
     type: OpenAPI
 description: >-
   Purview Data Map Service is a fully managed cloud service whose users can

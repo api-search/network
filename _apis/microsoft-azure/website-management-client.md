@@ -1,6 +1,6 @@
 ---
 aid: microsoft-azure:website-management-client
-name: WebSite Management Client
+name: Microsoft Azure WebSite Management Client
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -9,7 +9,7 @@ humanURL: https://example.com
 properties:
   - url: https://example.com
     type: Documentation
-  - url: properties/website-management-client-openapi-original.yml
+  - url: openapi/website-management-client-openapi-original.yml
     type: OpenAPI
 description: >-
   Use these APIs to manage Azure Websites resources through the Azure Resource

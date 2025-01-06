@@ -1,6 +1,6 @@
 ---
 aid: microsoft-azure:purview-workflow-service
-name: Purview Workflow Service
+name: Microsoft Azure Purview Workflow Service
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -9,7 +9,7 @@ humanURL: https://example.com
 properties:
   - url: https://example.com
     type: Documentation
-  - url: properties/purview-workflow-service-openapi-original.yml
+  - url: openapi/purview-workflow-service-openapi-original.yml
     type: OpenAPI
 description: >-
   Workflows are automated, repeatable business processes which allow

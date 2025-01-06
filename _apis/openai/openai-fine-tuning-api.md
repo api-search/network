@@ -43,12 +43,13 @@ overlays:
 properties:
   - url: https://platform.openai.com/docs/guides/fine-tuning
     type: Documentation
-  - url: properties/fine-tuning-openapi-original.yml
+  - url: openapi/fine-tuning-openapi-original.yml
     type: OpenAPI
-description: >-
+description: |-
+
   Manage fine-tuning jobs to tailor a model to your specific training data.
   Creates a fine-tuning job which begins the process of creating a new model
-  from a given dataset.Response includes details of the enqueued job including
-  job status and the name of the fine-tuned models once complete.
+  from a given dataset.Response includes details of the enqueued job
+  including job status and the name of the fine-tuned models once complete.
 
 ---

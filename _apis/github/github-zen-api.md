@@ -6,7 +6,7 @@ overlays:
   - url: overlays/github-zen--openapi-search.yml
     type: OpenAPI
 properties:
-  - url: properties/github-zen--openapi-original.yml
+  - url: openapi/github-zen--openapi-original.yml
     type: OpenAPI
 description: Needs description.
 

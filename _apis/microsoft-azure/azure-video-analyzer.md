@@ -1,6 +1,6 @@
 ---
 aid: microsoft-azure:azure-video-analyzer
-name: Azure Video Analyzer
+name: Microsoft Azure Video Analyzer
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -9,7 +9,7 @@ humanURL: https://example.com
 properties:
   - url: https://example.com
     type: Documentation
-  - url: properties/azure-video-analyzer-openapi-original.yml
+  - url: openapi/azure-video-analyzer-openapi-original.yml
     type: OpenAPI
 description: Azure Video Analyzer resource provider API definition.
 

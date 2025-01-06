@@ -5,15 +5,10 @@ tags:
   - Balance
   - History
   - Transactions
-overlays:
-  - url: overlays/balance-openapi-search.yml
-    type: APIs.io Search
-  - url: overlays/balance-openapi-api-evangelist-ratings.yml
-    type: API Evangelist Ratings
 properties:
   - url: https://stripe.com/docs/api/balance
     type: Documentation
-  - url: properties/balance-openapi-original.yml
+  - url: openapi/balance-openapi-original.yml
     type: OpenAPI
 description: >-
   This is an object representing your Stripe balance. You can retrieve it to see

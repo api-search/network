@@ -8,7 +8,7 @@ humanURL: https://developer.ebay.com/api-docs/sell/account/static/overview.html
 properties:
   - url: https://developer.ebay.com/api-docs/sell/account/static/overview.html
     type: Documentation
-  - url: properties/ebay-account-openapi-original.yml
+  - url: openapi/ebay-account-openapi-original.yml
     type: OpenAPI
 description: >-
   The Account API gives sellers the ability to configure their eBay seller

@@ -60,11 +60,12 @@ properties:
     type: Code Snippets
   - url: https://developer.factset.com/api-catalog/pa-engine-api#changelog
     type: Change Log
-  - url: properties/pa-engine-openapi-original.yml
+  - url: openapi/pa-engine-openapi-original.yml
     type: OpenAPI
-description: >-
+description: |-
+
   Through the PA Engine API, request analytics for multi-asset class
-  performance, attribution, and risk, including the flexibility of choosing your
-  portfolio, benchmark, return period, and more.
+  performance, attribution, and risk, including the flexibility of choosing
+  your portfolio, benchmark, return period, and more.
 
 ---

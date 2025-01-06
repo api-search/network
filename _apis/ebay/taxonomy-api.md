@@ -8,7 +8,7 @@ humanURL: https://developer.ebay.com/api-docs/commerce/taxonomy/overview.html
 properties:
   - url: https://developer.ebay.com/api-docs/commerce/taxonomy/overview.html
     type: Documentation
-  - url: properties/ebay-taxonomy-openapi-original.yml
+  - url: openapi/ebay-taxonomy-openapi-original.yml
     type: OpenAPI
   - url: https://developer.ebay.com/api-docs/commerce/taxonomy/release-notes.html
     type: Release Notes

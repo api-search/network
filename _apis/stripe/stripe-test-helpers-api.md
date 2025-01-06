@@ -41,15 +41,10 @@ tags:
   - Credits
   - Received
   - Debits
-overlays:
-  - url: overlays/test-helpers-openapi-search.yml
-    type: APIs.io Search
-  - url: overlays/test-helpers-openapi-api-evangelist-ratings.yml
-    type: API Evangelist Ratings
 properties:
   - url: https://stripe.com/docs/implementation-guides/billing/testing
     type: Documentation
-  - url: properties/test-helpers-openapi-original.yml
+  - url: openapi/test-helpers-openapi-original.yml
     type: OpenAPI
 description: >-
   Stripe provides a number of resources for testing your integration. Make sure

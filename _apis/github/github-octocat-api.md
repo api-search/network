@@ -8,7 +8,7 @@ overlays:
   - url: overlays/github-octocat--openapi-search.yml
     type: OpenAPI
 properties:
-  - url: properties/github-octocat--openapi-original.yml
+  - url: openapi/github-octocat--openapi-original.yml
     type: OpenAPI
 description: Needs description.
 

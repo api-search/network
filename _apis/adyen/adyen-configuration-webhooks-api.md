@@ -1,12 +1,17 @@
 ---
 aid: adyen:adyen-configuration-webhooks-api
 name: Adyen Configuration Webhooks API
-tags: []
-overlays:
-  - url: overlays/configuration-webhooks-openapi-search.yml
-    type: APIs.io Search
-  - url: overlays/configuration-webhooks-openapi-api-evangelist-ratings.yml
-    type: API Evangelist Ratings
+tags:
+  - Configuraton
+  - Webhooks
+image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+baseURL: https://api.example.com
+humanURL: https://docs.adyen.com/api-explorer/balanceplatform-webhooks/1/overview
+properties:
+  - url: https://docs.adyen.com/api-explorer/balanceplatform-webhooks/1/overview
+    type: Documentation
+  - url: openapi/configuration-webhooks-openapi-original.yml
+    type: OpenAPI
 description: >-
   Adyen sends webhooks to inform your system about events that occur in your
   platform. These events include, for example, when an account holders

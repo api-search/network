@@ -13,15 +13,23 @@ overlays:
 properties:
   - url: https://developer.factset.com/api-catalog/classifications-api#overview
     type: Documentation
-  - url: https://developer.factset.com/api-catalog/classifications-api#sdkLibrary
+  - url: |-
+
+      https://developer.factset.com/api-catalog/classifications-api#sdkLibrary
     type: SDKs
-  - url: https://developer.factset.com/api-catalog/classifications-api#notebooks
+  - url: |-
+
+      https://developer.factset.com/api-catalog/classifications-api#notebooks
     type: Jupyter Notebooks
-  - url: https://developer.factset.com/api-catalog/classifications-api#codeSnippet
+  - url: |-
+
+      https://developer.factset.com/api-catalog/classifications-api#codeSnippet
     type: Code Snippets
-  - url: https://developer.factset.com/api-catalog/classifications-api#changelog
+  - url: |-
+
+      https://developer.factset.com/api-catalog/classifications-api#changelog
     type: Change Log
-  - url: properties/classifications-openapi-original.yml
+  - url: openapi/classifications-openapi-original.yml
     type: OpenAPI
 description: Get Industry Classifications from a variety of vendors
 

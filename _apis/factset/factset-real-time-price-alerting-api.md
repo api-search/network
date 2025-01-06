@@ -12,25 +12,31 @@ overlays:
     type: API Evangelist Ratings
 properties:
   - url: >-
+
       https://developer.factset.com/api-catalog/real-time-price-alerting-api#overview
     type: Documentation
   - url: >-
+
       https://developer.factset.com/api-catalog/real-time-price-alerting-api#sdkLibrary
     type: SDKs
   - url: >-
+
       https://developer.factset.com/api-catalog/real-time-price-alerting-api#notebooks
     type: Jupyter Notebooks
   - url: >-
+
       https://developer.factset.com/api-catalog/real-time-price-alerting-api#codeSnippet
     type: Code Snippets
   - url: >-
+
       https://developer.factset.com/api-catalog/real-time-price-alerting-api#changelog
     type: Change Log
-  - url: properties/real-time-price-alerting-openapi-original.yml
+  - url: openapi/real-time-price-alerting-openapi-original.yml
     type: OpenAPI
-description: >-
-  Basic Price Alerting deals with generation of alerts based on current price
-  data. Users can define an upper or lower limit and choose on which price type
-  those limit conditions apply.
+description: |-
+
+  Basic Price Alerting deals with generation of alerts based on current
+  price data. Users can define an upper or lower limit and choose on which
+  price type those limit conditions apply.
 
 ---

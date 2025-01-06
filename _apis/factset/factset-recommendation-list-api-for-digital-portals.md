@@ -5,26 +5,33 @@ tags: []
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 baseURL: https://example.com
 humanURL: >-
+
   https://developer.factset.com/api-catalog/recommendation-list-api-digital-portals
 overlays: []
 properties:
   - url: >-
+
       https://developer.factset.com/api-catalog/recommendation-list-api-digital-portals#overview
     type: Documentation
   - url: >-
+
       https://developer.factset.com/api-catalog/recommendation-list-api-digital-portals#sdkLibrary
     type: SDKs
   - url: >-
+
       https://developer.factset.com/api-catalog/recommendation-list-api-digital-portals#notebooks
     type: Jupyter Notebooks
   - url: >-
+
       https://developer.factset.com/api-catalog/recommendation-list-api-digital-portals#codeSnippet
     type: Code Snippets
   - url: >-
+
       https://developer.factset.com/api-catalog/recommendation-list-api-digital-portals#changelog        
     type: Change Log
-description: >-
-  Manage lists of financial products via a CMS or upload job, including revision
-  control.
+description: |-
+
+  Manage lists of financial products via a CMS or upload job, including
+  revision control.
 
 ---

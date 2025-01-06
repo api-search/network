@@ -1,6 +1,6 @@
 ---
 aid: microsoft-azure:predictionendpoint
-name: PredictionEndpoint
+name: Microsoft Azure PredictionEndpoint
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -9,7 +9,7 @@ humanURL: https://example.com
 properties:
   - url: https://example.com
     type: Documentation
-  - url: properties/predictionendpoint-openapi-original.yml
+  - url: openapi/predictionendpoint-openapi-original.yml
     type: OpenAPI
 
 ---

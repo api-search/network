@@ -1,6 +1,6 @@
 ---
 aid: microsoft-azure:mediaservicesmanagementclient
-name: MediaServicesManagementClient
+name: Microsoft Azure MediaServicesManagementClient
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -9,7 +9,7 @@ humanURL: https://example.com
 properties:
   - url: https://example.com
     type: Documentation
-  - url: properties/mediaservicesmanagementclient-openapi-original.yml
+  - url: openapi/mediaservicesmanagementclient-openapi-original.yml
     type: OpenAPI
 description: Media Services resource management APIs.
 

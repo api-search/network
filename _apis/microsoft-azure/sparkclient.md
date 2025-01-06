@@ -1,6 +1,6 @@
 ---
 aid: microsoft-azure:sparkclient
-name: SparkClient
+name: Microsoft Azure SparkClient
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -9,7 +9,7 @@ humanURL: https://example.com
 properties:
   - url: https://example.com
     type: Documentation
-  - url: properties/sparkclient-openapi-original.yml
+  - url: openapi/sparkclient-openapi-original.yml
     type: OpenAPI
 
 ---

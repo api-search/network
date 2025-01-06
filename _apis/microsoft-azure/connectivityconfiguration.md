@@ -1,6 +1,6 @@
 ---
 aid: microsoft-azure:connectivityconfiguration
-name: ConnectivityConfiguration
+name: Microsoft Azure ConnectivityConfiguration
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -9,7 +9,7 @@ humanURL: https://example.com
 properties:
   - url: https://example.com
     type: Documentation
-  - url: properties/connectivityconfiguration-openapi-original.yml
+  - url: openapi/connectivityconfiguration-openapi-original.yml
     type: OpenAPI
 description: >-
   The Microsoft Azure Virtual Network Manager Connectivity Configuration API

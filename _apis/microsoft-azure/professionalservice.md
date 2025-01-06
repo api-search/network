@@ -1,6 +1,6 @@
 ---
 aid: microsoft-azure:professionalservice
-name: ProfessionalService
+name: Microsoft Azure ProfessionalService
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -9,7 +9,7 @@ humanURL: https://example.com
 properties:
   - url: https://example.com
     type: Documentation
-  - url: properties/professionalservice-openapi-original.yml
+  - url: openapi/professionalservice-openapi-original.yml
     type: OpenAPI
 description: REST APIs for Marketplace Professional Service Offers
 

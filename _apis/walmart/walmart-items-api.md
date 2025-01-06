@@ -21,7 +21,7 @@ image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jp
 baseURL: https://api.example.com
 humanURL: https://developer.walmart.com/api/us/mp/items
 properties:
-  - url: properties/walmart-marketplace-items-openapi-original.yml
+  - url: openapi/walmart-marketplace-items-openapi-original.yml
     type: OpenAPI
   - url: https://developer.walmart.com/api/us/mp/items
     type: Documentation

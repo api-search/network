@@ -18,15 +18,10 @@ tags:
   - Records
   - Usage
 humanURL: https://www.twilio.com/docs/iot/supersim/api
-overlays:
-  - url: overlays/super-sim-openapi-search.yml
-    type: APIs.io Search
-  - url: overlays/super-sim-openapi-api-evangelist-ratings.yml
-    type: API Evangelist Ratings
 properties:
   - url: https://www.twilio.com/docs/
     type: Documentation
-  - url: properties/super-sim-openapi-original.yml
+  - url: openapi/super-sim-openapi-original.yml
     type: OpenAPI
 description: >-
   Twilio IoT's Super SIM API empowers you to manage and deploy massive fleets of

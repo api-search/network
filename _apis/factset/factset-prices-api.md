@@ -58,20 +58,25 @@ overlays:
 properties:
   - url: https://developer.factset.com/api-catalog/factset-prices-api#overview
     type: Documentation
-  - url: https://developer.factset.com/api-catalog/factset-prices-api#sdkLibrary
+  - url: |-
+
+      https://developer.factset.com/api-catalog/factset-prices-api#sdkLibrary
     type: SDKs
   - url: https://developer.factset.com/api-catalog/factset-prices-api#notebooks
     type: Jupyter Notebooks
-  - url: https://developer.factset.com/api-catalog/factset-prices-api#codeSnippet
+  - url: |-
+
+      https://developer.factset.com/api-catalog/factset-prices-api#codeSnippet
     type: Code Snippets
   - url: https://developer.factset.com/api-catalog/factset-prices-api#changelog
     type: Change Log
-  - url: properties/prices-openapi-original.yml
+  - url: openapi/prices-openapi-original.yml
     type: OpenAPI
-description: >-
+description: |-
+
   Gain access to comprehensive global coverage for equity prices, returns,
-  volume, shares, splits, and dividends. Security types include Common Stock,
-  ADR, GDR, Preferred, Closed-ended Fund, Exchange Traded Fund, Unit, Open-ended
-  Fund, Exchange_
+  volume, shares, splits, and dividends. Security types include Common
+  Stock, ADR, GDR, Preferred, Closed-ended Fund, Exchange Traded Fund, Unit,
+  Open-ended Fund, Exchange_
 
 ---

@@ -1,6 +1,6 @@
 ---
 aid: microsoft-azure:global-api-client
-name: Global API Client
+name: Microsoft Azure Global API Client
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -9,7 +9,7 @@ humanURL: https://example.com
 properties:
   - url: https://example.com
     type: Documentation
-  - url: properties/global-api-client-openapi-original.yml
+  - url: openapi/global-api-client-openapi-original.yml
     type: OpenAPI
 
 ---

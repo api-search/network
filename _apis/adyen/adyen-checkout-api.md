@@ -2,18 +2,37 @@
 aid: adyen:adyen-checkout-api
 name: Adyen Checkout API
 tags:
-  - Checkout
+  - Apple
+  - Pay
+  - Sessions
+  - Cancels
+  - Card
+  - Donations
+  - Orders
+  - Origin
+  - Keys
   - Payments
-humanURL: https://docs.adyen.com/api-explorer/Checkout/latest/overview
-overlays:
-  - url: overlays/checkout-openapi-search.yml
-    type: APIs.io Search
-  - url: overlays/checkout-openapi-api-evangelist-ratings.yml
-    type: API Evangelist Ratings
-description: >-
-  Adyen Checkout API provides a simple and flexible way to initiate and
-  authorise online payments. You can use the same integration for payments made
-  with cards (including 3D Secure), mobile wallets, and local payment methods
-  (for example, iDEAL and Sofort).
+  - Links
+  - Methods
+  - Balance
+  - Session
+  - Results
+  - Psp
+  - References
+  - Amount
+  - Captures
+  - Refunds
+  - Reversals
+  - Stored
+  - Method
+image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+baseURL: https://api.example.com
+humanURL: https://docs.adyen.com/api-explorer/Checkout/71/overview
+properties:
+  - url: https://docs.adyen.com/api-explorer/Checkout/71/overview
+    type: Documentation
+  - url: properties/adyen-checkout-api-openapi.yml
+    type: OpenAPI
+description: This is the description of your API.
 
 ---

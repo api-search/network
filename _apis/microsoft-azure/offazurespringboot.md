@@ -1,6 +1,6 @@
 ---
 aid: microsoft-azure:offazurespringboot
-name: OffAzureSpringBoot
+name: Microsoft Azure OffAzureSpringBoot
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -9,7 +9,7 @@ humanURL: https://example.com
 properties:
   - url: https://example.com
     type: Documentation
-  - url: properties/offazurespringboot-openapi-original.yml
+  - url: openapi/offazurespringboot-openapi-original.yml
     type: OpenAPI
 description: The Microsoft.OffAzureSpringBoot Rest API spec.
 

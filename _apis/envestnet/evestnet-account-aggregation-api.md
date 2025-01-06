@@ -7,14 +7,16 @@ baseURL: https://api.example.com
 humanURL: https://developer.envestnet.com/products/yodlee/account-aggregation
 properties:
   - url: >-
+
       https://developer.envestnet.com/products/yodlee/account-aggregation/docs/api-reference
     type: Documentation
-  - url: properties/envestnet-account-aggregation-openapi-original.yml
+  - url: openapi/envestnet-account-aggregation-openapi-original.yml
     type: OpenAPI
-description: >-
+description: |-
+
   Our Aggregation APIs give you the power to access accounts at most
-  institutions in the industry combined with the industry's best data enrichment
-  augmented by powerful AI-driven data analysis, all from a single
-  open-banking-ready platform.
+  institutions in the industry combined with the industry's best data
+  enrichment augmented by powerful AI-driven data analysis, all from a
+  single open-banking-ready platform.
 
 ---

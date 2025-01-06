@@ -1,6 +1,6 @@
 ---
 aid: microsoft-azure:streamanalyticsmanagementclient
-name: StreamAnalyticsManagementClient
+name: Microsoft Azure StreamAnalyticsManagementClient
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -9,7 +9,7 @@ humanURL: https://example.com
 properties:
   - url: https://example.com
     type: Documentation
-  - url: properties/streamanalyticsmanagementclient-openapi-original.yml
+  - url: openapi/streamanalyticsmanagementclient-openapi-original.yml
     type: OpenAPI
 
 ---

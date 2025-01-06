@@ -1,6 +1,6 @@
 ---
 aid: microsoft-azure:featureclient
-name: FeatureClient
+name: Microsoft Azure FeatureClient
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -9,7 +9,7 @@ humanURL: https://example.com
 properties:
   - url: https://example.com
     type: Documentation
-  - url: properties/featureclient-openapi-original.yml
+  - url: openapi/featureclient-openapi-original.yml
     type: OpenAPI
 description: Feature provider
 

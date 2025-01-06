@@ -13,7 +13,7 @@ humanURL: >-
 properties:
   - url: https://github.com/camaraproject/EdgeCloud
     type: GitHubRepository
-  - url: properties/application-endpoint-discovery-api-openapi.yml
+  - url: openapi/application-endpoint-discovery-api-openapi.yml
     type: OpenAPI
   - url: bruno/GSMA Camara Project Application Endpoint Discovery API/bruno.json
     type: BrunoCollection

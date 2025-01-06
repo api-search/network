@@ -8,7 +8,7 @@ humanURL: https://developer.ebay.com/api-docs/sell/finances/overview.html
 properties:
   - url: https://developer.ebay.com/api-docs/sell/finances/overview.html
     type: Documentation
-  - url: properties/ebay-finances-openapi-original.yml
+  - url: openapi/ebay-finances-openapi-original.yml
     type: OpenAPI
   - url: https://developer.ebay.com/api-docs/sell/finances/release-notes.html
     type: Release Notes

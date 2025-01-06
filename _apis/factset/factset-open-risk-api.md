@@ -21,11 +21,12 @@ properties:
     type: Code Snippets
   - url: https://developer.factset.com/api-catalog/openrisk-api#changelog
     type: Change Log
-  - url: properties/open-risk-openapi-original.yml
+  - url: openapi/open-risk-openapi-original.yml
     type: OpenAPI
-description: >-
+description: |-
+
   Through this API one can get a comprehensive access to factor-based linear
-  risk analytics engine, offering flexible and powerful risk analyses with full
-  capability.
+  risk analytics engine, offering flexible and powerful risk analyses with
+  full capability.
 
 ---

@@ -29,6 +29,7 @@ tags:
 score: 1861
 baseURL: https://api.openai.com
 humanURL: >-
+
   https://platform.openai.com/docs/assistants/how-it-works/managing-threads-and-messages
 overlays:
   - url: overlays/threads-openapi-search.yml
@@ -37,9 +38,10 @@ overlays:
     type: API Evangelist Ratings
 properties:
   - url: >-
+
       https://platform.openai.com/docs/assistants/how-it-works/managing-threads-and-messages
     type: Documentation
-  - url: properties/threads-openapi-original.yml
+  - url: openapi/threads-openapi-original.yml
     type: OpenAPI
 description: Create threads that assistants can interact with.
 

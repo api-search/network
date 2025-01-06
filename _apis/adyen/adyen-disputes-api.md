@@ -1,20 +1,15 @@
 ---
 aid: adyen:adyen-disputes-api
 name: Adyen Disputes API
-tags:
-  - Accept
-  - Applicable
-  - Defend
-  - Defense
-  - Disputes
-  - Documents
-  - Reasons
-  - Supply
-overlays:
-  - url: overlays/disputes-openapi-search.yml
-    type: APIs.io Search
-  - url: overlays/disputes-openapi-api-evangelist-ratings.yml
-    type: API Evangelist Ratings
+tags: []
+image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+baseURL: https://api.example.com
+humanURL: https://docs.adyen.com/risk-management/disputes-api
+properties:
+  - url: https://docs.adyen.com/risk-management/disputes-api
+    type: Documentation
+  - url: openapi/disputes-openapi-original.yml
+    type: OpenAPI
 description: >-
   You can use the Disputes API to automate the dispute handling process so that
   you can respond to disputes and chargebacks as soon as they are initiated. The

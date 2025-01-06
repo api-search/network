@@ -14,10 +14,12 @@ properties:
     type: Documentation
   - url: https://docs.discourse.org/openapi.json
     type: OpenAPI
-description: >+
-  At Discourse, our mission is to democratize online community and teamwork by
-  raising the standard of civilized discourse on the Internet. We achieve this
-  through delivering the best community and forum software.
+description: |
 
+  At Discourse, our mission is to democratize online community and teamwork
+
+  by raising the standard of civilized discourse on the Internet. We achieve
+
+  this through delivering the best community and forum software.
 
 ---

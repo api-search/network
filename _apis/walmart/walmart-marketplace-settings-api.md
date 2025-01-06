@@ -31,11 +31,10 @@ tags:
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 baseURL: https://api.example.com
 humanURL: https://developer.walmart.com/doc/us/mp/us-mp-settings/
-overlays: []
 properties:
   - url: https://developer.walmart.com/doc/us/mp/us-mp-settings/
     type: Documentation
-  - url: properties/walmart-marketplace-settings-openapi-original.yml
+  - url: openapi/walmart-marketplace-settings-openapi-original.yml
     type: OpenAPI
 description: >-
   The Settings API allows you to configure shipping delivery and fulfillment

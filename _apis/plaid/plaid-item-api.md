@@ -46,10 +46,19 @@ overlays:
   - url: overlays/plaid-item--openapi-api-evangelist-ratings.yml
     type: API Evangelist Ratings
 properties:
-  - url: properties/plaid-item--openapi-original.yml
+  - url: openapi/plaid-item--openapi-original.yml
     type: OpenAPI
   - url: https://plaid.com/docs/api/items/
     type: Documentation
-description: API reference for retrieving and deleting Items.
+description: >-
+  The Plaid Item API is a tool that allows developers to retrieve detailed
+  information about a user's financial accounts and transactions. By connecting
+  to a user's bank or credit card account through Plaid's platform, developers
+  can access real-time data such as account balances, transaction history, and
+  account details. This information can then be used to build tailored financial
+  apps and services, provide personalized insights and recommendations, and
+  streamline the overall financial management process for users. The Plaid Item
+  API also offers advanced security features, ensuring that sensitive financial
+  data is protected and secure.
 
 ---

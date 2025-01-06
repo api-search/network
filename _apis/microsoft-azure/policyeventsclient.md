@@ -1,6 +1,6 @@
 ---
 aid: microsoft-azure:policyeventsclient
-name: PolicyEventsClient
+name: Microsoft Azure PolicyEventsClient
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -9,7 +9,7 @@ humanURL: https://example.com
 properties:
   - url: https://example.com
     type: Documentation
-  - url: properties/policyeventsclient-openapi-original.yml
+  - url: openapi/policyeventsclient-openapi-original.yml
     type: OpenAPI
 
 ---

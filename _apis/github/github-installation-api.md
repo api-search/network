@@ -22,10 +22,11 @@ overlays:
   - url: overlays/github-installation-openapi-search.yml
     type: OpenAPI
 properties:
-  - url: properties/github-installation-openapi-original.yml
+  - url: openapi/github-installation-openapi-original.yml
     type: OpenAPI
-description: >-
-  Use the REST API to get information about GitHub App installations and perform
-  actions within those installations.
+description: |-
+
+  Use the REST API to get information about GitHub App installations and
+  perform actions within those installations.
 
 ---

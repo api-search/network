@@ -21,9 +21,10 @@ properties:
     type: Code Snippets
   - url: https://developer.factset.com/api-catalog/bookbuilder-api#changelog
     type: Change Log
-  - url: properties/bookbuilder-openapi-original.yml
+  - url: openapi/bookbuilder-openapi-original.yml
     type: OpenAPI
-description: >-
+description: |-
+
   The BookBuilder API is a powerful tool that quickly combines FactSet's
   detailed reports for companies of interest into polished pdfs that can be
   read, saved down, and shared with others.

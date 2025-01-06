@@ -1,6 +1,6 @@
 ---
 aid: microsoft-azure:azure-maps-wayfinding-service
-name: Azure Maps Wayfinding Service
+name: Microsoft Azure Maps Wayfinding Service
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -9,7 +9,7 @@ humanURL: https://example.com
 properties:
   - url: https://example.com
     type: Documentation
-  - url: properties/azure-maps-wayfinding-service-openapi-original.yml
+  - url: openapi/azure-maps-wayfinding-service-openapi-original.yml
     type: OpenAPI
 description: Azure Maps Wayfinding REST APIs
 

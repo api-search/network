@@ -5,11 +5,8 @@ tags:
   - Filter
   - Notifications
   - Users
-overlays:
-  - url: overlays/bunq-user-userid-notification-filter-push-openapi-search.yml
-    type: OpenAPI
 properties:
-  - url: properties/bunq-user-userid-notification-filter-push-openapi-original.yml
+  - url: openapi/bunq-user-userid-notification-filter-push-openapi-original.yml
     type: OpenAPI
 description: Needs description.
 

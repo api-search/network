@@ -9,11 +9,8 @@ tags:
   - Prov
   - Providers
   - Services
-overlays:
-  - url: overlays/bunq-payment-service-provider-credential--openapi-search.yml
-    type: OpenAPI
 properties:
-  - url: properties/bunq-payment-service-provider-credential--openapi-original.yml
+  - url: openapi/bunq-payment-service-provider-credential--openapi-original.yml
     type: OpenAPI
 description: Needs description.
 

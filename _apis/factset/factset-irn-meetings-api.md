@@ -21,10 +21,11 @@ properties:
     type: Code Snippets
   - url: https://developer.factset.com/api-catalog/irn-meetings-api#changelog
     type: Change Log
-  - url: properties/irn-meetings-openapi-original.yml
+  - url: openapi/irn-meetings-openapi-original.yml
     type: OpenAPI
-description: >-
-  Meetings API allows users to extract, create, update and delete their meetings
-  and appointments in Internal Research Notes application.
+description: |-
+
+  Meetings API allows users to extract, create, update and delete their
+  meetings and appointments in Internal Research Notes application.
 
 ---

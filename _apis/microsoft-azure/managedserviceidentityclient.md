@@ -1,6 +1,6 @@
 ---
 aid: microsoft-azure:managedserviceidentityclient
-name: ManagedServiceIdentityClient
+name: Microsoft Azure ManagedServiceIdentityClient
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -9,7 +9,7 @@ humanURL: https://example.com
 properties:
   - url: https://example.com
     type: Documentation
-  - url: properties/managedserviceidentityclient-openapi-original.yml
+  - url: openapi/managedserviceidentityclient-openapi-original.yml
     type: OpenAPI
 description: The Managed Service Identity Client.
 

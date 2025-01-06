@@ -15,7 +15,7 @@ properties:
   - url: >-
       https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/camaraproject/DeviceStatus/r1.3/code/API_definitions/device-roaming-status.yaml&nocors
     type: Documentation
-  - url: properties/device-roaming-status-api-openapi.yml
+  - url: openapi/device-roaming-status-api-openapi.yml
     type: OpenAPI
   - url: bruno/GSMA Camara Project Device Roaming Status/bruno.json
     type: BrunoCollection

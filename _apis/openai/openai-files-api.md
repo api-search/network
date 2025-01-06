@@ -16,12 +16,13 @@ overlays:
 properties:
   - url: https://platform.openai.com/docs/api-reference/files
     type: Documentation
-  - url: properties/files-openapi-original.yml
+  - url: openapi/files-openapi-original.yml
     type: OpenAPI
-description: >-
+description: |-
+
   Files are used to upload documents that can be used with features like
   Assistants and Fine-tuning. Upload a file that can be used across various
-  endpoints. The size of all the files uploaded by one organization can be up to
-  100 GB.
+  endpoints. The size of all the files uploaded by one organization can be
+  up to 100 GB.
 
 ---

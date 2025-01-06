@@ -5,7 +5,6 @@ tags: []
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 baseURL: https://cdn.contentful.com
 humanURL: https://www.contentful.com/developers/docs/references/content-delivery-api/
-overlays: []
 properties:
   - url: >-
       https://www.contentful.com/developers/docs/references/content-delivery-api/

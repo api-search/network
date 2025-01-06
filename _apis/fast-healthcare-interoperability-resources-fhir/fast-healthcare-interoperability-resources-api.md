@@ -11,7 +11,7 @@ humanURL: https://www.hl7.org/fhir/
 properties:
   - url: https://www.hl7.org/fhir/
     type: Documentation
-  - url: properties/fhir-openapi-original.yml
+  - url: openapi/fhir-openapi-original.yml
     type: OpenAPI
   - url: >-
       https://www.postman.com/api-evangelist/fast-healthcare-interoperability-resources-fhir/collection/35240-f4ba6100-8f52-4e08-8071-afb9f06e2668

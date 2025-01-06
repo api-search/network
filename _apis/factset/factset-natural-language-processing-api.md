@@ -30,27 +30,35 @@ humanURL: https://developer.factset.com/api-catalog/natural-language-processing-
 overlays:
   - url: overlays/natural-language-processing-openapi-search.yml
     type: APIs.io Search
-  - url: overlays/natural-language-processing-openapi-api-evangelist-ratings.yml
+  - url: |-
+
+      overlays/natural-language-processing-openapi-api-evangelist-ratings.yml
     type: API Evangelist Ratings
 properties:
   - url: >-
+
       https://developer.factset.com/api-catalog/natural-language-processing-api#overview
     type: Documentation
   - url: >-
+
       https://developer.factset.com/api-catalog/natural-language-processing-api#sdkLibrary
     type: SDKs
   - url: >-
+
       https://developer.factset.com/api-catalog/natural-language-processing-api#notebooks
     type: Jupyter Notebooks
   - url: >-
+
       https://developer.factset.com/api-catalog/natural-language-processing-api#codeSnippet
     type: Code Snippets
   - url: >-
+
       https://developer.factset.com/api-catalog/natural-language-processing-api#changelog
     type: Change Log
-  - url: properties/natural-language-processing-openapi-original.yml
+  - url: openapi/natural-language-processing-openapi-original.yml
     type: OpenAPI
-description: >-
+description: |-
+
   These APIs leverage natural language processing to help extract meaningful
   data from unstructured text
 

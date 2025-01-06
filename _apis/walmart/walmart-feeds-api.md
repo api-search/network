@@ -14,7 +14,7 @@ humanURL: https://developer.walmart.com/api/us/mp/feeds
 properties:
   - url: https://developer.walmart.com/api/us/mp/feeds
     type: Documentation
-  - url: properties/walmart-marketplace-feeds-openapi-original.yml
+  - url: openapi/walmart-marketplace-feeds-openapi-original.yml
     type: OpenAPI
 description: >-
   Feeds are constructed to handle bulk functions. A feed consists of an HTTP

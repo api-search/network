@@ -1,6 +1,6 @@
 ---
 aid: microsoft-azure:programmable-connectivity
-name: Programmable Connectivity
+name: Microsoft Azure Programmable Connectivity
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -9,7 +9,7 @@ humanURL: https://example.com
 properties:
   - url: https://example.com
     type: Documentation
-  - url: properties/programmable-connectivity-openapi-original.yml
+  - url: openapi/programmable-connectivity-openapi-original.yml
     type: OpenAPI
 description: >-
   Azure Programmable Connectivity (APC) provides a unified interface to the

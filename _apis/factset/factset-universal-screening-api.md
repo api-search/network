@@ -15,25 +15,32 @@ overlays:
   - url: overlays/universal-screening-openapi-api-evangelist-ratings.yml
     type: API Evangelist Ratings
 properties:
-  - url: https://developer.factset.com/api-catalog/universal-screening-api#overview
+  - url: |-
+
+      https://developer.factset.com/api-catalog/universal-screening-api#overview
     type: Documentation
   - url: >-
+
       https://developer.factset.com/api-catalog/universal-screening-api#sdkLibrary
     type: SDKs
   - url: >-
+
       https://developer.factset.com/api-catalog/universal-screening-api#notebooks
     type: Jupyter Notebooks
   - url: >-
+
       https://developer.factset.com/api-catalog/universal-screening-api#codeSnippet
     type: Code Snippets
   - url: >-
+
       https://developer.factset.com/api-catalog/universal-screening-api#changelog
     type: Change Log
-  - url: properties/universal-screening-openapi-original.yml
+  - url: openapi/universal-screening-openapi-original.yml
     type: OpenAPI
-description: >-
+description: |-
+
   Use the Universal Screening API to calculate your saved screens and then
-  output the results in a convenient JSON format or archive the results to an
-  Open FactSet Database (OFDB) file
+  output the results in a convenient JSON format or archive the results to
+  an Open FactSet Database (OFDB) file
 
 ---

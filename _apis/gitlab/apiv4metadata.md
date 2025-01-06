@@ -1,12 +1,12 @@
 ---
 aid: gitlab:apiv4metadata
-name: ' api/v4/metadata'
+name: GitLab Metadata API
 tags: []
 overlays:
   - url: overlays/gitlab-api-v4-metadata-openapi-search.yml
     type: OpenAPI
 properties:
-  - url: properties/gitlab-api-v4-metadata-openapi-original.yml
+  - url: openapi/gitlab-api-v4-metadata-openapi-original.yml
     type: OpenAPI
 description: Needs description.
 

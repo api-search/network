@@ -1,14 +1,12 @@
 ---
+aid: zoom:zoom-device-api
 name: Zoom Device API
 tags:
   - Device
   - H323
 humanURL: https://developers.zoom.us/docs/api/rest/zoom-phone-api/
-overlays:
-  - url: overlays/zoom-device--openapi-search.yml
-    type: OpenAPI
 properties:
-  - url: properties/zoom-device--openapi-original.yml
+  - url: openapi/zoom-device--openapi-original.yml
     type: OpenAPI
   - url: https://developers.zoom.us/docs/api/rest/zoom-phone-api/
     type: Documentation

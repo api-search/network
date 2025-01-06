@@ -21,10 +21,11 @@ properties:
     type: Code Snippets
   - url: https://developer.factset.com/api-catalog/irn-notes-api#changelog
     type: Change Log
-  - url: properties/irn-notes-openapi-original.yml
+  - url: openapi/irn-notes-openapi-original.yml
     type: OpenAPI
-description: >-
-  Notes API allows users to extract, create, update and delete their notes in
-  the Internal Research Notes application.
+description: |-
+
+  Notes API allows users to extract, create, update and delete their notes
+  in the Internal Research Notes application.
 
 ---

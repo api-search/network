@@ -28,17 +28,12 @@ tags:
   - Verification
   - Templates
   - Webhooks
-overlays:
-  - url: overlays/verify-openapi-search.yml
-    type: APIs.io Search
-  - url: overlays/verify-openapi-api-evangelist-ratings.yml
-    type: API Evangelist Ratings
 properties:
   - url: https://www.twilio.com/en-us/trusted-activation/verify
     type: Documentation
   - url: https://www.twilio.com/en-us/verify/pricing
     type: Pricing
-  - url: properties/verify-openapi-original.yml
+  - url: openapi/verify-openapi-original.yml
     type: OpenAPI
 description: >-
   Set up SMS or voice verifications to quickly authenticate users, fight fraud,

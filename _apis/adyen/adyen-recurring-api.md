@@ -1,29 +1,15 @@
 ---
 aid: adyen:adyen-recurring-api
 name: Adyen Recurring API
-tags:
-  - Accounts
-  - Ask
-  - Contracts
-  - Details
-  - Disable
-  - Existing
-  - Issuer
-  - Linked
-  - Notify
-  - Payments
-  - Permits
-  - Recurring
-  - Running
-  - Schedules
-  - Shopper
-  - Stored
-  - The
-overlays:
-  - url: overlays/recurring-openapi-search.yml
-    type: APIs.io Search
-  - url: overlays/recurring-openapi-api-evangelist-ratings.yml
-    type: API Evangelist Ratings
+tags: []
+image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+baseURL: https://api.example.com
+humanURL: https://docs.adyen.com/online-payments/tokenization
+properties:
+  - url: https://docs.adyen.com/online-payments/tokenization
+    type: Documentation
+  - url: openapi/recurring-openapi-original.yml
+    type: OpenAPI
 description: >-
   The Recurring APIs allow you to manage and remove your tokens or saved payment
   details. Tokens should be created with validation during a payment request.

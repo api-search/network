@@ -1,6 +1,6 @@
 ---
 aid: microsoft-azure:microsoftvoiceservices
-name: Microsoft.VoiceServices
+name: Microsoft Azure Microsoft.VoiceServices
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -9,7 +9,7 @@ humanURL: https://example.com
 properties:
   - url: https://example.com
     type: Documentation
-  - url: properties/microsoftvoiceservices-openapi-original.yml
+  - url: openapi/microsoftvoiceservices-openapi-original.yml
     type: OpenAPI
 
 ---

@@ -12,24 +12,30 @@ overlays:
     type: API Evangelist Ratings
 properties:
   - url: >-
+
       https://developer.factset.com/api-catalog/etf-profile-and-prices-api#overview
     type: Documentation
   - url: >-
+
       https://developer.factset.com/api-catalog/etf-profile-and-prices-api#sdkLibrary
     type: SDKs
   - url: >-
+
       https://developer.factset.com/api-catalog/etf-profile-and-prices-api#notebooks
     type: Jupyter Notebooks
   - url: >-
+
       https://developer.factset.com/api-catalog/etf-profile-and-prices-api#codeSnippet
     type: Code Snippets
   - url: >-
+
       https://developer.factset.com/api-catalog/etf-profile-and-prices-api#changelog
     type: Change Log
-  - url: properties/etf-profile-and-prices-openapi-original.yml
+  - url: openapi/etf-profile-and-prices-openapi-original.yml
     type: OpenAPI
-description: >-
-  Access FactSet-collected profile data and pricing for Exchange Traded Funds
-  (ETFs).
+description: |-
+
+  Access FactSet-collected profile data and pricing for Exchange Traded
+  Funds (ETFs).
 
 ---

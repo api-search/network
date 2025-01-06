@@ -23,15 +23,10 @@ tags:
   - Value
   - Values
 humanURL: https://www.twilio.com/blog/what-is-intelligent-virtual-assistant
-overlays:
-  - url: overlays/assistant-openapi-search.yml
-    type: APIs.io Search
-  - url: overlays/assistant-openapi-api-evangelist-ratings.yml
-    type: API Evangelist Ratings
 properties:
   - url: https://www.twilio.com/blog/what-is-intelligent-virtual-assistant
     type: Documentation
-  - url: properties/assistant-openapi-original.yml
+  - url: openapi/assistant-openapi-original.yml
     type: OpenAPI
 description: >-
   Twilio AI Assistants are an opinionated framework to build and host

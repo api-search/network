@@ -12,24 +12,30 @@ overlays:
     type: API Evangelist Ratings
 properties:
   - url: >-
+
       https://developer.factset.com/api-catalog/fixed-income-calculation-api#overview
     type: Documentation
   - url: >-
+
       https://developer.factset.com/api-catalog/fixed-income-calculation-api#sdkLibrary
     type: SDKs
   - url: >-
+
       https://developer.factset.com/api-catalog/fixed-income-calculation-api#notebooks
     type: Jupyter Notebooks
   - url: >-
+
       https://developer.factset.com/api-catalog/fixed-income-calculation-api#codeSnippet
     type: Code Snippets
   - url: >-
+
       https://developer.factset.com/api-catalog/fixed-income-calculation-api#changelog
     type: Change Log
-  - url: properties/fixed-income-calculation-openapi-original.yml
+  - url: openapi/fixed-income-calculation-openapi-original.yml
     type: OpenAPI
-description: >-
-  Leverage FactSet's Fixed Income Calculation Engine to derive analytics on the
-  fly
+description: |-
+
+  Leverage FactSet's Fixed Income Calculation Engine to derive analytics on
+  the fly
 
 ---

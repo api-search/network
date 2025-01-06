@@ -1,6 +1,6 @@
 ---
 aid: microsoft-azure:siterecoverymanagementclient
-name: SiteRecoveryManagementClient
+name: Microsoft Azure SiteRecoveryManagementClient
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -9,7 +9,7 @@ humanURL: https://example.com
 properties:
   - url: https://example.com
     type: Documentation
-  - url: properties/siterecoverymanagementclient-openapi-original.yml
+  - url: openapi/siterecoverymanagementclient-openapi-original.yml
     type: OpenAPI
 
 ---

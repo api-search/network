@@ -1,6 +1,6 @@
 ---
 aid: microsoft-azure:postgresqlmanagementclient
-name: PostgreSQLManagementClient
+name: Microsoft Azure PostgreSQLManagementClient
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -9,7 +9,7 @@ humanURL: https://example.com
 properties:
   - url: https://example.com
     type: Documentation
-  - url: properties/postgresqlmanagementclient-openapi-original.yml
+  - url: openapi/postgresqlmanagementclient-openapi-original.yml
     type: OpenAPI
 description: >-
   The Microsoft Azure management API provides create, read, update, and delete

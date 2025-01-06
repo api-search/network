@@ -21,11 +21,12 @@ properties:
     type: Code Snippets
   - url: https://developer.factset.com/api-catalog/symbology-api#changelog
     type: Change Log
-  - url: properties/symbology-openapi-original.yml
+  - url: openapi/symbology-openapi-original.yml
     type: OpenAPI
-description: >-
-  FactSet Symbology API provides symbol resolution services, allowing users to
-  translate from familiar market symbols to FactSet's native symbology.
+description: |-
+
+  FactSet Symbology API provides symbol resolution services, allowing users
+  to translate from familiar market symbols to FactSet's native symbology.
   FactSet's symbology sits at the center of its hub-and-spoke data model,
   enabling you to quickly_
 

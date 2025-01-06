@@ -11,11 +11,10 @@ tags:
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 baseURL: https://api.example.com
 humanURL: https://developer.walmart.com/api/us/mp/promotion
-overlays: []
 properties:
   - url: https://developer.walmart.com/api/us/mp/promotion
     type: Documentation
-  - url: properties/walmart-marketplace-promotions-openapi-original.yml
+  - url: openapi/walmart-marketplace-promotions-openapi-original.yml
     type: OpenAPI
 description: >-
   Sellers can set regular or promotional prices for their items. Setting the

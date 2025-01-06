@@ -25,7 +25,7 @@ humanURL: https://developer.walmart.com/api/us/mp/price
 properties:
   - url: https://developer.walmart.com/api/us/mp/price
     type: Documentation
-  - url: properties/walmart-marketplace-prices-openapi-original.yml
+  - url: openapi/walmart-marketplace-prices-openapi-original.yml
     type: OpenAPI
 description: >-
   The price is a fundamental building block for your listing on Walmart.com. You

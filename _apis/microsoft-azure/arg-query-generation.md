@@ -1,6 +1,6 @@
 ---
 aid: microsoft-azure:arg-query-generation
-name: ARG Query Generation
+name: Microsoft Azure ARG Query Generation
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -9,7 +9,7 @@ humanURL: https://example.com
 properties:
   - url: https://example.com
     type: Documentation
-  - url: properties/arg-query-generation-openapi-original.yml
+  - url: openapi/arg-query-generation-openapi-original.yml
     type: OpenAPI
 
 ---

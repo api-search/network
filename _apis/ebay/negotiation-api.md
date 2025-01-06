@@ -8,7 +8,7 @@ humanURL: https://developer.ebay.com/api-docs/sell/negotiation/overview.html
 properties:
   - url: https://developer.ebay.com/api-docs/sell/negotiation/overview.html
     type: Documentation
-  - url: properties/ebay-negotiation-openapi-original.yml
+  - url: openapi/ebay-negotiation-openapi-original.yml
     type: OpenAPI
   - url: https://developer.ebay.com/api-docs/sell/negotiation/release-notes.html
     type: Release Notes

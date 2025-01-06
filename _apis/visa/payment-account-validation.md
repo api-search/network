@@ -6,7 +6,7 @@ tags:
   - Validation
 humanURL: https://developer.visa.com/capabilities/pav
 properties:
-  - url: properties/payment-account-validation.yml
+  - url: openapi/payment-account-validation.yml
     type: OpenAPI
   - url: https://developer.visa.com/capabilities/pav/docs
     name: Getting Started

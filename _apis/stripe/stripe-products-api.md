@@ -4,15 +4,10 @@ name: Stripe Products API
 tags:
   - Products
   - Search
-overlays:
-  - url: overlays/products-openapi-search.yml
-    type: APIs.io Search
-  - url: overlays/products-openapi-api-evangelist-ratings.yml
-    type: API Evangelist Ratings
 properties:
   - url: https://stripe.com/docs/api/products
     type: Documentation
-  - url: properties/products-openapi-original.yml
+  - url: openapi/products-openapi-original.yml
     type: OpenAPI
 description: >-
   Products describe the specific goods or services you offer to your customers.

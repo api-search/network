@@ -11,15 +11,10 @@ tags:
   - Plans
   - Rates
 humanURL: https://www.twilio.com/docs/iot/wireless/api
-overlays:
-  - url: overlays/wireless-openapi-search.yml
-    type: APIs.io Search
-  - url: overlays/wireless-openapi-api-evangelist-ratings.yml
-    type: API Evangelist Ratings
 properties:
   - url: https://www.twilio.com/docs/
     type: Documentation
-  - url: properties/wireless-openapi-original.yml
+  - url: openapi/wireless-openapi-original.yml
     type: OpenAPI
 description: >-
   The Programmable Wireless REST API enables you to programmatically manage

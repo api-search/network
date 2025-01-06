@@ -1,6 +1,6 @@
 ---
 aid: microsoft-azure:resourcemanagementclient
-name: ResourceManagementClient
+name: Microsoft Azure ResourceManagementClient
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -9,7 +9,7 @@ humanURL: https://example.com
 properties:
   - url: https://example.com
     type: Documentation
-  - url: properties/resourcemanagementclient-openapi-original.yml
+  - url: openapi/resourcemanagementclient-openapi-original.yml
     type: OpenAPI
 
 ---

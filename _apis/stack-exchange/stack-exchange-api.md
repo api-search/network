@@ -1,7 +1,14 @@
 ---
 aid: stack-exchange:stack-exchange-api
 name: Stack Exchange API
-tags: []
+tags:
+  - Featured
+  - '  Answers'
+  - '  Unanswered'
+  - '  Users'
+  - '  Me'
+  - '  History'
+  - Questions
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 baseURL: https://api.example.com
 contact:
@@ -9,14 +16,10 @@ contact:
     url: http://stackapps.com/
     email: team+api@stackexchange.com
 humanURL: https://api.stackexchange.com/
-overlays:
-  - url: >-
-      overlays/https://raw.githubusercontent.com/openapis/api-specs/master/stackexchange/stackexchange-api-v2.2_swagger-v2.0.yaml-openapi-search.yml
-    type: APIs.io Search
 properties:
   - url: https://api.stackexchange.com/docs
     type: Documentation
-  - url: properties/stack-exchange-openapi-original.yml
+  - url: properties/stack-exchange-api-openapi.yml
     type: OpenAPI
 description: >-
   This is the documentation for the v2.3 Stack Exchange API (with both

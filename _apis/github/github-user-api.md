@@ -101,9 +101,10 @@ overlays:
   - url: overlays/github-user-openapi-search.yml
     type: OpenAPI
 properties:
-  - url: properties/github-user-openapi-original.yml
+  - url: openapi/github-user-openapi-original.yml
     type: OpenAPI
-description: >-
+description: |-
+
   Use the REST API to get public and private information about authenticated
   users.
 

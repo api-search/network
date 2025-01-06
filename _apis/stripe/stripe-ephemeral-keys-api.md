@@ -4,15 +4,10 @@ name: Stripe Ephemeral Keys API
 tags:
   - Ephemeral
   - Keys
-overlays:
-  - url: overlays/ephemeral-keys-openapi-search.yml
-    type: APIs.io Search
-  - url: overlays/ephemeral-keys-openapi-api-evangelist-ratings.yml
-    type: API Evangelist Ratings
 properties:
   - url: https://stripe.com/docs/issuing/elements
     type: Documentation
-  - url: properties/ephemeral-keys-openapi-original.yml
+  - url: openapi/ephemeral-keys-openapi-original.yml
     type: OpenAPI
 description: >-
   Stripe.js uses ephemeral keys to securely retrieve Card information from the

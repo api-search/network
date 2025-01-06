@@ -6,7 +6,6 @@ tags: []
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 baseURL: https://api.example.com
 humanURL: https://blast.ncbi.nlm.nih.gov/doc/blast-help/developerinfo.html#developerinfo
-overlays: []
 properties:
   - url: https://www.ncbi.nlm.nih.gov/home/develop/api/
     type: Documentation

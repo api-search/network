@@ -21,9 +21,10 @@ properties:
     type: Code Snippets
   - url: https://developer.factset.com/api-catalog/irn-contacts-api#changelog
     type: Change Log
-  - url: properties/irn-contacts-openapi-original.yml
+  - url: openapi/irn-contacts-openapi-original.yml
     type: OpenAPI
-description: >-
+description: |-
+
   Contacts API allows users to create, update and delete Contacts as well as
   configure settings in the Internal Research Notes Contacts application.
 

@@ -1,6 +1,6 @@
 ---
 aid: microsoft-azure:azure-quantum-management-client
-name: Azure Quantum Management Client
+name: Microsoft Azure Quantum Management Client
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -9,7 +9,7 @@ humanURL: https://example.com
 properties:
   - url: https://example.com
     type: Documentation
-  - url: properties/azure-quantum-management-client-openapi-original.yml
+  - url: openapi/azure-quantum-management-client-openapi-original.yml
     type: OpenAPI
 
 ---

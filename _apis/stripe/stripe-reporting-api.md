@@ -6,15 +6,10 @@ tags:
   - Reports
   - Runs
   - Types
-overlays:
-  - url: overlays/reporting-openapi-search.yml
-    type: APIs.io Search
-  - url: overlays/reporting-openapi-api-evangelist-ratings.yml
-    type: API Evangelist Ratings
 properties:
   - url: https://stripe.com/docs/reports/api
     type: Documentation
-  - url: properties/reporting-openapi-original.yml
+  - url: openapi/reporting-openapi-original.yml
     type: OpenAPI
 description: >-
   The financial reports in the Dashboard provide downloadable reports in CSV

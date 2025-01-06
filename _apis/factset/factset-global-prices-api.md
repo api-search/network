@@ -40,25 +40,31 @@ overlays:
     type: API Evangelist Ratings
 properties:
   - url: >-
+
       https://developer.factset.com/api-catalog/factset-global-prices-api#overview
     type: Documentation
   - url: >-
+
       https://developer.factset.com/api-catalog/factset-global-prices-api#sdkLibrary
     type: SDKs
   - url: >-
+
       https://developer.factset.com/api-catalog/factset-global-prices-api#notebooks
     type: Jupyter Notebooks
   - url: >-
+
       https://developer.factset.com/api-catalog/factset-global-prices-api#codeSnippet
     type: Code Snippets
   - url: >-
+
       https://developer.factset.com/api-catalog/factset-global-prices-api#changelog
     type: Change Log
-  - url: properties/global-prices-openapi-original.yml
+  - url: openapi/global-prices-openapi-original.yml
     type: OpenAPI
-description: >-
-  FactSet Global Prices API currently covers listing and composite level prices,
-  volume, turnover, and VWAP data on a seven day week basis for a global equity
-  universe.
+description: |-
+
+  FactSet Global Prices API currently covers listing and composite level
+  prices, volume, turnover, and VWAP data on a seven day week basis for a
+  global equity universe.
 
 ---

@@ -8,7 +8,7 @@ humanURL: https://developer.ebay.com/api-docs/sell/recommendation/overview.html
 properties:
   - url: https://developer.ebay.com/api-docs/sell/recommendation/overview.html
     type: Documentation
-  - url: properties/ebay-recommendation-openapi-original.yml
+  - url: openapi/ebay-recommendation-openapi-original.yml
     type: OpenAPI
   - url: https://developer.ebay.com/api-docs/sell/recommendation/release-notes.html
     type: Release Notes

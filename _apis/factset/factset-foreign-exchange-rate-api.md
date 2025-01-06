@@ -12,24 +12,30 @@ overlays:
     type: API Evangelist Ratings
 properties:
   - url: >-
+
       https://developer.factset.com/api-catalog/foreign-exchange-rate-api#overview
     type: Documentation
   - url: >-
+
       https://developer.factset.com/api-catalog/foreign-exchange-rate-api#sdkLibrary
     type: SDKs
   - url: >-
+
       https://developer.factset.com/api-catalog/foreign-exchange-rate-api#notebooks
     type: Jupyter Notebooks
   - url: >-
+
       https://developer.factset.com/api-catalog/foreign-exchange-rate-api#codeSnippet
     type: Code Snippets
   - url: >-
+
       https://developer.factset.com/api-catalog/foreign-exchange-rate-api#changelog
     type: Change Log
-  - url: properties/foreign-exchange-rate-openapi-original.yml
+  - url: openapi/foreign-exchange-rate-openapi-original.yml
     type: OpenAPI
-description: >-
-  Access Foreign Exchange Rate Spots and Forwards for a given currency pair and
-  date range.
+description: |-
+
+  Access Foreign Exchange Rate Spots and Forwards for a given currency pair
+  and date range.
 
 ---

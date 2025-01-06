@@ -3,15 +3,10 @@ aid: stripe:stripe-tokens-api
 name: Stripe Tokens API
 tags:
   - Tokens
-overlays:
-  - url: overlays/tokens-openapi-search.yml
-    type: APIs.io Search
-  - url: overlays/tokens-openapi-api-evangelist-ratings.yml
-    type: API Evangelist Ratings
 properties:
   - url: https://stripe.com/docs/api/tokens
     type: Documentation
-  - url: properties/tokens-openapi-original.yml
+  - url: openapi/tokens-openapi-original.yml
     type: OpenAPI
 description: >-
   Tokenization is the process Stripe uses to collect sensitive card or bank

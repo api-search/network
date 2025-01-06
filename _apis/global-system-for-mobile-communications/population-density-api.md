@@ -15,7 +15,7 @@ properties:
   - url: >-
       https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/camaraproject/PopulationDensityData/r1.2/code/API_definitions/population-density-data.yaml&nocors
     type: Documentation
-  - url: properties/population-density-api-openapi.yml
+  - url: openapi/population-density-api-openapi.yml
     type: OpenAPI
   - url: bruno/GSMA Camara Project Population Density Data/bruno.json
     type: BrunoCollection

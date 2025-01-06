@@ -26,11 +26,19 @@ overlays:
   - url: overlays/plaid-signal--openapi-api-evangelist-ratings.yml
     type: API Evangelist Ratings
 properties:
-  - url: properties/plaid-signal--openapi-original.yml
+  - url: openapi/plaid-signal--openapi-original.yml
     type: OpenAPI
   - url: https://plaid.com/docs/signal/
     type: Documentation
-description: |
-  Assess the return risk of an ACH debit to prevent NSFs and other returns
+description: >-
+  The Plaid Signal API is a powerful tool that allows developers to receive
+  real-time notifications and alerts about their users' financial activities. By
+  integrating this API into their applications, developers can stay informed
+  about important events such as large transactions, account balance changes,
+  and potential fraudulent activity. This level of visibility enables developers
+  to provide better and more secure user experiences, ultimately leading to
+  increased trust and satisfaction among their customers. With the Plaid Signal
+  API, developers can take proactive measures to protect their users' financial
+  well-being and ensure that their applications remain secure and reliable.
 
 ---

@@ -1,6 +1,6 @@
 ---
 aid: microsoft-azure:providerhub
-name: ProviderHub
+name: Microsoft Azure ProviderHub
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -9,7 +9,7 @@ humanURL: https://example.com
 properties:
   - url: https://example.com
     type: Documentation
-  - url: properties/providerhub-openapi-original.yml
+  - url: openapi/providerhub-openapi-original.yml
     type: OpenAPI
 description: Microsoft ProviderHub
 

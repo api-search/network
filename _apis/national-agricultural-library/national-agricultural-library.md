@@ -7,7 +7,8 @@ humanURL: https://www.nal.usda.gov/
 properties:
   - url: https://www.nal.usda.gov/
     type: Documentation
-description: >-
+description: |-
+
   The USDA National Agricultural Library houses one of the worlds largest
   collections devoted to agriculture and its related sciences.
 

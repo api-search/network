@@ -7,7 +7,7 @@ tags:
   - Payments
 humanURL: https://developer.visa.com/capabilities/vpa
 properties:
-  - url: properties/b2b-virtual-account-payment-method.yml
+  - url: openapi/b2b-virtual-account-payment-method.yml
     type: OpenAPI
 description: ''
 

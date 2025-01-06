@@ -24,9 +24,10 @@ overlays:
   - url: overlays/github-projects-openapi-search.yml
     type: OpenAPI
 properties:
-  - url: properties/github-projects-openapi-original.yml
+  - url: openapi/github-projects-openapi-original.yml
     type: OpenAPI
-description: >-
+description: |-
+
   Use the REST API to create, list, update, delete and customize projects
   (classic).
 

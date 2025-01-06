@@ -1,12 +1,20 @@
 ---
 aid: adyen:adyen-accounting-notifications-api
 name: Adyen Accounting Notifications API
-tags: []
-overlays:
-  - url: overlays/accounting-notifications-openapi-search.yml
-    type: APIs.io Search
-  - url: overlays/accounting-notifications-openapi-api-evangelist-ratings.yml
-    type: API Evangelist Ratings
+tags:
+  - Accounting
+  - Notifications
+  - Webhooks
+image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+baseURL: https://cal-test.adyen.com
+humanURL: >-
+  https://docs.adyen.com/marketplaces-and-platforms/classic/configure-notifications/
+properties:
+  - url: >-
+      https://docs.adyen.com/marketplaces-and-platforms/classic/configure-notifications/
+    type: Documentation
+  - url: properties/adyen-accounting-notifications-api-openapi.yml
+    type: OpenAPI
 description: >-
   Adyen sends notifications through webhooks to inform your system about
   incoming and outgoing transfers in your platform. You can use these webhooks

@@ -1,6 +1,6 @@
 ---
 aid: microsoft-azure:azure-data-migration-service-classic-resource-provider
-name: Azure Data Migration Service (classic) Resource Provider
+name: Microsoft Azure Data Migration Service (classic) Resource Provider
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -10,7 +10,7 @@ properties:
   - url: https://example.com
     type: Documentation
   - url: >-
-      properties/azure-data-migration-service-classic-resource-provider-openapi-original.yml
+      openapiazure-data-migration-service-classic-resource-provider-openapi-original.yml
     type: OpenAPI
 
 ---

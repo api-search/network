@@ -1,15 +1,13 @@
 ---
+aid: zoom:zoom-meeting-api
 name: Zoom Meeting API
 tags:
   - Meetings
   - Live
   - Register
 humanURL: https://developers.zoom.us/docs/api/rest/meeting/
-overlays:
-  - url: overlays/zoom-meeting--openapi-search.yml
-    type: OpenAPI
 properties:
-  - url: properties/zoom-meeting--openapi-original.yml
+  - url: openapi/zoom-meeting--openapi-original.yml
     type: OpenAPI
   - url: https://developers.zoom.us/docs/api/rest/meeting/
     type: Documentation

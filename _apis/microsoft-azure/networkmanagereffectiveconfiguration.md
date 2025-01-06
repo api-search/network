@@ -1,6 +1,6 @@
 ---
 aid: microsoft-azure:networkmanagereffectiveconfiguration
-name: NetworkManagerEffectiveConfiguration
+name: Microsoft Azure NetworkManagerEffectiveConfiguration
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -9,7 +9,7 @@ humanURL: https://example.com
 properties:
   - url: https://example.com
     type: Documentation
-  - url: properties/networkmanagereffectiveconfiguration-openapi-original.yml
+  - url: openapi/networkmanagereffectiveconfiguration-openapi-original.yml
     type: OpenAPI
 description: >-
   The Microsoft Azure Network Manager effective configuration API provides a

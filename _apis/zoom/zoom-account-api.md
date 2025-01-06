@@ -1,4 +1,5 @@
 ---
+aid: zoom:zoom-account-api
 name: Zoom Account API
 tags:
   - Accounts
@@ -6,11 +7,8 @@ tags:
   - Plan
   - Subscribe
 humanURL: https://developers.zoom.us/docs/api/rest/account/
-overlays:
-  - url: overlays/zoom-account--openapi-search.yml
-    type: OpenAPI
 properties:
-  - url: properties/zoom-account--openapi-original.yml
+  - url: openapi/zoom-account--openapi-original.yml
     type: OpenAPI
   - url: https://developers.zoom.us/docs/api/rest/account/
     type: Documentation

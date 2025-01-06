@@ -11,21 +11,30 @@ overlays:
   - url: overlays/streetaccount-news-openapi-api-evangelist-ratings.yml
     type: API Evangelist Ratings
 properties:
-  - url: https://developer.factset.com/api-catalog/streetaccount-news-api#overview
+  - url: |-
+
+      https://developer.factset.com/api-catalog/streetaccount-news-api#overview
     type: Documentation
   - url: >-
+
       https://developer.factset.com/api-catalog/streetaccount-news-api#sdkLibrary
     type: SDKs
-  - url: https://developer.factset.com/api-catalog/streetaccount-news-api#notebooks
+  - url: |-
+
+      https://developer.factset.com/api-catalog/streetaccount-news-api#notebooks
     type: Jupyter Notebooks
   - url: >-
+
       https://developer.factset.com/api-catalog/streetaccount-news-api#codeSnippet
     type: Code Snippets
-  - url: https://developer.factset.com/api-catalog/streetaccount-news-api#changelog
+  - url: |-
+
+      https://developer.factset.com/api-catalog/streetaccount-news-api#changelog
     type: Change Log
-  - url: properties/streetaccount-news-openapi-original.yml
+  - url: openapi/streetaccount-news-openapi-original.yml
     type: OpenAPI
-description: >-
+description: |-
+
   Accessing streetAccount news along with business logic contained in the
   workstation experience
 

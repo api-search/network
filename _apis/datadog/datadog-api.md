@@ -2,7 +2,6 @@
 aid: datadog:datadog-api
 name: Datadog API
 tags: []
-overlays: []
 description: >-
   The Datadog API is an HTTP REST API. The API uses resource-oriented URLs to
   call the API, uses status codes to indicate the success or failure of

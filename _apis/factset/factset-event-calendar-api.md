@@ -13,18 +13,23 @@ overlays:
 properties:
   - url: https://developer.factset.com/api-catalog/event-calendar-api#overview
     type: Documentation
-  - url: https://developer.factset.com/api-catalog/event-calendar-api#sdkLibrary
+  - url: |-
+
+      https://developer.factset.com/api-catalog/event-calendar-api#sdkLibrary
     type: SDKs
   - url: https://developer.factset.com/api-catalog/event-calendar-api#notebooks
     type: Jupyter Notebooks
-  - url: https://developer.factset.com/api-catalog/event-calendar-api#codeSnippet
+  - url: |-
+
+      https://developer.factset.com/api-catalog/event-calendar-api#codeSnippet
     type: Code Snippets
   - url: https://developer.factset.com/api-catalog/event-calendar-api#changelog
     type: Change Log
-  - url: properties/event-calendar-openapi-original.yml
+  - url: openapi/event-calendar-openapi-original.yml
     type: OpenAPI
-description: >-
-  Accessing Event Calendar content along with business logic contained in the
-  workstation experience
+description: |-
+
+  Accessing Event Calendar content along with business logic contained in
+  the workstation experience
 
 ---

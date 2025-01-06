@@ -15,7 +15,7 @@ properties:
   - url: >-
       https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/camaraproject/CarrierBillingCheckOut/r1.3/code/API_definitions/carrier-billing.yaml&nocors
     type: Documentation
-  - url: properties/carrier-billing-api-openapi.yml
+  - url: openapi/carrier-billing-api-openapi.yml
     type: OpenAPI
   - url: bruno/GSMA Camara Project Carrier Billing/bruno.json
     type: BrunoCollection

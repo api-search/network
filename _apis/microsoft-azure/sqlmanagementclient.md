@@ -1,6 +1,6 @@
 ---
 aid: microsoft-azure:sqlmanagementclient
-name: SqlManagementClient
+name: Microsoft Azure SqlManagementClient
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -9,7 +9,7 @@ humanURL: https://example.com
 properties:
   - url: https://example.com
     type: Documentation
-  - url: properties/sqlmanagementclient-openapi-original.yml
+  - url: openapi/sqlmanagementclient-openapi-original.yml
     type: OpenAPI
 description: >-
   The Azure SQL Database management API provides a RESTful set of web APIs that

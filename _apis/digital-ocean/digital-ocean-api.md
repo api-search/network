@@ -14,12 +14,18 @@ overlays:
 properties:
   - url: https://docs.digitalocean.com/
     type: Documentation
-  - url: properties/digital-ocean-openapi-original.yml
+  - url: properties/digital-ocean-api-openapi.yml
     type: OpenAPI
-description: >
-  The DigitalOcean API lets you programmatically manage your Droplets and other
-  resources using conventional HTTP requests. Any action that you can perform
-  through the DigitalOcean Control Panel (except for creating personal access
-  tokens) can also be performed with the API.
+description: |
+
+
+
+  The DigitalOcean API lets you programmatically manage your Droplets and
+
+  other resources using conventional HTTP requests. Any action that you can
+
+  perform through the DigitalOcean Control Panel (except for creating
+
+  personal access tokens) can also be performed with the API.
 
 ---

@@ -8,10 +8,13 @@ overlays:
   - url: overlays/github-emojis--openapi-search.yml
     type: OpenAPI
 properties:
-  - url: properties/github-emojis--openapi-original.yml
+  - url: openapi/github-emojis--openapi-original.yml
     type: OpenAPI
   - url: https://docs.github.com/en/rest/emojis
     type: Documentation
-description: Use the REST API to list and view all the available emojis to use on GitHub.
+description: |-
+
+  Use the REST API to list and view all the available emojis to use on
+  GitHub.
 
 ---

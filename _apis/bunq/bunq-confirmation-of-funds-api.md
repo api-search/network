@@ -8,14 +8,8 @@ tags:
 score: 85
 humanURL: >-
   https://doc.bunq.com/#/confirmation-of-funds/CREATE_ConfirmationOfFunds_for_User
-overlays:
-  - url: overlays/bunq-user-userid-confirmation-of-funds-openapi-search.yml
-    type: OpenAPI
-  - url: >-
-      overlays/bunq-user-userid-confirmation-of-funds-openapi-api-evangelist-ratings.yml
-    type: API Evangelist Ratings
 properties:
-  - url: properties/bunq-user-userid-confirmation-of-funds-openapi-original.yml
+  - url: openapi/bunq-user-userid-confirmation-of-funds-openapi-original.yml
     type: OpenAPI
   - url: https://doc.bunq.com/
     type: Documentation

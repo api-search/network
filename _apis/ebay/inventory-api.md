@@ -8,7 +8,7 @@ humanURL: https://developer.ebay.com/api-docs/sell/inventory/overview.html
 properties:
   - url: https://developer.ebay.com/api-docs/sell/inventory/overview.html
     type: Documentation
-  - url: properties/ebay-inventory-openapi-original.yml
+  - url: openapi/ebay-inventory-openapi-original.yml
     type: OpenAPI
   - url: https://developer.ebay.com/api-docs/sell/inventory/release-notes.html
     type: Release Notes

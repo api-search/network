@@ -11,22 +11,31 @@ overlays:
   - url: overlays/search-answers-openapi-api-evangelist-ratings.yml
     type: API Evangelist Ratings
 properties:
-  - url: https://developer.factset.com/api-catalog/factset-search-answers#overview
+  - url: |-
+
+      https://developer.factset.com/api-catalog/factset-search-answers#overview
     type: Documentation
   - url: >-
+
       https://developer.factset.com/api-catalog/factset-search-answers#sdkLibrary
     type: SDKs
-  - url: https://developer.factset.com/api-catalog/factset-search-answers#notebooks
+  - url: |-
+
+      https://developer.factset.com/api-catalog/factset-search-answers#notebooks
     type: Jupyter Notebooks
   - url: >-
+
       https://developer.factset.com/api-catalog/factset-search-answers#codeSnippet
     type: Code Snippets
-  - url: https://developer.factset.com/api-catalog/factset-search-answers#changelog
+  - url: |-
+
+      https://developer.factset.com/api-catalog/factset-search-answers#changelog
     type: Change Log
-  - url: properties/search-answers-openapi-original.yml
+  - url: openapi/search-answers-openapi-original.yml
     type: OpenAPI
-description: >-
-  The FactSet Search Answers API provides answers to search queries, reflecting
-  the data shown within FactSet Search Answers.
+description: |-
+
+  The FactSet Search Answers API provides answers to search queries,
+  reflecting the data shown within FactSet Search Answers.
 
 ---

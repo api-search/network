@@ -8,25 +8,32 @@ humanURL: https://developer.factset.com/api-catalog/axioma-fixed-income-optimize
 overlays:
   - url: overlays/axioma-fixed-income-optimizer-openapi-search.yml
     type: APIs.io Search
-  - url: overlays/axioma-fixed-income-optimizer-openapi-api-evangelist-ratings.yml
+  - url: |-
+
+      overlays/axioma-fixed-income-optimizer-openapi-api-evangelist-ratings.yml
     type: API Evangelist Ratings
 properties:
   - url: >-
+
       https://developer.factset.com/api-catalog/axioma-fixed-income-optimizer#overview
     type: Documentation
   - url: >-
+
       https://developer.factset.com/api-catalog/axioma-fixed-income-optimizer#sdkLibrary
     type: SDKs
   - url: >-
+
       https://developer.factset.com/api-catalog/axioma-fixed-income-optimizer#notebooks
     type: Jupyter Notebooks
   - url: >-
+
       https://developer.factset.com/api-catalog/axioma-fixed-income-optimizer#codeSnippet
     type: Code Snippets
   - url: >-
+
       https://developer.factset.com/api-catalog/axioma-fixed-income-optimizer#changelog
     type: Change Log
-  - url: properties/axioma-fixed-income-optimizer-openapi-original.yml
+  - url: properties/factset-axioma-fixed-income-optimizer-openapi.yml
     type: OpenAPI
 description: Fixed Income-based portfolio optimization
 

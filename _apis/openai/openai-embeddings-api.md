@@ -14,6 +14,7 @@ baseURL: https://api.openai.com
 humanURL: https://platform.openai.com/docs/guides/embeddings
 overlays:
   - url: >-
+
       overlays/https://github.com/apis-json/artisanal/tree/main/apis/openai/embeddings-openapi-search.yml
     type: APIs.io Search
   - url: overlays/embeddings-openapi-search.yml
@@ -23,10 +24,11 @@ overlays:
 properties:
   - url: https://platform.openai.com/docs/guides/embeddings
     type: Documentation
-  - url: properties/embeddings-openapi-original.yml
+  - url: openapi/embeddings-openapi-original.yml
     type: OpenAPI
-description: >-
-  Learn how to turn text into numbers, unlocking use cases like search. OpenAI's
-  text embeddings measure the relatedness of text strings.
+description: |-
+
+  Learn how to turn text into numbers, unlocking use cases like search.
+  OpenAI's text embeddings measure the relatedness of text strings.
 
 ---

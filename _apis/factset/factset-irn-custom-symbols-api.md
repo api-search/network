@@ -11,23 +11,32 @@ overlays:
   - url: overlays/irn-custom-symbols-openapi-api-evangelist-ratings.yml
     type: API Evangelist Ratings
 properties:
-  - url: https://developer.factset.com/api-catalog/irn-custom-symbols-api#overview
+  - url: |-
+
+      https://developer.factset.com/api-catalog/irn-custom-symbols-api#overview
     type: Documentation
   - url: >-
+
       https://developer.factset.com/api-catalog/irn-custom-symbols-api#sdkLibrary
     type: SDKs
-  - url: https://developer.factset.com/api-catalog/irn-custom-symbols-api#notebooks
+  - url: |-
+
+      https://developer.factset.com/api-catalog/irn-custom-symbols-api#notebooks
     type: Jupyter Notebooks
   - url: >-
+
       https://developer.factset.com/api-catalog/irn-custom-symbols-api#codeSnippet
     type: Code Snippets
-  - url: https://developer.factset.com/api-catalog/irn-custom-symbols-api#changelog
+  - url: |-
+
+      https://developer.factset.com/api-catalog/irn-custom-symbols-api#changelog
     type: Change Log
-  - url: properties/irn-custom-symbols-openapi-original.yml
+  - url: openapi/irn-custom-symbols-openapi-original.yml
     type: OpenAPI
-description: >-
-  This API allows users to create, read, edit and delete IRN custom symbols as
-  well as configure settings in the Internal Research Notes Symbol Manager
-  application.
+description: |-
+
+  This API allows users to create, read, edit and delete IRN custom symbols
+  as well as configure settings in the Internal Research Notes Symbol
+  Manager application.
 
 ---

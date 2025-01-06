@@ -8,7 +8,7 @@ humanURL: https://developer.ebay.com/api-docs/commerce/catalog/resources/methods
 properties:
   - url: https://developer.ebay.com/api-docs/commerce/catalog/resources/methods
     type: Documentation
-  - url: properties/ebay-catalog-openapi-original.yml
+  - url: openapi/ebay-catalog-openapi-original.yml
     type: OpenAPI
   - url: https://developer.ebay.com/api-docs/commerce/catalog/release-notes.html
     type: Release Notes

@@ -13,15 +13,10 @@ tags:
   - Events
   - Subscribed
   - Subscriptions
-overlays:
-  - url: overlays/events-openapi-search.yml
-    type: APIs.io Search
-  - url: overlays/events-openapi-api-evangelist-ratings.yml
-    type: API Evangelist Ratings
 properties:
   - url: https://www.twilio.com/docs/
     type: Documentation
-  - url: properties/events-openapi-original.yml
+  - url: openapi/events-openapi-original.yml
     type: OpenAPI
 description: >-
   Event Streams is an API that allows you to tap into a unified stream of every

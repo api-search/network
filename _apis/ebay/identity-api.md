@@ -8,7 +8,7 @@ humanURL: https://developer.ebay.com/api-docs/commerce/identity/overview.html
 properties:
   - url: https://developer.ebay.com/api-docs/commerce/identity/overview.html
     type: Documentation
-  - url: properties/ebay-identity-openapi-original.yml
+  - url: openapi/ebay-identity-openapi-original.yml
     type: OpenAPI
   - url: https://developer.ebay.com/api-docs/commerce/identity/release-notes.html
     type: Release Notes

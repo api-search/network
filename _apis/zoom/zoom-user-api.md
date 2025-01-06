@@ -1,4 +1,5 @@
 ---
+aid: zoom:zoom-user-api
 name: Zoom User API
 tags:
   - Assistants
@@ -18,11 +19,8 @@ tags:
   - Ssocreate
   - Updatepassword
 humanURL: https://developers.zoom.us/docs/api/rest/user/
-overlays:
-  - url: overlays/zoom-user--openapi-search.yml
-    type: OpenAPI
 properties:
-  - url: properties/zoom-user--openapi-original.yml
+  - url: openapi/zoom-user--openapi-original.yml
     type: OpenAPI
   - url: https://developers.zoom.us/docs/api/rest/user/
     type: Documentation

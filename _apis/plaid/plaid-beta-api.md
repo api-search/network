@@ -35,10 +35,18 @@ overlays:
   - url: overlays/plaid-beta--openapi-api-evangelist-ratings.yml
     type: API Evangelist Ratings
 properties:
-  - url: properties/plaid-beta--openapi-original.yml
+  - url: openapi/plaid-beta--openapi-original.yml
     type: OpenAPI
   - url: https://plaid.com/docs/api/
     type: Documentation
-description: Beta API operations that are available.
+description: >-
+  Plaid Beta API is a powerful tool that enables developers to access and
+  utilize financial data from various institutions. By integrating with Plaid's
+  API, developers can securely connect to bank accounts, retrieve transaction
+  data, and perform various financial operations. This API allows for seamless
+  integration of banking information into websites, apps, and other digital
+  platforms, providing users with real-time insights into their finances. With
+  Plaid Beta API, developers can create innovative financial tools and services
+  that enhance user experiences and streamline financial processes.
 
 ---

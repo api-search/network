@@ -55,12 +55,14 @@ tags:
 properties:
   - url: https://developers.google.com/youtube/v3/docs
     type: Documentation
-  - url: properties/youtube-data-openapi-original.yml
+  - url: openapi/youtube-data-openapi-original.yml
     type: OpenAPI
-description: >-
-  The YouTube Data API lets you incorporate functions normally executed on the
-  YouTube website into your own website or application. The lists below identify
-  the different types of resources that you can retrieve using the API. The API
-  also supports methods to insert, update, or delete many of these resources.
+description: |-
+
+  The YouTube Data API lets you incorporate functions normally executed on
+  the YouTube website into your own website or application. The lists below
+  identify the different types of resources that you can retrieve using the
+  API. The API also supports methods to insert, update, or delete many of
+  these resources.
 
 ---

@@ -5,7 +5,6 @@ tags: []
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 baseURL: https://example.com
 humanURL: https://developer.gs.com/docs/#Products%20and%20Platforms
-overlays: []
 properties:
   - url: https://developer.gs.com/docs/#Products%20and%20Platforms
     type: Documentation

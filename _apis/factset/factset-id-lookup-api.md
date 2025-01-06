@@ -21,12 +21,13 @@ properties:
     type: Code Snippets
   - url: https://developer.factset.com/api-catalog/id-lookup-api#changelog
     type: Change Log
-  - url: properties/id-lookup-openapi-original.yml
+  - url: openapi/id-lookup-openapi-original.yml
     type: OpenAPI
-description: >-
+description: |-
+
   FactSet Identifier Lookup API exposes the service that powers the search
   functionality in FactSet WorkStation and FactSet Web. Clients can leverage
-  this API for their search functionality to return tickers, entity names, and
-  other identifiers_
+  this API for their search functionality to return tickers, entity names,
+  and other identifiers_
 
 ---

@@ -12,21 +12,26 @@ overlays:
     type: API Evangelist Ratings
 properties:
   - url: >-
+
       https://developer.factset.com/api-catalog/factset-private-markets-api#overview
     type: Documentation
   - url: >-
+
       https://developer.factset.com/api-catalog/factset-private-markets-api#sdkLibrary
     type: SDKs
   - url: >-
+
       https://developer.factset.com/api-catalog/factset-private-markets-api#notebooks
     type: Jupyter Notebooks
   - url: >-
+
       https://developer.factset.com/api-catalog/factset-private-markets-api#codeSnippet
     type: Code Snippets
   - url: >-
+
       https://developer.factset.com/api-catalog/factset-private-markets-api#changelog
     type: Change Log
-  - url: properties/private-markets-openapi-original.yml
+  - url: openapi/private-markets-openapi-original.yml
     type: OpenAPI
 description: FactSet Private Markets API
 

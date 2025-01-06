@@ -2,11 +2,23 @@
 aid: stadia-maps:stadia-maps
 name: Stadia Maps
 tags:
-  - API
+  - Lookups
+  - Geospatial
+  - Routing
+  - Roads
+  - Routes
+  - Match
+  - Attributes
+  - Autocomplete
+  - Search
+  - Reverse
+  - Place
 humanURL: ' https://stadiamaps.com/'
 properties:
   - url: ' https://stadiamaps.com/'
     type: Documentation
+  - url: properties/stadia-maps-openapi.yml
+    type: OpenAPI
 description: >-
   Confidently create beautiful maps for all your users with our tools. Choose
   your style from our library or build your own. With a rich palette of choices

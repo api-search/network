@@ -9,10 +9,10 @@ properties:
   - url: https://developers.cloudflare.com/api/
     type: Documentation
   - url: >-
-      https://raw.githubusercontent.com/api-search/engineering-platform/refs/heads/main/properties/cloudflare-openapi-original.yml
+      https://raw.githubusercontent.com/api-search/engineering-platform/refs/heads/main/openapicloudflare-openapi-original.yml
     type: OpenAPI
   - url: >-
-      https://api-evangelist.postman.co/workspace/APIs.io-Engineering-Platform~fe320942-e505-4ee8-8b7c-d72eae00d93f/collection/35240-28d97617-fdba-46a5-ac3e-40f3d2e0fa57?action=share&creator=35240
+      https://api-evangelist.postman.co/workspace/APIs.io-Engineering-Platform/fe320942-e505-4ee8-8b7c-d72eae00d93f/collection/35240-28d97617-fdba-46a5-ac3e-40f3d2e0fa57?action=share&creator=35240
     type: PostmanCollection
 description: >-
   Cloudflare, Inc. is an American company that provides content delivery network

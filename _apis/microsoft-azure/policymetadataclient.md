@@ -1,6 +1,6 @@
 ---
 aid: microsoft-azure:policymetadataclient
-name: PolicyMetadataClient
+name: Microsoft Azure PolicyMetadataClient
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -9,7 +9,7 @@ humanURL: https://example.com
 properties:
   - url: https://example.com
     type: Documentation
-  - url: properties/policymetadataclient-openapi-original.yml
+  - url: openapi/policymetadataclient-openapi-original.yml
     type: OpenAPI
 
 ---

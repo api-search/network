@@ -1,6 +1,6 @@
 ---
 aid: npr:identity
-name: Identity
+name: NPR Identity
 tags: []
 contact:
   - FN: ''

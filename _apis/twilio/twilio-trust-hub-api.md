@@ -21,15 +21,10 @@ tags:
   - Products
   - Trust
 humanURL: https://www.twilio.com/docs/trust-hub
-overlays:
-  - url: overlays/trust-hub-openapi-search.yml
-    type: APIs.io Search
-  - url: overlays/trust-hub-openapi-api-evangelist-ratings.yml
-    type: API Evangelist Ratings
 properties:
   - url: https://www.twilio.com/docs/
     type: Documentation
-  - url: properties/trust-hub-openapi-original.yml
+  - url: openapi/trust-hub-openapi-original.yml
     type: OpenAPI
 description: >-
   Twilio is launching a new KYC platform that will enable Twilio to attach a

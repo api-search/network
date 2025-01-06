@@ -14,13 +14,22 @@ humanURL: https://plaid.com/docs/api/products/identity-verification/
 overlays:
   - url: overlays/plaid-identity-verification--openapi-search.yml
     type: OpenAPI
-  - url: overlays/plaid-identity-verification--openapi-api-evangelist-ratings.yml
+  - url: |-
+
+      overlays/plaid-identity-verification--openapi-api-evangelist-ratings.yml
     type: API Evangelist Ratings
 properties:
-  - url: properties/plaid-identity-verification--openapi-original.yml
+  - url: openapi/plaid-identity-verification--openapi-original.yml
     type: OpenAPI
-  - url: https://plaid.com/docs/api/products/identity-verification/
-    type: Documentation
-description: API reference for Identity Verification endpoints and webhooks.
+description: >-
+  Plaid Entity Verification API is a powerful tool that allows businesses to
+  verify the identity and ownership of individuals or entities with ease. With
+  this API, companies can quickly and securely verify important information such
+  as names, addresses, and account ownership to ensure the legitimacy of their
+  customers. By leveraging Plaid's extensive network of financial institutions
+  and data sources, businesses can streamline their verification processes,
+  reduce fraud, and enhance the overall security of their operations. This API
+  provides a seamless and efficient solution for businesses looking to enhance
+  their risk management practices and build trust with their customers.
 
 ---

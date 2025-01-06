@@ -5,7 +5,7 @@ humanURL: https://api.edmunds.com/
 properties:
   - url: https://api.edmunds.com/
     type: Documentation
-  - url: properties/agrio-openapi-original.yml
+  - url: openapi/agrio-openapi-original.yml
     type: OpenAPI
 description: >-
   To access Edmunds content, REST APIs are used to retrieve a JSON data object

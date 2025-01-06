@@ -1,6 +1,6 @@
 ---
 aid: microsoft-azure:text-translation
-name: Text Translation
+name: Microsoft Azure Text Translation
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -9,7 +9,7 @@ humanURL: https://example.com
 properties:
   - url: https://example.com
     type: Documentation
-  - url: properties/text-translation-openapi-original.yml
+  - url: openapi/text-translation-openapi-original.yml
     type: OpenAPI
 description: >-
   Text translation is a cloud-based REST API feature of the Translator service

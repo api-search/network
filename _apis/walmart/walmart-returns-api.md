@@ -12,11 +12,10 @@ tags:
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 baseURL: https://api.example.com
 humanURL: https://developer.walmart.com/api/us/mp/returns
-overlays: []
 properties:
   - url: https://developer.walmart.com/api/us/mp/returns
     type: Documentation
-  - url: properties/walmart-marketplace-returns-openapi-original.yml
+  - url: openapi/walmart-marketplace-returns-openapi-original.yml
     type: OpenAPI
 description: >-
   Buyers can now Initiate Returns from Walmart.com for Marketplace seller items

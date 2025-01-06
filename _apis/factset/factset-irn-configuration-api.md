@@ -11,21 +11,31 @@ overlays:
   - url: overlays/irn-configuration-openapi-api-evangelist-ratings.yml
     type: API Evangelist Ratings
 properties:
-  - url: https://developer.factset.com/api-catalog/irn-configuration-api#overview
+  - url: |-
+
+      https://developer.factset.com/api-catalog/irn-configuration-api#overview
     type: Documentation
-  - url: https://developer.factset.com/api-catalog/irn-configuration-api#sdkLibrary
+  - url: |-
+
+      https://developer.factset.com/api-catalog/irn-configuration-api#sdkLibrary
     type: SDKs
-  - url: https://developer.factset.com/api-catalog/irn-configuration-api#notebooks
+  - url: |-
+
+      https://developer.factset.com/api-catalog/irn-configuration-api#notebooks
     type: Jupyter Notebooks
   - url: >-
+
       https://developer.factset.com/api-catalog/irn-configuration-api#codeSnippet
     type: Code Snippets
-  - url: https://developer.factset.com/api-catalog/irn-configuration-api#changelog
+  - url: |-
+
+      https://developer.factset.com/api-catalog/irn-configuration-api#changelog
     type: Change Log
-  - url: properties/irn-configuration-openapi-original.yml
+  - url: openapi/irn-configuration-openapi-original.yml
     type: OpenAPI
-description: >-
-  Config API allows users to read and update configuration and settings of the
-  Internal Research Notes.
+description: |-
+
+  Config API allows users to read and update configuration and settings of
+  the Internal Research Notes.
 
 ---

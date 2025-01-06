@@ -8,28 +8,36 @@ humanURL: https://developer.factset.com/api-catalog/exchange-datafeed-data-model
 overlays:
   - url: overlays/exchange-datafeed-data-model-openapi-search.yml
     type: APIs.io Search
-  - url: overlays/exchange-datafeed-data-model-openapi-api-evangelist-ratings.yml
+  - url: |-
+
+      overlays/exchange-datafeed-data-model-openapi-api-evangelist-ratings.yml
     type: API Evangelist Ratings
 properties:
   - url: >-
+
       https://developer.factset.com/api-catalog/exchange-datafeed-data-model-api#overview
     type: Documentation
   - url: >-
+
       https://developer.factset.com/api-catalog/exchange-datafeed-data-model-api#sdkLibrary
     type: SDKs
   - url: >-
+
       https://developer.factset.com/api-catalog/exchange-datafeed-data-model-api#notebooks
     type: Jupyter Notebooks
   - url: >-
+
       https://developer.factset.com/api-catalog/exchange-datafeed-data-model-api#codeSnippet
     type: Code Snippets
   - url: >-
+
       https://developer.factset.com/api-catalog/exchange-datafeed-data-model-api#changelog
     type: Change Log
-  - url: properties/exchange-datafeed-data-model-openapi-original.yml
+  - url: openapi/exchange-datafeed-data-model-openapi-original.yml
     type: OpenAPI
-description: >-
-  The Exchange DataFeed Data Model API provides mapping tables for enumeration
-  values used in the FactSet Real-Time products
+description: |-
+
+  The Exchange DataFeed Data Model API provides mapping tables for
+  enumeration values used in the FactSet Real-Time products
 
 ---

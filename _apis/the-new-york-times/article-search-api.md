@@ -10,7 +10,7 @@ humanURL: https://developer.nytimes.com/docs/articlesearch-product/1/overview
 properties:
   - url: https://developer.nytimes.com/docs/articlesearch-product/1/overview
     type: Documentation
-  - url: properties/new-york-times-article-search-openapi-original.yml
+  - url: openapi/new-york-times-article-search-openapi-original.yml
     type: OpenAPI
 description: >-
   Use the Article Search API to look up articles by keyword. You can refine your

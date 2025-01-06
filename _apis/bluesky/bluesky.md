@@ -7,7 +7,7 @@ humanURL: https://docs.bsky.app/
 properties:
   - url: https://docs.bsky.app/
     type: Documentation
-  - url: properties/bluesky-openapi.yml
+  - url: openapi/bluesky-openapi.yml
     type: OpenAPI
   - url: >-
       https://www.postman.com/api-evangelist/bluesky/collection/ubo2xuv/bluesky-api

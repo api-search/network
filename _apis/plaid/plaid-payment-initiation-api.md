@@ -24,13 +24,19 @@ overlays:
   - url: overlays/plaid-payment-initiation--openapi-api-evangelist-ratings.yml
     type: API Evangelist Ratings
 properties:
-  - url: properties/plaid-payment-initiation--openapi-original.yml
+  - url: openapi/plaid-payment-initiation--openapi-original.yml
     type: OpenAPI
   - url: https://plaid.com/docs/api/products/payment-initiation/
     type: Documentation
 description: >-
-  Make payment transfers from your app. Plaid supports both domestic payments
-  denominated in local currencies and international payments, generally
-  denominated in Euro. 
+  The Plaid Payment Initiation API allows businesses to initiate payments
+  directly from their customers' bank accounts, providing a seamless and
+  convenient way to facilitate transactions. By leveraging Plaid's secure
+  infrastructure and established connections with financial institutions,
+  businesses can securely transfer funds between accounts without the need for
+  manual input. This API streamlines the payment process, reduces transaction
+  costs, and minimizes the risk of errors or delays. With Plaid Payment
+  Initiation API, businesses can offer their customers a more user-friendly and
+  efficient payment experience.
 
 ---

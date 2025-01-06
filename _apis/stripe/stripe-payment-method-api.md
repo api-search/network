@@ -11,15 +11,10 @@ tags:
   - Validate
   - Attach
   - Detach
-overlays:
-  - url: overlays/payment-method-openapi-search.yml
-    type: APIs.io Search
-  - url: overlays/payment-method-openapi-api-evangelist-ratings.yml
-    type: API Evangelist Ratings
 properties:
   - url: https://stripe.com/docs/payments/payment-methods
     type: Documentation
-  - url: properties/payment-method-openapi-original.yml
+  - url: openapi/payment-method-openapi-original.yml
     type: OpenAPI
 description: >-
   The Payment Methods API allows you to accept a variety of payment methods

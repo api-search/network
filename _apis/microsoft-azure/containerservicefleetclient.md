@@ -1,6 +1,6 @@
 ---
 aid: microsoft-azure:containerservicefleetclient
-name: ContainerServiceFleetClient
+name: Microsoft Azure ContainerServiceFleetClient
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -9,7 +9,7 @@ humanURL: https://example.com
 properties:
   - url: https://example.com
     type: Documentation
-  - url: properties/containerservicefleetclient-openapi-original.yml
+  - url: openapi/containerservicefleetclient-openapi-original.yml
     type: OpenAPI
 description: Azure Kubernetes Fleet Manager api client.
 

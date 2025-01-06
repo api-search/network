@@ -1,6 +1,6 @@
 ---
 aid: microsoft-azure:sharedimagegalleryserviceclient
-name: SharedImageGalleryServiceClient
+name: Microsoft Azure SharedImageGalleryServiceClient
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -9,7 +9,7 @@ humanURL: https://example.com
 properties:
   - url: https://example.com
     type: Documentation
-  - url: properties/sharedimagegalleryserviceclient-openapi-original.yml
+  - url: openapi/sharedimagegalleryserviceclient-openapi-original.yml
     type: OpenAPI
 description: Shared Image Gallery Service Client.
 

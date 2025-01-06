@@ -16,7 +16,7 @@ properties:
   - url: >-
       https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/camaraproject/HomeDevicesQoD/r1.2/code/API_definitions/home-devices-qod.yaml&nocors
     type: Documentation
-  - url: properties/home-devices-qod-api-openapi.yml
+  - url: openapi/home-devices-qod-api-openapi.yml
     type: OpenAPI
   - url: bruno/GSMA Camara Project Home Devices QoD/bruno.json
     type: BrunoCollection

@@ -12,21 +12,26 @@ overlays:
     type: API Evangelist Ratings
 properties:
   - url: >-
+
       https://developer.factset.com/api-catalog/openfactset-partners-documents#overview
     type: Documentation
   - url: >-
+
       https://developer.factset.com/api-catalog/openfactset-partners-documents#sdkLibrary
     type: SDKs
   - url: >-
+
       https://developer.factset.com/api-catalog/openfactset-partners-documents#notebooks
     type: Jupyter Notebooks
   - url: >-
+
       https://developer.factset.com/api-catalog/openfactset-partners-documents#codeSnippet
     type: Code Snippets
   - url: >-
+
       https://developer.factset.com/api-catalog/openfactset-partners-documents#changelog
     type: Change Log
-  - url: properties/open-partners-documents-openapi-original.yml
+  - url: openapi/open-partners-documents-openapi-original.yml
     type: OpenAPI
 description: 'Access to all job listing files provided by the OFM Partners: LinkUp'
 

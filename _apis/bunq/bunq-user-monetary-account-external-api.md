@@ -10,14 +10,8 @@ tags:
   - Savings
 score: 580
 humanURL: https://doc.bunq.com/#/monetary-account-external
-overlays:
-  - url: overlays/bunq-user-userid-monetary-account-external-openapi-search.yml
-    type: OpenAPI
-  - url: >-
-      overlays/bunq-user-userid-monetary-account-external-openapi-api-evangelist-ratings.yml
-    type: API Evangelist Ratings
 properties:
-  - url: properties/bunq-user-userid-monetary-account-external-openapi-original.yml
+  - url: openapi/bunq-user-userid-monetary-account-external-openapi-original.yml
     type: OpenAPI
 description: Needs description.
 

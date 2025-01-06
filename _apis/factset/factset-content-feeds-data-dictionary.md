@@ -8,27 +8,35 @@ humanURL: https://developer.factset.com/api-catalog/content-feeds-data-dictionar
 overlays:
   - url: overlays/content-feeds-data-dictionary-openapi-search.yml
     type: APIs.io Search
-  - url: overlays/content-feeds-data-dictionary-openapi-api-evangelist-ratings.yml
+  - url: |-
+
+      overlays/content-feeds-data-dictionary-openapi-api-evangelist-ratings.yml
     type: API Evangelist Ratings
 properties:
   - url: >-
+
       https://developer.factset.com/api-catalog/content-feeds-data-dictionary#overview
     type: Documentation
   - url: >-
+
       https://developer.factset.com/api-catalog/content-feeds-data-dictionary#sdkLibrary
     type: SDKs
   - url: >-
+
       https://developer.factset.com/api-catalog/content-feeds-data-dictionary#notebooks
     type: Jupyter Notebooks
   - url: >-
+
       https://developer.factset.com/api-catalog/content-feeds-data-dictionary#codeSnippet
     type: Code Snippets
   - url: >-
+
       https://developer.factset.com/api-catalog/content-feeds-data-dictionary#changelog
     type: Change Log
-  - url: properties/content-feeds-data-dictionary-openapi-original.yml
+  - url: openapi/content-feeds-data-dictionary-openapi-original.yml
     type: OpenAPI
-description: >-
+description: |-
+
   Browse data items and definitions available through FactSet's off platform
   product offerings.
 

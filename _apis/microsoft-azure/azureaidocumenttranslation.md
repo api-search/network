@@ -1,6 +1,6 @@
 ---
 aid: microsoft-azure:azureaidocumenttranslation
-name: Azure.AI.DocumentTranslation
+name: Microsoft Azure.AI.DocumentTranslation
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -9,7 +9,7 @@ humanURL: https://example.com
 properties:
   - url: https://example.com
     type: Documentation
-  - url: properties/azureaidocumenttranslation-openapi-original.yml
+  - url: openapi/azureaidocumenttranslation-openapi-original.yml
     type: OpenAPI
 
 ---

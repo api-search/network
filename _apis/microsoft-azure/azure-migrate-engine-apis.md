@@ -1,6 +1,6 @@
 ---
 aid: microsoft-azure:azure-migrate-engine-apis
-name: Azure Migrate Engine APIs
+name: Microsoft Azure Migrate Engine APIs
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -9,7 +9,7 @@ humanURL: https://example.com
 properties:
   - url: https://example.com
     type: Documentation
-  - url: properties/azure-migrate-engine-apis-openapi-original.yml
+  - url: openapi/azure-migrate-engine-apis-openapi-original.yml
     type: OpenAPI
 description: A first party Azure service for modernizing workloads.
 

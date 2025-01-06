@@ -1,6 +1,6 @@
 ---
 aid: microsoft-azure:containerappsrevisions-api-client
-name: ContainerAppsRevisions API Client
+name: Microsoft Azure ContainerAppsRevisions API Client
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -9,7 +9,7 @@ humanURL: https://example.com
 properties:
   - url: https://example.com
     type: Documentation
-  - url: properties/containerappsrevisions-api-client-openapi-original.yml
+  - url: openapi/containerappsrevisions-api-client-openapi-original.yml
     type: OpenAPI
 
 ---

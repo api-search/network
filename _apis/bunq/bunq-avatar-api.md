@@ -6,13 +6,8 @@ tags:
   - Items
 score: 86
 humanURL: https://doc.bunq.com/#/avatar
-overlays:
-  - url: overlays/bunq-avatar--openapi-search.yml
-    type: OpenAPI
-  - url: overlays/bunq-avatar--openapi-api-evangelist-ratings.yml
-    type: API Evangelist Ratings
 properties:
-  - url: properties/bunq-avatar--openapi-original.yml
+  - url: openapi/bunq-avatar--openapi-original.yml
     type: OpenAPI
   - url: https://doc.bunq.com/
     type: Documentation
