@@ -13,7 +13,7 @@ baseURL: https://public-api.sandbox.bunq.com/
 humanURL: https://doc.bunq.com/#/additional-transaction-information-category
 properties:
   - url: >-
-      openapibunq-user-userid-additional-transaction-information-category-openapi-original.yml
+      openapi/bunq-user-userid-additional-transaction-information-category-openapi-original.yml
     type: OpenAPI
 description: Manage additional information transactional categories.
 

@@ -1,7 +1,18 @@
 ---
 aid: mastercard:mastercard-donate-api
 name: Mastercard Donate API
-tags: []
+tags:
+  - Donor
+  - ' Cards'
+  - ' Searches'
+  - ' Card'
+  - ' Payments'
+  - ' Guest  Donation'
+  - ' Donations'
+  - ' Setup'
+  - ' Transactions'
+  - ' Program'
+  - ' Record'
 humanURL: https://developer.mastercard.com/donations/documentation/
 properties:
   - url: https://developer.mastercard.com/donations/documentation/use-cases/
@@ -39,6 +50,8 @@ properties:
   - url: https://developer.mastercard.com/donations/documentation/tutorials/
     name: Tutorials and Guides | Donate API | Mastercard Developers
     type: Tutorials
+  - url: properties/mastercard-donate-api-openapi.yml
+    type: OpenAPI
 description: >-
   The Mastercard Donate Service provides a seamless and safe way for partners to
   enable cardholders to incorporate giving into their daily activities.

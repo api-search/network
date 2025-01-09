@@ -1,7 +1,11 @@
 ---
 aid: mastercard:mastercard-ethoca-consumer-clarity-for-merchant-transactions
 name: Mastercard Ethoca Consumer Clarity for Merchant Transactions
-tags: []
+tags:
+  - Apis
+  - Orders
+  - Transactions
+  - Health Checks
 humanURL: >-
   https://developer.mastercard.com/ethoca-consumer-clarity-for-merchants/documentation/
 properties:
@@ -83,6 +87,9 @@ properties:
       Support | Ethoca Consumer Clarity for Merchant Transactions | Mastercard
       Developers
     type: Support
+  - url: >-
+      properties/mastercard-ethoca-consumer-clarity-for-merchant-transactions-openapi.yml
+    type: OpenAPI
 description: >-
   Ethoca's Consumer Clarity for Merchant Transactions brokers order information
   between an organization and an issuer or an organization and their customer.

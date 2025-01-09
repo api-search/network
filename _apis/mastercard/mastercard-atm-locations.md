@@ -1,7 +1,9 @@
 ---
 aid: mastercard:mastercard-atm-locations
 name: Mastercard ATM Locations
-tags: []
+tags:
+  - Countries
+  - ATMs
 humanURL: https://developer.mastercard.com/locations/documentation/
 properties:
   - url: >-
@@ -56,6 +58,8 @@ properties:
   - url: https://developer.mastercard.com/locations/documentation/release-history/
     name: Release History | ATM Locations | Mastercard Developers
     type: ChangeLog
+  - url: properties/mastercard-atm-locations-openapi.yml
+    type: OpenAPI
 description: "The ATM Locations API grants users access to Mastercard\x19s extensive ATM data. It can be used to find the nearest ATMs, find the precise location of a specific ATM, or even a radius search specifying required features. "
 
 ---

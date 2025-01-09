@@ -1,7 +1,17 @@
 ---
 aid: mastercard:mastercard-installments
 name: Mastercard Installments
-tags: []
+tags:
+  - Consumers
+  - ' Registrations'
+  - ' Deregistrations'
+  - ' Merchants'
+  - ' Merchant  Participation'
+  - ' Searches'
+  - ' Plans'
+  - ' Approvals'
+  - ' Offers'
+  - ' Notifications'
 humanURL: https://developer.mastercard.com/unified-installments/documentation/
 properties:
   - url: >-
@@ -58,6 +68,8 @@ properties:
       https://developer.mastercard.com/unified-installments/documentation/support/
     name: Support | Mastercard Installments | Mastercard Developers
     type: Support
+  - url: properties/mastercard-installments-openapi.yml
+    type: OpenAPI
 description: >-
   The Mastercard Installments program enables financial institutions, licensed
   lenders, fintechs, and Buy Now, Pay Later (BNPL) players to offer installment

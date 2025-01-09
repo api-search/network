@@ -1,7 +1,11 @@
 ---
 aid: mastercard:mastercard-merchant-locations
 name: Mastercard Merchant Locations
-tags: []
+tags:
+  - Countries
+  - Categories
+  - Searches
+  - Merchants
 humanURL: https://developer.mastercard.com/locations-merchants/documentation/
 properties:
   - url: >-
@@ -64,6 +68,8 @@ properties:
       https://developer.mastercard.com/locations-merchants/documentation/release-history/
     name: Release History | Merchant Locations | Mastercard Developers
     type: ChangeLog
+  - url: properties/mastercard-merchant-locations-openapi.yml
+    type: OpenAPI
 description: "The Merchants Locations API grants users access to Mastercard\x19s extensive merchant data. It can be used to enrich partial addresses, find the precise location of an address, or even a radius search by merchant type."
 
 ---

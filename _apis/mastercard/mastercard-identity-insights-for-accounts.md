@@ -1,7 +1,11 @@
 ---
 aid: mastercard:mastercard-identity-insights-for-accounts
 name: Mastercard Identity Insights for Accounts
-tags: []
+tags:
+  - Account  Opening
+  - ' Accounts'
+  - Identity
+  - Insights
 humanURL: https://developer.mastercard.com/identity-insights-for-accounts/documentation/
 properties:
   - url: >-
@@ -56,6 +60,8 @@ properties:
       https://developer.mastercard.com/identity-insights-for-accounts/documentation/support/#get-help
     name: Support | Identity Insights for Accounts | Mastercard Developers
     type: Support
+  - url: properties/mastercard-identity-insights-for-accounts-openapi.yml
+    type: OpenAPI
 description: >-
   Today's digital economy has transformed consumer behaviors and expectations.
   As more interactions are conducted virtually, consumers have come to expect

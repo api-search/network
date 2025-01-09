@@ -1,7 +1,14 @@
 ---
 aid: mastercard:mastercard-doconomy-aland-index
 name: Mastercard Doconomy Aland Index
-tags: []
+tags:
+  - ' Footprints'
+  - '  Supported'
+  - '  Currencies'
+  - '  Supported  Parameters'
+  - '  Merchants'
+  - '  Categories'
+  - Transactions
 humanURL: https://developer.mastercard.com/doconomy-aland-index/documentation
 properties:
   - url: >-
@@ -48,6 +55,8 @@ properties:
       https://developer.mastercard.com/doconomy-aland-index/documentation/support/#get-help
     name: Support | Doconomy Aland Index | Mastercard Developers
     type: Support
+  - url: properties/mastercard-doconomy-aland-index-openapi.yml
+    type: OpenAPI
 description: >-
   The Doconomy Aland Index API enables issuers to provide their consumers with
   visibility into the environmental impact based on their spending habits.

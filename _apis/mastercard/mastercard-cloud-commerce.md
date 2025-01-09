@@ -1,7 +1,9 @@
 ---
 aid: mastercard:mastercard-cloud-commerce
 name: Mastercard Cloud Commerce
-tags: []
+tags:
+  - Payments
+  - Commerce
 humanURL: https://developer.mastercard.com/product/cloud-commerce/
 properties: []
 description: >-

@@ -9,7 +9,7 @@ score: 87
 humanURL: https://doc.bunq.com/#/content
 properties:
   - url: >-
-      openapibunq-attachment-public-attachment-publicuuid-content-openapi-original.yml
+      openapi/bunq-attachment-public-attachment-publicuuid-content-openapi-original.yml
     type: OpenAPI
   - url: https://doc.bunq.com/
     type: Documentation

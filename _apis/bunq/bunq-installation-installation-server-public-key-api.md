@@ -8,7 +8,7 @@ tags:
   - Servers
 properties:
   - url: >-
-      openapibunq-installation-installationid-server-public-key-openapi-original.yml
+      openapi/bunq-installation-installationid-server-public-key-openapi-original.yml
     type: OpenAPI
 description: Needs description.
 

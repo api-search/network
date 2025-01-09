@@ -9,7 +9,8 @@ tags:
 humanURL: >-
   https://doc.bunq.com/#/billing-contract-subscription/List_all_BillingContractSubscription_for_User
 properties:
-  - url: openapibunq-user-userid-billing-contract-subscription-openapi-original.yml
+  - url: >-
+      openapi/bunq-user-userid-billing-contract-subscription-openapi-original.yml
     type: OpenAPI
   - url: https://doc.bunq.com/
     type: Documentation

@@ -1,7 +1,36 @@
 ---
 aid: mastercard:mastercard-id-for-trust-providers
 name: Mastercard ID for Trust Providers
-tags: []
+tags:
+  - Users
+  - ' Profiles'
+  - ' Identity'
+  - ' Searches'
+  - ' Deletions'
+  - ' Email'
+  - ' Manage A  User  Identity'
+  - ' Verifications'
+  - ' Otps'
+  - ' Data'
+  - ' Shares'
+  - ' Multi'
+  - ' Access'
+  - ' Tokens'
+  - ' Documents'
+  - ' Retrievals'
+  - ' Confirmations'
+  - ' Initiate'
+  - ' Premium'
+  - ' Authentication'
+  - ' Decisions'
+  - ' Scans'
+  - ' Audit'
+  - ' Events'
+  - ' Accounts'
+  - ' Activity'
+  - ' Claims'
+  - ' Scopes'
+  - ' Extractions'
 humanURL: https://developer.mastercard.com/mastercard-id-for-tp/documentation/
 properties:
   - url: >-
@@ -52,5 +81,18 @@ properties:
       https://developer.mastercard.com/mastercard-id-for-tp/documentation/support/#get-help
     name: Support | ID for Trust Providers | Mastercard Developers
     type: Support
+  - url: properties/mastercard-id-for-trust-providers-openapi.yml
+    type: OpenAPI
+description: >-
+  Mastercard ID for Trust Providers is a service that helps businesses and
+  organizations verify the identity of their customers. By utilizing advanced
+  technology and security measures, Mastercard ID for Trust Providers enables
+  businesses to securely authenticate the identities of individuals in
+  real-time, reducing the risk of fraud and ensuring a seamless and secure
+  customer experience. This service allows businesses to confidently verify the
+  identities of their customers, streamlining operations and improving trust and
+  security in online transactions. With Mastercard ID for Trust Providers,
+  businesses can effectively combat fraud and identity theft, safeguarding
+  sensitive information and enhancing the overall customer experience.
 
 ---

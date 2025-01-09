@@ -1,7 +1,22 @@
 ---
 aid: mastercard:mastercard-ethoca-merchant-self-services
 name: Mastercard Ethoca Merchant Self Services
-tags: []
+tags:
+  - Merchants
+  - ' Merchant  Logos'
+  - ' States'
+  - ' Locations'
+  - ' Organizations'
+  - ' Profiles'
+  - ' Member'
+  - ' References'
+  - ' Alerts  Merchants'
+  - ' Merchant'
+  - ' Status'
+  - ' Changes'
+  - ' Card'
+  - ' Names'
+  - ' Acquirer'
 humanURL: https://developer.mastercard.com/merchant-self-services/documentation/
 properties:
   - url: >-
@@ -58,6 +73,8 @@ properties:
       https://developer.mastercard.com/merchant-self-services/documentation/support/#get-help
     name: Support | Ethoca Merchant Self Services | Mastercard Developers
     type: Support
+  - url: properties/mastercard-ethoca-merchant-self-services-openapi.yml
+    type: OpenAPI
 description: >-
   The Ethoca Merchant Self Services API lets you enter your merchant details for
   your organization, including for all of your submerchants. Using the Merchant

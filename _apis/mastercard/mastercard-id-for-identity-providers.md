@@ -1,7 +1,12 @@
 ---
 aid: mastercard:mastercard-id-for-identity-providers
 name: Mastercard ID for Identity Providers
-tags: []
+tags:
+  - Scopes
+  - '  Claim'
+  - '  Share'
+  - '  Insights'
+  - Identity
 humanURL: https://developer.mastercard.com/mastercard-id-for-idp/documentation
 properties:
   - url: >-
@@ -47,6 +52,8 @@ properties:
       https://developer.mastercard.com/mastercard-id-for-idp/documentation/support/#help
     name: Support | ID for Identity Providers | Mastercard Developers
     type: Support
+  - url: properties/mastercard-id-for-identity-providers-openapi.yml
+    type: OpenAPI
 description: >-
   In this digital world, user identity fraud is on the rise due to inadequate
   digital identity verification methods. The ID Networkopens in a new tab model

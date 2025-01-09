@@ -1,7 +1,10 @@
 ---
 aid: mastercard:mastercard-identity-insights-for-transactions
 name: Mastercard Identity Insights for Transactions
-tags: []
+tags:
+  - Transactions
+  - Insights
+  - Identity
 humanURL: >-
   https://developer.mastercard.com/identity-insights-for-transactions/documentation/
 properties:
@@ -65,6 +68,8 @@ properties:
       https://developer.mastercard.com/identity-insights-for-transactions/documentation/support/#get-help
     name: Support | Identity Insights for Transactions | Mastercard Developers
     type: Support
+  - url: properties/mastercard-identity-insights-for-transactions-openapi.yml
+    type: OpenAPI
 description: >-
   As payments increasingly shift to card-not-present transactions, businesses
   are faced with ensuring that customers experience smooth, frictionless, and

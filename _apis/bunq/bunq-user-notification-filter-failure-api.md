@@ -7,7 +7,7 @@ tags:
   - Notifications
   - Users
 properties:
-  - url: openapibunq-user-userid-notification-filter-failure-openapi-original.yml
+  - url: openapi/bunq-user-userid-notification-filter-failure-openapi-original.yml
     type: OpenAPI
 description: Needs description.
 

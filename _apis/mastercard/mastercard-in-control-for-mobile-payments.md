@@ -1,7 +1,13 @@
 ---
 aid: mastercard:mastercard-in-control-for-mobile-payments
 name: Mastercard In Control for Mobile Payments
-tags: []
+tags:
+  - Users
+  - ' Virtual'
+  - ' Card'
+  - ' Accounts'
+  - ' Real  Card'
+  - ' Tokens'
 humanURL: https://developer.mastercard.com/in-control-for-mobile-payments/documentation/
 properties:
   - url: >-
@@ -50,6 +56,8 @@ properties:
       https://developer.mastercard.com/in-control-for-mobile-payments/documentation/glossary/
     name: Glossary | In Control for Mobile Payments | Mastercard Developers
     type: Glossary
+  - url: properties/mastercard-in-control-for-mobile-payments-openapi.yml
+    type: OpenAPI
 description: >-
   Mastercard In Control" for Mobile Payments (ICMP) utilizes Mastercard Digital
   Enablement Service (MDES) to tokenize virtual cards into a digital wallet. In

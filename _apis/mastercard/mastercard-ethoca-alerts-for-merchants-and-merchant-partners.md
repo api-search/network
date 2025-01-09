@@ -1,7 +1,9 @@
 ---
 aid: mastercard:mastercard-ethoca-alerts-for-merchants-and-merchant-partners
 name: Mastercard Ethoca Alerts for Merchants and Merchant Partners
-tags: []
+tags:
+  - Alert  Outcomes
+  - Merchants
 humanURL: https://developer.mastercard.com/ethoca-alerts-for-merchants/documentation
 properties:
   - url: >-
@@ -82,6 +84,9 @@ properties:
       Support | Ethoca Alerts for Merchants and Merchant Partners | Mastercard
       Developers
     type: Support
+  - url: >-
+      properties/mastercard-ethoca-alerts-for-merchants-and-merchant-partners-openapi.yml
+    type: OpenAPI
 description: >-
   Ethoca Alerts" is a collaborative tool that brings merchants (and merchant
   partners), acquirers, and issuers together to share fraud and dispute data,

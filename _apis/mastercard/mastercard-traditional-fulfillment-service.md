@@ -1,7 +1,13 @@
 ---
 aid: mastercard:mastercard-traditional-fulfillment-service
 name: Mastercard Traditional Fulfillment Service
-tags: []
+tags:
+  - Catalogs
+  - Catalog
+  - Items
+  - Vendors
+  - Orders
+  - Status
 humanURL: >-
   https://developer.mastercard.com/traditional-fulfillment-service/documentation/
 properties:
@@ -53,6 +59,8 @@ properties:
       https://developer.mastercard.com/traditional-fulfillment-service/documentation/support/#get-help
     name: Support | Traditional Fulfillment Service | Mastercard Developers
     type: Support
+  - url: properties/mastercard-traditional-fulfillment-service-openapi.yml
+    type: OpenAPI
 description: >-
   The Traditional Fulfillment Service delivers a seamless and secure way to
   enable a redemption experience. A rewards program allows for the retrieval of

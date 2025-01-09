@@ -1,7 +1,9 @@
 ---
 aid: mastercard:mastercard-direct-services
 name: Mastercard Direct Services
-tags: []
+tags:
+  - Transactions
+  - Seamless
 humanURL: https://developer.mastercard.com/product/direct-service-api/
 properties: []
 description: >-

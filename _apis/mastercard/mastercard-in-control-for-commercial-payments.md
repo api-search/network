@@ -1,7 +1,10 @@
 ---
 aid: mastercard:mastercard-in-control-for-commercial-payments
 name: Mastercard In Control for Commercial Payments
-tags: []
+tags:
+  - Commercial
+  - Payments
+  - Spending Controls
 humanURL: https://developer.mastercard.com/iccp/documentation/
 properties:
   - url: https://developer.mastercard.com/iccp/documentation/announcements/

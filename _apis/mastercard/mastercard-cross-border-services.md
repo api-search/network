@@ -1,7 +1,11 @@
 ---
 aid: mastercard:mastercard-cross-border-services
 name: Mastercard Cross-Border Services
-tags: []
+tags:
+  - Borders
+  - Payments
+  - Global
+  - International
 humanURL: https://developer.mastercard.com/cross-border-services/documentation/
 properties:
   - url: >-

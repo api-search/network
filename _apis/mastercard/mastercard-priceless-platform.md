@@ -1,7 +1,10 @@
 ---
 aid: mastercard:mastercard-priceless-platform
 name: Mastercard Priceless Platform
-tags: []
+tags:
+  - Benefits
+  - Offers
+  - Experiences
 humanURL: >-
   https://developer.mastercard.com/product/mastercard-benefits-and-experiences-portal/
 properties: []

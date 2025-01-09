@@ -1,7 +1,11 @@
 ---
 aid: mastercard:mastercard-confirmed-fraud
 name: Mastercard Confirmed Fraud
-tags: []
+tags:
+  - ' Issuer'
+  - ' Fraud'
+  - ' States'
+  - ' Statuses'
 humanURL: https://developer.mastercard.com/fld-fraud-submission/documentation/
 properties:
   - url: >-
@@ -52,6 +56,8 @@ properties:
       https://developer.mastercard.com/fld-fraud-submission/documentation/support/#get-help
     name: Support | Confirmed Fraud | Mastercard Developers
     type: Support
+  - url: properties/mastercard-confirmed-fraud-openapi.yml
+    type: OpenAPI
 description: >-
   The Fraud and Loss Database (FLD) is the Mastercard_repository for fraud
   transactions, and it serves as the source of truth for fraud information

@@ -1,7 +1,10 @@
 ---
 aid: mastercard:mastercard-card-issuance
 name: Mastercard Card Issuance
-tags: []
+tags:
+  - Cards
+  - ' Debit'
+  - Prepaid
 humanURL: https://developer.mastercard.com/card-issuance/documentation/
 properties:
   - url: >-
@@ -46,6 +49,8 @@ properties:
       https://developer.mastercard.com/card-issuance/documentation/support/#get-help
     name: Support | Card Issuance | Mastercard Developers
     type: Support
+  - url: properties/mastercard-card-issuance-openapi.yml
+    type: OpenAPI
 description: >-
   Card Issuance APIs enable clients to open new card accounts from anywhere and
   at any time, as per their convenience. MI Issuing supports the issuance of

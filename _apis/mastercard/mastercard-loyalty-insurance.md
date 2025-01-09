@@ -1,7 +1,13 @@
 ---
 aid: mastercard:mastercard-loyalty-insurance
 name: Mastercard Loyalty Insurance
-tags: []
+tags:
+  - Users
+  - ' Data'
+  - ' Tokens'
+  - ' Claim'
+  - ' Searches'
+  - Loyalty
 humanURL: https://developer.mastercard.com/mastercard-insurance-programs/documentation/
 properties:
   - url: >-
@@ -44,6 +50,8 @@ properties:
       https://developer.mastercard.com/mastercard-insurance-programs/documentation/support/#get-help
     name: Support | Loyalty Insurance | Mastercard Developers
     type: Support
+  - url: properties/mastercard-loyalty-insurance-openapi.yml
+    type: OpenAPI
 description: >-
   This service provides banks and customers with a digital solution that makes
   it easier to manage claims globally within their web apps rather than visiting

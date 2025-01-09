@@ -1,7 +1,11 @@
 ---
 aid: mastercard:mastercard-suspected-fraud
 name: Mastercard Suspected Fraud
-tags: []
+tags:
+  - Mastercard
+  - ' Fraud'
+  - ' States'
+  - ' Statuses'
 humanURL: https://developer.mastercard.com/fld-suspected-fraud/documentation/
 properties:
   - url: >-
@@ -44,6 +48,8 @@ properties:
       https://developer.mastercard.com/fld-suspected-fraud/documentation/support/#get-help
     name: Support | Suspected Fraud | Mastercard Developers
     type: Support
+  - url: properties/mastercard-suspected-fraud-openapi.yml
+    type: OpenAPI
 description: >-
   The Suspected Fraud application sends a potentially fraudulent transaction for
   review to the relevant issuer to determine if the suspected transaction is

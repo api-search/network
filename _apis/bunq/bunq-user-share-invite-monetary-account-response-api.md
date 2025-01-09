@@ -10,7 +10,7 @@ tags:
   - Users
 properties:
   - url: >-
-      openapibunq-user-userid-share-invite-monetary-account-response-openapi-original.yml
+      openapi/bunq-user-userid-share-invite-monetary-account-response-openapi-original.yml
     type: OpenAPI
 description: Needs description.
 

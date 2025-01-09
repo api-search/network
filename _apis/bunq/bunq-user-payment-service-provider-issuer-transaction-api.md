@@ -13,7 +13,7 @@ tags:
   - Items
 properties:
   - url: >-
-      openapibunq-user-userid-payment-service-provider-issuer-transaction-openapi-original.yml
+      openapi/bunq-user-userid-payment-service-provider-issuer-transaction-openapi-original.yml
     type: OpenAPI
 description: Needs description.
 
