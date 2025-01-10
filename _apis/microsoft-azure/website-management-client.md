@@ -1,22 +1,26 @@
 ---
 aid: microsoft-azure:website-management-client
-name: Microsoft Azure WebSite Management Client
+name: Microsoft Azure Web Site Management Client
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-baseURL: https://example.com
-humanURL: https://example.com
+humanURL: >-
+  https://learn.microsoft.com/en-us/python/api/azure-mgmt-web/azure.mgmt.web.websitemanagementclient?view=azure-python
 properties:
-  - url: https://example.com
-    type: Documentation
   - url: openapi/website-management-client-openapi-original.yml
     type: OpenAPI
+  - url: >-
+      https://learn.microsoft.com/en-us/python/api/azure-mgmt-web/azure.mgmt.web.websitemanagementclient?view=azure-python
+    type: Documentation
 description: >-
-  Use these APIs to manage Azure Websites resources through the Azure Resource
-  Manager. All task operations conform to the HTTP/1.1 protocol specification
-  and each operation returns an x-ms-request-id header that can be used to
-  obtain information about the request. You must make sure that requests made to
-  these resources are secure. For more information, see
-  https://msdn.microsoft.com/en-us/library/azure/dn790557.aspx.
+  Microsoft Azure Web Site Management Client is a powerful tool that provides
+  users with a centralized platform for managing all aspects of their Azure Web
+  Sites. With this client, users can easily browse and manage their websites,
+  view detailed site metrics, monitor site performance, and troubleshoot issues
+  in real-time. Additionally, the client offers advanced features such as
+  automated scaling, integration with Azure resources, and seamless deployment
+  of web applications. Overall, Microsoft Azure Web Site Management Client
+  streamlines the process of managing and optimizing web sites, making it an
+  essential tool for developers and IT professionals.
 
 ---

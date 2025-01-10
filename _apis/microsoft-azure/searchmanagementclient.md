@@ -1,16 +1,26 @@
 ---
 aid: microsoft-azure:searchmanagementclient
-name: Microsoft Azure SearchManagementClient
+name: Microsoft Azure Search Management Client
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-baseURL: https://example.com
-humanURL: https://example.com
+humanURL: >-
+  https://learn.microsoft.com/en-us/python/api/azure-mgmt-search/azure.mgmt.search.searchmanagementclient?view=azure-python
 properties:
-  - url: https://example.com
-    type: Documentation
   - url: openapi/searchmanagementclient-openapi-original.yml
     type: OpenAPI
-description: Client that can be used to manage Azure Search services and API keys.
+  - url: >-
+      https://learn.microsoft.com/en-us/python/api/azure-mgmt-search/azure.mgmt.search.searchmanagementclient?view=azure-python
+    type: Documentation
+description: >-
+  The Microsoft Azure Search Management Client is a software tool that allows
+  users to easily manage and interact with their search indexes and search
+  services on the Azure cloud platform. With this client, users can create,
+  configure, and manage search indexes, as well as monitor the performance of
+  their search services. It provides a user-friendly interface for performing
+  tasks such as adding documents to an index, setting up search filters, and
+  analyzing search results. By using the Azure Search Management Client, users
+  can effectively optimize their search functionality and improve the overall
+  efficiency of their search services on Microsoft Azure.
 
 ---

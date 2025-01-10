@@ -1,18 +1,27 @@
 ---
 aid: microsoft-azure:deploymentscriptsclient
-name: Microsoft Azure DeploymentScriptsClient
+name: Microsoft Azure Deployment Scripts Client
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-baseURL: https://example.com
-humanURL: https://example.com
+humanURL: >-
+  https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/deployment-script-template
 properties:
-  - url: https://example.com
-    type: Documentation
   - url: openapi/deploymentscriptsclient-openapi-original.yml
     type: OpenAPI
+  - url: >-
+      https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/deployment-script-template
+    type: Documentation
 description: >-
-  The APIs listed in this specification can be used to manage Deployment Scripts
-  resource through the Azure Resource Manager.
+  Microsoft Azure Deployment Scripts Client is a tool that allows developers to
+  automate the deployment of their applications on the Azure cloud platform.
+  With this client, developers can write scripts that define the configuration
+  and resources needed for their applications to run smoothly on Azure. These
+  scripts can then be executed to quickly and efficiently deploy the
+  application, saving time and reducing the risk of manual errors. The
+  Deployment Scripts Client also provides monitoring and logging capabilities to
+  help developers track the progress of their deployments and troubleshoot any
+  issues that may arise. Overall, this tool streamlines the deployment process
+  and allows developers to focus on building and improving their applications.
 
 ---

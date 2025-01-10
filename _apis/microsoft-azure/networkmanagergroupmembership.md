@@ -1,20 +1,27 @@
 ---
 aid: microsoft-azure:networkmanagergroupmembership
-name: Microsoft Azure NetworkManagerGroupMembership
+name: Microsoft Azure Network Manager Group Membership
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-baseURL: https://example.com
-humanURL: https://example.com
+humanURL: >-
+  https://learn.microsoft.com/en-us/azure/virtual-network-manager/concept-network-groups
 properties:
-  - url: https://example.com
-    type: Documentation
   - url: openapi/networkmanagergroupmembership-openapi-original.yml
     type: OpenAPI
+  - url: >-
+      https://learn.microsoft.com/en-us/azure/virtual-network-manager/concept-network-groups
+    type: Documentation
 description: >-
-  The Microsoft Azure Network Manager Group Membership API provides a RESTful
-  set of web services that interact with Microsoft Azure Networks service to
-  manage your network resources. The API has entities that capture the
-  relationship between an end user and the Microsoft Azure Networks service.
+  Microsoft Azure Network Manager Group Membership allows users to create and
+  manage groups within their network to easily organize and assign permissions
+  to different users. This feature streamlines the process of managing access
+  control within the network by providing an intuitive interface for users to
+  easily add or remove members from groups. By centralizing group membership
+  management, administrators can ensure that users have the appropriate level of
+  access to resources, helping to maintain security and streamline network
+  operations. Additionally, Azure Network Manager Group Membership can help
+  improve collaboration and productivity by enabling users to easily share
+  resources with others in their group.
 
 ---

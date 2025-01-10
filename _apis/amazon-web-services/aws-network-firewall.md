@@ -6,12 +6,7 @@ tags:
   - TLSInspection
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 baseURL: https://example.com
-humanURL: https://example.comhttps://aws.amazon.com/network-firewall/
-overlays:
-  - url: overlays/network-firewall-openapi-search.yml
-    type: APIs.io Search
-  - url: overlays/network-firewall-openapi-api-evangelist-ratings.yml
-    type: API Evangelist Ratings
+humanURL: https://aws.amazon.com/network-firewall/
 properties:
   - url: https://aws.amazon.com/network-firewall/
     type: Documentation

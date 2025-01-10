@@ -4,13 +4,12 @@ name: Microsoft Azure Purview Workflow Service
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-baseURL: https://example.com
-humanURL: https://example.com
+humanURL: https://learn.microsoft.com/en-us/purview/legacy/concept-workflow
 properties:
-  - url: https://example.com
-    type: Documentation
   - url: openapi/purview-workflow-service-openapi-original.yml
     type: OpenAPI
+  - url: https://learn.microsoft.com/en-us/purview/legacy/concept-workflow
+    type: Documentation
 description: >-
   Workflows are automated, repeatable business processes which allow
   organizations to track changes, enforce policy compliance, and ensure quality

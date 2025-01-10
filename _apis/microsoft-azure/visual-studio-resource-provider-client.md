@@ -4,19 +4,24 @@ name: Microsoft Azure Visual Studio Resource Provider Client
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-baseURL: https://example.com
-humanURL: https://example.com
+humanURL: >-
+  https://learn.microsoft.com/en-us/javascript/api/overview/azure/arm-visualstudio-readme?view=azure-node-preview
 properties:
-  - url: https://example.com
-    type: Documentation
   - url: openapi/visual-studio-resource-provider-client-openapi-original.yml
     type: OpenAPI
+  - url: >-
+      https://learn.microsoft.com/en-us/javascript/api/overview/azure/arm-visualstudio-readme?view=azure-node-preview
+    type: Documentation
 description: >-
-  Use these APIs to manage Visual Studio Team Services resources through the
-  Azure Resource Manager. All task operations conform to the HTTP/1.1 protocol
-  specification and each operation returns an x-ms-request-id header that can be
-  used to obtain information about the request. You must make sure that requests
-  made to these resources are secure. For more information, see
-  https://docs.microsoft.com/en-us/rest/api/index.
+  The Microsoft Azure Visual Studio Resource Provider Client is a tool that
+  allows developers to access and manage resources within Azure using Visual
+  Studio. With this client, developers can easily deploy, monitor, and scale
+  their applications and services in the cloud. Additionally, they can leverage
+  the integrated development environment capabilities of Visual Studio to
+  streamline the development process. The client provides a user-friendly
+  interface for provisioning and managing Azure resources, making it easier to
+  build and deploy applications in the cloud. Overall, the Azure Visual Studio
+  Resource Provider Client simplifies the development and management of
+  cloud-based solutions for developers.
 
 ---

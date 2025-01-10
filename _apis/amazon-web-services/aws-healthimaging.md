@@ -1,6 +1,6 @@
 ---
 aid: amazon-web-services:aws-healthimaging
-name: AWS HealthImaging
+name: AWS Health Imaging
 tags:
   - ARN
   - Copy
@@ -18,12 +18,7 @@ tags:
   - Versions
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 baseURL: https://example.com
-humanURL: https://example.com
-overlays:
-  - url: overlays/medical-imaging-openapi-search.yml
-    type: APIs.io Search
-  - url: overlays/medical-imaging-openapi-api-evangelist-ratings.yml
-    type: API Evangelist Ratings
+humanURL: https://aws.amazon.com/healthimaging/
 properties:
   - url: https://example.com
     type: Documentation

@@ -1,16 +1,25 @@
 ---
 aid: microsoft-azure:azure-openai-service-api
-name: Microsoft Azure OpenAI Service API
+name: Microsoft Azure Open Ai Service API
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-baseURL: https://example.com
-humanURL: https://example.com
+humanURL: https://learn.microsoft.com/en-us/azure/ai-services/openai/reference
 properties:
-  - url: https://example.com
-    type: Documentation
   - url: openapi/azure-openai-service-api-openapi-original.yml
     type: OpenAPI
-description: Azure OpenAI APIs for completions and search
+  - url: https://learn.microsoft.com/en-us/azure/ai-services/openai/reference
+    type: Documentation
+description: >-
+  Microsoft Azure Open Ai Service API is a powerful tool that allows application
+  developers to easily integrate advanced artificial intelligence capabilities
+  into their software. This API provides access to a wide range of AI services,
+  such as natural language processing, computer vision, and speech recognition.
+  With Azure Open Ai Service API, developers can leverage cutting-edge AI
+  technologies to enhance the functionality and intelligence of their
+  applications, enabling them to perform tasks such as language translation,
+  image recognition, and text-to-speech conversion. By using this API,
+  developers can quickly and efficiently add AI functionality to their
+  applications, making them more powerful and intuitive for users.
 
 ---

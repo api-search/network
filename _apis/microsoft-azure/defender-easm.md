@@ -1,22 +1,27 @@
 ---
 aid: microsoft-azure:defender-easm
-name: Microsoft Azure Defender EASM
+name: Microsoft Azure Defender Easm
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-baseURL: https://example.com
-humanURL: https://example.com
+humanURL: https://learn.microsoft.com/en-us/azure/external-attack-surface-management/
 properties:
-  - url: https://example.com
-    type: Documentation
   - url: openapi/defender-easm-openapi-original.yml
     type: OpenAPI
+  - url: >-
+      https://learn.microsoft.com/en-us/azure/external-attack-surface-management/
+    type: Documentation
 description: >-
-  Defender EASM discovers and maps your digital attack surface to provide an
-  "outside-in" perspective using probes to discover assets. The assets are
-  provided with detailed metadata associated, including vulnerabilities,
-  configurations and web components, allowing customers to view and prioritize
-  external risk. The EASM REST API enables you to develop clients that integrate
-  with your application.
+  Microsoft Azure Defender Easm is a comprehensive security solution that helps
+  organizations protect their cloud resources and workloads from various cyber
+  threats. Easm stands for Endpoint and Server Management, and this tool focuses
+  on monitoring and securing endpoints and servers within an organization's
+  Azure environment. By continuously monitoring for suspicious activities,
+  detecting potential threats, and providing real-time alerts, Azure Defender
+  Easm helps organizations proactively defend against attacks and minimize the
+  risk of security breaches. With features such as threat intelligence
+  integration, advanced analytics, and automated remediation, Azure Defender
+  Easm provides organizations with the tools they need to strengthen their
+  security posture and safeguard their critical assets in the cloud.
 
 ---

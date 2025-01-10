@@ -4,13 +4,22 @@ name: Microsoft Azure Migrate Assessment Service
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-baseURL: https://example.com
-humanURL: https://example.com
+humanURL: https://learn.microsoft.com/en-us/azure/migrate/
 properties:
-  - url: https://example.com
-    type: Documentation
   - url: openapi/azure-migrate-assessment-service-openapi-original.yml
     type: OpenAPI
-description: Azure Migrate Resource Provider management API.
+  - url: https://learn.microsoft.com/en-us/azure/migrate/
+    type: Documentation
+description: >-
+  Microsoft Azure Migrate Assessment Service is a tool designed to simplify the
+  process of planning and migrating to the Azure cloud. This service assesses an
+  organization's on-premises infrastructure and workloads, providing
+  recommendations for optimal migration strategies. It helps in determining the
+  readiness of the environment for migration, estimating costs, and identifying
+  potential compatibility issues. By analyzing performance metrics and
+  dependencies, Azure Migrate Assessment Service offers valuable insights to IT
+  teams, enabling them to plan and execute successful migrations with minimal
+  downtime and maximum efficiency. Ultimately, this service assists
+  organizations in transitioning to the cloud seamlessly and with confidence.
 
 ---

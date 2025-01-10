@@ -1,16 +1,16 @@
 ---
 aid: microsoft-azure:azure-easm
-name: Microsoft Azure EASM
+name: Microsoft Azure Easm
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-baseURL: https://example.com
-humanURL: https://example.com
+humanURL: https://learn.microsoft.com/en-us/azure/external-attack-surface-management/
 properties:
-  - url: https://example.com
-    type: Documentation
   - url: openapi/azure-easm-openapi-original.yml
     type: OpenAPI
+  - url: >-
+      https://learn.microsoft.com/en-us/azure/external-attack-surface-management/
+    type: Documentation
 description: >-
   EASM discovers and maps your digital attack surface to provide an "outside-in"
   perspective using probes to discover assets. The assets are provided with

@@ -6,12 +6,7 @@ tags:
   - Keys
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 baseURL: https://example.com
-humanURL: https://example.com
-overlays:
-  - url: overlays/kms-openapi-search.yml
-    type: APIs.io Search
-  - url: overlays/kms-openapi-api-evangelist-ratings.yml
-    type: API Evangelist Ratings
+humanURL: https://aws.amazon.com/kms/
 properties:
   - url: https://aws.amazon.com/kms/
     type: Documentation

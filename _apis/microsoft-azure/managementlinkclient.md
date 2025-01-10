@@ -1,21 +1,28 @@
 ---
 aid: microsoft-azure:managementlinkclient
-name: Microsoft Azure ManagementLinkClient
+name: Microsoft Azure Management Link Client
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-baseURL: https://example.com
-humanURL: https://example.com
+humanURL: >-
+  https://learn.microsoft.com/en-us/javascript/api/overview/azure/arm-links-readme?view=azure-node-latest
 properties:
-  - url: https://example.com
-    type: Documentation
   - url: openapi/managementlinkclient-openapi-original.yml
     type: OpenAPI
+  - url: >-
+      https://learn.microsoft.com/en-us/javascript/api/overview/azure/arm-links-readme?view=azure-node-latest
+    type: Documentation
 description: >-
-  Azure resources can be linked together to form logical relationships. You can
-  establish links between resources belonging to different resource groups.
-  However, all the linked resources must belong to the same subscription. Each
-  resource can be linked to 50 other resources. If any of the linked resources
-  are deleted or moved, the link owner must clean up the remaining link.
+  Microsoft Azure Management Link Client is a tool designed to help users easily
+  manage their Azure resources through a centralized platform. It allows users
+  to link their on-premises resources to Azure and monitor, troubleshoot, and
+  manage these resources from a single interface. With Azure Management Link
+  Client, users can track the performance of their resources, set up alerts for
+  any issues, and configure security settings to ensure the safety of their
+  data. Additionally, the tool provides detailed insights and analytics to help
+  users make informed decisions about their resources and optimize their
+  operations for maximum efficiency. Overall, Microsoft Azure Management Link
+  Client streamlines the management process, making it easier for users to
+  effectively oversee and control their Azure resources.
 
 ---

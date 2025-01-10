@@ -11,15 +11,10 @@ tags:
   - Untag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 baseURL: https://example.com
-humanURL: https://example.com
-overlays:
-  - url: overlays/networkmonitor-openapi-search.yml
-    type: APIs.io Search
-  - url: overlays/networkmonitor-openapi-api-evangelist-ratings.yml
-    type: API Evangelist Ratings
+humanURL: >-
+  https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/what-is-network-monitor.html
 properties:
   - url: >-
-
       https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/what-is-network-monitor.html
     type: Documentation
   - url: openapi/networkmonitor-openapi-original.yml

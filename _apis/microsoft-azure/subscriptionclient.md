@@ -1,19 +1,28 @@
 ---
 aid: microsoft-azure:subscriptionclient
-name: Microsoft Azure SubscriptionClient
+name: Microsoft Azure Subscription Client
 tags:
   - Tag
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-baseURL: https://example.com
-humanURL: https://example.com
+humanURL: >-
+  https://learn.microsoft.com/en-us/javascript/api/overview/azure/arm-subscriptions-readme?view=azure-node-latest
 properties:
-  - url: https://example.com
-    type: Documentation
   - url: openapi/subscriptionclient-openapi-original.yml
     type: OpenAPI
+  - url: >-
+      https://learn.microsoft.com/en-us/javascript/api/overview/azure/arm-subscriptions-readme?view=azure-node-latest
+    type: Documentation
 description: >-
-  All resource groups and resources exist within subscriptions. These operation
-  enable you get information about your subscriptions and tenants. A tenant is a
-  dedicated instance of Azure Active Directory (Azure AD) for your organization.
+  A Microsoft Azure Subscription Client is a user or organization that has
+  purchased a subscription to Microsoft Azure, a cloud computing platform that
+  offers a wide range of services and resources for building, deploying, and
+  managing applications and services through Microsoft's global network of data
+  centers. The Subscription Client has access to a variety of tools and
+  resources to help them optimize their use of Azure services, such as
+  monitoring and analytics, security and compliance features, and cost
+  management tools. They can manage and scale their resources, deploy new
+  applications, and integrate with other Azure services to meet their unique
+  business needs. The Subscription Client also has access to Microsoft's support
+  and training resources to help them make the most of their Azure subscription.
 
 ---
