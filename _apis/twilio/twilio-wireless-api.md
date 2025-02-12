@@ -17,7 +17,13 @@ properties:
   - url: openapi/wireless-openapi-original.yml
     type: OpenAPI
 description: >-
-  The Programmable Wireless REST API enables you to programmatically manage
-  global fleets of cellularly connected IoT devices.
+  The Twilio Wireless API allows developers to easily integrate cellular
+  connectivity into their applications. With this API, developers can provision
+  and manage SIM cards, monitor data usage, send and receive SMS messages, make
+  phone calls, and access real-time device location information. This enables
+  them to create IoT devices, asset tracking systems, and other connected
+  solutions that rely on cellular connectivity. The Twilio Wireless API
+  simplifies the process of managing cellular connectivity, making it easier for
+  developers to build innovative and reliable applications.
 
 ---

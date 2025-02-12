@@ -59,6 +59,15 @@ properties:
     type: OpenAPI
   - url: https://doc.bunq.com/
     type: Documentation
-description: Managing different types of monetary accounts.
+description: >-
+  The Bunq Monetary Account API is a powerful tool that allows developers to
+  seamlessly integrate Bunq's revolutionary banking services into their own
+  applications. With this API, developers can easily create and manage monetary
+  accounts, send and receive payments, and access account information in
+  real-time. The API also provides advanced features such as setting up
+  automatic transfers, tracking expenses, and monitoring account balances. By
+  leveraging the Bunq Monetary Account API, developers can provide their users
+  with a seamless and convenient banking experience, all while ensuring the
+  highest levels of security and reliability.
 
 ---

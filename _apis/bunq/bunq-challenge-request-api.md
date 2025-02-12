@@ -12,6 +12,15 @@ properties:
     type: OpenAPI
   - url: https://doc.bunq.com/
     type: Documentation
-description: Managing the challenge requests for a user.
+description: >-
+  The Bunq Challenge Request API is a tool that allows developers to facilitate
+  peer-to-peer payments and split bills easily and efficiently. With this API,
+  users can create custom challenges and invite friends or group members to
+  contribute funds towards a shared goal or expense. The API enables seamless
+  communication and tracking of payments, making it simple for users to manage
+  shared expenses and track contributions in real-time. Additionally, the Bunq
+  Challenge Request API promotes financial transparency and accountability among
+  participants, ensuring that everyone can easily see who has contributed and
+  how much is still needed to reach the desired goal.
 
 ---

@@ -1,13 +1,18 @@
 ---
 aid: bureau-of-economic-analysis-bea:bureau-of-economic-analysis-bea-api
 name: Bureau of Economic Analysis (BEA) API
-tags: []
+tags:
+  - Federal Government
+  - Economics
+  - Statistics
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 baseURL: https://api.example.com
 humanURL: https://www.bea.gov/tools/
 properties:
   - url: https://www.bea.gov/tools/
     type: Documentation
+  - url: properties/bureau-of-economic-analysis-bea-api-openapi.yml
+    type: OpenAPI
 description: >-
   The data API provides programmatic access to BEA published economic statistics
   using industry-standard methods and procedures. BEA's data API includes

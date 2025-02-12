@@ -30,9 +30,15 @@ properties:
   - url: openapi/numbers-openapi-original.yml
     type: OpenAPI
 description: >-
-  Twilio's virtual phone numbers give you instant access to local, national,
-  mobile, and toll-free phone numbers in over 100 countries for your voice call
-  and messaging applications. Leverage local phone numbers for your customers to
-  call and text, or use your own number.
+  Twilio Numbers API is a cloud-based service that allows developers to
+  programmatically provision and manage phone numbers for communication channels
+  like voice, SMS, and MMS. With this API, users can search, purchase,
+  configure, and release phone numbers in more than 100 countries worldwide.
+  Additionally, Twilio Numbers API enables users to retrieve information about
+  their phone numbers, such as usage statistics and status updates, giving them
+  full control over their communication infrastructure. By leveraging this API,
+  developers can seamlessly integrate phone number management into their
+  applications, creating personalized and efficient communication experiences
+  for their users.
 
 ---

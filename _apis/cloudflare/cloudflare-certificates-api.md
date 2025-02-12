@@ -1,4 +1,5 @@
 ---
+aid: cloudflare:cloudflare-certificates-api
 name: Cloudflare Certificates API
 tags:
   - Access

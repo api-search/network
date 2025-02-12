@@ -58,8 +58,14 @@ properties:
       https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-projects/
     type: Documentation
 description: >-
-  This resource represents projects. Use it to get, create, update, and delete
-  projects. Also get statuses available to a project, a project's notification
-  schemes, and update a project's type.
+  The Atlassian Jira Project API allows users to access and interact with their
+  Jira projects programmatically. This API enables developers to create,
+  retrieve, update, and delete projects, as well as manage project
+  configurations, issues, boards, and workflows. With the Jira Project API,
+  users can automate project management tasks, integrate Jira with other tools
+  and systems, and build custom applications that leverage Jira project data.
+  This powerful API provides a way for teams to streamline their project
+  management processes and improve collaboration and productivity within their
+  organization.
 
 ---

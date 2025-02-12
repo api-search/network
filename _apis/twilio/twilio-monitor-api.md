@@ -11,8 +11,14 @@ properties:
   - url: openapi/monitor-openapi-original.yml
     type: OpenAPI
 description: >-
-  An Alert resource instance represents a single log entry for an error or
-  warning encountered when Twilio makes a webhook request to your server, or
-  when your application makes a request to the REST API.
+  Twilio Monitor API is a powerful tool that allows developers to monitor and
+  analyze the performance and security of their Twilio applications in
+  real-time. With the Monitor API, users can track API usage, monitor error
+  rates, and receive alerts for important events such as message delivery
+  failures or security breaches. The API provides detailed insights into
+  application performance, allowing developers to quickly identify and
+  troubleshoot issues before they impact user experience. By utilizing the
+  Monitor API, developers can ensure the reliability and security of their
+  Twilio applications, ultimately delivering a better overall user experience.
 
 ---

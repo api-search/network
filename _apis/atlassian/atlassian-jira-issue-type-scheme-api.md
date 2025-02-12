@@ -25,10 +25,13 @@ properties:
       https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-issue-type-schemes/
     type: Documentation
 description: >-
-  This resource represents issue type schemes in classic projects. Use it to get
-  issue type schemes and a list of the projects that use them, associate issue
-  type schemes with projects, add issue types to issue type schemes, delete
-  issue types from issue type schemes, create, update, and delete issue type
-  schemes, change the order of issue types in issue type schemes.
+  The Atlassian Jira Issue Type Scheme API is a tool that allows users to manage
+  and customize issue type schemes within their Jira projects. This API enables
+  users to create, update, and delete issue type schemes, as well as assign and
+  configure issue types within these schemes. By using the Issue Type Scheme
+  API, users can easily tailor their Jira projects to meet the specific needs
+  and requirements of their team or organization. This API provides a flexible
+  and intuitive way to organize and categorize issues, making it easier to track
+  and manage project progress effectively.
 
 ---

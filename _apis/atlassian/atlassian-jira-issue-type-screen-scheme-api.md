@@ -24,12 +24,13 @@ properties:
       https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-issue-type-screen-schemes/
     type: Documentation
 description: >-
-  This resource represents issue type screen schemes. Use it to get issue type
-  screen schemes and a list of the projects that use them, create issue type
-  screen schemes, update issue type screen schemes, delete issue type screen
-  schemes, associate issue type screen schemes with projects, append issue type
-  to screen scheme mappings to issue type screen schemes, remove issue type to
-  screen scheme mappings from issue type screen schemes., update default screen
-  scheme of issue type screen scheme.
+  The Atlassian Jira Issue Type Screen Scheme API is a tool that allows users to
+  customize the screens that are displayed for different issue types in their
+  Jira project. With this API, users can create and manage screen schemes that
+  define which screens are associated with each issue type in their project.
+  This allows users to tailor the user interface to best suit the needs of their
+  team and project, ensuring that the necessary information is easily accessible
+  and properly organized. The API provides a flexible and customizable way to
+  optimize the user experience within Jira and improve workflow efficiency.
 
 ---

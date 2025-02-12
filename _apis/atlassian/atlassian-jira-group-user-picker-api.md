@@ -11,7 +11,15 @@ properties:
       https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-group-and-user-picker/
     type: Documentation
 description: >-
-  This resource represents a list of users and a list of groups. Use it to
-  obtain the details to populate user and group picker suggestions list.
+  The Atlassian Jira Group User Picker API is a feature that allows users to
+  easily search for and select multiple users within a specified group in Jira
+  software. This API provides a convenient way for admins and users to quickly
+  locate and add group members to projects, issues, and other tasks within Jira.
+  By simplifying the process of selecting users from a specific group, this API
+  helps streamline collaboration and communication among team members, promoting
+  efficiency and productivity in project management workflows. With the Jira
+  Group User Picker API, users can easily identify and involve the right
+  individuals in their Jira projects, ensuring that tasks are delegated
+  appropriately and progress is smoothly monitored and tracked.
 
 ---

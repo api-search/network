@@ -21,7 +21,14 @@ properties:
       https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-jira-settings/
     type: Documentation
 description: >-
-  This resource represents various settings in Jira. Use it to get and update
-  Jira settings and properties.
+  Atlassian Jira Configuration API provides developers with a way to automate
+  the configuration of Jira Software instances. This API allows users to create,
+  update, and delete configuration settings, such as issue types, workflows,
+  screens, and custom fields. By utilizing the Jira Configuration API,
+  developers can streamline the process of setting up Jira instances and ensure
+  consistency across multiple projects. This API enables teams to more
+  effectively manage their Jira configuration, saving time and reducing the risk
+  of errors. Ultimately, the Jira Configuration API empowers users to customize
+  their Jira instance to best suit their specific needs and workflows.
 
 ---

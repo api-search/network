@@ -17,10 +17,16 @@ properties:
       https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-project-permission-schemes/
     type: Documentation
 description: >-
-  This resource represents permission schemes for a project. Use this resource
-  to get details of a project's issue security levels available to the calling
-  user, get the permission scheme associated with the project or assign
-  different permission scheme to the project, get details of a project's issue
-  security scheme.
+  The Atlassian Jira Permission Scheme API is a powerful tool that allows users
+  to customize and manage permission schemes within the Jira software platform.
+  With this API, users can create, assign, update, and delete permission schemes
+  to control who has access to specific features and functionalities within
+  their Jira projects. This API enables users to define granular permission
+  settings for different user groups, roles, and project types, ensuring that
+  only authorized individuals have the appropriate level of access to
+  confidential information and critical project resources. Through the Atlassian
+  Jira Permission Scheme API, users can streamline the process of managing
+  permissions, improve security controls, and enhance collaboration among team
+  members working on Jira projects.
 
 ---

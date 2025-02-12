@@ -15,9 +15,15 @@ properties:
       https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-project-categories/
     type: Documentation
 description: >-
-  This resource represents project categories. Use it to create, update, and
-  delete project categories as well as obtain a list of all project categories
-  and details of individual categories. For more information on managing project
-  categories, see Adding, assigning, and deleting project categories.
+  The Atlassian Jira Project Category API is a tool that allows users to manage
+  project categories within Jira software, a popular project management
+  platform. This API provides functionality for creating, updating, and deleting
+  project categories, as well as retrieving information about existing
+  categories. By using the Jira Project Category API, users can organize their
+  projects into logical groupings, making it easier to track and manage tasks
+  across different teams and departments. This API offers a streamlined way to
+  customize project categories based on specific organizational needs, helping
+  users to effectively structure their projects for greater efficiency and
+  organization.
 
 ---

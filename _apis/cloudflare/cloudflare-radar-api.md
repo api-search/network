@@ -1,4 +1,5 @@
 ---
+aid: cloudflare:cloudflare-radar-api
 name: Cloudflare Radar API
 tags:
   - Annotations

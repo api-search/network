@@ -36,9 +36,15 @@ properties:
   - url: openapi/verify-openapi-original.yml
     type: OpenAPI
 description: >-
-  Set up SMS or voice verifications to quickly authenticate users, fight fraud,
-  and protect user accounts. As part of Twilio's account security offerings, the
-  Twilio Verify API makes it simple to add user verification to your web
-  application.
+  Twilio Verify API is a powerful tool that enables developers to integrate
+  phone verification capabilities into their applications with ease. By
+  leveraging the API, developers can ensure that users are who they say they are
+  by sending verification codes via SMS or voice calls. This helps to reduce
+  fraud and increase security on platforms where user verification is crucial.
+  Additionally, the Twilio Verify API offers customizable options for developers
+  to tailor the verification process to their specific needs, making it a
+  flexible and user-friendly solution for businesses of all sizes. Overall, the
+  Twilio Verify API streamlines the user verification process, enhances security
+  measures, and provides a seamless experience for both developers and users.
 
 ---

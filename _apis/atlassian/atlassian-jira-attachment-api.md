@@ -24,9 +24,13 @@ properties:
       https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-issue-attachments/
     type: Documentation
 description: >-
-  This resource represents issue attachments and the attachment settings for
-  Jira. Use it to get the metadata for an attachment, delete an attachment, and
-  view the metadata for the contents of an attachment. Also, use it to get the
-  attachment settings for Jira.
+  The Atlassian Jira Attachment API is a powerful tool that allows users to
+  interact with attachments in Jira. This API enables users to upload new
+  attachments, retrieve existing attachments, and delete attachments as needed.
+  It also provides functionalities to update metadata associated with
+  attachments, such as file name, description, and author. With the Atlassian
+  Jira Attachment API, users can seamlessly manage and organize all relevant
+  files and documents within their Jira projects, improving collaboration and
+  productivity among team members.
 
 ---

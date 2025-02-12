@@ -15,6 +15,14 @@ properties:
     type: OpenAPI
   - url: https://doc.bunq.com/
     type: Documentation
-description: Used to retrieve the raw content of an annual overview.
+description: >-
+  The Bunq Export Annual Overview API is a tool that allows users to access and
+  download detailed financial information from their Bunq accounts in a
+  convenient and streamlined manner. This API provides users with the ability to
+  pull their annual financial data, including income, expenses, and savings, and
+  export it into various file formats for easy analysis and tracking. By
+  utilizing this API, individuals and businesses can gain valuable insights into
+  their financial behaviors and make informed decisions to improve their
+  financial health and stability.
 
 ---

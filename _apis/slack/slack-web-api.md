@@ -1,9 +1,7 @@
 ---
 aid: slack:slack-web-api
 name: Slack Web API
-tags:
-  - Messaging
-  - Chat
+tags: []
 contact:
   - FN: Support
     url: https://api.slack.com/support

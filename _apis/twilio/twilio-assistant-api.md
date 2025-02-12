@@ -29,7 +29,15 @@ properties:
   - url: openapi/assistant-openapi-original.yml
     type: OpenAPI
 description: >-
-  Twilio AI Assistants are an opinionated framework to build and host
-  conversational AI Assistants for your customer-facing use cases.
+  The Twilio Assistant API is designed to help businesses create conversational
+  AI interfaces that enable customers to interact with applications through
+  natural language. The API uses machine learning and natural language
+  processing to understand and respond to user queries, allowing for
+  personalized and automated customer interactions. By integrating the Twilio
+  Assistant API into their products and services, businesses can provide more
+  intuitive and efficient customer service experiences, automate routine tasks,
+  and gather valuable insights from customer interactions. Overall, the Twilio
+  Assistant API offers businesses a powerful tool for improving customer
+  engagement and enhancing the user experience.
 
 ---

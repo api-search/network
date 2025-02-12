@@ -14,8 +14,13 @@ properties:
       https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-tasks/
     type: Documentation
 description: >-
-  This resource represents a long-running asynchronous tasks. Use it to obtain
-  details about the progress of a long-running task or cancel a long-running
-  task.
+  The Atlassian Jira Task API is a comprehensive tool that allows users to
+  efficiently manage and track tasks within their projects. With this API, users
+  can create, update, and delete tasks, as well as assign tasks to specific team
+  members, set due dates, and track progress. Additionally, the API provides
+  features for organizing tasks into categories, prioritizing tasks, and
+  generating reports on task completion and project status. Overall, the
+  Atlassian Jira Task API streamlines task management processes and helps teams
+  collaborate effectively to achieve project goals.
 
 ---

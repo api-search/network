@@ -10,6 +10,13 @@ properties:
   - url: >-
       https://developer.atlassian.com/cloud/confluence/rest/v1/api-group-content-labels/
     type: Documentation
-description: Provides the ability to label content across Confluence.
+description: >-
+  The Atlassian Confluence Label API is a tool that allows users to
+  programmatically manage labels within their Confluence pages. Labels are
+  keywords or tags that can be added to pages to categorize and organize
+  content. With the Label API, users can add, remove, or update labels on pages,
+  as well as retrieve information about which labels are applied to a specific
+  page. This API simplifies the process of managing labels, making it easier for
+  users to organize and find content within their Confluence spaces.
 
 ---

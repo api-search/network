@@ -1,4 +1,5 @@
 ---
+aid: cloudflare:cloudflare-accounts-api
 name: Cloudflare Accounts API
 tags:
   - Accounts

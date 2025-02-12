@@ -16,8 +16,14 @@ properties:
       https://developer.atlassian.com/cloud/confluence/rest/v1/api-group-long-running-task/
     type: Documentation
 description: >-
-  Returns information about all active long-running tasks (e.g. space export),
-  such as how long each task has been running and the percentage of each task
-  that has completed.
+  The Atlassian Confluence Longtask API is a tool that allows users to create
+  and manage long-running tasks within the Confluence platform. This API enables
+  users to track the progress of complex tasks, such as data processing, batch
+  operations, or report generation, by providing status updates, error handling,
+  and notifications. With the Longtask API, users can set up paged results,
+  cancel and restart tasks, and define custom timeout options to ensure
+  efficient task management. By integrating this API into their workflows, teams
+  can streamline their processes, improve productivity, and ensure the
+  successful completion of time-consuming tasks in Confluence.
 
 ---

@@ -18,13 +18,15 @@ properties:
   - url: >-
       https://developer.atlassian.com/cloud/jira/platform/getting-started-with-connect/
     type: Documentation
-description: >+
-  Connect is a development framework for extending Atlassian cloud products.
-  Connect gives you control over the tech stack, infrastructure, and integration
-  with Atlassian Cloud products. You determine your security implementation and
-  authentication with external cloud providers, such as AWS, Google Cloud, or
-  Heroku. It handles discovery, installation, authentication, and seamless
-  integration into the user interface.
-
+description: >-
+  The Atlassian Jira Connect App API is a powerful tool that allows developers
+  to create custom integrations between Jira and other apps or services. This
+  API enables seamless communication between Jira and external systems, enabling
+  users to access and update Jira data from within their preferred tools. By
+  leveraging the Jira Connect App API, developers can streamline workflows,
+  automate tasks, and improve collaboration across different platforms.
+  Additionally, this API provides a secure and reliable way to extend Jira's
+  functionality, making it a valuable asset for teams looking to enhance their
+  project management and issue tracking capabilities.
 
 ---

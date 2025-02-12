@@ -11,9 +11,14 @@ properties:
       https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-myself/
     type: Documentation
 description: >-
-  This resource represents information about the current user, such as basic
-  details, group membership, application roles, preferences, and locale. Use it
-  to get, create, update, and delete (restore default) values of the user's
-  preferences and locale.
+  The Atlassian Jira Myself API is a powerful tool that allows users to access
+  and update their own information within the Jira software platform. This API
+  enables users to view and edit their personal profile information, such as
+  contact details, preferences, and account settings. Additionally, users can
+  use the Jira Myself API to manage their assigned tasks, projects, and issues,
+  providing a seamless and efficient way to stay organized and productive within
+  the Jira system. With the flexibility and accessibility of the Jira Myself
+  API, users can easily customize their experience and streamline their workflow
+  within the Jira software platform.
 
 ---

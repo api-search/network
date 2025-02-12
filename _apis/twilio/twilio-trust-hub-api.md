@@ -27,10 +27,14 @@ properties:
   - url: openapi/trust-hub-openapi-original.yml
     type: OpenAPI
 description: >-
-  Twilio is launching a new KYC platform that will enable Twilio to attach a
-  trust level to customers, allowing them to gain access to advanced
-  communication services. With our advanced vetting process with
-  industry-leading accuracy rates, Twilio promises to authorize customers within
-  24 hours of submitting their profile.
+  Twilio Trust Hub API is a powerful tool that allows businesses to build trust
+  with their users by providing a secure and reliable communication platform.
+  This API enables companies to verify and protect their customers' identities,
+  prevent fraudulent activities, and enhance data security. By leveraging Twilio
+  Trust Hub API, businesses can authenticate users through two-factor
+  authentication, implement robust security measures, and ensure compliance with
+  data privacy regulations. Ultimately, this API helps businesses establish
+  trust with their users, improve customer loyalty, and safeguard sensitive
+  information effectively.
 
 ---

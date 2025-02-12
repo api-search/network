@@ -13,7 +13,6 @@ properties:
   - url: openapi/linkedin-compliance-events.yml
     type: OpenAPI
   - url: >-
-
       https://www.postman.com/linkedin-developer-apis/workspace/linkedin-compliance-solutions/overview
     type: Postman Workspace
 description: |-

@@ -24,9 +24,14 @@ properties:
   - url: openapi/super-sim-openapi-original.yml
     type: OpenAPI
 description: >-
-  Twilio IoT's Super SIM API empowers you to manage and deploy massive fleets of
-  IoT devices around the world. Using this REST API, you can activate and
-  deactivate Super SIMs, control the capabilities of individual Super SIMs or
-  groups of Super SIMs, send machine-to-machine (M2M) messages, and query usage.
+  The Twilio Super SIM API is a powerful tool that enables developers to easily
+  provision and manage SIM cards for cellular devices. With this API, developers
+  can programmatically activate, deactivate, and modify SIM cards, as well as
+  monitor their data usage and set custom pricing plans. This allows for
+  seamless connectivity across multiple networks and countries, making it ideal
+  for IoT devices, fleet management, and other applications that require
+  reliable, global cellular connectivity. With the Twilio Super SIM API,
+  developers can easily integrate cellular connectivity into their applications
+  and scale their deployments with ease.
 
 ---

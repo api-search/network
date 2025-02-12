@@ -1,4 +1,5 @@
 ---
+aid: cloudflare:cloudflare-zones-api
 name: Cloudflare Zones API
 tags:
   - Accounts

@@ -15,9 +15,14 @@ properties:
       https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-issue-custom-field-options/
     type: Documentation
 description: >-
-  This resource represents custom issue field select list options created in
-  Jira or using the REST API. This resource supports the following field types
-  Checkboxes, Radio Buttons, Select List (single choice), Select List (multiple
-  choices), Select List (cascading).
+  The Atlassian Jira Custom Field Option API allows users to create and manage
+  custom field options within their Jira software. This API provides developers
+  with the ability to programmatically add, update, delete, and retrieve custom
+  field options for specific Jira projects. By using this API, users can tailor
+  their Jira software to meet the unique needs of their team or organization by
+  adding custom field options that align with their project requirements. This
+  API streamlines the process of managing custom field options, making it easier
+  for users to customize their Jira software to best suit their specific project
+  management needs.
 
 ---

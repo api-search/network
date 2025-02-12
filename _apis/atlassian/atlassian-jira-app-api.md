@@ -17,7 +17,14 @@ properties:
       https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-issue-custom-field-values--apps-/
     type: Documentation
 description: >-
-  This resource represents the values of custom fields added by Forge apps. Use
-  it to update the value of a custom field on issues.
+  The Atlassian Jira App API is a powerful tool that allows developers to
+  integrate and customize their Jira software to meet their specific needs. With
+  this API, users can automate tasks, create new features, and enhance the
+  overall functionality of their Jira software. The API provides access to
+  Jira's core functionality, such as issue tracking, project management, and
+  collaboration tools, allowing developers to build custom solutions that
+  streamline workflows and improve productivity. By leveraging the Atlassian
+  Jira App API, users can tailor their Jira software to match their unique
+  requirements and drive better outcomes for their projects.
 
 ---

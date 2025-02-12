@@ -15,11 +15,14 @@ properties:
   - url: https://developer.atlassian.com/server/jira/platform/webhooks/
     type: Documentation
 description: >-
-  A webhook is a user-defined callback over HTTP. You can use Jira webhooks to
-  notify your app or web application when certain events occur in Jira. For
-  example, you might want to alert your remote application when an issue is
-  updated or when sprint is started. Using a webhook to do this means that your
-  remote application doesn't have to periodically poll Jira (via the REST APIs)
-  to determine whether changes have occurred.
+  The Atlassian Jira Webhook API is a tool that allows users to automate and
+  streamline their workflow by receiving real-time notifications and updates
+  from Jira. By setting up webhooks, users can specify which events and actions
+  they want to be notified about, such as changes to issues, new comments, or
+  updates to project boards. This automation capability enhances collaboration
+  and communication within teams, improves productivity, and helps users stay
+  informed and up-to-date on project progress. Additionally, the Jira Webhook
+  API makes it easier to integrate Jira with other tools and services, creating
+  a more seamless and efficient workflow experience.
 
 ---

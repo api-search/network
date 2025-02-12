@@ -19,8 +19,15 @@ properties:
       https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-issue-notification-schemes/
     type: Documentation
 description: >-
-  This resource represents notification schemes, lists of events and the
-  recipients who will receive notifications for those events. Use it to get
-  details of a notification scheme and a list of notification schemes.
+  The Atlassian Jira Notification Scheme API provides developers with the
+  ability to programmatically manage notification schemes within Jira software.
+  This API allows users to create, update, and delete notification schemes, as
+  well as associate them with specific projects and issue types. By utilizing
+  this API, developers can streamline the process of configuring and customizing
+  notification settings for their projects, ensuring that users receive timely
+  and relevant notifications about changes and updates within the system.
+  Additionally, the Notification Scheme API enables integration with other tools
+  and systems, providing a seamless experience for Jira users and improving
+  overall project management efficiency.
 
 ---

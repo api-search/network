@@ -29,6 +29,14 @@ properties:
     type: OpenAPI
   - url: https://developer.atlassian.com/cloud/confluence/rest/v1/api-group-space/
     type: Documentation
-description: Used to manage all of the Confluence spaces for an account.
+description: >-
+  The Atlassian Confluence Space API allows users to interact with and manage
+  their Confluence spaces programmatically. This API provides developers with a
+  set of tools to retrieve, create, update, and delete content within their
+  Confluence spaces. By using the Space API, users can automate tasks,
+  streamline workflows, and integrate Confluence with other tools and
+  applications. With the Space API, users can easily access and manipulate the
+  content within their Confluence spaces, making it a powerful tool for
+  enhancing collaboration and productivity within organizations.
 
 ---

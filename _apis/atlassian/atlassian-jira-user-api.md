@@ -37,9 +37,15 @@ properties:
       https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-users/
     type: Documentation
 description: >-
-  This resource represent users. Use it to get, get a list of, create, and
-  delete users, get, set, and reset a user's default issue table columns, get a
-  list of the groups the user belongs to, and get a list of user account IDs for
-  a list of usernames or user keys.
+  The Atlassian Jira User API is a tool designed to manage and interact with
+  user data within the Jira software development platform. This API allows users
+  to access and update information related to user accounts, such as usernames,
+  email addresses, and display names. It also provides functionality for
+  creating and managing user groups, enabling administrators to organize and
+  assign permissions to users more efficiently. Additionally, the API supports
+  functions for retrieving user activity logs, tracking user actions, and
+  auditing user permissions within Jira. By leveraging the Jira User API,
+  organizations can streamline user management processes and enhance security
+  measures within their Jira instance.
 
 ---

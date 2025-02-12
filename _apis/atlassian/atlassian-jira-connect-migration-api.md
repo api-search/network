@@ -25,12 +25,15 @@ properties:
   - url: https://developer.atlassian.com/cloud/jira/platform/connect-api-migration/
     type: Documentation
 description: >-
-  This Atlassian Connect feature provide a mechanism for apps to signal
-  readiness for new API behaviors as well as selectively enrol during the
-  introduction / deprecation period for the purposes of testing. Development of
-  this mechanism was motivated by the introduction of API changes that are not
-  backward compatible (e.g. the removal of legacy user references from our
-  public cloud REST APIs). Such changes will break existing apps that do not yet
-  support the new API version.
+  Atlassian Jira Connect Migration API is a tool designed to seamlessly transfer
+  data and configurations from one Jira Cloud instance to another. This API
+  allows users to migrate their projects, issues, users, and other relevant data
+  between Jira instances in a quick and efficient manner. By leveraging this
+  API, organizations can easily consolidate multiple Jira instances, upgrade to
+  new versions, or move their data to a different environment while minimizing
+  downtime and ensuring data integrity. The Jira Connect Migration API
+  simplifies the migration process, making it easier for teams to effectively
+  manage their projects and collaborate efficiently across different Jira
+  instances.
 
 ---

@@ -13,10 +13,15 @@ properties:
     type: OpenAPI
   - url: https://developer.atlassian.com/server/framework/atlassian-sdk/audit/
     type: Documentation
-description: >+
-  Atlassian Audit (Advanced Auditing for DC customers) is a cross-product
-  feature available in Atlassian DC products (Bitbucket, Confluence, and Jira)
-  which is responsible for storing and retrieving audited events.
-
+description: >-
+  The Atlassian Jira Auditing API allows users to track and monitor all changes
+  made within their Jira instance. This includes modifications to issues,
+  projects, users, and configuration settings. By enabling auditing,
+  organizations can ensure transparency, accountability, and compliance with
+  regulatory requirements. The API also provides detailed logs and reports that
+  can be used to investigate security incidents, troubleshoot errors, and
+  prevent unauthorized access. Overall, the Jira Auditing API helps
+  organizations maintain a secure and well-documented environment for their
+  project management activities.
 
 ---

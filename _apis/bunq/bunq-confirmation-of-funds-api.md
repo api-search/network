@@ -13,6 +13,16 @@ properties:
     type: OpenAPI
   - url: https://doc.bunq.com/
     type: Documentation
-description: Used to confirm availability of funds on an account.
+description: >-
+  Bunq Confirmation Of Funds API is a service that allows businesses to verify
+  the availability of funds in a customer's account before processing a payment.
+  This helps to reduce the risk of insufficient funds and associated fees, as
+  well as providing peace of mind for both the business and the customer. By
+  using this API, businesses can ensure that transactions will go through
+  smoothly and efficiently, enhancing the overall customer experience.
+  Additionally, the API can help to prevent fraud by confirming the legitimacy
+  of the funds being used for a transaction. Overall, Bunq Confirmation Of Funds
+  API is a valuable tool for businesses looking to streamline their payment
+  processes and improve financial security.
 
 ---

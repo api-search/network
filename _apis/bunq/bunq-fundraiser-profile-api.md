@@ -13,6 +13,15 @@ properties:
     type: OpenAPI
   - url: https://doc.bunq.com/
     type: Documentation
-description: The /me profile for the Bunq user.
+description: >-
+  The Bunq Fundraiser Profile API is a tool that enables organizations and
+  individuals to create and manage fundraising campaigns on the Bunq platform.
+  With this API, users can easily set up profiles for their fundraising efforts,
+  customize them with images and descriptions, and track their progress in
+  real-time. The API also provides functionality for accepting donations,
+  managing donor information, and generating reporting and analytics to help
+  users optimize their campaigns. By using the Bunq Fundraiser Profile API,
+  fundraisers can streamline the process of raising money for their causes and
+  reach a wider audience of potential donors.
 
 ---

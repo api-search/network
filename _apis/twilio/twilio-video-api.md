@@ -22,9 +22,15 @@ properties:
   - url: openapi/video-openapi-original.yml
     type: OpenAPI
 description: >-
-  Twilio Video is a programmable real-time communications platform that allows
-  you to add video chat functionality to your web, iOS, and Android
-  applications. The platform provides APIs, SDKs, and helper tools to capture,
-  distribute, record, and render high quality audio and video applications.
+  Twilio Video API is a powerful tool that enables developers to integrate
+  high-quality video calling and conferencing capabilities into their
+  applications. With this API, users can easily create and manage video chat
+  sessions, enabling real-time communication among multiple participants. The
+  API provides a range of features, including video and audio streaming, screen
+  sharing, and recording capabilities, all of which can be customized to suit
+  specific use cases. Additionally, Twilio Video API offers robust security
+  measures, ensuring that all video calls are encrypted and protected from
+  unauthorized access. Overall, Twilio Video API empowers developers to create
+  seamless and engaging video communication experiences for their users.
 
 ---

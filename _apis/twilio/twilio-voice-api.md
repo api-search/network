@@ -30,10 +30,15 @@ properties:
   - url: openapi/voice-openapi-original.yml
     type: OpenAPI
 description: >-
-  Build a voice experience that you can quickly scale and modify with a wide
-  array of customization options and resources, like our Voice SDK. Then, add on
-  features like Interactive Voice Response (IVR), Voice Intelligence, voice
-  recording and speech recognition to create an experience that you and your
-  customers will appreciate.
+  Twilio Voice API is a communication service that allows developers to easily
+  integrate voice calling functionality into their applications. With the Twilio
+  Voice API, developers can make and receive phone calls, create interactive
+  voice response systems, and implement features like call recording and
+  transcription. The API provides a simple and reliable way to connect users
+  through voice calls, enabling businesses to deliver personalized customer
+  service experiences and streamline communication processes. By leveraging the
+  Twilio Voice API, developers can enhance their applications with powerful
+  voice communication capabilities that drive engagement and enhance user
+  experiences.
 
 ---

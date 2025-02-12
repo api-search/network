@@ -19,9 +19,14 @@ properties:
   - url: openapi/trunking-openapi-original.yml
     type: OpenAPI
 description: >-
-  Twilio Elastic SIP Trunking is a cloud-based solution that provides
-  connectivity for IP-based communications infrastructure to connect to the
-  PSTN. Using Elastic SIP Trunking you can make and receive phone calls to the
-  rest of the world via any broadband internet connection.
+  Twilio Elastic SIP Trunking API is a powerful tool that allows businesses to
+  easily connect to the global network of Voice over Internet Protocol (VoIP)
+  providers. With this API, businesses can set up virtual phone numbers, make
+  and receive voice calls, send and receive messages, and manage call routing.
+  The Elastic SIP Trunking API is highly scalable and flexible, making it ideal
+  for businesses of all sizes. It also offers advanced features such as call
+  tracking, detailed call analytics, and support for multiple codecs. Overall,
+  the Twilio Elastic SIP Trunking API provides businesses with a cost-effective
+  and efficient solution for communication over the internet.
 
 ---

@@ -3,6 +3,7 @@ aid: zuplo:zuplo
 name: Zuplo
 tags:
   - Gateways
+baseURL: https://dev.zuplo.com
 humanURL: https://zuplo.com/
 properties:
   - url: https://zuplo.com/

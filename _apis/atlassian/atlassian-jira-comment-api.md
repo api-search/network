@@ -17,8 +17,14 @@ properties:
       https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-issue-comments/
     type: Documentation
 description: >-
-  This resource represents issue comments. Use it to get, create, update, and
-  delete a comment from an issue, get all comments from issue, get a list of
-  comments by comment ID.
+  The Atlassian Jira Comment API is a tool that allows users to interact with
+  comments on issues within Jira, a project management and issue tracking
+  software. This API enables users to create, update, delete, and retrieve
+  comments on issues, providing a seamless and efficient way to communicate and
+  collaborate on projects. By using the Comment API, users can easily add
+  context and feedback to issues, track progress, and keep stakeholders
+  informed. This API also allows for integration with other tools and systems,
+  making it a valuable resource for enhancing team communication and
+  productivity in Jira.
 
 ---

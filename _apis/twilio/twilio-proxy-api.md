@@ -17,7 +17,13 @@ properties:
   - url: openapi/proxy-openapi-original.yml
     type: OpenAPI
 description: >-
-  Twilio Proxy is exposed as a REST API that allows you to create
-  masked/anonymized text and voice conversations between users.
+  Twilio Proxy API is a communication platform that enables businesses to build
+  secure and scalable customer interactions. With this API, companies can create
+  virtual phone numbers and manage communication between customers and agents
+  without revealing personal contact information. Twilio Proxy API facilitates
+  seamless text messaging and voice calls, while also providing features such as
+  message history and analytics to track interactions. This tool ensures that
+  customer data is protected and enables businesses to deliver personalized and
+  efficient customer service.
 
 ---

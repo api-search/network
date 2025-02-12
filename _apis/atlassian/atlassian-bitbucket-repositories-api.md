@@ -1,6 +1,6 @@
 ---
 aid: atlassian:atlassian-bitbucket-repositories-api
-name: Atlassian BitBucket Repositories API
+name: Atlassian Bit Bucket Repositories API
 tags:
   - Repositories
   - Workspaces
@@ -150,9 +150,14 @@ properties:
       https://developer.atlassian.com/cloud/bitbucket/rest/api-group-repositories/
     type: Documentation
 description: >-
-  A Git repository is a virtual storage of your project. It allows you to save
-  versions of your code, which you can access when needed. The repo resource
-  allows you to access public repos, or repos that belong to a specific
-  workspace.
+  The Atlassian BitBucket Repositories API is a powerful tool that allows users
+  to interact with and manage repositories in their BitBucket accounts
+  programmatically. With this API, developers can create, update, and delete
+  repositories, as well as access and manipulate repository metadata such as
+  commit history, branches, and pull requests. Additionally, users can integrate
+  the API with other tools and services to automate various tasks, streamline
+  workflows, and improve collaboration within their development teams. Overall,
+  the BitBucket Repositories API provides a flexible and efficient way to manage
+  repositories and leverage the full potential of the BitBucket platform.
 
 ---

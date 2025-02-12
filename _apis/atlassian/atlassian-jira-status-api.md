@@ -14,7 +14,15 @@ properties:
       https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-workflow-statuses/
     type: Documentation
 description: >-
-  This resource represents issue workflow statuses. Use it to obtain a list of
-  all statuses associated with workflows and the details of a status.
+  The Atlassian Jira Status API is a tool that allows developers to retrieve the
+  current status of various projects and issues within the Jira project
+  management system. By utilizing this API, users can easily access real-time
+  updates on tasks, bugs, and other project-related information, in order to
+  track progress and collaborate effectively with team members. This API
+  provides a comprehensive view of the status of tasks, enabling users to
+  monitor and manage projects with greater efficiency and accuracy.
+  Additionally, the Atlassian Jira Status API can be integrated with other tools
+  and applications to streamline project workflows and enhance overall
+  productivity.
 
 ---

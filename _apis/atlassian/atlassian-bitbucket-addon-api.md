@@ -1,6 +1,6 @@
 ---
 aid: atlassian:atlassian-bitbucket-addon-api
-name: Atlassian BitBucket Addon API
+name: Atlassian Bit Bucket Addon API
 tags:
   - Addons
   - Applications
@@ -16,9 +16,15 @@ properties:
     type: OpenAPI
   - url: https://developer.atlassian.com/cloud/bitbucket/rest/api-group-addon/
     type: Documentation
-description: >+
-  The addon resource is intended to use used by Bitbucket Cloud Connect Apps,
-  and only supports JWT authentication.
-
+description: >-
+  The Atlassian BitBucket Addon API is a tool that allows developers to create
+  custom add-ons and integrations for the BitBucket platform. With this API,
+  developers can extend the functionality of BitBucket by building new features,
+  tools, and services that enhance the user experience. By leveraging the Addon
+  API, developers can create seamless integrations with other tools and
+  services, automate repetitive tasks, and streamline workflows within the
+  BitBucket platform. This API provides developers with the flexibility and
+  control to customize their BitBucket experience and create tailored solutions
+  that meet their specific needs.
 
 ---

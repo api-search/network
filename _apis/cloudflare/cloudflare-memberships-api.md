@@ -1,4 +1,5 @@
 ---
+aid: cloudflare:cloudflare-memberships-api
 name: Cloudflare Memberships API
 tags:
   - Memberships

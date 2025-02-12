@@ -52,6 +52,17 @@ properties:
   - url: >-
       https://developer.atlassian.com/cloud/jira/platform/rest/v2/api-group-issues/
     type: Documentation
-description: Used to managine issues for Jira resources.
+description: >-
+  The Atlassian Jira Issue API is a tool that allows users to interact with Jira
+  issues programmatically. By leveraging this API, developers can create,
+  update, and delete issues within the Jira platform, as well as retrieve and
+  manipulate data related to those issues. This enables teams to automate
+  various tasks, integrate Jira with other tools and systems, and streamline
+  their workflow. The Jira Issue API also provides access to valuable
+  information, such as issue details, comments, and attachments, making it
+  easier for users to manage and track their projects effectively. Overall, the
+  Atlassian Jira Issue API serves as a powerful resource for enhancing
+  collaboration, productivity, and project management capabilities within
+  organizations.
 
 ---

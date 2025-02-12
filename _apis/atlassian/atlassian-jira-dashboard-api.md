@@ -25,8 +25,15 @@ properties:
       https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-dashboards/
     type: Documentation
 description: >-
-  This resource represents dashboards. Use it to obtain the details of
-  dashboards as well as get, create, update, or remove item properties and
-  gadgets from dashboards.
+  The Atlassian Jira Dashboard API is a tool that allows users to customize and
+  enhance their Jira dashboards with additional features and functionalities. It
+  provides developers with the ability to create custom widgets, add external
+  data sources, and integrate third-party applications directly into their Jira
+  dashboards. This API empowers users to tailor their dashboards to meet their
+  specific needs, improve collaboration amongst team members, and increase
+  productivity by accessing real-time information and key metrics in a
+  centralized location. Overall, the Atlassian Jira Dashboard API enhances the
+  user experience and further optimizes workflow efficiency within the Jira
+  platform.
 
 ---

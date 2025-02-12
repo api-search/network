@@ -15,9 +15,13 @@ properties:
       https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-groups/
     type: Documentation
 description: >-
-  This resource represents groups of users. Use it to get, create, find, and
-  delete groups as well as add and remove users from groups. ([WARNING] The
-  standard Atlassian group names are default names only and can be edited or
-  deleted. 
+  The Atlassian Jira Groups API allows users to programmatically manage user
+  groups within the Jira software. With this API, developers can create, read,
+  update, and delete groups, as well as add or remove users from groups. This
+  API also enables administrators to assign permissions and access levels to
+  different groups, helping to organize and streamline user access and
+  permissions within Jira. By leveraging the Groups API, organizations can
+  automate group management processes, enhance security measures, and ensure
+  that users have the appropriate level of access to Jira resources.
 
 ---

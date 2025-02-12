@@ -22,6 +22,15 @@ properties:
   - url: >-
       https://developer.atlassian.com/cloud/confluence/rest/v1/api-group-content-body/
     type: Documentation
-description: Provides you the ability to manage the content body of Confluence pages.
+description: >-
+  The Atlassian Confluence Content Body API is a powerful tool that allows users
+  to create, edit, and manage content within their Confluence spaces
+  programmatically. With this API, developers can manipulate the body of a
+  Confluence page, including adding text, images, attachments, and other types
+  of media. This API enables users to streamline their content creation
+  processes, automate repetitive tasks, and integrate Confluence with other
+  systems and tools. By leveraging the Content Body API, teams can effectively
+  collaborate and communicate within their Confluence spaces, making it easier
+  to share knowledge and information.
 
 ---

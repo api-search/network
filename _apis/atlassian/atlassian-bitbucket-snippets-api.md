@@ -1,6 +1,6 @@
 ---
 aid: atlassian:atlassian-bitbucket-snippets-api
-name: Atlassian BitBucket Snippets API
+name: Atlassian Bit Bucket Snippets API
 tags:
   - Snippets
   - Workspaces
@@ -37,11 +37,16 @@ properties:
   - url: https://developer.atlassian.com/cloud/bitbucket/rest/api-group-snippets/
     type: Documentation
 description: >-
-  Snippets allow you share code segments or files with yourself, members of your
-  workspace, or the world. Like pull requests, repositories and workspaces, the
-  full set of snippets is defined by what the current user has access to. This
-  includes all snippets owned by any of the workspaces the user is a member of,
-  or snippets by other users that the current user is either watching or has
-  collaborated on (for instance by commenting on it).
+  The Atlassian BitBucket Snippets API allows users to create, manage, and share
+  code snippets within BitBucket repositories. With this API, developers can
+  easily store and organize reusable chunks of code, making it simpler to
+  collaborate with team members and access useful code snippets across different
+  projects. By utilizing the Snippets API, users can quickly search for and
+  retrieve specific pieces of code, making the development process more
+  efficient and effective. Additionally, this API enables users to keep track of
+  changes, comments, and feedback related to each snippet, promoting better
+  collaboration and knowledge sharing within development teams. Overall, the
+  Atlassian BitBucket Snippets API enhances the coding experience by providing a
+  streamlined and organized way to manage and share code snippets.
 
 ---

@@ -37,7 +37,14 @@ properties:
       https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-issue-search/
     type: Documentation
 description: >-
-  This resource represents various ways to search for issues. Use it to search
-  for issues with a JQL query and find issues to populate an issue picker.
+  The Atlassian Jira Jql API is a powerful tool that allows users to query and
+  manipulate their Jira data with ease. By using Jira Query Language (JQL),
+  users can create complex queries to filter, search, and retrieve specific
+  issues or data from their Jira instance. The API provides developers with the
+  ability to programmatically access and interact with Jira data, enabling them
+  to automate processes, build custom integrations, and extract valuable
+  insights from their Jira projects. With the Jira Jql API, users can unleash
+  the full potential of their Jira instance, streamline workflows, and improve
+  productivity within their teams.
 
 ---

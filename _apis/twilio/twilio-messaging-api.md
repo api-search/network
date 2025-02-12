@@ -35,7 +35,14 @@ properties:
   - url: openapi/messaging-openapi-original.yml
     type: OpenAPI
 description: >-
-  Send and receive messages via SMS, MMS, WhatsApp, Facebook Messenger, and more
-  through our Messaging and Conversations APIs.
+  Twilio Messaging API is a powerful tool that allows developers to easily
+  integrate text messaging functionality into their applications. With this API,
+  developers can send and receive SMS and MMS messages, as well as receive
+  delivery and read receipts. This enables businesses to engage with their
+  customers through personalized and timely text messages, such as appointment
+  reminders, notifications, and promotional campaigns. The Twilio Messaging API
+  also provides features like message queuing, status callbacks, and error
+  handling, making it a reliable and efficient solution for businesses looking
+  to enhance their communication capabilities.
 
 ---

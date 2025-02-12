@@ -21,6 +21,14 @@ properties:
   - url: >-
       https://developer.atlassian.com/cloud/confluence/rest/v1/api-group-inline-tasks
     type: Documentation
-description: Allows you to manage inline tasks across Confluence.
+description: >-
+  The Atlassian Confluence Inline Tasks API allows users to create, manage, and
+  track tasks directly within Confluence pages. With this API, users can easily
+  add tasks to their documents, specify due dates, assign tasks to specific team
+  members, and mark tasks as completed. This functionality helps teams stay
+  organized and on track by providing a centralized location for task management
+  within Confluence. Additionally, the API allows for automation and integration
+  with other tools, providing a seamless workflow for task management within the
+  Confluence platform.
 
 ---

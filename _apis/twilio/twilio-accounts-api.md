@@ -27,9 +27,13 @@ properties:
   - url: openapi/accounts-openapi-original.yml
     type: OpenAPI
 description: >-
-  When you first sign up with Twilio, you have just one account, your main
-  account. But you can also create more accounts... subaccounts are useful for
-  things like segmenting phone numbers and usage data for your customers and
-  controlling access to data.
+  The Twilio Accounts API enables developers to programmatically manage their
+  Twilio accounts, allowing them to create and configure subaccounts, retrieve
+  account information, and update account details. Through this API, developers
+  can automate account management processes, such as creating new subaccounts
+  for different projects or teams, adjusting account settings, and reviewing
+  account usage statistics. This API provides a seamless way for developers to
+  access and manipulate account information, making it easier to effectively
+  manage multiple Twilio accounts in a streamlined and automated manner.
 
 ---

@@ -13,6 +13,15 @@ properties:
     type: OpenAPI
   - url: https://doc.bunq.com/
     type: Documentation
-description: Managing the pinned certificates for a user.
+description: >-
+  The Bunq Certificate Pinning API is a security feature that helps protect
+  users from man-in-the-middle attacks by verifying the authenticity of the
+  server's SSL certificate. By implementing certificate pinning, Bunq ensures
+  that the app only communicates with servers that have a specific, pre-defined
+  SSL certificate, making it extremely difficult for attackers to intercept and
+  manipulate the data being sent and received. This extra layer of security
+  gives users peace of mind knowing that their sensitive information is being
+  transmitted securely and without the risk of being intercepted or tampered
+  with.
 
 ---

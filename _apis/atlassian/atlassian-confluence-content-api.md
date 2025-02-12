@@ -77,8 +77,13 @@ properties:
   - url: https://developer.atlassian.com/cloud/confluence/rest/v2/intro/
     type: Documentation
 description: >-
-  This is the reference for the Confluence Cloud REST API v2, with definitions
-  and performance intended to be an improvement over v1. You can click on the
-  meatball menu in the upper right to download the spec or Postman collection.
+  Atlassian Confluence Content API is a tool that allows users to access and
+  manipulate content within the Confluence platform programmatically. The API
+  enables developers to create, update, and delete pages, blog posts, comments,
+  attachments, and more within Confluence. This provides a way for organizations
+  to automate processes, integrate Confluence with other tools and systems, and
+  customize their content management workflows. By using the Confluence Content
+  API, users can streamline collaboration, improve productivity, and enhance the
+  overall user experience within the Confluence platform.
 
 ---

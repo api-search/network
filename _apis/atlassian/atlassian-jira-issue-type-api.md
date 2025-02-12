@@ -22,8 +22,14 @@ properties:
       https://developer.atlassian.com/cloud/jira/platform/rest/v2/api-group-issue-types/
     type: Documentation
 description: >-
-  This resource represents issues types. Use it to get, create, update, and
-  delete issue types, get all issue types for a user, get alternative issue
-  types, and set an avatar for an issue type.
+  The Atlassian Jira Issue Type API is a tool that allows users to interact with
+  and manage issue types within the Jira software development platform. This API
+  enables developers to create, update, and delete issue types, as well as
+  retrieve information about existing issue types. By integrating the Issue Type
+  API into their workflows, teams can effectively organize and categorize their
+  work, ensuring that tasks are properly identified and prioritized. With this
+  API, users can streamline their project management processes, improve
+  communication, and ultimately enhance productivity within their development
+  projects.
 
 ---

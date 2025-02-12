@@ -16,7 +16,15 @@ properties:
       https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-issue-field-configurations/
     type: Documentation
 description: >-
-  This resource represents issue field configurations. Use it to get, set, and
-  delete field configurations and field configuration schemes.
+  The Atlassian Jira Field Configuration API is a tool that allows users to
+  customize and manage the fields within their Jira projects. With this API,
+  users can create, update, or delete custom fields, as well as configure how
+  these fields behave and are displayed within their projects. This level of
+  customization allows users to tailor their Jira instance to their specific
+  needs and workflows, ensuring that they can track and manage their projects in
+  a way that is most beneficial to their team. Additionally, the Field
+  Configuration API helps to streamline and optimize the user experience within
+  Jira, making it easier for teams to collaborate and effectively manage their
+  work.
 
 ---

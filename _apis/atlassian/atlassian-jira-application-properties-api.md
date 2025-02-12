@@ -17,7 +17,15 @@ properties:
       https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-app-openapi
     type: Documentation
 description: >-
-  This resource represents app properties. Use it to store arbitrary data for
-  your Connect app.
+  The Atlassian Jira Application Properties API is a tool that allows users to
+  access and modify various configuration properties of their Jira application.
+  This API provides a way for developers to make changes to settings such as
+  application title, base URL, and email properties. By using the Application
+  Properties API, users can tailor their Jira instance to meet their specific
+  needs and preferences. Additionally, this API makes it easier for
+  administrators to manage and maintain their Jira application, ensuring that it
+  remains up-to-date and optimized for their workflow. Overall, the Atlassian
+  Jira Application Properties API is a valuable resource for customizing and
+  optimizing the Jira experience for individual users and teams.
 
 ---

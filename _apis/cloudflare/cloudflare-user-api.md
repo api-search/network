@@ -1,4 +1,5 @@
 ---
+aid: cloudflare:cloudflare-user-api
 name: Cloudflare User API
 tags:
   - Audit

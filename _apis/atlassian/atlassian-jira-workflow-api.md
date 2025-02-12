@@ -21,7 +21,14 @@ properties:
       https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-workflows/
     type: Documentation
 description: >-
-  This resource represents workflows. Use it to Get workflows, Create workflows,
-  Update workflows, Delete inactive workflows, Get workflow capabilities
+  The Atlassian Jira Workflow API provide developers with a way to interact with
+  and manipulate Jira workflows programmatically. This API enables users to
+  create, update, and delete workflow schemes, statuses, transitions, and other
+  elements within Jira. Developers can use the Workflow API to automate
+  repetitive tasks, integrate Jira workflows with other systems, and customize
+  workflows to fit their specific business processes. With this API, users have
+  more control and flexibility over how their workflows are configured and
+  managed in Jira, ultimately improving productivity and efficiency in their
+  development processes.
 
 ---

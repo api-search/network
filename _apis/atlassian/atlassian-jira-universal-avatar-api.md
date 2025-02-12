@@ -23,8 +23,13 @@ properties:
       https://developer.atlassian.com/cloud/jira/platform/rest/v2/api-group-avatars/
     type: Documentation
 description: >-
-  This resource represents system and custom avatars. Use it to obtain the
-  details of system or custom avatars, add and remove avatars from a project or
-  issue type, and obtain avatar images.
+  The Atlassian Jira Universal Avatar API allows developers to retrieve and
+  manage user avatars from Jira Cloud and Jira Server instances. This API allows
+  users to customize their avatars and provides a uniform way to access avatars
+  across different platforms. With this API, developers can easily integrate
+  avatars into their applications, providing a more personalized and engaging
+  user experience. By utilizing the Universal Avatar API, developers can
+  streamline avatar management and ensure consistency in avatar display across
+  various platforms and devices.
 
 ---

@@ -12,11 +12,15 @@ properties:
   - url: https://doc.bunq.com/
     type: Documentation
 description: >-
-  Avatars are public images used to represent you or your company. Avatars are
-  used to represent users, monetary accounts and cash registers. Avatars cannot
-  be deleted, only replaced. Avatars can be updated after uploading the image
-  you would like to use through AttachmentPublic. Using the
-  attachment_public_uuid which is returned you can update your Avatar. Avatars
-  used for cash registers and company accounts will be reviewed by bunq.
+  The Bunq Avatar API is a tool that allows users to easily add personalized
+  avatars to their Bunq accounts. By utilizing this API, individuals can create
+  unique and customizable avatars that represent their identity within the Bunq
+  banking platform. This feature enhances the user experience by adding a
+  personal touch to their accounts, making it easier to recognize their profile
+  and engage with other users. With the Bunq Avatar API, users can upload
+  images, customize their avatars, and easily update their profile pictures to
+  reflect their individual style and preferences. Overall, the Bunq Avatar API
+  enhances the visual representation of user profiles within the Bunq banking
+  platform, making it more personalized and user-friendly.
 
 ---
