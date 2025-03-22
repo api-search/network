@@ -347,7 +347,7 @@ input.addEventListener("keypress", function(event) {
 });   
 
 var querySearch = getQueryVariable('search');
-if(querySearch!=''){
+if(querySearch && querySearch!=''){
     console.log(querySearch);
     document.getElementById('api-search').value = querySearch;
     document.getElementById('search-tags').checked = true;
