@@ -303,6 +303,16 @@ Searching across <div id="total_networks" style="display: inline;">0</div> netwo
                 response.json().then(function(search) {	                        
                     let rows = '';
                     if(search.data.length > 0){
+                        if(search.data.length == 1){
+                            let i = 1;
+                            rows += '<tr>';
+                            rows += '<th scope="row"></th>';
+                            rows += '<td style="text-align:left; vertical-align: middle;">' + search.data[i].name + '</td>';
+                            rows += '<td style="width: 50px;"><a href="' + search.data[i].humanURL + '" target="_blank"><button type="button" class="btn btn-outline-primary">API</button></a></td>';
+                            rows += '<td style="width: 50px;"><a href="' + search.data[i].searchUrl + '" target="_blank"><button type="button" class="btn btn-outline-success">INFO</button></a></td>';
+                            rows += '<td style="width: 50px;"><a href="' + search.data[i].indexUrl + '" target="_blank"><button type="button" class="btn btn-outline-success">APIS.JSON</button></a></td>';
+                            rows += '</tr>';                            
+                        }
                         for (let i = 1; i < search.data.length; i++) {
 
                             rows += '<tr>';
