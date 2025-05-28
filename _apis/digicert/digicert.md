@@ -1,8 +1,9 @@
 ---
 aid: digicert:digicert
-name: Digicert
+name: Digicert API
 tags:
-  - API
+  - Certificates
+  - Encryption
 humanURL: https://dev.digicert.com
 properties:
   - url: https://dev.digicert.com

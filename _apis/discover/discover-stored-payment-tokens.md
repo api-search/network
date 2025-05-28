@@ -4,10 +4,18 @@ name: Discover Stored Payment Tokens
 tags: []
 humanURL: >-
   https://partner.discoverglobalnetwork.com/products/stored-payment-tokens?tab=overview
-properties: []
+properties:
+  - url: >-
+      https://www.discoverglobalnetwork.com/solutions/fraud-security/stored-payment-tokens/
+    type: Documentation
 description: >-
-  Securely offer the convenience of recurring billing and easy online payments.
-  Stored payment tokens exchange stored primary account numbers with
-  merchant-specific payment tokens.
+  Discover Stored Payment Tokens is a secure way for customers to store their
+  payment information for future use. By tokenizing the payment data, sensitive
+  information such as credit card numbers are replaced with a unique identifier,
+  reducing the risk of fraud and unauthorized access. This technology allows
+  customers to make quick and seamless transactions without having to re-enter
+  their payment details each time. Discover Stored Payment Tokens provides peace
+  of mind for both customers and merchants by ensuring that sensitive
+  information is protected and transactions are secure.
 
 ---

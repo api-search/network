@@ -2,7 +2,7 @@
 aid: eosio:eosio
 name: EOSIO
 tags:
-  - API
+  - Blockchain
 humanURL: ' https://developers.eos.io/'
 properties:
   - url: ' https://developers.eos.io/'

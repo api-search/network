@@ -4,7 +4,10 @@ name: American Express AMEX Account Connect
 tags: []
 humanURL: >-
   https://developer.americanexpress.com/products/nextgen-amex-account-connect/overview
-properties: []
+properties:
+  - url: >-
+      https://developer.americanexpress.com/products/nextgen-amex-account-connect/overview
+    type: Documentation
 description: >-
   AMEX Account Connect is a suite of APIs that enables eligible American Express
   Card Members to add their Cards on file with participating Partners, using

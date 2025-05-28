@@ -3,7 +3,9 @@ aid: akamai:akamai-identity-cloud-custom-provider-api
 name: Akamai Identity Cloud Custom Provider API
 tags: []
 humanURL: https://techdocs.akamai.com/identity-cloud-custom-provider/reference/api
-properties: []
+properties:
+  - url: https://techdocs.akamai.com/identity-cloud-custom-provider/reference/api
+    type: Documentation
 description: >-
   Social login and registration enables users to register and login to your
   website by using an account created on a social login identity provider (IdP)

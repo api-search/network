@@ -2,7 +2,9 @@
 aid: dify:dify
 name: Dify
 tags:
-  - API
+  - Backend-as-a-Service
+  - LLMOps
+  - Artificial Intelligence
 humanURL: ' https://docs.dify.ai/'
 properties:
   - url: ' https://docs.dify.ai/'

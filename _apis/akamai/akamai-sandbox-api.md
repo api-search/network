@@ -3,7 +3,9 @@ aid: akamai:akamai-sandbox-api
 name: Akamai Sandbox API
 tags: []
 humanURL: https://techdocs.akamai.com/sandbox/reference/api
-properties: []
+properties:
+  - url: https://techdocs.akamai.com/sandbox/reference/api
+    type: Documentation
 description: >-
   Resolving issues with your website and applications after a property is pushed
   to the content delivery network is inefficient and a drain on resources. With

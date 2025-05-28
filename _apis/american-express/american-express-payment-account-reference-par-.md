@@ -4,7 +4,10 @@ name: American Express Payment Account Reference (PAR)
 tags: []
 humanURL: >-
   https://developer.americanexpress.com/products/payment-account-reference-public/overview
-properties: []
+properties:
+  - url: >-
+      https://developer.americanexpress.com/products/payment-account-reference-public/overview
+    type: Documentation
 description: >-
   Payment Account Reference (PAR) provides an aggregated view of a Card Members
   account activity across different payment formats. Developed by EMV Co, it is

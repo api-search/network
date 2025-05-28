@@ -3,7 +3,9 @@ aid: akamai:akamai-aura-secret-management-api
 name: Akamai Aura Secret Management API
 tags: []
 humanURL: https://techdocs.akamai.com/aura-secret-mgmt/reference/api
-properties: []
+properties:
+  - url: https://techdocs.akamai.com/aura-secret-mgmt/reference/api
+    type: Documentation
 description: >-
   This API allows an LCDN operator to configure the AMC to communicate with an
   external secret store for storing TLS secrets. The API supports only secret

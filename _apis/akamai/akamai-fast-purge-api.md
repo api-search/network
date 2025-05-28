@@ -3,7 +3,9 @@ aid: akamai:akamai-fast-purge-api
 name: Akamai Fast Purge API
 tags: []
 humanURL: https://techdocs.akamai.com/purge-cache/reference/api
-properties: []
+properties:
+  - url: https://techdocs.akamai.com/purge-cache/reference/api
+    type: Documentation
 description: >-
   The Fast Purge API provides a programmatic interface for you to purge edge
   content. In this version, purge your own set of URLs or ARLs (Akamai resource

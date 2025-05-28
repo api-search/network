@@ -3,7 +3,9 @@ aid: akamai:akamai-global-traffic-management-api
 name: Akamai Global Traffic Management API
 tags: []
 humanURL: https://techdocs.akamai.com/gtm/reference/api
-properties: []
+properties:
+  - url: https://techdocs.akamai.com/gtm/reference/api
+    type: Documentation
 description: >-
   The Internet domain name system (DNS) is a distributed system. It allows
   computer programs to issue queries about domain names which the DNS returns

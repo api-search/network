@@ -2,11 +2,15 @@
 aid: braze:braze
 name: Braze
 tags:
-  - API
-humanURL: ' https://www.braze.com/docs/partners/message_personalization/location/radar'
+  - Locations
+  - Marketing
+  - Geofencing
+humanURL: https://www.braze.com/docs
 properties:
-  - url: ' https://www.braze.com/docs/partners/message_personalization/location/radar'
+  - url: https://www.braze.com/docs
     type: Documentation
+  - url: openapi/braze-openapi.yml
+    type: OpenAPI
 description: >-
   The Braze and Radar integration allows you to access sophisticated
   location-based campaign triggers and user profile enrichment with rich,

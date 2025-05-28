@@ -3,7 +3,9 @@ aid: akamai:akamai-reporting-api
 name: Akamai Reporting API
 tags: []
 humanURL: https://techdocs.akamai.com/reporting/reference/api
-properties: []
+properties:
+  - url: https://techdocs.akamai.com/reporting/reference/api
+    type: Documentation
 description: >-
   If youre using Akamai Intelligent Platform to deliver your content, you want
   to see how its performing. The Reporting API provides a wide range of reports,

@@ -4,7 +4,10 @@ name: Akamai Media Delivery Reports API
 tags: []
 humanURL: >-
   https://techdocs.akamai.com/media-delivery-rpts/reference/media-delivery-reports
-properties: []
+properties:
+  - url: >-
+      https://techdocs.akamai.com/media-delivery-rpts/reference/media-delivery-reports
+    type: Documentation
 description: >-
   Media Delivery Reports let you monitor and identify key trends of your Akamai
   delivery solutions, including Adaptive Media Delivery, Download Delivery,

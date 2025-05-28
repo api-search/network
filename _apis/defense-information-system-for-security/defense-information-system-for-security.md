@@ -3,7 +3,7 @@ aid: >-
   defense-information-system-for-security:defense-information-system-for-security
 name: Defense Information System for Security
 tags:
-  - API
+  - Federal Government
 humanURL: >-
   https://www.dcsa.mil/Systems-Applications/Defense-Information-System-for-Security-DISS
 properties:

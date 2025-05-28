@@ -10,8 +10,14 @@ properties:
     name: Visa Payment Account Reference Inquiry
     type: Documentation
 description: >-
-  PAR Inquiry delivers the capability to retrieve the PAR numeric linked to a
-  Primary Account Number (PAN) in real time. The input to PAR Inquiry is either
-  one PAN or one affiliated Token to a PAN
+  Visa Payment Account Reference Inquiry is a service that allows financial
+  institutions and merchants to access useful information about a customer's
+  Visa account. This tool provides real-time data on account status, balances,
+  transactions, and more, which enables businesses to efficiently process
+  payments and minimize fraud risk. By utilizing Visa Payment Account Reference
+  Inquiry, companies can securely verify customer information and ensure smooth,
+  hassle-free transactions. This service helps streamline the payment process
+  and enhance customer satisfaction, ultimately leading to improved business
+  operations and increased profitability.
 
 ---

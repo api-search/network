@@ -1,8 +1,10 @@
 ---
 aid: elastic:elastic
-name: Elastic
+name: Elastic API
 tags:
-  - API
+  - Search
+  - Analysis
+  - Visualizations
 humanURL: >-
   https://www.elastic.co/guide/en/elasticsearch/reference/current/security-api-get-role.html
 properties:

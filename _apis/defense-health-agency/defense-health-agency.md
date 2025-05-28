@@ -2,7 +2,7 @@
 aid: defense-health-agency:defense-health-agency
 name: Defense Health Agency
 tags:
-  - API
+  - Federal Government
 humanURL: https://health.mil/Reference-Center/DHA-Publications
 properties:
   - url: https://health.mil/Reference-Center/DHA-Publications

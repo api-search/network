@@ -3,7 +3,9 @@ aid: akamai:akamai-mfa-api
 name: Akamai MFA API
 tags: []
 humanURL: https://techdocs.akamai.com/mfa/reference/api
-properties: []
+properties:
+  - url: https://techdocs.akamai.com/mfa/reference/api
+    type: Documentation
 description: >-
   Akamai MFA provides strong secondary authentication to cloud, on-premises,
   web-based, SaaS, and IaaS applicationsin addition to your primary verification

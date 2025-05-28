@@ -3,7 +3,9 @@ aid: american-express:american-express-network-loyalty-platform
 name: American Express Network Loyalty Platform
 tags: []
 humanURL: https://developer.americanexpress.com/products/network-loyalty/overview
-properties: []
+properties:
+  - url: https://developer.americanexpress.com/products/network-loyalty/overview
+    type: Documentation
 description: >-
   The American Express Network Loyalty Platform (the R42 Platform) is a suite of
   APIs that offer real-time Application Programming Interfaces (APIs) to Issuers

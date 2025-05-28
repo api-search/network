@@ -3,7 +3,9 @@ aid: akamai:akamai-cp-codes-and-reporting-groups-api
 name: Akamai CP Codes and Reporting Groups API
 tags: []
 humanURL: https://techdocs.akamai.com/cp-codes/reference/api
-properties: []
+properties:
+  - url: https://techdocs.akamai.com/cp-codes/reference/api
+    type: Documentation
 description: >-
   The CP Codes and Reporting Groups API offers a programmatic interface to
   manage CP codes and reporting groups. It also details contracts and products

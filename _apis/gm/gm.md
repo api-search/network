@@ -1,11 +1,11 @@
 ---
 aid: gm:gm
-name: GM
+name: General   Motors
 tags:
-  - API
-humanURL: ' https://developer.gm.com/'
+  - Automobiles
+humanURL: https://developer.gm.com/
 properties:
-  - url: ' https://developer.gm.com/'
+  - url: https://developer.gm.com/
     type: Documentation
 description: >-
   You can reach customers in their cars using GMs powerful, in-vehicle platform.

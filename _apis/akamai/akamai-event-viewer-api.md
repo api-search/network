@@ -3,7 +3,9 @@ aid: akamai:akamai-event-viewer-api
 name: Akamai Event Viewer API
 tags: []
 humanURL: https://techdocs.akamai.com/event-viewer/reference/api
-properties: []
+properties:
+  - url: https://techdocs.akamai.com/event-viewer/reference/api
+    type: Documentation
 description: >-
   Event Viewer records events completed through Control Center that are
   available to site administrators, such as configuration changes, login

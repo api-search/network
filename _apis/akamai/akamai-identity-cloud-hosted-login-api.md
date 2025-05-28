@@ -3,7 +3,9 @@ aid: akamai:akamai-identity-cloud-hosted-login-api
 name: Akamai Identity Cloud Hosted Login API
 tags: []
 humanURL: https://techdocs.akamai.com/identity-cloud-hosted-login/reference/api
-properties: []
+properties:
+  - url: https://techdocs.akamai.com/identity-cloud-hosted-login/reference/api
+    type: Documentation
 description: >-
   The Hosted Login, OAuth 2.0, and OpenID Connect APIs represent your primary
   toolset for managing Hosted Login. Most Hosted Login management tasks can only

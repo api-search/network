@@ -1,14 +1,17 @@
 ---
 aid: fermyon:fermyon
-name: Fermyon
+name: Fermyon API
 tags:
-  - API
-humanURL: ' https://developer.fermyon.com/'
+  - WASM
+  - Compute
+  - Functions
+humanURL: https://developer.fermyon.com/
 properties:
-  - url: ' https://developer.fermyon.com/'
+  - url: https://developer.fermyon.com/
     type: Documentation
 description: >-
-  The simple, open source way to build and run apps powered by WebAssembly - the
-  next wave of cloud compute. 
+  Fermyon Wasm Functions is a multi-tenant, hosted, globally distributed engine
+  for serverless functions running on Akamai Cloud, the most distributed cloud
+  network.
 
 ---

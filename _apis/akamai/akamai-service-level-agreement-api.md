@@ -3,7 +3,9 @@ aid: akamai:akamai-service-level-agreement-api
 name: Akamai Service-Level Agreement API
 tags: []
 humanURL: https://techdocs.akamai.com/sla/reference/api
-properties: []
+properties:
+  - url: https://techdocs.akamai.com/sla/reference/api
+    type: Documentation
 description: >-
   The service-level agreement (SLA) API provides programmatic access to SLA test
   configurations and the resulting reports.SLA tests measure certain

@@ -3,7 +3,9 @@ aid: alchemy:alchemy-transfers-api
 name: Alchemy Transfers API
 tags: []
 humanURL: https://www.alchemy.com/transfers-api
-properties: []
+properties:
+  - url: properties/alchemy-transfers-api-openapi.yml
+    type: OpenAPI
 description: >-
   Alchemy Transfers API is a powerful tool that allows users to securely
   transfer assets and data between different platforms. With cutting-edge

@@ -4,7 +4,10 @@ name: Akamai API Keys and Traffic Management API
 tags: []
 humanURL: >-
   https://techdocs.akamai.com/key-traffic-mgmt/reference/api-keys-and-traffic-management-api
-properties: []
+properties:
+  - url: >-
+      https://techdocs.akamai.com/key-traffic-mgmt/reference/api-keys-and-traffic-management-api
+    type: Documentation
 description: >-
   Like API Keys and Traffic Management in Akamai Control Center, this API lets
   you create and manage API keys that serve as unique identifiers for API

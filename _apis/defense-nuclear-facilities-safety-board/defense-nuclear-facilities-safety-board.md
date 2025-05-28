@@ -3,7 +3,7 @@ aid: >-
   defense-nuclear-facilities-safety-board:defense-nuclear-facilities-safety-board
 name: Defense Nuclear Facilities Safety Board
 tags:
-  - API
+  - Federal Government
 humanURL: https://www.dnfsb.gov
 properties:
   - url: https://www.dnfsb.gov

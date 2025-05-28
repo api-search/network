@@ -3,7 +3,9 @@ aid: akamai:akamai-test-center-api
 name: Akamai Test Center API
 tags: []
 humanURL: https://techdocs.akamai.com/test-ctr/reference/api
-properties: []
+properties:
+  - url: https://techdocs.akamai.com/test-ctr/reference/api
+    type: Documentation
 description: >-
   Test Center allows you to test how configuration changes affect your web
   content on Akamai edge network. Prior to activation, you can check to make

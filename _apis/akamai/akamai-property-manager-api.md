@@ -3,7 +3,9 @@ aid: akamai:akamai-property-manager-api
 name: Akamai Property Manager API
 tags: []
 humanURL: https://techdocs.akamai.com/property-mgr/reference/api
-properties: []
+properties:
+  - url: https://techdocs.akamai.com/property-mgr/reference/api
+    type: Documentation
 description: >-
   The Property Manager API (PAPI) offers a programmatic interface to manage how
   Akamai edge servers process requests, responses, and objects served over the

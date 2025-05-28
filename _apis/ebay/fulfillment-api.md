@@ -1,7 +1,11 @@
 ---
 aid: ebay:fulfillment-api
-name: Fulfillment API
-tags: []
+name: eBay Fulfillment API
+tags:
+  - Auctions
+  - Products
+  - Commerce
+  - Fulfillment
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 baseURL: https://api.example.com
 humanURL: https://developer.ebay.com/api-docs/sell/fulfillment/overview.html
@@ -13,13 +17,14 @@ properties:
   - url: https://developer.ebay.com/api-docs/sell/fulfillment/release-notes.html
     type: Release Notes
 description: >-
-  The outcome of a buyer's eBay checkout process is an order. This API enables
-  sellers to manage the completion of an order in accordance with the payment
-  method and timing specified at checkout. The line items in the order are
-  grouped into one or more packages. As the seller addresses, handles, and ships
-  each package, the set of specifications for this process is known as a
-  fulfillment. Use the Fulfillment API to facilitate and monitor these
-  activities from the order to completion. Sellers' status on eBay depend partly
-  on their record of timely fulfillment.
+  eBay Fulfillment API is a service that allows sellers to outsource their order
+  fulfillment processing to eBay's network of warehouses and logistics
+  providers. By integrating with this API, sellers can automate the process of
+  managing and shipping their products, including storing inventory, picking and
+  packing orders, and coordinating shipping and delivery. This helps sellers
+  streamline their operations, improve efficiency, and provide a better overall
+  experience for their customers. Additionally, eBay Fulfillment API provides
+  real-time tracking and reporting capabilities, giving sellers full visibility
+  into the status of their orders and inventory levels.
 
 ---

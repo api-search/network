@@ -2,10 +2,10 @@
 aid: escape:escape
 name: Escape
 tags:
-  - API
-humanURL: https://escape.tech/blog/what-is-api-discovery-and-how-does-it-work/
+  - Security
+humanURL: https://docs.escape.tech/documentation/
 properties:
-  - url: https://escape.tech/blog/what-is-api-discovery-and-how-does-it-work/
+  - url: https://public.escape.tech/v1/
     type: Documentation
 description: >-
   API discovery is crucial as it simplifies seamless integration between systems

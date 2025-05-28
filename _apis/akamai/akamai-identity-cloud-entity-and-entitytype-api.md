@@ -3,7 +3,9 @@ aid: akamai:akamai-identity-cloud-entity-and-entitytype-api
 name: Akamai Identity Cloud Entity and EntityType API
 tags: []
 humanURL: https://techdocs.akamai.com/identity-cloud-entity/reference/api
-properties: []
+properties:
+  - url: https://techdocs.akamai.com/identity-cloud-entity/reference/api
+    type: Documentation
 description: >-
   Identity Cloud uses its own terminology when referring to user accounts and to
   the databases where user account information is stored. In Identity Cloud, the

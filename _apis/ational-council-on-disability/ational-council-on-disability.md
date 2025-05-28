@@ -1,8 +1,9 @@
 ---
 aid: ational-council-on-disability:ational-council-on-disability
-name: ational Council on Disability
+name: National Council on Disability
 tags:
-  - API
+  - Federal Government
+  - Disabilities
 humanURL: https://www.ncd.gov
 properties:
   - url: https://www.ncd.gov

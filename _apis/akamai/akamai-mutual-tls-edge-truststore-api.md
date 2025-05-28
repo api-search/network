@@ -3,7 +3,9 @@ aid: akamai:akamai-mutual-tls-edge-truststore-api
 name: Akamai Mutual TLS Edge Truststore API
 tags: []
 humanURL: https://techdocs.akamai.com/mtls-edge-truststore/reference/api
-properties: []
+properties:
+  - url: https://techdocs.akamai.com/mtls-edge-truststore/reference/api
+    type: Documentation
 description: >-
   You can use Mutual TLS Edge Truststore API to create, manage, and activate
   certificate (CA) sets needed to set up mutual authentication (mTLS) sessions

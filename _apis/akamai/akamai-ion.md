@@ -3,7 +3,9 @@ aid: akamai:akamai-ion
 name: Akamai Ion
 tags: []
 humanURL: https://techdocs.akamai.com/ion/docs/welcome-ion
-properties: []
+properties:
+  - url: https://techdocs.akamai.com/ion/docs/welcome-ion
+    type: Documentation
 description: >-
   Ion is a suite of intelligent performance optimizations and controls that help
   to deliver superior website and iOS or Android app experiences. It combines

@@ -4,7 +4,10 @@ name: Akamai Global Traffic Management Load Feedback API
 tags: []
 humanURL: >-
   https://techdocs.akamai.com/gtm-load-feedback/reference/global-traffic-management-load-feedback-api
-properties: []
+properties:
+  - url: >-
+      https://techdocs.akamai.com/gtm-load-feedback/reference/global-traffic-management-load-feedback-api
+    type: Documentation
 description: >-
   The Global Traffic Management Load Feedback API allows users to submit load
   data for a GTM domain in either JSON or XML format via POST, and to fetch the

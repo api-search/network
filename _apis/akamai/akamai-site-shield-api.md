@@ -3,7 +3,9 @@ aid: akamai:akamai-site-shield-api
 name: Akamai Site Shield API
 tags: []
 humanURL: https://techdocs.akamai.com/site-shield/reference/api
-properties: []
+properties:
+  - url: https://techdocs.akamai.com/site-shield/reference/api
+    type: Documentation
 description: >-
   The Site Shield API offers a programmatic interface that provides an
   additional layer of defense for your critical websites and web applications.

@@ -2,7 +2,7 @@
 aid: defense-logistics-agency:defense-logistics-agency
 name: Defense Logistics Agency
 tags:
-  - API
+  - Federal Government
 humanURL: https://www.dla.mil/Working-With-DLA/Applications
 properties:
   - url: https://www.dla.mil/Working-With-DLA/Applications

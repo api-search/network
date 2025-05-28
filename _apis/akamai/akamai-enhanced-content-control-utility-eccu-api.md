@@ -3,7 +3,9 @@ aid: akamai:akamai-enhanced-content-control-utility-eccu-api
 name: Akamai Enhanced Content Control Utility (ECCU) API
 tags: []
 humanURL: https://techdocs.akamai.com/eccu/reference/api
-properties: []
+properties:
+  - url: https://techdocs.akamai.com/eccu/reference/api
+    type: Documentation
 description: >-
   The Enhanced Content Control Utility (ECCU) is one of several supported Akamai
   purge interfaces. Use ECCU to specify the set of files to refresh on the edge

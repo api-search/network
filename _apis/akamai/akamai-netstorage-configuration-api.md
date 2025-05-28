@@ -3,7 +3,9 @@ aid: akamai:akamai-netstorage-configuration-api
 name: Akamai NetStorage Configuration API
 tags: []
 humanURL: https://techdocs.akamai.com/netstorage/reference/api
-properties: []
+properties:
+  - url: https://techdocs.akamai.com/netstorage/reference/api
+    type: Documentation
 description: >-
   NetStorage is a managed service that provides persistent, replicated storage
   of website content, including images, streaming media files, software,

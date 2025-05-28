@@ -2,7 +2,7 @@
 aid: delta-regional-authority:delta-regional-authority
 name: Delta Regional Authority
 tags:
-  - API
+  - Federal Government
 humanURL: www.dra.gov
 properties:
   - url: www.dra.gov

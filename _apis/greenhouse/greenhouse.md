@@ -2,7 +2,8 @@
 aid: greenhouse:greenhouse
 name: Greenhouse
 tags:
-  - API
+  - Candidates
+  - Testing
 humanURL: ' https://developers.greenhouse.io/assessment.html#introduction'
 properties:
   - url: ' https://developers.greenhouse.io/assessment.html#introduction'

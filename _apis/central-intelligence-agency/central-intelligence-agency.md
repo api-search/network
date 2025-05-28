@@ -2,7 +2,7 @@
 aid: central-intelligence-agency:central-intelligence-agency
 name: Central Intelligence Agency
 tags:
-  - API
+  - Federal Government
 humanURL: >-
   https://www.odni.gov/index.php/newsroom/press-releases/press-releases-2024/3784-odni...
 properties:

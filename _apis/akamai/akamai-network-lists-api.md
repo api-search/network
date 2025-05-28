@@ -3,7 +3,9 @@ aid: akamai:akamai-network-lists-api
 name: Akamai Network Lists API
 tags: []
 humanURL: https://techdocs.akamai.com/network-lists/reference/api
-properties: []
+properties:
+  - url: https://techdocs.akamai.com/network-lists/reference/api
+    type: Documentation
 description: >-
   The Network Lists API allows you to manage a common set of lists for use in
   various Akamai security products such as Kona Site Defender, Web App

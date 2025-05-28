@@ -3,7 +3,9 @@ aid: akamai:akamai-global-traffic-management-reporting-api
 name: Akamai Global Traffic Management Reporting API
 tags: []
 humanURL: https://techdocs.akamai.com/gtm-reporting/reference/api
-properties: []
+properties:
+  - url: https://techdocs.akamai.com/gtm-reporting/reference/api
+    type: Documentation
 description: >-
   The Traffic Management Reporting API provides read-only reports on GTMs real
   time statistics. Each call allows you to view traffic, liveness, direct

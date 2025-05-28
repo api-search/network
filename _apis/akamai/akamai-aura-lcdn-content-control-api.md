@@ -3,7 +3,9 @@ aid: akamai:akamai-aura-lcdn-content-control-api
 name: Akamai Aura LCDN Content Control API
 tags: []
 humanURL: https://techdocs.akamai.com/aura-lcdn-content-control/reference/api
-properties: []
+properties:
+  - url: https://techdocs.akamai.com/aura-lcdn-content-control/reference/api
+    type: Documentation
 description: >-
   This API allows the LCDN Operator or Content Provider to purge content on the
   Aura LCDN. Purging removes outdated or unwanted content. Content can be purged

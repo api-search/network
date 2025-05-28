@@ -2,7 +2,7 @@
 aid: defense-intelligence-agency:defense-intelligence-agency
 name: Defense Intelligence Agency
 tags:
-  - API
+  - Federal Government
 humanURL: >-
   https://www.dia.mil/News-Features/Articles/Article-View/Article/2926343/gamechanger...
 properties:

@@ -3,7 +3,9 @@ aid: akamai:akamai-alerts-api
 name: Akamai Alerts API
 tags: []
 humanURL: https://techdocs.akamai.com/alerts-app/reference/api
-properties: []
+properties:
+  - url: https://techdocs.akamai.com/alerts-app/reference/api
+    type: Documentation
 description: >-
   The Alerts API allows you to configure notifications about significant changes
   to your traffic based on continual tracking by Akamais network monitoring

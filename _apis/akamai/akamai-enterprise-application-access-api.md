@@ -3,7 +3,9 @@ aid: akamai:akamai-enterprise-application-access-api
 name: Akamai Enterprise Application Access API
 tags: []
 humanURL: https://techdocs.akamai.com/eaa-api/reference/api
-properties: []
+properties:
+  - url: https://techdocs.akamai.com/eaa-api/reference/api
+    type: Documentation
 description: >-
   Enterprise Application Access allows you to integrate data path protection,
   single sign-on, identity access, application security, and management

@@ -6,9 +6,15 @@ properties:
   - url: https://developer.siemens.com/dta/overview.html
     type: Documentation
 description: >-
-  With the Drivetrain Analyzer Cloud app and the
-  plug-and-play                    Connection Module IOT, you always have a
-  detailed overview of the                    current health state of your
-  system from different perspectives.            
+  Siemens Drivetrain Analyzer Cloud API is a powerful tool that allows users to
+  access and analyze data from their drivetrain systems remotely. This API
+  enables users to monitor the performance and efficiency of their drivetrains,
+  track maintenance schedules, and identify potential issues before they become
+  serious problems. By leveraging the cloud-based platform, users can easily
+  access real-time data, generate reports, and collaborate with team members to
+  optimize the performance of their drivetrain systems. The Siemens Drivetrain
+  Analyzer Cloud API provides a comprehensive solution for ensuring the
+  reliability and longevity of drivetrain systems in a convenient and
+  user-friendly manner.
 
 ---

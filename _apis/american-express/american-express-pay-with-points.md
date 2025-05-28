@@ -4,11 +4,17 @@ name: American Express Pay with Points
 tags: []
 humanURL: >-
   https://developer.americanexpress.com/products/global-pay-with-points/resources#readme
-properties: []
+properties:
+  - url: https://www.americanexpress.com/en-us/travel/how-to-pay-with-points/
+    type: Documentation
 description: >-
-  Pay with Points functions as a two-part API requiring:Call inquiry POST
-  /paywithpoints?pricing=true to retrieve the Card Members Point
-  balance.Complete the transaction if the Card Member chose to Pay with Points
-  by calling redemption POST /paywithpoints.
+  American Express Pay with Points allows cardholders to use the points they
+  have earned through their American Express Membership Rewards program to make
+  purchases at participating merchants. This feature provides flexibility and
+  convenience to cardholders, as they can choose to apply their points towards a
+  variety of expenses, such as travel, shopping, dining, and more. By utilizing
+  Pay with Points, cardholders have the opportunity to maximize the value of
+  their rewards by redeeming them for everyday purchases, making their American
+  Express card even more valuable.
 
 ---

@@ -3,7 +3,9 @@ aid: akamai:akamai-cloud-access-manager-api
 name: Akamai Cloud Access Manager API
 tags: []
 humanURL: https://techdocs.akamai.com/cloud-access-mgr/reference/api
-properties: []
+properties:
+  - url: https://techdocs.akamai.com/cloud-access-mgr/reference/api
+    type: Documentation
 description: >-
   The Cloud Access Manager (CAM) API connects the Akamai Intelligent Platform
   and your cloud provider. Use CAM to enable cloud origin authentication and

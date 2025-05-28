@@ -2,7 +2,7 @@
 aid: construction-monitor:construction-monitor
 name: Construction Monitor
 tags:
-  - API
+  - Construction
 humanURL: ' https://www.constructionmonitor.com/data'
 properties:
   - url: ' https://www.constructionmonitor.com/data'

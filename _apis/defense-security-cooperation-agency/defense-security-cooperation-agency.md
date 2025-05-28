@@ -2,7 +2,7 @@
 aid: defense-security-cooperation-agency:defense-security-cooperation-agency
 name: Defense Security Cooperation Agency
 tags:
-  - API
+  - Federal Government
 humanURL: https://www.dsca.mil
 properties:
   - url: https://www.dsca.mil

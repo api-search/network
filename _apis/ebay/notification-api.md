@@ -1,7 +1,11 @@
 ---
 aid: ebay:notification-api
-name: Notification API
-tags: []
+name: eBay Notification API
+tags:
+  - Auctions
+  - Products
+  - Commerce
+  - Notifications
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 baseURL: https://api.example.com
 humanURL: https://developer.ebay.com/api-docs/commerce/notification/overview.html
@@ -26,7 +30,14 @@ properties:
       https://developer.ebay.com/api-docs/commerce/notification/release-notes.html
     type: Release Notes
 description: >-
-  The eBay Notification API allows users to manage notifications using the
-  primary method and fields listed in the sections that follow.
+  eBay Notification API is a service offered by eBay that allows users to
+  receive real-time updates and notifications about their eBay account and
+  transactions. This API allows users to set up alerts for important events such
+  as items being sold, bids being placed, payments being made, and shipments
+  being sent. Users can customize the types of alerts they receive and how they
+  are delivered, such as through email, text message, or in-app notifications.
+  By using the eBay Notification API, users can stay informed and up-to-date on
+  their eBay activity, helping them to manage their account more effectively and
+  efficiently.
 
 ---

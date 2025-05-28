@@ -4,7 +4,9 @@ name: American Express API-based Payment Platform
 tags: []
 humanURL: >-
   https://developer.americanexpress.com/products/pay-with-bank-transfer-public/overview
-properties: []
+properties:
+  - url: https://developer.americanexpress.com/documentation
+    type: Documentation
 description: >-
   The American Express API-based Payment Platform allows eCommerce Sellers and
   Merchants to scale their business by integrating with the Open Banking enabled

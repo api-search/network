@@ -2,10 +2,10 @@
 aid: alibaba:alibaba
 name: Alibaba
 tags:
-  - API
-humanURL: ' https://www.alibabacloud.com'
+  - Cloud
+humanURL: https://api.alibabacloud.com/
 properties:
-  - url: ' https://www.alibabacloud.com'
+  - url: https://api.alibabacloud.com/
     type: Documentation
 description: >-
   Alibaba Cloud, founded in 2009, is a global leader in cloud computing and

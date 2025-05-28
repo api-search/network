@@ -3,7 +3,9 @@ aid: akamai:akamai-edge-dns-api-v2
 name: Akamai Edge DNS API v2
 tags: []
 humanURL: https://techdocs.akamai.com/edge-dns/reference/edge-dns-api
-properties: []
+properties:
+  - url: https://techdocs.akamai.com/edge-dns/reference/edge-dns-api
+    type: Documentation
 description: >-
   Welcome to Akamai Edge DNS service. Edge DNS integrates easily with your
   existing DNS infrastructure to provide a secure, high performance, highly

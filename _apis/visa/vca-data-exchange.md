@@ -10,7 +10,14 @@ properties:
     name: VCA Data Exchange
     type: Documentation
 description: >-
-  The VCA Data Exchange API allows clients to access VCA data solutions and
-  insights powered by Visa data
+  VCA Data Exchange is a platform that allows businesses to securely exchange
+  data with their partners, customers, and suppliers. Whether it's sharing
+  customer information, product catalogs, or financial data, VCA Data Exchange
+  provides a streamlined solution for securely transferring and managing data.
+  By centralizing data exchange processes, VCA Data Exchange helps organizations
+  improve efficiency, reduce errors, and enhance collaboration with external
+  stakeholders. With customizable access controls and real-time monitoring, VCA
+  Data Exchange ensures that data is exchanged securely and compliantly, helping
+  businesses build trust and strengthen relationships with their partners.
 
 ---

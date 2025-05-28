@@ -3,7 +3,9 @@ aid: akamai:akamai-prolexic-ip-protect-configuration-api
 name: Akamai Prolexic IP Protect Configuration API
 tags: []
 humanURL: https://techdocs.akamai.com/ip-protect/reference/api
-properties: []
+properties:
+  - url: https://techdocs.akamai.com/ip-protect/reference/api
+    type: Documentation
 description: >-
   Prolexic IP Protect helps shield your site from DDoS attacks: attempts to
   disrupt your website by overwhelming it with Internet traffic. With IP Protect

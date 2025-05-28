@@ -2,7 +2,8 @@
 aid: freetogame:freetogame
 name: FreeToGame
 tags:
-  - API
+  - Games
+  - Gaming
 humanURL: ' https://www.freetogame.com/api-doc'
 properties:
   - url: ' https://www.freetogame.com/api-doc'

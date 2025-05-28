@@ -4,7 +4,9 @@ name: Discover Side-by-Side Token Services
 tags: []
 humanURL: >-
   https://partner.discoverglobalnetwork.com/products/sxs-token-services?tab=overview
-properties: []
+properties:
+  - url: https://partner.discoverglobalnetwork.com/products/sxs-token-services
+    type: Documentation
 description: >-
   SXS tokens are alternate tokens provisioned by a Token Requestor in addition
   to primary tokens they provisioned from front-of-card brands. As the primary

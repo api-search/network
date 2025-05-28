@@ -2,7 +2,10 @@
 aid: dimensions:dimensions
 name: Dimensions
 tags:
-  - API
+  - Jupyter Notebooks
+  - Notebooks
+  - Research
+  - Analytics
 humanURL: ' https://api-lab.dimensions.ai/'
 properties:
   - url: ' https://api-lab.dimensions.ai/'

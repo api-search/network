@@ -3,7 +3,9 @@ aid: akamai:akamai-contract-api
 name: Akamai Contract API
 tags: []
 humanURL: https://techdocs.akamai.com/contract-api/reference/api
-properties: []
+properties:
+  - url: https://techdocs.akamai.com/contract-api/reference/api
+    type: Documentation
 description: >-
   The Contract API provides information about Akamai contracts and the products
   included in those contracts. With this API, you can retrieve product

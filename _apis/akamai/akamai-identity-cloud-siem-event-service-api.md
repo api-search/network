@@ -3,7 +3,9 @@ aid: akamai:akamai-identity-cloud-siem-event-service-api
 name: Akamai Identity Cloud SIEM Event Service API
 tags: []
 humanURL: https://techdocs.akamai.com/identity-cloud-siem-delivery/reference/api
-properties: []
+properties:
+  - url: https://techdocs.akamai.com/identity-cloud-siem-delivery/reference/api
+    type: Documentation
 description: >-
   Security Event and Information Management (SIEM) is a recognized standard for
   collecting, aggregating, and analyzing events that take place on a website or

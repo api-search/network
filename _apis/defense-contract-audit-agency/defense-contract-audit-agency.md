@@ -2,7 +2,8 @@
 aid: defense-contract-audit-agency:defense-contract-audit-agency
 name: Defense Contract Audit Agency
 tags:
-  - API
+  - Federal Government
+  - Defense
 humanURL: https://www.dcaa.mil
 properties:
   - url: https://www.dcaa.mil

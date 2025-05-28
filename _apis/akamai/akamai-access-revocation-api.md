@@ -3,7 +3,9 @@ aid: akamai:akamai-access-revocation-api
 name: Akamai Access Revocation API
 tags: []
 humanURL: https://techdocs.akamai.com/adaptive-media-delivery/reference/api
-properties: []
+properties:
+  - url: https://techdocs.akamai.com/adaptive-media-delivery/reference/api
+    type: Documentation
 description: >-
   Adaptive Media Delivery supports Token Authentication. You can apply it to
   generate unique tokens and include them in requests for your content. Akamai

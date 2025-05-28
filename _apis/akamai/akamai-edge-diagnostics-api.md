@@ -3,7 +3,10 @@ aid: akamai:akamai-edge-diagnostics-api
 name: Akamai Edge Diagnostics API
 tags: []
 humanURL: https://techdocs.akamai.com/edge-diagnostics/reference/edge-diagnostics-api-1
-properties: []
+properties:
+  - url: >-
+      https://techdocs.akamai.com/edge-diagnostics/reference/edge-diagnostics-api-1
+    type: Documentation
 description: >-
   Edge Diagnostics allows you to diagnose your server, DNS, and network problems
   from Akamai servers around the world.Once you extend your web content onto the

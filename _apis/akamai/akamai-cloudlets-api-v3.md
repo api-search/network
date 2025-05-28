@@ -3,7 +3,9 @@ aid: akamai:akamai-cloudlets-api-v3
 name: Akamai Cloudlets API v3
 tags: []
 humanURL: https://techdocs.akamai.com/cloudlets/reference/api
-properties: []
+properties:
+  - url: https://techdocs.akamai.com/cloudlets/reference/api
+    type: Documentation
 description: >-
   Cloudlets are value-added applications that complement Akamais core delivery
   solutions to solve specific business challenges. Cloudlets bring a sites

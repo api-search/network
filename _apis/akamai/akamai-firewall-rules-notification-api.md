@@ -3,7 +3,9 @@ aid: akamai:akamai-firewall-rules-notification-api
 name: Akamai Firewall Rules Notification API
 tags: []
 humanURL: https://techdocs.akamai.com/firewall-rules/reference/api
-properties: []
+properties:
+  - url: https://techdocs.akamai.com/firewall-rules/reference/api
+    type: Documentation
 description: >-
   Akamai periodically refreshes edge server IP addresses for routine
   maintenance. With Firewall Rules Notification, you can manage who receives

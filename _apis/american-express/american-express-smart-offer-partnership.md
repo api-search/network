@@ -4,7 +4,10 @@ name: American Express Smart Offer Partnership
 tags: []
 humanURL: >-
   https://developer.americanexpress.com/products/smart-offer-partnerships-public/overview
-properties: []
+properties:
+  - url: >-
+      https://developer.americanexpress.com/products/smart-offer-partnerships-public/overview
+    type: Documentation
 description: >-
   The American Express Smart Offer Partnership product provides registered
   Partners with access to certain American Express data, required to run their
