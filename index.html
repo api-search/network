@@ -329,12 +329,12 @@ Searching across <div id="total_networks" style="display: inline;">0</div> netwo
         });               
     }    
     
-    function search(){
-        document.getElementById('search-results').innerHTML = "";
-        document.getElementById("counter-table").innerHTML = '<br>';  
-        searchCloud(1);;
-        //document.getElementById("search-title").innerHTML = 'APIs.io Cloud Search';
-    }
+function search(){
+    document.getElementById('search-results').innerHTML = "";
+    document.getElementById("counter-table").innerHTML = '<br>';  
+    searchCloud(1);;
+    //document.getElementById("search-title").innerHTML = 'APIs.io Cloud Search';
+}
 
 var input = document.getElementById("api-search");
 input.addEventListener("keypress", function(event) {
@@ -344,5 +344,16 @@ input.addEventListener("keypress", function(event) {
     // Trigger the button element with a click
     searchCloud(1);
   }
-});    
+});   
+
+var querySearch = getQueryVariable('search');
+if(querySearch && querySearch!=''){
+    console.log(querySearch);
+    document.getElementById('api-search').value = querySearch;
+    document.getElementById('search-tags').checked = true;
+    document.getElementById('search-name').checked = false;
+    document.getElementById('search-description').checked = false;
+
+    search();
+}
 </script>
