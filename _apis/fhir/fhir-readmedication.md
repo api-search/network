@@ -1,0 +1,11 @@
+---
+aid: fhir:fhir-readmedication
+name: Read the current state of the resource
+tags:
+- API
+humanURL: 
+properties: []
+description: >-
+  GET /Medication/{rid} for Fast Healthcare Interoperability Resources (FHIR).
+
+---

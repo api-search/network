@@ -1,0 +1,11 @@
+---
+aid: amazon-web-services:amazon-web-services-amazonwebserviceslistvpcassociationauthorizations
+name: Listvpcassociationauthorizations
+tags:
+- API
+humanURL: 
+properties: []
+description: >-
+  Gets a list of the VPCs that were created by other accounts and that can be associated with a specified hosted zone because you've submitted one or more CreateVPCAssociationAuthorization requests.  The response includes a VPCs element with a VPC child element for each VPC that can be associated with the hosted zone.
+
+---

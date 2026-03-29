@@ -1,0 +1,11 @@
+---
+aid: box:box-get-authorize
+name: Authorize user
+tags:
+- - - - Authorization
+humanURL: 
+properties: []
+description: >-
+  Authorize a user by sending them through the [Box](https://box.com) website and request their permission to act on their behalf.  This is the first step when authenticating a user using OAuth 2.0. To request a user's authorization to use the Box APIs on their behalf you will need to send a user to the URL with this format.
+
+---

@@ -1,0 +1,11 @@
+---
+aid: amazon-web-services:amazon-web-services-amazonwebservicesupdateclusterversion
+name: Updateclusterversion
+tags:
+- API
+humanURL: 
+properties: []
+description: >-
+  Updates an Amazon EKS cluster to the specified Kubernetes version. Your cluster continues to function during the update. The response output includes an update ID that you can use to track the status of your cluster update with the DescribeUpdate API operation. Cluster updates are asynchronous, and they should finish within a few minutes. During an update, the cluster status moves to UPDATING (this status transition is eventually consistent). When the update is complete (either Failed or Succ...
+
+---

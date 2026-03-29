@@ -1,0 +1,11 @@
+---
+aid: amazon-web-services:amazon-web-services-amazonwebservicesstartproductsubscription
+name: Startproductsubscription
+tags:
+- API
+humanURL: 
+properties: []
+description: >-
+  Starts a product subscription for a user with the specified identity provider.  Your estimated bill for charges on the number of users and related costs will take 48 hours to appear for billing periods that haven't closed (marked as Pending billing status) in Amazon Web Services Billing. For more information, see Viewing your monthly charges in the Amazon Web Services Billing User Guide.
+
+---

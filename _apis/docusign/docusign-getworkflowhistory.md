@@ -1,0 +1,11 @@
+---
+aid: docusign:docusign-getworkflowhistory
+name: Gets the step history for a workflow instance.
+tags:
+- WorkflowManagement
+humanURL: 
+properties: []
+description: >-
+  Gets the step history for a workflow instance. <!-- maestro beta notice -->  <ds-inlinemessage>   The Maestro API is currently only available   as part of a beta program.   See <a href="/docs/maestro-api/get-access/">Get access to Maestro API</a>   for details. </ds-inlinemessage>  <!-- end maestro beta notice -->
+
+---
