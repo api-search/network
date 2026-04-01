@@ -69,11 +69,11 @@
         </div>
       </div>
     </nav>
-    <!--
-    <div class="alert alert-danger" role="alert" style="text-align: center;">
-      This Search is in an Alpha Stage -- <a href="https://github.com/api-search/explore/issues">Submit An Issue</a>!
+    {% if site.alert.enabled %}
+    <div class="alert alert-{{ site.alert.type }}" role="alert" style="text-align: center;">
+      {{ site.alert.message }}
     </div>
-    -->
+    {% endif %}
     <div class="container my-5">
       {{ content }}
     </div>
