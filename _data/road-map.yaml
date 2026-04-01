@@ -1,54 +1,54 @@
 - date: 2023-09-01
   name: Milestone One
-  description: >-
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  image: 'https://s3.amazonaws.com/kinlane-productions2/bw-icons/bw-linkedin.png'
-  link: 'https://example.com'
+  description: Launched the initial API search network, pulling together APIs.json contracts from across the API Evangelist
+    network into a single searchable index.
+  image: https://s3.amazonaws.com/kinlane-productions2/bw-icons/bw-linkedin.png
+  link: https://example.com
   tags:
-    - Tag One
-    - Tag Two
+  - Tag One
+  - Tag Two
 - date: 2023-09-10
   name: Milestone Two
-  description: >-
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  image: 'https://s3.amazonaws.com/kinlane-productions2/bw-icons/bw-linkedin.png'
-  link: 'https://example.com'
+  description: Expanded the search index to include individual API operations extracted from OpenAPI specifications, making
+    it possible to find specific resources and capabilities.
+  image: https://s3.amazonaws.com/kinlane-productions2/bw-icons/bw-linkedin.png
+  link: https://example.com
   tags:
-    - Tag One
-    - Tag Two  
+  - Tag One
+  - Tag Two
 - date: 2023-09-20
   name: Milestone Three
-  description: >-
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  image: 'https://s3.amazonaws.com/kinlane-productions2/bw-icons/bw-linkedin.png'
-  link: 'https://example.com'
+  description: Added tag-based filtering and domain organization to help surface APIs by industry, technology, and business
+    use case across the network.
+  image: https://s3.amazonaws.com/kinlane-productions2/bw-icons/bw-linkedin.png
+  link: https://example.com
   tags:
-    - Tag One
-    - Tag Two  
+  - Tag One
+  - Tag Two
 - date: 2023-10-01
   name: Milestone Four
-  description: >-
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  image: 'https://s3.amazonaws.com/kinlane-productions2/bw-icons/bw-linkedin.png'
-  link: 'https://example.com'    
+  description: Continuing to iterate on the API search network, expanding coverage and improving how APIs are discovered across
+    the landscape.
+  image: https://s3.amazonaws.com/kinlane-productions2/bw-icons/bw-linkedin.png
+  link: https://example.com
   tags:
-    - Tag One
-    - Tag Two  
+  - Tag One
+  - Tag Two
 - date: 2023-10-15
   name: Milestone Five
-  description: >-
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  image: 'https://s3.amazonaws.com/kinlane-productions2/bw-icons/bw-linkedin.png'
-  link: 'https://example.com'    
+  description: Continuing to iterate on the API search network, expanding coverage and improving how APIs are discovered across
+    the landscape.
+  image: https://s3.amazonaws.com/kinlane-productions2/bw-icons/bw-linkedin.png
+  link: https://example.com
   tags:
-    - Tag One
-    - Tag Two  
+  - Tag One
+  - Tag Two
 - date: 2023-10-25
   name: Milestone Five
-  description: >-
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  image: 'https://s3.amazonaws.com/kinlane-productions2/bw-icons/bw-linkedin.png'
-  link: 'https://example.com' 
+  description: Continuing to iterate on the API search network, expanding coverage and improving how APIs are discovered across
+    the landscape.
+  image: https://s3.amazonaws.com/kinlane-productions2/bw-icons/bw-linkedin.png
+  link: https://example.com
   tags:
-    - Tag One
-    - Tag Two       
+  - Tag One
+  - Tag Two
