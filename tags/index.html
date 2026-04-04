@@ -1,0 +1,25 @@
+---
+layout: default
+title: API Tags
+meta_title: "Browse APIs by Tag | APIs.io"
+meta_description: "Browse and discover APIs organized by tag. Find APIs by category including payments, messaging, cloud, authentication, and more."
+---
+
+<h1 style="font-size: 1.75rem; margin-bottom: 0.5rem;">Browse APIs by Tag</h1>
+<p style="color: #666; margin-bottom: 1.5rem;">Discover APIs organized by category and topic.</p>
+
+{% assign all_tags = "" | split: "" %}
+{% for api in site.apis %}
+  {% for tag in api.tags %}
+    {% if tag != "" %}
+      {% assign all_tags = all_tags | push: tag %}
+    {% endif %}
+  {% endfor %}
+{% endfor %}
+{% assign unique_tags = all_tags | sort_natural | uniq %}
+
+<div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+  {% for tag in unique_tags %}
+  <a href="/?search={{ tag | url_encode }}" class="badge bg-secondary text-decoration-none" style="font-size: 0.85rem; font-weight: 500; padding: 0.5em 0.8em;">{{ tag }}</a>
+  {% endfor %}
+</div>

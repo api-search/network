@@ -1,15 +1,18 @@
 name: APIs.io
-description: The first API search engine.
+description: Search and discover APIs from across the web. APIs.io indexes thousands of APIs using the APIs.json specification, making it easy to find the right API for your project.
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 url: https://apis.io
 
 node: website
 
 keywords:
-
   - APIs
   - Search
   - Discovery
+  - API Directory
+  - API Catalog
+  - REST APIs
+  - APIs.json
 
 permalink: /:categories/:year/:month/:day/:title/
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
@@ -26,7 +29,7 @@ tags_path : /tags.html
 github_org: api-search
 github_repo: website
 
-search_local: false
+search_local: true
 search_url: https://search-api.apis.io/search/apis
 
 paginate:           25

@@ -1,69 +1,47 @@
 ---
 layout: default
 ---
-{% assign date_format = site.date_format | default: "%b %-d, %Y" %}
-<a name="{{ page.name }}"></a>
-<h3>{{ page.name }}</h3>
-<p><i>{{ page.modified | date: date_format }}</i></p>
-<p>{{ page.description | strip_html | strip_newlines }}</p> 
-<h4>Properties</h4>
 {% assign aid = page.aid | split: ":" %}
-<ul id="">
-    <li><a href="{{ page.humanURL }}">Human URL</a></li>
-    <li><a href="https://github.com/api-evangelist/{{ aid[0] }}">GitHub Repo</a></li>
-    <li><a href="https://github.com/api-evangelist/{{ aid[0] }}/blob/main/apis.yml">APIs.json Index</a></li>
-    {% if page.baseURL %}
-        {% if page.baseURL != 'https://api.example.com' %}
-            <li><a href="{{ page.baseURL }}">Base URL</a></li>
-        {% endif %}
+{% assign provider = aid[0] %}
+
+<nav aria-label="breadcrumb" style="margin-bottom: 1.5rem;">
+  <ol class="breadcrumb" style="font-size: 0.9rem;">
+    <li class="breadcrumb-item"><a href="{{ site.url }}/">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">{{ page.name }}</li>
+  </ol>
+</nav>
+
+<article itemscope itemtype="https://schema.org/WebAPI">
+  <h1 itemprop="name" style="font-size: 1.75rem; margin-bottom: 0.25rem;">{{ page.name }}</h1>
+
+  {% if page.description %}
+  <p itemprop="description" style="color: #555; line-height: 1.6; margin-bottom: 1.5rem;">{{ page.description | strip_html | strip_newlines }}</p>
+  {% endif %}
+
+  <h4>Properties</h4>
+  <ul style="margin-bottom: 1.5rem;">
+    {% if page.humanURL %}
+    <li><a href="{{ page.humanURL }}" itemprop="url" rel="noopener">Documentation</a></li>
+    {% endif %}
+    <li><a href="https://github.com/api-evangelist/{{ provider }}">GitHub Repo</a></li>
+    <li><a href="https://github.com/api-evangelist/{{ provider }}/blob/main/apis.yml">APIs.json Index</a></li>
+    {% if page.baseURL and page.baseURL != 'https://api.example.com' %}
+    <li><a href="{{ page.baseURL }}">Base URL</a></li>
     {% endif %}
     {% for property in page.properties %}
-        <li><a href="{{ property.url }}">{{ property.type }}</a></li>
-    {% endfor %}    
-</ul>             
-{% assign number_of_tags = page.tags | size %}
-{% if number_of_tags > 0 %}
-<h4>Tags</h4>
-<style>
-    ul.cloud {
-      list-style: none;
-      padding-left: 25px;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: left;
-      line-height: 1.5rem;
-      width: 50%;
-    }
-    ul.cloud a {
-      color: #a33;
-      display: block;
-      font-size: 1.2rem;
-      padding: 0.125rem 0.25rem;
-      text-decoration: none;
-      position: relative;
-      opacity: calc((15 - (9 - var(--size))) / 15); 
-    }
+    <li><a href="{{ property.url }}">{{ property.type }}</a></li>
+    {% endfor %}
+  </ul>
 
-    ul.cloud a[data-weight="1"] { --size: 1; }
-    ul.cloud a[data-weight="2"] { --size: 2; }
-    ul.cloud a[data-weight="3"] { --size: 3; }
-    ul.cloud a[data-weight="4"] { --size: 4; }
-    ul.cloud a[data-weight="5"] { --size: 5; }
-    ul.cloud a[data-weight="6"] { --size: 6; }
-    ul.cloud a[data-weight="7"] { --size: 7; }
-    ul.cloud a[data-weight="8"] { --size: 8; }
-    ul.cloud a[data-weight="9"] { --size: 9; }
-
-    ul.cloud li:nth-child(2n+1) a { --color: #181; }
-    ul.cloud li:nth-child(3n+1) a { --color: #33a; }
-    ul.cloud li:nth-child(4n+1) a { --color: #c38; }
-  </style>
-<ul class="cloud" role="navigation" aria-label="Webdev tag cloud">
-{% for tag in page.tags %}  
-    {% if tag != '' %}
-        <li><a data-weight="4" href="/?search={{ tag }}" style="text-decoration: underline;">#{{ tag }}</a></li>
-    {% endif %}      
-{% endfor %}   
-</ul>   
-{% endif %}
+  {% assign number_of_tags = page.tags | size %}
+  {% if number_of_tags > 0 %}
+  <h4>Tags</h4>
+  <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem;" itemprop="keywords">
+    {% for tag in page.tags %}
+      {% if tag != '' %}
+      <a href="/?search={{ tag | url_encode }}" class="badge bg-secondary text-decoration-none" style="font-size: 0.85rem; font-weight: 500; padding: 0.4em 0.7em;">{{ tag }}</a>
+      {% endif %}
+    {% endfor %}
+  </div>
+  {% endif %}
+</article>
