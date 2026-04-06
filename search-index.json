@@ -2,14 +2,13 @@
 layout: none
 ---
 [
-{% for api in site.apis %}
-  {
-    "name": {{ api.name | jsonify }},
-    "description": {{ api.description | strip_html | strip_newlines | jsonify }},
-    "tags": {{ api.tags | jsonify }},
-    "humanURL": {{ api.humanURL | jsonify }},
-    "aid": {{ api.aid | jsonify }},
-    "url": "{{ api.url }}"
-  }{% unless forloop.last %},{% endunless %}
-{% endfor %}
+{% for api in site.apis %}{% assign aid_parts = api.aid | split: ":" %}{
+"i":{{ forloop.index0 }},
+"n":{{ api.name | jsonify }},
+"d":{{ api.description | strip_html | strip_newlines | truncate: 240 | jsonify }},
+"t":{{ api.tags | jsonify }},
+"h":{{ api.humanURL | jsonify }},
+"p":{{ aid_parts[0] | jsonify }},
+"u":"{{ api.url }}"
+}{% unless forloop.last %},{% endunless %}{% endfor %}
 ]

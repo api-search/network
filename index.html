@@ -4,19 +4,41 @@ meta_title: "APIs.io - Search and Discover APIs"
 meta_description: "Search thousands of APIs indexed using the APIs.json specification. Find REST APIs, webhooks, and developer tools for your next project."
 ---
 
-<div style="text-align: center; padding: 2rem 0 1rem;">
-  {% assign all_tags = "" | split: "" %}
-  {% for api in site.apis %}{% for tag in api.tags %}{% if tag != "" %}{% assign all_tags = all_tags | push: tag %}{% endif %}{% endfor %}{% endfor %}
-  {% assign unique_tags = all_tags | uniq %}
-  <h1 style="font-size: 2rem; margin-bottom: 0.5rem;">API Search</h1>
-  <p style="color: #666; margin-bottom: 1.5rem;">Searching across <strong>{{ site.apis | size }}</strong> APIs and <strong>{{ unique_tags | size }}</strong> unique tags from the APIs.json network</p>
+{% assign all_tags = "" | split: "" %}
+{% for api in site.apis %}{% for tag in api.tags %}{% if tag != "" %}{% assign all_tags = all_tags | push: tag %}{% endif %}{% endfor %}{% endfor %}
+{% assign unique_tags = all_tags | uniq %}
 
-  <form onsubmit="search(); return false;" style="max-width: 600px; margin: 0 auto;">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "{{ site.name }}",
+  "url": "{{ site.url }}",
+  "description": "{{ site.description }}",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "{{ site.url }}/?search={search_term_string}"
+    },
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
+<div style="text-align: center; padding: 2rem 0 1rem;">
+  <h1 style="font-size: 2rem; margin-bottom: 0.5rem;">API Search</h1>
+  <p style="color: #666; margin-bottom: 1.5rem;">
+    Searching across <strong>{{ site.apis | size }}</strong> APIs and <strong>{{ unique_tags | size }}</strong> unique tags from the APIs.json network
+  </p>
+
+  <form onsubmit="runSearch(); return false;" style="max-width: 600px; margin: 0 auto; position: relative;" autocomplete="off">
     <div class="input-group mb-3">
-      <input type="text" class="form-control" id="api-search" placeholder="Search for APIs..." aria-label="Search for APIs">
+      <input type="text" class="form-control" id="api-search" placeholder="Search APIs by name, description, or tag..." aria-label="Search APIs" autocomplete="off">
       <button class="btn btn-dark" type="submit">Search</button>
     </div>
-    <div class="d-flex justify-content-center gap-3" style="font-size: 0.9rem;">
+    <div id="autocomplete" class="list-group position-absolute w-100" style="z-index: 1000; display: none; max-height: 320px; overflow-y: auto; box-shadow: 0 4px 12px rgba(0,0,0,0.1);"></div>
+    <div class="d-flex justify-content-center gap-3 flex-wrap" style="font-size: 0.9rem;">
       <div class="form-check">
         <input class="form-check-input" type="checkbox" id="search-name" value="1" checked>
         <label class="form-check-label" for="search-name">Name</label>
@@ -33,11 +55,26 @@ meta_description: "Search thousands of APIs indexed using the APIs.json specific
   </form>
 </div>
 
-<p id="counter-text" style="text-align: center; color: #666; font-size: 0.9rem; display: none;">
-  Found <strong id="total_results">0</strong> results
-</p>
+<div id="recent-searches" style="max-width: 800px; margin: 1rem auto 0; text-align: center; display: none;">
+  <small style="color: #888;">Recent: </small>
+  <span id="recent-list"></span>
+</div>
+
+<div id="active-filters" style="max-width: 800px; margin: 1rem auto 0; text-align: center; display: none;"></div>
+
+<div id="status-bar" style="max-width: 800px; margin: 1.5rem auto 0.5rem; display: none; color: #666; font-size: 0.9rem;">
+  <span id="status-text"></span>
+</div>
 
 <div id="search-results" style="max-width: 800px; margin: 0 auto;"></div>
+<div id="pagination" style="max-width: 800px; margin: 1.5rem auto; text-align: center;"></div>
+
+<div id="tag-cloud" style="max-width: 800px; margin: 2rem auto;">
+  <h5 style="font-size: 1rem; color: #555; margin-bottom: 0.75rem;">Popular tags</h5>
+  <div id="tag-cloud-list" style="display: flex; flex-wrap: wrap; gap: 0.4rem;">
+    <span style="color: #aaa; font-size: 0.85rem;">Loading...</span>
+  </div>
+</div>
 
 <noscript>
   <h2>Browse APIs</h2>
@@ -48,115 +85,399 @@ meta_description: "Search thousands of APIs indexed using the APIs.json specific
   </ul>
 </noscript>
 
+<style>
+  mark.hl { background: #fff3a3; padding: 0 2px; border-radius: 2px; }
+  .ac-item { cursor: pointer; }
+  .ac-item.active { background: #e7f1ff; }
+  .result-card { transition: background 0.1s; }
+  .result-card:hover { background: #f8f9fa; }
+  .tag-chip { cursor: pointer; user-select: none; }
+  .tag-chip:hover { background: #6c757d !important; color: white !important; }
+  .tag-chip.active { background: #0d6efd !important; color: white !important; }
+</style>
+
+<script src="{{ site.url }}/assets/minisearch.min.js"></script>
 <script>
+(function() {
+  var PAGE_SIZE = 25;
+  var RECENT_KEY = 'apis_io_recent_searches';
+  var index = null;
+  var miniSearch = null;
+  var indexLoading = null;
+  var currentResults = [];
+  var currentPage = 0;
+  var currentQuery = '';
+  var activeTags = new Set();
+  var debounceTimer = null;
+  var acIndex = -1;
 
-var searchIndex = null;
-
-function loadSearchIndex() {
-    if (searchIndex) return Promise.resolve(searchIndex);
-    return fetch('{{ site.baseurl }}/search-index.json')
-        .then(function(response) { return response.json(); })
-        .then(function(data) {
-            searchIndex = data;
-            return searchIndex;
+  function loadIndex() {
+    if (indexLoading) return indexLoading;
+    setStatus('Loading search index...');
+    indexLoading = fetch('{{ site.baseurl }}/search-index.json')
+      .then(function(r) { return r.json(); })
+      .then(function(data) {
+        index = data;
+        miniSearch = new MiniSearch({
+          fields: ['n', 'd', 't', 'p'],
+          storeFields: ['i'],
+          idField: 'i',
+          extractField: function(doc, field) {
+            if (field === 't') return (doc.t || []).join(' ');
+            return doc[field] || '';
+          },
+          searchOptions: {
+            boost: { n: 4, t: 2, p: 1.5, d: 1 },
+            prefix: true,
+            fuzzy: 0.2,
+            combineWith: 'AND'
+          }
         });
-}
+        miniSearch.addAll(data);
+        setStatus('');
+        renderTagCloud();
+        return index;
+      });
+    return indexLoading;
+  }
 
-function renderResults(results) {
-    var container = document.getElementById('search-results');
-    document.getElementById("total_results").textContent = results.length;
-    document.getElementById("counter-text").style.display = "";
+  function setStatus(text) {
+    var bar = document.getElementById('status-bar');
+    if (!text) { bar.style.display = 'none'; return; }
+    document.getElementById('status-text').innerHTML = text;
+    bar.style.display = '';
+  }
 
-    if (results.length === 0) {
-        container.innerHTML = '<p style="text-align: center; padding: 2rem; color: #888;">No APIs found. Try a different search term.</p>';
+  function escapeHtml(s) {
+    if (s == null) return '';
+    return String(s).replace(/[&<>"']/g, function(c) {
+      return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];
+    });
+  }
+
+  function highlight(text, query) {
+    if (!text || !query) return escapeHtml(text);
+    var escaped = escapeHtml(text);
+    var terms = query.trim().split(/\s+/).filter(function(t) { return t.length > 1; });
+    terms.forEach(function(term) {
+      var re = new RegExp('(' + term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')', 'gi');
+      escaped = escaped.replace(re, '<mark class="hl">$1</mark>');
+    });
+    return escaped;
+  }
+
+  function getEnabledFields() {
+    var fields = [];
+    if (document.getElementById('search-name').checked) fields.push('n');
+    if (document.getElementById('search-description').checked) fields.push('d');
+    if (document.getElementById('search-tags').checked) fields.push('t');
+    return fields;
+  }
+
+  function applyTagFilter(results) {
+    if (activeTags.size === 0) return results;
+    return results.filter(function(api) {
+      if (!api.t) return false;
+      var lowerTags = api.t.map(function(x) { return (x || '').toLowerCase(); });
+      var allMatch = true;
+      activeTags.forEach(function(tag) {
+        if (lowerTags.indexOf(tag.toLowerCase()) === -1) allMatch = false;
+      });
+      return allMatch;
+    });
+  }
+
+  function executeSearch(query) {
+    if (!miniSearch) return [];
+    if (!query) return index.slice();
+    var fields = getEnabledFields();
+    if (fields.length === 0) return [];
+    var hits = miniSearch.search(query, { fields: fields });
+    return hits.map(function(h) { return index[h.i]; });
+  }
+
+  function runSearch() {
+    var query = document.getElementById('api-search').value.trim();
+    currentQuery = query;
+    currentPage = 0;
+
+    loadIndex().then(function() {
+      var results;
+      if (!query && activeTags.size === 0) {
+        renderResults([], 0);
         return;
+      }
+      results = executeSearch(query);
+      results = applyTagFilter(results);
+      currentResults = results;
+      renderResults(results, currentPage);
+      updateUrl(query);
+      if (query) saveRecent(query);
+    });
+  }
+
+  function renderResults(results, page) {
+    var container = document.getElementById('search-results');
+    var total = results.length;
+    var start = page * PAGE_SIZE;
+    var end = Math.min(start + PAGE_SIZE, total);
+
+    if (total === 0) {
+      if (currentQuery || activeTags.size > 0) {
+        setStatus('No APIs found. Try different terms or remove filters.');
+      } else {
+        setStatus('');
+      }
+      container.innerHTML = '';
+      renderPagination(0, 0);
+      return;
     }
 
-    var html = '<div class="list-group">';
-    for (var i = 0; i < results.length; i++) {
-        var api = results[i];
-        var desc = api.description || '';
-        if (desc.length > 160) desc = desc.substring(0, 160) + '...';
+    setStatus('Found <strong>' + total + '</strong> APIs' + (currentQuery ? ' matching "' + escapeHtml(currentQuery) + '"' : '') + ' (showing ' + (start + 1) + '–' + end + ')');
 
-        html += '<div class="list-group-item list-group-item-action" style="border-left: 3px solid #0d6efd;">';
-        html += '<div class="d-flex justify-content-between align-items-start">';
-        html += '<div style="flex: 1; min-width: 0;">';
-        html += '<h6 style="margin-bottom: 0.25rem;"><a href="' + api.url + '" style="text-decoration: none;">' + api.name + '</a></h6>';
-        if (desc) html += '<p style="font-size: 0.85rem; color: #666; margin-bottom: 0.4rem; overflow: hidden; text-overflow: ellipsis;">' + desc + '</p>';
-        if (api.tags && api.tags.length > 0) {
-            html += '<div style="display: flex; flex-wrap: wrap; gap: 0.3rem;">';
-            var maxTags = Math.min(api.tags.length, 5);
-            for (var t = 0; t < maxTags; t++) {
-                if (api.tags[t]) html += '<span class="badge bg-light text-dark" style="font-size: 0.75rem; font-weight: 500;">' + api.tags[t] + '</span>';
-            }
-            html += '</div>';
+    var html = '<div class="list-group">';
+    for (var i = start; i < end; i++) {
+      var api = results[i];
+      var name = highlight(api.n || '', currentQuery);
+      var desc = highlight(api.d || '', currentQuery);
+      html += '<div class="list-group-item result-card" style="border-left: 3px solid #0d6efd;">';
+      html += '<div class="d-flex justify-content-between align-items-start">';
+      html += '<div style="flex: 1; min-width: 0;">';
+      html += '<h6 style="margin-bottom: 0.25rem;"><a href="' + api.u + '" style="text-decoration: none;">' + name + '</a>';
+      if (api.p) html += ' <small style="color: #999; font-weight: normal;">· ' + escapeHtml(api.p) + '</small>';
+      html += '</h6>';
+      if (api.d) html += '<p style="font-size: 0.85rem; color: #666; margin-bottom: 0.4rem;">' + desc + '</p>';
+      if (api.t && api.t.length > 0) {
+        html += '<div style="display: flex; flex-wrap: wrap; gap: 0.3rem;">';
+        var maxTags = Math.min(api.t.length, 6);
+        for (var t = 0; t < maxTags; t++) {
+          if (api.t[t]) {
+            var tagSafe = escapeHtml(api.t[t]);
+            html += '<span class="badge bg-light text-dark tag-chip" data-tag="' + tagSafe + '" style="font-size: 0.75rem; font-weight: 500;">' + tagSafe + '</span>';
+          }
         }
         html += '</div>';
-        html += '<div class="d-flex gap-2 ms-3 flex-shrink-0">';
-        if (api.humanURL) {
-            html += '<a href="' + api.humanURL + '" target="_blank" rel="noopener" class="btn btn-sm btn-outline-primary">Docs</a>';
-        }
-        html += '<a href="' + api.url + '" class="btn btn-sm btn-outline-success">Details</a>';
-        html += '</div>';
-        html += '</div>';
-        html += '</div>';
+      }
+      html += '</div>';
+      html += '<div class="d-flex gap-2 ms-3 flex-shrink-0">';
+      if (api.h) html += '<a href="' + api.h + '" target="_blank" rel="noopener" class="btn btn-sm btn-outline-primary">Docs</a>';
+      html += '<a href="' + api.u + '" class="btn btn-sm btn-outline-success">Details</a>';
+      html += '</div>';
+      html += '</div>';
+      html += '</div>';
     }
     html += '</div>';
     container.innerHTML = html;
-}
 
-function searchLocal() {
-    var query = document.getElementById('api-search').value.trim().toLowerCase();
-    if (!query) return;
-
-    var searchName = document.getElementById('search-name').checked;
-    var searchDescription = document.getElementById('search-description').checked;
-    var searchTags = document.getElementById('search-tags').checked;
-
-    loadSearchIndex().then(function(index) {
-        var results = [];
-        for (var i = 0; i < index.length; i++) {
-            var api = index[i];
-            var match = false;
-
-            if (searchName && api.name && api.name.toLowerCase().indexOf(query) !== -1) match = true;
-            if (searchDescription && api.description && api.description.toLowerCase().indexOf(query) !== -1) match = true;
-            if (searchTags && api.tags) {
-                for (var t = 0; t < api.tags.length; t++) {
-                    if (api.tags[t] && api.tags[t].toLowerCase() === query) { match = true; break; }
-                }
-            }
-            if (match) results.push(api);
-        }
-        renderResults(results);
+    container.querySelectorAll('.tag-chip').forEach(function(el) {
+      el.addEventListener('click', function() { addTagFilter(el.getAttribute('data-tag')); });
     });
-}
 
-function search() {
-    document.getElementById('search-results').innerHTML = '';
-    searchLocal();
+    renderPagination(total, page);
+  }
 
-    var query = document.getElementById('api-search').value.trim();
-    if (query && window.history.replaceState) {
-        window.history.replaceState(null, '', '?search=' + encodeURIComponent(query));
+  function renderPagination(total, page) {
+    var container = document.getElementById('pagination');
+    if (total <= PAGE_SIZE) { container.innerHTML = ''; return; }
+    var totalPages = Math.ceil(total / PAGE_SIZE);
+    var html = '<nav><ul class="pagination justify-content-center">';
+    html += '<li class="page-item' + (page === 0 ? ' disabled' : '') + '"><a class="page-link" href="#" data-page="' + (page - 1) + '">Previous</a></li>';
+    var startP = Math.max(0, page - 2);
+    var endP = Math.min(totalPages, startP + 5);
+    if (startP > 0) html += '<li class="page-item"><a class="page-link" href="#" data-page="0">1</a></li><li class="page-item disabled"><span class="page-link">…</span></li>';
+    for (var p = startP; p < endP; p++) {
+      html += '<li class="page-item' + (p === page ? ' active' : '') + '"><a class="page-link" href="#" data-page="' + p + '">' + (p + 1) + '</a></li>';
     }
-}
+    if (endP < totalPages) html += '<li class="page-item disabled"><span class="page-link">…</span></li><li class="page-item"><a class="page-link" href="#" data-page="' + (totalPages - 1) + '">' + totalPages + '</a></li>';
+    html += '<li class="page-item' + (page >= totalPages - 1 ? ' disabled' : '') + '"><a class="page-link" href="#" data-page="' + (page + 1) + '">Next</a></li>';
+    html += '</ul></nav>';
+    container.innerHTML = html;
 
-var input = document.getElementById("api-search");
-input.addEventListener("keypress", function(event) {
-    if (event.key === "Enter") {
-        event.preventDefault();
-        search();
+    container.querySelectorAll('.page-link[data-page]').forEach(function(el) {
+      el.addEventListener('click', function(e) {
+        e.preventDefault();
+        var p = parseInt(el.getAttribute('data-page'), 10);
+        if (p < 0 || p >= totalPages) return;
+        currentPage = p;
+        renderResults(currentResults, currentPage);
+        window.scrollTo({ top: document.querySelector('form').offsetTop, behavior: 'smooth' });
+      });
+    });
+  }
+
+  function renderAutocomplete(query) {
+    var ac = document.getElementById('autocomplete');
+    if (!query || query.length < 2 || !miniSearch) { ac.style.display = 'none'; return; }
+    var fields = getEnabledFields();
+    if (fields.length === 0) { ac.style.display = 'none'; return; }
+    var suggestions = miniSearch.search(query, { fields: fields }).slice(0, 6);
+    if (suggestions.length === 0) { ac.style.display = 'none'; return; }
+    var html = '';
+    suggestions.forEach(function(s, i) {
+      var api = index[s.i];
+      html += '<button type="button" class="list-group-item list-group-item-action ac-item' + (i === acIndex ? ' active' : '') + '" data-aid="' + i + '" data-name="' + escapeHtml(api.n) + '">';
+      html += '<strong>' + highlight(api.n, query) + '</strong>';
+      if (api.p) html += ' <small style="color: #999;">· ' + escapeHtml(api.p) + '</small>';
+      html += '</button>';
+    });
+    ac.innerHTML = html;
+    ac.style.display = '';
+
+    ac.querySelectorAll('.ac-item').forEach(function(el) {
+      el.addEventListener('click', function() {
+        var i = parseInt(el.getAttribute('data-aid'), 10);
+        var sugg = miniSearch.search(query, { fields: getEnabledFields() })[i];
+        if (sugg) window.location.href = index[sugg.i].u;
+      });
+    });
+  }
+
+  function renderTagCloud() {
+    var counts = {};
+    for (var i = 0; i < index.length; i++) {
+      var tags = index[i].t || [];
+      for (var t = 0; t < tags.length; t++) {
+        if (tags[t]) counts[tags[t]] = (counts[tags[t]] || 0) + 1;
+      }
     }
-});
+    var sorted = Object.keys(counts).map(function(k) { return [k, counts[k]]; })
+      .sort(function(a, b) { return b[1] - a[1]; }).slice(0, 40);
+    var html = '';
+    sorted.forEach(function(pair) {
+      html += '<span class="badge bg-secondary tag-chip" data-tag="' + escapeHtml(pair[0]) + '">' + escapeHtml(pair[0]) + ' <small style="opacity:0.7;">' + pair[1] + '</small></span>';
+    });
+    var container = document.getElementById('tag-cloud-list');
+    container.innerHTML = html;
+    container.querySelectorAll('.tag-chip').forEach(function(el) {
+      el.addEventListener('click', function() { addTagFilter(el.getAttribute('data-tag')); });
+    });
+  }
 
-var querySearch = getQueryVariable('search');
-if (querySearch && querySearch !== '') {
-    document.getElementById('api-search').value = querySearch;
-    document.getElementById('search-tags').checked = true;
-    document.getElementById('search-name').checked = false;
-    document.getElementById('search-description').checked = false;
-    search();
-}
+  function addTagFilter(tag) {
+    activeTags.add(tag);
+    renderActiveFilters();
+    runSearch();
+  }
 
+  function removeTagFilter(tag) {
+    activeTags.delete(tag);
+    renderActiveFilters();
+    runSearch();
+  }
+
+  function renderActiveFilters() {
+    var container = document.getElementById('active-filters');
+    if (activeTags.size === 0) { container.style.display = 'none'; return; }
+    var html = '<small style="color: #888;">Filtering by: </small>';
+    activeTags.forEach(function(tag) {
+      html += '<span class="badge bg-primary" style="margin-right: 0.3rem; cursor: pointer;" data-rm="' + escapeHtml(tag) + '">' + escapeHtml(tag) + ' &times;</span>';
+    });
+    container.innerHTML = html;
+    container.style.display = '';
+    container.querySelectorAll('[data-rm]').forEach(function(el) {
+      el.addEventListener('click', function() { removeTagFilter(el.getAttribute('data-rm')); });
+    });
+  }
+
+  function saveRecent(query) {
+    try {
+      var raw = localStorage.getItem(RECENT_KEY);
+      var list = raw ? JSON.parse(raw) : [];
+      list = list.filter(function(q) { return q !== query; });
+      list.unshift(query);
+      list = list.slice(0, 5);
+      localStorage.setItem(RECENT_KEY, JSON.stringify(list));
+      renderRecent();
+    } catch(e) {}
+  }
+
+  function renderRecent() {
+    try {
+      var raw = localStorage.getItem(RECENT_KEY);
+      if (!raw) return;
+      var list = JSON.parse(raw);
+      if (!list || list.length === 0) return;
+      var container = document.getElementById('recent-searches');
+      var inner = document.getElementById('recent-list');
+      var html = '';
+      list.forEach(function(q) {
+        html += '<a href="?search=' + encodeURIComponent(q) + '" class="badge bg-light text-dark text-decoration-none" style="margin: 0 0.2rem;">' + escapeHtml(q) + '</a>';
+      });
+      inner.innerHTML = html;
+      container.style.display = '';
+    } catch(e) {}
+  }
+
+  function updateUrl(query) {
+    if (window.history.replaceState) {
+      var url = query ? '?search=' + encodeURIComponent(query) : window.location.pathname;
+      window.history.replaceState(null, '', url);
+    }
+  }
+
+  // Wire up events
+  var input = document.getElementById('api-search');
+  input.addEventListener('focus', loadIndex);
+  input.addEventListener('input', function() {
+    clearTimeout(debounceTimer);
+    var v = input.value.trim();
+    debounceTimer = setTimeout(function() {
+      acIndex = -1;
+      if (v.length >= 2) {
+        loadIndex().then(function() { renderAutocomplete(v); });
+      } else {
+        document.getElementById('autocomplete').style.display = 'none';
+      }
+      if (v.length >= 2 || v.length === 0) runSearch();
+    }, 200);
+  });
+
+  input.addEventListener('keydown', function(e) {
+    var ac = document.getElementById('autocomplete');
+    var items = ac.querySelectorAll('.ac-item');
+    if (e.key === 'ArrowDown' && items.length > 0) {
+      e.preventDefault();
+      acIndex = Math.min(acIndex + 1, items.length - 1);
+      items.forEach(function(el, i) { el.classList.toggle('active', i === acIndex); });
+    } else if (e.key === 'ArrowUp' && items.length > 0) {
+      e.preventDefault();
+      acIndex = Math.max(acIndex - 1, -1);
+      items.forEach(function(el, i) { el.classList.toggle('active', i === acIndex); });
+    } else if (e.key === 'Enter') {
+      e.preventDefault();
+      if (acIndex >= 0 && items[acIndex]) {
+        items[acIndex].click();
+      } else {
+        ac.style.display = 'none';
+        runSearch();
+      }
+    } else if (e.key === 'Escape') {
+      ac.style.display = 'none';
+      acIndex = -1;
+    }
+  });
+
+  document.addEventListener('click', function(e) {
+    if (!e.target.closest('#autocomplete') && e.target.id !== 'api-search') {
+      document.getElementById('autocomplete').style.display = 'none';
+    }
+  });
+
+  document.querySelectorAll('#search-name, #search-description, #search-tags').forEach(function(el) {
+    el.addEventListener('change', runSearch);
+  });
+
+  window.runSearch = runSearch;
+
+  // Init from URL query
+  var qs = getQueryVariable('search');
+  renderRecent();
+  if (qs && qs !== '') {
+    input.value = qs;
+    loadIndex().then(runSearch);
+  } else {
+    // Lazy load index in background after a moment so tag cloud appears
+    setTimeout(loadIndex, 500);
+  }
+})();
 </script>

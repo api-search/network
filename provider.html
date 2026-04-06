@@ -1,0 +1,39 @@
+---
+layout: default
+title: Provider
+permalink: /provider/
+---
+
+<nav aria-label="breadcrumb"><ol class="breadcrumb" style="font-size:0.9rem;">
+  <li class="breadcrumb-item"><a href="/">Home</a></li>
+  <li class="breadcrumb-item active" id="bc-provider">…</li>
+</ol></nav>
+
+<h1 id="page-title" style="font-size:1.75rem;">APIs by provider</h1>
+<p id="count" style="color:#666;"></p>
+
+<div id="listing" class="list-group"></div>
+
+<script>
+(function() {
+  var provider = getQueryVariable('p') || '';
+  if (!provider) { document.getElementById('listing').innerHTML = '<p>No provider specified.</p>'; return; }
+  document.getElementById('bc-provider').textContent = provider;
+  document.getElementById('page-title').textContent = 'APIs from ' + provider;
+  document.title = provider + ' APIs | {{ site.name }}';
+
+  fetch('{{ site.baseurl }}/search-index.json').then(function(r) { return r.json(); }).then(function(data) {
+    var lower = provider.toLowerCase();
+    var matches = data.filter(function(api) { return api.p && api.p.toLowerCase() === lower; });
+    document.getElementById('count').textContent = matches.length + ' APIs';
+    var html = '';
+    matches.forEach(function(api) {
+      html += '<div class="list-group-item" style="border-left:3px solid #0d6efd;">';
+      html += '<h6 style="margin-bottom:0.25rem;"><a href="' + api.u + '" style="text-decoration:none;">' + api.n + '</a></h6>';
+      if (api.d) html += '<p style="font-size:0.85rem;color:#666;margin:0;">' + api.d + '</p>';
+      html += '</div>';
+    });
+    document.getElementById('listing').innerHTML = html || '<p>No APIs found.</p>';
+  });
+})();
+</script>

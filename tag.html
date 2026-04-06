@@ -1,0 +1,42 @@
+---
+layout: default
+title: Tag
+permalink: /tag/
+---
+
+<nav aria-label="breadcrumb"><ol class="breadcrumb" style="font-size:0.9rem;">
+  <li class="breadcrumb-item"><a href="/">Home</a></li>
+  <li class="breadcrumb-item"><a href="/tags/">Tags</a></li>
+  <li class="breadcrumb-item active" id="bc-tag">…</li>
+</ol></nav>
+
+<h1 id="page-title" style="font-size:1.75rem;">APIs by tag</h1>
+<p id="count" style="color:#666;"></p>
+
+<div id="listing" class="list-group"></div>
+
+<script>
+(function() {
+  var tag = getQueryVariable('t') || '';
+  if (!tag) { document.getElementById('listing').innerHTML = '<p>No tag specified.</p>'; return; }
+  document.getElementById('bc-tag').textContent = tag;
+  document.getElementById('page-title').textContent = 'APIs tagged "' + tag + '"';
+  document.title = 'APIs tagged "' + tag + '" | {{ site.name }}';
+
+  fetch('{{ site.baseurl }}/search-index.json').then(function(r) { return r.json(); }).then(function(data) {
+    var lower = tag.toLowerCase();
+    var matches = data.filter(function(api) {
+      return (api.t || []).some(function(t) { return t && t.toLowerCase() === lower; });
+    });
+    document.getElementById('count').textContent = matches.length + ' APIs';
+    var html = '';
+    matches.forEach(function(api) {
+      html += '<div class="list-group-item" style="border-left:3px solid #0d6efd;">';
+      html += '<h6 style="margin-bottom:0.25rem;"><a href="' + api.u + '" style="text-decoration:none;">' + api.n + '</a></h6>';
+      if (api.d) html += '<p style="font-size:0.85rem;color:#666;margin:0;">' + api.d + '</p>';
+      html += '</div>';
+    });
+    document.getElementById('listing').innerHTML = html || '<p>No APIs found.</p>';
+  });
+})();
+</script>
