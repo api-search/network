@@ -5,8 +5,11 @@ meta_description: "Search thousands of APIs indexed using the APIs.json specific
 ---
 
 <div style="text-align: center; padding: 2rem 0 1rem;">
+  {% assign all_tags = "" | split: "" %}
+  {% for api in site.apis %}{% for tag in api.tags %}{% if tag != "" %}{% assign all_tags = all_tags | push: tag %}{% endif %}{% endfor %}{% endfor %}
+  {% assign unique_tags = all_tags | uniq %}
   <h1 style="font-size: 2rem; margin-bottom: 0.5rem;">API Search</h1>
-  <p style="color: #666; margin-bottom: 1.5rem;">Search across {{ site.apis | size }} APIs indexed from the APIs.json network</p>
+  <p style="color: #666; margin-bottom: 1.5rem;">Searching across <strong>{{ site.apis | size }}</strong> APIs and <strong>{{ unique_tags | size }}</strong> unique tags from the APIs.json network</p>
 
   <form onsubmit="search(); return false;" style="max-width: 600px; margin: 0 auto;">
     <div class="input-group mb-3">
