@@ -107,6 +107,17 @@ module Jekyll
         end
       end
 
+      # Pre-compute sibling lists on each api doc so layouts don't have
+      # to do an O(N) scan per page render.
+      provider_map.each do |provider, apis|
+        api_summaries = apis.map { |a| { 'name' => a.data['name'], 'url' => a.url } }
+        apis.each do |api|
+          api.data['provider']        = provider
+          api.data['provider_count']  = apis.size
+          api.data['siblings']        = api_summaries.reject { |s| s['url'] == api.url }
+        end
+      end
+
       tag_map.each do |tag, apis|
         site.pages << TagPage.new(site, site.source, tag, apis)
       end

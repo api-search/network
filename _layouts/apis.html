@@ -1,47 +1,175 @@
 ---
 layout: default
 ---
-{% assign aid = page.aid | split: ":" %}
-{% assign provider = aid[0] %}
+{% assign aid_parts = page.aid | split: ":" %}
+{% assign provider = page.provider | default: aid_parts[0] %}
+{% assign siblings = page.siblings | default: empty %}
+{% assign sibling_count = siblings | size %}
 
-<nav aria-label="breadcrumb" style="margin-bottom: 1.5rem;">
-  <ol class="breadcrumb" style="font-size: 0.9rem;">
+{% comment %} Detect property types for icon picking {% endcomment %}
+{% assign has_openapi = false %}
+{% for property in page.properties %}{% if property.type contains 'OpenAPI' or property.url contains 'openapi' %}{% assign has_openapi = true %}{% endif %}{% endfor %}
+
+<style>
+  .api-hero { background: linear-gradient(135deg, #f8f9fb 0%, #eef2f7 100%); border: 1px solid #e3e7ee; border-radius: 12px; padding: 2rem; margin-bottom: 2rem; }
+  .api-overline { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; color: #6c757d; font-weight: 600; margin-bottom: 0.5rem; }
+  .api-overline a { color: #6c757d; text-decoration: none; }
+  .api-overline a:hover { color: #0d6efd; text-decoration: underline; }
+  .api-title { font-size: 2rem; font-weight: 700; margin-bottom: 0.75rem; color: #1a1a2e; }
+  .api-description { color: #4a5568; line-height: 1.6; font-size: 1.05rem; margin-bottom: 1.5rem; }
+  .api-cta { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+  .api-cta .btn { font-weight: 500; }
+
+  .api-grid { display: grid; grid-template-columns: 1fr 280px; gap: 2rem; }
+  @media (max-width: 768px) { .api-grid { grid-template-columns: 1fr; } }
+
+  .section-title { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.5px; color: #6c757d; font-weight: 600; margin: 0 0 0.75rem; padding-bottom: 0.5rem; border-bottom: 1px solid #e3e7ee; }
+
+  .property-tile { display: flex; align-items: center; gap: 0.75rem; padding: 0.75rem 1rem; background: white; border: 1px solid #e3e7ee; border-radius: 8px; text-decoration: none; color: inherit; margin-bottom: 0.5rem; transition: all 0.15s; }
+  .property-tile:hover { border-color: #0d6efd; box-shadow: 0 2px 8px rgba(13,110,253,0.1); color: inherit; transform: translateY(-1px); }
+  .property-icon { width: 36px; height: 36px; border-radius: 6px; background: #eef2f7; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 1rem; }
+  .property-text { flex: 1; min-width: 0; }
+  .property-type { font-size: 0.75rem; font-weight: 600; color: #6c757d; text-transform: uppercase; letter-spacing: 0.5px; }
+  .property-host { font-size: 0.85rem; color: #1a1a2e; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+  .tag-chip-link { display: inline-block; padding: 0.35em 0.75em; background: #eef2f7; color: #1a1a2e; border-radius: 999px; font-size: 0.8rem; font-weight: 500; text-decoration: none; transition: all 0.15s; }
+  .tag-chip-link:hover { background: #0d6efd; color: white; }
+
+  .sidebar-card { background: #fafbfc; border: 1px solid #e3e7ee; border-radius: 10px; padding: 1.25rem; margin-bottom: 1rem; }
+  .sidebar-meta { font-size: 0.85rem; color: #4a5568; }
+  .sidebar-meta strong { color: #1a1a2e; }
+
+  .sibling-list { list-style: none; padding: 0; margin: 0; }
+  .sibling-list li { padding: 0.5rem 0; border-bottom: 1px solid #f0f2f5; }
+  .sibling-list li:last-child { border-bottom: none; }
+  .sibling-list a { color: #0d6efd; text-decoration: none; font-size: 0.9rem; }
+  .sibling-list a:hover { text-decoration: underline; }
+</style>
+
+<nav aria-label="breadcrumb" style="margin-bottom: 1rem;">
+  <ol class="breadcrumb" style="font-size: 0.85rem;">
     <li class="breadcrumb-item"><a href="{{ site.url }}/">Home</a></li>
+    <li class="breadcrumb-item"><a href="{{ site.url }}/provider/?p={{ provider | url_encode }}">{{ provider }}</a></li>
     <li class="breadcrumb-item active" aria-current="page">{{ page.name }}</li>
   </ol>
 </nav>
 
 <article itemscope itemtype="https://schema.org/WebAPI">
-  <h1 itemprop="name" style="font-size: 1.75rem; margin-bottom: 0.25rem;">{{ page.name }}</h1>
-
-  {% if page.description %}
-  <p itemprop="description" style="color: #555; line-height: 1.6; margin-bottom: 1.5rem;">{{ page.description | strip_html | strip_newlines }}</p>
-  {% endif %}
-
-  <h4>Properties</h4>
-  <ul style="margin-bottom: 1.5rem;">
-    {% if page.humanURL %}
-    <li><a href="{{ page.humanURL }}" itemprop="url" rel="noopener">Documentation</a></li>
+  <div class="api-hero">
+    <div class="api-overline">
+      <a href="{{ site.url }}/provider/?p={{ provider | url_encode }}">{{ provider }}</a>
+    </div>
+    <h1 class="api-title" itemprop="name">{{ page.name }}</h1>
+    {% if page.description %}
+    <p class="api-description" itemprop="description">{{ page.description | strip_html | strip_newlines }}</p>
     {% endif %}
-    <li><a href="https://github.com/api-evangelist/{{ provider }}">GitHub Repo</a></li>
-    <li><a href="https://github.com/api-evangelist/{{ provider }}/blob/main/apis.yml">APIs.json Index</a></li>
-    {% if page.baseURL and page.baseURL != 'https://api.example.com' %}
-    <li><a href="{{ page.baseURL }}">Base URL</a></li>
-    {% endif %}
-    {% for property in page.properties %}
-    <li><a href="{{ property.url }}">{{ property.type }}</a></li>
-    {% endfor %}
-  </ul>
-
-  {% assign number_of_tags = page.tags | size %}
-  {% if number_of_tags > 0 %}
-  <h4>Tags</h4>
-  <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem;" itemprop="keywords">
-    {% for tag in page.tags %}
-      {% if tag != '' %}
-      <a href="/?search={{ tag | url_encode }}" class="badge bg-secondary text-decoration-none" style="font-size: 0.85rem; font-weight: 500; padding: 0.4em 0.7em;">{{ tag }}</a>
+    <div class="api-cta">
+      {% if page.humanURL %}
+      <a href="{{ page.humanURL }}" target="_blank" rel="noopener" itemprop="url" class="btn btn-primary">
+        Documentation →
+      </a>
       {% endif %}
-    {% endfor %}
+      <a href="https://github.com/api-evangelist/{{ provider }}" target="_blank" rel="noopener" class="btn btn-outline-dark">
+        GitHub
+      </a>
+      {% if has_openapi %}
+      {% for property in page.properties %}{% if property.type contains 'OpenAPI' %}
+      <a href="{{ property.url }}" target="_blank" rel="noopener" class="btn btn-outline-success">
+        OpenAPI
+      </a>
+      {% break %}{% endif %}{% endfor %}
+      {% endif %}
+    </div>
   </div>
-  {% endif %}
+
+  <div class="api-grid">
+    <div>
+      {% if page.properties.size > 0 %}
+      <h3 class="section-title">Resources</h3>
+      <div style="margin-bottom: 2rem;">
+        {% for property in page.properties %}
+          {% assign type_lower = property.type | downcase %}
+          {% assign icon = '🔗' %}
+          {% if type_lower contains 'doc' %}{% assign icon = '📖' %}
+          {% elsif type_lower contains 'openapi' or type_lower contains 'swagger' %}{% assign icon = '⚙️' %}
+          {% elsif type_lower contains 'postman' %}{% assign icon = '📮' %}
+          {% elsif type_lower contains 'github' %}{% assign icon = '🐙' %}
+          {% elsif type_lower contains 'sdk' %}{% assign icon = '📦' %}
+          {% elsif type_lower contains 'pricing' %}{% assign icon = '💰' %}
+          {% elsif type_lower contains 'sign' or type_lower contains 'register' %}{% assign icon = '🔑' %}
+          {% elsif type_lower contains 'support' %}{% assign icon = '💬' %}
+          {% elsif type_lower contains 'blog' or type_lower contains 'news' %}{% assign icon = '📰' %}
+          {% endif %}
+        <a href="{{ property.url }}" class="property-tile" target="_blank" rel="noopener">
+          <div class="property-icon">{{ icon }}</div>
+          <div class="property-text">
+            <div class="property-type">{{ property.type }}</div>
+            <div class="property-host">{{ property.url }}</div>
+          </div>
+        </a>
+        {% endfor %}
+      </div>
+      {% endif %}
+
+      {% if sibling_count > 0 %}
+      <h3 class="section-title">More from {{ provider }}</h3>
+      <div style="margin-bottom: 2rem;">
+        <ul class="sibling-list">
+          {% for sib in siblings limit: 10 %}
+          <li><a href="{{ sib.url }}">{{ sib.name }}</a></li>
+          {% endfor %}
+        </ul>
+        {% if sibling_count > 10 %}
+        <p style="margin-top: 0.5rem;"><a href="{{ site.url }}/provider/?p={{ provider | url_encode }}" style="font-size: 0.85rem;">View all {{ sibling_count | plus: 1 }} APIs from {{ provider }} →</a></p>
+        {% endif %}
+      </div>
+      {% endif %}
+    </div>
+
+    <aside>
+      <div class="sidebar-card">
+        <h3 class="section-title" style="margin-top: 0;">Provider</h3>
+        <p class="sidebar-meta" style="margin: 0;">
+          <a href="{{ site.url }}/provider/?p={{ provider | url_encode }}"><strong>{{ provider }}</strong></a><br>
+          {% if sibling_count > 0 %}<small>{{ sibling_count | plus: 1 }} APIs indexed</small>{% endif %}
+        </p>
+      </div>
+
+      {% assign number_of_tags = page.tags | size %}
+      {% if number_of_tags > 0 %}
+      <div class="sidebar-card">
+        <h3 class="section-title" style="margin-top: 0;">Tags</h3>
+        <div style="display: flex; flex-wrap: wrap; gap: 0.4rem;" itemprop="keywords">
+          {% for tag in page.tags %}
+            {% if tag != '' %}
+            <a href="{{ site.url }}/tag/?t={{ tag | url_encode }}" class="tag-chip-link">{{ tag }}</a>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+      {% endif %}
+
+      <div class="sidebar-card">
+        <h3 class="section-title" style="margin-top: 0;">APIs.json</h3>
+        <p class="sidebar-meta" style="margin: 0;">
+          <a href="https://github.com/api-evangelist/{{ provider }}/blob/main/apis.yml">View index file →</a>
+        </p>
+      </div>
+    </aside>
+  </div>
 </article>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebAPI",
+  "name": {{ page.name | jsonify }},
+  {% if page.description %}"description": {{ page.description | strip_html | strip_newlines | jsonify }},{% endif %}
+  {% if page.humanURL %}"documentation": {{ page.humanURL | jsonify }},{% endif %}
+  "provider": {
+    "@type": "Organization",
+    "name": {{ provider | jsonify }}
+  }
+  {% if number_of_tags > 0 %},"keywords": {{ page.tags | join: ', ' | jsonify }}{% endif %}
+}
+</script>
