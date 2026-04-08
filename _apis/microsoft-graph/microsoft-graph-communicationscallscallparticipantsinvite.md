@@ -1,0 +1,11 @@
+---
+aid: microsoft-graph:microsoft-graph-communicationscallscallparticipantsinvite
+name: Microsoft Graph Invoke action invite
+tags:
+- Communications.call
+humanURL: 
+properties: []
+description: >-
+  Delete a specific participant in a call. In some situations, it is appropriate for an application to remove a participant from an active call. This action can be done before or after the participant answers the call. When an active caller is removed, they are immediately dropped from the call with no pre- or post-removal notification. When an invited participant is removed, any outstanding add participant request is canceled.
+
+---

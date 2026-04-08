@@ -1,0 +1,11 @@
+---
+aid: microsoft-azure:microsoft-azure-microsoftazuredeploymentscriptsgetlogs
+name: Microsoft Azure Get Subscriptions Subscriptionid Resourcegroups Resourcegroupname Providers Microsoft Resources Deploymentscripts Scriptname Logs
+tags:
+- DeploymentScripts
+humanURL: 
+properties: []
+description: >-
+  Gets deployment script logs for a given deployment script name.
+
+---

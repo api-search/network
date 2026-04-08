@@ -1,0 +1,11 @@
+---
+aid: microsoft-graph:microsoft-graph-devicemanagementupdateuserexperienceanalyticsapphealthapplicationperformancebyappversiondetails
+name: Microsoft Graph Update the navigation property userExperienceAnalyticsAppHealthApplicationPerformanceByAppVersionDetails in deviceManagement
+tags:
+- deviceManagement.userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetails
+humanURL: 
+properties: []
+description: >-
+  PATCH /deviceManagement/userExperienceAnalyticsAppHealthApplicationPerformanceByAppVersionDetails/{userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetails-id} for Microsoft Graph Devicemanagement.
+
+---

@@ -1,0 +1,11 @@
+---
+aid: microsoft-azure:microsoft-azure-microsoftazuretranscriptionsdelete
+name: Microsoft Azure Deletes The Specified Transcription Task
+tags:
+- 'Custom Speech Transcriptions:'
+humanURL: 
+properties: []
+description: >-
+  Needs a more full description created.
+
+---

@@ -1,0 +1,11 @@
+---
+aid: microsoft-azure:microsoft-azure-microsoftazureopenaiget
+name: Microsoft Azure Get Openai Integration Rule For A Given Monitor Resource
+tags:
+- OpenAIIntegration
+humanURL: 
+properties: []
+description: >-
+  Needs a more full description created.
+
+---

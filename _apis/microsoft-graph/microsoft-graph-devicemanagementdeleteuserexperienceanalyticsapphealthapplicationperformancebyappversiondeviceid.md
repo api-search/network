@@ -1,0 +1,11 @@
+---
+aid: microsoft-graph:microsoft-graph-devicemanagementdeleteuserexperienceanalyticsapphealthapplicationperformancebyappversiondeviceid
+name: Microsoft Graph Delete navigation property userExperienceAnalyticsAppHealthApplicationPerformanceByAppVersionDeviceId for deviceManagement
+tags:
+- deviceManagement.userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDeviceId
+humanURL: 
+properties: []
+description: >-
+  DELETE /deviceManagement/userExperienceAnalyticsAppHealthApplicationPerformanceByAppVersionDeviceId/{userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDeviceId-id} for Microsoft Graph Devicemanagement.
+
+---

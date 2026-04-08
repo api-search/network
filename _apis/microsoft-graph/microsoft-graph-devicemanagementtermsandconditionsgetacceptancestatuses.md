@@ -1,0 +1,11 @@
+---
+aid: microsoft-graph:microsoft-graph-devicemanagementtermsandconditionsgetacceptancestatuses
+name: Microsoft Graph Get acceptanceStatuses from deviceManagement
+tags:
+- deviceManagement.termsAndConditions
+humanURL: 
+properties: []
+description: >-
+  The list of acceptance statuses for this T&C policy.
+
+---

@@ -1,0 +1,11 @@
+---
+aid: microsoft-azure:microsoft-azure-microsoftazuregithubownerslistavailable
+name: Microsoft Azure Returns A List Of All Github Owners Accessible By The User Token Consumed By The Connector
+tags:
+- DevOps
+humanURL: 
+properties: []
+description: >-
+  Needs a more full description created.
+
+---

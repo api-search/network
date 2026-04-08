@@ -1,0 +1,11 @@
+---
+aid: microsoft-graph:microsoft-graph-devicesgetregisteredownersasapproleassignment
+name: Microsoft Graph Get the item of type microsoft.graph.directoryObject as microsoft.graph.appRoleAssignment
+tags:
+- devices.directoryObject
+humanURL: 
+properties: []
+description: >-
+  GET /devices/{device-id}/registeredOwners/{directoryObject-id}/graph.appRoleAssignment for Microsoft Graph Devices.
+
+---

@@ -1,0 +1,11 @@
+---
+aid: vtex:vtex-get-productsfromacollection
+name: VTex Get products from a collection
+tags:
+- Collection Beta
+humanURL: 
+properties: []
+description: >-
+  Retrieves information about the products from a collection.  ## Permissions  Any user or [application key](https://developers.vtex.com/docs/guides/api-authentication-using-application-keys) must have at least one of the appropriate [License Manager resources](https://help.vtex.com/en/tutorial/license-manager-resources--3q6ztrC8YynQf6rdc6euk3) to be able to successfully run this request. Otherwise they will receive a status code `403` error. These are the applicable resources for this endp...
+
+---
