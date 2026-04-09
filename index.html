@@ -37,7 +37,6 @@ meta_description: "Search thousands of APIs indexed using the APIs.json specific
       <input type="text" class="form-control" id="api-search" placeholder="Search APIs by name, description, or tag..." aria-label="Search APIs" autocomplete="off">
       <button class="btn btn-dark" type="submit">Search</button>
     </div>
-    <div id="autocomplete" class="list-group position-absolute w-100" style="z-index: 1000; display: none; max-height: 320px; overflow-y: auto; box-shadow: 0 4px 12px rgba(0,0,0,0.1);"></div>
     <div class="d-flex justify-content-center gap-3 flex-wrap" style="font-size: 0.9rem;">
       <div class="form-check">
         <input class="form-check-input" type="checkbox" id="search-name" value="1" checked>
@@ -87,8 +86,6 @@ meta_description: "Search thousands of APIs indexed using the APIs.json specific
 
 <style>
   mark.hl { background: #fff3a3; padding: 0 2px; border-radius: 2px; }
-  .ac-item { cursor: pointer; }
-  .ac-item.active { background: #e7f1ff; }
   .result-card { transition: background 0.1s; }
   .result-card:hover { background: #f8f9fa; }
   .tag-chip { cursor: pointer; user-select: none; }
@@ -109,7 +106,6 @@ meta_description: "Search thousands of APIs indexed using the APIs.json specific
   var currentQuery = '';
   var activeTags = new Set();
   var debounceTimer = null;
-  var acIndex = -1;
 
   function loadIndex() {
     if (indexLoading) return indexLoading;
@@ -305,33 +301,6 @@ meta_description: "Search thousands of APIs indexed using the APIs.json specific
     });
   }
 
-  function renderAutocomplete(query) {
-    var ac = document.getElementById('autocomplete');
-    if (!query || query.length < 2 || !miniSearch) { ac.style.display = 'none'; return; }
-    var fields = getEnabledFields();
-    if (fields.length === 0) { ac.style.display = 'none'; return; }
-    var suggestions = miniSearch.search(query, { fields: fields }).slice(0, 6);
-    if (suggestions.length === 0) { ac.style.display = 'none'; return; }
-    var html = '';
-    suggestions.forEach(function(s, i) {
-      var api = index[s.i];
-      html += '<button type="button" class="list-group-item list-group-item-action ac-item' + (i === acIndex ? ' active' : '') + '" data-aid="' + i + '" data-name="' + escapeHtml(api.n) + '">';
-      html += '<strong>' + highlight(api.n, query) + '</strong>';
-      if (api.p) html += ' <small style="color: #999;">· ' + escapeHtml(api.p) + '</small>';
-      html += '</button>';
-    });
-    ac.innerHTML = html;
-    ac.style.display = '';
-
-    ac.querySelectorAll('.ac-item').forEach(function(el) {
-      el.addEventListener('click', function() {
-        var i = parseInt(el.getAttribute('data-aid'), 10);
-        var sugg = miniSearch.search(query, { fields: getEnabledFields() })[i];
-        if (sugg) window.location.href = index[sugg.i].u;
-      });
-    });
-  }
-
   function renderTagCloud() {
     var counts = {};
     for (var i = 0; i < index.length; i++) {
@@ -420,46 +389,13 @@ meta_description: "Search thousands of APIs indexed using the APIs.json specific
   input.addEventListener('focus', loadIndex);
   input.addEventListener('input', function() {
     clearTimeout(debounceTimer);
-    var v = input.value.trim();
-    debounceTimer = setTimeout(function() {
-      acIndex = -1;
-      if (v.length >= 2) {
-        loadIndex().then(function() { renderAutocomplete(v); });
-      } else {
-        document.getElementById('autocomplete').style.display = 'none';
-      }
-      if (v.length >= 2 || v.length === 0) runSearch();
-    }, 200);
+    debounceTimer = setTimeout(runSearch, 200);
   });
 
   input.addEventListener('keydown', function(e) {
-    var ac = document.getElementById('autocomplete');
-    var items = ac.querySelectorAll('.ac-item');
-    if (e.key === 'ArrowDown' && items.length > 0) {
+    if (e.key === 'Enter') {
       e.preventDefault();
-      acIndex = Math.min(acIndex + 1, items.length - 1);
-      items.forEach(function(el, i) { el.classList.toggle('active', i === acIndex); });
-    } else if (e.key === 'ArrowUp' && items.length > 0) {
-      e.preventDefault();
-      acIndex = Math.max(acIndex - 1, -1);
-      items.forEach(function(el, i) { el.classList.toggle('active', i === acIndex); });
-    } else if (e.key === 'Enter') {
-      e.preventDefault();
-      if (acIndex >= 0 && items[acIndex]) {
-        items[acIndex].click();
-      } else {
-        ac.style.display = 'none';
-        runSearch();
-      }
-    } else if (e.key === 'Escape') {
-      ac.style.display = 'none';
-      acIndex = -1;
-    }
-  });
-
-  document.addEventListener('click', function(e) {
-    if (!e.target.closest('#autocomplete') && e.target.id !== 'api-search') {
-      document.getElementById('autocomplete').style.display = 'none';
+      runSearch();
     }
   });
 
