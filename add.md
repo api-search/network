@@ -3,7 +3,8 @@ layout: page
 title: Add API
 ---
 
-# {{ site.name }} {{ page.title }}
-We welcome submissions to the APs.io index, using [a URL to a valid APIs.json file](https://apisjson.org/) that describes your APIs, and how consumers can use your APIs in their applications.<br>
+# Add an API
+
+Submit your API to the APIs.io index by opening a GitHub issue. Provide a URL to a valid [APIs.json](https://apisjson.org/) file describing your API, and the maintainers will review it for inclusion.
+
 {% include add.html %}
-If the [APIs.json file](https://apisjson.org/) is accepted, you will receive a message here after your submission, and share an GitHub issue to drive discussion and support.

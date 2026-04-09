@@ -1,72 +1,75 @@
-<div class="hero-search">
+<form id="add-api-form" onsubmit="submitToGitHub(event)" style="max-width: 640px; margin: 1.5rem auto;">
+  <div class="mb-3">
+    <label for="api-name" class="form-label">API Name <span class="text-danger">*</span></label>
+    <input type="text" class="form-control" id="api-name" placeholder="Stripe Payments API" required>
+  </div>
 
-    <div class="uk-position-relative">
-        <form class="uk-search uk-search-default uk-width-1-1" name="search-hero" onsubmit="return false;" style="padding: 25px 50px 50px 50px;">
-            <input id="add-api" class="uk-search-input uk-box-shadow-large" type="search" placeholder="https://example.com/apis.json" style="width: 90%;">
-            <input type="submit" value="Add" style="border-radius: 4px;" onclick="addAPI();">
-        </form>
-        <ul id="add-api" class="uk-position-absolute uk-width-1-1 uk-list"></ul>
-    </div>
-    <div class="alert alert-success" role="alert" style="display: none; text-align: center;" id="success-alert"></div>
-    <div class="alert alert-warning" role="alert" style="display: none; text-align: center;" id="warning-alert"></div>
-    <div class="alert alert-danger" role="alert" style="display: none; text-align: center;" id="danger-alert"></div>
-    <script>
-        function hideAlert(){
-            document.getElementById("success-alert").style.display = 'none';
-            document.getElementById("warning-alert").style.display = 'none';
-            document.getElementById("danger-alert").style.display = 'none';   
-            document.getElementById("add-api").value = '';         
-        }
-        function addAPI(){
+  <div class="mb-3">
+    <label for="api-url" class="form-label">APIs.json URL <span class="text-danger">*</span></label>
+    <input type="url" class="form-control" id="api-url" placeholder="https://example.com/apis.json" required>
+    <div class="form-text">A URL to a valid <a href="https://apisjson.org/" target="_blank" rel="noopener">APIs.json</a> file describing your API.</div>
+  </div>
 
-            var submit_api = {};
-            submit_api.url = document.getElementById("add-api").value;
+  <div class="mb-3">
+    <label for="api-human-url" class="form-label">Documentation URL</label>
+    <input type="url" class="form-control" id="api-human-url" placeholder="https://example.com/docs">
+  </div>
 
-            fetch('https://search-api.apis.io/search/apis', {
-                method: 'POST',
-                body: JSON.stringify(submit_api),
-                headers: {
-                    'Content-type': 'application/json'
-                }
-            })       
-            .then(function(response) {
-                if (!response.ok) {
-                    console.log('Error with Status Code: ' + response.status);
-                    return;
-                }
-                response.json().then(function(data) {	
+  <div class="mb-3">
+    <label for="api-provider" class="form-label">Provider / Organization</label>
+    <input type="text" class="form-control" id="api-provider" placeholder="Stripe">
+  </div>
 
-                    if(data.message == 'The API has been added to the APIs.io inbox for review.'){
-                        var display_response = data.message + ' (<a href="' + data.issue + '" target="_blank">Issue</a>)';
-                        document.getElementById("success-alert").innerHTML = display_response;
-                        document.getElementById("success-alert").style.display = '';
-                        //setTimeout(hideAlert, 5000);  
-                    }
-                    else if(data.message == 'APIs.json has already been indexed.'){
-                        document.getElementById("warning-alert").innerHTML = data.message;
-                        document.getElementById("warning-alert").style.display = '';
-                        setTimeout(hideAlert, 5000);  
-                    }      
-                    else{
-                        if(data.message){
-                            document.getElementById("danger-alert").innerHTML = data.message;
-                            document.getElementById("danger-alert").style.display = '';
-                            setTimeout(hideAlert, 5000);  
-                        }
-                        else{
-                            document.getElementById("danger-alert").innerHTML = "Sorry, that was not anything we are interested in."
-                            document.getElementById("danger-alert").style.display = '';
-                            setTimeout(hideAlert, 5000);                              
-                        }
-                    }             
+  <div class="mb-3">
+    <label for="api-tags" class="form-label">Tags</label>
+    <input type="text" class="form-control" id="api-tags" placeholder="payments, billing, subscriptions">
+    <div class="form-text">Comma-separated list of tags.</div>
+  </div>
 
-                    });
-                })
-                .catch(function(err) {
-                    console.log('Error: ' + err);
-            });            
+  <div class="mb-3">
+    <label for="api-description" class="form-label">Description</label>
+    <textarea class="form-control" id="api-description" rows="4" placeholder="A short description of what this API does..."></textarea>
+  </div>
 
-        }
-    </script>
+  <div class="mb-3">
+    <label for="api-contact" class="form-label">Your Contact (optional)</label>
+    <input type="text" class="form-control" id="api-contact" placeholder="@yourhandle or email">
+  </div>
 
-</div>
+  <button type="submit" class="btn btn-primary">Submit via GitHub Issue</button>
+  <p class="form-text mt-3">
+    Submitting will open a pre-filled GitHub issue at <a href="https://github.com/api-search/network/issues" target="_blank" rel="noopener">api-search/network</a>. You'll need a GitHub account to complete the submission.
+  </p>
+</form>
+
+<script>
+function submitToGitHub(e) {
+  e.preventDefault();
+  var name = document.getElementById('api-name').value.trim();
+  var url = document.getElementById('api-url').value.trim();
+  var humanUrl = document.getElementById('api-human-url').value.trim();
+  var provider = document.getElementById('api-provider').value.trim();
+  var tags = document.getElementById('api-tags').value.trim();
+  var description = document.getElementById('api-description').value.trim();
+  var contact = document.getElementById('api-contact').value.trim();
+
+  var title = 'Add API: ' + name;
+
+  var body = '## API Submission\n\n';
+  body += '**Name:** ' + name + '\n\n';
+  body += '**APIs.json URL:** ' + url + '\n\n';
+  if (humanUrl)    body += '**Documentation:** ' + humanUrl + '\n\n';
+  if (provider)    body += '**Provider:** ' + provider + '\n\n';
+  if (tags)        body += '**Tags:** ' + tags + '\n\n';
+  if (description) body += '**Description:**\n\n' + description + '\n\n';
+  if (contact)     body += '**Submitted by:** ' + contact + '\n\n';
+  body += '---\n_Submitted via the [APIs.io add form]({{ site.url }}/add/)._';
+
+  var issueUrl = 'https://github.com/api-search/network/issues/new'
+    + '?title=' + encodeURIComponent(title)
+    + '&body=' + encodeURIComponent(body)
+    + '&labels=' + encodeURIComponent('api-submission');
+
+  window.open(issueUrl, '_blank', 'noopener');
+}
+</script>
