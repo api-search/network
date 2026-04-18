@@ -23,63 +23,63 @@ personas: []
 provider_name: Cloudflare
 provider_slug: cloudflare
 search_terms:
-- verify a turnstile token.
-- delete a dns record.
-- logpush list jobs
-- cloud
-- logpush get job
-- edge
-- serverless
-- artificial intelligence
-- cloudflare
-- ddos protection
-- logpush job management.
-- ai gateway
-- create a logpush job.
-- web performance
-- list turnstile widgets
-- dns get record
-- dns update record
-- containers
-- api gateway
-- list dataset fields.
-- create a turnstile widget.
-- list dns records.
 - turnstile list widgets
-- dns batch records
-- dns
-- list logpush jobs
-- get dns record details.
-- execute batch dns operations.
-- turnstile widget management.
-- create a dns record.
+- list turnstile widgets
 - list turnstile widgets.
-- dns record management.
-- update a dns record.
-- list dns records
-- platform
-- delete a turnstile widget.
-- delete a logpush job.
-- cdn
-- observability
-- turnstile create widget
-- list logpush jobs.
+- ddos protection
 - get dnssec settings.
-- logpush delete job
-- dns create record
-- dns list records
-- turnstile delete widget
-- logpush create job
-- logpush list dataset fields
-- list dns records for a zone.
-- get logpush job details.
-- security
-- edge computing
+- cloudflare
+- logpush list jobs
 - dns delete record
-- object storage
-- dns get dnssec
+- edge
 - turnstile verify token
+- logpush get job
+- logpush list dataset fields
+- logpush create job
+- get logpush job details.
+- observability
+- logpush delete job
+- cdn
+- dns record management.
+- cloud
+- dns get dnssec
+- delete a turnstile widget.
+- web performance
+- execute batch dns operations.
+- dns batch records
+- create a logpush job.
+- update a dns record.
+- turnstile delete widget
+- serverless
+- ai gateway
+- list dns records.
+- get dns record details.
+- list dataset fields.
+- security
+- list logpush jobs
+- object storage
+- api gateway
+- delete a dns record.
 - real-time communication
+- dns
+- list dns records
+- edge computing
+- verify a turnstile token.
+- dns list records
+- dns create record
+- containers
+- logpush job management.
+- platform
+- delete a logpush job.
+- dns get record
+- turnstile widget management.
+- dns update record
+- create a turnstile widget.
+- create a dns record.
+- turnstile create widget
+- list dns records for a zone.
+- list logpush jobs.
+- artificial intelligence
 slug: dns-and-security
 tags:
 - Cloudflare

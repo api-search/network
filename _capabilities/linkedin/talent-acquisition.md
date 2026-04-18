@@ -63,58 +63,58 @@ personas: []
 provider_name: LinkedIn
 provider_slug: linkedin
 search_terms:
-- business
-- check job posting task status.
+- get child application credentials.
+- create or update job posting
+- sync candidates
+- delete synced applications.
+- integrates linkedin authentication and sharing into applications.
+- posts jobs and manages candidates through ats integrations.
 - get child application
+- provision child application
+- sync job applications.
+- get exported candidates
+- business
+- sync applications
+- employee development tracking and content access.
+- create or update a job posting.
+- delete applications
+- social media
+- upsert entity acl
+- marketing
+- create resume upload url
+- get seatholders
+- delete synced candidates.
+- job posting, recruiting, and applicant tracking.
 - manages b2b ad campaigns and audience targeting on linkedin.
 - tracks employee learning activity and completions.
-- get seatholders
-- posts jobs and manages candidates through ats integrations.
-- create resume upload url
-- retrieve recruiter seatholders.
-- create or update a job posting.
-- b2b advertising, audience targeting, and campaign analytics.
 - get candidate matches
-- talent acquisition
-- provision child application
-- create or update job posting
-- retrieve candidate matches.
-- integrates linkedin authentication and sharing into applications.
-- sync candidates to linkedin.
-- social media
-- professional networking
-- marketing
-- get customer integrations
-- message archiving and regulatory communications governance.
-- get child application credentials.
-- upsert entity acl
-- archives communications for regulatory compliance.
-- delete synced applications.
-- get exported candidates
-- recruiting
-- update customer integrations
-- sync job applications.
-- job posting, recruiting, and applicant tracking.
-- data portability and advertiser transparency for dma.
-- employee development tracking and content access.
 - delete candidates
-- delete applications
-- delete synced candidates.
-- sync candidates
+- talent acquisition
 - create or update entity acl.
-- sales intelligence, lead management, and crm integration.
-- get customer ats integration details.
-- uses sales navigator for lead generation and crm sync.
 - linkedin
 - careers
-- update customer ats integrations.
-- sync applications
-- create resume upload url.
-- job posting
-- get exported candidate profiles.
-- provision a child application.
 - authentication, sharing, and verification for consumer apps.
 - get job posting task status
+- get customer ats integration details.
+- archives communications for regulatory compliance.
+- create resume upload url.
+- sync candidates to linkedin.
+- message archiving and regulatory communications governance.
+- get customer integrations
+- job posting
+- sales intelligence, lead management, and crm integration.
+- recruiting
+- update customer ats integrations.
+- get exported candidate profiles.
+- uses sales navigator for lead generation and crm sync.
+- check job posting task status.
+- retrieve recruiter seatholders.
+- professional networking
+- retrieve candidate matches.
+- update customer integrations
+- b2b advertising, audience targeting, and campaign analytics.
+- data portability and advertiser transparency for dma.
+- provision a child application.
 slug: talent-acquisition
 tags:
 - LinkedIn

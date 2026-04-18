@@ -38,47 +38,47 @@ personas: []
 provider_name: LinkedIn
 provider_slug: linkedin
 search_terms:
-- lead generation
-- business
-- validate organization role
-- get lead forms
-- fetch existing conversion rules.
-- manages b2b ad campaigns and audience targeting on linkedin.
-- create a new conversion rule.
-- tracks employee learning activity and completions.
-- demand generation
-- get sponsored accounts
-- posts jobs and manages candidates through ats integrations.
-- b2b advertising, audience targeting, and campaign analytics.
-- get conversion rules
-- create conversion rule
-- subscribe lead notifications
-- get lead forms for a sponsored account.
-- integrates linkedin authentication and sharing into applications.
-- social media
-- professional networking
-- marketing
-- subscribe for lead notification webhooks.
-- fetch full lead data by id.
-- message archiving and regulatory communications governance.
-- archives communications for regulatory compliance.
-- get the user's sponsored accounts.
-- pull lead form responses.
 - get lead by id
-- conversions
-- recruiting
-- validate user's organization role for lead access.
-- job posting, recruiting, and applicant tracking.
-- data portability and advertiser transparency for dma.
-- employee development tracking and content access.
-- sales intelligence, lead management, and crm integration.
-- uses sales navigator for lead generation and crm sync.
-- authentication, sharing, and verification for consumer apps.
-- linkedin
-- careers
+- integrates linkedin authentication and sharing into applications.
+- posts jobs and manages candidates through ats integrations.
+- validate organization role
 - get lead form responses
+- subscribe for lead notification webhooks.
+- business
+- fetch existing conversion rules.
+- conversions
+- employee development tracking and content access.
+- validate user's organization role for lead access.
+- create a new conversion rule.
+- get lead forms
+- social media
+- lead generation
+- marketing
+- subscribe lead notifications
+- get conversion rules
+- manages b2b ad campaigns and audience targeting on linkedin.
+- job posting, recruiting, and applicant tracking.
+- tracks employee learning activity and completions.
+- linkedin
 - stream conversion events.
+- careers
+- authentication, sharing, and verification for consumer apps.
+- archives communications for regulatory compliance.
+- create conversion rule
+- message archiving and regulatory communications governance.
+- get lead forms for a sponsored account.
+- pull lead form responses.
+- get the user's sponsored accounts.
+- sales intelligence, lead management, and crm integration.
+- recruiting
+- uses sales navigator for lead generation and crm sync.
+- professional networking
 - stream conversion events
+- get sponsored accounts
+- demand generation
+- b2b advertising, audience targeting, and campaign analytics.
+- data portability and advertiser transparency for dma.
+- fetch full lead data by id.
 slug: lead-generation-and-conversions
 tags:
 - LinkedIn

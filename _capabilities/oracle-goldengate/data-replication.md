@@ -55,72 +55,72 @@ personas: []
 provider_name: Oracle GoldenGate
 provider_slug: oracle-goldengate
 search_terms:
-- list distribution paths
-- data replication
-- service health
-- available big data target types
-- list all extract processes from the core goldengate deployment
-- execute a ggsci-style goldengate command
-- create data stream
-- create extract
-- big data replicat processes
-- list available big data target types
-- core create extract
-- get a specific extract process
-- delete extract
-- credential store management
-- get performance metrics for all running processes
-- create a new replicat process
-- list replicats
-- list all replicat processes
-- distribution path management
-- list big data replicats
-- list data distribution paths
-- data integration
-- create a new extract process
-- list all configured data streams
-- execute command
-- core get extract
-- data stream management
-- core get replicat
-- bigdata list replicats
-- database
-- delete an extract process
-- issue a command (start, stop, kill) to an extract
-- get data stream
-- list available big data target types (kafka, hdfs, mongodb, etc.)
-- get service health
-- get details of a specific replicat process
-- individual extract operations
-- cdc
-- enterprise
-- core issue replicat command
-- core create replicat
-- get extract
-- core list extracts
-- get details of a specific extract process
-- list all big data replicat processes
-- extract process management across core and big data deployments
-- get service health details
-- list credential store domains
-- list data target types
-- get configuration of a specific data stream
-- bigdata get replicat
-- list process metrics
-- list data streams
-- create a new data stream for downstream distribution
-- list all extract processes
-- list all data streams
-- get a big data replicat process
-- oracle goldengate
-- data synchronization
-- issue a command to a replicat process
-- replicat process management
 - list extracts
-- core list replicats
-- real-time replication
 - list credential domains
+- core list replicats
+- list all data streams
+- oracle goldengate
+- list data streams
+- create a new replicat process
+- core issue replicat command
+- available big data target types
+- core create extract
+- list all replicat processes
+- get a big data replicat process
+- get data stream
+- create data stream
+- credential store management
+- service health
+- list data distribution paths
+- distribution path management
+- data integration
+- list replicats
+- database
+- get service health details
+- core get extract
+- get configuration of a specific data stream
+- list process metrics
+- list data target types
+- issue a command (start, stop, kill) to an extract
+- get service health
+- list credential store domains
+- execute a ggsci-style goldengate command
+- list available big data target types (kafka, hdfs, mongodb, etc.)
+- bigdata list replicats
+- core create replicat
+- data replication
+- replicat process management
+- list all configured data streams
+- list all extract processes from the core goldengate deployment
+- list big data replicats
+- extract process management across core and big data deployments
+- data stream management
+- list all extract processes
+- create extract
+- list distribution paths
+- get extract
+- cdc
+- get performance metrics for all running processes
+- list all big data replicat processes
+- big data replicat processes
+- get details of a specific replicat process
+- bigdata get replicat
+- create a new data stream for downstream distribution
+- delete extract
+- data synchronization
+- enterprise
+- list available big data target types
+- get details of a specific extract process
+- execute command
+- real-time replication
+- individual extract operations
+- core list extracts
+- create a new extract process
+- delete an extract process
+- get a specific extract process
 - core issue extract command
+- core get replicat
+- issue a command to a replicat process
 slug: data-replication
 tags:
 - Oracle GoldenGate

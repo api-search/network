@@ -74,69 +74,69 @@ personas: []
 provider_name: WhatsApp
 provider_slug: whatsapp
 search_terms:
-- get phone number
-- lists all phone numbers associated with a waba.
-- removes an assigned user.
-- individual phone number information.
-- phone numbers associated with a waba.
-- user assignments for a waba.
-- business profile
-- lists all users assigned to a waba.
-- requests a verification code via sms or voice call for phone registration.
-- disconnect product catalog
-- whatsapp business account information.
-- lists product catalogs connected to a waba.
-- registration
-- update business profile
-- verify code
-- product catalog management.
-- register phone numbers.
-- get business profile
-- assigns a user to a waba.
-- set two step verification
-- sets or updates the two-step verification pin.
-- remove assigned user
-- disconnects a product catalog.
-- updates the whatsapp business profile.
-- list phone numbers
-- lists product catalogs.
-- connects a product catalog.
-- verify phone numbers.
-- whatsapp
-- updates the whatsapp business profile for a phone number.
-- retrieves information about a whatsapp business account.
-- get business account
-- disconnects a product catalog from a waba.
-- whatsapp business profile management.
-- retrieves the whatsapp business profile.
-- assign user
-- retrieves information about a registered phone number.
-- lists assigned users.
-- request verification codes for registration.
-- product catalogs
-- assigns a user with specific tasks to a waba.
-- two-step verification pin management.
-- list product catalogs
 - deregisters a phone number from the cloud api.
-- retrieves the whatsapp business profile for a phone number.
-- phone numbers
-- request verification code
-- connect product catalog
-- list assigned users
-- requests a verification code.
-- register phone number
 - connects a product catalog to a waba.
-- deregisters a phone number.
-- verifies a phone number using a verification code.
-- deregister phone numbers.
-- removes a user from a waba.
-- registers a phone number for cloud api.
-- sets or updates the two-step verification pin for a phone number.
 - user management
-- registers a phone number for use with the cloud api.
-- deregister phone number
-- account management
+- phone numbers associated with a waba.
+- retrieves the whatsapp business profile.
+- assigns a user to a waba.
+- register phone number
+- business profile
+- whatsapp
+- whatsapp business profile management.
+- removes an assigned user.
+- removes a user from a waba.
+- product catalog management.
+- disconnect product catalog
+- assign user
+- request verification code
+- phone numbers
+- two-step verification pin management.
+- retrieves information about a registered phone number.
+- list product catalogs
+- connect product catalog
+- verify phone numbers.
+- verify code
 - verifies a phone number.
+- deregister phone numbers.
+- assigns a user with specific tasks to a waba.
+- list phone numbers
+- updates the whatsapp business profile for a phone number.
+- lists product catalogs.
+- requests a verification code via sms or voice call for phone registration.
+- whatsapp business account information.
+- remove assigned user
+- lists product catalogs connected to a waba.
+- get business profile
+- user assignments for a waba.
+- connects a product catalog.
+- lists assigned users.
+- product catalogs
+- sets or updates the two-step verification pin.
+- registration
+- register phone numbers.
+- verifies a phone number using a verification code.
+- deregister phone number
+- registers a phone number for use with the cloud api.
+- sets or updates the two-step verification pin for a phone number.
+- lists all users assigned to a waba.
+- requests a verification code.
+- individual phone number information.
+- deregisters a phone number.
+- get business account
+- disconnects a product catalog.
+- disconnects a product catalog from a waba.
+- request verification codes for registration.
+- updates the whatsapp business profile.
+- retrieves information about a whatsapp business account.
+- update business profile
+- account management
+- lists all phone numbers associated with a waba.
+- get phone number
+- retrieves the whatsapp business profile for a phone number.
+- list assigned users
+- set two step verification
+- registers a phone number for cloud api.
 slug: account-and-phone-management
 tags:
 - WhatsApp

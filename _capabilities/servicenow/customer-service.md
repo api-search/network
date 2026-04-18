@@ -51,70 +51,70 @@ personas: []
 provider_name: ServiceNow
 provider_slug: servicenow
 search_terms:
-- catalog item browsing.
-- get category
-- shopping cart.
-- empty cart
-- create a csm contact.
-- order item now
-- list contacts
-- self service
-- customer service
-- get a specific contact.
-- t1
-- service catalog browsing.
-- retrieve shopping cart contents.
-- it service management
-- get cart
-- remove all items from the shopping cart.
-- digital workflows
-- get cart contents.
-- update trouble ticket
-- retrieve a specific trouble ticket.
-- trouble ticket operations.
-- retrieve a specific service catalog.
-- retrieve a specific csm contact.
-- csm contact management.
-- cloud services
-- get contact
-- get catalog item
-- list catalog items
-- servicenow
-- retrieve catalog item details with variables.
-- itsm
-- create trouble ticket
-- update an existing trouble ticket.
-- workflows
-- create a new csm contact.
-- list csm contacts with optional filtering.
-- get catalog
-- service catalog
-- add a catalog item to the shopping cart.
-- list catalog items.
-- contacts
-- get catalog item details.
-- submit cart order
-- workflow automation
-- get trouble ticket
-- retrieve a catalog category with subcategories.
-- create contact
-- add item to cart
-- processes
-- single catalog item.
-- list trouble tickets.
-- list trouble tickets
-- list service catalogs.
-- create a trouble ticket.
-- list csm contacts.
-- list catalog items with optional filtering.
-- order a catalog item immediately.
 - submit cart as a service catalog request.
-- list catalogs
-- empty the cart.
+- remove all items from the shopping cart.
+- processes
+- order a catalog item immediately.
+- get a specific contact.
+- customer service
+- list catalog items
+- list trouble tickets
+- shopping cart.
+- list service catalogs.
 - list available service catalogs.
+- retrieve a catalog category with subcategories.
+- get catalog item details.
+- it service management
+- get cart contents.
+- workflow automation
+- list trouble tickets.
+- empty the cart.
+- get catalog
+- cloud services
+- service catalog browsing.
+- t1
+- single catalog item.
+- create a csm contact.
+- add a catalog item to the shopping cart.
+- servicenow
+- get contact
+- list catalog items.
+- trouble ticket operations.
+- add item to cart
+- update trouble ticket
+- get catalog item
+- csm contact management.
+- retrieve a specific csm contact.
+- order item now
+- retrieve a specific trouble ticket.
+- get category
+- retrieve a specific service catalog.
+- submit cart order
+- list catalog items with optional filtering.
+- create contact
+- retrieve catalog item details with variables.
+- update an existing trouble ticket.
+- list catalogs
+- list csm contacts with optional filtering.
 - enterprise platform
+- workflows
+- retrieve shopping cart contents.
+- contacts
+- create trouble ticket
+- get trouble ticket
+- empty cart
+- list csm contacts.
+- self service
+- create a trouble ticket.
 - automation
+- digital workflows
+- create a new csm contact.
 - single contact operations.
+- itsm
+- catalog item browsing.
+- service catalog
+- get cart
+- list contacts
 slug: customer-service
 tags:
 - ServiceNow

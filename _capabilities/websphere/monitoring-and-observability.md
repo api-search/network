@@ -39,47 +39,47 @@ personas: []
 provider_name: IBM WebSphere
 provider_slug: websphere
 search_terms:
-- get was performance monitoring data
-- list batch job instances
-- check if liberty server is alive
-- j2ee
-- application server
 - get batch job
-- get batch job instance details
-- get open liberty overall health
-- metrics
-- check if liberty server is ready for traffic
-- get liberty health
-- get was health
-- get was server health status
-- cloud native
-- health check endpoints
-- enterprise java
-- batch job monitoring
-- get liberty admin metrics
-- get log messages
-- monitoring
-- get liberty metrics
-- observability
-- metrics collection
-- performance data
-- get was server health
 - get liberty log messages
-- get all metrics
-- list batch jobs
-- get liveness
-- get recent liberty log messages
-- microservices
-- get performance data
-- get log config
-- get readiness
-- log management
-- list jakarta batch job instances
-- middleware
-- get open liberty overall health status
-- get liberty logging configuration
-- get all open liberty metrics
 - ibm websphere
+- metrics
+- check if liberty server is alive
+- get all open liberty metrics
+- get recent liberty log messages
+- get liberty admin metrics
+- health check endpoints
+- get was server health
+- observability
+- get liberty health
+- cloud native
+- get open liberty overall health status
+- get was performance monitoring data
+- get log config
+- get performance data
+- get open liberty overall health
+- get was health
+- j2ee
+- get all metrics
+- get liveness
+- batch job monitoring
+- log management
+- list batch job instances
+- get readiness
+- get batch job instance details
+- list batch jobs
+- get was server health status
+- enterprise java
+- get liberty metrics
+- get log messages
+- performance data
+- monitoring
+- application server
+- check if liberty server is ready for traffic
+- list jakarta batch job instances
+- get liberty logging configuration
+- middleware
+- metrics collection
+- microservices
 slug: monitoring-and-observability
 tags:
 - IBM WebSphere

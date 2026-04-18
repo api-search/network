@@ -39,43 +39,43 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- process a payment through the gateway
-- process a payment through the mastercard gateway
-- qr code payment acceptance
-- create unified session
-- unified checkout sessions
-- create checkout session
-- create an installment plan
 - create installment plan
-- register contactless reader
-- create a unified checkout session supporting multiple payment methods
-- generate qr code
-- retrieve payment transaction details
-- process a cloud commerce transaction
-- register a contactless reader device
-- merchant
-- buy-now-pay-later installment plans
-- process payment
-- generate a merchant qr code for payment
-- fraud detection
-- open banking
-- mastercard
-- checkout session management
-- digital identity
-- checkout
-- get payment
-- get payment details
-- generate a merchant-presented qr code for payment
-- create a new checkout session for a merchant
-- process cloud transaction
-- create a new checkout session
-- payment processing
-- payments
-- financial services
-- credit cards
+- create checkout session
 - create a unified checkout session
+- create a unified checkout session supporting multiple payment methods
+- credit cards
+- process a payment through the gateway
+- register a contactless reader device
+- process payment
+- checkout session management
 - create a buy-now-pay-later installment plan
+- financial services
+- create a new checkout session for a merchant
+- merchant
+- mastercard
+- retrieve payment transaction details
+- create a new checkout session
+- process a payment through the mastercard gateway
+- payments
+- register contactless reader
+- process a cloud commerce transaction
+- digital identity
+- open banking
+- create unified session
+- fraud detection
+- buy-now-pay-later installment plans
+- process cloud transaction
+- create an installment plan
+- checkout
+- unified checkout sessions
+- generate a merchant-presented qr code for payment
+- qr code payment acceptance
+- payment processing
+- generate qr code
+- get payment details
 - e-commerce
+- get payment
+- generate a merchant qr code for payment
 slug: payment-processing-and-checkout
 tags:
 - Mastercard

@@ -57,63 +57,63 @@ personas: []
 provider_name: Microsoft Dynamics NAV
 provider_slug: navision
 search_terms:
-- microsoft
-- navision
-- dynamics 365
-- list general ledger accounts
-- list all vendors
-- list sales invoices
-- sales
-- get a customer
 - create a new inventory item
-- create a customer
-- list accounts
-- create sales order
-- sales invoices
-- erp
-- list customers
-- create a new sales order
-- list vendors
-- list purchase invoices
-- inventory items
-- customer management
-- get customer
-- list all items
-- sales orders
-- list purchase orders
-- company information
-- list sales orders
-- list journals
-- list all customers
-- list all sales orders
-- business central
 - list employees
-- get a customer by id
-- list companies
-- general ledger accounts
-- vendor management
-- create a new customer
-- purchase orders
-- create customer
-- create vendor
-- inventory
-- list items
-- list all purchase orders
-- create a sales order
-- business management
-- create a new vendor
-- list general journals
-- list inventory items
-- single customer
-- list all employees
-- create a new purchase order
+- list purchase orders
+- list journals
+- inventory items
 - finance
-- purchasing
-- create purchase order
-- create item
+- create customer
+- single customer
+- get customer
+- list vendors
+- list all sales orders
+- list companies
+- erp
+- inventory
+- company information
 - dynamics nav
-- list available companies
+- purchasing
+- list sales invoices
+- sales orders
+- list all purchase orders
+- create vendor
+- list all customers
+- create a customer
+- sales invoices
+- create a new vendor
+- list sales orders
+- list all employees
+- create purchase order
+- vendor management
+- get a customer by id
+- create a new customer
+- list all vendors
+- purchase orders
+- sales
+- create sales order
+- business central
+- general ledger accounts
+- create a sales order
+- customer management
+- create a new sales order
+- list general journals
+- navision
+- microsoft
+- dynamics 365
+- business management
+- get a customer
+- create item
+- list accounts
+- list all items
+- list items
+- create a new purchase order
 - general journals
+- list general ledger accounts
+- list available companies
+- list customers
+- list inventory items
+- list purchase invoices
 slug: business-operations
 tags:
 - Business Central

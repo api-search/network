@@ -699,6 +699,138 @@ def clear_collections():
     print("Cleared existing collections.")
 
 
+def build_vocabulary_index(provider_dirs):
+    """Build a consolidated vocabulary index from all provider repos."""
+    all_resources = []
+    all_actions = []
+    all_personas = []
+    all_domains = []
+    all_schemas_vocab = []
+    all_tags = set()
+    provider_count = 0
+
+    for provider_dir in provider_dirs:
+        vocab_files = glob.glob(os.path.join(provider_dir, 'vocabulary', '*-vocabulary.yaml'))
+        if not vocab_files:
+            continue
+
+        vocab_data = load_yaml(vocab_files[0])
+        if not vocab_data:
+            continue
+
+        # Determine format
+        is_structured = 'vocabulary' in vocab_data or 'operational' in vocab_data
+
+        # Get provider info
+        if is_structured:
+            info = vocab_data.get('info', {})
+            provider_name = info.get('provider', os.path.basename(provider_dir))
+        else:
+            provider_name = vocab_data.get('provider', vocab_data.get('name', os.path.basename(provider_dir)))
+
+        provider_slug = os.path.basename(provider_dir)
+        provider_count += 1
+
+        if is_structured:
+            operational = vocab_data.get('operational', {})
+
+            # Resources
+            for res in operational.get('resources', []):
+                all_resources.append({
+                    'name': res.get('name', ''),
+                    'description': clean_description(res.get('description', '')),
+                    'provider': provider_name,
+                    'provider_slug': provider_slug,
+                    'actions': res.get('actions', []),
+                    'apis': res.get('apis', []),
+                })
+
+            # Actions
+            for action in operational.get('actions', []):
+                all_actions.append({
+                    'name': action.get('name', ''),
+                    'verb': action.get('verb', ''),
+                    'pattern': action.get('pattern', ''),
+                    'description': clean_description(action.get('description', '')),
+                    'provider': provider_name,
+                    'provider_slug': provider_slug,
+                })
+
+            # Schemas from vocabulary
+            for category, schema_list in operational.get('schemas', {}).items():
+                if isinstance(schema_list, list):
+                    for s in schema_list:
+                        all_schemas_vocab.append({
+                            'name': s.get('name', ''),
+                            'description': clean_description(s.get('description', '')),
+                            'category': category,
+                            'provider': provider_name,
+                            'provider_slug': provider_slug,
+                        })
+
+            # Capability dimension
+            cap = vocab_data.get('capability', {})
+
+            # Personas
+            for persona in cap.get('personas', []):
+                all_personas.append({
+                    'id': persona.get('id', ''),
+                    'name': persona.get('name', ''),
+                    'description': clean_description(persona.get('description', '')),
+                    'provider': provider_name,
+                    'provider_slug': provider_slug,
+                    'workflows': persona.get('workflows', []),
+                })
+
+            # Domains
+            for domain in cap.get('domains', []):
+                all_domains.append({
+                    'name': domain.get('name', ''),
+                    'description': clean_description(domain.get('description', '')),
+                    'provider': provider_name,
+                    'provider_slug': provider_slug,
+                    'resources': domain.get('resources', []),
+                })
+
+        else:
+            # Simple format - extract tags as searchable terms
+            for tag in vocab_data.get('tags', []):
+                all_tags.add(tag)
+
+    # Deduplicate actions by name
+    seen_actions = {}
+    for a in all_actions:
+        key = a['name']
+        if key not in seen_actions:
+            seen_actions[key] = {
+                'name': a['name'],
+                'verb': a['verb'],
+                'pattern': a['pattern'],
+                'description': a['description'],
+                'providers': [a['provider']],
+            }
+        else:
+            if a['provider'] not in seen_actions[key]['providers']:
+                seen_actions[key]['providers'].append(a['provider'])
+
+    return {
+        'resources': all_resources,
+        'actions': list(seen_actions.values()),
+        'personas': all_personas,
+        'domains': all_domains,
+        'schemas': all_schemas_vocab,
+        'tags': sorted(all_tags),
+        'stats': {
+            'providers': provider_count,
+            'resources': len(all_resources),
+            'actions': len(seen_actions),
+            'personas': len(all_personas),
+            'domains': len(all_domains),
+            'schemas': len(all_schemas_vocab),
+        }
+    }
+
+
 def main():
     print("=== APIs.io Build Script ===")
     print(f"Source: {EVANGELIST_DIR}")
@@ -736,6 +868,15 @@ def main():
             providers.append(result)
             total_apis += result.get('api_count', 0)
             total_caps += len(result.get('capabilities', []))
+
+    # Build vocabulary index for advanced search
+    vocab_index = build_vocabulary_index(provider_dirs)
+    data_dir = os.path.join(NETWORK_DIR, '_data')
+    os.makedirs(data_dir, exist_ok=True)
+    vocab_path = os.path.join(data_dir, 'vocabulary.json')
+    with open(vocab_path, 'w') as f:
+        json.dump(vocab_index, f, indent=2)
+    print(f"Vocabulary:   {vocab_index['stats']['providers']} providers, {vocab_index['stats']['resources']} resources, {vocab_index['stats']['personas']} personas, {vocab_index['stats']['domains']} domains")
 
     # Count file-based collections
     def count_md(d):

@@ -37,45 +37,45 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- get conversion rate
-- currency conversion rates
-- get account info
-- get currency conversion rate
-- create a disbursement to send money to a recipient
-- disbursements
-- create a disbursement
-- create funding
-- money transfer
-- create a person-to-person money transfer
-- create a person-to-person transfer
-- process a direct service transaction
-- funding transactions
-- fraud detection
-- open banking
-- mastercard send
-- mastercard
-- verify send account
-- digital identity
-- disbursement transactions
-- create disbursement
-- get currency conversion rate for cross-border transactions
-- process direct transaction
-- create a cross-border payment
-- create a funding transaction
-- cross-border
-- verify account eligibility for mastercard send
-- create p2p transfer
-- create a funding transaction via mastercard send
-- payments
-- financial services
-- credit cards
 - validate account
-- cross-border payment processing
-- create a cross-border international payment
-- p2p transfers
+- get currency conversion rate
+- credit cards
+- get account info
+- create a disbursement
+- money transfer
+- currency conversion rates
+- get currency conversion rate for cross-border transactions
+- create a person-to-person transfer
 - create cross border payment
+- get conversion rate
+- create a disbursement to send money to a recipient
+- process direct transaction
+- create a funding transaction
+- financial services
+- mastercard
+- p2p transfers
 - get account information for a send recipient
+- verify send account
+- create a cross-border payment
 - validate account details before transfer
+- create a cross-border international payment
+- mastercard send
+- payments
+- digital identity
+- verify account eligibility for mastercard send
+- open banking
+- cross-border
+- create a person-to-person money transfer
+- create p2p transfer
+- fraud detection
+- cross-border payment processing
+- disbursement transactions
+- process a direct service transaction
+- create a funding transaction via mastercard send
+- disbursements
+- create disbursement
+- create funding
+- funding transactions
 slug: money-transfer-and-disbursements
 tags:
 - Mastercard

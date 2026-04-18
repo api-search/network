@@ -54,64 +54,64 @@ personas: []
 provider_name: Red Hat
 provider_slug: red-hat
 search_terms:
-- list available openshift versions.
-- list image tags.
-- container image repositories.
-- image vulnerability scanning.
-- quay
-- create a new openshift cluster.
-- create a container repository.
-- cloud
-- list all managed clusters.
-- list subscriptions
-- list machine pools for a cluster.
-- open source
 - list available cloud providers.
-- delete cluster
-- list cloud providers.
-- containers
-- create a new cluster.
-- list tags for a container image.
-- platform engineering
-- cluster machine pools.
-- linux
-- list openshift versions.
-- list container repositories.
+- kubernetes
 - create repository
-- get cluster
-- list addons
+- create a container repository.
+- list versions
 - openshift
+- list machine pools
+- image vulnerability scanning.
+- create a new container repository.
 - red hat
+- get details of a specific cluster.
+- list image tags.
 - get cluster details.
+- container image repositories.
+- get repository
+- available cloud providers.
+- list tags for a container image.
+- get cluster
+- openshift versions.
+- get vulnerability scan results for a container image.
+- hybrid cloud
+- cluster machine pools.
+- list machine pools.
+- list container repositories.
+- list machine pools for a cluster.
+- list clusters
+- get vulnerability scan results.
+- list cluster subscriptions.
+- get container repository details.
+- cloud
+- delete a cluster.
+- list repositories
+- open source
+- image tags.
+- list all managed clusters.
+- list available cluster add-ons.
+- list repository tags
+- platform engineering
+- list cloud providers.
+- create a new openshift cluster.
 - list all managed openshift clusters.
 - list cloud providers
-- specific cluster operations.
-- delete an openshift cluster.
-- list clusters
-- delete a cluster.
-- enterprise
-- image tags.
-- list repository tags
-- get repository
-- create a new container repository.
-- kubernetes
-- list machine pools
-- get vulnerability scan results for a container image.
-- get vulnerability scan results.
-- list available cluster add-ons.
-- get details of a specific cluster.
-- get container repository details.
-- list repositories
-- get manifest security
-- openshift clusters.
-- create cluster
+- quay
+- list subscriptions
+- create a new cluster.
 - list container image repositories.
-- hybrid cloud
-- openshift versions.
-- list cluster subscriptions.
-- available cloud providers.
-- list machine pools.
-- list versions
+- delete cluster
+- enterprise
+- containers
+- list addons
+- list available openshift versions.
+- create cluster
+- openshift clusters.
+- delete an openshift cluster.
+- linux
+- list openshift versions.
+- specific cluster operations.
+- get manifest security
 slug: platform-management
 tags:
 - Red Hat

@@ -55,18 +55,18 @@ meta_description: "Search APIs by capability, provider, schema, or name. Find th
       <button type="button" class="btn btn-sm btn-outline-primary dim-tab" data-dim="api">APIs</button>
       <button type="button" class="btn btn-sm btn-outline-secondary dim-tab" data-dim="provider">Providers</button>
       <button type="button" class="btn btn-sm btn-outline-danger dim-tab" data-dim="schema">Schemas</button>
+      <button type="button" class="btn btn-sm btn-outline-info dim-tab" data-dim="asyncapi">AsyncAPI</button>
+      <button type="button" class="btn btn-sm btn-outline-purple dim-tab" data-dim="jsonld">JSON-LD</button>
+      <button type="button" class="btn btn-sm btn-outline-warning dim-tab" data-dim="rules">Rules</button>
     </div>
 
     <p style="font-size: 0.8rem; color: #999; margin-top: 0.5rem;">
       Try: "run reports", "firewall rules", "event tracking", "audience segmentation", "compliance"
+      <br><a href="{{ site.url }}/advanced/" style="color: #0d6efd;">Advanced Search</a> &mdash; search by resource, action, persona, domain, and schema
     </p>
   </form>
 </div>
 
-<div id="recent-searches" style="max-width: 800px; margin: 0.5rem auto 0; text-align: center; display: none;">
-  <small style="color: #888;">Recent: </small>
-  <span id="recent-list"></span>
-</div>
 
 <div id="active-filters" style="max-width: 800px; margin: 1rem auto 0; text-align: center; display: none;"></div>
 
@@ -77,29 +77,6 @@ meta_description: "Search APIs by capability, provider, schema, or name. Find th
 <div id="search-results" style="max-width: 800px; margin: 0 auto;"></div>
 <div id="pagination" style="max-width: 800px; margin: 1.5rem auto; text-align: center;"></div>
 
-<div id="tag-cloud" style="max-width: 800px; margin: 2rem auto;">
-  <h5 style="font-size: 1rem; color: #555; margin-bottom: 0.75rem;">Popular tags</h5>
-  <div id="tag-cloud-list" style="display: flex; flex-wrap: wrap; gap: 0.4rem;">
-    <span style="color: #aaa; font-size: 0.85rem;">Loading...</span>
-  </div>
-</div>
-
-<!-- Browse sections when no search -->
-<div id="browse-section" style="max-width: 800px; margin: 2rem auto;">
-  {% if site.providers.size > 0 %}
-  <h5 style="font-size: 1rem; color: #555; margin-bottom: 0.75rem;">Browse Providers</h5>
-  <div style="display: flex; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 2rem;">
-    {% for provider in site.providers %}
-    <a href="{{ provider.url }}" style="text-decoration: none;">
-      <div style="background: white; border: 1px solid #e3e7ee; border-radius: 10px; padding: 1rem 1.25rem; transition: all 0.15s;">
-        <strong style="color: #1a1a2e;">{{ provider.name }}</strong>
-        <div style="font-size: 0.8rem; color: #666; margin-top: 0.25rem;">{{ provider.api_count }} APIs</div>
-      </div>
-    </a>
-    {% endfor %}
-  </div>
-  {% endif %}
-</div>
 
 <noscript>
   <h2>Browse APIs</h2>
@@ -127,13 +104,15 @@ meta_description: "Search APIs by capability, provider, schema, or name. Find th
   .type-asyncapi { background: #1e40af; }
   .type-jsonld { background: #7c3aed; }
   .type-rules { background: #c2410c; }
+  .btn-outline-purple { color: #7c3aed; border-color: #7c3aed; }
+  .btn-outline-purple:hover { background: #7c3aed; color: white; border-color: #7c3aed; }
+  .btn-purple { background: #7c3aed; color: white; border-color: #7c3aed; }
 </style>
 
 <script src="{{ site.url }}/assets/minisearch.min.js"></script>
 <script>
 (function() {
   var PAGE_SIZE = 25;
-  var RECENT_KEY = 'apis_io_recent_searches';
   var index = null;
   var miniSearch = null;
   var indexLoading = null;
@@ -168,7 +147,6 @@ meta_description: "Search APIs by capability, provider, schema, or name. Find th
         });
         miniSearch.addAll(data);
         setStatus('');
-        renderTagCloud();
         return index;
       });
     return indexLoading;
@@ -235,16 +213,13 @@ meta_description: "Search APIs by capability, provider, schema, or name. Find th
       var results;
       if (!query && activeTags.size === 0 && activeDimension === 'all') {
         renderResults([], 0);
-        document.getElementById('browse-section').style.display = '';
         return;
       }
-      document.getElementById('browse-section').style.display = 'none';
       results = executeSearch(query);
       results = applyFilters(results);
       currentResults = results;
       renderResults(results, currentPage);
       updateUrl(query);
-      if (query) saveRecent(query);
     });
   }
 
@@ -275,7 +250,8 @@ meta_description: "Search APIs by capability, provider, schema, or name. Find th
       return;
     }
 
-    var dimLabel = activeDimension === 'all' ? 'results' : activeDimension + 's';
+    var dimLabels = { capability: 'capabilities', asyncapi: 'AsyncAPI specs', jsonld: 'JSON-LD vocabularies' };
+    var dimLabel = activeDimension === 'all' ? 'results' : (dimLabels[activeDimension] || activeDimension + 's');
     setStatus('Found <strong>' + total + '</strong> ' + dimLabel + (currentQuery ? ' matching "' + escapeHtml(currentQuery) + '"' : '') + ' (showing ' + (start + 1) + '&ndash;' + end + ')');
 
     var html = '<div class="list-group">';
@@ -364,27 +340,6 @@ meta_description: "Search APIs by capability, provider, schema, or name. Find th
     });
   }
 
-  function renderTagCloud() {
-    var counts = {};
-    for (var i = 0; i < index.length; i++) {
-      var tags = index[i].t || [];
-      for (var t = 0; t < tags.length; t++) {
-        if (tags[t]) counts[tags[t]] = (counts[tags[t]] || 0) + 1;
-      }
-    }
-    var sorted = Object.keys(counts).map(function(k) { return [k, counts[k]]; })
-      .sort(function(a, b) { return b[1] - a[1]; }).slice(0, 40);
-    var html = '';
-    sorted.forEach(function(pair) {
-      html += '<span class="badge bg-secondary tag-chip" data-tag="' + escapeHtml(pair[0]) + '">' + escapeHtml(pair[0]) + ' <small style="opacity:0.7;">' + pair[1] + '</small></span>';
-    });
-    var container = document.getElementById('tag-cloud-list');
-    container.innerHTML = html;
-    container.querySelectorAll('.tag-chip').forEach(function(el) {
-      el.addEventListener('click', function() { addTagFilter(el.getAttribute('data-tag')); });
-    });
-  }
-
   function addTagFilter(tag) {
     activeTags.add(tag);
     renderActiveFilters();
@@ -411,34 +366,6 @@ meta_description: "Search APIs by capability, provider, schema, or name. Find th
     });
   }
 
-  function saveRecent(query) {
-    try {
-      var raw = localStorage.getItem(RECENT_KEY);
-      var list = raw ? JSON.parse(raw) : [];
-      list = list.filter(function(q) { return q !== query; });
-      list.unshift(query);
-      list = list.slice(0, 5);
-      localStorage.setItem(RECENT_KEY, JSON.stringify(list));
-      renderRecent();
-    } catch(e) {}
-  }
-
-  function renderRecent() {
-    try {
-      var raw = localStorage.getItem(RECENT_KEY);
-      if (!raw) return;
-      var list = JSON.parse(raw);
-      if (!list || list.length === 0) return;
-      var container = document.getElementById('recent-searches');
-      var inner = document.getElementById('recent-list');
-      var html = '';
-      list.forEach(function(q) {
-        html += '<a href="?search=' + encodeURIComponent(q) + '" class="badge bg-light text-dark text-decoration-none" style="margin: 0 0.2rem;">' + escapeHtml(q) + '</a>';
-      });
-      inner.innerHTML = html;
-      container.style.display = '';
-    } catch(e) {}
-  }
 
   function updateUrl(query) {
     if (window.history.replaceState) {
@@ -452,14 +379,17 @@ meta_description: "Search APIs by capability, provider, schema, or name. Find th
     btn.addEventListener('click', function() {
       document.querySelectorAll('.dim-tab').forEach(function(b) {
         b.classList.remove('active');
-        b.classList.remove('btn-dark', 'btn-success', 'btn-primary', 'btn-secondary', 'btn-danger');
+        b.classList.remove('btn-dark', 'btn-success', 'btn-primary', 'btn-secondary', 'btn-danger', 'btn-info', 'btn-purple', 'btn-warning');
         var dim = b.getAttribute('data-dim');
         var outlineClass = {
           all: 'btn-outline-dark',
           capability: 'btn-outline-success',
           api: 'btn-outline-primary',
           provider: 'btn-outline-secondary',
-          schema: 'btn-outline-danger'
+          schema: 'btn-outline-danger',
+          asyncapi: 'btn-outline-info',
+          jsonld: 'btn-outline-purple',
+          rules: 'btn-outline-warning'
         }[dim] || 'btn-outline-dark';
         b.classList.add(outlineClass);
       });
@@ -471,7 +401,10 @@ meta_description: "Search APIs by capability, provider, schema, or name. Find th
         capability: ['btn-outline-success', 'btn-success'],
         api: ['btn-outline-primary', 'btn-primary'],
         provider: ['btn-outline-secondary', 'btn-secondary'],
-        schema: ['btn-outline-danger', 'btn-danger']
+        schema: ['btn-outline-danger', 'btn-danger'],
+        asyncapi: ['btn-outline-info', 'btn-info'],
+        jsonld: ['btn-outline-purple', 'btn-purple'],
+        rules: ['btn-outline-warning', 'btn-warning']
       };
       var pair = solidMap[dim] || solidMap.all;
       btn.classList.remove(pair[0]);
@@ -500,12 +433,9 @@ meta_description: "Search APIs by capability, provider, schema, or name. Find th
 
   // Init from URL query
   var qs = getQueryVariable('search');
-  renderRecent();
   if (qs && qs !== '') {
     input.value = qs;
     loadIndex().then(runSearch);
-  } else {
-    setTimeout(loadIndex, 500);
   }
 })();
 </script>

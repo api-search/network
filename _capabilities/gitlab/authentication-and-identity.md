@@ -33,38 +33,38 @@ personas: []
 provider_name: GitLab
 provider_slug: gitlab
 search_terms:
-- revoke an existing oauth access or refresh token.
-- token introspection and validation.
-- initiate the oauth 2.0 authorization code flow.
-- gitlab
-- oauth
-- code
-- software development
-- get information about the current access token.
-- identity
-- get profile information about the authenticated user.
-- get token info
-- revoke token
-- get user info
-- revoke an oauth access or refresh token.
-- initiate the oauth 2.0 authorization code flow with optional pkce support.
-- initiate the device authorization grant flow.
-- get information about the current oauth access token including scopes and expiration.
-- platform
-- authenticated user profile information.
-- exchange token
-- device authorization grant flow for input-constrained devices.
-- get profile information about the currently authenticated user.
-- tokens
-- oauth 2.0 authorization code flow initiation.
-- authorize device
-- oauth token exchange and creation.
-- initiate the device authorization grant flow for input-constrained devices.
 - authentication
+- get profile information about the authenticated user.
+- get information about the current oauth access token including scopes and expiration.
 - token revocation.
-- source control
+- revoke an existing oauth access or refresh token.
+- initiate the oauth 2.0 authorization code flow.
+- exchange token
+- software development
+- revoke token
 - authorize oauth
+- identity
+- initiate the device authorization grant flow.
+- token introspection and validation.
+- source control
+- get user info
+- device authorization grant flow for input-constrained devices.
+- oauth 2.0 authorization code flow initiation.
+- tokens
 - exchange an authorization code, device code, or refresh token for an access token.
+- authenticated user profile information.
+- code
+- oauth token exchange and creation.
+- revoke an oauth access or refresh token.
+- oauth
+- get profile information about the currently authenticated user.
+- authorize device
+- initiate the oauth 2.0 authorization code flow with optional pkce support.
+- platform
+- initiate the device authorization grant flow for input-constrained devices.
+- get token info
+- get information about the current access token.
+- gitlab
 slug: authentication-and-identity
 tags:
 - Gitlab

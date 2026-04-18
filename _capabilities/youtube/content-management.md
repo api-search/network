@@ -69,54 +69,54 @@ personas: []
 provider_name: Youtube
 provider_slug: youtube
 search_terms:
-- captions
-- update playlist
-- add playlist item
-- update caption
-- manage youtube videos
-- list items in a playlist
-- delete a video from youtube
-- playlists
-- manage items within playlists
-- list videos
-- upload video
-- remove playlist item
-- create playlist
-- list caption tracks for a video
-- upload a caption track
-- list videos matching criteria
-- content management
-- create a new playlist
-- streaming
-- update playlist details
-- media
-- youtube
-- delete a playlist
-- upload a new caption track
-- manage youtube playlists
-- list youtube playlists
-- list youtube videos matching criteria
-- video
-- delete video
-- delete a video
-- list playlist items
-- update a caption track
-- update video metadata
-- upload a new video to youtube
-- delete playlist
-- videos
-- upload caption
-- manage video captions
-- google
 - social
+- captions
+- add playlist item
+- upload a new video to youtube
+- update caption
 - update video
-- list captions
-- delete a caption track
-- list playlists
-- remove a video from a playlist
 - delete caption
-- add a video to a playlist
+- delete playlist
+- list playlist items
+- google
+- list videos matching criteria
+- remove a video from a playlist
+- manage video captions
+- update a caption track
+- media
+- update playlist
 - upload a new video
+- video
+- upload a new caption track
+- list captions
+- create a new playlist
+- update playlist details
+- playlists
+- list caption tracks for a video
+- add a video to a playlist
+- list playlists
+- upload caption
+- manage items within playlists
+- upload video
+- streaming
+- content management
+- remove playlist item
+- delete a caption track
+- manage youtube videos
+- upload a caption track
+- update video metadata
+- delete a video
+- list videos
+- delete a video from youtube
+- delete video
+- list youtube playlists
+- delete a playlist
+- list items in a playlist
+- youtube
+- videos
+- manage youtube playlists
+- create playlist
+- list youtube videos matching criteria
 slug: content-management
 tags:
 - YouTube

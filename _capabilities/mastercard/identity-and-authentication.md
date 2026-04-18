@@ -31,42 +31,42 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- verify a consumer identity
-- get account identity insights
-- get authentication consent status
-- submit identity verification as a trust provider
-- create authentication consent
-- verify a consumer identity using mastercard id
-- identity
-- get identity intelligence insights for a transaction
-- get transaction identity insights
-- identity insights for transactions
-- create auth consent
-- fraud detection
-- submit trust verification
-- verification
-- open banking
-- mastercard
-- identity insights for accounts
-- digital identity
-- initiate strong customer authentication
-- get identity insights for a transaction
-- get transaction insights
-- kyc
-- authentication consent management
-- get identity insights for an account
-- initiate authentication
-- identity verification
-- create consent
-- payments
 - create an authentication consent request
-- financial services
-- authentication
-- get identity intelligence insights for an account
-- verify identity
+- create consent
+- get account identity insights
 - credit cards
+- verify a consumer identity
+- get identity insights for an account
+- authentication consent management
+- authentication
+- financial services
+- identity insights for accounts
+- get identity insights for a transaction
+- kyc
+- initiate strong customer authentication
+- identity insights for transactions
+- initiate authentication
 - get account insights
+- submit identity verification as a trust provider
+- mastercard
+- get identity intelligence insights for an account
+- verification
+- verify identity
+- get transaction insights
+- get transaction identity insights
+- identity
+- payments
+- get identity intelligence insights for a transaction
+- get authentication consent status
+- verify a consumer identity using mastercard id
+- digital identity
+- open banking
+- fraud detection
+- create authentication consent
+- identity verification
+- create auth consent
 - get consent status
+- submit trust verification
 slug: identity-and-authentication
 tags:
 - Mastercard

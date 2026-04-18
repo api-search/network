@@ -57,66 +57,66 @@ provider_name: Datadog
 provider_slug: datadog
 search_terms:
 - query timeseries
-- get a monitor by id
-- validate a monitor configuration
-- unmute monitor
-- t1
-- edit an existing monitor
-- add dashboard list items
-- monitor management
-- metrics
+- mute a monitor
+- get a monitor
 - create monitor
-- datadog
-- mute monitor
-- get dashboard list items
-- alerting
-- query scalar metric data
-- delete a monitor
-- host coverage
-- list monitors
-- get csm hosts and containers coverage
-- GetCSMHostsAndContainersCoverageAnalysis
-- updateMonitor
+- query scalar
+- listMonitors
+- dashboards
+- metrics
+- analytics
 - add dashboards to a dashboard list
+- get hosts coverage
+- edit an existing monitor
+- datadog
+- unmute monitor
+- submit metric data points
+- mute a monitor to suppress notifications
 - active metrics
+- update monitor
+- query timeseries metric data
+- deleteMonitor
+- fetch dashboards in a dashboard list
+- getMonitor
 - submitMetrics
 - infrastructure
-- monitoring
-- query timeseries metric data
-- get dashboards in a list
-- create a monitor
-- deleteMonitor
-- mute a monitor to suppress notifications
 - query timeseries data
-- dashboards
-- get monitor
+- queryMetricsTimeseries
+- t1
+- muteMonitor
+- get dashboard list items
+- host coverage
+- delete monitor
+- validate a monitor configuration
+- alerting
+- monitor management
+- GetCSMHostsAndContainersCoverageAnalysis
+- list monitors
+- create a new monitor
+- get csm hosts and containers coverage
+- get a monitor by id
+- createMonitor
+- update a monitor
+- listActiveMetrics
+- updateMonitor
+- submit metrics
+- validate monitor
 - visualizations
 - platform
-- analytics
-- query scalar
-- get hosts coverage
+- add dashboard list items
+- monitoring
 - list all monitors
-- createMonitor
-- submit metrics
-- getMonitor
-- mute a monitor
-- fetch dashboards in a dashboard list
-- dashboard list items
-- queryMetricsTimeseries
-- GetDashboardListItems
-- delete monitor
-- individual monitor operations
-- validate monitor
-- unmute a monitor to resume notifications
-- update a monitor
+- mute monitor
+- delete a monitor
 - list active metrics
-- muteMonitor
-- submit metric data points
-- create a new monitor
-- listMonitors
-- update monitor
-- listActiveMetrics
-- get a monitor
+- get dashboards in a list
+- get monitor
+- individual monitor operations
+- unmute a monitor to resume notifications
+- GetDashboardListItems
+- create a monitor
+- query scalar metric data
+- dashboard list items
 slug: monitoring-and-alerting
 tags:
 - Datadog

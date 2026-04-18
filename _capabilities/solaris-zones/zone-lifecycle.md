@@ -45,60 +45,60 @@ personas: []
 provider_name: Solaris Zones
 provider_slug: solaris-zones
 search_terms:
+- migrate to another host.
 - shutdown zone
+- migrate zone
+- list all solaris zones with status.
+- operating systems
+- create a new zone.
+- resource management
+- gracefully shutdown a zone.
 - migrate a zone.
+- zone inventory and creation.
+- boot the zone.
+- boot zone
+- get current zone state.
+- create zone
+- halt a zone immediately.
+- virtualization
+- rad
+- list zones
+- delete zone
+- zones
 - halt zone
-- get solaris zone details.
 - oracle
+- shutdown a zone.
+- boot a solaris zone.
+- individual zone operations.
+- boot a zone.
+- install zone
+- reboot a solaris zone.
+- migrate a zone to another host.
+- zone state operations.
 - clone a solaris zone.
 - clone zone
-- get zone details.
-- individual zone operations.
-- zone inventory and creation.
-- kernel zones
-- gracefully shutdown a zone.
-- resource management
-- virtualization
-- containers
-- rad
+- lifecycle management
+- verify zone configuration integrity.
 - get zone
+- get zone state
+- uninstall zone
 - delete a solaris zone.
-- boot zone
-- zone state operations.
-- migrate zone
-- solaris
-- create a new zone.
-- migrate to another host.
 - uninstall a solaris zone.
-- boot a zone.
-- reboot a solaris zone.
+- create a new solaris zone.
+- verify zone
+- gracefully shutdown.
+- list all zones.
+- containers
+- reboot zone
+- get solaris zone details.
+- delete a zone.
+- solaris
+- reboot the zone.
+- statsstore
+- get zone details.
+- kernel zones
 - install a solaris zone.
 - reboot a zone.
-- install zone
-- shutdown a zone.
-- create a new solaris zone.
-- reboot zone
-- boot the zone.
-- list all solaris zones with status.
-- delete a zone.
-- reboot the zone.
-- get zone state
-- list zones
-- verify zone
-- statsstore
-- lifecycle management
-- list all zones.
-- verify zone configuration integrity.
-- gracefully shutdown.
-- migrate a zone to another host.
-- operating systems
-- create zone
-- zones
-- get current zone state.
-- uninstall zone
-- halt a zone immediately.
-- delete zone
-- boot a solaris zone.
 slug: zone-lifecycle
 tags:
 - Solaris

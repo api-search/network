@@ -30,39 +30,39 @@ personas: []
 provider_name: Adobe Launch
 provider_slug: adobe-launch
 search_terms:
+- send batch events to edge network
+- create event forwarding rule
+- end media session
+- event forwarding
+- server-side event forwarding properties
+- create secret
+- send an interactive event to adobe edge network
+- start a media tracking session
+- list server-side event forwarding properties
+- marketing technology
+- create event forwarding property
+- edge network
+- send batch events to adobe edge network
+- start media session
+- secrets for event forwarding destinations
+- list secrets for authenticating with forwarding destinations
+- send batch events
+- data collection
+- tag management
+- list secrets
+- send an interactive event to edge network
+- create a new event forwarding rule
+- event forwarding rules
+- list event forwarding properties
+- send interactive event
+- create a new event forwarding property
+- list event forwarding rules for a property
+- create a secret for an event forwarding destination
+- adobe launch
+- list secrets for a property
+- end a media tracking session
 - list event forwarding rules
 - edge network data ingestion
-- send interactive event
-- send an interactive event to adobe edge network
-- send batch events to edge network
-- start a media tracking session
-- end media session
-- list event forwarding rules for a property
-- create secret
-- create a secret for an event forwarding destination
-- create event forwarding property
-- list server-side event forwarding properties
-- list event forwarding properties
-- create a new event forwarding rule
-- event forwarding
-- list secrets for a property
-- data collection
-- secrets for event forwarding destinations
-- send batch events to adobe edge network
-- create a new event forwarding property
-- tag management
-- server-side event forwarding properties
-- send an interactive event to edge network
-- create event forwarding rule
-- list secrets for authenticating with forwarding destinations
-- event forwarding rules
-- marketing technology
-- end a media tracking session
-- edge network
-- send batch events
-- start media session
-- adobe launch
-- list secrets
 slug: data-collection-pipeline
 tags:
 - Adobe Launch

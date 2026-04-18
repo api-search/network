@@ -22,45 +22,45 @@ personas: []
 provider_name: Teradata
 provider_slug: teradata
 search_terms:
-- cloud
-- list query systems
-- system and fabric configuration management.
-- get the status and results of a submitted query.
-- list available vantage systems.
-- execute sql queries and analytics.
-- Data Analyst
-- Data Engineer
 - create a query session.
-- sql queries.
-- create session
-- database
-- execute query
-- health monitoring and issue detection.
-- create a new query session on a vantage system.
-- integrates applications with teradata via rest apis.
-- query
-- get query status
-- manages data fabric infrastructure and cross-system connectivity.
-- available systems.
-- sql query execution and session management.
-- list available vantage systems for query execution.
+- data warehousing
 - list querygrid queries
-- manage querygrid data fabric infrastructure.
-- Platform Administrator
-- sql
-- Application Developer
+- manages data fabric infrastructure and cross-system connectivity.
 - analytics
-- administers querygrid systems, nodes, and software.
+- list available vantage systems.
+- system and fabric configuration management.
 - teradata
-- enterprise
-- execute a sql query.
+- get query status
+- query
+- Application Developer
+- execute sql queries and analytics.
+- database
+- sql queries.
+- health monitoring and issue detection.
+- get the status and results of a submitted query.
+- cloud
+- execute query
+- available systems.
+- manage querygrid data fabric infrastructure.
+- list available vantage systems for query execution.
 - executes queries and analyzes data across vantage systems.
+- Data Engineer
+- integrates applications with teradata via rest apis.
+- enterprise
 - query sessions.
 - execute a sql query against teradata vantage.
-- machine learning
+- list query systems
+- administers querygrid systems, nodes, and software.
+- sql query execution and session management.
+- sql
+- Platform Administrator
+- create a new query session on a vantage system.
+- Data Analyst
+- execute a sql query.
 - list cross-system query summaries from querygrid.
 - data management
-- data warehousing
+- machine learning
+- create session
 slug: query-and-analytics
 tags:
 - Teradata

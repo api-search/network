@@ -55,65 +55,65 @@ personas: []
 provider_name: Datadog
 provider_slug: datadog
 search_terms:
-- list incident teams
-- unmute monitor
-- events
-- t1
-- create event
-- delete an incident
-- list events
-- create an incident
-- listEvents
-- mute monitor
-- datadog
-- get an incident
-- updateIncident
-- post an event
-- list monitors to check alert status
 - individual monitor
-- event correlation
-- update an existing incident
-- list monitors
-- createEvent
 - update incident
-- get incident
-- get monitor status
-- post an event during incident
-- unmute a monitor after incident resolution
-- monitoring
-- create a new incident
-- mute monitor during incident
-- monitor status
-- search events related to incident
-- searchEvents
-- get monitor
-- mute a monitor during incident response
-- dashboards
-- visualizations
-- monitors
-- analytics
-- platform
-- deleteIncident
-- getMonitor
 - mute a monitor
-- update an incident
-- list incidents
-- individual incident operations
-- listIncidents
-- incidents
-- search events
+- get a monitor
+- delete an incident
 - createIncident
+- update an existing incident
+- search events related to incident
+- incident management
+- listMonitors
 - getIncident
 - get a specific event
-- get incident details
-- create incident
-- incident management
+- analytics
+- dashboards
+- post an event
+- datadog
+- unmute monitor
+- create event
+- search events
+- getMonitor
+- list incidents
+- t1
 - muteMonitor
+- mute a monitor during incident response
+- searchEvents
+- monitors
+- updateIncident
+- events
+- monitor status
+- incidents
+- list monitors
+- deleteIncident
+- create a new incident
 - delete incident
-- list events for correlation
 - get event
-- listMonitors
-- get a monitor
+- create an incident
+- event correlation
+- list incident teams
+- list monitors to check alert status
+- visualizations
+- get monitor status
+- get incident
+- platform
+- unmute a monitor after incident resolution
+- monitoring
+- listEvents
+- mute monitor
+- create incident
+- createEvent
+- individual incident operations
+- listIncidents
+- get an incident
+- mute monitor during incident
+- get incident details
+- list events
+- list events for correlation
+- get monitor
+- update an incident
+- post an event during incident
 slug: incident-management
 tags:
 - Datadog

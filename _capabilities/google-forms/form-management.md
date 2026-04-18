@@ -37,50 +37,50 @@ personas: []
 provider_name: Google Forms
 provider_slug: google-forms
 search_terms:
-- google forms
-- get form
-- create forms, collect responses, monitor changes
-- create form
-- get a single response
+- renew watch
+- list all active watches for a form
 - Form Administrator
-- update form publish settings
-- delete watch
-- surveys
-- get form details
-- set publish settings
-- Data Analyst
-- apply batch updates to a form (add/remove/modify items)
-- questionnaires
-- create a notification watch
-- create watch
-- form crud operations
+- notifications
 - get response
-- form response operations
+- google
+- questionnaires
 - responses
 - create a new google form with a title
-- get a single form response by id
 - managing surveys, questions, and notification watches
-- watch notification operations
-- data collection
+- create a notification watch
 - delete a watch
-- extend a watch's expiration by seven days
-- create a new form
-- notifications
-- delete a watch to stop notifications
-- google workspace
-- creates and manages forms, monitors responses
-- renew watch
-- list responses
-- get a google form's structure and settings
-- google
-- list watches
-- batch update form
-- creating and managing forms for data collection
-- set up a pub/sub watch for form changes or new responses
-- analyzes form responses and collects data
-- forms
+- watch notification operations
 - list all responses for a form
-- list all active watches for a form
+- create watch
+- get form
+- update form publish settings
+- form response operations
+- list watches
+- extend a watch's expiration by seven days
+- get a google form's structure and settings
+- creating and managing forms for data collection
+- get form details
+- data collection
+- list responses
+- surveys
+- delete a watch to stop notifications
+- set up a pub/sub watch for form changes or new responses
+- batch update form
+- analyzes form responses and collects data
+- google workspace
+- google forms
+- create forms, collect responses, monitor changes
+- creates and manages forms, monitors responses
+- get a single form response by id
+- set publish settings
+- apply batch updates to a form (add/remove/modify items)
+- Data Analyst
+- create a new form
+- forms
+- form crud operations
+- create form
+- delete watch
+- get a single response
 - list form responses
 slug: form-management
 tags:

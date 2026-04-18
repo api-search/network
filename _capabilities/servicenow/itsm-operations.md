@@ -80,84 +80,84 @@ personas: []
 provider_name: ServiceNow
 provider_slug: servicenow
 search_terms:
-- get record
-- update an existing record in a servicenow table.
-- retrieve a specific normal change request.
-- create normal change
-- list records from any servicenow table with query filtering.
-- update a normal change request.
-- create a task for a change request.
-- list standard changes
-- normal change request management.
-- workflow automation
-- retrieve a single record by table name and sys_id.
-- list trouble tickets.
-- service desk
-- create a new record in any servicenow table.
-- delete a record.
-- get a single record.
-- create a trouble ticket (case, incident, or service problem case).
-- get normal change
-- update a trouble ticket.
-- list emergency changes.
-- digital workflows
-- compute aggregate statistics on any servicenow table.
 - list tasks for a change request.
-- list normal change requests.
-- update trouble ticket
-- create emergency change
-- trouble ticket operations.
-- update record
-- retrieve a specific trouble ticket.
-- emergency change operations.
-- servicenow
-- itsm
-- list emergency change requests.
-- update normal change
-- get a trouble ticket.
-- create an emergency change for urgent situations.
-- list records from any servicenow table.
-- delete record
-- create a trouble ticket.
-- single record operations.
-- list emergency changes
-- list change tasks
-- standard change operations.
-- enterprise platform
-- automation
-- list standard change requests.
-- list records
-- create a record in any table.
-- aggregate statistics on table data.
-- permanently delete a record from a servicenow table.
-- single normal change operations.
-- cloud services
-- create standard change
-- get a normal change request.
 - create an emergency change.
-- workflows
-- create a standard change from a template.
-- create a normal change request.
-- change management
-- incident management
-- create a new normal change request.
-- t1
-- it service management
-- list normal changes
 - create record
-- update a record.
-- single trouble ticket operations.
-- create trouble ticket
-- update an existing trouble ticket.
+- create a new normal change request.
+- list trouble tickets with filtering by severity, status, and type.
+- create normal change
+- get record
+- workflow automation
+- list emergency changes
+- list emergency changes.
+- list records from any servicenow table with query filtering.
+- update record
+- list change tasks
+- compute aggregate statistics.
+- update a normal change request.
+- create a record in any table.
+- delete record
+- normal change request management.
+- get a single record.
+- list records from any servicenow table.
+- emergency change operations.
 - create change task
-- get trouble ticket
+- automation
+- itsm
+- create a standard change from a template.
+- update trouble ticket
+- single trouble ticket operations.
 - generic table record operations for any servicenow table.
 - processes
+- get a trouble ticket.
+- retrieve a single record by table name and sys_id.
 - list trouble tickets
-- compute aggregate statistics.
-- list standard changes.
-- list trouble tickets with filtering by severity, status, and type.
 - get aggregate stats
+- list normal changes
+- servicenow
+- update a trouble ticket.
+- create a normal change request.
+- create standard change
+- list standard change requests.
+- delete a record.
+- get trouble ticket
+- create a trouble ticket (case, incident, or service problem case).
+- create an emergency change for urgent situations.
+- create a task for a change request.
+- aggregate statistics on table data.
+- it service management
+- list trouble tickets.
+- list normal change requests.
+- t1
+- update normal change
+- change management
+- get normal change
+- list records
+- create emergency change
+- update an existing trouble ticket.
+- retrieve a specific normal change request.
+- enterprise platform
+- create trouble ticket
+- digital workflows
+- create a new record in any servicenow table.
+- update an existing record in a servicenow table.
+- compute aggregate statistics on any servicenow table.
+- incident management
+- get a normal change request.
+- list emergency change requests.
+- cloud services
+- update a record.
+- trouble ticket operations.
+- single normal change operations.
+- retrieve a specific trouble ticket.
+- standard change operations.
+- list standard changes.
+- workflows
+- permanently delete a record from a servicenow table.
+- create a trouble ticket.
+- list standard changes
+- service desk
+- single record operations.
 slug: itsm-operations
 tags:
 - ServiceNow

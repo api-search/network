@@ -50,51 +50,51 @@ personas: []
 provider_name: New Relic
 provider_slug: new-relic
 search_terms:
-- new relic
-- record a new deployment
-- analysis
-- apm
-- list deployment records for an application
-- query metric data points for an application
+- list key transactions
+- get or update an application
 - send custom events for application tracking
+- analytics
+- send custom events
+- list applications
+- get application
+- list application metrics
+- get deployments
+- record a new deployment for an application
+- observability
+- deployments
+- create deployment
 - list available metric names
+- get application details
+- get details of a specific application
+- infrastructure
+- query metric data
+- list all monitored applications
+- list application hosts
 - get application hosts
 - query metric data for an application
-- list all monitored applications
-- developer
-- get application details
-- get or update an application
-- list deployments for an application
-- list applications
-- get application metrics
-- manage deployments
-- infrastructure
-- monitoring
-- list key transactions
-- send custom events
-- query metric data
-- get details of a specific application
-- platform
-- analytics
-- list hosts for an application
-- update application
 - list available metric names for an application
-- update application settings
-- observability
-- application monitoring
-- performance
-- get deployments
+- manage deployments
+- new relic
 - send events
-- record a new deployment for an application
-- devops
-- get application
-- get application metrics data
+- update application settings
+- analysis
+- list deployments for an application
+- list hosts for an application
+- get application metrics
+- developer
+- application monitoring
+- record a new deployment
+- list deployment records for an application
+- update application
+- platform
+- monitoring
+- apm
+- query metric data points for an application
 - get key transactions
-- deployments
 - get applications
-- list application hosts
-- create deployment
-- list application metrics
+- get application metrics data
+- devops
+- performance
 slug: application-monitoring
 tags:
 - New Relic

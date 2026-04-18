@@ -47,47 +47,47 @@ personas: []
 provider_name: PeopleSoft
 provider_slug: peoplesoft
 search_terms:
-- retrieve support and service cases.
-- create case
-- list opportunities
 - retrieve details for a specific customer.
-- process a chatbot intent fulfillment request.
-- hcm
-- sales
-- crm
-- human capital management.
-- send notification
-- retrieve available chatbot intents.
-- erp
-- list customers
+- retrieve notifications for the current user.
+- peopletools platform services.
+- retrieve sales opportunities.
 - get customer
 - list notifications
-- peoplesoft
-- support and service cases
-- fulfill intent
-- financial and supply chain management.
-- enterprise software
-- retrieve customer records.
-- individual customer details
-- retrieve sales opportunities.
-- notification management
-- list cases
-- sales opportunities
-- send a notification via email, text, or in-app channels.
-- retrieve notifications for the current user.
-- customer records
-- chatbot intent fulfillments
-- chatbot intents
-- customer engagement
 - campus solutions.
-- peopletools platform services.
-- financial management
-- supply chain management
-- create a new support or service case.
-- chatbot
+- support and service cases
+- erp
+- individual customer details
+- notification management
+- crm
+- customer engagement
+- retrieve support and service cases.
+- list opportunities
+- retrieve available chatbot intents.
+- process a chatbot intent fulfillment request.
+- retrieve customer records.
 - case management
+- fulfill intent
+- list cases
 - campus solutions
+- customer records
+- create a new support or service case.
+- hcm
+- chatbot intents
+- supply chain management
+- chatbot
+- human capital management.
 - list intents
+- create case
+- enterprise software
+- chatbot intent fulfillments
+- peoplesoft
+- sales opportunities
+- financial management
+- financial and supply chain management.
+- sales
+- send notification
+- list customers
+- send a notification via email, text, or in-app channels.
 slug: customer-engagement
 tags:
 - PeopleSoft

@@ -53,50 +53,50 @@ personas: []
 provider_name: Oracle
 provider_slug: oracle
 search_terms:
-- cloud
-- manage a specific image
-- list volume attachments
-- delete a custom image
-- update instance
-- update instance details
-- get details of a specific instance
-- terminate an instance
-- oracle
-- list shapes
-- list compute images
-- list vnic attachments
-- list images
-- list vnic attachments in a compartment
-- get image
-- database
-- perform an action on an instance (start, stop, reset)
-- get image details
 - get instance
+- launch instance
+- compute
+- launch a new compute instance
+- update image
+- get image details
+- list volume attachments
+- list instances
+- manage a specific image
+- delete image
+- list compute images
+- list images
+- database
+- oracle
+- infrastructure
+- cloud
+- update instance
+- update image details
+- perform an action on an instance (start, stop, reset)
+- get details of a specific image
+- saas
+- list instance console connections
+- update instance details
+- list console connections
+- delete a custom image
+- list compute instances in a compartment
+- list shapes
+- manage a specific compute instance
+- enterprise
+- list vnic attachments
+- manage compute images
+- list volume attachments in a compartment
+- get image
+- create image
+- get details of a specific instance
+- instance action
+- list available compute shapes
 - create a custom image from an instance
 - create a custom image
-- infrastructure
-- manage compute instances
-- saas
-- update image
-- list instance console connections
+- list vnic attachments in a compartment
 - get instance details
-- instance action
-- manage a specific compute instance
 - terminate instance
-- compute
-- manage compute images
-- list compute instances in a compartment
-- list instances
-- list volume attachments in a compartment
-- launch instance
-- enterprise
-- list available compute shapes
-- get details of a specific image
-- delete image
-- list console connections
-- update image details
-- create image
-- launch a new compute instance
+- terminate an instance
+- manage compute instances
 slug: cloud-compute
 tags:
 - Oracle

@@ -57,72 +57,72 @@ personas: []
 provider_name: Azure Active Directory
 provider_slug: azure-active-directory
 search_terms:
-- microsoft
-- update user properties.
-- access management
-- register a new application in azure ad.
-- list azure ad users with optional filtering.
-- delete an azure ad group.
-- add a member to an azure ad group.
-- list groups and roles a user belongs to.
-- list groups.
-- zero trust
-- get group details.
-- microsoft entra
-- get azure ad user details by id or upn.
-- list group members
-- single group operations.
-- add a group member.
-- delete group
-- list members of an azure ad group.
-- oauth
-- get a service principal by id.
-- create user
-- create a new user.
-- group membership.
-- azure active directory
-- update azure ad user properties.
-- list users
-- list service principals
-- identity
-- list azure ad service principals.
-- list applications
-- service principal management.
-- create a new azure ad group.
-- openid connect
-- list app registrations.
-- authorization
-- delete a user.
-- group management.
-- get user details.
 - list service principals.
-- get service principal
-- create application
-- get user
+- list groups.
+- add a group member.
+- delete an azure ad group.
+- authorization
+- get azure ad group details.
+- delete group
+- authentication
+- single user operations.
+- get user details.
+- create a new user.
+- list applications
+- register a new application in azure ad.
+- get application
+- list groups and roles a user belongs to.
+- list user memberships
+- list service principals
 - get an application registration by id.
+- saml
+- list group members.
+- group membership.
+- microsoft entra
+- create a new azure ad user account.
+- get a service principal by id.
+- single sign-on
+- get service principal
+- delete a user.
+- create group
+- single group operations.
+- scim
+- identity
+- update user properties.
+- add a member to an azure ad group.
 - create a group.
 - list groups
-- list user memberships
-- list group members.
 - list azure ad application registrations.
-- list directory users.
-- scim
-- app registration management.
-- create a new azure ad user account.
-- get azure ad group details.
-- create group
-- user lifecycle management.
-- single user operations.
+- zero trust
+- service principal management.
+- delete user
+- get user
+- list users
+- get group details.
+- oauth
+- microsoft
 - get group
 - list azure ad groups with optional filtering.
-- get application
-- saml
-- authentication
-- single sign-on
-- delete an azure ad user account.
-- delete user
-- update user
+- app registration management.
+- access management
+- group management.
+- list directory users.
+- update azure ad user properties.
+- get azure ad user details by id or upn.
+- create application
+- list app registrations.
+- openid connect
+- list group members
 - add group member
+- list members of an azure ad group.
+- user lifecycle management.
+- azure active directory
+- create a new azure ad group.
+- update user
+- list azure ad users with optional filtering.
+- delete an azure ad user account.
+- list azure ad service principals.
+- create user
 slug: identity-and-access
 tags:
 - Microsoft Entra

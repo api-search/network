@@ -34,42 +34,42 @@ personas: []
 provider_name: Adobe Analytics
 provider_slug: adobe-analytics
 search_terms:
-- report suite discovery for data collection targeting.
-- upload a gzip-compressed csv file of batched analytics event data.
-- events
 - upload events
-- customer intelligence
-- get report suite
-- web analytics
-- server side
-- adobe
-- list dimensions
-- digital marketing
-- metric discovery for event mapping.
-- list metrics
-- business intelligence
-- data collection
-- marketing
-- batch event upload.
-- list available dimensions to validate event data mapping.
-- list report suites
-- list dimensions to validate event data mapping.
 - analytics
-- dimension discovery for event mapping.
-- list available metrics to validate event data mapping.
-- bulk data insertion
+- upload a batch events file.
+- business intelligence
+- list report suites to identify data collection targets.
+- list report suites to identify collection targets.
+- list available dimensions to validate event data mapping.
+- get report suite details.
+- report suite discovery for data collection targeting.
+- web analytics
+- list dimensions to validate event data mapping.
+- validate a batch events file without ingesting data.
+- batch event upload.
+- list dimensions
+- metric discovery for event mapping.
+- validate events
+- digital marketing
 - adobe analytics
+- report suite details.
+- marketing
+- validate event files.
+- dimension discovery for event mapping.
+- customer intelligence
+- events
+- data collection
+- list metrics
+- validate a batch events file without ingesting.
+- upload a gzip-compressed csv file of batched analytics event data.
+- list report suites
+- list available metrics to validate event data mapping.
+- adobe
+- bulk data insertion
+- get report suite
 - get details for a report suite to verify collection configuration.
 - list metrics to validate event data mapping.
-- validate a batch events file without ingesting data.
-- list report suites to identify data collection targets.
-- validate events
-- report suite details.
-- list report suites to identify collection targets.
-- get report suite details.
-- validate event files.
-- validate a batch events file without ingesting.
-- upload a batch events file.
+- server side
 slug: data-collection
 tags:
 - Adobe Analytics

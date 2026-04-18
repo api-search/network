@@ -33,46 +33,46 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- issue a new mastercard card
-- query payment account reference to link tokens to accounts
-- get billing updates
+- validate account
 - look up bin information for a card
-- manage payment account
-- issue card
-- request updated card credentials
-- get payment account reference
-- account management
-- issuers
-- get account catalog
-- card management
-- manage a payment account
-- validate account details
-- submit pan-related event for account level management
-- create a physical card fulfillment order
-- retrieve account catalog data
-- fraud detection
-- list available mastercard bins
-- manage a payment account lifecycle
-- look up bin information
-- mastercard
-- manage account
-- open banking
+- credit cards
 - lookup bin
-- digital identity
-- create fulfillment order
-- submit pan event
+- submit pan-related event for account level management
+- get card details
 - bin lookup
-- list bins
-- issue a new card
+- financial services
+- submit pan event
 - request updated card credentials for card-on-file
+- manage a payment account
+- manage account
+- mastercard
+- validate account details
+- request updated card credentials
 - card issuance and management
 - payments
-- financial services
+- manage payment account
+- list bins
+- query payment account reference to link tokens to accounts
+- digital identity
+- open banking
+- look up bin information
+- card management
+- retrieve account catalog data
+- create a physical card fulfillment order
+- fraud detection
 - automatic billing updates
-- credit cards
-- validate account
-- get card details
 - payment account management
+- create fulfillment order
+- issue card
+- get payment account reference
+- account management
+- issue a new mastercard card
+- issuers
+- get account catalog
+- issue a new card
+- get billing updates
+- manage a payment account lifecycle
+- list available mastercard bins
 slug: card-and-account-management
 tags:
 - Mastercard

@@ -21,40 +21,40 @@ personas: []
 provider_name: Oracle E-Business Suite
 provider_slug: oracle-e-business-suite
 search_terms:
-- e-business suite
-- employee management.
-- get employee by id.
-- human resources
-- oracle
-- retrieve organizations.
-- payroll management.
-- business applications
-- erp
-- retrieve employees.
-- get positions
-- get organizations
 - retrieve benefit enrollments.
-- retrieve assignments.
-- update employee record.
-- get employees
-- get benefit enrollments
-- retrieve payroll runs.
-- retrieve payroll definitions.
-- get payrolls
-- list payrolls.
-- create employee
-- get employee by id
-- enterprise
-- payroll
-- update employee
-- organization management.
-- workforce management
-- create an employee record.
-- list organizations.
-- retrieve positions.
 - list employees.
+- retrieve organizations.
+- employee management.
+- list payrolls.
+- erp
+- update employee
+- workforce management
+- oracle
+- get employee by id
+- get positions
+- retrieve payroll definitions.
+- payroll
+- payroll management.
+- create an employee record.
+- create employee
+- e-business suite
+- get payrolls
+- get employees
+- get organizations
 - get assignments
+- human resources
+- retrieve assignments.
+- business applications
+- retrieve employees.
+- retrieve payroll runs.
+- enterprise
+- update employee record.
+- retrieve positions.
+- get benefit enrollments
+- list organizations.
 - get payroll runs
+- get employee by id.
+- organization management.
 slug: workforce-management
 tags:
 - Oracle
