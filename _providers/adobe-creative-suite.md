@@ -49,6 +49,22 @@ apis:
 - description: Adobe UXP (Unified Extensibility Platform) is the modern plugin and scripting platform used across Adobe creative applications including Photoshop, InDesign, Illustrator, and XD. It provides a JavaScr
   name: Adobe UXP
   slug: uxp
+capabilities:
+- description: 'AI-powered content generation workflow using Adobe Firefly for creating images, videos, and visual variations from text prompts. Used by content creators, marketers, and designers who need to rapidly '
+  name: Adobe AI Content Generation
+  slug: ai-content-generation
+- description: End-to-end creative asset production workflow combining AI content generation (Firefly), image editing and manipulation (Photoshop), and stock asset sourcing and licensing (Stock). Used by creative di
+  name: Adobe Creative Production
+  slug: creative-production
+- description: PDF document lifecycle management workflow using Adobe PDF Services for creating, converting, combining, compressing, OCR processing, accessibility tagging, and template-based document generation. Use
+  name: Adobe Document Management
+  slug: document-management
+- description: Automated image editing and processing workflow using the Adobe Photoshop API for background removal, masking, layer management, rendition creation, document operations, and smart object editing. Used
+  name: Adobe Image Editing
+  slug: image-editing
+- description: Stock asset discovery, licensing, and management workflow using the Adobe Stock API. Used by content curators, marketing teams, and creative directors to search for stock photos, illustrations, vector
+  name: Adobe Stock Asset Sourcing
+  slug: stock-asset-sourcing
 common:
 - title: ''
   type: JSON-LD
@@ -136,9 +152,23 @@ features:
   name: Plugin Development
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 integrations: []
+jsonld:
+- class_count: 56
+  name: Adobe Creative Suite Context
+  property_count: 99
+  slug: adobe-creative-suite-context
 layout: provider
 modified: '2026-04-17'
 name: Adobe Creative Suite
+rules:
+- name: Adobe Creative Suite API Rules
+  rule_count: 17
+  severity_counts:
+    error: 14
+    hint: 0
+    info: 1
+    warn: 2
+  slug: adobe-creative-suite-spectral-rules
 skills: []
 slug: adobe-creative-suite
 solutions:

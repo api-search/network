@@ -94,6 +94,31 @@ apis:
 - description: Content management, branding, and portal administration APIs for the PeopleSoft Interaction Hub (formerly Enterprise Portal) with Integration Broker services.
   name: PeopleSoft Interaction Hub API
   slug: interaction-hub-api
+capabilities:
+- description: Unified workflow for campus administrators combining student records, admissions, enrollment, financial aid, and approval workflows across PeopleSoft Campus Solutions and Approval Workflow Engine APIs
+  name: PeopleSoft Campus Administration
+  slug: campus-administration
+- description: Unified workflow for CRM users combining customer management, case management, sales, chatbot integration, and notifications across PeopleSoft CRM, Chatbot Integration, and Notification Framework APIs
+  name: PeopleSoft Customer Engagement
+  slug: customer-engagement
+- description: Unified workflow for finance controllers combining general ledger, accounts payable, accounts receivable, expenses, budgeting, forecasting, analytics, and approval workflows across PeopleSoft Financia
+  name: PeopleSoft Finance And Accounting
+  slug: finance-and-accounting
+- description: 'Unified workflow for HR administrators combining employee management, benefits, payroll, recruiting, talent management, and approval workflows across PeopleSoft HCM, Recruiting, and Approval Workflow '
+  name: PeopleSoft Human Resources
+  slug: human-resources
+- description: Unified workflow for IT administrators combining environment provisioning, update management, process scheduling, integration broker, REST API management, application services framework, and component
+  name: PeopleSoft Platform Administration
+  slug: platform-administration
+- description: Unified workflow for content managers combining portal content management, branding, chatbot integration, and notification services across PeopleSoft Interaction Hub, Chatbot Integration, and Notifica
+  name: PeopleSoft Portal And Communications
+  slug: portal-and-communications
+- description: Unified workflow for analysts combining query execution, pivot grid dashboards, full-text search, and performance analytics across PeopleSoft Query, Pivot Grid, Search Framework, and EPM APIs.
+  name: PeopleSoft Reporting And Analytics
+  slug: reporting-and-analytics
+- description: Unified workflow for supply chain managers combining procurement, inventory, order fulfillment, and approval workflows across PeopleSoft Supply Chain Management and Approval Workflow Engine APIs.
+  name: PeopleSoft Supply Chain And Procurement
+  slug: supply-chain-and-procurement
 common:
 - title: ''
   type: Portal
@@ -199,9 +224,23 @@ features:
   name: Chatbot Integration
 image: https://www.oracle.com/a/ocom/img/cb71-psft-logo.jpg
 integrations: []
+jsonld:
+- class_count: 8
+  name: Peoplesoft Context
+  property_count: 77
+  slug: peoplesoft-context
 layout: provider
 modified: '2026-04-17'
 name: PeopleSoft
+rules:
+- name: PeopleSoft API Rules
+  rule_count: 19
+  severity_counts:
+    error: 14
+    hint: 0
+    info: 1
+    warn: 4
+  slug: peoplesoft-spectral-rules
 skills: []
 slug: peoplesoft
 solutions:

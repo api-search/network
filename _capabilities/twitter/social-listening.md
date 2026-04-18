@@ -80,111 +80,111 @@ personas:
 provider_name: X (Twitter)
 provider_slug: twitter
 search_terms:
-- retrieve users by usernames
-- social media manager
-- get counts from last 7 days
-- retrieve the authenticated user's profile
-- community manager
-- filtered search stream
-- full firehose stream
-- getFollowers
-- manages brand presence, campaigns, and content strategy.
+- getSearchStreamRules
+- get counts of posts matching a query from full archive
 - handles customer inquiries and issues via direct messages and replies.
-- stream posts matching filtered stream rules in real-time
-- get following
-- conducts academic or market research using x data archives.
+- searchPostsRecent
 - get posts mentioning a specific user
+- real-time data
+- data engineer
+- monitor conversations, search posts, analyze trends, and extract insights.
+- builds and maintains communities through engagement and moderation.
+- stream a 10% sample of all public posts in real-time
+- retrieve multiple users by their usernames
+- look up users by ids
+- stream posts matching filtered stream rules in real-time
+- social listening
+- add or delete rules for the filtered search stream
+- retrieve users by ids
+- brand manager
+- getPostsCountsAll
+- social monitoring, search, trending topics, and sentiment analysis.
+- getInsightsHistorical
+- 10% sample stream
+- search full archive of posts
+- get followers of a user
+- content creator
+- compliance officer
+- data analyst
+- community manager
+- streamPostsSample10
+- trends
+- get posts authored by a specific user
+- look up users by usernames
+- get current stream rules
 - customer support
 - streaming
-- 10% sample stream
-- data engineer
-- builds and maintains communities through engagement and moderation.
+- get counts from last 7 days
+- manage user relationships, direct messages, spaces, and community interactions.
+- manage compliance jobs, data streams, and real-time compliance monitoring.
+- retrieve the authenticated user's profile
+- researcher
+- search all posts
+- stream 10% sample of posts
+- get users being followed
+- produces original posts, threads, and media content on x.
+- search posts from last 7 days
+- marketing team
+- social media manager
+- get counts from full archive
+- get followers
+- full firehose stream
+- searchPostsAll
+- content
+- getFollowers
+- get user followers
+- getUserTimeline
+- microblogging
+- creates, schedules, and analyzes social media content across platforms.
+- conducts academic or market research using x data archives.
+- advertising
+- getUsersMe
+- monitors brand mentions, sentiment, and competitive landscape.
+- retrieve multiple users by their ids
+- social media
+- stream all public posts in real-time via the firehose
+- search
+- get following
+- manages brand presence, campaigns, and content strategy.
+- get historical post insights
+- filtered search stream
+- engagement specialist
+- streamPostsFirehose
+- getFollowing
+- create, manage, and analyze posts, media, bookmarks, and lists.
+- getPostsCountsRecent
+- streamPostsSearch
+- manages user relationships, follows, and interaction strategies.
+- get users that a user is following
+- getInsights28Hr
+- get recent post counts
+- x api
+- ensures data handling meets regulatory and platform compliance requirements.
+- get counts of posts matching a query from last 7 days
+- add or delete stream rules
+- getUsersByIds
+- get 28-hour post insights
+- get current rules for the filtered search stream
+- get post insights for last 28 hours
+- retrieve users by usernames
+- get post insights for the last 28 hours
+- user relationships, direct messaging, spaces, and community interaction.
+- getUserMentions
+- getUsersByUsernames
+- analytics
+- extracts insights from social data through search, streaming, and analytics.
+- stream all public posts
+- post creation, editing, media management, and content analytics.
+- addSearchStreamRules
+- manage stream filter rules
 - search for posts from the last 7 days
 - search the full archive of posts
-- manages data pipelines, streaming ingestion, and compliance data flows.
-- getUserTimeline
-- content
-- searchPostsAll
-- social media
-- manage user relationships, direct messages, spaces, and community interactions.
-- search full archive of posts
-- get current stream rules
-- ensures data handling meets regulatory and platform compliance requirements.
-- engagement specialist
-- search
-- get users that a user is following
-- user relationships, direct messaging, spaces, and community interaction.
-- manage compliance jobs, data streams, and real-time compliance monitoring.
-- add or delete stream rules
-- post creation, editing, media management, and content analytics.
-- searchPostsRecent
-- brand manager
-- get users being followed
-- advertising
-- retrieve multiple users by their usernames
-- stream all public posts
-- social monitoring, search, trending topics, and sentiment analysis.
-- x api
-- streamPostsSample10
-- getInsights28Hr
-- add or delete rules for the filtered search stream
-- social listening
-- get historical post insights
-- getUsersByUsernames
-- retrieve multiple users by their ids
-- monitor conversations, search posts, analyze trends, and extract insights.
 - platform operations
-- monitors brand mentions, sentiment, and competitive landscape.
-- search posts from last 7 days
-- manage stream filter rules
-- get user followers
-- stream 10% sample of posts
-- getUsersByIds
-- search all posts
-- marketing team
-- retrieve users by ids
-- getInsightsHistorical
-- get current rules for the filtered search stream
-- getUserMentions
-- manages user relationships, follows, and interaction strategies.
-- get followers of a user
-- get 28-hour post insights
-- get counts from full archive
-- stream all public posts in real-time via the firehose
-- produces original posts, threads, and media content on x.
-- get posts authored by a specific user
-- get post insights for last 28 hours
-- addSearchStreamRules
-- create, manage, and analyze posts, media, bookmarks, and lists.
-- compliance officer
-- streamPostsSearch
-- getUsersMe
-- streamPostsFirehose
-- search recent posts
-- look up users by usernames
-- get post insights for the last 28 hours
-- trends
-- getFollowing
-- analytics
-- stream posts matching filter rules
-- get recent post counts
-- researcher
-- microblogging
-- get counts of posts matching a query from full archive
-- getSearchStreamRules
-- data compliance, deletion tracking, and regulatory event monitoring.
-- get followers
-- getPostsCountsAll
-- data analyst
 - get all post counts
-- getPostsCountsRecent
-- look up users by ids
-- get counts of posts matching a query from last 7 days
-- extracts insights from social data through search, streaming, and analytics.
-- creates, schedules, and analyzes social media content across platforms.
-- stream a 10% sample of all public posts in real-time
-- real-time data
-- content creator
+- stream posts matching filter rules
+- search recent posts
+- manages data pipelines, streaming ingestion, and compliance data flows.
+- data compliance, deletion tracking, and regulatory event monitoring.
 slug: social-listening
 tags:
 - X API

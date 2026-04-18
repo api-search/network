@@ -91,6 +91,22 @@ apis:
 - description: Legacy public REST API for accessing the full course catalog without authentication. Returns course IDs, titles, durations, release dates, and retirement status.
   name: Pluralsight Public Course Catalog REST API
   slug: public-course-catalog-rest-api
+capabilities:
+- description: Unified workflow for engineering managers to track developer productivity, code quality, collaboration, and delivery performance through Flow metrics. Combines coding metrics, collaboration metrics, D
+  name: Pluralsight Engineering Metrics
+  slug: engineering-metrics
+- description: Unified workflow for L&D managers and content administrators to browse, organize, and manage learning content across courses, channels, learning paths, programs, labs, and tags. Combines content catal
+  name: Pluralsight Learning Content Management
+  slug: learning-content-management
+- description: Unified workflow for L&D managers to track learning progress, course completions, daily usage patterns, and generate reports. Combines content progress, course progress, course daily usage, and report
+  name: Pluralsight Reporting And Analytics
+  slug: reporting-and-analytics
+- description: Unified workflow for L&D managers and developers to assess skills through Skill IQ, Role IQ, and practice exams. Combines skills assessment, role IQ, and practice exams APIs for comprehensive competen
+  name: Pluralsight Skills Assessment
+  slug: skills-assessment
+- description: Unified workflow for platform administrators to manage users, teams, licensing, plan configuration, and Flow workspace settings. Combines user management, teams, licensing, plan info, Flow users, Flow
+  name: Pluralsight User And Team Administration
+  slug: user-and-team-administration
 common:
 - title: ''
   type: Portal
@@ -163,9 +179,23 @@ features:
   name: Flow Engineering Intelligence
 image: https://www.pluralsight.com/content/dam/pluralsight2/general/headers/logo.png
 integrations: []
+jsonld:
+- class_count: 3
+  name: Pluralsight Context
+  property_count: 8
+  slug: pluralsight-context
 layout: provider
 modified: '2026-04-17'
 name: Pluralsight
+rules:
+- name: Pluralsight API Rules
+  rule_count: 17
+  severity_counts:
+    error: 14
+    hint: 0
+    info: 1
+    warn: 2
+  slug: pluralsight-spectral-rules
 skills: []
 slug: pluralsight
 solutions:

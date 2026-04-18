@@ -124,6 +124,17 @@ apis:
 - description: The GitLab Namespaces API provides programmatic access to manage namespaces in GitLab. It supports listing namespaces, retrieving namespace details, and verifying namespace existence, which is essenti
   name: GitLab Namespaces API
   slug: apiv4namespaces
+asyncapis:
+- description: GitLab Webhooks deliver HTTP POST payloads to a configured URL whenever specified events occur in a GitLab project or group, such as pushes, merge requests, issues, pipeline status changes, and deploy
+  name: GitLab Webhooks
+  slug: gitlab-webhooks-asyncapi
+capabilities:
+- description: Unified capability for GitLab OAuth 2.0 authentication flows and user identity. Enables developers and platform administrators to manage OAuth application authorization, token lifecycle, and authentic
+  name: GitLab Authentication And Identity
+  slug: authentication-and-identity
+- description: Unified capability for managing GitLab project webhooks, including CRUD operations, custom header and URL variable configuration, delivery event history, and testing. Used by DevOps engineers and plat
+  name: GitLab Webhook Management
+  slug: webhook-management
 common:
 - title: ''
   type: Website
@@ -271,9 +282,23 @@ features:
   name: Group and Project Management
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 integrations: []
+jsonld:
+- class_count: 38
+  name: Gitlab Context
+  property_count: 268
+  slug: gitlab-context
 layout: provider
 modified: '2026-04-17'
 name: GitLab
+rules:
+- name: GitLab API Rules
+  rule_count: 24
+  severity_counts:
+    error: 15
+    hint: 0
+    info: 3
+    warn: 6
+  slug: gitlab-spectral-rules
 skills: []
 slug: gitlab
 solutions:

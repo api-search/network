@@ -105,9 +105,23 @@ features:
   name: Symbol Libraries
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 integrations: []
+jsonld:
+- class_count: 15
+  name: Adobe Illustrator Context
+  property_count: 94
+  slug: adobe-illustrator-context
 layout: provider
 modified: '2026-04-17'
 name: Adobe Illustrator
+rules:
+- name: Adobe Illustrator API Rules
+  rule_count: 17
+  severity_counts:
+    error: 14
+    hint: 0
+    info: 1
+    warn: 2
+  slug: adobe-illustrator-spectral-rules
 skills: []
 slug: adobe-illustrator
 solutions:

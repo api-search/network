@@ -1,0 +1,56 @@
+---
+class_count: 1
+classes:
+- PropertyHistory
+context_file: json-ld/hubspot-engagement-notes-property-context.jsonld
+context_url: https://raw.githubusercontent.com/api-evangelist/hubspot/refs/heads/main/json-ld/hubspot-engagement-notes-property-context.jsonld
+description: JSON-LD context defining the semantic vocabulary for Hubspot Engagement Notes Property from HubSpot.
+layout: jsonld
+name: Hubspot Engagement Notes Property Context
+namespaces:
+- prefix: hubspot
+  uri: https://developers.hubspot.com/schema/
+- prefix: schema
+  uri: https://schema.org/
+- prefix: dcterms
+  uri: http://purl.org/dc/terms/
+- prefix: xsd
+  uri: http://www.w3.org/2001/XMLSchema#
+properties:
+- container: ''
+  name: value
+  type: string
+- container: ''
+  name: timestamp
+  type: dateTime
+- container: ''
+  name: sourceType
+  type: string
+- container: ''
+  name: sourceId
+  type: string
+- container: ''
+  name: sourceLabel
+  type: string
+- container: ''
+  name: updatedByUserId
+  type: integer
+property_count: 6
+provider_name: HubSpot
+provider_slug: hubspot
+slug: hubspot-engagement-notes-property-context
+tags:
+- Analytics
+- Commerce
+- Content
+- CRM
+- Customer Service
+- Email Marketing
+- Marketing
+- Marketing Automation
+- Operations
+- Sales
+- JSON-LD
+- Linked Data
+- Semantic Web
+---

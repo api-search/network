@@ -163,9 +163,35 @@ integrations:
   name: Google Cloud
 - description: Connect Salesforce Marketing Cloud for cross-platform marketing measurement and audience activation.
   name: Salesforce Marketing Cloud
+jsonld:
+- class_count: 10
+  name: Google Analytics Admin Api Context
+  property_count: 48
+  slug: google-analytics-admin-api-context
+- class_count: 10
+  name: Google Analytics Data Api Context
+  property_count: 92
+  slug: google-analytics-data-api-context
+- class_count: 7
+  name: Google Analytics Measurement Protocol Context
+  property_count: 37
+  slug: google-analytics-measurement-protocol-context
+- class_count: 2
+  name: Google Analytics User Deletion Api Context
+  property_count: 8
+  slug: google-analytics-user-deletion-api-context
 layout: provider
 modified: '2026-04-17'
 name: Google Analytics
+rules:
+- name: Google Analytics API Rules
+  rule_count: 66
+  severity_counts:
+    error: 18
+    hint: 0
+    info: 26
+    warn: 22
+  slug: google-analytics-spectral-rules
 skills:
 - name: Run Report
   url: skills/run-report/SKILL.md

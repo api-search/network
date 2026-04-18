@@ -1,0 +1,67 @@
+---
+description: ''
+layout: schema
+name: NavItem5
+properties_list:
+- description: ''
+  name: availableInClassic
+  type: boolean
+- description: ''
+  name: availableInLightning
+  type: boolean
+- description: ''
+  name: color
+  type: string
+- description: ''
+  name: content
+  type: '[''string'', ''null'']'
+- description: ''
+  name: custom
+  type: boolean
+- description: ''
+  name: developerName
+  type: string
+- description: ''
+  name: iconUrl
+  type: string
+- description: ''
+  name: id
+  type: string
+- description: ''
+  name: itemType
+  type: string
+- description: ''
+  name: label
+  type: string
+- description: ''
+  name: objectApiName
+  type: string
+- description: ''
+  name: objectLabel
+  type: '[''string'', ''null'']'
+- description: ''
+  name: objectLabelPlural
+  type: '[''string'', ''null'']'
+- description: ''
+  name: pageReference
+  type: object
+- description: ''
+  name: standardType
+  type: '[''string'', ''null'']'
+provider_name: Salesforce
+provider_slug: salesforce
+schema_file: json-schema/salesforce-nav-item5-schema.json
+slug: salesforce-nav-item5
+tags:
+- AI
+- Analytics
+- Cloud
+- Commerce
+- CRM
+- Customer Service
+- Enterprise
+- Marketing
+- Platform
+- Sales
+title: NavItem5
+---

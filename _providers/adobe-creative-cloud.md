@@ -52,6 +52,10 @@ apis:
 - description: 'The Adobe Developer Distribution portal for publishing and managing plugins and extensions in the Creative Cloud Marketplace and Adobe Exchange. Supports UXP plugins, CEP extensions (ZXP format), and '
   name: Adobe Developer Distribution
   slug: developer-distribution
+asyncapis:
+- description: 'Adobe I/O Events enables developers to receive near-real-time notifications when events occur across Adobe products and services. Events are delivered via webhooks or journaling (pull-based polling). '
+  name: Adobe I/O Events
+  slug: adobe-io-events-asyncapi-original
 common:
 - title: ''
   type: Portal
@@ -166,9 +170,23 @@ integrations:
   name: Slack
 - description: Open-source SDKs and documentation repositories for developer integration.
   name: GitHub
+jsonld:
+- class_count: 18
+  name: Adobe Creative Cloud Context
+  property_count: 43
+  slug: adobe-creative-cloud-context
 layout: provider
 modified: '2026-04-17'
 name: Adobe Creative Cloud
+rules:
+- name: Adobe Creative Cloud API Rules
+  rule_count: 20
+  severity_counts:
+    error: 14
+    hint: 0
+    info: 2
+    warn: 4
+  slug: adobe-creative-cloud-spectral-rules
 skills: []
 slug: adobe-creative-cloud
 solutions:

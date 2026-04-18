@@ -1,0 +1,24 @@
+---
+description: ''
+layout: schema
+name: UpgradeDeploymentDetails
+properties_list:
+- description: ''
+  name: type
+  type: string
+- description: ''
+  name: oggVersion
+  type: string
+provider_name: Oracle GoldenGate
+provider_slug: oracle-goldengate
+schema_file: json-schema/oracle-goldengate-cloud-service-upgrade-deployment-details-schema.json
+slug: oracle-goldengate-cloud-service-upgrade-deployment-details
+tags:
+- CDC
+- Data Integration
+- Data Synchronization
+- Database
+- Enterprise
+- Real-Time Replication
+title: UpgradeDeploymentDetails
+---

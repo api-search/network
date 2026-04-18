@@ -13,6 +13,23 @@ apis:
 - description: 'The self-hosted version of the WhatsApp Business API that allowed businesses to run the API on their own infrastructure. This API was deprecated on October 23, 2025, and all users must migrate to the '
   name: WhatsApp On-Premises API
   slug: on-premises-api
+asyncapis:
+- description: 'WhatsApp Business Platform webhooks deliver real-time notifications for incoming messages, message status updates, template status changes, account updates, phone number quality changes, and security '
+  name: WhatsApp Webhooks
+  slug: whatsapp-webhooks-asyncapi
+capabilities:
+- description: Unified workflow for managing WhatsApp Business Accounts, phone numbers, business profiles, user assignments, product catalogs, and phone registration. Combines Business Management API and Cloud API c
+  name: WhatsApp Account And Phone Management
+  slug: account-and-phone-management
+- description: Unified workflow for creating and managing interactive flows, publishing lifecycle management, and webhook subscriptions. Combines Flows API and Business Management API webhook capabilities used by de
+  name: WhatsApp Flows And Automation
+  slug: flows-and-automation
+- description: Unified workflow for sending messages, managing media files, and creating QR codes for customer conversations. Combines WhatsApp Cloud API messaging, media management, and QR code capabilities used by
+  name: WhatsApp Messaging And Media
+  slug: messaging-and-media
+- description: 'Unified workflow for managing message templates and analyzing conversation and template performance. Combines Business Management API template CRUD and analytics capabilities used by marketing teams, '
+  name: WhatsApp Templates And Analytics
+  slug: templates-and-analytics
 common:
 - title: ''
   type: TermsOfService
@@ -142,9 +159,23 @@ integrations:
   name: HubSpot
 - description: Help desk integration for ticketed WhatsApp customer support.
   name: Zendesk
+jsonld:
+- class_count: 33
+  name: Whatsapp Context
+  property_count: 109
+  slug: whatsapp-context
 layout: provider
 modified: '2026-04-17'
 name: WhatsApp
+rules:
+- name: WhatsApp API Rules
+  rule_count: 17
+  severity_counts:
+    error: 14
+    hint: 0
+    info: 1
+    warn: 2
+  slug: whatsapp-spectral-rules
 skills: []
 slug: whatsapp
 solutions:

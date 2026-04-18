@@ -117,9 +117,23 @@ integrations:
   name: Azure Key Vault
 - description: Infrastructure-as-code management of function apps with the AzureRM Terraform provider.
   name: Terraform
+jsonld:
+- class_count: 29
+  name: Azure Functions Context
+  property_count: 158
+  slug: azure-functions-context
 layout: provider
 modified: '2026-04-17'
 name: Microsoft Azure Functions
+rules:
+- name: Microsoft Azure Functions API Rules
+  rule_count: 19
+  severity_counts:
+    error: 14
+    hint: 0
+    info: 3
+    warn: 2
+  slug: azure-functions-spectral-rules
 skills: []
 slug: microsoft-azure-functions
 solutions:

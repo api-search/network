@@ -22,6 +22,28 @@ apis:
 - description: LinkedIn Regulatory APIs provide access to data portability and ads transparency capabilities for regulatory compliance, including the Digital Markets Act (DMA) requirements for organization data port
   name: LinkedIn Regulatory API
   slug: linkedin-regulatory-api
+capabilities:
+- description: Unified workflow for marketing managers to plan, build, and manage LinkedIn ad campaigns -- combining campaign management, audience targeting, audience insights, and media planning APIs.
+  name: LinkedIn Campaign Management
+  slug: campaign-management
+- description: Unified workflow for compliance officers to monitor regulated communications, export data for portability compliance, and access ads transparency data -- combining compliance events, data portability,
+  name: LinkedIn Compliance And Regulatory
+  slug: compliance-and-regulatory
+- description: Unified workflow for content marketers to create rich ad content, manage organization pages, track engagement, and monitor social actions -- combining content APIs and community management.
+  name: LinkedIn Content And Community
+  slug: content-and-community
+- description: Unified workflow for demand generation managers to capture leads, sync lead data, track conversions, and measure attribution -- combining lead sync and conversions APIs.
+  name: LinkedIn Lead Generation And Conversions
+  slug: lead-generation-and-conversions
+- description: Unified workflow for marketing analysts to access ad analytics, B2B metrics, learning activity reports, and performance data -- combining reporting/ROI and learning activity APIs.
+  name: LinkedIn Reporting And Analytics
+  slug: reporting-and-analytics
+- description: Unified workflow for sales representatives to manage Sales Navigator contracts, export analytics, associate CRM profiles, and validate CRM data.
+  name: LinkedIn Sales Engagement
+  slug: sales-engagement
+- description: Unified workflow for recruiters to post jobs, sync candidates and applications via ATS, manage recruiter integrations, and provision partner applications -- combining job posting, RSC, and provisionin
+  name: LinkedIn Talent Acquisition
+  slug: talent-acquisition
 common:
 - title: ''
   type: Authentication
@@ -167,9 +189,23 @@ integrations:
   name: Postman
 - description: Standards-based authentication using OpenID Connect for Sign In with LinkedIn.
   name: OpenID Connect
+jsonld:
+- class_count: 132
+  name: Linkedin Api Context
+  property_count: 265
+  slug: linkedin-api-context
 layout: provider
 modified: '2026-04-17'
 name: LinkedIn
+rules:
+- name: LinkedIn API Rules
+  rule_count: 24
+  severity_counts:
+    error: 15
+    hint: 0
+    info: 3
+    warn: 6
+  slug: linkedin-spectral-rules
 skills: []
 slug: linkedin
 solutions:

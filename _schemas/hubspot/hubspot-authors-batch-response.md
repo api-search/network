@@ -1,0 +1,40 @@
+---
+description: Response from batch operations
+layout: schema
+name: BatchResponse
+properties_list:
+- description: Current status of the batch operation
+  name: status
+  type: string
+- description: Successfully processed authors
+  name: results
+  type: array
+- description: ISO 8601 timestamp when the batch was requested
+  name: requestedAt
+  type: string
+- description: ISO 8601 timestamp when processing started
+  name: startedAt
+  type: string
+- description: ISO 8601 timestamp when processing completed
+  name: completedAt
+  type: string
+- description: Related links for the batch operation
+  name: links
+  type: object
+provider_name: HubSpot
+provider_slug: hubspot
+schema_file: json-schema/hubspot-authors-batch-response-schema.json
+slug: hubspot-authors-batch-response
+tags:
+- Analytics
+- Commerce
+- Content
+- CRM
+- Customer Service
+- Email Marketing
+- Marketing
+- Marketing Automation
+- Operations
+- Sales
+title: BatchResponse
+---

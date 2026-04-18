@@ -1,0 +1,28 @@
+---
+class_count: 0
+classes: []
+context_file: json-ld/amazon-s3-tables-context.jsonld
+context_url: https://raw.githubusercontent.com/api-evangelist/amazon-s3/refs/heads/main/json-ld/amazon-s3-tables-context.jsonld
+description: JSON-LD context defining the semantic vocabulary for Amazon S3 Tables from Amazon S3.
+layout: jsonld
+name: Amazon S3 Tables Context
+namespaces:
+- prefix: xsd
+  uri: http://www.w3.org/2001/XMLSchema#
+properties: []
+property_count: 0
+provider_name: Amazon S3
+provider_slug: amazon-s3
+slug: amazon-s3-tables-context
+tags:
+- Archive
+- AWS
+- Backup
+- Cloud Storage
+- Data Storage
+- Object Storage
+- Scalable Storage
+- JSON-LD
+- Linked Data
+- Semantic Web
+---

@@ -146,9 +146,23 @@ integrations:
   name: MCP Servers
 - description: Real-time event delivery via webhooks for the Activity API.
   name: Webhook Delivery
+jsonld:
+- class_count: 23
+  name: X Api Context
+  property_count: 118
+  slug: x-api-context
 layout: provider
 modified: '2026-04-17'
 name: X (Twitter)
+rules:
+- name: X (Twitter) API Rules
+  rule_count: 53
+  severity_counts:
+    error: 17
+    hint: 0
+    info: 18
+    warn: 18
+  slug: twitter-spectral-rules
 skills: []
 slug: twitter
 solutions:

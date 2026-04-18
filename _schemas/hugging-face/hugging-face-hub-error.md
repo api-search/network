@@ -1,0 +1,18 @@
+---
+description: ''
+layout: schema
+name: Error
+properties_list:
+- description: Error message
+  name: error
+  type: string
+- description: HTTP status code
+  name: statusCode
+  type: integer
+provider_name: Hugging Face
+provider_slug: hugging-face
+schema_file: json-schema/hugging-face-hub-error-schema.json
+slug: hugging-face-hub-error
+tags: []
+title: Error
+---

@@ -13,6 +13,16 @@ apis:
 - description: The Instagram oEmbed endpoint returns HTML and metadata for embedding Instagram photos, videos, reels, and carousels on third-party websites using the standard oEmbed protocol.
   name: Instagram oEmbed API
   slug: instagram-oembed-api
+capabilities:
+- description: Unified workflow for Instagram analytics and insights including account-level metrics, media-level performance data, user profile analysis, and competitor research via business discovery. Used by mark
+  name: Instagram Analytics And Insights
+  slug: analytics-and-insights
+- description: Unified workflow for managing Instagram community interactions including comment moderation, replies, hashtag discovery, and mention tracking. Used by community managers and social media teams to enga
+  name: Instagram Community Engagement
+  slug: community-engagement
+- description: Unified workflow for managing Instagram content including media browsing, publishing (container creation and publish), stories, carousel albums, and media updates. Used by social media managers and co
+  name: Instagram Content Management
+  slug: content-management
 common:
 - title: ''
   type: Portal
@@ -81,9 +91,23 @@ integrations:
   name: WhatsApp
 - description: Real-time event notifications for comments, mentions, messages, and story insights.
   name: Webhooks
+jsonld:
+- class_count: 11
+  name: Instagram Graph Api Context
+  property_count: 37
+  slug: instagram-graph-api-context
 layout: provider
 modified: '2026-04-17'
 name: Instagram
+rules:
+- name: Instagram API Rules
+  rule_count: 20
+  severity_counts:
+    error: 14
+    hint: 0
+    info: 2
+    warn: 4
+  slug: instagram-spectral-rules
 skills: []
 slug: instagram
 solutions:

@@ -154,6 +154,22 @@ apis:
 - description: A REST API for querying the health and performance of Prisma Access network deployments across multiple API versions (v1.0, v2.0, v3.0). Supports data resource queries for tunnel status, bandwidth uti
   name: Prisma Access Insights API
   slug: prisma-access-insights-api
+asyncapis:
+- description: Cortex XDR Webhooks provide real-time incident and alert notifications for security events detected across endpoints, networks, and cloud workloads. Webhooks are configured in Cortex XDR Settings > No
+  name: Cortex XDR Webhooks
+  slug: palo-alto-cortex-xdr-webhooks-asyncapi-original
+- description: Cortex XSIAM Data Ingestion provides streaming log and event ingestion endpoints for collecting security telemetry from external data sources into the XSIAM data lake. The ingestion service accepts da
+  name: Cortex XSIAM Data Ingestion
+  slug: palo-alto-cortex-xsiam-data-ingestion-asyncapi-original
+- description: Prisma Cloud Cloud Security Posture Management (CSPM) Webhooks deliver real-time event notifications for policy violations and security alerts across multi-cloud environments including AWS, Azure, GCP
+  name: Prisma Cloud CSPM Webhooks
+  slug: palo-alto-prisma-cloud-webhooks-asyncapi-original
+- description: Palo Alto Networks SASE (Secure Access Service Edge) delivers real-time notifications for security incidents, platform announcements, dataplane upgrades, and certificate expiration warnings across mul
+  name: SASE Multitenant Notifications
+  slug: palo-alto-sase-notifications-asyncapi-original
+- description: Strata Logging Service Log Forwarding enables security operations teams to forward security logs from Palo Alto Networks next-generation firewalls, Prisma Access, and other Strata products to external
+  name: Strata Logging Service Log Forwarding
+  slug: palo-alto-strata-logging-forwarding-asyncapi-original
 capabilities:
 - description: Unified AI security capability for scanning AI model inputs/outputs for threats and red-teaming AI applications for vulnerabilities across Prisma AIRS and AI Red Teaming APIs.
   name: Palo Alto Networks AI Security
@@ -439,9 +455,235 @@ integrations:
   name: Active Directory
 - description: Cloud Identity Engine integration with Okta for SSO user context and identity-aware security policy enforcement.
   name: Okta
+jsonld:
+- class_count: 4
+  name: Palo Alto Aiops Ngfw Bpa Api Context
+  property_count: 32
+  slug: palo-alto-aiops-ngfw-bpa-api-context
+- class_count: 6
+  name: Palo Alto Autonomous Dem Api Context
+  property_count: 39
+  slug: palo-alto-autonomous-dem-api-context
+- class_count: 13
+  name: Palo Alto Cloud Identity Engine Api Context
+  property_count: 12
+  slug: palo-alto-cloud-identity-engine-api-context
+- class_count: 16
+  name: Palo Alto Cloud Ngfw Api Context
+  property_count: 55
+  slug: palo-alto-cloud-ngfw-api-context
+- class_count: 7
+  name: Palo Alto Cortex Xdr Api Context
+  property_count: 66
+  slug: palo-alto-cortex-xdr-api-context
+- class_count: 1
+  name: Palo Alto Cortex Xdr Context
+  property_count: 32
+  slug: palo-alto-cortex-xdr-context
+- class_count: 2
+  name: Palo Alto Cortex Xdr Webhooks Context
+  property_count: 10
+  slug: palo-alto-cortex-xdr-webhooks-context
+- class_count: 8
+  name: Palo Alto Cortex Xpanse Api Context
+  property_count: 60
+  slug: palo-alto-cortex-xpanse-api-context
+- class_count: 8
+  name: Palo Alto Cortex Xsiam Api Context
+  property_count: 57
+  slug: palo-alto-cortex-xsiam-api-context
+- class_count: 3
+  name: Palo Alto Cortex Xsiam Data Ingestion Context
+  property_count: 8
+  slug: palo-alto-cortex-xsiam-data-ingestion-context
+- class_count: 11
+  name: Palo Alto Cortex Xsoar Api Context
+  property_count: 61
+  slug: palo-alto-cortex-xsoar-api-context
+- class_count: 2
+  name: Palo Alto Cortex Xsoar Context
+  property_count: 25
+  slug: palo-alto-cortex-xsoar-context
+- class_count: 4
+  name: Palo Alto Dlp Api Context
+  property_count: 55
+  slug: palo-alto-dlp-api-context
+- class_count: 2
+  name: Palo Alto Dns Security Api Context
+  property_count: 23
+  slug: palo-alto-dns-security-api-context
+- class_count: 3
+  name: Palo Alto Email Dlp Api Context
+  property_count: 25
+  slug: palo-alto-email-dlp-api-context
+- class_count: 19
+  name: Palo Alto Identity Security Posture Management Api Context
+  property_count: 66
+  slug: palo-alto-identity-security-posture-management-api-context
+- class_count: 6
+  name: Palo Alto Iot Security Api Context
+  property_count: 54
+  slug: palo-alto-iot-security-api-context
+- class_count: 0
+  name: Palo Alto Networks Context
+  property_count: 72
+  slug: palo-alto-networks-context
+- class_count: 63
+  name: Palo Alto Networks Security Context
+  property_count: 6
+  slug: palo-alto-networks-security-context
+- class_count: 3
+  name: Palo Alto Pan Os Context
+  property_count: 27
+  slug: palo-alto-pan-os-context
+- class_count: 12
+  name: Palo Alto Pan Os Rest Api Context
+  property_count: 57
+  slug: palo-alto-pan-os-rest-api-context
+- class_count: 7
+  name: Palo Alto Prisma Access Api Context
+  property_count: 56
+  slug: palo-alto-prisma-access-api-context
+- class_count: 8
+  name: Palo Alto Prisma Access Browser Api Context
+  property_count: 41
+  slug: palo-alto-prisma-access-browser-api-context
+- class_count: 7
+  name: Palo Alto Prisma Access Insights Api Context
+  property_count: 34
+  slug: palo-alto-prisma-access-insights-api-context
+- class_count: 7
+  name: Palo Alto Prisma Airs Ai Red Teaming Api Context
+  property_count: 45
+  slug: palo-alto-prisma-airs-ai-red-teaming-api-context
+- class_count: 5
+  name: Palo Alto Prisma Airs Api Context
+  property_count: 28
+  slug: palo-alto-prisma-airs-api-context
+- class_count: 6
+  name: Palo Alto Prisma Cloud Code Security Api Context
+  property_count: 53
+  slug: palo-alto-prisma-cloud-code-security-api-context
+- class_count: 12
+  name: Palo Alto Prisma Cloud Compute Api Context
+  property_count: 81
+  slug: palo-alto-prisma-cloud-compute-api-context
+- class_count: 3
+  name: Palo Alto Prisma Cloud Context
+  property_count: 28
+  slug: palo-alto-prisma-cloud-context
+- class_count: 9
+  name: Palo Alto Prisma Cloud Cspm Api Context
+  property_count: 49
+  slug: palo-alto-prisma-cloud-cspm-api-context
+- class_count: 6
+  name: Palo Alto Prisma Cloud Dspm Api Context
+  property_count: 50
+  slug: palo-alto-prisma-cloud-dspm-api-context
+- class_count: 66
+  name: Palo Alto Prisma Cloud Mssp Api Context
+  property_count: 124
+  slug: palo-alto-prisma-cloud-mssp-api-context
+- class_count: 1
+  name: Palo Alto Prisma Cloud Webhooks Context
+  property_count: 11
+  slug: palo-alto-prisma-cloud-webhooks-context
+- class_count: 8
+  name: Palo Alto Prisma Sd Wan Api Context
+  property_count: 59
+  slug: palo-alto-prisma-sd-wan-api-context
+- class_count: 6
+  name: Palo Alto Saas Security Api Context
+  property_count: 36
+  slug: palo-alto-saas-security-api-context
+- class_count: 7
+  name: Palo Alto Sase 5G Api Context
+  property_count: 34
+  slug: palo-alto-sase-5g-api-context
+- class_count: 5
+  name: Palo Alto Sase 5G Monitor Api Context
+  property_count: 17
+  slug: palo-alto-sase-5g-monitor-api-context
+- class_count: 3
+  name: Palo Alto Sase Aggregate Monitoring Api Context
+  property_count: 21
+  slug: palo-alto-sase-aggregate-monitoring-api-context
+- class_count: 8
+  name: Palo Alto Sase Config Orchestration Api Context
+  property_count: 34
+  slug: palo-alto-sase-config-orchestration-api-context
+- class_count: 7
+  name: Palo Alto Sase Iam Api Context
+  property_count: 17
+  slug: palo-alto-sase-iam-api-context
+- class_count: 8
+  name: Palo Alto Sase Multitenant Interconnect Api Context
+  property_count: 35
+  slug: palo-alto-sase-multitenant-interconnect-api-context
+- class_count: 14
+  name: Palo Alto Sase Multitenant Notifications Api Context
+  property_count: 49
+  slug: palo-alto-sase-multitenant-notifications-api-context
+- class_count: 7
+  name: Palo Alto Sase Notifications Context
+  property_count: 34
+  slug: palo-alto-sase-notifications-context
+- class_count: 5
+  name: Palo Alto Sase Subscription Api Context
+  property_count: 19
+  slug: palo-alto-sase-subscription-api-context
+- class_count: 3
+  name: Palo Alto Sase Tenancy Api Context
+  property_count: 11
+  slug: palo-alto-sase-tenancy-api-context
+- class_count: 3
+  name: Palo Alto Security Advisory Api Context
+  property_count: 22
+  slug: palo-alto-security-advisory-api-context
+- class_count: 6
+  name: Palo Alto Security Advisory Context
+  property_count: 32
+  slug: palo-alto-security-advisory-context
+- class_count: 6
+  name: Palo Alto Sspm Api Context
+  property_count: 36
+  slug: palo-alto-sspm-api-context
+- class_count: 17
+  name: Palo Alto Strata Cloud Manager Api Context
+  property_count: 51
+  slug: palo-alto-strata-cloud-manager-api-context
+- class_count: 5
+  name: Palo Alto Strata Logging Forwarding Context
+  property_count: 51
+  slug: palo-alto-strata-logging-forwarding-context
+- class_count: 9
+  name: Palo Alto Strata Logging Service Api Context
+  property_count: 29
+  slug: palo-alto-strata-logging-service-api-context
+- class_count: 9
+  name: Palo Alto Threat Vault Api Context
+  property_count: 50
+  slug: palo-alto-threat-vault-api-context
+- class_count: 6
+  name: Palo Alto Wildfire Api Context
+  property_count: 27
+  slug: palo-alto-wildfire-api-context
+- class_count: 11
+  name: Palo Alto Ztna Connector Api Context
+  property_count: 25
+  slug: palo-alto-ztna-connector-api-context
 layout: provider
 modified: '2026-04-17'
 name: Palo Alto Networks
+rules:
+- name: Palo Alto Networks API Rules
+  rule_count: 69
+  severity_counts:
+    error: 16
+    hint: 0
+    info: 24
+    warn: 29
+  slug: palo-alto-networks-spectral-rules
 skills: []
 slug: palo-alto-networks
 solutions:

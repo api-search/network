@@ -1,0 +1,28 @@
+---
+description: Request body for GDPR deletion
+layout: schema
+name: GdprDeleteRequest
+properties_list:
+- description: The ID of the note to permanently delete
+  name: objectId
+  type: string
+- description: The property used as the identifier
+  name: idProperty
+  type: string
+provider_name: HubSpot
+provider_slug: hubspot
+schema_file: json-schema/hubspot-engagement-notes-gdpr-delete-request-schema.json
+slug: hubspot-engagement-notes-gdpr-delete-request
+tags:
+- Analytics
+- Commerce
+- Content
+- CRM
+- Customer Service
+- Email Marketing
+- Marketing
+- Marketing Automation
+- Operations
+- Sales
+title: GdprDeleteRequest
+---

@@ -22,6 +22,10 @@ apis:
 - description: The legacy scripting system based on ExtendScript, Adobe's implementation of ECMAScript 3. ExtendScript scripts use the .jsx file extension and can automate nearly all Photoshop operations through a c
   name: Adobe Photoshop ExtendScript Scripting API
   slug: extendscript-scripting
+asyncapis:
+- description: Event-driven notifications for Adobe Photoshop API asynchronous job processing. When registered through Adobe I/O Events, webhooks deliver real-time notifications when Photoshop API jobs complete or f
+  name: Adobe Photoshop API Webhook Events
+  slug: adobe-photoshop-api-asyncapi-original
 common:
 - title: ''
   type: Portal
@@ -120,9 +124,23 @@ integrations:
   name: Adobe Firefly
 - description: API supports input/output from AWS S3, Azure Blob, Google Cloud Storage, and Dropbox.
   name: Cloud Storage Providers
+jsonld:
+- class_count: 16
+  name: Adobe Photoshop Context
+  property_count: 28
+  slug: adobe-photoshop-context
 layout: provider
 modified: '2026-04-17'
 name: Adobe Photoshop
+rules:
+- name: Adobe Photoshop API Rules
+  rule_count: 19
+  severity_counts:
+    error: 14
+    hint: 0
+    info: 2
+    warn: 3
+  slug: adobe-photoshop-spectral-rules
 skills: []
 slug: adobe-photoshop
 solutions:

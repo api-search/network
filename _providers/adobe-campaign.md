@@ -16,6 +16,10 @@ apis:
 - description: Native mobile SDK extensions for iOS and Android that integrate Adobe Campaign push notifications, in-app messaging, and local notifications into mobile applications. Includes the Campaign Classic ext
   name: Adobe Experience Platform Mobile SDK - Campaign Extensions
   slug: experience-platform-mobile-sdk---campaign-extensions
+asyncapis:
+- description: Event-driven transactional messaging system for Adobe Campaign. Supports triggering personalized messages across email, SMS, and push notification channels in response to real-time customer events. Ev
+  name: Adobe Campaign Transactional Messaging Events
+  slug: adobe-campaign-transactional-messaging-asyncapi-original
 common:
 - title: ''
   type: Portal
@@ -74,9 +78,23 @@ integrations:
   name: Salesforce
 - description: CRM integration for contact synchronization and campaign tracking.
   name: Microsoft Dynamics
+jsonld:
+- class_count: 29
+  name: Adobe Campaign Context
+  property_count: 57
+  slug: adobe-campaign-context
 layout: provider
 modified: '2026-04-17'
 name: Adobe Campaign
+rules:
+- name: Adobe Campaign API Rules
+  rule_count: 17
+  severity_counts:
+    error: 14
+    hint: 0
+    info: 1
+    warn: 2
+  slug: adobe-campaign-spectral-rules
 skills: []
 slug: adobe-campaign
 solutions:
