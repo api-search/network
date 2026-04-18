@@ -141,6 +141,52 @@ layout: default
 </div>
 {% endif %}
 
+<!-- AsyncAPI Specs Section -->
+{% if page.asyncapis.size > 0 %}
+<h2 class="section-anchor" id="asyncapis"><a href="#asyncapis">Event Specifications</a></h2>
+<div class="card-grid">
+  {% for async in page.asyncapis %}
+  <div class="item-card" style="border-left: 3px solid #1e40af;">
+    <h4><a href="{{ site.url }}/asyncapis/{{ page.slug }}/{{ async.slug }}/">{{ async.name }}</a></h4>
+    {% if async.description %}<p>{{ async.description | truncate: 180 }}</p>{% endif %}
+    <span style="display: inline-block; padding: 0.15em 0.5em; border-radius: 4px; font-size: 0.7rem; font-weight: 700; background: #1e40af; color: white;">ASYNCAPI</span>
+  </div>
+  {% endfor %}
+</div>
+{% endif %}
+
+<!-- JSON-LD Section -->
+{% if page.jsonld.size > 0 %}
+<h2 class="section-anchor" id="jsonld"><a href="#jsonld">Semantic Vocabularies</a></h2>
+<div class="card-grid">
+  {% for ld in page.jsonld %}
+  <div class="item-card" style="border-left: 3px solid #7c3aed;">
+    <h4><a href="{{ site.url }}/jsonld/{{ page.slug }}/{{ ld.slug }}/">{{ ld.name }}</a></h4>
+    <p style="font-size: 0.8rem; color: #666;">{{ ld.class_count }} classes &middot; {{ ld.property_count }} properties</p>
+    <span style="display: inline-block; padding: 0.15em 0.5em; border-radius: 4px; font-size: 0.7rem; font-weight: 700; background: #7c3aed; color: white;">JSON-LD</span>
+  </div>
+  {% endfor %}
+</div>
+{% endif %}
+
+<!-- Rules Section -->
+{% if page.rules.size > 0 %}
+<h2 class="section-anchor" id="rules"><a href="#rules">API Governance Rules</a></h2>
+<div class="card-grid">
+  {% for rule in page.rules %}
+  <div class="item-card" style="border-left: 3px solid #c2410c;">
+    <h4><a href="{{ site.url }}/rules/{{ page.slug }}/{{ rule.slug }}/">{{ rule.name }}</a></h4>
+    <p style="font-size: 0.8rem; color: #666;">{{ rule.rule_count }} rules &middot;
+      {% if rule.severity_counts.error > 0 %}<span style="color: #dc3545; font-weight: 600;">{{ rule.severity_counts.error }} errors</span> {% endif %}
+      {% if rule.severity_counts.warn > 0 %}<span style="color: #fd7e14; font-weight: 600;">{{ rule.severity_counts.warn }} warnings</span> {% endif %}
+      {% if rule.severity_counts.info > 0 %}<span style="color: #0dcaf0; font-weight: 600;">{{ rule.severity_counts.info }} info</span>{% endif %}
+    </p>
+    <span style="display: inline-block; padding: 0.15em 0.5em; border-radius: 4px; font-size: 0.7rem; font-weight: 700; background: #c2410c; color: white;">SPECTRAL</span>
+  </div>
+  {% endfor %}
+</div>
+{% endif %}
+
 <!-- Resources Section -->
 {% if page.common.size > 0 %}
 <h2 class="section-anchor" id="resources"><a href="#resources">Resources</a></h2>

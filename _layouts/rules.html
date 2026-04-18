@@ -1,0 +1,80 @@
+---
+layout: default
+---
+<style>
+  .rules-hero { background: linear-gradient(135deg, #fff7ed 0%, #ffedd5 100%); border: 1px solid #fed7aa; border-radius: 12px; padding: 2rem; margin-bottom: 2rem; }
+  .rules-overline { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; color: #c2410c; font-weight: 600; margin-bottom: 0.5rem; }
+  .rules-overline a { color: #c2410c; text-decoration: none; }
+  .rules-overline a:hover { text-decoration: underline; }
+  .rules-title { font-size: 2rem; font-weight: 700; margin-bottom: 0.75rem; color: #1a1a2e; }
+  .rules-desc { color: #4a5568; line-height: 1.6; font-size: 1.05rem; }
+  .section-title { font-size: 1.1rem; font-weight: 700; color: #1a1a2e; margin: 2rem 0 0.75rem; padding-bottom: 0.5rem; border-bottom: 2px solid #e3e7ee; }
+  .stat-badges { display: flex; gap: 0.75rem; flex-wrap: wrap; margin-bottom: 1rem; }
+  .stat-badge { background: white; border: 1px solid #e3e7ee; border-radius: 8px; padding: 0.5rem 1rem; font-size: 0.85rem; }
+  .stat-badge strong { color: #c2410c; }
+  .severity-error { background: #dc3545; color: white; }
+  .severity-warn { background: #fd7e14; color: white; }
+  .severity-info { background: #0dcaf0; color: #1a1a2e; }
+  .severity-hint { background: #6c757d; color: white; }
+  .severity-badge { display: inline-block; padding: 0.15em 0.5em; border-radius: 4px; font-size: 0.7rem; font-weight: 700; text-transform: uppercase; min-width: 45px; text-align: center; }
+  .rule-row { display: flex; align-items: flex-start; gap: 0.75rem; padding: 0.75rem 0; border-bottom: 1px solid #f0f2f5; }
+  .rule-row:last-child { border-bottom: none; }
+  .rule-name { font-family: monospace; font-weight: 600; color: #1a1a2e; font-size: 0.85rem; }
+  .rule-desc { font-size: 0.85rem; color: #4a5568; }
+  .rule-given { font-family: monospace; font-size: 0.75rem; color: #6c757d; }
+  .tag-sm { display: inline-block; padding: 0.2em 0.6em; background: #eef2f7; color: #4a5568; border-radius: 999px; font-size: 0.75rem; }
+  .cat-chip { display: inline-block; padding: 0.25em 0.65em; background: #ffedd5; color: #c2410c; border-radius: 6px; font-size: 0.8rem; font-weight: 600; margin: 0.2rem; }
+</style>
+
+<nav aria-label="breadcrumb" style="margin-bottom: 1rem;">
+  <ol class="breadcrumb" style="font-size: 0.85rem;">
+    <li class="breadcrumb-item"><a href="{{ site.url }}/">Home</a></li>
+    <li class="breadcrumb-item"><a href="{{ site.url }}/providers/{{ page.provider_slug }}/">{{ page.provider_name }}</a></li>
+    <li class="breadcrumb-item active" aria-current="page">{{ page.name }}</li>
+  </ol>
+</nav>
+
+<div class="rules-hero">
+  <div class="rules-overline">
+    <a href="{{ site.url }}/providers/{{ page.provider_slug }}/">{{ page.provider_name }}</a> &middot; API Governance Rules
+  </div>
+  <h1 class="rules-title">{{ page.name }}</h1>
+  {% if page.description %}<p class="rules-desc">{{ page.description }}</p>{% endif %}
+  <div class="stat-badges" style="margin-top: 1rem;">
+    <span class="stat-badge"><strong>{{ page.rule_count }}</strong> Rules</span>
+    {% if page.severity_counts.error > 0 %}<span class="stat-badge"><span class="severity-badge severity-error">error</span> {{ page.severity_counts.error }}</span>{% endif %}
+    {% if page.severity_counts.warn > 0 %}<span class="stat-badge"><span class="severity-badge severity-warn">warn</span> {{ page.severity_counts.warn }}</span>{% endif %}
+    {% if page.severity_counts.info > 0 %}<span class="stat-badge"><span class="severity-badge severity-info">info</span> {{ page.severity_counts.info }}</span>{% endif %}
+  </div>
+  <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+    <a href="{{ page.rules_url }}" target="_blank" rel="noopener" class="btn btn-sm" style="background: #c2410c; color: white;">View Rules File</a>
+    <a href="https://github.com/api-evangelist/{{ page.provider_slug }}/blob/main/{{ page.rules_file }}" target="_blank" rel="noopener" class="btn btn-sm btn-outline-dark">View on GitHub</a>
+  </div>
+</div>
+
+<!-- Categories -->
+{% if page.categories.size > 0 %}
+<h3 class="section-title" id="categories">Rule Categories</h3>
+<div style="display: flex; flex-wrap: wrap; gap: 0.25rem; margin-bottom: 1rem;">
+  {% for cat in page.categories %}
+  <span class="cat-chip">{{ cat }}</span>
+  {% endfor %}
+</div>
+{% endif %}
+
+<!-- Rules -->
+{% if page.rules.size > 0 %}
+<h3 class="section-title" id="rules">Rules</h3>
+<div style="background: white; border: 1px solid #e3e7ee; border-radius: 10px; padding: 0 1.25rem;">
+  {% for rule in page.rules %}
+  <div class="rule-row">
+    <span class="severity-badge severity-{{ rule.severity }}">{{ rule.severity }}</span>
+    <div style="flex: 1;">
+      <div class="rule-name">{{ rule.name }}</div>
+      {% if rule.description %}<div class="rule-desc">{{ rule.description }}</div>{% endif %}
+      {% if rule.given %}<div class="rule-given">{{ rule.given }}</div>{% endif %}
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% endif %}

@@ -3,7 +3,8 @@
 Build script that reads api-evangelist repos and generates Jekyll collections
 for the apis.io network site.
 
-Generates four collections: _providers, _apis, _capabilities, _schemas
+Generates seven collections: _providers, _apis, _capabilities, _schemas,
+_asyncapis, _jsonld, _rules
 """
 
 import os
@@ -26,6 +27,9 @@ PROVIDERS_DIR = os.path.join(NETWORK_DIR, '_providers')
 APIS_DIR = os.path.join(NETWORK_DIR, '_apis')
 CAPABILITIES_DIR = os.path.join(NETWORK_DIR, '_capabilities')
 SCHEMAS_DIR = os.path.join(NETWORK_DIR, '_schemas')
+ASYNCAPIS_DIR = os.path.join(NETWORK_DIR, '_asyncapis')
+JSONLD_DIR = os.path.join(NETWORK_DIR, '_jsonld')
+RULES_DIR = os.path.join(NETWORK_DIR, '_rules')
 
 
 def slugify(text):
@@ -436,12 +440,259 @@ def process_provider(provider_dir):
             schema_filepath = os.path.join(SCHEMAS_DIR, provider_slug, f"{schema_slug}.md")
             write_frontmatter_file(schema_filepath, schema_entry)
 
+    # --- AsyncAPI Specs ---
+    asyncapi_dir = os.path.join(provider_dir, 'asyncapi')
+    asyncapi_entries = []
+    if os.path.isdir(asyncapi_dir):
+        asyncapi_files = glob.glob(os.path.join(asyncapi_dir, '*.yml')) + glob.glob(os.path.join(asyncapi_dir, '*.yaml'))
+        for asyncapi_file in sorted(asyncapi_files):
+            asyncapi_filename = os.path.basename(asyncapi_file)
+            asyncapi_slug = os.path.splitext(asyncapi_filename)[0]
+
+            try:
+                asyncapi_data = load_yaml(asyncapi_file)
+            except Exception:
+                continue
+            if not asyncapi_data:
+                continue
+
+            info = asyncapi_data.get('info', {})
+            title = info.get('title', asyncapi_slug.replace('-', ' ').title())
+            desc = clean_description(info.get('description', ''))
+            version = info.get('version', '')
+
+            # Extract channels and messages
+            channels = []
+            for channel_name, channel_def in asyncapi_data.get('channels', {}).items():
+                channel_info = {
+                    'name': channel_name,
+                    'description': clean_description(channel_def.get('description', '')),
+                }
+                # Extract operation info
+                for op_type in ('publish', 'subscribe'):
+                    op = channel_def.get(op_type)
+                    if op:
+                        channel_info['operation'] = op_type
+                        channel_info['operation_id'] = op.get('operationId', '')
+                        channel_info['summary'] = clean_description(op.get('summary', ''))
+                        break
+                channels.append(channel_info)
+
+            # Extract messages
+            messages = []
+            for msg_name, msg_def in asyncapi_data.get('components', {}).get('messages', {}).items():
+                messages.append({
+                    'name': msg_name,
+                    'title': msg_def.get('title', msg_name),
+                    'summary': clean_description(msg_def.get('summary', '')),
+                    'description': clean_description(msg_def.get('description', ''))[:300],
+                })
+
+            # Extract servers
+            servers = []
+            for srv_name, srv_def in asyncapi_data.get('servers', {}).items():
+                servers.append({
+                    'name': srv_name,
+                    'url': srv_def.get('url', ''),
+                    'protocol': srv_def.get('protocol', ''),
+                    'description': clean_description(srv_def.get('description', '')),
+                })
+
+            github_raw_base = f"https://raw.githubusercontent.com/api-evangelist/{provider_slug}/refs/heads/main"
+
+            asyncapi_entry = {
+                'layout': 'asyncapi',
+                'slug': asyncapi_slug,
+                'name': title,
+                'description': desc,
+                'version': version,
+                'provider_slug': provider_slug,
+                'provider_name': provider_name,
+                'tags': provider_tags + ['AsyncAPI', 'Webhooks', 'Events'],
+                'channels': channels,
+                'messages': messages,
+                'servers': servers,
+                'spec_file': f"asyncapi/{asyncapi_filename}",
+                'spec_url': f"{github_raw_base}/asyncapi/{asyncapi_filename}",
+            }
+
+            asyncapi_filepath = os.path.join(ASYNCAPIS_DIR, provider_slug, f"{asyncapi_slug}.md")
+            write_frontmatter_file(asyncapi_filepath, asyncapi_entry)
+            asyncapi_entries.append(asyncapi_entry)
+
+    # Add asyncapi summaries to provider
+    if asyncapi_entries:
+        provider_data['asyncapis'] = [
+            {'slug': a['slug'], 'name': a['name'], 'description': a['description'][:200]}
+            for a in asyncapi_entries
+        ]
+        write_frontmatter_file(provider_filepath, provider_data)
+
+    # --- JSON-LD Contexts ---
+    jsonld_dir = os.path.join(provider_dir, 'json-ld')
+    jsonld_entries = []
+    if os.path.isdir(jsonld_dir):
+        jsonld_files = glob.glob(os.path.join(jsonld_dir, '*.jsonld'))
+        for jsonld_file in sorted(jsonld_files):
+            jsonld_filename = os.path.basename(jsonld_file)
+            jsonld_slug = os.path.splitext(jsonld_filename)[0]
+
+            try:
+                jsonld_data = load_json(jsonld_file)
+            except (json.JSONDecodeError, IOError):
+                continue
+
+            context = jsonld_data.get('@context', {})
+
+            # Extract namespace prefixes (string values that look like URLs)
+            namespaces = []
+            # Extract class definitions (string values mapping to namespace:Class)
+            classes = []
+            # Extract property definitions (dict values with @id)
+            properties = []
+
+            for key, value in context.items():
+                if key.startswith('@'):
+                    continue
+                if isinstance(value, str):
+                    if '://' in value:
+                        namespaces.append({'prefix': key, 'uri': value})
+                    else:
+                        classes.append(key)
+                elif isinstance(value, dict):
+                    prop_type = value.get('@type', '')
+                    # Clean up type for display
+                    if prop_type.startswith('xsd:'):
+                        prop_type = prop_type[4:]
+                    elif prop_type == '@id':
+                        prop_type = 'reference'
+                    container = value.get('@container', '')
+                    if container:
+                        container = container.replace('@', '')
+                    properties.append({
+                        'name': key,
+                        'type': prop_type,
+                        'container': container,
+                    })
+
+            # Derive title from filename
+            title = jsonld_slug.replace('-', ' ').title()
+            # Try to clean it up
+            title = title.replace('Context', '').replace('  ', ' ').strip()
+            if not title:
+                title = jsonld_slug
+
+            github_raw_base = f"https://raw.githubusercontent.com/api-evangelist/{provider_slug}/refs/heads/main"
+
+            jsonld_entry = {
+                'layout': 'jsonld',
+                'slug': jsonld_slug,
+                'name': f"{title} Context",
+                'description': f"JSON-LD context defining the semantic vocabulary for {title} from {provider_name}.",
+                'provider_slug': provider_slug,
+                'provider_name': provider_name,
+                'tags': provider_tags + ['JSON-LD', 'Linked Data', 'Semantic Web'],
+                'namespaces': namespaces,
+                'classes': classes,
+                'properties': properties,
+                'class_count': len(classes),
+                'property_count': len(properties),
+                'context_file': f"json-ld/{jsonld_filename}",
+                'context_url': f"{github_raw_base}/json-ld/{jsonld_filename}",
+            }
+
+            jsonld_filepath = os.path.join(JSONLD_DIR, provider_slug, f"{jsonld_slug}.md")
+            write_frontmatter_file(jsonld_filepath, jsonld_entry)
+            jsonld_entries.append(jsonld_entry)
+
+    # Add jsonld summaries to provider
+    if jsonld_entries:
+        provider_data['jsonld'] = [
+            {'slug': j['slug'], 'name': j['name'], 'class_count': j['class_count'], 'property_count': j['property_count']}
+            for j in jsonld_entries
+        ]
+        write_frontmatter_file(provider_filepath, provider_data)
+
+    # --- Spectral Rules ---
+    rules_dir = os.path.join(provider_dir, 'rules')
+    rules_entries = []
+    if os.path.isdir(rules_dir):
+        rules_files = glob.glob(os.path.join(rules_dir, '*.yml')) + glob.glob(os.path.join(rules_dir, '*.yaml'))
+        for rules_file in sorted(rules_files):
+            rules_filename = os.path.basename(rules_file)
+            rules_slug = os.path.splitext(rules_filename)[0]
+
+            try:
+                rules_data = load_yaml(rules_file)
+            except Exception:
+                continue
+            if not rules_data:
+                continue
+
+            raw_rules = rules_data.get('rules', {})
+
+            # Extract rule details
+            rules_list = []
+            severity_counts = {'error': 0, 'warn': 0, 'info': 0, 'hint': 0}
+            categories = set()
+
+            for rule_name, rule_def in raw_rules.items():
+                if not isinstance(rule_def, dict):
+                    continue
+                severity = rule_def.get('severity', 'warn')
+                severity_counts[severity] = severity_counts.get(severity, 0) + 1
+
+                # Derive category from rule name prefix
+                parts = rule_name.split('-')
+                if len(parts) >= 2:
+                    categories.add(parts[0])
+
+                rules_list.append({
+                    'name': rule_name,
+                    'description': clean_description(rule_def.get('description', '')),
+                    'severity': severity,
+                    'given': rule_def.get('given', ''),
+                })
+
+            title = rules_slug.replace('-', ' ').title()
+
+            github_raw_base = f"https://raw.githubusercontent.com/api-evangelist/{provider_slug}/refs/heads/main"
+
+            rules_entry = {
+                'layout': 'rules',
+                'slug': rules_slug,
+                'name': f"{provider_name} API Rules",
+                'description': f"Spectral linting rules defining API design standards and conventions for {provider_name}.",
+                'provider_slug': provider_slug,
+                'provider_name': provider_name,
+                'tags': provider_tags + ['Spectral', 'Linting', 'API Governance'],
+                'rules': rules_list,
+                'rule_count': len(rules_list),
+                'severity_counts': severity_counts,
+                'categories': sorted(categories),
+                'rules_file': f"rules/{rules_filename}",
+                'rules_url': f"{github_raw_base}/rules/{rules_filename}",
+            }
+
+            rules_filepath = os.path.join(RULES_DIR, provider_slug, f"{rules_slug}.md")
+            write_frontmatter_file(rules_filepath, rules_entry)
+            rules_entries.append(rules_entry)
+
+    # Add rules summaries to provider
+    if rules_entries:
+        provider_data['rules'] = [
+            {'slug': r['slug'], 'name': r['name'], 'rule_count': r['rule_count'], 'severity_counts': r['severity_counts']}
+            for r in rules_entries
+        ]
+        write_frontmatter_file(provider_filepath, provider_data)
+
     return provider_data
 
 
 def clear_collections():
     """Remove existing collection directories."""
-    for d in [PROVIDERS_DIR, APIS_DIR, CAPABILITIES_DIR, SCHEMAS_DIR]:
+    for d in [PROVIDERS_DIR, APIS_DIR, CAPABILITIES_DIR, SCHEMAS_DIR,
+              ASYNCAPIS_DIR, JSONLD_DIR, RULES_DIR]:
         if os.path.exists(d):
             shutil.rmtree(d)
         os.makedirs(d, exist_ok=True)
@@ -486,15 +737,26 @@ def main():
             total_apis += result.get('api_count', 0)
             total_caps += len(result.get('capabilities', []))
 
-    # Count schemas
-    for root, dirs, files in os.walk(SCHEMAS_DIR):
-        total_schemas += len([f for f in files if f.endswith('.md')])
+    # Count file-based collections
+    def count_md(d):
+        n = 0
+        for root, dirs, files in os.walk(d):
+            n += len([f for f in files if f.endswith('.md')])
+        return n
+
+    total_schemas = count_md(SCHEMAS_DIR)
+    total_asyncapis = count_md(ASYNCAPIS_DIR)
+    total_jsonld = count_md(JSONLD_DIR)
+    total_rules = count_md(RULES_DIR)
 
     print(f"\n=== Build Complete ===")
     print(f"Providers:    {len(providers)}")
     print(f"APIs:         {total_apis}")
     print(f"Capabilities: {total_caps}")
     print(f"Schemas:      {total_schemas}")
+    print(f"AsyncAPIs:    {total_asyncapis}")
+    print(f"JSON-LD:      {total_jsonld}")
+    print(f"Rules:        {total_rules}")
 
 
 if __name__ == '__main__':

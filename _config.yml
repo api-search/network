@@ -48,6 +48,15 @@ collections:
   schemas:
     output:         true
     permalink:      /schemas/:path/
+  asyncapis:
+    output:         true
+    permalink:      /asyncapis/:path/
+  jsonld:
+    output:         true
+    permalink:      /jsonld/:path/
+  rules:
+    output:         true
+    permalink:      /rules/:path/
 
 defaults:
   - scope:
@@ -70,3 +79,18 @@ defaults:
       type:         schemas
     values:
       layout:       schema
+  - scope:
+      path:         ""
+      type:         asyncapis
+    values:
+      layout:       asyncapi
+  - scope:
+      path:         ""
+      type:         jsonld
+    values:
+      layout:       jsonld
+  - scope:
+      path:         ""
+      type:         rules
+    values:
+      layout:       rules

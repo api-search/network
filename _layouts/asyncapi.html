@@ -1,0 +1,97 @@
+---
+layout: default
+---
+<style>
+  .async-hero { background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%); border: 1px solid #93c5fd; border-radius: 12px; padding: 2rem; margin-bottom: 2rem; }
+  .async-overline { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; color: #1e40af; font-weight: 600; margin-bottom: 0.5rem; }
+  .async-overline a { color: #1e40af; text-decoration: none; }
+  .async-overline a:hover { text-decoration: underline; }
+  .async-title { font-size: 2rem; font-weight: 700; margin-bottom: 0.75rem; color: #1a1a2e; }
+  .async-desc { color: #4a5568; line-height: 1.6; font-size: 1.05rem; }
+  .section-title { font-size: 1.1rem; font-weight: 700; color: #1a1a2e; margin: 2rem 0 0.75rem; padding-bottom: 0.5rem; border-bottom: 2px solid #e3e7ee; }
+  .channel-card { background: white; border: 1px solid #e3e7ee; border-radius: 10px; padding: 1.25rem; margin-bottom: 0.75rem; }
+  .channel-name { font-family: monospace; font-size: 1rem; font-weight: 700; color: #1e40af; margin-bottom: 0.25rem; }
+  .channel-meta { font-size: 0.8rem; color: #6c757d; margin-bottom: 0.25rem; }
+  .channel-desc { font-size: 0.9rem; color: #4a5568; }
+  .msg-card { display: flex; align-items: flex-start; gap: 0.75rem; padding: 0.75rem 0; border-bottom: 1px solid #f0f2f5; }
+  .msg-card:last-child { border-bottom: none; }
+  .msg-icon { width: 36px; height: 36px; border-radius: 6px; background: #dbeafe; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 0.9rem; color: #1e40af; font-weight: 700; }
+  .msg-name { font-weight: 600; color: #1a1a2e; font-size: 0.9rem; }
+  .msg-title { font-size: 0.8rem; color: #6c757d; }
+  .msg-summary { font-size: 0.85rem; color: #4a5568; }
+  .server-row { display: flex; align-items: center; gap: 0.75rem; padding: 0.6rem 0; border-bottom: 1px solid #f0f2f5; font-size: 0.9rem; }
+  .server-row:last-child { border-bottom: none; }
+  .protocol-badge { display: inline-block; padding: 0.15em 0.5em; border-radius: 4px; font-size: 0.7rem; font-weight: 700; font-family: monospace; background: #1e40af; color: white; text-transform: uppercase; }
+  .tag-sm { display: inline-block; padding: 0.2em 0.6em; background: #eef2f7; color: #4a5568; border-radius: 999px; font-size: 0.75rem; }
+</style>
+
+<nav aria-label="breadcrumb" style="margin-bottom: 1rem;">
+  <ol class="breadcrumb" style="font-size: 0.85rem;">
+    <li class="breadcrumb-item"><a href="{{ site.url }}/">Home</a></li>
+    <li class="breadcrumb-item"><a href="{{ site.url }}/providers/{{ page.provider_slug }}/">{{ page.provider_name }}</a></li>
+    <li class="breadcrumb-item active" aria-current="page">{{ page.name }}</li>
+  </ol>
+</nav>
+
+<div class="async-hero">
+  <div class="async-overline">
+    <a href="{{ site.url }}/providers/{{ page.provider_slug }}/">{{ page.provider_name }}</a> &middot; AsyncAPI Specification
+  </div>
+  <h1 class="async-title">{{ page.name }}</h1>
+  {% if page.version %}<p style="font-size: 0.85rem; color: #1e40af; font-weight: 600; margin-bottom: 0.5rem;">Version {{ page.version }}</p>{% endif %}
+  {% if page.description %}<p class="async-desc">{{ page.description }}</p>{% endif %}
+  <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem; margin-top: 1rem;">
+    <a href="{{ page.spec_url }}" target="_blank" rel="noopener" class="btn btn-primary btn-sm">View Spec</a>
+    <a href="https://github.com/api-evangelist/{{ page.provider_slug }}/blob/main/{{ page.spec_file }}" target="_blank" rel="noopener" class="btn btn-outline-dark btn-sm">View on GitHub</a>
+    {% if page.tags.size > 0 %}
+    {% for tag in page.tags %}<span class="tag-sm">{{ tag }}</span>{% endfor %}
+    {% endif %}
+  </div>
+</div>
+
+<!-- Channels -->
+{% if page.channels.size > 0 %}
+<h3 class="section-title" id="channels">Channels</h3>
+{% for channel in page.channels %}
+<div class="channel-card">
+  <div class="channel-name">{{ channel.name }}</div>
+  {% if channel.operation %}<div class="channel-meta"><span class="protocol-badge">{{ channel.operation }}</span> {% if channel.operation_id %}<code style="font-size: 0.8rem; color: #6c757d;">{{ channel.operation_id }}</code>{% endif %}</div>{% endif %}
+  {% if channel.summary %}<div class="channel-desc"><strong>{{ channel.summary }}</strong></div>{% endif %}
+  {% if channel.description %}<div class="channel-desc">{{ channel.description }}</div>{% endif %}
+</div>
+{% endfor %}
+{% endif %}
+
+<!-- Messages -->
+{% if page.messages.size > 0 %}
+<h3 class="section-title" id="messages">Messages</h3>
+<div style="background: white; border: 1px solid #e3e7ee; border-radius: 10px; padding: 0 1.25rem;">
+  {% for msg in page.messages %}
+  <div class="msg-card">
+    <div class="msg-icon">&#9993;</div>
+    <div style="flex: 1;">
+      <div class="msg-name">{{ msg.name }}</div>
+      {% if msg.title %}<div class="msg-title">{{ msg.title }}</div>{% endif %}
+      {% if msg.summary %}<div class="msg-summary">{{ msg.summary }}</div>{% endif %}
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% endif %}
+
+<!-- Servers -->
+{% if page.servers.size > 0 %}
+<h3 class="section-title" id="servers">Servers</h3>
+<div style="background: white; border: 1px solid #e3e7ee; border-radius: 10px; padding: 0 1.25rem;">
+  {% for server in page.servers %}
+  <div class="server-row">
+    <span class="protocol-badge">{{ server.protocol }}</span>
+    <div style="flex: 1;">
+      <strong>{{ server.name }}</strong>
+      <code style="font-size: 0.8rem; color: #6c757d; margin-left: 0.5rem;">{{ server.url }}</code>
+      {% if server.description %}<div style="font-size: 0.85rem; color: #666;">{{ server.description }}</div>{% endif %}
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% endif %}

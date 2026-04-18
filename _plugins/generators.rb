@@ -58,7 +58,7 @@ module Jekyll
     def generate(site)
       tag_map = Hash.new { |h, k| h[k] = [] }
 
-      ['providers', 'apis', 'capabilities', 'schemas'].each do |coll_name|
+      ['providers', 'apis', 'capabilities', 'schemas', 'asyncapis', 'jsonld', 'rules'].each do |coll_name|
         coll = site.collections[coll_name]
         next unless coll
         coll.docs.each do |doc|

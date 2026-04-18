@@ -8,7 +8,10 @@ meta_description: "Search APIs by capability, provider, schema, or name. Find th
 {% assign total_providers = site.providers | size %}
 {% assign total_caps = site.capabilities | size %}
 {% assign total_schemas = site.schemas | size %}
-{% assign total_items = total_apis | plus: total_providers | plus: total_caps | plus: total_schemas %}
+{% assign total_asyncapis = site.asyncapis | size %}
+{% assign total_jsonld = site.jsonld | size %}
+{% assign total_rules = site.rules | size %}
+{% assign total_items = total_apis | plus: total_providers | plus: total_caps | plus: total_schemas | plus: total_asyncapis | plus: total_jsonld | plus: total_rules %}
 
 {% assign all_tags = "" | split: "" %}
 {% for item in site.apis %}{% for tag in item.tags %}{% if tag != "" %}{% assign all_tags = all_tags | push: tag %}{% endif %}{% endfor %}{% endfor %}
@@ -36,7 +39,7 @@ meta_description: "Search APIs by capability, provider, schema, or name. Find th
 <div style="text-align: center; padding: 2rem 0 1rem;">
   <h1 style="font-size: 2rem; margin-bottom: 0.5rem;">API Search</h1>
   <p style="color: #666; margin-bottom: 1.5rem;">
-    Search across <strong>{{ total_providers }}</strong> providers, <strong>{{ total_apis }}</strong> APIs, <strong>{{ total_caps }}</strong> capabilities, and <strong>{{ total_schemas }}</strong> schemas
+    Search across <strong>{{ total_providers }}</strong> providers, <strong>{{ total_apis }}</strong> APIs, <strong>{{ total_caps }}</strong> capabilities, <strong>{{ total_schemas }}</strong> schemas, <strong>{{ total_asyncapis }}</strong> event specs, <strong>{{ total_jsonld }}</strong> vocabularies, and <strong>{{ total_rules }}</strong> rulesets
   </p>
 
   <form onsubmit="runSearch(); return false;" style="max-width: 640px; margin: 0 auto; position: relative;" autocomplete="off">
@@ -121,6 +124,9 @@ meta_description: "Search APIs by capability, provider, schema, or name. Find th
   .type-api { background: #0d6efd; }
   .type-capability { background: #198754; }
   .type-schema { background: #dc3545; }
+  .type-asyncapi { background: #1e40af; }
+  .type-jsonld { background: #7c3aed; }
+  .type-rules { background: #c2410c; }
 </style>
 
 <script src="{{ site.url }}/assets/minisearch.min.js"></script>
@@ -243,12 +249,12 @@ meta_description: "Search APIs by capability, provider, schema, or name. Find th
   }
 
   function getTypeBadge(type) {
-    var labels = { provider: 'Provider', api: 'API', capability: 'Capability', schema: 'Schema' };
+    var labels = { provider: 'Provider', api: 'API', capability: 'Capability', schema: 'Schema', asyncapi: 'AsyncAPI', jsonld: 'JSON-LD', rules: 'Rules' };
     return '<span class="type-badge type-' + type + '">' + (labels[type] || type) + '</span>';
   }
 
   function getBorderColor(type) {
-    var colors = { provider: '#6c757d', api: '#0d6efd', capability: '#198754', schema: '#dc3545' };
+    var colors = { provider: '#6c757d', api: '#0d6efd', capability: '#198754', schema: '#dc3545', asyncapi: '#1e40af', jsonld: '#7c3aed', rules: '#c2410c' };
     return colors[type] || '#6c757d';
   }
 

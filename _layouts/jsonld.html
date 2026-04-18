@@ -1,0 +1,100 @@
+---
+layout: default
+---
+<style>
+  .ld-hero { background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 100%); border: 1px solid #d8b4fe; border-radius: 12px; padding: 2rem; margin-bottom: 2rem; }
+  .ld-overline { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; color: #7c3aed; font-weight: 600; margin-bottom: 0.5rem; }
+  .ld-overline a { color: #7c3aed; text-decoration: none; }
+  .ld-overline a:hover { text-decoration: underline; }
+  .ld-title { font-size: 2rem; font-weight: 700; margin-bottom: 0.75rem; color: #1a1a2e; }
+  .ld-desc { color: #4a5568; line-height: 1.6; font-size: 1.05rem; }
+  .section-title { font-size: 1.1rem; font-weight: 700; color: #1a1a2e; margin: 2rem 0 0.75rem; padding-bottom: 0.5rem; border-bottom: 2px solid #e3e7ee; }
+  .stat-badges { display: flex; gap: 0.75rem; flex-wrap: wrap; margin-bottom: 1rem; }
+  .stat-badge { background: white; border: 1px solid #e3e7ee; border-radius: 8px; padding: 0.5rem 1rem; font-size: 0.85rem; }
+  .stat-badge strong { color: #7c3aed; }
+  .ns-row { display: flex; align-items: center; gap: 0.75rem; padding: 0.6rem 0; border-bottom: 1px solid #f0f2f5; font-size: 0.9rem; }
+  .ns-row:last-child { border-bottom: none; }
+  .ns-prefix { font-family: monospace; font-weight: 700; color: #7c3aed; min-width: 80px; }
+  .ns-uri { font-family: monospace; font-size: 0.8rem; color: #6c757d; word-break: break-all; }
+  .class-chip { display: inline-block; padding: 0.25em 0.65em; background: #f3e8ff; color: #7c3aed; border-radius: 6px; font-size: 0.8rem; font-weight: 600; font-family: monospace; margin: 0.2rem; }
+  .props-table { width: 100%; border-collapse: collapse; }
+  .props-table th { text-align: left; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.5px; color: #6c757d; padding: 0.75rem; border-bottom: 2px solid #e3e7ee; }
+  .props-table td { padding: 0.6rem 0.75rem; border-bottom: 1px solid #f0f2f5; font-size: 0.85rem; }
+  .props-table tr:hover { background: #f8f9fa; }
+  .prop-name { font-weight: 600; font-family: monospace; color: #1a1a2e; }
+  .prop-type { font-family: monospace; font-size: 0.8rem; color: #7c3aed; background: #f3e8ff; padding: 0.1em 0.4em; border-radius: 4px; }
+  .tag-sm { display: inline-block; padding: 0.2em 0.6em; background: #eef2f7; color: #4a5568; border-radius: 999px; font-size: 0.75rem; }
+</style>
+
+<nav aria-label="breadcrumb" style="margin-bottom: 1rem;">
+  <ol class="breadcrumb" style="font-size: 0.85rem;">
+    <li class="breadcrumb-item"><a href="{{ site.url }}/">Home</a></li>
+    <li class="breadcrumb-item"><a href="{{ site.url }}/providers/{{ page.provider_slug }}/">{{ page.provider_name }}</a></li>
+    <li class="breadcrumb-item active" aria-current="page">{{ page.name }}</li>
+  </ol>
+</nav>
+
+<div class="ld-hero">
+  <div class="ld-overline">
+    <a href="{{ site.url }}/providers/{{ page.provider_slug }}/">{{ page.provider_name }}</a> &middot; JSON-LD Context
+  </div>
+  <h1 class="ld-title">{{ page.name }}</h1>
+  {% if page.description %}<p class="ld-desc">{{ page.description }}</p>{% endif %}
+  <div class="stat-badges" style="margin-top: 1rem;">
+    <span class="stat-badge"><strong>{{ page.class_count }}</strong> Classes</span>
+    <span class="stat-badge"><strong>{{ page.property_count }}</strong> Properties</span>
+    <span class="stat-badge"><strong>{{ page.namespaces | size }}</strong> Namespaces</span>
+  </div>
+  <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+    <a href="{{ page.context_url }}" target="_blank" rel="noopener" class="btn btn-sm" style="background: #7c3aed; color: white;">View Context</a>
+    <a href="https://github.com/api-evangelist/{{ page.provider_slug }}/blob/main/{{ page.context_file }}" target="_blank" rel="noopener" class="btn btn-sm btn-outline-dark">View on GitHub</a>
+  </div>
+</div>
+
+<!-- Namespaces -->
+{% if page.namespaces.size > 0 %}
+<h3 class="section-title" id="namespaces">Namespaces</h3>
+<div style="background: white; border: 1px solid #e3e7ee; border-radius: 10px; padding: 0 1.25rem;">
+  {% for ns in page.namespaces %}
+  <div class="ns-row">
+    <span class="ns-prefix">{{ ns.prefix }}:</span>
+    <span class="ns-uri">{{ ns.uri }}</span>
+  </div>
+  {% endfor %}
+</div>
+{% endif %}
+
+<!-- Classes -->
+{% if page.classes.size > 0 %}
+<h3 class="section-title" id="classes">Classes</h3>
+<div style="display: flex; flex-wrap: wrap; gap: 0.25rem;">
+  {% for cls in page.classes %}
+  <span class="class-chip">{{ cls }}</span>
+  {% endfor %}
+</div>
+{% endif %}
+
+<!-- Properties -->
+{% if page.properties.size > 0 %}
+<h3 class="section-title" id="properties">Properties</h3>
+<div style="background: white; border: 1px solid #e3e7ee; border-radius: 10px; overflow: hidden;">
+  <table class="props-table">
+    <thead>
+      <tr>
+        <th>Property</th>
+        <th>Type</th>
+        <th>Container</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for prop in page.properties %}
+      <tr>
+        <td><span class="prop-name">{{ prop.name }}</span></td>
+        <td>{% if prop.type %}<span class="prop-type">{{ prop.type }}</span>{% endif %}</td>
+        <td>{% if prop.container %}<span style="font-size: 0.8rem; color: #6c757d;">{{ prop.container }}</span>{% endif %}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endif %}
