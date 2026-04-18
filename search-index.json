@@ -2,13 +2,47 @@
 layout: none
 ---
 [
-{% for api in site.apis %}{% assign aid_parts = api.aid | split: ":" %}{
-"i":{{ forloop.index0 }},
+{% assign idx = 0 %}{% for provider in site.providers %}{
+"i":{{ idx }},
+"type":"provider",
+"n":{{ provider.name | jsonify }},
+"d":{{ provider.description | strip_html | strip_newlines | truncate: 300 | jsonify }},
+"t":{{ provider.tags | jsonify }},
+"u":"{{ provider.url }}",
+"ac":{{ provider.api_count | default: 0 }},
+"cc":{% if provider.capabilities %}{{ provider.capabilities | size }}{% else %}0{% endif %}
+}{% assign idx = idx | plus: 1 %},
+{% endfor %}{% for api in site.apis %}{
+"i":{{ idx }},
+"type":"api",
 "n":{{ api.name | jsonify }},
-"d":{{ api.description | strip_html | strip_newlines | truncate: 240 | jsonify }},
+"d":{{ api.description | strip_html | strip_newlines | truncate: 300 | jsonify }},
 "t":{{ api.tags | jsonify }},
+"p":{{ api.provider_name | default: api.provider_slug | jsonify }},
+"ps":{{ api.provider_slug | jsonify }},
 "h":{{ api.humanURL | jsonify }},
-"p":{{ aid_parts[0] | jsonify }},
 "u":"{{ api.url }}"
-}{% unless forloop.last %},{% endunless %}{% endfor %}
+}{% assign idx = idx | plus: 1 %}{% unless forloop.last %},{% endunless %}
+{% endfor %}{% if site.capabilities.size > 0 %},{% endif %}{% for cap in site.capabilities %}{
+"i":{{ idx }},
+"type":"capability",
+"n":{{ cap.name | jsonify }},
+"d":{{ cap.description | strip_html | strip_newlines | truncate: 300 | jsonify }},
+"t":{{ cap.tags | jsonify }},
+"p":{{ cap.provider_name | default: cap.provider_slug | jsonify }},
+"ps":{{ cap.provider_slug | jsonify }},
+"u":"{{ cap.url }}",
+"st":{{ cap.search_terms | join: ' | ' | truncate: 800 | jsonify }}
+}{% assign idx = idx | plus: 1 %}{% unless forloop.last %},{% endunless %}
+{% endfor %}{% if site.schemas.size > 0 %},{% endif %}{% for schema in site.schemas %}{
+"i":{{ idx }},
+"type":"schema",
+"n":{{ schema.title | default: schema.name | jsonify }},
+"d":{{ schema.description | strip_html | strip_newlines | truncate: 300 | jsonify }},
+"t":{{ schema.tags | jsonify }},
+"p":{{ schema.provider_name | default: schema.provider_slug | jsonify }},
+"ps":{{ schema.provider_slug | jsonify }},
+"u":"{{ schema.url }}"
+}{% assign idx = idx | plus: 1 %}{% unless forloop.last %},{% endunless %}
+{% endfor %}
 ]

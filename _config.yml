@@ -1,5 +1,5 @@
 name: APIs.io
-description: Search and discover APIs from across the web. APIs.io indexes thousands of APIs using the APIs.json specification, making it easy to find the right API for your project.
+description: Search and discover APIs by what you want to accomplish. Find API providers, individual APIs, capabilities, and schemas across the APIs.io network.
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 url: https://apis.io
 
@@ -13,14 +13,15 @@ keywords:
   - API Catalog
   - REST APIs
   - APIs.json
+  - Capabilities
 
 permalink: /:categories/:year/:month/:day/:title/
-exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
+exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "scripts"]
 
 # Site-wide alert banner
 alert:
     enabled:        false
-    type:           danger # light, danger, warning, success
+    type:           danger
     message:        'This Search is in an Alpha Stage -- <a href="https://github.com/api-search/explore/issues">Submit An Issue</a>!'
 
 categories_path : /categories.html
@@ -30,18 +31,42 @@ github_org: api-search
 github_repo: website
 
 search_local: true
-search_url: https://search-api.apis.io/search/apis
 
 paginate:           25
 paginate_path:      "/blog/:num/"
 
 collections:
+  providers:
+    output:         true
+    permalink:      /providers/:path/
   apis:
     output:         true
+    permalink:      /apis/:path/
+  capabilities:
+    output:         true
+    permalink:      /capabilities/:path/
+  schemas:
+    output:         true
+    permalink:      /schemas/:path/
 
 defaults:
   - scope:
       path:         ""
+      type:         providers
+    values:
+      layout:       provider
+  - scope:
+      path:         ""
       type:         apis
     values:
-      layout:       apis
+      layout:       api
+  - scope:
+      path:         ""
+      type:         capabilities
+    values:
+      layout:       capability
+  - scope:
+      path:         ""
+      type:         schemas
+    values:
+      layout:       schema

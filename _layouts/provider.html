@@ -1,0 +1,168 @@
+---
+layout: default
+---
+<style>
+  .provider-hero { background: linear-gradient(135deg, #f8f9fb 0%, #eef2f7 100%); border: 1px solid #e3e7ee; border-radius: 12px; padding: 2rem; margin-bottom: 2rem; }
+  .provider-title { font-size: 2rem; font-weight: 700; margin-bottom: 0.5rem; color: #1a1a2e; }
+  .provider-desc { color: #4a5568; line-height: 1.6; font-size: 1.05rem; margin-bottom: 1rem; }
+  .stat-badges { display: flex; gap: 0.75rem; flex-wrap: wrap; margin-bottom: 1rem; }
+  .stat-badge { background: white; border: 1px solid #e3e7ee; border-radius: 8px; padding: 0.5rem 1rem; font-size: 0.85rem; }
+  .stat-badge strong { color: #0d6efd; }
+  .section-anchor { font-size: 1.25rem; font-weight: 700; color: #1a1a2e; margin: 2rem 0 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid #e3e7ee; }
+  .section-anchor a { color: inherit; text-decoration: none; }
+  .section-anchor a:hover { color: #0d6efd; }
+  .card-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 1rem; margin-bottom: 2rem; }
+  .item-card { background: white; border: 1px solid #e3e7ee; border-radius: 10px; padding: 1.25rem; transition: all 0.15s; }
+  .item-card:hover { border-color: #0d6efd; box-shadow: 0 2px 8px rgba(13,110,253,0.1); transform: translateY(-1px); }
+  .item-card h4 { font-size: 1rem; font-weight: 600; margin-bottom: 0.25rem; }
+  .item-card h4 a { color: #1a1a2e; text-decoration: none; }
+  .item-card h4 a:hover { color: #0d6efd; }
+  .item-card p { font-size: 0.85rem; color: #666; margin-bottom: 0.5rem; }
+  .item-card .tags { display: flex; flex-wrap: wrap; gap: 0.3rem; }
+  .tag-sm { display: inline-block; padding: 0.2em 0.6em; background: #eef2f7; color: #4a5568; border-radius: 999px; font-size: 0.75rem; }
+  .resource-link { display: flex; align-items: center; gap: 0.5rem; padding: 0.6rem 0; border-bottom: 1px solid #f0f2f5; font-size: 0.9rem; }
+  .resource-link:last-child { border-bottom: none; }
+  .resource-link a { color: #0d6efd; text-decoration: none; }
+  .resource-link a:hover { text-decoration: underline; }
+  .resource-type { font-size: 0.75rem; font-weight: 600; color: #6c757d; text-transform: uppercase; min-width: 120px; }
+  .feature-item { padding: 0.75rem 0; border-bottom: 1px solid #f0f2f5; }
+  .feature-item:last-child { border-bottom: none; }
+  .feature-item strong { color: #1a1a2e; }
+  .feature-item p { margin: 0.25rem 0 0; font-size: 0.85rem; color: #666; }
+</style>
+
+<nav aria-label="breadcrumb" style="margin-bottom: 1rem;">
+  <ol class="breadcrumb" style="font-size: 0.85rem;">
+    <li class="breadcrumb-item"><a href="{{ site.url }}/">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">{{ page.name }}</li>
+  </ol>
+</nav>
+
+<div class="provider-hero">
+  {% if page.image %}<img src="{{ page.image }}" alt="{{ page.name }}" style="height: 48px; margin-bottom: 1rem;">{% endif %}
+  <h1 class="provider-title">{{ page.name }}</h1>
+  {% if page.description %}<p class="provider-desc">{{ page.description }}</p>{% endif %}
+  <div class="stat-badges">
+    {% if page.apis %}<span class="stat-badge"><strong>{{ page.apis | size }}</strong> APIs</span>{% endif %}
+    {% if page.capabilities %}<span class="stat-badge"><strong>{{ page.capabilities | size }}</strong> Capabilities</span>{% endif %}
+    {% if page.features %}<span class="stat-badge"><strong>{{ page.features | size }}</strong> Features</span>{% endif %}
+  </div>
+  {% if page.tags.size > 0 %}
+  <div style="display: flex; flex-wrap: wrap; gap: 0.3rem;">
+    {% for tag in page.tags %}<span class="tag-sm">{{ tag }}</span>{% endfor %}
+  </div>
+  {% endif %}
+</div>
+
+<!-- APIs Section -->
+{% if page.apis.size > 0 %}
+<h2 class="section-anchor" id="apis"><a href="#apis">APIs</a></h2>
+<div class="card-grid">
+  {% for api in page.apis %}
+  <div class="item-card">
+    <h4><a href="{{ site.url }}/apis/{{ page.slug }}/{{ api.slug }}/">{{ api.name }}</a></h4>
+    {% if api.description %}<p>{{ api.description | truncate: 180 }}</p>{% endif %}
+  </div>
+  {% endfor %}
+</div>
+{% endif %}
+
+<!-- Capabilities Section -->
+{% if page.capabilities.size > 0 %}
+<h2 class="section-anchor" id="capabilities"><a href="#capabilities">Capabilities</a></h2>
+<div class="alert alert-success d-flex align-items-center justify-content-between" role="alert" style="border-radius: 8px;">
+  <div><strong>Run Capabilities with Naftiko</strong> &mdash; Deploy and orchestrate these API capabilities using Naftiko Fleet.</div>
+  <a href="https://github.com/naftiko/fleet" target="_blank" rel="noopener" class="btn btn-success btn-sm flex-shrink-0">Run with Naftiko</a>
+</div>
+<div class="card-grid">
+  {% for cap in page.capabilities %}
+  <div class="item-card" style="border-left: 3px solid #198754;">
+    <h4><a href="{{ site.url }}/capabilities/{{ page.slug }}/{{ cap.slug }}/">{{ cap.name }}</a></h4>
+    {% if cap.description %}<p>{{ cap.description | truncate: 180 }}</p>{% endif %}
+    <a href="https://github.com/naftiko/fleet" target="_blank" rel="noopener" class="btn btn-sm btn-outline-success" style="margin-top: 0.5rem;">Run with Naftiko</a>
+  </div>
+  {% endfor %}
+</div>
+<div class="alert alert-success d-flex align-items-center justify-content-between" role="alert" style="border-radius: 8px; margin-top: 1rem;">
+  <div><strong>Run Capabilities with Naftiko</strong> &mdash; Deploy and orchestrate these API capabilities using Naftiko Fleet.</div>
+  <a href="https://github.com/naftiko/fleet" target="_blank" rel="noopener" class="btn btn-success btn-sm flex-shrink-0">Run with Naftiko</a>
+</div>
+{% endif %}
+
+<!-- Features Section -->
+{% if page.features.size > 0 %}
+<h2 class="section-anchor" id="features"><a href="#features">Features</a></h2>
+<div class="card-grid">
+  {% for feature in page.features %}
+  <div class="item-card">
+    <strong>{{ feature.name }}</strong>
+    {% if feature.description %}<p>{{ feature.description }}</p>{% endif %}
+  </div>
+  {% endfor %}
+</div>
+{% endif %}
+
+<!-- Use Cases Section -->
+{% if page.use_cases.size > 0 %}
+<h2 class="section-anchor" id="use-cases"><a href="#use-cases">Use Cases</a></h2>
+<div class="card-grid">
+  {% for uc in page.use_cases %}
+  <div class="item-card" style="border-left: 3px solid #6f42c1;">
+    <strong>{{ uc.name }}</strong>
+    {% if uc.description %}<p>{{ uc.description }}</p>{% endif %}
+  </div>
+  {% endfor %}
+</div>
+{% endif %}
+
+<!-- Integrations Section -->
+{% if page.integrations.size > 0 %}
+<h2 class="section-anchor" id="integrations"><a href="#integrations">Integrations</a></h2>
+<div class="card-grid">
+  {% for int in page.integrations %}
+  <div class="item-card">
+    <strong>{{ int.name }}</strong>
+    {% if int.description %}<p>{{ int.description }}</p>{% endif %}
+  </div>
+  {% endfor %}
+</div>
+{% endif %}
+
+<!-- Solutions Section -->
+{% if page.solutions.size > 0 %}
+<h2 class="section-anchor" id="solutions"><a href="#solutions">Solutions</a></h2>
+<div class="card-grid">
+  {% for sol in page.solutions %}
+  <div class="item-card">
+    <strong>{{ sol.name }}</strong>
+    {% if sol.description %}<p>{{ sol.description }}</p>{% endif %}
+  </div>
+  {% endfor %}
+</div>
+{% endif %}
+
+<!-- Resources Section -->
+{% if page.common.size > 0 %}
+<h2 class="section-anchor" id="resources"><a href="#resources">Resources</a></h2>
+<div style="background: white; border: 1px solid #e3e7ee; border-radius: 10px; padding: 1.25rem;">
+  {% for res in page.common %}
+  {% if res.url != '' %}
+  <div class="resource-link">
+    <span class="resource-type">{{ res.type }}</span>
+    <a href="{{ res.url }}" target="_blank" rel="noopener">{{ res.title | default: res.url }}</a>
+  </div>
+  {% endif %}
+  {% endfor %}
+</div>
+{% endif %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": {{ page.name | jsonify }},
+  {% if page.description %}"description": {{ page.description | jsonify }},{% endif %}
+  {% if page.image %}"logo": {{ page.image | jsonify }},{% endif %}
+  {% if page.tags.size > 0 %}"keywords": {{ page.tags | join: ', ' | jsonify }}{% endif %}
+}
+</script>

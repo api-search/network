@@ -1,0 +1,69 @@
+---
+layout: default
+---
+<style>
+  .schema-hero { background: linear-gradient(135deg, #fef3f2 0%, #fde8e8 100%); border: 1px solid #fecaca; border-radius: 12px; padding: 2rem; margin-bottom: 2rem; }
+  .schema-overline { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; color: #991b1b; font-weight: 600; margin-bottom: 0.5rem; }
+  .schema-overline a { color: #991b1b; text-decoration: none; }
+  .schema-overline a:hover { text-decoration: underline; }
+  .schema-title { font-size: 2rem; font-weight: 700; margin-bottom: 0.75rem; color: #1a1a2e; }
+  .schema-desc { color: #4a5568; line-height: 1.6; font-size: 1.05rem; }
+  .props-table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+  .props-table th { text-align: left; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.5px; color: #6c757d; padding: 0.75rem; border-bottom: 2px solid #e3e7ee; }
+  .props-table td { padding: 0.75rem; border-bottom: 1px solid #f0f2f5; font-size: 0.9rem; }
+  .props-table tr:hover { background: #f8f9fa; }
+  .prop-name { font-weight: 600; font-family: monospace; color: #1a1a2e; }
+  .prop-type { font-family: monospace; font-size: 0.8rem; color: #0d6efd; background: #eef2f7; padding: 0.15em 0.5em; border-radius: 4px; }
+  .tag-sm { display: inline-block; padding: 0.2em 0.6em; background: #eef2f7; color: #4a5568; border-radius: 999px; font-size: 0.75rem; }
+</style>
+
+<nav aria-label="breadcrumb" style="margin-bottom: 1rem;">
+  <ol class="breadcrumb" style="font-size: 0.85rem;">
+    <li class="breadcrumb-item"><a href="{{ site.url }}/">Home</a></li>
+    <li class="breadcrumb-item"><a href="{{ site.url }}/providers/{{ page.provider_slug }}/">{{ page.provider_name }}</a></li>
+    <li class="breadcrumb-item active" aria-current="page">{{ page.title }}</li>
+  </ol>
+</nav>
+
+<div class="schema-hero">
+  <div class="schema-overline">
+    <a href="{{ site.url }}/providers/{{ page.provider_slug }}/">{{ page.provider_name }}</a> &middot; Schema
+  </div>
+  <h1 class="schema-title">{{ page.title }}</h1>
+  {% if page.description %}<p class="schema-desc">{{ page.description }}</p>{% endif %}
+  {% if page.tags.size > 0 %}
+  <div style="display: flex; flex-wrap: wrap; gap: 0.3rem; margin-top: 1rem;">
+    {% for tag in page.tags %}<span class="tag-sm">{{ tag }}</span>{% endfor %}
+  </div>
+  {% endif %}
+</div>
+
+{% if page.properties_list.size > 0 %}
+<h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 0.75rem;">Properties</h3>
+<div style="background: white; border: 1px solid #e3e7ee; border-radius: 10px; overflow: hidden;">
+  <table class="props-table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for prop in page.properties_list %}
+      <tr>
+        <td><span class="prop-name">{{ prop.name }}</span></td>
+        <td><span class="prop-type">{{ prop.type }}</span></td>
+        <td>{{ prop.description }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endif %}
+
+{% if page.schema_file %}
+<div style="margin-top: 2rem;">
+  <a href="https://github.com/api-evangelist/{{ page.provider_slug }}/blob/main/{{ page.schema_file }}" target="_blank" rel="noopener" class="btn btn-outline-dark btn-sm">View JSON Schema on GitHub</a>
+</div>
+{% endif %}

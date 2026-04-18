@@ -1,81 +1,48 @@
-# Generates static tag and provider listing pages from the _apis collection.
-# Only runs when Jekyll is invoked with custom plugin support (e.g., local
-# `bundle exec jekyll build`). On GitHub Pages this is ignored, and the
-# query-string fallback pages at /tag/ and /provider/ handle the same routes.
+# Generates static tag listing pages from all collections.
 
 module Jekyll
   class TagPage < Page
-    def initialize(site, base, tag, apis)
+    def initialize(site, base, tag, items)
       @site = site
       @base = base
       @dir  = File.join('tag', Jekyll::Utils.slugify(tag))
       @name = 'index.html'
 
       self.process(@name)
-      self.read_yaml(File.join(base, '_layouts'), 'tag-listing.html') rescue nil
       self.data ||= {}
       self.data['layout']           = 'default'
-      self.data['title']            = "APIs tagged \"#{tag}\""
-      self.data['meta_title']       = "APIs tagged \"#{tag}\" | APIs.io"
-      self.data['meta_description'] = "Browse #{apis.size} APIs tagged with \"#{tag}\" on APIs.io."
+      self.data['title']            = "Tagged \"#{tag}\""
+      self.data['meta_title']       = "Tagged \"#{tag}\" | APIs.io"
+      self.data['meta_description'] = "Browse #{items.size} items tagged with \"#{tag}\" on APIs.io."
       self.data['tag']              = tag
-      self.data['apis']             = apis
-      self.content = render_listing(tag, apis)
+      self.data['items']            = items
+      self.content = render_listing(tag, items)
     end
 
-    def render_listing(tag, apis)
+    def render_listing(tag, items)
       out = String.new
       out << %Q(<nav aria-label="breadcrumb"><ol class="breadcrumb" style="font-size:0.9rem;">)
       out << %Q(<li class="breadcrumb-item"><a href="/">Home</a></li>)
-      out << %Q(<li class="breadcrumb-item"><a href="/tags/">Tags</a></li>)
       out << %Q(<li class="breadcrumb-item active">#{tag}</li></ol></nav>)
-      out << %Q(<h1 style="font-size:1.75rem;">APIs tagged &ldquo;#{tag}&rdquo;</h1>)
-      out << %Q(<p style="color:#666;">#{apis.size} APIs</p>)
+      out << %Q(<h1 style="font-size:1.75rem;">Tagged &ldquo;#{tag}&rdquo;</h1>)
+      out << %Q(<p style="color:#666;">#{items.size} results</p>)
       out << %Q(<div class="list-group">)
-      apis.each do |api|
-        name = api.data['name'] || ''
-        desc = (api.data['description'] || '').to_s.gsub(/<[^>]+>/, '').strip[0, 200]
-        out << %Q(<div class="list-group-item" style="border-left:3px solid #0d6efd;">)
-        out << %Q(<h6 style="margin-bottom:0.25rem;"><a href="#{api.url}" style="text-decoration:none;">#{name}</a></h6>)
-        out << %Q(<p style="font-size:0.85rem;color:#666;margin:0;">#{desc}</p>) unless desc.empty?
-        out << %Q(</div>)
-      end
-      out << %Q(</div>)
-      out
-    end
-  end
-
-  class ProviderPage < Page
-    def initialize(site, base, provider, apis)
-      @site = site
-      @base = base
-      @dir  = File.join('provider', Jekyll::Utils.slugify(provider))
-      @name = 'index.html'
-
-      self.process(@name)
-      self.data ||= {}
-      self.data['layout']           = 'default'
-      self.data['title']            = "#{provider} APIs"
-      self.data['meta_title']       = "#{provider} APIs | APIs.io"
-      self.data['meta_description'] = "Browse #{apis.size} APIs from #{provider} on APIs.io."
-      self.data['provider']         = provider
-      self.data['apis']             = apis
-      self.content = render_listing(provider, apis)
-    end
-
-    def render_listing(provider, apis)
-      out = String.new
-      out << %Q(<nav aria-label="breadcrumb"><ol class="breadcrumb" style="font-size:0.9rem;">)
-      out << %Q(<li class="breadcrumb-item"><a href="/">Home</a></li>)
-      out << %Q(<li class="breadcrumb-item active">#{provider}</li></ol></nav>)
-      out << %Q(<h1 style="font-size:1.75rem;">APIs from #{provider}</h1>)
-      out << %Q(<p style="color:#666;">#{apis.size} APIs</p>)
-      out << %Q(<div class="list-group">)
-      apis.each do |api|
-        name = api.data['name'] || ''
-        desc = (api.data['description'] || '').to_s.gsub(/<[^>]+>/, '').strip[0, 200]
-        out << %Q(<div class="list-group-item" style="border-left:3px solid #0d6efd;">)
-        out << %Q(<h6 style="margin-bottom:0.25rem;"><a href="#{api.url}" style="text-decoration:none;">#{name}</a></h6>)
+      items.each do |item|
+        name = item.data['name'] || item.data['title'] || ''
+        desc = (item.data['description'] || '').to_s.gsub(/<[^>]+>/, '').strip[0, 200]
+        item_type = item.collection&.label || 'item'
+        type_color = case item_type
+                     when 'providers' then '#6f42c1'
+                     when 'apis' then '#0d6efd'
+                     when 'capabilities' then '#198754'
+                     when 'schemas' then '#dc3545'
+                     else '#6c757d'
+                     end
+        type_label = item_type.chomp('s').capitalize
+        out << %Q(<div class="list-group-item" style="border-left:3px solid #{type_color};">)
+        out << %Q(<h6 style="margin-bottom:0.25rem;"><a href="#{item.url}" style="text-decoration:none;">#{name}</a>)
+        out << %Q( <span class="badge" style="background:#{type_color};font-size:0.65rem;vertical-align:middle;">#{type_label}</span>)
+        out << %Q(</h6>)
         out << %Q(<p style="font-size:0.85rem;color:#666;margin:0;">#{desc}</p>) unless desc.empty?
         out << %Q(</div>)
       end
@@ -89,40 +56,21 @@ module Jekyll
     priority :low
 
     def generate(site)
-      apis_collection = site.collections['apis']
-      return unless apis_collection
-
       tag_map = Hash.new { |h, k| h[k] = [] }
-      provider_map = Hash.new { |h, k| h[k] = [] }
 
-      apis_collection.docs.each do |api|
-        (api.data['tags'] || []).each do |tag|
-          next if tag.nil? || tag.to_s.strip.empty?
-          tag_map[tag.to_s] << api
-        end
-        aid = api.data['aid'].to_s
-        if aid.include?(':')
-          provider = aid.split(':').first
-          provider_map[provider] << api unless provider.nil? || provider.empty?
+      ['providers', 'apis', 'capabilities', 'schemas'].each do |coll_name|
+        coll = site.collections[coll_name]
+        next unless coll
+        coll.docs.each do |doc|
+          (doc.data['tags'] || []).each do |tag|
+            next if tag.nil? || tag.to_s.strip.empty?
+            tag_map[tag.to_s] << doc
+          end
         end
       end
 
-      # Pre-compute sibling lists on each api doc so layouts don't have
-      # to do an O(N) scan per page render.
-      provider_map.each do |provider, apis|
-        api_summaries = apis.map { |a| { 'name' => a.data['name'], 'url' => a.url } }
-        apis.each do |api|
-          api.data['provider']        = provider
-          api.data['provider_count']  = apis.size
-          api.data['siblings']        = api_summaries.reject { |s| s['url'] == api.url }
-        end
-      end
-
-      tag_map.each do |tag, apis|
-        site.pages << TagPage.new(site, site.source, tag, apis)
-      end
-      provider_map.each do |provider, apis|
-        site.pages << ProviderPage.new(site, site.source, provider, apis)
+      tag_map.each do |tag, items|
+        site.pages << TagPage.new(site, site.source, tag, items)
       end
     end
   end

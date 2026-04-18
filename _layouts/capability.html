@@ -1,0 +1,116 @@
+---
+layout: default
+---
+<style>
+  .cap-hero { background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%); border: 1px solid #bbf7d0; border-radius: 12px; padding: 2rem; margin-bottom: 2rem; }
+  .cap-overline { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; color: #166534; font-weight: 600; margin-bottom: 0.5rem; }
+  .cap-overline a { color: #166534; text-decoration: none; }
+  .cap-overline a:hover { text-decoration: underline; }
+  .cap-title { font-size: 2rem; font-weight: 700; margin-bottom: 0.75rem; color: #1a1a2e; }
+  .cap-desc { color: #4a5568; line-height: 1.6; font-size: 1.05rem; }
+  .section-title { font-size: 1.1rem; font-weight: 700; color: #1a1a2e; margin: 2rem 0 0.75rem; padding-bottom: 0.5rem; border-bottom: 2px solid #e3e7ee; }
+  .op-row { display: flex; align-items: center; gap: 0.75rem; padding: 0.75rem 0; border-bottom: 1px solid #f0f2f5; }
+  .op-row:last-child { border-bottom: none; }
+  .method-badge { display: inline-block; padding: 0.15em 0.5em; border-radius: 4px; font-size: 0.7rem; font-weight: 700; font-family: monospace; min-width: 50px; text-align: center; color: white; }
+  .method-GET { background: #198754; }
+  .method-POST { background: #0d6efd; }
+  .method-PUT { background: #fd7e14; }
+  .method-PATCH { background: #fd7e14; }
+  .method-DELETE { background: #dc3545; }
+  .op-name { font-weight: 600; color: #1a1a2e; font-size: 0.9rem; }
+  .op-desc { color: #666; font-size: 0.85rem; }
+  .op-path { font-family: monospace; font-size: 0.8rem; color: #6c757d; }
+  .tool-card { background: #f8f9fa; border: 1px solid #e3e7ee; border-radius: 8px; padding: 1rem; margin-bottom: 0.5rem; }
+  .tool-card h5 { font-size: 0.9rem; font-weight: 600; margin-bottom: 0.25rem; font-family: monospace; }
+  .tool-card p { font-size: 0.85rem; color: #666; margin: 0; }
+  .tool-hints { display: flex; gap: 0.4rem; margin-top: 0.4rem; }
+  .hint-badge { font-size: 0.7rem; padding: 0.15em 0.5em; border-radius: 4px; background: #eef2f7; color: #4a5568; }
+  .persona-card { display: flex; align-items: flex-start; gap: 0.75rem; padding: 0.75rem 0; border-bottom: 1px solid #f0f2f5; }
+  .persona-card:last-child { border-bottom: none; }
+  .persona-icon { width: 36px; height: 36px; border-radius: 50%; background: #eef2f7; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 1rem; }
+  .persona-name { font-weight: 600; color: #1a1a2e; font-size: 0.9rem; }
+  .persona-desc { color: #666; font-size: 0.85rem; }
+  .tag-sm { display: inline-block; padding: 0.2em 0.6em; background: #eef2f7; color: #4a5568; border-radius: 999px; font-size: 0.75rem; }
+</style>
+
+<nav aria-label="breadcrumb" style="margin-bottom: 1rem;">
+  <ol class="breadcrumb" style="font-size: 0.85rem;">
+    <li class="breadcrumb-item"><a href="{{ site.url }}/">Home</a></li>
+    <li class="breadcrumb-item"><a href="{{ site.url }}/providers/{{ page.provider_slug }}/">{{ page.provider_name }}</a></li>
+    <li class="breadcrumb-item active" aria-current="page">{{ page.name }}</li>
+  </ol>
+</nav>
+
+<div class="cap-hero">
+  <div class="cap-overline">
+    <a href="{{ site.url }}/providers/{{ page.provider_slug }}/">{{ page.provider_name }}</a> &middot; Capability
+  </div>
+  <h1 class="cap-title">{{ page.name }}</h1>
+  {% if page.description %}<p class="cap-desc">{{ page.description }}</p>{% endif %}
+  <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem; margin-top: 1rem;">
+    <a href="https://github.com/naftiko/fleet" target="_blank" rel="noopener" class="btn btn-success">Run with Naftiko</a>
+    {% if page.tags.size > 0 %}
+    {% for tag in page.tags %}<span class="tag-sm">{{ tag }}</span>{% endfor %}
+    {% endif %}
+  </div>
+</div>
+
+<!-- Operations -->
+{% if page.operations.size > 0 %}
+<h3 class="section-title" id="operations">What You Can Do</h3>
+<div style="background: white; border: 1px solid #e3e7ee; border-radius: 10px; padding: 0 1.25rem;">
+  {% for op in page.operations %}
+  <div class="op-row">
+    <span class="method-badge method-{{ op.method }}">{{ op.method }}</span>
+    <div style="flex: 1;">
+      <span class="op-name">{{ op.name | replace: '-', ' ' | capitalize }}</span>
+      {% if op.description %}<span class="op-desc"> &mdash; {{ op.description }}</span>{% endif %}
+      {% if op.path %}<div class="op-path">{{ op.path }}</div>{% endif %}
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% endif %}
+
+<!-- MCP Tools -->
+{% if page.tools.size > 0 %}
+<h3 class="section-title" id="tools">MCP Tools</h3>
+{% for tool in page.tools %}
+<div class="tool-card">
+  <h5>{{ tool.name }}</h5>
+  {% if tool.description %}<p>{{ tool.description }}</p>{% endif %}
+  {% if tool.hints %}
+  <div class="tool-hints">
+    {% if tool.hints.readOnly %}<span class="hint-badge">read-only</span>{% endif %}
+    {% if tool.hints.idempotent %}<span class="hint-badge">idempotent</span>{% endif %}
+  </div>
+  {% endif %}
+</div>
+{% endfor %}
+{% endif %}
+
+<!-- Personas -->
+{% if page.personas.size > 0 %}
+<h3 class="section-title" id="personas">Who This Is For</h3>
+<div style="background: white; border: 1px solid #e3e7ee; border-radius: 10px; padding: 0 1.25rem;">
+  {% for persona in page.personas %}
+  <div class="persona-card">
+    <div class="persona-icon">&#128100;</div>
+    <div>
+      <div class="persona-name">{{ persona.name }}</div>
+      {% if persona.description %}<div class="persona-desc">{{ persona.description }}</div>{% endif %}
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% endif %}
+
+<!-- Consumed APIs -->
+{% if page.consumed_apis.size > 0 %}
+<h3 class="section-title" id="apis">APIs Used</h3>
+<div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+  {% for api_ns in page.consumed_apis %}
+  <span class="badge bg-light text-dark" style="font-size: 0.85rem; font-weight: 500; border: 1px solid #e3e7ee;">{{ api_ns }}</span>
+  {% endfor %}
+</div>
+{% endif %}

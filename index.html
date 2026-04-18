@@ -1,11 +1,18 @@
 ---
 layout: default
-meta_title: "APIs.io - Search and Discover APIs"
-meta_description: "Search thousands of APIs indexed using the APIs.json specification. Find REST APIs, webhooks, and developer tools for your next project."
+meta_title: "APIs.io - Search APIs by What You Want to Accomplish"
+meta_description: "Search APIs by capability, provider, schema, or name. Find the right API for what you want to accomplish."
 ---
 
+{% assign total_apis = site.apis | size %}
+{% assign total_providers = site.providers | size %}
+{% assign total_caps = site.capabilities | size %}
+{% assign total_schemas = site.schemas | size %}
+{% assign total_items = total_apis | plus: total_providers | plus: total_caps | plus: total_schemas %}
+
 {% assign all_tags = "" | split: "" %}
-{% for api in site.apis %}{% for tag in api.tags %}{% if tag != "" %}{% assign all_tags = all_tags | push: tag %}{% endif %}{% endfor %}{% endfor %}
+{% for item in site.apis %}{% for tag in item.tags %}{% if tag != "" %}{% assign all_tags = all_tags | push: tag %}{% endif %}{% endfor %}{% endfor %}
+{% for item in site.capabilities %}{% for tag in item.tags %}{% if tag != "" %}{% assign all_tags = all_tags | push: tag %}{% endif %}{% endfor %}{% endfor %}
 {% assign unique_tags = all_tags | uniq %}
 
 <script type="application/ld+json">
@@ -29,32 +36,31 @@ meta_description: "Search thousands of APIs indexed using the APIs.json specific
 <div style="text-align: center; padding: 2rem 0 1rem;">
   <h1 style="font-size: 2rem; margin-bottom: 0.5rem;">API Search</h1>
   <p style="color: #666; margin-bottom: 1.5rem;">
-    Searching across <strong>{{ site.apis | size }}</strong> APIs and <strong>{{ unique_tags | size }}</strong> unique tags from the <a href="https://apisjson.org/" target="_blank" rel="noopener">APIs.json</a> powered network
+    Search across <strong>{{ total_providers }}</strong> providers, <strong>{{ total_apis }}</strong> APIs, <strong>{{ total_caps }}</strong> capabilities, and <strong>{{ total_schemas }}</strong> schemas
   </p>
 
-  <form onsubmit="runSearch(); return false;" style="max-width: 600px; margin: 0 auto; position: relative;" autocomplete="off">
+  <form onsubmit="runSearch(); return false;" style="max-width: 640px; margin: 0 auto; position: relative;" autocomplete="off">
     <div class="input-group mb-3">
-      <input type="text" class="form-control" id="api-search" placeholder="Search APIs by name, description, or tag..." aria-label="Search APIs" autocomplete="off">
-      <button class="btn btn-dark" type="submit">Search</button>
+      <input type="text" class="form-control form-control-lg" id="api-search" placeholder="What do you want to accomplish?" aria-label="Search" autocomplete="off">
+      <button class="btn btn-dark btn-lg" type="submit">Search</button>
     </div>
-    <div class="d-flex justify-content-center gap-3 flex-wrap" style="font-size: 0.9rem;">
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="search-name" value="1" checked>
-        <label class="form-check-label" for="search-name">Name</label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="search-description" value="1" checked>
-        <label class="form-check-label" for="search-description">Description</label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="search-tags" value="1" checked>
-        <label class="form-check-label" for="search-tags">Tags</label>
-      </div>
+
+    <!-- Dimension filter tabs -->
+    <div class="d-flex justify-content-center gap-2 flex-wrap mb-2" id="dimension-tabs">
+      <button type="button" class="btn btn-sm btn-dark dim-tab active" data-dim="all">All</button>
+      <button type="button" class="btn btn-sm btn-outline-success dim-tab" data-dim="capability">Capabilities</button>
+      <button type="button" class="btn btn-sm btn-outline-primary dim-tab" data-dim="api">APIs</button>
+      <button type="button" class="btn btn-sm btn-outline-secondary dim-tab" data-dim="provider">Providers</button>
+      <button type="button" class="btn btn-sm btn-outline-danger dim-tab" data-dim="schema">Schemas</button>
     </div>
+
+    <p style="font-size: 0.8rem; color: #999; margin-top: 0.5rem;">
+      Try: "run reports", "firewall rules", "event tracking", "audience segmentation", "compliance"
+    </p>
   </form>
 </div>
 
-<div id="recent-searches" style="max-width: 800px; margin: 1rem auto 0; text-align: center; display: none;">
+<div id="recent-searches" style="max-width: 800px; margin: 0.5rem auto 0; text-align: center; display: none;">
   <small style="color: #888;">Recent: </small>
   <span id="recent-list"></span>
 </div>
@@ -75,10 +81,27 @@ meta_description: "Search thousands of APIs indexed using the APIs.json specific
   </div>
 </div>
 
+<!-- Browse sections when no search -->
+<div id="browse-section" style="max-width: 800px; margin: 2rem auto;">
+  {% if site.providers.size > 0 %}
+  <h5 style="font-size: 1rem; color: #555; margin-bottom: 0.75rem;">Browse Providers</h5>
+  <div style="display: flex; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 2rem;">
+    {% for provider in site.providers %}
+    <a href="{{ provider.url }}" style="text-decoration: none;">
+      <div style="background: white; border: 1px solid #e3e7ee; border-radius: 10px; padding: 1rem 1.25rem; transition: all 0.15s;">
+        <strong style="color: #1a1a2e;">{{ provider.name }}</strong>
+        <div style="font-size: 0.8rem; color: #666; margin-top: 0.25rem;">{{ provider.api_count }} APIs</div>
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+  {% endif %}
+</div>
+
 <noscript>
   <h2>Browse APIs</h2>
   <ul>
-    {% for api in site.apis limit: 200 %}
+    {% for api in site.apis limit: 100 %}
     <li><a href="{{ api.url }}">{{ api.name }}</a> — {{ api.description | strip_html | truncate: 120 }}</li>
     {% endfor %}
   </ul>
@@ -91,6 +114,13 @@ meta_description: "Search thousands of APIs indexed using the APIs.json specific
   .tag-chip { cursor: pointer; user-select: none; }
   .tag-chip:hover { background: #6c757d !important; color: white !important; }
   .tag-chip.active { background: #0d6efd !important; color: white !important; }
+  .dim-tab { transition: all 0.15s; }
+  .dim-tab.active { pointer-events: none; }
+  .type-badge { font-size: 0.65rem; font-weight: 600; padding: 0.15em 0.5em; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.5px; vertical-align: middle; color: white; }
+  .type-provider { background: #6c757d; }
+  .type-api { background: #0d6efd; }
+  .type-capability { background: #198754; }
+  .type-schema { background: #dc3545; }
 </style>
 
 <script src="{{ site.url }}/assets/minisearch.min.js"></script>
@@ -105,6 +135,7 @@ meta_description: "Search thousands of APIs indexed using the APIs.json specific
   var currentPage = 0;
   var currentQuery = '';
   var activeTags = new Set();
+  var activeDimension = 'all';
   var debounceTimer = null;
 
   function loadIndex() {
@@ -115,7 +146,7 @@ meta_description: "Search thousands of APIs indexed using the APIs.json specific
       .then(function(data) {
         index = data;
         miniSearch = new MiniSearch({
-          fields: ['n', 'd', 't', 'p'],
+          fields: ['n', 'd', 't', 'st'],
           storeFields: ['i'],
           idField: 'i',
           extractField: function(doc, field) {
@@ -123,7 +154,7 @@ meta_description: "Search thousands of APIs indexed using the APIs.json specific
             return doc[field] || '';
           },
           searchOptions: {
-            boost: { n: 4, t: 2, p: 1.5, d: 1 },
+            boost: { n: 4, st: 3, t: 2, d: 1 },
             prefix: true,
             fuzzy: 0.2,
             combineWith: 'AND'
@@ -162,33 +193,30 @@ meta_description: "Search thousands of APIs indexed using the APIs.json specific
     return escaped;
   }
 
-  function getEnabledFields() {
-    var fields = [];
-    if (document.getElementById('search-name').checked) fields.push('n');
-    if (document.getElementById('search-description').checked) fields.push('d');
-    if (document.getElementById('search-tags').checked) fields.push('t');
-    return fields;
-  }
-
-  function applyTagFilter(results) {
-    if (activeTags.size === 0) return results;
-    return results.filter(function(api) {
-      if (!api.t) return false;
-      var lowerTags = api.t.map(function(x) { return (x || '').toLowerCase(); });
-      var allMatch = true;
-      activeTags.forEach(function(tag) {
-        if (lowerTags.indexOf(tag.toLowerCase()) === -1) allMatch = false;
+  function applyFilters(results) {
+    // Dimension filter
+    if (activeDimension !== 'all') {
+      results = results.filter(function(item) { return item.type === activeDimension; });
+    }
+    // Tag filter
+    if (activeTags.size > 0) {
+      results = results.filter(function(item) {
+        if (!item.t) return false;
+        var lowerTags = item.t.map(function(x) { return (x || '').toLowerCase(); });
+        var allMatch = true;
+        activeTags.forEach(function(tag) {
+          if (lowerTags.indexOf(tag.toLowerCase()) === -1) allMatch = false;
+        });
+        return allMatch;
       });
-      return allMatch;
-    });
+    }
+    return results;
   }
 
   function executeSearch(query) {
     if (!miniSearch) return [];
     if (!query) return index.slice();
-    var fields = getEnabledFields();
-    if (fields.length === 0) return [];
-    var hits = miniSearch.search(query, { fields: fields });
+    var hits = miniSearch.search(query);
     return hits.map(function(h) { return index[h.i]; });
   }
 
@@ -199,17 +227,29 @@ meta_description: "Search thousands of APIs indexed using the APIs.json specific
 
     loadIndex().then(function() {
       var results;
-      if (!query && activeTags.size === 0) {
+      if (!query && activeTags.size === 0 && activeDimension === 'all') {
         renderResults([], 0);
+        document.getElementById('browse-section').style.display = '';
         return;
       }
+      document.getElementById('browse-section').style.display = 'none';
       results = executeSearch(query);
-      results = applyTagFilter(results);
+      results = applyFilters(results);
       currentResults = results;
       renderResults(results, currentPage);
       updateUrl(query);
       if (query) saveRecent(query);
     });
+  }
+
+  function getTypeBadge(type) {
+    var labels = { provider: 'Provider', api: 'API', capability: 'Capability', schema: 'Schema' };
+    return '<span class="type-badge type-' + type + '">' + (labels[type] || type) + '</span>';
+  }
+
+  function getBorderColor(type) {
+    var colors = { provider: '#6c757d', api: '#0d6efd', capability: '#198754', schema: '#dc3545' };
+    return colors[type] || '#6c757d';
   }
 
   function renderResults(results, page) {
@@ -219,8 +259,8 @@ meta_description: "Search thousands of APIs indexed using the APIs.json specific
     var end = Math.min(start + PAGE_SIZE, total);
 
     if (total === 0) {
-      if (currentQuery || activeTags.size > 0) {
-        setStatus('No APIs found. Try different terms or remove filters.');
+      if (currentQuery || activeTags.size > 0 || activeDimension !== 'all') {
+        setStatus('No results found. Try different terms or remove filters.');
       } else {
         setStatus('');
       }
@@ -229,36 +269,53 @@ meta_description: "Search thousands of APIs indexed using the APIs.json specific
       return;
     }
 
-    setStatus('Found <strong>' + total + '</strong> APIs' + (currentQuery ? ' matching "' + escapeHtml(currentQuery) + '"' : '') + ' (showing ' + (start + 1) + '–' + end + ')');
+    var dimLabel = activeDimension === 'all' ? 'results' : activeDimension + 's';
+    setStatus('Found <strong>' + total + '</strong> ' + dimLabel + (currentQuery ? ' matching "' + escapeHtml(currentQuery) + '"' : '') + ' (showing ' + (start + 1) + '&ndash;' + end + ')');
 
     var html = '<div class="list-group">';
     for (var i = start; i < end; i++) {
-      var api = results[i];
-      var name = highlight(api.n || '', currentQuery);
-      var desc = highlight(api.d || '', currentQuery);
-      html += '<div class="list-group-item result-card" style="border-left: 3px solid #0d6efd;">';
+      var item = results[i];
+      var name = highlight(item.n || '', currentQuery);
+      var desc = highlight(item.d || '', currentQuery);
+      var borderColor = getBorderColor(item.type);
+
+      html += '<div class="list-group-item result-card" style="border-left: 3px solid ' + borderColor + ';">';
       html += '<div class="d-flex justify-content-between align-items-start">';
       html += '<div style="flex: 1; min-width: 0;">';
-      html += '<h6 style="margin-bottom: 0.25rem;"><a href="' + api.u + '" style="text-decoration: none;">' + name + '</a>';
-      if (api.p) html += ' <small style="color: #999; font-weight: normal;">· ' + escapeHtml(api.p) + '</small>';
+      html += '<h6 style="margin-bottom: 0.25rem;">';
+      html += '<a href="' + item.u + '" style="text-decoration: none;">' + name + '</a> ';
+      html += getTypeBadge(item.type);
+      if (item.p) html += ' <small style="color: #999; font-weight: normal;">&middot; ' + escapeHtml(item.p) + '</small>';
       html += '</h6>';
-      if (api.d) html += '<p style="font-size: 0.85rem; color: #666; margin-bottom: 0.4rem;">' + desc + '</p>';
-      if (api.t && api.t.length > 0) {
-        html += '<div style="display: flex; flex-wrap: wrap; gap: 0.3rem;">';
-        var maxTags = Math.min(api.t.length, 6);
+      if (item.d) html += '<p style="font-size: 0.85rem; color: #666; margin-bottom: 0.4rem;">' + desc + '</p>';
+
+      // Provider stats
+      if (item.type === 'provider') {
+        html += '<div style="font-size: 0.8rem; color: #999;">';
+        if (item.ac) html += item.ac + ' APIs';
+        if (item.cc) html += ' &middot; ' + item.cc + ' Capabilities';
+        html += '</div>';
+      }
+
+      if (item.t && item.t.length > 0) {
+        html += '<div style="display: flex; flex-wrap: wrap; gap: 0.3rem; margin-top: 0.3rem;">';
+        var maxTags = Math.min(item.t.length, 5);
         for (var t = 0; t < maxTags; t++) {
-          if (api.t[t]) {
-            var tagSafe = escapeHtml(api.t[t]);
-            html += '<span class="badge bg-light text-dark tag-chip" data-tag="' + tagSafe + '" style="font-size: 0.75rem; font-weight: 500;">' + tagSafe + '</span>';
+          if (item.t[t]) {
+            var tagSafe = escapeHtml(item.t[t]);
+            html += '<span class="badge bg-light text-dark tag-chip" data-tag="' + tagSafe + '" style="font-size: 0.7rem; font-weight: 500;">' + tagSafe + '</span>';
           }
         }
         html += '</div>';
       }
       html += '</div>';
+
       html += '<div class="d-flex gap-2 ms-3 flex-shrink-0">';
-      if (api.h) html += '<a href="' + api.h + '" target="_blank" rel="noopener" class="btn btn-sm btn-outline-primary">Docs</a>';
-      html += '<a href="' + api.u + '" class="btn btn-sm btn-outline-success">Details</a>';
+      if (item.h) html += '<a href="' + item.h + '" target="_blank" rel="noopener" class="btn btn-sm btn-outline-primary">Docs</a>';
+      if (item.type === 'capability') html += '<a href="https://github.com/naftiko/fleet" target="_blank" rel="noopener" class="btn btn-sm btn-success">Run with Naftiko</a>';
+      html += '<a href="' + item.u + '" class="btn btn-sm btn-outline-dark">View</a>';
       html += '</div>';
+
       html += '</div>';
       html += '</div>';
     }
@@ -280,11 +337,11 @@ meta_description: "Search thousands of APIs indexed using the APIs.json specific
     html += '<li class="page-item' + (page === 0 ? ' disabled' : '') + '"><a class="page-link" href="#" data-page="' + (page - 1) + '">Previous</a></li>';
     var startP = Math.max(0, page - 2);
     var endP = Math.min(totalPages, startP + 5);
-    if (startP > 0) html += '<li class="page-item"><a class="page-link" href="#" data-page="0">1</a></li><li class="page-item disabled"><span class="page-link">…</span></li>';
+    if (startP > 0) html += '<li class="page-item"><a class="page-link" href="#" data-page="0">1</a></li><li class="page-item disabled"><span class="page-link">&hellip;</span></li>';
     for (var p = startP; p < endP; p++) {
       html += '<li class="page-item' + (p === page ? ' active' : '') + '"><a class="page-link" href="#" data-page="' + p + '">' + (p + 1) + '</a></li>';
     }
-    if (endP < totalPages) html += '<li class="page-item disabled"><span class="page-link">…</span></li><li class="page-item"><a class="page-link" href="#" data-page="' + (totalPages - 1) + '">' + totalPages + '</a></li>';
+    if (endP < totalPages) html += '<li class="page-item disabled"><span class="page-link">&hellip;</span></li><li class="page-item"><a class="page-link" href="#" data-page="' + (totalPages - 1) + '">' + totalPages + '</a></li>';
     html += '<li class="page-item' + (page >= totalPages - 1 ? ' disabled' : '') + '"><a class="page-link" href="#" data-page="' + (page + 1) + '">Next</a></li>';
     html += '</ul></nav>';
     container.innerHTML = html;
@@ -384,6 +441,40 @@ meta_description: "Search thousands of APIs indexed using the APIs.json specific
     }
   }
 
+  // Dimension tab switching
+  document.querySelectorAll('.dim-tab').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      document.querySelectorAll('.dim-tab').forEach(function(b) {
+        b.classList.remove('active');
+        b.classList.remove('btn-dark', 'btn-success', 'btn-primary', 'btn-secondary', 'btn-danger');
+        var dim = b.getAttribute('data-dim');
+        var outlineClass = {
+          all: 'btn-outline-dark',
+          capability: 'btn-outline-success',
+          api: 'btn-outline-primary',
+          provider: 'btn-outline-secondary',
+          schema: 'btn-outline-danger'
+        }[dim] || 'btn-outline-dark';
+        b.classList.add(outlineClass);
+      });
+      btn.classList.add('active');
+      // Remove outline, add solid
+      var dim = btn.getAttribute('data-dim');
+      var solidMap = {
+        all: ['btn-outline-dark', 'btn-dark'],
+        capability: ['btn-outline-success', 'btn-success'],
+        api: ['btn-outline-primary', 'btn-primary'],
+        provider: ['btn-outline-secondary', 'btn-secondary'],
+        schema: ['btn-outline-danger', 'btn-danger']
+      };
+      var pair = solidMap[dim] || solidMap.all;
+      btn.classList.remove(pair[0]);
+      btn.classList.add(pair[1]);
+      activeDimension = dim;
+      runSearch();
+    });
+  });
+
   // Wire up events
   var input = document.getElementById('api-search');
   input.addEventListener('focus', loadIndex);
@@ -399,10 +490,6 @@ meta_description: "Search thousands of APIs indexed using the APIs.json specific
     }
   });
 
-  document.querySelectorAll('#search-name, #search-description, #search-tags').forEach(function(el) {
-    el.addEventListener('change', runSearch);
-  });
-
   window.runSearch = runSearch;
 
   // Init from URL query
@@ -412,7 +499,6 @@ meta_description: "Search thousands of APIs indexed using the APIs.json specific
     input.value = qs;
     loadIndex().then(runSearch);
   } else {
-    // Lazy load index in background after a moment so tag cloud appears
     setTimeout(loadIndex, 500);
   }
 })();
