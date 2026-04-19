@@ -95,8 +95,9 @@ layout: default
 <div class="card-grid">
   {% for feature in page.features %}
   <div class="item-card">
-    <strong>{{ feature.name }}</strong>
+    {% if feature.name %}<strong>{{ feature.name }}</strong>
     {% if feature.description %}<p>{{ feature.description }}</p>{% endif %}
+    {% else %}<strong>{{ feature }}</strong>{% endif %}
   </div>
   {% endfor %}
 </div>
@@ -108,8 +109,9 @@ layout: default
 <div class="card-grid">
   {% for uc in page.use_cases %}
   <div class="item-card" style="border-left: 3px solid #6f42c1;">
-    <strong>{{ uc.name }}</strong>
+    {% if uc.name %}<strong>{{ uc.name }}</strong>
     {% if uc.description %}<p>{{ uc.description }}</p>{% endif %}
+    {% else %}<strong>{{ uc }}</strong>{% endif %}
   </div>
   {% endfor %}
 </div>
@@ -121,8 +123,9 @@ layout: default
 <div class="card-grid">
   {% for int in page.integrations %}
   <div class="item-card">
-    <strong>{{ int.name }}</strong>
+    {% if int.name %}<strong>{{ int.name }}</strong>
     {% if int.description %}<p>{{ int.description }}</p>{% endif %}
+    {% else %}<strong>{{ int }}</strong>{% endif %}
   </div>
   {% endfor %}
 </div>
