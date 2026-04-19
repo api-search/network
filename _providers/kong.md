@@ -127,4 +127,3 @@ use_cases:
 - description: Protect backend services with configurable rate limiting, request size limits, and traffic shaping policies.
   name: Rate Limiting and Traffic Control
 ---
-

@@ -179,4 +179,3 @@ use_cases:
 - description: Connect digital asset management systems with Photoshop for automated processing pipelines.
   name: DAM Integration
 ---
-

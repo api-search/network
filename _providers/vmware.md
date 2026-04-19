@@ -286,4 +286,3 @@ use_cases:
 - description: Implement zero-trust security with micro-segmentation, distributed firewall, and threat detection across the network.
   name: Network Security
 ---
-

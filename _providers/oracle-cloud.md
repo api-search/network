@@ -474,4 +474,3 @@ use_cases:
 - description: Connect OCI with AWS, Azure, and Google Cloud using FastConnect and partnerships
   name: Multi-Cloud Networking
 ---
-

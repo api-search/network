@@ -84,4 +84,3 @@ use_cases:
 - description: Enable business users to access BW data through Analysis for Office API integrations.
   name: Self-Service Analytics
 ---
-

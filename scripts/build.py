@@ -201,7 +201,7 @@ def find_matching_workflow(cap_label, vocab_data):
     return None
 
 
-def process_provider(provider_dir):
+def process_provider(provider_dir, icon_manifest=None):
     """Process a single api-evangelist provider repo."""
     apis_yml_path = os.path.join(provider_dir, 'apis.yml')
     if not os.path.exists(apis_yml_path):
@@ -316,9 +316,7 @@ def process_provider(provider_dir):
         write_frontmatter_file(api_filepath, api_data)
         api_entries.append(api_data)
 
-    # Write provider file
     provider_filepath = os.path.join(PROVIDERS_DIR, f"{provider_slug}.md")
-    write_frontmatter_file(provider_filepath, provider_data)
 
     # --- Capabilities ---
     cap_dir = os.path.join(provider_dir, 'capabilities')
@@ -395,8 +393,6 @@ def process_provider(provider_dir):
             {'slug': c['slug'], 'name': c['name'], 'description': c['description'][:200]}
             for c in cap_entries
         ]
-        # Rewrite provider with capabilities
-        write_frontmatter_file(provider_filepath, provider_data)
 
     # --- Schemas ---
     schema_dir = os.path.join(provider_dir, 'json-schema')
@@ -526,7 +522,6 @@ def process_provider(provider_dir):
             {'slug': a['slug'], 'name': a['name'], 'description': a['description'][:200]}
             for a in asyncapi_entries
         ]
-        write_frontmatter_file(provider_filepath, provider_data)
 
     # --- JSON-LD Contexts ---
     jsonld_dir = os.path.join(provider_dir, 'json-ld')
@@ -611,7 +606,6 @@ def process_provider(provider_dir):
             {'slug': j['slug'], 'name': j['name'], 'class_count': j['class_count'], 'property_count': j['property_count']}
             for j in jsonld_entries
         ]
-        write_frontmatter_file(provider_filepath, provider_data)
 
     # --- Spectral Rules ---
     rules_dir = os.path.join(provider_dir, 'rules')
@@ -684,7 +678,13 @@ def process_provider(provider_dir):
             {'slug': r['slug'], 'name': r['name'], 'rule_count': r['rule_count'], 'severity_counts': r['severity_counts']}
             for r in rules_entries
         ]
-        write_frontmatter_file(provider_filepath, provider_data)
+
+    # Apply icon override from manifest
+    if icon_manifest and provider_slug in icon_manifest:
+        provider_data['image'] = f"/assets/icons/{provider_slug}.png"
+
+    # Write provider file once with all data
+    write_frontmatter_file(provider_filepath, provider_data)
 
     return provider_data
 
@@ -854,6 +854,14 @@ def main():
 
     print(f"Found {len(provider_dirs)} provider(s)")
 
+    # Load icon manifest
+    icons_manifest_path = os.path.join(NETWORK_DIR, 'assets', 'icons', 'manifest.json')
+    icon_manifest = {}
+    if os.path.exists(icons_manifest_path):
+        with open(icons_manifest_path) as f:
+            icon_manifest = json.load(f)
+        print(f"Icon manifest: {len(icon_manifest)} icon(s)")
+
     # Clear and rebuild
     clear_collections()
 
@@ -863,7 +871,7 @@ def main():
     total_schemas = 0
 
     for provider_dir in provider_dirs:
-        result = process_provider(provider_dir)
+        result = process_provider(provider_dir, icon_manifest)
         if result:
             providers.append(result)
             total_apis += result.get('api_count', 0)

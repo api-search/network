@@ -190,13 +190,37 @@ layout: default
 <!-- Resources Section -->
 {% if page.common.size > 0 %}
 <h2 class="section-anchor" id="resources"><a href="#resources">Resources</a></h2>
-<div style="background: white; border: 1px solid #e3e7ee; border-radius: 10px; padding: 1.25rem;">
+<div class="card-grid">
   {% for res in page.common %}
   {% if res.url != '' %}
-  <div class="resource-link">
-    <span class="resource-type">{{ res.type }}</span>
-    <a href="{{ res.url }}" target="_blank" rel="noopener">{{ res.title | default: res.url }}</a>
-  </div>
+  {% assign rtype = res.type | downcase %}
+  {% assign ricon = '&#128279;' %}
+  {% assign rcolor = '#6c757d' %}
+  {% if rtype contains 'portal' or rtype contains 'console' %}{% assign ricon = '&#127760;' %}{% assign rcolor = '#0d6efd' %}
+  {% elsif rtype contains 'getting' or rtype contains 'quickstart' %}{% assign ricon = '&#128640;' %}{% assign rcolor = '#198754' %}
+  {% elsif rtype contains 'auth' %}{% assign ricon = '&#128273;' %}{% assign rcolor = '#fd7e14' %}
+  {% elsif rtype contains 'sdk' %}{% assign ricon = '&#128230;' %}{% assign rcolor = '#6f42c1' %}
+  {% elsif rtype contains 'tool' %}{% assign ricon = '&#128295;' %}{% assign rcolor = '#6f42c1' %}
+  {% elsif rtype contains 'tutorial' or rtype contains 'training' or rtype contains 'academy' %}{% assign ricon = '&#127891;' %}{% assign rcolor = '#198754' %}
+  {% elsif rtype contains 'blog' or rtype contains 'news' %}{% assign ricon = '&#128240;' %}{% assign rcolor = '#0dcaf0' %}
+  {% elsif rtype contains 'support' or rtype contains 'faq' %}{% assign ricon = '&#128172;' %}{% assign rcolor = '#0dcaf0' %}
+  {% elsif rtype contains 'status' %}{% assign ricon = '&#128994;' %}{% assign rcolor = '#198754' %}
+  {% elsif rtype contains 'pricing' %}{% assign ricon = '&#128176;' %}{% assign rcolor = '#fd7e14' %}
+  {% elsif rtype contains 'sign' %}{% assign ricon = '&#128221;' %}{% assign rcolor = '#0d6efd' %}
+  {% elsif rtype contains 'terms' or rtype contains 'privacy' or rtype contains 'legal' %}{% assign ricon = '&#128220;' %}{% assign rcolor = '#6c757d' %}
+  {% elsif rtype contains 'release' or rtype contains 'change' %}{% assign ricon = '&#128196;' %}{% assign rcolor = '#6c757d' %}
+  {% elsif rtype contains 'stack' or rtype contains 'github' or rtype contains 'youtube' %}{% assign ricon = '&#128101;' %}{% assign rcolor = '#1a1a2e' %}
+  {% elsif rtype contains 'code' or rtype contains 'example' %}{% assign ricon = '&#128187;' %}{% assign rcolor = '#6f42c1' %}
+  {% endif %}
+  <a href="{{ res.url }}" target="_blank" rel="noopener" class="item-card" style="border-left: 3px solid {{ rcolor }}; text-decoration: none; color: inherit; display: block;">
+    <div style="display: flex; align-items: center; gap: 0.75rem;">
+      <span style="font-size: 1.25rem;">{{ ricon }}</span>
+      <div>
+        <strong style="font-size: 0.85rem; color: #1a1a2e;">{{ res.title | default: res.type }}</strong>
+        <div style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.5px; color: {{ rcolor }}; font-weight: 600;">{{ res.type }}</div>
+      </div>
+    </div>
+  </a>
   {% endif %}
   {% endfor %}
 </div>

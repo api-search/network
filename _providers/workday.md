@@ -281,4 +281,3 @@ use_cases:
 - description: Integrate payroll data with third-party systems for tax filing, benefits administration, and general ledger posting.
   name: Payroll Integration
 ---
-

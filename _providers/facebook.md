@@ -159,4 +159,3 @@ use_cases:
 - description: Integrate product catalogs and shopping experiences with Facebook and Instagram shops.
   name: E-Commerce Integration
 ---
-

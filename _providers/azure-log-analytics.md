@@ -172,4 +172,3 @@ use_cases:
 - description: Analyze resource usage patterns and log data to identify cost-saving opportunities across Azure deployments.
   name: Cost Optimization
 ---
-

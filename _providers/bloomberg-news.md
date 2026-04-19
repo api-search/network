@@ -101,4 +101,3 @@ use_cases:
 - description: Integrate Bloomberg data into portfolio management systems for real-time monitoring.
   name: Portfolio Management
 ---
-

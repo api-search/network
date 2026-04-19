@@ -305,4 +305,3 @@ use_cases:
 - Monitoring and observability across cloud infrastructure
 - Securing applications with WAF, IAM, and Vault services
 ---
-

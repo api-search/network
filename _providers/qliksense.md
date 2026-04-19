@@ -134,4 +134,3 @@ use_cases:
 - description: Manage multiple Qlik Cloud tenants programmatically for SaaS and enterprise deployments.
   name: Multi-Tenant Management
 ---
-

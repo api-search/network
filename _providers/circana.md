@@ -189,4 +189,3 @@ use_cases:
 - description: Unite retail, CPG, foodservice, and consumption data for a complete picture of food and beverage market dynamics.
   name: Foodservice Intelligence
 ---
-

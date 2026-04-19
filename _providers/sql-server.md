@@ -173,4 +173,3 @@ use_cases:
 - description: Build data warehouses with columnstore indexes, partitioning, and ETL pipelines.
   name: Data Warehousing
 ---
-

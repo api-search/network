@@ -226,4 +226,3 @@ use_cases:
 - description: Embed Adobe Stock search and licensing into content management and publishing platforms.
   name: Stock Asset Integration
 ---
-

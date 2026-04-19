@@ -99,4 +99,3 @@ use_cases:
 - Monitoring script execution health and performance metrics
 - Integrating Apps Script automation into CI/CD pipelines
 ---
-

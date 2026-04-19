@@ -205,4 +205,3 @@ use_cases:
 - description: Export optimized SVGs, images, and fonts for web applications.
   name: Web Asset Pipeline
 ---
-

@@ -148,4 +148,3 @@ use_cases:
 - description: Protect databases with application-consistent snapshots, online data migration, and real-time replication without application downtime.
   name: Database Protection
 ---
-

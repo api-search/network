@@ -63,4 +63,3 @@ use_cases:
 - Automating onboarding workflows across HRIS systems
 - Aggregating time-off and attendance data from multiple providers
 ---
-

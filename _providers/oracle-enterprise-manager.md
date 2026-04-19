@@ -161,4 +161,3 @@ use_cases:
 - description: Analyze metric trends over time to forecast resource needs and optimize infrastructure utilization.
   name: Capacity Planning
 ---
-

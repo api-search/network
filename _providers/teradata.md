@@ -162,4 +162,3 @@ use_cases:
 - description: Real-time data ingestion and analytics with QueryGrid cross-system query federation.
   name: Real-Time Data Integration
 ---
-

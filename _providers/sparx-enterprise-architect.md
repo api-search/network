@@ -103,4 +103,3 @@ use_cases:
 - description: Use models as the primary artifact for generating code, tests, and documentation.
   name: Model-Driven Development
 ---
-

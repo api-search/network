@@ -178,4 +178,3 @@ use_cases:
 - Build custom integrations via REST and SOAP services
 - Synchronize EBS data with external systems
 ---
-

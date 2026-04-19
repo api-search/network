@@ -127,4 +127,3 @@ use_cases:
 - description: Integrate security scanning into CI/CD pipelines for vulnerability detection.
   name: Security Scanning
 ---
-

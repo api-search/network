@@ -205,4 +205,3 @@ use_cases:
 - description: Send appointment reminders, test results, and health tips to patients.
   name: Healthcare Communication
 ---
-

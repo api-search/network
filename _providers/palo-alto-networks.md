@@ -731,4 +731,3 @@ use_cases:
 - description: Manage security across tenant hierarchies with aggregate monitoring, shared notifications, and delegated administration for MSSPs.
   name: Multi-Tenant Security Operations
 ---
-

@@ -210,4 +210,3 @@ use_cases:
 - description: Process events and messages in real time using event-driven integration patterns and stream analytics.
   name: Real-Time Event Processing
 ---
-

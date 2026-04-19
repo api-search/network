@@ -15,10 +15,7 @@ apis:
   slug: io-campaign-standard-sdk
 - description: Native mobile SDK extensions for iOS and Android that integrate Adobe Campaign push notifications, in-app messaging, and local notifications into mobile applications. Includes the Campaign Classic ext
   name: Adobe Experience Platform Mobile SDK - Campaign Extensions
-  slug: experience-platform-mobile-sdk
-image: /assets/icons/adobe-campaign.png
----
-campaign-extensions
+  slug: experience-platform-mobile-sdk---campaign-extensions
 asyncapis:
 - description: Event-driven transactional messaging system for Adobe Campaign. Supports triggering personalized messages across email, SMS, and push notification channels in response to real-time customer events. Ev
   name: Adobe Campaign Transactional Messaging Events
@@ -71,7 +68,7 @@ features:
   name: SMS Messaging
 - description: Create and manage landing pages for campaign responses and lead capture.
   name: Landing Pages
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: /assets/icons/adobe-campaign.png
 integrations:
 - description: Native integration with AEM, Analytics, and Target for unified marketing.
   name: Adobe Experience Cloud
@@ -127,3 +124,4 @@ use_cases:
   name: Audience Segmentation
 - description: Coordinate messaging across email, SMS, push, and direct mail channels.
   name: Cross-Channel Coordination
+---

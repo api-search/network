@@ -171,4 +171,3 @@ use_cases:
 - description: Process IoT device telemetry and events with Event Hub and IoT Hub triggers.
   name: IoT Backend
 ---
-
