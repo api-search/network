@@ -41,57 +41,57 @@ personas: []
 provider_name: Bitbucket
 provider_slug: bitbucket
 search_terms:
-- list pull requests
-- list pull requests for a repository
-- Developer
-- trigger a pipeline
-- merge pullrequest
-- ci/cd
-- get pullrequest
-- continuous integration and deployment pipelines
-- atlassian
-- trigger pipeline
-- manages ci/cd pipelines, deployments, and repository settings
-- list pullrequests
-- get repository details
-- decline a pull request
-- code review
 - merge a pull request
-- managing git repositories, branches, and commits
-- list repositories in a workspace
-- pull requests
-- list ci/cd pipelines
-- writes code, creates pull requests, and reviews code
-- ci/cd pipeline management
-- DevOps Engineer
-- version control
-- delete a repository
-- pull request workflows and code reviews
-- list pipelines
-- get pull request details
-- devops
-- pull request management
-- decline pullrequest
-- code collaboration
-- repository hosting
-- git
-- create pullrequest
-- get repository
-- list repositories
-- repository management, pull requests, code reviews, and ci/cd pipelines
-- stop pipeline
-- create repository
-- get pipeline execution details
 - create a repository
-- create a new git repository
-- create a new pull request
-- create a pull request
-- get pipeline
-- stop a running pipeline
-- repository management
-- bitbucket
 - delete repository
+- create pullrequest
+- repository hosting
+- list pull requests for a repository
+- pull request management
+- manages ci/cd pipelines, deployments, and repository settings
+- get pullrequest
+- get repository details
+- create a pull request
+- continuous integration and deployment pipelines
+- bitbucket
+- DevOps Engineer
+- get repository
+- pull request workflows and code reviews
+- create repository
+- delete a repository
+- git
+- create a new git repository
+- list ci/cd pipelines
+- stop a running pipeline
+- writes code, creates pull requests, and reviews code
+- code review
+- list repositories
+- code collaboration
+- get pull request details
+- ci/cd
+- list repositories in a workspace
+- create a new pull request
+- pull requests
+- list pipelines
+- repository management
+- managing git repositories, branches, and commits
+- decline a pull request
+- trigger a pipeline
+- devops
 - trigger a new ci/cd pipeline
+- repository management, pull requests, code reviews, and ci/cd pipelines
+- trigger pipeline
+- list pullrequests
+- atlassian
+- merge pullrequest
+- get pipeline execution details
+- stop pipeline
+- Developer
+- list pull requests
+- version control
+- get pipeline
+- ci/cd pipeline management
+- decline pullrequest
 slug: code-collaboration
 tags:
 - Bitbucket

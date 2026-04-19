@@ -47,46 +47,46 @@ personas: []
 provider_name: PeopleSoft
 provider_slug: peoplesoft
 search_terms:
+- peopletools platform services.
+- chatbot intent fulfillments
+- retrieve customer records.
+- case management
+- create a new support or service case.
+- chatbot intents
+- list notifications
+- supply chain management
+- retrieve support and service cases.
+- campus solutions.
+- retrieve available chatbot intents.
+- customer engagement
+- list opportunities
+- financial and supply chain management.
+- individual customer details
+- financial management
+- get customer
+- create case
+- human capital management.
+- support and service cases
+- retrieve notifications for the current user.
+- fulfill intent
+- campus solutions
+- list customers
+- crm
+- erp
+- list cases
+- sales
+- send notification
+- retrieve sales opportunities.
+- retrieve details for a specific customer.
+- notification management
 - chatbot
 - enterprise software
-- create case
-- create a new support or service case.
-- retrieve sales opportunities.
-- financial and supply chain management.
-- campus solutions.
-- retrieve support and service cases.
-- retrieve customer records.
-- retrieve notifications for the current user.
-- customer engagement
-- campus solutions
-- retrieve available chatbot intents.
-- get customer
-- chatbot intent fulfillments
-- list customers
-- human capital management.
-- erp
-- supply chain management
-- support and service cases
-- case management
-- peopletools platform services.
-- list cases
 - process a chatbot intent fulfillment request.
-- hcm
-- crm
-- fulfill intent
-- notification management
-- sales
-- chatbot intents
-- sales opportunities
-- customer records
-- retrieve details for a specific customer.
 - send a notification via email, text, or in-app channels.
-- send notification
-- individual customer details
+- hcm
 - list intents
-- list notifications
-- list opportunities
-- financial management
+- customer records
+- sales opportunities
 - peoplesoft
 slug: customer-engagement
 tags:

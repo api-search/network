@@ -57,51 +57,51 @@ personas: []
 provider_name: Youtube
 provider_slug: youtube
 search_terms:
-- comments
-- delete a comment
-- google
-- list channels
-- streaming
-- subscribe to a youtube channel
-- social
-- update comment thread
-- delete comment
-- update an existing comment
-- manage channel subscriptions
-- list comments on a video or channel
-- unsubscribe from channel
-- list comment threads
-- unsubscribe from a channel
-- video
-- manage comment threads
-- create a new comment thread
-- list channel subscriptions
-- subscribe to a channel
-- create comment
-- manage channel information
-- manage individual comments
-- moderation
-- update channel
-- subscribe to channel
-- post a new comment
-- youtube
-- update a comment
-- list comments
-- media
-- unsubscribe
-- unsubscribe from a youtube channel
-- update a comment thread
-- create comment thread
-- update channel settings
-- subscribe
-- list subscriptions
-- list youtube channels
-- set moderation status on comments
-- community
-- update comment
-- videos
-- set moderation status
 - subscriptions
+- unsubscribe from a youtube channel
+- create comment
+- list channel subscriptions
+- moderation
+- community
+- videos
+- video
+- post a new comment
+- manage individual comments
+- set moderation status
+- subscribe to channel
+- youtube
+- update channel
+- unsubscribe from a channel
+- list youtube channels
+- delete comment
+- google
+- streaming
+- manage channel subscriptions
+- list subscriptions
+- manage comment threads
+- list comments on a video or channel
+- set moderation status on comments
+- subscribe to a youtube channel
+- media
+- delete a comment
+- list channels
+- update a comment
+- update a comment thread
+- comments
+- list comments
+- update an existing comment
+- unsubscribe from channel
+- update channel settings
+- update comment thread
+- manage channel information
+- subscribe
+- list comment threads
+- social
+- subscribe to a channel
+- update comment
+- unsubscribe
+- create a new comment thread
+- create comment thread
 slug: community-engagement
 tags:
 - YouTube

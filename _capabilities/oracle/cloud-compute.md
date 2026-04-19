@@ -53,50 +53,50 @@ personas: []
 provider_name: Oracle
 provider_slug: oracle
 search_terms:
-- create a custom image from an instance
-- delete a custom image
 - list images
-- terminate instance
-- create image
-- launch a new compute instance
-- list instances
-- manage a specific image
-- oracle
-- perform an action on an instance (start, stop, reset)
-- get image
-- enterprise
-- list volume attachments in a compartment
-- get instance
 - get image details
+- update instance
+- list volume attachments in a compartment
+- delete image
 - list compute images
+- list vnic attachments
+- launch instance
+- list compute instances in a compartment
+- compute
+- list instance console connections
+- manage a specific compute instance
+- get instance
+- list vnic attachments in a compartment
+- terminate instance
+- terminate an instance
+- update image
+- update instance details
+- manage a specific image
+- get details of a specific instance
 - list available compute shapes
+- perform an action on an instance (start, stop, reset)
+- launch a new compute instance
+- manage compute instances
+- get image
+- list console connections
+- saas
 - cloud
-- infrastructure
+- oracle
+- update image details
+- list shapes
+- list instances
+- manage compute images
+- delete a custom image
+- create a custom image from an instance
+- database
+- create image
 - instance action
 - list volume attachments
-- delete image
-- compute
-- list compute instances in a compartment
-- list instance console connections
-- update image
-- manage a specific compute instance
-- manage compute images
-- get details of a specific instance
-- launch instance
-- list vnic attachments
-- list vnic attachments in a compartment
-- list shapes
-- saas
-- create a custom image
-- update image details
-- update instance details
-- manage compute instances
-- terminate an instance
-- update instance
-- list console connections
 - get instance details
-- database
+- enterprise
 - get details of a specific image
+- create a custom image
+- infrastructure
 slug: cloud-compute
 tags:
 - Oracle

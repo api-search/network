@@ -82,89 +82,89 @@ personas: []
 provider_name: GitHub
 provider_slug: github
 search_terms:
-- request reviewers for a pull request
-- get a commit
-- repositories
-- software development
-- mergePullRequest
-- branches
-- getBranch
-- get pull request
-- searchRepositories
-- merge a branch
-- list reviews
-- pull request merge
-- update pull request
-- createPullRequest
-- pipelines
-- getRepositoryContent
-- create a release
-- code
-- platform
-- getPullRequest
-- createReviewForPullRequest
-- release management
-- request reviewers
-- create a review for a pull request
-- create or update file contents
-- merge a pull request
-- create pull request
-- pull requests
-- create release
-- pull request management
-- commit operations
-- list repository tags
-- listReleases
-- compareTwoCommits
-- source control
-- create a review
-- create or update file
 - list pull request files
-- update branch protection
+- commit operations
+- create a pull request
+- repository listing and search
+- get repository
+- get commit
+- submit review
+- create review
+- listReviewsForPullRequest
+- merge branch
+- listCommits
+- software development
+- get branch
+- create a release
+- get a repository
+- pull requests
+- compare commits
+- searchRepositories
+- merge a pull request
+- code
+- updateRepository
+- getRepository
+- get a pull request
+- update pull request
+- compare two commits
+- list public repositories
+- merge a branch
+- get a commit
+- request reviewers
+- release management
+- updatePullRequest
+- update a repository
+- pull request management
+- create or update file
+- createPullRequest
+- platform
+- source control
+- createOrUpdateFileContents
+- list tags
+- code review management
+- create pull request
+- mergePullRequest
+- github
+- getPullRequest
+- pipelines
+- create release
+- listPullRequests
+- listReleases
 - repository management
+- repository content management
+- get content
+- list releases
+- merge pull request
 - list pull requests
 - update a pull request
-- getRepository
-- updateRepository
-- get a repository
-- t1
-- branch operations
-- get a branch
-- compare commits
-- search repositories
-- get branch
-- list public repositories
-- list releases
-- get repository
-- get repository content
-- merge branch
-- individual pull request operations
-- code review management
-- repository listing and search
-- updatePullRequest
-- get a pull request
-- listCommits
-- get content
-- listPublicRepositories
-- listPullRequests
-- submit review
-- code review
-- repository content management
-- update a repository
-- list pr files
-- compare two commits
-- merge pull request
-- createOrUpdateFileContents
-- github
-- list tags
-- create review
-- list commits
-- listReviewsForPullRequest
-- get commit
-- createRelease
+- repositories
 - submit a review for a pull request
+- pull request merge
+- request reviewers for a pull request
+- branches
+- list reviews
+- branch operations
+- individual pull request operations
+- createReviewForPullRequest
+- create a review
+- update branch protection
+- getRepositoryContent
+- create or update file contents
+- search repositories
 - list reviews for a pull request
-- create a pull request
+- createRelease
+- t1
+- code review
+- get a branch
+- listPublicRepositories
+- list pr files
+- getBranch
+- compareTwoCommits
+- get pull request
+- create a review for a pull request
+- list commits
+- list repository tags
+- get repository content
 slug: source-control
 tags:
 - GitHub

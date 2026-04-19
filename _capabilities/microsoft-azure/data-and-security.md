@@ -28,55 +28,55 @@ personas: []
 provider_name: Microsoft Azure
 provider_slug: microsoft-azure
 search_terms:
-- blob get properties
+- arm list resources
+- arm list subscriptions
+- cosmos list databases
+- list certificates
 - list cosmos db databases
-- list resource providers
-- get blob properties
+- list subscription tags
+- list items in a container
+- list blobs in a container
+- arm list providers
+- key vault secret management
+- list containers in a database
+- get a secret value
+- list secrets
+- keyvault list keys
+- blob get properties
 - api management
+- list resource providers
+- list cryptographic keys
+- list blobs
+- arm list resource groups
+- list subscriptions
+- keyvault list certificates
+- list resources in a subscription
+- infrastructure as a service
+- key vault
+- t1
+- blob list blobs
+- keyvault get secret
+- arm list tags
+- resource manager
 - cosmos db database management
-- blob storage
+- azure
 - list databases
 - blob storage operations
-- get a secret value
-- arm list resource groups
-- platform as a service
-- keyvault get secret
-- list certificates
-- t1
-- enterprise
-- resource manager
-- list blobs
-- key vault
-- arm list subscriptions
-- cloud
-- list blobs in a container
 - subscription management
-- keyvault list secrets
-- cosmos list items
-- arm list providers
-- list subscription tags
-- cosmos list containers
+- cloud
 - cosmos db
-- keyvault list keys
-- arm list tags
+- get blob properties
+- cosmos list items
+- keyvault list secrets
+- blob storage
+- blob download
+- cosmos list containers
+- list resource groups
 - download a blob
 - cloud computing
-- list resource groups
-- list containers in a database
-- infrastructure as a service
-- azure
-- keyvault list certificates
-- list subscriptions
-- key vault secret management
-- cosmos list databases
-- list items in a container
-- arm list resources
-- blob download
 - list azure subscriptions
-- list secrets
-- list cryptographic keys
-- list resources in a subscription
-- blob list blobs
+- platform as a service
+- enterprise
 slug: data-and-security
 tags:
 - Azure

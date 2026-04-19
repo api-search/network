@@ -33,33 +33,33 @@ personas: []
 provider_name: WhatsApp
 provider_slug: whatsapp
 search_terms:
+- lists all message templates for a waba.
+- reporting
+- update message template
+- retrieves conversation analytics.
+- lists all message templates for a whatsapp business account. supports filtering by name, language, status, and category.
+- marketing
 - updates an existing message template. only approved or paused templates can be edited. edits re-trigger the approval process.
 - updates an existing message template.
-- conversation analytics and reporting.
-- analytics
-- message template management.
-- creates a new message template.
-- create message template
-- individual message template management.
-- update message template
-- get template analytics
-- retrieves template analytics.
-- lists all message templates for a waba.
-- deletes a message template.
-- whatsapp
-- creates a new message template. templates must be approved by meta before use.
-- retrieves analytics for specific message templates including sent, delivered, read, clicked, and cost metrics.
-- retrieves conversation analytics for a waba with configurable time range, granularity, and dimensional breakdown.
-- reporting
-- retrieves conversation analytics.
-- marketing
-- lists all message templates for a whatsapp business account. supports filtering by name, language, status, and category.
-- get conversation analytics
-- message templates
-- list message templates
 - deletes a message template. deleting by name removes all language variants.
+- retrieves conversation analytics for a waba with configurable time range, granularity, and dimensional breakdown.
+- message template management.
+- deletes a message template.
+- retrieves template analytics.
+- analytics
+- create message template
+- creates a new message template.
+- whatsapp
 - delete message template
+- list message templates
 - template performance analytics.
+- creates a new message template. templates must be approved by meta before use.
+- individual message template management.
+- conversation analytics and reporting.
+- message templates
+- get conversation analytics
+- get template analytics
+- retrieves analytics for specific message templates including sent, delivered, read, clicked, and cost metrics.
 slug: templates-and-analytics
 tags:
 - WhatsApp

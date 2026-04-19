@@ -23,51 +23,51 @@ personas: []
 provider_name: Workday
 provider_slug: workday
 search_terms:
-- list compensation scorecards
-- list compensation grades
-- benefits list dependents
-- enterprise software
+- benefits list elections
+- submit a benefits change request
+- list benefit elections
+- list all benefit plans
+- get pay group details
+- get eligible benefit plans for a worker
+- compensation
+- workday
 - list pay groups
-- benefits get eligible plans
-- list plans
-- payroll get pay group
-- comp request change
 - request a one-time payment
-- benefits
+- list plans
+- benefits change
+- payroll list inputs
+- payroll
+- comp request change
+- list all pay groups
+- financial management
 - payroll list pay slips
+- comp request one time payment
+- list pay slips
 - submit a compensation change request
 - payroll get pay group details
-- comp list plans
-- comp list scorecards
-- list compensation plans
-- compensation
-- compensation plans
 - list payroll inputs
-- hcm
-- benefits list plans
-- get a pay group by id
-- list all pay groups
-- cloud computing
-- benefit plans
-- payroll list inputs
-- list benefit plans
-- submit a benefits change request
-- benefits change
-- get pay group details
-- payroll
 - pay groups
-- comp request one time payment
-- list dependents
-- payroll list pay groups
-- list all benefit plans
-- saas
-- get eligible benefit plans for a worker
-- workday
-- benefits list elections
+- payroll get pay group
 - comp list grades
-- list benefit elections
-- financial management
-- list pay slips
+- benefits
+- list dependents
+- list compensation scorecards
+- list compensation plans
+- saas
+- comp list plans
+- benefits list plans
+- list compensation grades
+- compensation plans
+- list benefit plans
+- comp list scorecards
+- cloud computing
+- enterprise software
+- get a pay group by id
+- payroll list pay groups
+- benefits list dependents
+- hcm
+- benefit plans
+- benefits get eligible plans
 slug: compensation-and-payroll
 tags:
 - Workday

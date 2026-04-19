@@ -40,45 +40,45 @@ provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
 - update fraud alert
-- check merchant risk
-- mastercard
-- match
-- ethoca
-- submit confirmed fraud
-- submit a suspected fraud record
-- submit suspected fraud
-- lookup transaction
-- retrieve ethoca fraud alerts for chargeback prevention
-- perform risk check on a merchant
-- digital identity
-- assess merchant risk during onboarding
-- suspected fraud record management
-- lookup transaction clarity
+- match terminated merchant screening
 - look up transaction details for clarity
-- search terminated merchants
-- get fraud alerts
-- get available fraud record statuses
-- update the status of an ethoca fraud alert
-- risk management
+- lookup transaction clarity
+- ethoca
+- credit cards
+- transaction detail lookups for dispute prevention
+- fraud prevention
+- retrieve ethoca fraud alerts for chargeback prevention
 - payments
 - search the match database for terminated merchants
-- credit cards
+- get fraud alerts
+- retrieve ethoca fraud alerts
+- financial services
+- assess merchant risk during onboarding
 - get fraud statuses
-- fraud detection
-- submit a confirmed fraud record to the mastercard fraud and loss database
+- update the status of an ethoca fraud alert
 - look up transaction details to resolve disputes before chargebacks
+- fraud detection
+- submit confirmed fraud
+- open banking
+- match
+- get available fraud record statuses
+- search terminated merchants
+- lookup transaction
+- perform risk check on a merchant
+- submit a confirmed fraud record
+- ethoca fraud alerts
 - search match database
 - search the match database
-- open banking
-- match terminated merchant screening
-- transaction detail lookups for dispute prevention
-- retrieve ethoca fraud alerts
-- fraud prevention
 - merchant onboarding risk assessment
-- ethoca fraud alerts
+- mastercard
+- submit a suspected fraud record
+- submit suspected fraud
+- check merchant risk
+- risk management
+- submit a confirmed fraud record to the mastercard fraud and loss database
+- suspected fraud record management
 - confirmed fraud record management
-- financial services
-- submit a confirmed fraud record
+- digital identity
 slug: fraud-prevention-and-risk
 tags:
 - Mastercard

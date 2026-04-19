@@ -33,46 +33,46 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
+- get billing updates
 - look up bin information for a card
+- create fulfillment order
+- manage a payment account lifecycle
+- validate account details
+- credit cards
+- bin lookup
+- issuers
+- payments
 - submit pan event
-- mastercard
-- card issuance and management
-- request updated card credentials for card-on-file
-- create a physical card fulfillment order
+- validate account
 - list available mastercard bins
+- financial services
+- automatic billing updates
+- retrieve account catalog data
+- submit pan-related event for account level management
+- issue a new card
+- fraud detection
+- open banking
+- card issuance and management
+- request updated card credentials
+- query payment account reference to link tokens to accounts
+- account management
+- create a physical card fulfillment order
+- issue card
+- issue a new mastercard card
+- payment account management
+- look up bin information
+- mastercard
+- manage payment account
+- get payment account reference
 - manage a payment account
 - manage account
-- digital identity
-- issue a new card
-- retrieve account catalog data
-- request updated card credentials
-- list bins
-- submit pan-related event for account level management
-- get card details
-- validate account details
-- payments
-- automatic billing updates
-- query payment account reference to link tokens to accounts
-- validate account
-- credit cards
-- create fulfillment order
-- fraud detection
-- account management
-- card management
-- get payment account reference
-- manage payment account
-- issue a new mastercard card
-- manage a payment account lifecycle
-- open banking
 - get account catalog
-- payment account management
+- request updated card credentials for card-on-file
+- list bins
+- card management
+- get card details
 - lookup bin
-- financial services
-- get billing updates
-- issue card
-- issuers
-- look up bin information
-- bin lookup
+- digital identity
 slug: card-and-account-management
 tags:
 - Mastercard

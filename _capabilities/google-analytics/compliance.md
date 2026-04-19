@@ -35,67 +35,67 @@ personas:
 provider_name: Google Analytics
 provider_slug: google-analytics
 search_terms:
-- data protection engineer
-- setting up and maintaining ga4 account and property structure.
-- submit a user data deletion request for gdpr/privacy compliance
-- sets up and maintains ga4 accounts, properties, and configurations.
-- manage user data collection acknowledgement
-- google
-- search through account configuration changes
-- builds automated reporting pipelines and dashboards from ga4 data.
-- upsert user deletion request
-- analytics
-- compliance team
-- audits data access and monitors configuration changes.
-- web analytics
-- backend engineer
-- google analytics
-- analytics administrator
-- implements server-side event tracking and offline data collection.
-- run standard, realtime, pivot, and batch reports with data access auditing.
-- create, export, and query ga4 audience segments.
-- acknowledge user data collection terms
-- data
-- compliance
+- audit data access
 - submit a user data deletion request
-- data analyst
-- machine learning
-- manages data privacy compliance including gdpr deletion requests.
-- querying and analyzing ga4 event data through various report types.
-- privacy
-- managing data privacy, deletion, and access auditing.
-- audit all configuration changes to an account for compliance tracking
+- reporting
 - attribution
-- connecting ga4 with advertising, app, and measurement platforms.
-- connect ga4 with firebase, google ads, and manage measurement protocol secrets.
-- implements privacy-compliant data handling and deletion workflows.
-- bi engineer
+- audit all configuration changes to an account for compliance tracking
+- search through account configuration changes
+- setting up and maintaining ga4 account and property structure.
+- ingesting events from servers, apps, and offline sources.
+- managing data privacy, deletion, and access auditing.
+- data
+- web analytics
+- implements server-side event tracking and offline data collection.
+- server-side event tracking with data stream and secret management.
 - acknowledge user data collection
+- audit configuration changes
+- connect ga4 with firebase, google ads, and manage measurement protocol secrets.
+- data analyst
+- report on who accessed ga4 reporting data
+- gdpr
+- integrates ga4 with other platforms and manages infrastructure.
 - connects advertising platforms and implements server-side tracking.
-- manage user data deletion requests
+- manages data privacy compliance including gdpr deletion requests.
 - extracts insights from ga4 data through reports and explorations.
+- connecting ga4 with advertising, app, and measurement platforms.
+- acknowledge user data collection terms
+- manage user data collection acknowledgement
+- data protection engineer
+- compliance team
+- upsert user deletion request
+- querying and analyzing ga4 event data through various report types.
+- google
+- acknowledge terms of user data collection for a ga4 property
+- builds automated reporting pipelines and dashboards from ga4 data.
+- audits data access and monitors configuration changes.
 - privacy officer
+- analytics
+- compliance
+- segmenting and exporting user populations for analysis and activation.
+- create, export, and query ga4 audience segments.
+- submit a user data deletion request for gdpr/privacy compliance
+- platform engineer
+- bi engineer
+- google analytics
+- manage accounts, properties, data streams, custom dimensions/metrics, and conversion events.
+- user data deletion, access auditing, and data collection acknowledgement.
+- manage user data deletion requests
+- audit who accessed google analytics reporting data and when
+- privacy
+- search change history events
+- marketing team
+- backend engineer
+- sets up and maintains ga4 accounts, properties, and configurations.
+- data protection
+- measures campaign performance, segments audiences, and tracks conversions.
+- metrics
+- analytics administrator
+- implements privacy-compliant data handling and deletion workflows.
+- machine learning
 - run access report
 - marketing ops
-- reporting
-- marketing team
-- integrates ga4 with other platforms and manages infrastructure.
-- segmenting and exporting user populations for analysis and activation.
-- user data deletion, access auditing, and data collection acknowledgement.
-- gdpr
-- audit data access
-- audit configuration changes
-- measures campaign performance, segments audiences, and tracks conversions.
-- ingesting events from servers, apps, and offline sources.
-- search change history events
-- acknowledge terms of user data collection for a ga4 property
-- platform engineer
-- server-side event tracking with data stream and secret management.
-- manage accounts, properties, data streams, custom dimensions/metrics, and conversion events.
-- audit who accessed google analytics reporting data and when
-- metrics
-- data protection
-- report on who accessed ga4 reporting data
+- run standard, realtime, pivot, and batch reports with data access auditing.
 slug: compliance
 tags:
 - Google Analytics

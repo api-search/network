@@ -26,46 +26,46 @@ personas: []
 provider_name: Oracle GoldenGate
 provider_slug: oracle-goldengate
 search_terms:
-- get out of sync data
-- get veridata server information
-- data synchronization
-- repair job
-- oracle goldengate
-- list replication process performance metrics
-- list compare groups
-- replication process metrics
-- data quality
-- enterprise
-- database connections for verification
-- compliance
-- cdc
-- get server info
-- create connection
-- get job statistics
-- list jobs
-- data integration
 - get goldengate process performance metrics for monitoring replication health
-- data verification
-- execute a comparison job
-- real-time replication
-- compare groups
-- list comparison jobs
-- list veridata database connections
-- list connections
-- list groups
-- list process metrics
-- create a new compare group
-- run job
-- create a new veridata database connection
-- comparison jobs
-- get comparison job statistics
-- create a new comparison job
-- get details of out-of-sync data
-- create group
-- repair out-of-sync data identified by a comparison job
-- create job
-- database
 - list compare groups for data verification
+- run job
+- cdc
+- get veridata server information
+- list compare groups
+- create job
+- real-time replication
+- list veridata database connections
+- create a new comparison job
+- list connections
+- list comparison jobs
+- execute a comparison job
+- list jobs
+- repair job
+- create connection
+- get comparison job statistics
+- comparison jobs
+- database connections for verification
+- list replication process performance metrics
+- list groups
+- get server info
+- create a new veridata database connection
+- compliance
+- data quality
+- list process metrics
+- replication process metrics
+- data integration
+- get details of out-of-sync data
+- data synchronization
+- create group
+- database
+- create a new compare group
+- get job statistics
+- compare groups
+- repair out-of-sync data identified by a comparison job
+- enterprise
+- data verification
+- oracle goldengate
+- get out of sync data
 slug: data-verification
 tags:
 - Oracle GoldenGate

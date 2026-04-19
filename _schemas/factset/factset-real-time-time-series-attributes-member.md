@@ -1,0 +1,18 @@
+---
+description: Limit the attributes returned in the response to the specified set.
+layout: schema
+name: AttributesMember
+properties_list: []
+provider_name: Factset
+provider_slug: factset
+schema_file: json-schema/factset-real-time-time-series-attributes-member-schema.json
+slug: factset-real-time-time-series-attributes-member
+tags:
+- Financial
+- Financial Data
+- Investment Analytics
+- Market Data
+- Portfolio Analytics
+- Research
+title: AttributesMember
+---

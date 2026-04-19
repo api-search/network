@@ -34,47 +34,47 @@ personas: []
 provider_name: Bloomberg AIM
 provider_slug: bloomberg-aim
 search_terms:
-- reference data
-- list available data catalogs
-- get intraday bar data
-- data catalog browsing
-- field list management
-- list field lists
-- financial data
-- data distributions
-- get historical end-of-day data
-- get catalog
-- get intraday bars
-- trading
-- get data catalog details
-- bloomberg
 - get reference data
-- portfolio management
-- list available bloomberg data catalogs
-- list completed data distributions
-- get historical data for securities
+- data catalog browsing
+- get intraday bar data
 - list catalogs
-- create a security universe for data requests
-- get historical data
-- create a bloomberg data request
-- historical data access
-- create universe
-- list security universes
-- get reference data for securities via http api
-- order management
-- security universe management
 - search fields
+- create universe
+- get catalog
+- create a bloomberg data request
+- get reference data for securities via http api
+- get data catalog details
+- get historical end-of-day data
+- list field lists
+- get intraday bars
+- security universe management
+- field list management
+- list universes
+- list available data catalogs
+- bloomberg
+- search for securities and instruments
+- create data request
 - reference data access
 - list distributions
+- list available bloomberg data catalogs
 - get reference data for securities
-- search available bloomberg data fields
-- list field lists for data requests
+- order management
+- get historical data
+- get historical data for securities
 - financial analytics
-- create data request
-- list universes
-- search for securities and instruments
+- trading
 - search instruments
+- historical data access
+- list security universes
+- list completed data distributions
+- search available bloomberg data fields
+- financial data
+- create a security universe for data requests
+- portfolio management
 - market data
+- list field lists for data requests
+- reference data
+- data distributions
 slug: market-data-and-analytics
 tags:
 - Bloomberg

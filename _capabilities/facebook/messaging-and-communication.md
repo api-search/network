@@ -26,51 +26,51 @@ personas: []
 provider_name: Facebook
 provider_slug: facebook
 search_terms:
-- messaging
-- list messenger conversations
-- create whatsapp template
-- social media
-- Conversational Commerce
-- Ad Operations
-- advertising
-- messenger messaging.
-- whatsapp template management.
-- manage content across facebook, instagram, and threads.
-- social networking
-- manages day-to-day ad campaign optimization.
-- send whatsapp message
-- customer communication
-- handles customer inquiries via messaging channels.
-- list templates
-- Marketing Manager
-- create a whatsapp message template.
-- direct messaging and customer communication.
-- Content Creator
-- send a message via whatsapp business.
-- send a messenger message.
 - manage advertising campaigns and performance.
-- creates and publishes visual and text content.
-- whatsapp
-- list messenger conversations.
-- messenger
-- publishing and managing content across platforms.
-- campaign management and audience targeting.
-- whatsapp messaging.
-- send a whatsapp message.
-- plans and executes advertising campaigns.
 - performance tracking and insights.
-- content publishing
-- send messenger message
-- facebook
-- manages content and engagement across meta platforms.
+- send a whatsapp message.
 - send a message via facebook messenger.
-- Social Media Manager
-- Customer Support
-- list whatsapp templates
-- conversation management.
+- messenger
+- Marketing Manager
+- Content Creator
 - customer messaging across messenger and whatsapp.
-- list whatsapp message templates.
+- messenger messaging.
+- Customer Support
+- list messenger conversations
+- handles customer inquiries via messaging channels.
+- list whatsapp templates
 - list conversations
+- manage content across facebook, instagram, and threads.
+- direct messaging and customer communication.
+- advertising
+- create a whatsapp message template.
+- send a messenger message.
+- list templates
+- messaging
+- manages content and engagement across meta platforms.
+- social networking
+- Ad Operations
+- whatsapp template management.
+- facebook
+- list whatsapp message templates.
+- send messenger message
+- whatsapp
+- conversation management.
+- creates and publishes visual and text content.
+- content publishing
+- send whatsapp message
+- social media
+- customer communication
+- Conversational Commerce
+- publishing and managing content across platforms.
+- list messenger conversations.
+- create whatsapp template
+- plans and executes advertising campaigns.
+- campaign management and audience targeting.
+- Social Media Manager
+- whatsapp messaging.
+- send a message via whatsapp business.
+- manages day-to-day ad campaign optimization.
 slug: messaging-and-communication
 tags:
 - Facebook

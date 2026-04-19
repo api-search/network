@@ -39,43 +39,43 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- create a new checkout session
-- qr code payment acceptance
-- mastercard
-- get payment details
-- create checkout session
-- register a contactless reader device
-- checkout
-- digital identity
-- create a buy-now-pay-later installment plan
-- e-commerce
-- merchant
+- create a unified checkout session
+- create unified session
 - process a payment through the gateway
-- buy-now-pay-later installment plans
-- generate a merchant qr code for payment
-- retrieve payment transaction details
-- payments
-- register contactless reader
+- create installment plan
 - unified checkout sessions
 - credit cards
-- create installment plan
-- fraud detection
 - generate a merchant-presented qr code for payment
-- create an installment plan
-- create a new checkout session for a merchant
-- create a unified checkout session supporting multiple payment methods
-- open banking
-- generate qr code
-- process a cloud commerce transaction
-- process payment
+- merchant
+- payments
+- e-commerce
 - financial services
-- checkout session management
-- create a unified checkout session
-- process cloud transaction
-- get payment
+- register a contactless reader device
+- fraud detection
+- qr code payment acceptance
+- create a new checkout session
+- create a new checkout session for a merchant
+- get payment details
+- open banking
 - process a payment through the mastercard gateway
+- retrieve payment transaction details
+- create checkout session
 - payment processing
-- create unified session
+- process payment
+- process a cloud commerce transaction
+- register contactless reader
+- generate a merchant qr code for payment
+- mastercard
+- generate qr code
+- checkout session management
+- get payment
+- create an installment plan
+- checkout
+- buy-now-pay-later installment plans
+- process cloud transaction
+- create a buy-now-pay-later installment plan
+- digital identity
+- create a unified checkout session supporting multiple payment methods
 slug: payment-processing-and-checkout
 tags:
 - Mastercard

@@ -29,73 +29,73 @@ personas: []
 provider_name: Databricks
 provider_slug: databricks
 search_terms:
+- clean rooms
+- terminate a running cluster.
+- data
+- mlflow
+- list workspace objects.
+- databricks
+- start a terminated cluster.
+- list runs for a job.
+- big data
+- apache spark
+- create job
+- delete a workspace object.
+- visualize
+- list clusters
+- delta lake
+- run job now
+- create a new spark cluster.
+- security
+- list all databricks clusters.
+- vector search
+- list all databricks jobs.
+- start cluster
+- import workspace object
+- data governance
+- list jobs
+- workspace object management.
+- cluster lifecycle management.
+- list all clusters.
+- list all jobs.
+- terminate cluster
+- cancel a running job.
+- unity catalog
+- machine learning
+- get cluster
+- sql
+- get job details.
+- export a notebook or workspace object.
+- etl
+- export workspace object
+- analytics
+- import a notebook or workspace object.
+- cancel job run
+- get details of a specific run.
+- delete job
+- delta sharing
+- delete workspace object
+- list objects in a workspace directory.
+- ai
+- create cluster
+- identity management
+- job orchestration.
+- get cluster details.
+- edit cluster
+- create a new cluster.
+- trigger a job run immediately.
+- list job runs
+- cloud computing
+- edit cluster configuration.
 - data engineering
 - get job run
-- trigger a job run immediately.
-- delete job
-- clean rooms
-- list runs for a job.
-- cancel job run
-- delete workspace object
-- unity catalog
-- big data
-- security
-- apache spark
-- analytics
-- job orchestration.
-- cluster lifecycle management.
-- start cluster
-- get cluster details.
-- list job runs
-- export a notebook or workspace object.
-- visualize
-- ai
-- delete a job.
-- data
-- identity management
-- mlflow
-- databricks
-- list all clusters.
-- cancel a running job.
-- machine learning
-- create a new job.
-- get cluster
-- delta lake
-- list workspace objects.
-- etl
-- create a new spark cluster.
-- start a terminated cluster.
-- list objects in a workspace directory.
-- list jobs
-- terminate cluster
-- get details of a specific run.
-- data analytics
-- create cluster
-- data governance
-- create a new cluster.
-- import workspace object
-- delta sharing
-- list all jobs.
-- workspace object management.
-- cloud computing
-- get job details.
-- lakehouse
-- run job now
-- get job
 - list workspace objects
-- import a notebook or workspace object.
-- terminate a running cluster.
-- delete a workspace object.
-- sql
-- vector search
-- list all databricks clusters.
-- export workspace object
-- list all databricks jobs.
+- delete a job.
+- data analytics
+- lakehouse
 - model serving
-- edit cluster
-- create job
-- list clusters
-- edit cluster configuration.
+- get job
+- create a new job.
 slug: data-engineering
 tags:
 - Databricks

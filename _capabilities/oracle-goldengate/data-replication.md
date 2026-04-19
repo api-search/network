@@ -55,72 +55,72 @@ personas: []
 provider_name: Oracle GoldenGate
 provider_slug: oracle-goldengate
 search_terms:
-- list extracts
-- distribution path management
-- service health
-- create a new extract process
-- get performance metrics for all running processes
-- get configuration of a specific data stream
-- data synchronization
-- core issue extract command
-- core issue replicat command
-- get details of a specific replicat process
-- core create extract
-- create a new data stream for downstream distribution
-- list data distribution paths
-- oracle goldengate
-- list data streams
-- core list extracts
-- core list replicats
-- replicat process management
-- execute a ggsci-style goldengate command
-- issue a command (start, stop, kill) to an extract
-- execute command
-- list all data streams
-- core get extract
-- data replication
-- enterprise
-- core get replicat
-- list all extract processes from the core goldengate deployment
-- cdc
-- list available big data target types
-- extract process management across core and big data deployments
-- create a new replicat process
-- list replicats
-- data integration
-- get details of a specific extract process
-- get a big data replicat process
-- list all replicat processes
-- available big data target types
-- real-time replication
-- list all configured data streams
-- delete an extract process
-- create data stream
-- list credential domains
-- issue a command to a replicat process
-- get a specific extract process
-- individual extract operations
-- get service health
-- bigdata list replicats
-- list available big data target types (kafka, hdfs, mongodb, etc.)
-- get service health details
-- list process metrics
-- list distribution paths
-- get data stream
-- list big data replicats
-- list data target types
-- bigdata get replicat
-- data stream management
-- big data replicat processes
-- get extract
-- core create replicat
-- database
-- credential store management
-- list all extract processes
-- list credential store domains
-- list all big data replicat processes
-- create extract
 - delete extract
+- list all extract processes from the core goldengate deployment
+- extract process management across core and big data deployments
+- core list extracts
+- list data distribution paths
+- cdc
+- delete an extract process
+- replicat process management
+- get details of a specific extract process
+- real-time replication
+- list credential domains
+- list all configured data streams
+- individual extract operations
+- get a specific extract process
+- list all replicat processes
+- list credential store domains
+- list all extract processes
+- credential store management
+- bigdata get replicat
+- core create extract
+- get data stream
+- bigdata list replicats
+- create a new replicat process
+- list data streams
+- data stream management
+- list available big data target types (kafka, hdfs, mongodb, etc.)
+- core create replicat
+- create data stream
+- core get replicat
+- execute a ggsci-style goldengate command
+- service health
+- get a big data replicat process
+- core list replicats
+- issue a command (start, stop, kill) to an extract
+- create extract
+- list process metrics
+- big data replicat processes
+- available big data target types
+- data integration
+- issue a command to a replicat process
+- execute command
+- data synchronization
+- list big data replicats
+- get details of a specific replicat process
+- data replication
+- list available big data target types
+- core get extract
+- list data target types
+- get extract
+- list distribution paths
+- get service health details
+- database
+- create a new data stream for downstream distribution
+- list replicats
+- get service health
+- list extracts
+- list all data streams
+- get configuration of a specific data stream
+- get performance metrics for all running processes
+- core issue replicat command
+- distribution path management
+- enterprise
+- oracle goldengate
+- core issue extract command
+- list all big data replicat processes
+- create a new extract process
 slug: data-replication
 tags:
 - Oracle GoldenGate

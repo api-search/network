@@ -45,54 +45,54 @@ personas: []
 provider_name: Snowflake
 provider_slug: snowflake
 search_terms:
-- data sharing
-- list services
-- execute alert
-- create service
-- delete warehouse
-- create compute pool
-- resume a suspended service
-- snowflake
-- container service management
-- list image repositories
 - warehouse management
-- list virtual warehouses
-- create a virtual warehouse
-- resume service
-- create a service
-- alert management
-- suspend service
-- data warehousing
-- create a warehouse
-- infrastructure
 - fetch service status
-- data lakes
-- containers
-- create an image repository
-- fetch warehouse
-- compute
-- compute pool management
-- list monitoring alerts
-- create a monitoring alert
-- list container services
-- list warehouses
-- create a container service
-- list compute pools
-- fetch warehouse details
-- delete a warehouse
-- execute an alert
-- create image repository
-- create a compute pool
 - get service logs
+- data sharing
+- data lakes
+- execute an alert
+- containers
+- list warehouses
 - create warehouse
+- delete a warehouse
+- compute
+- data warehousing
 - create an alert
-- list alerts
+- create a virtual warehouse
+- create a compute pool
+- create a monitoring alert
+- create compute pool
+- list services
+- list container services
 - sql
+- create service
+- resume a suspended service
+- resume service
+- create image repository
+- snowflake
+- list monitoring alerts
+- create a service
+- list virtual warehouses
+- list image repositories
+- delete warehouse
 - create alert
-- fetch service logs
-- get service status
-- suspend a running service
+- fetch warehouse details
+- list compute pools
+- create a warehouse
+- list alerts
+- alert management
+- fetch warehouse
+- compute pool management
+- container service management
+- create an image repository
 - database
+- get service status
+- fetch service logs
+- execute alert
+- suspend service
+- suspend a running service
+- infrastructure
+- create a container service
 slug: compute-and-services
 tags:
 - Snowflake

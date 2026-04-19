@@ -39,6 +39,11 @@
     "generated": "2026-04-18",
     "name": "Adobe Photoshop"
   },
+  "adobe-suite": {
+    "file": "adobe-suite.png",
+    "generated": "2026-04-19",
+    "name": "Adobe Suite"
+  },
   "amazon-ecs": {
     "file": "amazon-ecs.png",
     "generated": "2026-04-18",
@@ -48,6 +53,11 @@
     "file": "ansible-automation-platform.png",
     "generated": "2026-04-18",
     "name": "Ansible Automation Platform"
+  },
+  "atlassian": {
+    "file": "atlassian.png",
+    "generated": "2026-04-19",
+    "name": "Atlassian"
   },
   "autocad": {
     "file": "autocad.png",
@@ -68,6 +78,11 @@
     "file": "bitbucket.png",
     "generated": "2026-04-18",
     "name": "Bitbucket"
+  },
+  "bloomberg": {
+    "file": "bloomberg.png",
+    "generated": "2026-04-19",
+    "name": "Bloomberg"
   },
   "bloomberg-aim": {
     "file": "bloomberg-aim.png",
@@ -99,6 +114,11 @@
     "generated": "2026-04-18",
     "name": "SAP Concur"
   },
+  "conductor": {
+    "file": "conductor.png",
+    "generated": "2026-04-19",
+    "name": "Conductor"
+  },
   "crystal-reports": {
     "file": "crystal-reports.png",
     "generated": "2026-04-18",
@@ -113,6 +133,11 @@
     "file": "facebook.png",
     "generated": "2026-04-18",
     "name": "Facebook"
+  },
+  "fern": {
+    "file": "fern.png",
+    "generated": "2026-04-19",
+    "name": "Fern"
   },
   "fusio": {
     "file": "fusio.png",
@@ -133,6 +158,11 @@
     "file": "google-apps-script.png",
     "generated": "2026-04-18",
     "name": "Google Apps Script"
+  },
+  "google-marketing-platform": {
+    "file": "google-marketing-platform.png",
+    "generated": "2026-04-19",
+    "name": "Google Marketing Platform Admin"
   },
   "harness": {
     "file": "harness.png",
@@ -179,15 +209,30 @@
     "generated": "2026-04-18",
     "name": "Microsoft .NET"
   },
+  "microsoft-power-platform": {
+    "file": "microsoft-power-platform.png",
+    "generated": "2026-04-19",
+    "name": "Microsoft Power Platform"
+  },
   "microsoft-project": {
     "file": "microsoft-project.png",
     "generated": "2026-04-18",
     "name": "Microsoft Project"
   },
+  "microsoft-windows-server": {
+    "file": "microsoft-windows-server.png",
+    "generated": "2026-04-19",
+    "name": "Microsoft Windows Server"
+  },
   "microsoft-word": {
     "file": "microsoft-word.png",
     "generated": "2026-04-18",
     "name": "Microsoft Word"
+  },
+  "moodys": {
+    "file": "moodys.png",
+    "generated": "2026-04-19",
+    "name": "Moody's"
   },
   "mulesoft": {
     "file": "mulesoft.png",
@@ -199,10 +244,25 @@
     "generated": "2026-04-18",
     "name": "Microsoft Dynamics NAV"
   },
+  "nops": {
+    "file": "nops.png",
+    "generated": "2026-04-19",
+    "name": "nOps"
+  },
+  "openshift": {
+    "file": "openshift.png",
+    "generated": "2026-04-19",
+    "name": "OpenShift"
+  },
   "oracle": {
     "file": "oracle.png",
     "generated": "2026-04-18",
     "name": "Oracle"
+  },
+  "oracle-apex": {
+    "file": "oracle-apex.png",
+    "generated": "2026-04-19",
+    "name": "Oracle APEX"
   },
   "oracle-cloud": {
     "file": "oracle-cloud.png",
@@ -234,6 +294,11 @@
     "generated": "2026-04-18",
     "name": "Palo Alto Networks"
   },
+  "paw": {
+    "file": "paw.png",
+    "generated": "2026-04-19",
+    "name": "Paw"
+  },
   "power-query": {
     "file": "power-query.png",
     "generated": "2026-04-18",
@@ -253,6 +318,11 @@
     "file": "qliksense.png",
     "generated": "2026-04-18",
     "name": "Qlik Sense APIs"
+  },
+  "qube": {
+    "file": "qube.png",
+    "generated": "2026-04-19",
+    "name": "Qube"
   },
   "red-hat-ansible-automation-platform": {
     "file": "red-hat-ansible-automation-platform.png",
@@ -289,15 +359,35 @@
     "generated": "2026-04-18",
     "name": "Tableau Desktop"
   },
+  "temporal": {
+    "file": "temporal.png",
+    "generated": "2026-04-19",
+    "name": "Temporal"
+  },
   "teradata": {
     "file": "teradata.png",
     "generated": "2026-04-18",
     "name": "Teradata"
   },
+  "tyk": {
+    "file": "tyk.png",
+    "generated": "2026-04-19",
+    "name": "Tyk"
+  },
+  "unix": {
+    "file": "unix.png",
+    "generated": "2026-04-19",
+    "name": "UNIX System Call"
+  },
   "vantage": {
     "file": "vantage.png",
     "generated": "2026-04-18",
     "name": "Vantage"
+  },
+  "veritas-cluster": {
+    "file": "veritas-cluster.png",
+    "generated": "2026-04-19",
+    "name": "Veritas Cluster Server"
   },
   "veritas-infoscale": {
     "file": "veritas-infoscale.png",

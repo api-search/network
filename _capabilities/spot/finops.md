@@ -27,53 +27,53 @@ personas: []
 provider_name: Spot
 provider_slug: spot
 search_terms:
-- eco get savings analysis aws
-- finops
-- cloud infrastructure
-- list commitment plans
-- cost optimization
-- list aws reserved instances
-- billing accounts
-- billing
-- eco list commitment plans azure
-- list billing engine accounts
-- eco list reserved instances aws
-- list billing account families
-- get billing cost analysis
+- get aws commitment analysis
+- admin list accounts
 - billing list account families
-- get cost analysis
-- get azure savings analysis
-- savings analysis
-- get aws savings analysis
-- eco get commitment plan aws
-- list aws savings plans
-- eco get savings analysis azure
-- eco list commitment plans aws
-- list azure commitment plans
 - list gcp commitment plans
-- get a specific aws commitment plan
 - containers
-- spot
-- list aws commitment plans
-- cost analysis
-- get unused aws reserved instances
-- cloud commitment plans
-- billing get cost analysis
-- eco list commitment plans gcp
-- eco list savings plans aws
-- spot instances
+- eco get commitment plan aws
+- cost optimization
+- get azure savings analysis
 - get gcp savings analysis
+- billing get cost analysis
+- get aws savings analysis
+- eco list savings plans aws
+- billing
+- eco get commitment analysis aws
+- get a specific aws commitment plan
+- autoscaling
+- spot
+- eco get savings analysis aws
+- list billing engine accounts
+- eco list commitment plans aws
+- billing accounts
+- savings analysis
 - eco get savings analysis gcp
+- eco get savings analysis azure
+- get unused aws reserved instances
+- cost analysis
+- list commitment plans
+- get billing cost analysis
+- get cost analysis
+- list spot accounts for context
+- list aws savings plans
+- finops
+- list azure commitment plans
+- list aws commitment plans
+- spot instances
+- eco list reserved instances aws
 - eco get unused ris aws
 - get savings analysis
-- admin list accounts
-- list billing accounts
-- autoscaling
-- list spot accounts for context
-- get aws commitment analysis
-- eco get commitment analysis aws
-- billing list accounts
+- eco list commitment plans gcp
 - kubernetes
+- list aws reserved instances
+- list billing accounts
+- billing list accounts
+- list billing account families
+- cloud commitment plans
+- eco list commitment plans azure
+- cloud infrastructure
 slug: finops
 tags:
 - Spot

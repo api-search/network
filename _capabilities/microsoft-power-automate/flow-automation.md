@@ -37,50 +37,50 @@ personas: []
 provider_name: Microsoft Power Automate
 provider_slug: microsoft-power-automate
 search_terms:
-- turn off flow
-- list flows in an environment
-- connector management
-- microsoft
-- list flows
-- turn on flow
-- power platform
-- stop/deactivate a flow
-- get connector
-- manages environments, connectors, and permissions
-- rpa
-- flow management
-- list all environments
-- delete flow
-- flow lifecycle management
-- get flow
 - environment management
-- get details of a specific flow
-- start/activate a flow
-- managing environments and available connectors
-- integration
-- delete a flow
-- creating, running, and managing automation flows
-- create a new automation flow
-- update a flow's properties
-- creates and manages automation flows
-- list available connectors in an environment
-- manage flows, environments, and connectors
-- low-code
-- get details of a specific connector
-- update a flow
-- Automation Engineer
-- list all power automate environments
-- list connectors
-- create flow
 - get flow details
-- update flow
-- microsoft power automate
-- automation
-- workflow
+- turn on flow
+- get details of a specific connector
+- list flows
+- rpa
+- list all environments
+- update a flow
+- manage flows, environments, and connectors
+- managing environments and available connectors
+- create flow
+- integration
+- list connectors
 - list environments
-- business process
+- microsoft
+- connector management
 - create a flow
+- turn off flow
+- delete flow
 - Platform Administrator
+- power platform
+- manages environments, connectors, and permissions
+- stop/deactivate a flow
+- get details of a specific flow
+- business process
+- flow management
+- microsoft power automate
+- update a flow's properties
+- update flow
+- list available connectors in an environment
+- creates and manages automation flows
+- flow lifecycle management
+- low-code
+- create a new automation flow
+- get flow
+- get connector
+- list all power automate environments
+- list flows in an environment
+- Automation Engineer
+- automation
+- start/activate a flow
+- creating, running, and managing automation flows
+- delete a flow
+- workflow
 slug: flow-automation
 tags:
 - Microsoft Power Automate

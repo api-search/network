@@ -26,52 +26,52 @@ personas: []
 provider_name: Oracle E-Business Suite
 provider_slug: oracle-e-business-suite
 search_terms:
-- on-hand quantity management.
-- mfg issue material
-- mfg create discrete job
-- retrieve bills of material.
-- business applications
-- e-business suite
-- inv get onhand quantities
-- get bom by id.
-- inv get deliveries
-- get onhand quantities
 - create a discrete job.
-- retrieve wip operations.
-- mfg get bills of material
-- list on-hand quantities.
-- oracle
-- retrieve deliveries.
-- enterprise
-- erp
-- mfg get bill of material by id
+- get onhand quantities
 - inv get sales orders
-- mfg get wip operations
-- get discrete job by id.
-- mfg get discrete job by id
-- bom management.
-- list discrete jobs.
-- retrieve routings.
-- inv get inventory items
-- supply chain
-- list boms.
-- inventory item management.
-- production
-- mfg get routings
+- mfg get bills of material
+- retrieve deliveries.
 - get discrete jobs
-- retrieve sales orders.
-- get bills of material
-- manufacturing
-- get inventory items
-- mfg get discrete jobs
-- issue material to a job.
-- complete an assembly.
+- business applications
+- supply chain
 - retrieve on-hand quantities.
-- list inventory items.
+- mfg get discrete job by id
+- get inventory items
+- production
+- inv get inventory items
 - mfg complete assembly
 - retrieve discrete jobs.
-- retrieve inventory items.
+- get bom by id.
+- list discrete jobs.
+- mfg get bill of material by id
+- complete an assembly.
 - discrete job management.
+- mfg get routings
+- on-hand quantity management.
+- list inventory items.
+- erp
+- get discrete job by id.
+- e-business suite
+- inv get onhand quantities
+- inventory item management.
+- list boms.
+- retrieve bills of material.
+- oracle
+- issue material to a job.
+- inv get deliveries
+- mfg get discrete jobs
+- get bills of material
+- mfg create discrete job
+- list on-hand quantities.
+- retrieve routings.
+- retrieve sales orders.
+- manufacturing
+- mfg get wip operations
+- retrieve wip operations.
+- enterprise
+- mfg issue material
+- bom management.
+- retrieve inventory items.
 slug: manufacturing-operations
 tags:
 - Oracle

@@ -75,90 +75,90 @@ personas: []
 provider_name: Amazon S3
 provider_slug: amazon-s3
 search_terms:
-- create bucket
-- get an access point
-- delete object
-- data storage
-- list s3 batch operations jobs
-- storage lens configurations
-- s3
-- get table bucket
-- scalable storage
-- get table
-- backup
-- delete an object from s3
-- describe job
-- get lifecycle configuration for an s3 bucket
-- cloud storage
-- list objects in an s3 bucket
-- upload an object to s3
-- list tables in a namespace
-- aws
-- list objects
-- single object
-- get bucket lifecycle
-- delete objects
-- get public access block
-- list batch jobs
-- copy an object within s3
-- archive
-- objects in a bucket
-- get details of a batch operations job
-- head bucket
-- get details of an s3 table bucket
-- list all s3 buckets owned by the account
-- list storage lens configurations
-- list all s3 buckets
-- get bucket encryption
-- single s3 bucket
-- list s3 access points for the account
-- check if a bucket exists
-- create an s3 bucket
-- list buckets
-- get object
-- get an object
-- list s3 table buckets
-- single batch operations job
-- list tables
-- delete an s3 bucket
-- list access points
-- get encryption configuration for an s3 bucket
-- get configuration of an s3 access point
-- put object
-- get versioning configuration for an s3 bucket
-- s3 table buckets
 - list storage lens configs
-- s3 buckets
-- s3 batch operations jobs
-- list table buckets
-- upload an object
-- create a new s3 bucket
-- s3 access points
-- storage management
-- list s3 access points
-- tables in a table bucket
-- delete multiple objects from an s3 bucket
-- list objects in a bucket
-- list s3 storage lens configurations
-- retrieve an object from s3
-- get details of a table
-- delete bucket
-- list batch operations jobs
+- single s3 bucket
+- list s3 table buckets
+- copy object
+- copy an object within s3
+- create job
+- get bucket encryption
+- list tables
+- objects in a bucket
+- head bucket
+- create bucket
 - describe batch job
-- object storage
-- create a batch operations job
-- list jobs
-- get access point
+- get details of an s3 table bucket
+- create a new s3 bucket
+- get versioning configuration for an s3 bucket
+- list batch jobs
+- list s3 storage lens configurations
+- single object
+- get details of a batch operations job
+- data storage
+- s3 buckets
+- upload an object
+- put object
+- list all s3 buckets
 - delete an object
 - single access point
-- copy object
-- get public access block settings for the account
-- list storage lens
-- get bucket versioning
-- amazon
-- create job
 - list namespaces
+- get encryption configuration for an s3 bucket
+- check if a bucket exists
+- s3
+- list batch operations jobs
+- get bucket lifecycle
+- aws
+- amazon
+- list access points
+- list buckets
+- list storage lens
+- s3 access points
+- backup
+- delete an s3 bucket
+- storage lens configurations
+- tables in a table bucket
+- cloud storage
+- list objects in a bucket
+- object storage
+- list table buckets
+- get an access point
+- get public access block settings for the account
+- delete bucket
+- list s3 batch operations jobs
+- upload an object to s3
+- get an object
+- scalable storage
+- archive
+- get table
+- list tables in a namespace
+- get configuration of an s3 access point
+- get lifecycle configuration for an s3 bucket
+- delete object
+- get access point
+- list objects
+- list all s3 buckets owned by the account
+- get bucket versioning
+- single batch operations job
+- get table bucket
+- get details of a table
 - list namespaces in a table bucket
+- list jobs
+- create an s3 bucket
+- list storage lens configurations
+- retrieve an object from s3
+- delete multiple objects from an s3 bucket
+- storage management
+- create a batch operations job
+- list objects in an s3 bucket
+- get object
+- s3 batch operations jobs
+- delete an object from s3
+- list s3 access points
+- delete objects
+- describe job
+- get public access block
+- s3 table buckets
+- list s3 access points for the account
 slug: storage-management
 tags:
 - Amazon

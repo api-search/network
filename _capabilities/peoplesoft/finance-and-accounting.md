@@ -47,49 +47,49 @@ personas: []
 provider_name: PeopleSoft
 provider_slug: peoplesoft
 search_terms:
-- general ledger journal entries
-- retrieve budget definitions and data.
-- enterprise software
-- forecasting
-- finance approval requests
-- financial and supply chain management.
-- expense reports
-- list budgets
-- campus solutions.
-- retrieve general ledger journal entries.
-- budgeting
-- campus solutions
-- list ar items
-- finance
-- performance analytics reports
-- erp
-- human capital management.
-- list pending approvals
-- supply chain management
 - general ledger
-- list analytics reports
 - peopletools platform services.
-- process approval
-- hcm
-- list expense reports
-- crm
-- retrieve forecast data and projections.
 - list journal entries
+- supply chain management
+- accounts payable vouchers
+- retrieve performance analytics reports.
+- accounting
+- budgeting
+- campus solutions.
+- list ar items
+- retrieve accounts receivable items.
+- list expense reports
+- financial and supply chain management.
+- financial management
+- list analytics reports
+- human capital management.
+- retrieve expense reports.
 - list forecasts
-- individual approval operations
+- list pending approvals
+- retrieve general ledger journal entries.
+- retrieve forecast data and projections.
+- list vouchers
+- campus solutions
+- budget definitions and data
+- accounts receivable items
+- retrieve budget definitions and data.
+- finance approval requests
+- crm
 - retrieve accounts payable vouchers.
 - forecast data and projections
-- approve, deny, or push back a finance approval request.
-- retrieve performance analytics reports.
-- accounts payable vouchers
-- accounts receivable items
-- retrieve accounts receivable items.
-- list vouchers
-- accounting
+- finance
+- erp
+- forecasting
+- list budgets
+- process approval
+- performance analytics reports
 - retrieve pending finance approval requests.
-- retrieve expense reports.
-- budget definitions and data
-- financial management
+- general ledger journal entries
+- expense reports
+- individual approval operations
+- enterprise software
+- hcm
+- approve, deny, or push back a finance approval request.
 - peoplesoft
 slug: finance-and-accounting
 tags:

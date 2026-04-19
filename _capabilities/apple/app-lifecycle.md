@@ -33,58 +33,58 @@ personas: []
 provider_name: Apple
 provider_slug: apple
 search_terms:
-- list all builds.
-- app management.
-- macos
-- list beta groups.
-- beta group management.
-- read app
-- list all beta testers.
-- list beta groups
-- create beta group
-- modify build
+- add a new beta tester.
+- modify app
 - technology
-- list apps
-- remove a beta tester.
-- create a new beta group.
-- beta tester management.
-- app management
-- list beta testers
-- mobile
 - create beta tester
 - add a beta tester.
-- developer
-- get beta group details.
-- app store
-- list testers
-- build management.
-- get beta tester details.
-- add a new beta tester.
-- delete beta group
-- modify app
 - get details of a specific app.
-- update app metadata.
-- delete a beta group.
-- list beta testers.
-- ios
-- testflight
-- read build
-- modify beta group
-- update build information.
-- create tester
-- list builds
-- update a beta group.
-- create a beta group.
-- apple
-- read beta group
-- list groups
-- list all apps in app store connect.
-- create group
-- delete beta tester
+- delete beta group
 - read beta tester
-- list all apps.
-- get build details.
+- beta group management.
+- developer
+- build management.
+- modify beta group
+- list testers
+- list beta groups
+- list builds
+- list all builds.
+- create a beta group.
 - list all beta groups.
+- macos
+- app management.
+- delete a beta group.
+- list beta groups.
+- list beta testers
+- app management
+- list groups
+- modify build
+- update app metadata.
+- delete beta tester
+- create beta group
+- update a beta group.
+- list apps
+- list all apps.
+- list all beta testers.
+- remove a beta tester.
+- create a new beta group.
+- testflight
+- read app
+- list all apps in app store connect.
+- read beta group
+- create group
+- get build details.
+- ios
+- get beta tester details.
+- app store
+- read build
+- list beta testers.
+- beta tester management.
+- create tester
+- get beta group details.
+- mobile
+- update build information.
+- apple
 slug: app-lifecycle
 tags:
 - Apple

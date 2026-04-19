@@ -37,67 +37,67 @@ personas: []
 provider_name: Canva
 provider_slug: canva
 search_terms:
-- get a specific design by id.
-- create a new canva design.
-- get an asset by id.
-- get folder
-- content creation
-- list brand templates
-- delete asset
-- list items in a folder.
-- create a design.
-- get a folder by id.
-- create autofill job
-- get asset
-- upload an asset to canva.
-- get export job
-- get a brand template by id.
-- create a design from a brand template using autofill data.
-- get resize job status.
-- visual content
 - list canva designs accessible to the user.
-- get users me
-- list available brand templates.
-- design creation and management.
-- list designs
-- get resize job
-- canva
-- upload asset
-- create comment
-- get autofill job
-- get brand template
-- create resize job
-- create a comment on a design.
-- get the autofill dataset for a brand template.
-- list designs.
-- create autofill job.
-- list brand templates.
-- resize a design to different dimensions or preset types.
-- apps
-- brand template access.
-- asset management.
-- export a design.
-- design exports.
-- list folder items
-- marketing
-- design autofill.
 - templates
-- get an asset.
-- print
-- get autofill job status.
-- create export job
-- get brand template dataset
-- brand management
+- get a specific design by id.
+- get resize job
+- marketing
 - create design
-- delete an asset.
-- get export job status and download url.
+- create comment
 - collaboration
 - design
-- automation
-- graphics
+- resize a design to different dimensions or preset types.
 - get the authenticated user profile.
-- export a design to pdf, png, jpg, gif, pptx, or mp4.
+- get an asset.
+- delete an asset.
+- get export job status and download url.
+- get export job
+- create a comment on a design.
+- get resize job status.
+- get autofill job status.
+- design creation and management.
+- create a design from a brand template using autofill data.
+- list folder items
+- get brand template
+- get a folder by id.
+- delete asset
+- get brand template dataset
+- upload asset
+- create export job
+- get users me
+- get asset
+- list available brand templates.
+- create a new canva design.
+- brand template access.
+- get folder
+- content creation
 - get design
+- brand management
+- create autofill job
+- export a design to pdf, png, jpg, gif, pptx, or mp4.
+- list designs
+- get a brand template by id.
+- design exports.
+- visual content
+- asset management.
+- create a design.
+- list items in a folder.
+- list designs.
+- list brand templates
+- get the autofill dataset for a brand template.
+- canva
+- apps
+- get an asset by id.
+- automation
+- design autofill.
+- upload an asset to canva.
+- list brand templates.
+- create autofill job.
+- create resize job
+- get autofill job
+- export a design.
+- graphics
+- print
 slug: design-management
 tags:
 - Canva

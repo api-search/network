@@ -35,53 +35,53 @@ personas: []
 provider_name: Azure Log Analytics
 provider_slug: azure-log-analytics
 search_terms:
-- execute query
-- list all workspaces.
-- unified workflow combining query, management, and ingestion apis for complete log monitoring and analysis.
-- list workspaces
-- create or update a log analytics workspace.
-- execute a kql query.
-- list all tables in a log analytics workspace.
-- analytics
-- upload logs
-- list saved searches in a workspace.
-- list tables
-- create workspace
-- delete a log analytics workspace.
-- list all tables.
-- administrators managing workspaces, tables, and data collection configurations.
-- manage log analytics workspaces.
 - upload custom log entries.
-- create or update a saved search in a workspace.
+- list saved searches in a workspace.
+- list all tables in a log analytics workspace.
 - security analysts investigating incidents and threats through log data.
-- send custom log data to a workspace via data collection rule.
-- Platform Administrator
-- list workspace tables.
-- engineers monitoring infrastructure and application health through log queries.
-- manage saved kql queries.
-- execute kql queries against workspaces.
-- infrastructure and application monitoring through log analysis.
-- cloud
 - list saved searches.
-- DevOps Engineer
-- get workspace details.
-- execute a kql query against a log analytics workspace.
-- list all log analytics workspaces in a subscription.
-- SOC Analyst
-- kql-based data exploration and saved query management.
 - log analytics
-- get workspace
-- create saved search
-- get a workspace.
+- list all tables.
 - security event analysis and custom security log ingestion.
-- kql
-- logging
-- send custom log data.
-- delete workspace
-- azure
-- get details of a specific log analytics workspace.
-- list saved searches
+- execute a kql query.
 - monitoring
+- DevOps Engineer
+- SOC Analyst
+- infrastructure and application monitoring through log analysis.
+- Platform Administrator
+- upload logs
+- list workspaces
+- list saved searches
+- list workspace tables.
+- list tables
+- delete workspace
+- send custom log data to a workspace via data collection rule.
+- unified workflow combining query, management, and ingestion apis for complete log monitoring and analysis.
+- list all log analytics workspaces in a subscription.
+- analytics
+- create or update a log analytics workspace.
+- create or update a saved search in a workspace.
+- logging
+- administrators managing workspaces, tables, and data collection configurations.
+- send custom log data.
+- get a workspace.
+- kql-based data exploration and saved query management.
+- get workspace details.
+- azure
+- cloud
+- list all workspaces.
+- engineers monitoring infrastructure and application health through log queries.
+- create workspace
+- create saved search
+- execute a kql query against a log analytics workspace.
+- delete a log analytics workspace.
+- execute query
+- get workspace
+- manage log analytics workspaces.
+- manage saved kql queries.
+- kql
+- execute kql queries against workspaces.
+- get details of a specific log analytics workspace.
 slug: log-monitoring-and-analysis
 tags:
 - Azure

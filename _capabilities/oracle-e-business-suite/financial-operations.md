@@ -30,59 +30,59 @@ personas: []
 provider_name: Oracle E-Business Suite
 provider_slug: oracle-e-business-suite
 search_terms:
-- retrieve bank accounts.
-- retrieve fixed assets.
-- get ap invoice by id.
-- ar get receipts
-- retrieve ar invoices.
-- create an ar invoice.
-- gl get journals
-- gl create journal
-- business applications
-- e-business suite
-- list purchase orders.
-- po get requisitions
-- po get suppliers
-- retrieve general ledger journal entries.
-- oracle
-- retrieve ap invoices.
-- po get purchase order by id
-- ce get bank accounts
-- retrieve receipts.
-- retrieve requisitions.
-- enterprise
-- erp
-- get purchase order by id.
-- get journals
-- ar invoice management.
-- financials
-- get ap invoices
-- list ar invoices.
-- po get purchase orders
-- create a purchase order.
-- ap get payments
-- create an ap invoice.
-- get purchase orders
-- get suppliers
-- ap get invoice by id
-- ap get invoices
-- list suppliers.
-- supplier management.
-- ap create invoice
-- fa get assets
-- get ar invoices
-- list journal entries.
-- create a journal entry.
-- ar get invoices
-- journal entry management.
-- po create purchase order
-- retrieve suppliers.
 - retrieve payments.
-- ar create invoice
-- procurement
+- supplier management.
+- get ar invoices
+- list suppliers.
+- ar get invoices
+- po get purchase orders
+- retrieve ap invoices.
+- retrieve receipts.
+- get purchase orders
+- retrieve fixed assets.
+- business applications
+- create an ar invoice.
+- get suppliers
+- get ap invoices
+- financials
+- fa get assets
+- retrieve ar invoices.
+- list journal entries.
+- create a purchase order.
+- create an ap invoice.
+- po create purchase order
+- get purchase order by id.
+- list purchase orders.
+- get journals
+- po get purchase order by id
+- get ap invoice by id.
+- retrieve general ledger journal entries.
+- gl get journals
+- ap get invoice by id
 - retrieve purchase orders.
+- ar create invoice
+- erp
+- list ar invoices.
+- ar invoice management.
+- ap get payments
+- gl create journal
+- e-business suite
 - ap invoice management.
 - purchase order management.
+- ap get invoices
+- ap create invoice
+- oracle
+- procurement
+- ce get bank accounts
+- retrieve bank accounts.
+- retrieve requisitions.
+- ar get receipts
+- po get requisitions
+- po get suppliers
+- enterprise
+- create a journal entry.
+- retrieve suppliers.
+- journal entry management.
 - list ap invoices.
 slug: financial-operations
 tags:

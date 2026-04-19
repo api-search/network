@@ -58,82 +58,82 @@ personas: []
 provider_name: Mailchimp
 provider_slug: mailchimp
 search_terms:
-- marketing get audience
 - get a specific marketing campaign.
-- send a campaign.
-- send a transactional email.
-- marketing add member
-- send campaign.
-- send transactional
-- list members
-- send a transactional email with a template.
-- delete a campaign.
-- send campaign
-- list campaign reports.
-- audience management.
-- marketing get report
-- get campaign details.
-- list members.
-- list audience members.
-- campaigns
-- create a campaign.
-- marketing automation
-- get transactional account information.
-- list email templates.
-- transactional send message
-- get a specific campaign report.
-- add a member.
-- specific campaign report.
-- marketing get campaign
-- marketing list automations
-- create campaign
-- marketing campaigns.
-- add member
-- search transactional messages.
-- list all marketing campaigns.
-- transactional send template
-- transactional get message info
-- list audiences.
-- transactional email
-- specific campaign.
-- delete campaign
-- marketing list audiences
-- list marketing automations.
 - get campaign
-- transactional search messages
-- marketing list templates
-- marketing send campaign
+- create a new marketing campaign.
+- marketing get report
+- specific campaign report.
+- search sent messages.
+- search transactional messages.
+- search transactional
+- delete a campaign.
+- list reports.
+- get details about a sent transactional message.
+- create a campaign.
 - transactional get user info
 - search sent transactional messages.
-- list campaigns.
+- marketing list templates
 - list audiences
-- search transactional
-- list reports
-- send a marketing campaign.
-- send transactional email.
-- add a member to an audience.
-- create a new marketing campaign.
-- audience members.
-- marketing delete campaign
-- get details about a sent transactional message.
+- list campaigns.
+- audience management.
+- add member
 - mailchimp
-- campaign reports.
-- list reports.
-- delete a marketing campaign.
-- newsletters
-- get campaign report.
-- email marketing
-- marketing list members
-- marketing create campaign
-- search sent messages.
 - marketing list reports
-- list campaigns
-- list transactional email templates.
-- get audience details.
-- marketing list campaigns
-- get report
-- list all audiences.
+- transactional send template
+- list email templates.
+- create campaign
 - transactional list templates
+- campaigns
+- transactional email
+- delete campaign
+- marketing list campaigns
+- send a transactional email.
+- marketing get campaign
+- marketing list members
+- send transactional
+- marketing get audience
+- list marketing automations.
+- send transactional email.
+- get audience details.
+- list reports
+- list members.
+- transactional search messages
+- marketing send campaign
+- marketing automation
+- marketing list audiences
+- list campaigns
+- audience members.
+- campaign reports.
+- delete a marketing campaign.
+- send campaign.
+- transactional send message
+- transactional get message info
+- marketing campaigns.
+- list all audiences.
+- marketing add member
+- list audiences.
+- newsletters
+- marketing list automations
+- list transactional email templates.
+- list all marketing campaigns.
+- get campaign details.
+- list audience members.
+- marketing create campaign
+- get transactional account information.
+- get campaign report.
+- send a transactional email with a template.
+- marketing delete campaign
+- get a specific campaign report.
+- email marketing
+- add a member to an audience.
+- specific campaign.
+- add a member.
+- send campaign
+- send a marketing campaign.
+- get report
+- send a campaign.
+- list campaign reports.
+- list members
 slug: email-marketing
 tags:
 - Mailchimp

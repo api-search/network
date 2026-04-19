@@ -34,42 +34,42 @@ personas: []
 provider_name: Adobe Analytics
 provider_slug: adobe-analytics
 search_terms:
-- upload events
-- validate a batch events file without ingesting data.
-- server side
-- adobe
-- list metrics
-- list report suites to identify data collection targets.
-- analytics
-- web analytics
-- batch event upload.
-- list dimensions to validate event data mapping.
-- business intelligence
-- list report suites
 - report suite discovery for data collection targeting.
-- list metrics to validate event data mapping.
-- customer intelligence
-- metric discovery for event mapping.
-- upload a gzip-compressed csv file of batched analytics event data.
-- digital marketing
-- data collection
-- list dimensions
-- validate a batch events file without ingesting.
-- list available metrics to validate event data mapping.
-- upload a batch events file.
-- report suite details.
-- get report suite details.
-- marketing
+- list report suites to identify data collection targets.
+- batch event upload.
 - validate events
+- marketing
+- web analytics
 - validate event files.
 - list available dimensions to validate event data mapping.
-- adobe analytics
-- bulk data insertion
-- list report suites to identify collection targets.
+- list dimensions
 - get details for a report suite to verify collection configuration.
-- events
+- list metrics
+- upload a batch events file.
+- data collection
 - get report suite
+- list dimensions to validate event data mapping.
+- list available metrics to validate event data mapping.
+- analytics
 - dimension discovery for event mapping.
+- list report suites
+- report suite details.
+- server side
+- get report suite details.
+- metric discovery for event mapping.
+- upload events
+- events
+- validate a batch events file without ingesting data.
+- digital marketing
+- adobe analytics
+- business intelligence
+- list report suites to identify collection targets.
+- validate a batch events file without ingesting.
+- bulk data insertion
+- customer intelligence
+- adobe
+- list metrics to validate event data mapping.
+- upload a gzip-compressed csv file of batched analytics event data.
 slug: data-collection
 tags:
 - Adobe Analytics

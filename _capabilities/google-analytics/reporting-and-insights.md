@@ -47,76 +47,76 @@ personas:
 provider_name: Google Analytics
 provider_slug: google-analytics
 search_terms:
-- data protection engineer
-- setting up and maintaining ga4 account and property structure.
-- sets up and maintains ga4 accounts, properties, and configurations.
-- run realtime report
-- run up to 5 pivot reports in a batch
-- run an advanced pivot table report for cross-tabulation analysis
-- google
-- builds automated reporting pipelines and dashboards from ga4 data.
-- analytics
-- run multiple reports in a single batch request
-- compliance team
-- run up to 5 standard reports in a single batch request
-- audits data access and monitors configuration changes.
-- backend engineer
-- google analytics
-- run pivot report
-- analytics administrator
-- implements server-side event tracking and offline data collection.
-- web analytics
-- run standard, realtime, pivot, and batch reports with data access auditing.
-- create, export, and query ga4 audience segments.
-- run multiple pivot reports in a single batch
-- run report
-- batch run reports
-- check if dimensions and metrics are compatible for a report
-- run standard ga4 reports
-- data
-- data analyst
-- machine learning
-- manages data privacy compliance including gdpr deletion requests.
-- querying and analyzing ga4 event data through various report types.
-- managing data privacy, deletion, and access auditing.
+- check dimension and metric compatibility
+- reporting
 - attribution
 - insights
-- run realtime ga4 reports
-- check dimension and metric compatibility
-- connecting ga4 with advertising, app, and measurement platforms.
-- connect ga4 with firebase, google ads, and manage measurement protocol secrets.
-- implements privacy-compliant data handling and deletion workflows.
-- bi engineer
-- run up to 5 pivot reports in a single batch request
-- check compatibility
-- connects advertising platforms and implements server-side tracking.
-- run data access audit reports
-- run a standard ga4 report with dimensions, metrics, and date ranges
-- extracts insights from ga4 data through reports and explorations.
-- privacy officer
 - ga4
-- run access report
-- run a realtime report showing events from the last 30 minutes
-- reporting
-- report on who accessed ga4 reporting data and when
-- marketing team
-- run a customized report of ga4 event data
-- batch run pivot reports
-- marketing ops
-- integrates ga4 with other platforms and manages infrastructure.
-- run pivot reports for cross-tabulation analysis
-- user data deletion, access auditing, and data collection acknowledgement.
-- measures campaign performance, segments audiences, and tracks conversions.
+- setting up and maintaining ga4 account and property structure.
 - ingesting events from servers, apps, and offline sources.
-- segmenting and exporting user populations for analysis and activation.
-- platform engineer
-- run a customized pivot report
-- server-side event tracking with data stream and secret management.
-- run up to 5 reports in a batch
-- manage accounts, properties, data streams, custom dimensions/metrics, and conversion events.
+- managing data privacy, deletion, and access auditing.
+- data
+- run a realtime report showing events from the last 30 minutes
+- web analytics
+- run realtime report
 - verify dimensions and metrics can be used together
-- metrics
+- server-side event tracking with data stream and secret management.
+- integrates ga4 with other platforms and manages infrastructure.
+- batch run reports
+- check if dimensions and metrics are compatible for a report
 - report on who accessed ga4 reporting data
+- data analyst
+- batch run pivot reports
+- connect ga4 with firebase, google ads, and manage measurement protocol secrets.
+- run multiple pivot reports in a single batch
+- connects advertising platforms and implements server-side tracking.
+- manages data privacy compliance including gdpr deletion requests.
+- extracts insights from ga4 data through reports and explorations.
+- implements server-side event tracking and offline data collection.
+- run pivot report
+- run a standard ga4 report with dimensions, metrics, and date ranges
+- connecting ga4 with advertising, app, and measurement platforms.
+- run multiple reports in a single batch request
+- data protection engineer
+- compliance team
+- querying and analyzing ga4 event data through various report types.
+- google
+- run up to 5 standard reports in a single batch request
+- report on who accessed ga4 reporting data and when
+- builds automated reporting pipelines and dashboards from ga4 data.
+- privacy officer
+- analytics
+- audits data access and monitors configuration changes.
+- segmenting and exporting user populations for analysis and activation.
+- create, export, and query ga4 audience segments.
+- run up to 5 reports in a batch
+- run an advanced pivot table report for cross-tabulation analysis
+- platform engineer
+- bi engineer
+- google analytics
+- manage accounts, properties, data streams, custom dimensions/metrics, and conversion events.
+- run up to 5 pivot reports in a batch
+- run data access audit reports
+- user data deletion, access auditing, and data collection acknowledgement.
+- run report
+- run a customized report of ga4 event data
+- run realtime ga4 reports
+- run pivot reports for cross-tabulation analysis
+- run a customized pivot report
+- run up to 5 pivot reports in a single batch request
+- marketing team
+- backend engineer
+- sets up and maintains ga4 accounts, properties, and configurations.
+- run standard ga4 reports
+- measures campaign performance, segments audiences, and tracks conversions.
+- metrics
+- analytics administrator
+- implements privacy-compliant data handling and deletion workflows.
+- machine learning
+- check compatibility
+- run access report
+- marketing ops
+- run standard, realtime, pivot, and batch reports with data access auditing.
 slug: reporting-and-insights
 tags:
 - Google Analytics

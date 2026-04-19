@@ -33,38 +33,38 @@ personas: []
 provider_name: GitLab
 provider_slug: gitlab
 search_terms:
-- oauth
-- software development
-- exchange an authorization code, device code, or refresh token for an access token.
-- identity
-- gitlab
-- authorize device
-- get information about the current access token.
-- authenticated user profile information.
-- get token info
-- tokens
-- revoke an existing oauth access or refresh token.
-- token revocation.
-- device authorization grant flow for input-constrained devices.
-- authorize oauth
-- oauth 2.0 authorization code flow initiation.
-- initiate the device authorization grant flow.
-- revoke an oauth access or refresh token.
-- initiate the oauth 2.0 authorization code flow with optional pkce support.
-- get user info
 - authentication
-- token introspection and validation.
-- get information about the current oauth access token including scopes and expiration.
-- initiate the oauth 2.0 authorization code flow.
-- code
+- authenticated user profile information.
 - initiate the device authorization grant flow for input-constrained devices.
-- get profile information about the currently authenticated user.
+- gitlab
+- device authorization grant flow for input-constrained devices.
 - exchange token
-- platform
-- source control
+- code
+- initiate the oauth 2.0 authorization code flow with optional pkce support.
+- oauth 2.0 authorization code flow initiation.
 - revoke token
-- oauth token exchange and creation.
+- revoke an existing oauth access or refresh token.
+- initiate the oauth 2.0 authorization code flow.
+- token introspection and validation.
+- platform
+- authorize device
+- get user info
+- source control
 - get profile information about the authenticated user.
+- exchange an authorization code, device code, or refresh token for an access token.
+- get profile information about the currently authenticated user.
+- oauth
+- tokens
+- authorize oauth
+- get token info
+- initiate the device authorization grant flow.
+- oauth token exchange and creation.
+- get information about the current oauth access token including scopes and expiration.
+- token revocation.
+- software development
+- get information about the current access token.
+- identity
+- revoke an oauth access or refresh token.
 slug: authentication-and-identity
 tags:
 - Gitlab

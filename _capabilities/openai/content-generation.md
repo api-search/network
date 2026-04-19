@@ -33,46 +33,46 @@ personas: []
 provider_name: OpenAI
 provider_slug: openai
 search_terms:
-- generate vector embeddings for text input
-- generate an image
-- generate a conversational response using gpt models
-- models list
-- create image
-- create speech
-- embeddings create
-- audio create transcription
-- transcribe audio to text using whisper
-- ai
+- audio create speech
+- list models
+- chat completion
+- openai
+- create embeddings
+- artificial intelligence
 - generate an image from a text prompt using dall-e
-- t1
-- create embedding
+- translate audio to english text
+- audio create translation
+- text to speech
+- available models
 - images create
 - create chat completion
-- create a chat completion
-- audio create speech
-- chat completion
-- content generation
-- text embeddings
-- large language models
-- list models
-- list all available openai models
-- openai
-- models get
-- generate audio from text using tts models
-- images create variation
-- generate speech
-- audio create translation
-- artificial intelligence
-- chat create completion
-- get details of a specific model
-- text to speech
-- translate audio to english text
-- create a variation of an existing image
-- available models
-- edit an existing image with a text prompt
+- generate a conversational response using gpt models
 - image generation
+- create a variation of an existing image
+- t1
+- get details of a specific model
+- large language models
+- chat create completion
+- text embeddings
+- generate vector embeddings for text input
+- create embedding
+- create a chat completion
+- images create variation
+- generate an image
+- generate audio from text using tts models
+- models list
+- models get
+- ai
+- embeddings create
+- list all available openai models
+- generate speech
+- create speech
+- content generation
 - images edit
-- create embeddings
+- create image
+- audio create transcription
+- edit an existing image with a text prompt
+- transcribe audio to text using whisper
 slug: content-generation
 tags:
 - OpenAI
