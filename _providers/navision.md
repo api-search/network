@@ -177,7 +177,7 @@ features:
   name: Environment Administration
 - description: Automate company setup, extension management, and user provisioning
   name: Tenant Automation
-image: https://example.com/navision-logo.png
+image: /assets/icons/navision.png
 integrations:
 - description: Deep integration with Excel, Outlook, and Teams for business workflows
   name: Microsoft 365
@@ -234,3 +234,4 @@ use_cases:
 - description: Extract general ledger entries and account data for custom reporting
   name: Financial Reporting
 ---
+

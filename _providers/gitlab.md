@@ -280,7 +280,7 @@ features:
   name: Repository Management
 - description: Create and configure groups, subgroups, and projects with membership and permissions.
   name: Group and Project Management
-image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: /assets/icons/gitlab.png
 integrations: []
 jsonld:
 - class_count: 38
@@ -334,3 +334,4 @@ use_cases:
 - description: Extract project analytics, contribution data, and productivity metrics.
   name: Analytics and Reporting
 ---
+

@@ -88,7 +88,7 @@ features:
   name: Cloud Deployment
 - description: Full REST API support for control plane operations enabling automation and integration with DevOps pipelines and orchestration tools.
   name: REST API Management
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: /assets/icons/veritas-infoscale.png
 integrations:
 - description: Deep integration with Oracle RAC and single-instance databases for storage management, availability, and disaster recovery.
   name: Oracle Database
@@ -148,3 +148,4 @@ use_cases:
 - description: Protect databases with application-consistent snapshots, online data migration, and real-time replication without application downtime.
   name: Database Protection
 ---
+

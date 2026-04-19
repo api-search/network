@@ -117,7 +117,7 @@ features:
 - Work management and project tracking with Workfront
 - Event-driven integrations with I/O Events
 - Stock asset search and licensing
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: /assets/icons/adobe.png
 integrations:
 - Microsoft 365 and Teams integration
 - Salesforce CRM integration
@@ -174,3 +174,4 @@ use_cases:
 - Managing digital content and assets across channels
 - Building and managing e-commerce storefronts
 ---
+

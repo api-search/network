@@ -53,7 +53,7 @@ features:
 - Remotely execute Apps Script functions from external applications
 - Monitor script execution processes and metrics
 - Version management with immutable snapshots of script code
-image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: /assets/icons/google-apps-script.png
 integrations:
 - Google Workspace apps including Sheets, Docs, Slides, Gmail, and Calendar
 - Google Cloud Platform services for extended functionality
@@ -99,3 +99,4 @@ use_cases:
 - Monitoring script execution health and performance metrics
 - Integrating Apps Script automation into CI/CD pipelines
 ---
+

@@ -43,7 +43,7 @@ features:
 - name: Batch File Upload
 - name: Data Export
 - name: OAuth2 Authentication
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: /assets/icons/productiv.png
 integrations:
 - name: Okta
 - name: Azure Active Directory
@@ -90,3 +90,4 @@ use_cases:
 - name: Integrate Custom Applications
 - name: Export App Portfolio Data
 ---
+

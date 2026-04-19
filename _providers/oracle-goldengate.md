@@ -98,7 +98,7 @@ features:
 - Stream analytics for real-time event processing
 - Data verification and repair with Veridata
 - Big data target support including Kafka, HDFS, and MongoDB
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: /assets/icons/oracle-goldengate.png
 integrations:
 - Oracle Database
 - MySQL
@@ -173,3 +173,4 @@ use_cases:
 - Data verification and compliance auditing
 - Real-time analytics pipeline construction
 ---
+

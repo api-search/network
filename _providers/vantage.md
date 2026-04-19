@@ -85,7 +85,7 @@ features:
 - name: Segments
 - name: Teams and Access Control
 - name: Cloud Pricing Database
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: /assets/icons/vantage.png
 integrations:
 - name: AWS
 - name: Azure
@@ -143,3 +143,4 @@ use_cases:
 - name: Generate Financial Reports
 - name: Allocate Costs by Team
 ---
+

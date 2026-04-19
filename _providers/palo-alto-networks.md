@@ -433,7 +433,7 @@ features:
   name: Threat Intelligence
 - description: Hierarchical tenant management with delegated administration, aggregate monitoring, and shared policy for MSSPs and large enterprises.
   name: Multi-Tenant Management
-image: ''
+image: /assets/icons/palo-alto-networks.png
 integrations:
 - description: Splunk App and Add-on for ingesting PAN-OS, Prisma Cloud, and Cortex logs with pre-built dashboards, reports, and data models.
   name: Splunk
@@ -731,3 +731,4 @@ use_cases:
 - description: Manage security across tenant hierarchies with aggregate monitoring, shared notifications, and delegated administration for MSSPs.
   name: Multi-Tenant Security Operations
 ---
+

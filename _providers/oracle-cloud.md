@@ -271,7 +271,7 @@ features:
   name: Generative AI
 - description: Managed Jupyter notebooks and ML model lifecycle management platform
   name: Data Science
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: /assets/icons/oracle-cloud.png
 integrations:
 - description: Infrastructure as Code provisioning with the OCI Terraform Provider
   name: Terraform
@@ -474,3 +474,4 @@ use_cases:
 - description: Connect OCI with AWS, Azure, and Google Cloud using FastConnect and partnerships
   name: Multi-Cloud Networking
 ---
+

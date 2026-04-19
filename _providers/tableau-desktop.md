@@ -62,7 +62,7 @@ features:
   name: Metadata and Lineage
 - description: Automate Tableau Server operations with the Python Server Client library.
   name: Python Automation
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: /assets/icons/tableau-desktop.png
 integrations:
 - description: Native integration with Salesforce CRM for embedded analytics and data connectivity.
   name: Salesforce
@@ -100,3 +100,4 @@ use_cases:
 - description: Track data lineage and content dependencies using the Metadata API for impact analysis.
   name: Data Governance
 ---
+

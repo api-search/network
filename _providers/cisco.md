@@ -84,7 +84,7 @@ features:
   name: Zero Trust Security
 - description: Define and manage network infrastructure programmatically using APIs and configuration management tools.
   name: Infrastructure as Code
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: /assets/icons/cisco.png
 integrations:
 - description: Network automation modules for Cisco platforms including IOS, NX-OS, ACI, and Meraki.
   name: Ansible
@@ -135,3 +135,4 @@ use_cases:
 - description: Collect and analyze network telemetry data for performance monitoring and troubleshooting.
   name: Network Monitoring and Analytics
 ---
+

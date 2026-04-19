@@ -124,7 +124,7 @@ features:
   name: Integration Analytics
 - description: Native Fast Healthcare Interoperability Resources support for healthcare integration workflows.
   name: FHIR Support
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: /assets/icons/oracle-integration.png
 integrations:
 - description: Native adapter for Oracle Enterprise Resource Planning Cloud including financials, procurement, and supply chain.
   name: Oracle ERP Cloud
@@ -210,3 +210,4 @@ use_cases:
 - description: Process events and messages in real time using event-driven integration patterns and stream analytics.
   name: Real-Time Event Processing
 ---
+

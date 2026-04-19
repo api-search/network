@@ -181,7 +181,7 @@ features:
 - name: Agent Handler
 - name: Sandbox Accounts
 - name: File Picker
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: /assets/icons/merge.png
 integrations:
 - description: HR platform integration via HRIS unified API.
   name: Workday
@@ -284,3 +284,4 @@ use_cases:
 - name: Customer support monitoring
 - name: Document management
 ---
+

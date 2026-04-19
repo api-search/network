@@ -132,7 +132,7 @@ features:
   name: Dimension And Metric Exploration
 - description: Apply tags to segments, metrics, and other components for organization and discovery.
   name: Component Tagging
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: /assets/icons/adobe-analytics.png
 integrations:
 - description: Send Analytics data to Experience Platform for unified customer profiles and journey orchestration.
   name: Adobe Experience Platform
@@ -205,3 +205,4 @@ use_cases:
 - description: Combine web, mobile, and offline data for unified cross-channel analytics reporting.
   name: Cross-Channel Reporting
 ---
+

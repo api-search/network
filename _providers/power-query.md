@@ -77,7 +77,7 @@ features:
   name: Incremental Refresh
 - description: Execute Power Query transformations programmatically in Microsoft Fabric pipelines.
   name: Microsoft Fabric Integration
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: /assets/icons/power-query.png
 integrations:
 - description: Native integration with Power BI for data preparation and visualization workflows.
   name: Power BI
@@ -114,3 +114,4 @@ use_cases:
 - description: Implement data quality rules and transformations for consistent enterprise data.
   name: Data Quality Management
 ---
+

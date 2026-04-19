@@ -96,7 +96,7 @@ features:
   name: Collaboration
 - description: Integration with Power BI, Power Automate, and Power Apps for extended project management scenarios.
   name: Power Platform Integration
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: /assets/icons/microsoft-project.png
 integrations:
 - description: View and manage project tasks directly within Microsoft Teams channels and tabs.
   name: Microsoft Teams
@@ -166,3 +166,4 @@ use_cases:
 - description: Generate audit trails and compliance reports for project governance and regulatory requirements.
   name: Compliance Reporting
 ---
+

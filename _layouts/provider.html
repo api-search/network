@@ -39,7 +39,7 @@ layout: default
 </nav>
 
 <div class="provider-hero">
-  {% if page.image %}<img src="{{ page.image }}" alt="{{ page.name }}" style="height: 48px; margin-bottom: 1rem;">{% endif %}
+  {% if page.image %}<img src="{{ page.image }}" alt="{{ page.name }} logo" width="48" height="48" loading="lazy" style="height: 48px; width: auto; margin-bottom: 1rem;">{% endif %}
   <h1 class="provider-title">{{ page.name }}</h1>
   {% if page.description %}<p class="provider-desc">{{ page.description }}</p>{% endif %}
   <div class="stat-badges">
@@ -210,5 +210,24 @@ layout: default
   {% if page.description %}"description": {{ page.description | jsonify }},{% endif %}
   {% if page.image %}"logo": {{ page.image | jsonify }},{% endif %}
   {% if page.tags.size > 0 %}"keywords": {{ page.tags | join: ', ' | jsonify }}{% endif %}
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "{{ site.url }}/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": {{ page.name | jsonify }}
+    }
+  ]
 }
 </script>

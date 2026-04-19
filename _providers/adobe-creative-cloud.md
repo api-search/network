@@ -156,7 +156,7 @@ features:
   name: Cloud Image Processing
 - description: Generate PDFs and Word documents by merging JSON data into templates.
   name: Document Generation
-image: ''
+image: /assets/icons/adobe-creative-cloud.png
 integrations:
 - description: PDF Services integration with Word, Excel, and PowerPoint for document conversion.
   name: Microsoft Office
@@ -226,3 +226,4 @@ use_cases:
 - description: Embed Adobe Stock search and licensing into content management and publishing platforms.
   name: Stock Asset Integration
 ---
+

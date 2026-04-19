@@ -63,7 +63,7 @@ features:
   name: Batch Requests
 - description: Filter, select, expand, and order data using OData query operators.
   name: OData Query Support
-image: https://example.com/sharepoint-logo.png
+image: /assets/icons/sharepoint.png
 integrations:
 - description: Native integration with Teams, OneDrive, Outlook, and other Microsoft 365 apps.
   name: Microsoft 365
@@ -126,3 +126,4 @@ use_cases:
 - description: Trigger and manage automated workflows based on SharePoint events.
   name: Power Automate Flows
 ---
+

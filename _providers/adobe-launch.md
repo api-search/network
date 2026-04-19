@@ -71,7 +71,7 @@ features:
 - JSON API specification-based programmatic management
 - Real-time data collection to Edge Network
 - Media tracking and analytics integration
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: /assets/icons/adobe-launch.png
 integrations:
 - Adobe Analytics
 - Adobe Target
@@ -134,3 +134,4 @@ use_cases:
 - A/B testing and personalization data routing
 - Cross-platform data collection orchestration
 ---
+

@@ -73,7 +73,7 @@ features:
   name: Kong Konnect Cloud Platform
 - description: Enterprise service mesh built on Kuma and Envoy for mTLS, traffic policies, and multi-zone deployments.
   name: Service Mesh with Kong Mesh
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: /assets/icons/kong.png
 integrations:
 - description: Deploy Kong Gateway as a Kubernetes Ingress Controller with CRD-based configuration for cloud-native environments.
   name: Kubernetes
@@ -127,3 +127,4 @@ use_cases:
 - description: Protect backend services with configurable rate limiting, request size limits, and traffic shaping policies.
   name: Rate Limiting and Traffic Control
 ---
+

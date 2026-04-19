@@ -96,7 +96,7 @@ features:
   name: AI Unlimited
 - description: Support for Apache Iceberg and open table formats for lakehouse analytics.
   name: Open Table Formats
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: /assets/icons/teradata.png
 integrations:
 - description: dbt adapter for Teradata Vantage enabling data transformations using dbt workflows.
   name: dbt
@@ -162,3 +162,4 @@ use_cases:
 - description: Real-time data ingestion and analytics with QueryGrid cross-system query federation.
   name: Real-Time Data Integration
 ---
+

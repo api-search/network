@@ -105,7 +105,7 @@ features:
   name: Security Testing Orchestration
 - description: Backstage-powered developer portal for software catalog, self-service workflows, and scorecards.
   name: Internal Developer Portal
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: /assets/icons/harness.png
 integrations:
 - description: Source code management, GitHub Actions, and GitHub App integration for CI/CD workflows.
   name: GitHub
@@ -164,3 +164,4 @@ use_cases:
 - description: Manage SLOs, monitor service health, and validate resilience with chaos engineering.
   name: SRE and Reliability
 ---
+

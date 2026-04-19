@@ -254,7 +254,7 @@ features:
 - API Gateway with authentication, rate limiting, and request transformation
 - Integrated DevOps with CI/CD pipelines and deployment strategies
 - Container Engine for Kubernetes with serverless virtual nodes
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: /assets/icons/oracle.png
 integrations:
 - Terraform for infrastructure as code provisioning
 - Apache Kafka compatibility via OCI Streaming
@@ -305,3 +305,4 @@ use_cases:
 - Monitoring and observability across cloud infrastructure
 - Securing applications with WAF, IAM, and Vault services
 ---
+

@@ -98,7 +98,7 @@ features:
   name: Meta Pixel
 - description: Server-side event tracking for ad measurement without browser dependencies.
   name: Conversions API
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: /assets/icons/facebook.png
 integrations:
 - description: Connect Shopify stores with Facebook and Instagram shops for social commerce.
   name: Shopify
@@ -159,3 +159,4 @@ use_cases:
 - description: Integrate product catalogs and shopping experiences with Facebook and Instagram shops.
   name: E-Commerce Integration
 ---
+

@@ -66,7 +66,7 @@ features:
   name: Code Search
 - description: Share code snippets with version history.
   name: Snippets
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: /assets/icons/bitbucket.png
 integrations:
 - description: Deep integration with Jira for issue tracking and project management.
   name: Jira Software
@@ -127,3 +127,4 @@ use_cases:
 - description: Integrate security scanning into CI/CD pipelines for vulnerability detection.
   name: Security Scanning
 ---
+

@@ -89,7 +89,7 @@ features:
   name: OAuth 2.0 Authentication
 - description: Embed 2D and 3D design viewers in web applications with the Viewer SDK.
   name: Web-Based Viewer
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: /assets/icons/autocad.png
 integrations:
 - description: Integration with ACC for construction project management and design coordination.
   name: Autodesk Construction Cloud
@@ -127,3 +127,4 @@ use_cases:
 - description: Build custom AutoCAD plugins and extensions using ObjectARX, .NET, AutoLISP, or JavaScript APIs.
   name: Custom CAD Applications
 ---
+

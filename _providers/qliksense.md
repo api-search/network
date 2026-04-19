@@ -95,7 +95,7 @@ features:
   name: Real-Time Webhooks
 - description: Deploy Qlik Cloud across AWS, Azure, and GCP regions with global availability.
   name: Multi-Cloud Deployment
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: /assets/icons/qliksense.png
 integrations:
 - description: Direct connectivity for analytics on Snowflake cloud data warehouse.
   name: Snowflake
@@ -134,3 +134,4 @@ use_cases:
 - description: Manage multiple Qlik Cloud tenants programmatically for SaaS and enterprise deployments.
   name: Multi-Tenant Management
 ---
+

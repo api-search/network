@@ -110,7 +110,7 @@ features:
 - RESTful API access through Integrated SOA Gateway
 - PL/SQL API framework for programmatic data access
 - Multi-org and multi-currency support
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: /assets/icons/oracle-e-business-suite.png
 integrations:
 - Oracle SOA Suite for service orchestration
 - Oracle Integration Cloud for hybrid integration
@@ -178,3 +178,4 @@ use_cases:
 - Build custom integrations via REST and SOAP services
 - Synchronize EBS data with external systems
 ---
+

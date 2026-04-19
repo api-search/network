@@ -538,7 +538,7 @@ features:
   name: Custom Objects and Fields
 - description: Event-driven webhooks and a marketplace of integrations for connecting Zendesk with third-party tools.
   name: Webhooks and Integrations
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: /assets/icons/zendesk.png
 integrations:
 - description: Bidirectional sync between Zendesk Support and Salesforce CRM for unified customer data.
   name: Salesforce
@@ -597,3 +597,4 @@ use_cases:
 - description: Redact sensitive information from tickets and chats, manage audit logs, and enforce data retention policies.
   name: Compliance and Data Privacy
 ---
+

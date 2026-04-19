@@ -103,7 +103,7 @@ features:
   name: Batch Processing
 - description: Create, manage, and reuse symbol instances across documents.
   name: Symbol Libraries
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: /assets/icons/adobe-illustrator.png
 integrations: []
 jsonld:
 - class_count: 15
@@ -151,3 +151,4 @@ use_cases:
 - description: Build UXP plugin panels for specialized workflows and asset management.
   name: Custom Tool Panels
 ---
+

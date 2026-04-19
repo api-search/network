@@ -101,7 +101,7 @@ features:
   name: Scaling
 - description: Pre-warmed instances, VNET integration, and unlimited execution duration for enterprise workloads.
   name: Premium Plan
-image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: /assets/icons/microsoft-azure-functions.png
 integrations:
 - description: Front Azure Functions with API Management for rate limiting, authentication, and developer portal.
   name: Azure API Management
@@ -171,3 +171,4 @@ use_cases:
 - description: Process IoT device telemetry and events with Event Hub and IoT Hub triggers.
   name: IoT Backend
 ---
+

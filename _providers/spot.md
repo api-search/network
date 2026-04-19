@@ -62,7 +62,7 @@ features:
   name: Intelligent Autoscaling
 - description: Support for stateful applications with persistent storage, ENI, and IP preservation during instance replacements.
   name: Stateful Workload Management
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: /assets/icons/spot.png
 integrations:
 - description: Deep integration with EC2, EKS, ECS, EMR, Auto Scaling Groups, and Savings Plans for AWS workload optimization.
   name: AWS
@@ -141,3 +141,4 @@ use_cases:
 - description: Unified access control, audit logging, and policy management across AWS, Azure, and GCP accounts.
   name: Multi-Cloud Governance
 ---
+

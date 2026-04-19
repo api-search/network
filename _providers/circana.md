@@ -119,7 +119,7 @@ features:
   name: Cross-Industry Coverage
 - description: Industry-only predictive market structure based on actual shopper behavior for new product forecasts within 10% accuracy.
   name: Predictive Market Structure
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: /assets/icons/circana.png
 integrations:
 - description: Access Circana POS and panel data directly within Snowflake Data Cloud for seamless data sharing and collaboration.
   name: Snowflake
@@ -189,3 +189,4 @@ use_cases:
 - description: Unite retail, CPG, foodservice, and consumption data for a complete picture of food and beverage market dynamics.
   name: Foodservice Intelligence
 ---
+

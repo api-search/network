@@ -1,0 +1,267 @@
+{
+  "adobe": {
+    "file": "adobe.png",
+    "generated": "2026-04-18",
+    "name": "Adobe"
+  },
+  "adobe-analytics": {
+    "file": "adobe-analytics.png",
+    "generated": "2026-04-18",
+    "name": "Adobe Analytics"
+  },
+  "adobe-campaign": {
+    "file": "adobe-campaign.png",
+    "generated": "2026-04-18",
+    "name": "adobe-campaign"
+  },
+  "adobe-creative-cloud": {
+    "file": "adobe-creative-cloud.png",
+    "generated": "2026-04-18",
+    "name": "Adobe Creative Cloud"
+  },
+  "adobe-creative-suite": {
+    "file": "adobe-creative-suite.png",
+    "generated": "2026-04-18",
+    "name": "Adobe Creative Suite"
+  },
+  "adobe-illustrator": {
+    "file": "adobe-illustrator.png",
+    "generated": "2026-04-18",
+    "name": "Adobe Illustrator"
+  },
+  "adobe-launch": {
+    "file": "adobe-launch.png",
+    "generated": "2026-04-18",
+    "name": "Adobe Launch"
+  },
+  "adobe-photoshop": {
+    "file": "adobe-photoshop.png",
+    "generated": "2026-04-18",
+    "name": "Adobe Photoshop"
+  },
+  "amazon-ecs": {
+    "file": "amazon-ecs.png",
+    "generated": "2026-04-18",
+    "name": "Amazon ECS"
+  },
+  "ansible-automation-platform": {
+    "file": "ansible-automation-platform.png",
+    "generated": "2026-04-18",
+    "name": "Ansible Automation Platform"
+  },
+  "autocad": {
+    "file": "autocad.png",
+    "generated": "2026-04-18",
+    "name": "AutoCAD"
+  },
+  "azure-log-analytics": {
+    "file": "azure-log-analytics.png",
+    "generated": "2026-04-18",
+    "name": "Azure Log Analytics"
+  },
+  "bitbucket": {
+    "file": "bitbucket.png",
+    "generated": "2026-04-18",
+    "name": "Bitbucket"
+  },
+  "bloomberg-aim": {
+    "file": "bloomberg-aim.png",
+    "generated": "2026-04-18",
+    "name": "Bloomberg AIM"
+  },
+  "bloomberg-news": {
+    "file": "bloomberg-news.png",
+    "generated": "2026-04-18",
+    "name": "Bloomberg News"
+  },
+  "circana": {
+    "file": "circana.png",
+    "generated": "2026-04-18",
+    "name": "Circana"
+  },
+  "cisco": {
+    "file": "cisco.png",
+    "generated": "2026-04-18",
+    "name": "Cisco"
+  },
+  "cloudflare": {
+    "file": "cloudflare.png",
+    "generated": "2026-04-18",
+    "name": "Cloudflare"
+  },
+  "concur": {
+    "file": "concur.png",
+    "generated": "2026-04-18",
+    "name": "SAP Concur"
+  },
+  "crystal-reports": {
+    "file": "crystal-reports.png",
+    "generated": "2026-04-18",
+    "name": "Crystal Reports"
+  },
+  "facebook": {
+    "file": "facebook.png",
+    "generated": "2026-04-18",
+    "name": "Facebook"
+  },
+  "gitlab": {
+    "file": "gitlab.png",
+    "generated": "2026-04-18",
+    "name": "GitLab"
+  },
+  "google-apps-script": {
+    "file": "google-apps-script.png",
+    "generated": "2026-04-18",
+    "name": "Google Apps Script"
+  },
+  "harness": {
+    "file": "harness.png",
+    "generated": "2026-04-18",
+    "name": "Harness"
+  },
+  "instagram": {
+    "file": "instagram.png",
+    "generated": "2026-04-18",
+    "name": "Instagram"
+  },
+  "kong": {
+    "file": "kong.png",
+    "generated": "2026-04-18",
+    "name": "Kong"
+  },
+  "lightroom": {
+    "file": "lightroom.png",
+    "generated": "2026-04-18",
+    "name": "Adobe Lightroom"
+  },
+  "merge": {
+    "file": "merge.png",
+    "generated": "2026-04-18",
+    "name": "Merge"
+  },
+  "microsoft-azure-functions": {
+    "file": "microsoft-azure-functions.png",
+    "generated": "2026-04-18",
+    "name": "Microsoft Azure Functions"
+  },
+  "microsoft-net": {
+    "file": "microsoft-net.png",
+    "generated": "2026-04-18",
+    "name": "Microsoft .NET"
+  },
+  "microsoft-project": {
+    "file": "microsoft-project.png",
+    "generated": "2026-04-18",
+    "name": "Microsoft Project"
+  },
+  "microsoft-word": {
+    "file": "microsoft-word.png",
+    "generated": "2026-04-18",
+    "name": "Microsoft Word"
+  },
+  "navision": {
+    "file": "navision.png",
+    "generated": "2026-04-18",
+    "name": "Microsoft Dynamics NAV"
+  },
+  "oracle": {
+    "file": "oracle.png",
+    "generated": "2026-04-18",
+    "name": "Oracle"
+  },
+  "oracle-cloud": {
+    "file": "oracle-cloud.png",
+    "generated": "2026-04-18",
+    "name": "Oracle Cloud Infrastructure"
+  },
+  "oracle-e-business-suite": {
+    "file": "oracle-e-business-suite.png",
+    "generated": "2026-04-18",
+    "name": "Oracle E-Business Suite"
+  },
+  "oracle-goldengate": {
+    "file": "oracle-goldengate.png",
+    "generated": "2026-04-18",
+    "name": "Oracle GoldenGate"
+  },
+  "oracle-integration": {
+    "file": "oracle-integration.png",
+    "generated": "2026-04-18",
+    "name": "Oracle Integration"
+  },
+  "palo-alto-networks": {
+    "file": "palo-alto-networks.png",
+    "generated": "2026-04-18",
+    "name": "Palo Alto Networks"
+  },
+  "power-query": {
+    "file": "power-query.png",
+    "generated": "2026-04-18",
+    "name": "Power Query"
+  },
+  "productiv": {
+    "file": "productiv.png",
+    "generated": "2026-04-18",
+    "name": "Productiv"
+  },
+  "qliksense": {
+    "file": "qliksense.png",
+    "generated": "2026-04-18",
+    "name": "Qlik Sense APIs"
+  },
+  "red-hat-ansible-automation-platform": {
+    "file": "red-hat-ansible-automation-platform.png",
+    "generated": "2026-04-18",
+    "name": "Red Hat Ansible Automation Platform"
+  },
+  "sap-bw": {
+    "file": "sap-bw.png",
+    "generated": "2026-04-18",
+    "name": "SAP BW"
+  },
+  "sharepoint": {
+    "file": "sharepoint.png",
+    "generated": "2026-04-18",
+    "name": "Microsoft SharePoint"
+  },
+  "spot": {
+    "file": "spot.png",
+    "generated": "2026-04-18",
+    "name": "Spot"
+  },
+  "tableau-desktop": {
+    "file": "tableau-desktop.png",
+    "generated": "2026-04-18",
+    "name": "Tableau Desktop"
+  },
+  "teradata": {
+    "file": "teradata.png",
+    "generated": "2026-04-18",
+    "name": "Teradata"
+  },
+  "vantage": {
+    "file": "vantage.png",
+    "generated": "2026-04-18",
+    "name": "Vantage"
+  },
+  "veritas-infoscale": {
+    "file": "veritas-infoscale.png",
+    "generated": "2026-04-18",
+    "name": "Veritas InfoScale"
+  },
+  "visualforce": {
+    "file": "visualforce.png",
+    "generated": "2026-04-18",
+    "name": "Visualforce"
+  },
+  "whatsapp": {
+    "file": "whatsapp.png",
+    "generated": "2026-04-18",
+    "name": "WhatsApp"
+  },
+  "zendesk": {
+    "file": "zendesk.png",
+    "generated": "2026-04-18",
+    "name": "Zendesk"
+  }
+}

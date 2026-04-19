@@ -51,7 +51,7 @@ common:
 created: '2024-01-01'
 description: APIs for Adobe Lightroom cloud services, enabling developers to access and manipulate photos, albums, and metadata programmatically. The Lightroom APIs are also available as part of Adobe Firefly Services for AI-powered image editing operations such as auto tone, auto straighten, and preset application.
 features: []
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: /assets/icons/lightroom.png
 integrations: []
 jsonld:
 - class_count: 0
@@ -102,3 +102,4 @@ tags:
 url: https://raw.githubusercontent.com/api-evangelist/lightroom/refs/heads/main/apis.yml
 use_cases: []
 ---
+

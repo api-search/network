@@ -51,7 +51,7 @@ features:
   name: Process Chain Management
 - description: Programmatic access to InfoProvider metadata, hierarchies, and data model definitions.
   name: Metadata Services
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: /assets/icons/sap-bw.png
 integrations:
 - description: Integration with SAP Analytics Cloud for modern analytics and planning on BW data.
   name: SAP Analytics Cloud
@@ -84,3 +84,4 @@ use_cases:
 - description: Enable business users to access BW data through Analysis for Office API integrations.
   name: Self-Service Analytics
 ---
+

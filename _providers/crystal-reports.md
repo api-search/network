@@ -56,7 +56,7 @@ features:
   name: Data Source Connectivity
 - description: Manage report server instances, folders, users, and security via REST API.
   name: Report Server Management
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: /assets/icons/crystal-reports.png
 integrations: []
 jsonld:
 - class_count: 22
@@ -106,3 +106,4 @@ use_cases:
 - description: Embed Crystal Reports viewer into custom applications for end-user reporting.
   name: Embedded Reporting
 ---
+

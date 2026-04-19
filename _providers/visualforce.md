@@ -50,7 +50,7 @@ features:
   name: PDF Generation
 - description: Build dynamic HTML email templates with merge fields and conditional content.
   name: Email Templates
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: /assets/icons/visualforce.png
 integrations:
 - description: Visualforce pages can be embedded in Lightning Experience as components and tabs.
   name: Salesforce Lightning
@@ -85,3 +85,4 @@ use_cases:
 - description: Create multi-step form workflows for complex data entry processes.
   name: Wizard-Style Forms
 ---
+

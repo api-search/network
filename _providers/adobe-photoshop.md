@@ -114,7 +114,7 @@ features:
   name: Product Crop
 - description: Apply realistic depth-of-field blur effects using AI depth estimation.
   name: Depth Blur
-image: ''
+image: /assets/icons/adobe-photoshop.png
 integrations:
 - description: Native integration with other Creative Cloud apps via shared libraries and cloud storage.
   name: Adobe Creative Cloud
@@ -179,3 +179,4 @@ use_cases:
 - description: Connect digital asset management systems with Photoshop for automated processing pipelines.
   name: DAM Integration
 ---
+

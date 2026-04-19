@@ -64,7 +64,7 @@ features:
 - WebSocket Streaming for Live Market Data
 - Instrument and Field Search
 - Scheduled Data Delivery via Triggers
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: /assets/icons/bloomberg-aim.png
 integrations:
 - Bloomberg Terminal
 - Excel via Bloomberg Add-In
@@ -120,3 +120,4 @@ use_cases:
 - Historical Data Analysis and Backtesting
 - Multi-Asset Trade Execution Automation
 ---
+

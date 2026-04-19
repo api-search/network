@@ -62,7 +62,7 @@ features:
   name: Execution Environments
 - description: Distributed automation execution architecture for scaling across global infrastructure.
   name: Automation Mesh
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: /assets/icons/red-hat-ansible-automation-platform.png
 integrations:
 - description: Container platform integration for deploying and managing Ansible on Kubernetes.
   name: Red Hat OpenShift
@@ -101,3 +101,4 @@ use_cases:
 - description: Enable self-service automation ordering through the services catalog with approval workflows.
   name: Self-Service IT
 ---
+

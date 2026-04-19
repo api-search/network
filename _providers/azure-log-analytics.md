@@ -101,7 +101,7 @@ features:
   name: Workspace Failover
 - description: Export query results to Excel, CSV, Power BI, and Grafana dashboards for external analysis.
   name: Data Export
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: /assets/icons/azure-log-analytics.png
 integrations:
 - description: Core integration with Azure Monitor for unified observability across metrics, logs, and traces.
   name: Azure Monitor
@@ -172,3 +172,4 @@ use_cases:
 - description: Analyze resource usage patterns and log data to identify cost-saving opportunities across Azure deployments.
   name: Cost Optimization
 ---
+

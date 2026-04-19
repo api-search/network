@@ -59,7 +59,7 @@ features:
   name: Enterprise Data Distribution
 - description: SDKs available in Python, Java, C++, C#, and C for cross-platform integration.
   name: Multi-Language SDK Support
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: /assets/icons/bloomberg-news.png
 integrations:
 - description: Bloomberg Excel Add-In for spreadsheet-based data analysis and modeling.
   name: Excel
@@ -101,3 +101,4 @@ use_cases:
 - description: Integrate Bloomberg data into portfolio management systems for real-time monitoring.
   name: Portfolio Management
 ---
+

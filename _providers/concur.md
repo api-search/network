@@ -81,7 +81,7 @@ features:
   name: Event Notifications
 - description: Standards-based user provisioning and management with SCIM 2.0 protocol support.
   name: SCIM User Provisioning
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: /assets/icons/concur.png
 integrations:
 - description: Financial posting integration for automated expense and invoice data transfer to SAP ERP.
   name: SAP S/4HANA
@@ -132,3 +132,4 @@ use_cases:
 - description: Automate Concur user provisioning as part of employee onboarding workflows.
   name: Employee Onboarding
 ---
+

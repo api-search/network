@@ -147,7 +147,7 @@ features:
   name: Encryption
 - description: Route conversations to multiple agents with conversation assignment.
   name: Multi-Agent Support
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: /assets/icons/whatsapp.png
 integrations:
 - description: Manage WhatsApp alongside Facebook and Instagram from a unified dashboard.
   name: Meta Business Suite
@@ -205,3 +205,4 @@ use_cases:
 - description: Send appointment reminders, test results, and health tips to patients.
   name: Healthcare Communication
 ---
+

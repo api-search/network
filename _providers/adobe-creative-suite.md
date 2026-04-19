@@ -150,7 +150,7 @@ features:
   name: Embeddable Creative Tools
 - description: UXP framework for building modern plugins across Creative Cloud apps.
   name: Plugin Development
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: /assets/icons/adobe-creative-suite.png
 integrations: []
 jsonld:
 - class_count: 56
@@ -205,3 +205,4 @@ use_cases:
 - description: Export optimized SVGs, images, and fonts for web applications.
   name: Web Asset Pipeline
 ---
+

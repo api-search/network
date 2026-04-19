@@ -65,7 +65,7 @@ features:
   name: Event-Driven Automation
 - description: Discover, install, and manage certified Ansible content collections from Automation Hub.
   name: Content Collections
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: /assets/icons/ansible-automation-platform.png
 integrations:
 - description: Integration with Red Hat Satellite for content management and patch automation.
   name: Red Hat Satellite
@@ -118,3 +118,4 @@ use_cases:
 - description: Automate network device configuration and management across multi-vendor environments.
   name: Network Automation
 ---
+

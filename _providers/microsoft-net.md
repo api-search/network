@@ -74,7 +74,7 @@ features:
   name: Cloud Native Support
 - description: Apply code changes to running applications without restarting for faster development cycles.
   name: Hot Reload
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: /assets/icons/microsoft-net.png
 integrations:
 - description: Deep integration with Microsoft Azure cloud services including App Service, Functions, and Container Apps.
   name: Azure
@@ -115,3 +115,4 @@ use_cases:
 - description: Build Windows desktop applications using WPF, WinForms, or .NET MAUI for cross-platform desktop.
   name: Desktop Applications
 ---
+

@@ -81,7 +81,7 @@ features:
   name: Webhooks
 - description: Send private direct messages in response to public comments on your Instagram media.
   name: Private Replies
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: /assets/icons/instagram.png
 integrations:
 - description: Unified management of Instagram and Facebook content, messaging, and advertising through the Meta platform.
   name: Facebook
@@ -145,3 +145,4 @@ use_cases:
 - description: Embed Instagram posts, reels, and galleries on websites and blogs using oEmbed.
   name: Website Embedding
 ---
+

@@ -307,7 +307,7 @@ features:
 - Video streaming and image optimization
 - Serverless databases (D1, KV, Durable Objects)
 - Real-time analytics and logging
-image: ''
+image: /assets/icons/cloudflare.png
 integrations:
 - Terraform provider for infrastructure as code
 - Pulumi provider for cloud engineering
@@ -432,3 +432,4 @@ use_cases:
 - Build real-time collaborative applications
 - Protect APIs with schema validation and rate limiting
 ---
+

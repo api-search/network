@@ -97,7 +97,7 @@ features:
   name: Add-In Extensibility
 - description: Low-level manipulation of Word document structure using the ECMA-376 Open XML standard.
   name: Open XML Processing
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: /assets/icons/microsoft-word.png
 integrations:
 - description: Store, manage, and collaborate on Word documents through SharePoint document libraries and workflows.
   name: Microsoft SharePoint
@@ -160,3 +160,4 @@ use_cases:
 - description: Ensure regulatory compliance by automating document formatting, metadata tagging, and archiving.
   name: Compliance Document Management
 ---
+

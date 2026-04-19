@@ -106,7 +106,7 @@ features:
   name: Task Definitions
 - description: Monitor container performance metrics and logs with CloudWatch Container Insights for operational visibility.
   name: Container Insights
-image: ''
+image: /assets/icons/amazon-ecs.png
 integrations:
 - description: Serverless compute engine for running containers without managing underlying EC2 instances.
   name: AWS Fargate
@@ -160,3 +160,4 @@ use_cases:
 - description: Deploy ML models as containerized inference endpoints with auto-scaling based on demand.
   name: Machine Learning Inference
 ---
+
