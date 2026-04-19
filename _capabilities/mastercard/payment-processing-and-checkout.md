@@ -39,43 +39,43 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- create installment plan
-- create checkout session
-- create a unified checkout session
-- create a unified checkout session supporting multiple payment methods
-- credit cards
-- process a payment through the gateway
-- register a contactless reader device
-- process payment
-- checkout session management
-- create a buy-now-pay-later installment plan
-- financial services
-- create a new checkout session for a merchant
-- merchant
-- mastercard
-- retrieve payment transaction details
 - create a new checkout session
-- process a payment through the mastercard gateway
+- qr code payment acceptance
+- mastercard
+- get payment details
+- create checkout session
+- register a contactless reader device
+- checkout
+- digital identity
+- create a buy-now-pay-later installment plan
+- e-commerce
+- merchant
+- process a payment through the gateway
+- buy-now-pay-later installment plans
+- generate a merchant qr code for payment
+- retrieve payment transaction details
 - payments
 - register contactless reader
-- process a cloud commerce transaction
-- digital identity
-- open banking
-- create unified session
-- fraud detection
-- buy-now-pay-later installment plans
-- process cloud transaction
-- create an installment plan
-- checkout
 - unified checkout sessions
+- credit cards
+- create installment plan
+- fraud detection
 - generate a merchant-presented qr code for payment
-- qr code payment acceptance
-- payment processing
+- create an installment plan
+- create a new checkout session for a merchant
+- create a unified checkout session supporting multiple payment methods
+- open banking
 - generate qr code
-- get payment details
-- e-commerce
+- process a cloud commerce transaction
+- process payment
+- financial services
+- checkout session management
+- create a unified checkout session
+- process cloud transaction
 - get payment
-- generate a merchant qr code for payment
+- process a payment through the mastercard gateway
+- payment processing
+- create unified session
 slug: payment-processing-and-checkout
 tags:
 - Mastercard

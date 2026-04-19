@@ -41,57 +41,57 @@ personas: []
 provider_name: Red Hat
 provider_slug: red-hat
 search_terms:
-- realm users.
-- kubernetes
-- list groups.
-- list roles.
-- realm clients.
-- list groups in a realm.
-- realm roles.
-- list roles in a realm.
-- terminate a user session.
-- delete a user from a realm.
-- red hat
-- get user details.
-- get realm
-- specific realm.
-- list users.
-- list all keycloak realms.
-- list identity providers.
-- list clients
-- hybrid cloud
-- cloud
-- list all realms.
-- get realm configuration details.
-- open source
-- realm groups.
-- list users in a realm.
-- list client applications in a realm.
-- identity
 - keycloak realms.
-- list identity providers
-- identity providers.
-- list groups
-- list realm roles
-- create a user.
-- keycloak
-- list realms
-- list users
-- get user
-- delete user
-- enterprise
-- list external identity providers.
-- containers
-- list clients.
-- access management
-- list roles
-- delete session
-- create client
-- register a new client application.
-- create a new user in a realm.
-- linux
+- list identity providers.
+- list users in a realm.
 - get realm details.
+- list users
 - create user
+- identity
+- create a new user in a realm.
+- list all keycloak realms.
+- identity providers.
+- get realm
+- access management
+- delete user
+- list groups.
+- list realm roles
+- terminate a user session.
+- realm groups.
+- realm clients.
+- delete session
+- open source
+- enterprise
+- list roles in a realm.
+- realm users.
+- list all realms.
+- create client
+- hybrid cloud
+- delete a user from a realm.
+- linux
+- cloud
+- list roles
+- list identity providers
+- containers
+- list external identity providers.
+- get user
+- register a new client application.
+- keycloak
+- get realm configuration details.
+- list groups in a realm.
+- list users.
+- list clients
+- list groups
+- list roles.
+- list clients.
+- realm roles.
+- list realms
+- list client applications in a realm.
+- red hat
+- specific realm.
+- create a user.
+- kubernetes
+- get user details.
 slug: identity-and-access
 tags:
 - Red Hat

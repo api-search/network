@@ -33,46 +33,46 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- validate account
 - look up bin information for a card
-- credit cards
-- lookup bin
-- submit pan-related event for account level management
-- get card details
-- bin lookup
-- financial services
 - submit pan event
+- mastercard
+- card issuance and management
 - request updated card credentials for card-on-file
+- create a physical card fulfillment order
+- list available mastercard bins
 - manage a payment account
 - manage account
-- mastercard
-- validate account details
-- request updated card credentials
-- card issuance and management
-- payments
-- manage payment account
-- list bins
-- query payment account reference to link tokens to accounts
 - digital identity
-- open banking
-- look up bin information
-- card management
-- retrieve account catalog data
-- create a physical card fulfillment order
-- fraud detection
-- automatic billing updates
-- payment account management
-- create fulfillment order
-- issue card
-- get payment account reference
-- account management
-- issue a new mastercard card
-- issuers
-- get account catalog
 - issue a new card
-- get billing updates
+- retrieve account catalog data
+- request updated card credentials
+- list bins
+- submit pan-related event for account level management
+- get card details
+- validate account details
+- payments
+- automatic billing updates
+- query payment account reference to link tokens to accounts
+- validate account
+- credit cards
+- create fulfillment order
+- fraud detection
+- account management
+- card management
+- get payment account reference
+- manage payment account
+- issue a new mastercard card
 - manage a payment account lifecycle
-- list available mastercard bins
+- open banking
+- get account catalog
+- payment account management
+- lookup bin
+- financial services
+- get billing updates
+- issue card
+- issuers
+- look up bin information
+- bin lookup
 slug: card-and-account-management
 tags:
 - Mastercard

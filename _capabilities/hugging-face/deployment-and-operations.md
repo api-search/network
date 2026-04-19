@@ -58,59 +58,59 @@ personas: []
 provider_name: Hugging Face
 provider_slug: hugging-face
 search_terms:
-- deployment
-- tgi server info
-- resume a paused endpoint.
-- get metrics
-- pause an endpoint
-- create a new endpoint
-- get tgi server info
-- tgi metrics
-- list available cloud providers
-- get endpoint metrics
-- list providers
-- pause a running endpoint to stop billing.
-- list available cloud providers and hardware options.
 - resume a paused endpoint
-- create endpoint
+- list all endpoints
+- get tgi server info
+- list available cloud providers and hardware options.
+- list endpoints
 - resume an endpoint
-- delete endpoint
+- pause a running endpoint
+- health check
 - hugging face
+- delete a dedicated inference endpoint.
+- delete endpoint
+- list all dedicated inference endpoints for a namespace.
+- update endpoint
+- list providers
+- get endpoint metrics
+- get information about the deployed model and tgi server.
+- mlops
+- get endpoint
+- get logs for an endpoint.
+- get metrics for an endpoint.
+- get details of a specific endpoint.
+- check if the tgi server is healthy and responding.
+- delete an endpoint
+- tgi health check
+- infrastructure
+- cloud providers
+- create a new dedicated inference endpoint.
+- create endpoint
 - check tgi server health
-- update an existing endpoint configuration.
 - get logs
 - manage inference endpoints
-- infrastructure
-- list all dedicated inference endpoints for a namespace.
-- create a new dedicated inference endpoint.
-- get information about the deployed model and tgi server.
-- get endpoint
-- scale to zero
+- deployment
+- update an existing endpoint configuration.
+- list available cloud providers
+- resume a paused endpoint.
+- get info
 - update endpoint configuration
-- list endpoints
-- mlops
-- scale an endpoint to zero replicas.
+- pause a running endpoint to stop billing.
+- pause an endpoint
+- get endpoint logs
+- get metrics
+- tgi server health
+- tgi metrics
 - get prometheus metrics from the tgi server.
-- get details of a specific endpoint.
-- get metrics for an endpoint.
-- update endpoint
-- pause a running endpoint
+- tgi server info
+- individual endpoint operations
 - operations
-- list all endpoints
-- get logs for an endpoint.
-- check if the tgi server is healthy and responding.
+- resume endpoint
+- scale an endpoint to zero replicas.
 - pause endpoint
 - get endpoint details
-- health check
-- tgi health check
-- resume endpoint
-- delete a dedicated inference endpoint.
-- delete an endpoint
-- cloud providers
-- individual endpoint operations
-- get info
-- tgi server health
-- get endpoint logs
+- create a new endpoint
+- scale to zero
 slug: deployment-and-operations
 tags:
 - Hugging Face

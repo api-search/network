@@ -47,49 +47,49 @@ personas: []
 provider_name: PeopleSoft
 provider_slug: peoplesoft
 search_terms:
+- get job details
+- enterprise software
+- hr approval requests
+- retrieve payroll run history and status.
 - list employees
-- process approval
-- retrieve pending hr approval requests.
-- peopletools platform services.
-- individual approval operations
-- submit application
+- financial and supply chain management.
 - campus solutions.
-- retrieve details for a specific employee.
-- submit a candidate application for a job posting.
-- approve, deny, or push back an hr approval request.
+- candidate applications
+- retrieve details for a specific job posting.
+- retrieve pending hr approval requests.
+- campus solutions
 - search available job postings.
 - erp
-- list payroll runs
+- get employee
+- submit application
 - list pending approvals
-- job posting details
-- payroll run history and status
-- payroll
-- benefit enrollment records
-- retrieve payroll run history and status.
-- crm
-- campus solutions
-- hcm
-- list benefit enrollments
-- human resources
-- employee records
-- candidate applications
-- supply chain management
-- get job details
-- retrieve details for a specific job posting.
-- hr approval requests
+- approve, deny, or push back an hr approval request.
 - human capital management.
-- retrieve employee records with optional department and status filters.
+- supply chain management
+- employee records
+- job posting details
+- benefit enrollment records
+- peopletools platform services.
+- submit a candidate application for a job posting.
+- process approval
+- hcm
+- crm
 - individual employee details
+- individual approval operations
+- search jobs
 - talent management
 - recruiting
-- search jobs
-- enterprise software
-- peoplesoft
-- retrieve benefit enrollment records.
-- get employee
-- financial management
-- financial and supply chain management.
+- list payroll runs
+- retrieve employee records with optional department and status filters.
+- payroll
 - job postings
+- human resources
+- retrieve benefit enrollment records.
+- retrieve details for a specific employee.
+- list benefit enrollments
+- payroll run history and status
+- financial management
+- peoplesoft
 slug: human-resources
 tags:
 - PeopleSoft

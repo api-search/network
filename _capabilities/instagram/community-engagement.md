@@ -53,56 +53,56 @@ personas: []
 provider_name: Instagram
 provider_slug: instagram
 search_terms:
-- get the most recently published media tagged with a specific hashtag.
-- content publishing and media management.
-- media where user was tagged.
-- get comment
-- hashtags
-- embeds instagram content on websites and applications.
-- instagram
-- search for a hashtag by name and get its id.
-- top media for a hashtag.
-- delete a comment on your media.
-- hide comment
-- tracks content performance and audience insights.
-- get comment replies
-- get the most popular media tagged with a specific hashtag.
-- get media comments
-- get hashtag top media
-- photos
-- social media
-- create a comment on an instagram media object.
-- instagram direct messaging.
-- create comment
-- comments, mentions, and community interaction.
-- reply to a comment.
-- publishes and manages content across instagram accounts.
-- search hashtag
-- recent media for a hashtag.
-- delete comment
-- monitors mentions, comments, and brand sentiment on instagram.
-- comments on a media object.
-- manages instagram direct conversations for business inquiries.
-- content publishing
-- insights and performance metrics.
-- website embedding of instagram content.
-- mentions
-- create comment reply
-- individual comment operations.
 - comments
+- social media
+- get hashtag top media
+- insights and performance metrics.
+- publishes and manages content across instagram accounts.
+- get user tags
+- reply to a comment.
+- delete comment
+- manages instagram direct conversations for business inquiries.
+- community engagement
+- replies to a comment.
+- meta
+- search hashtag
+- comments on a media object.
+- recent media for a hashtag.
+- media where user was tagged.
+- photos
+- get comment
+- search for a hashtag by name and get its id.
+- instagram
+- embeds instagram content on websites and applications.
+- monitors mentions, comments, and brand sentiment on instagram.
+- get comment replies
+- top media for a hashtag.
+- create comment
+- get hashtag recent media
+- delete a comment on your media.
+- hashtags
+- comments, mentions, and community interaction.
+- get the most popular media tagged with a specific hashtag.
+- individual comment operations.
+- content publishing
+- get the most recently published media tagged with a specific hashtag.
+- create comment reply
+- instagram direct messaging.
+- get comments on an instagram media object.
+- hide or unhide a comment on your media.
+- content publishing and media management.
+- create a comment on an instagram media object.
+- get fields on an instagram comment.
+- search for hashtags.
+- get media comments
+- tracks content performance and audience insights.
 - creates and publishes photos, videos, reels, and stories.
 - get ig media objects where the user has been tagged by other users.
-- get fields on an instagram comment.
-- get comments on an instagram media object.
-- meta
-- search for hashtags.
-- get replies to a comment.
-- get user tags
-- hide or unhide a comment on your media.
-- community engagement
+- hide comment
 - videos
-- replies to a comment.
-- get hashtag recent media
+- website embedding of instagram content.
+- get replies to a comment.
+- mentions
 slug: community-engagement
 tags:
 - Instagram

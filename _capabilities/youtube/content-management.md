@@ -69,54 +69,54 @@ personas: []
 provider_name: Youtube
 provider_slug: youtube
 search_terms:
-- social
-- captions
-- add playlist item
-- upload a new video to youtube
-- update caption
-- update video
-- delete caption
-- delete playlist
-- list playlist items
-- google
-- list videos matching criteria
-- remove a video from a playlist
-- manage video captions
-- update a caption track
-- media
-- update playlist
-- upload a new video
-- video
-- upload a new caption track
-- list captions
-- create a new playlist
 - update playlist details
-- playlists
-- list caption tracks for a video
-- add a video to a playlist
-- list playlists
-- upload caption
-- manage items within playlists
-- upload video
+- upload a new video to youtube
+- google
 - streaming
-- content management
-- remove playlist item
-- delete a caption track
-- manage youtube videos
-- upload a caption track
-- update video metadata
-- delete a video
-- list videos
-- delete a video from youtube
-- delete video
-- list youtube playlists
+- update caption
+- list caption tracks for a video
 - delete a playlist
-- list items in a playlist
-- youtube
-- videos
+- add playlist item
+- remove playlist item
+- social
+- list playlists
+- manage items within playlists
 - manage youtube playlists
-- create playlist
+- update a caption track
+- video
+- create a new playlist
+- delete caption
+- list videos
+- playlists
+- captions
 - list youtube videos matching criteria
+- add a video to a playlist
+- list videos matching criteria
+- delete a caption track
+- upload a caption track
+- delete playlist
+- create playlist
+- delete a video from youtube
+- youtube
+- list youtube playlists
+- delete video
+- list captions
+- upload a new caption track
+- update video
+- delete a video
+- manage youtube videos
+- media
+- upload a new video
+- remove a video from a playlist
+- upload caption
+- upload video
+- content management
+- update video metadata
+- list items in a playlist
+- update playlist
+- list playlist items
+- videos
+- manage video captions
 slug: content-management
 tags:
 - YouTube

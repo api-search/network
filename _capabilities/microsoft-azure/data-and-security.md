@@ -28,55 +28,55 @@ personas: []
 provider_name: Microsoft Azure
 provider_slug: microsoft-azure
 search_terms:
-- api management
-- get blob properties
 - blob get properties
-- arm list resource groups
-- resource manager
-- list blobs in a container
-- cosmos list databases
-- blob download
-- platform as a service
-- list resource groups
-- get a secret value
-- cosmos db
-- arm list resources
-- keyvault list secrets
-- list azure subscriptions
-- cloud
-- t1
-- cosmos list containers
-- list resources in a subscription
-- arm list tags
-- azure
-- keyvault get secret
-- list items in a container
-- blob list blobs
-- cosmos list items
+- list cosmos db databases
+- list resource providers
+- get blob properties
+- api management
+- cosmos db database management
+- blob storage
+- list databases
 - blob storage operations
-- key vault secret management
-- list containers in a database
+- get a secret value
+- arm list resource groups
+- platform as a service
+- keyvault get secret
 - list certificates
+- t1
+- enterprise
+- resource manager
+- list blobs
+- key vault
+- arm list subscriptions
+- cloud
+- list blobs in a container
+- subscription management
+- keyvault list secrets
+- cosmos list items
+- arm list providers
+- list subscription tags
+- cosmos list containers
+- cosmos db
+- keyvault list keys
+- arm list tags
+- download a blob
+- cloud computing
+- list resource groups
+- list containers in a database
+- infrastructure as a service
+- azure
 - keyvault list certificates
 - list subscriptions
-- enterprise
-- cloud computing
-- list resource providers
-- infrastructure as a service
-- blob storage
-- cosmos db database management
-- keyvault list keys
+- key vault secret management
+- cosmos list databases
+- list items in a container
+- arm list resources
+- blob download
+- list azure subscriptions
 - list secrets
-- arm list providers
 - list cryptographic keys
-- key vault
-- list subscription tags
-- list databases
-- list cosmos db databases
-- subscription management
-- arm list subscriptions
-- download a blob
-- list blobs
+- list resources in a subscription
+- blob list blobs
 slug: data-and-security
 tags:
 - Azure

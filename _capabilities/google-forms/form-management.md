@@ -37,51 +37,51 @@ personas: []
 provider_name: Google Forms
 provider_slug: google-forms
 search_terms:
-- renew watch
-- list all active watches for a form
-- Form Administrator
-- notifications
-- get response
-- google
-- questionnaires
-- responses
-- create a new google form with a title
-- managing surveys, questions, and notification watches
-- create a notification watch
-- delete a watch
-- watch notification operations
-- list all responses for a form
-- create watch
-- get form
-- update form publish settings
-- form response operations
-- list watches
-- extend a watch's expiration by seven days
-- get a google form's structure and settings
-- creating and managing forms for data collection
-- get form details
-- data collection
-- list responses
-- surveys
-- delete a watch to stop notifications
-- set up a pub/sub watch for form changes or new responses
-- batch update form
-- analyzes form responses and collects data
-- google workspace
-- google forms
-- create forms, collect responses, monitor changes
-- creates and manages forms, monitors responses
-- get a single form response by id
-- set publish settings
-- apply batch updates to a form (add/remove/modify items)
-- Data Analyst
-- create a new form
-- forms
-- form crud operations
-- create form
-- delete watch
-- get a single response
 - list form responses
+- get form
+- creates and manages forms, monitors responses
+- form crud operations
+- watch notification operations
+- surveys
+- list all responses for a form
+- google
+- renew watch
+- delete watch
+- get a single form response by id
+- list watches
+- create form
+- set up a pub/sub watch for form changes or new responses
+- questionnaires
+- creating and managing forms for data collection
+- forms
+- create forms, collect responses, monitor changes
+- create a new form
+- list responses
+- get response
+- google workspace
+- batch update form
+- get a single response
+- delete a watch
+- create watch
+- update form publish settings
+- set publish settings
+- managing surveys, questions, and notification watches
+- google forms
+- data collection
+- Data Analyst
+- apply batch updates to a form (add/remove/modify items)
+- get form details
+- Form Administrator
+- list all active watches for a form
+- analyzes form responses and collects data
+- create a new google form with a title
+- extend a watch's expiration by seven days
+- form response operations
+- create a notification watch
+- notifications
+- responses
+- get a google form's structure and settings
+- delete a watch to stop notifications
 slug: form-management
 tags:
 - Google Forms

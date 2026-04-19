@@ -37,45 +37,45 @@ personas: []
 provider_name: Adobe Creative Suite
 provider_slug: adobe-creative-suite
 search_terms:
-- content generation
-- generate similar images
-- creative
-- generative image expansion
-- expand an image beyond its boundaries
-- get the status of an async generation job
-- video
-- get the status of an asynchronous firefly generation job
-- design
-- ai video generation
-- generate and composite an ai object into a scene
-- generate images from a text prompt
-- generate a short video clip from a text prompt
-- similar image generation from reference
 - generation job status
-- generate video
-- expand an image beyond its original boundaries using generative ai
-- graphics
+- generate images from a text prompt
+- generate images visually similar to a reference image
+- adobe
+- similar image generation from reference
 - generate images similar to a reference image
-- fill image
-- text-to-image generation
-- firefly
-- generate composite
-- generate one or more images from a text prompt using adobe firefly
-- image generation
-- video generation
+- generate video
+- generative ai
 - get job status
 - ai object compositing
-- adobe
 - fill a masked region of an image with ai-generated content
-- generate images visually similar to a reference image
-- generate an ai object and composite it into a scene image
-- photography
-- expand image
-- generate images
-- generate a video from a text prompt
-- generative ai
+- generate composite
+- firefly
+- generate and composite an ai object into a scene
+- video
 - generative fill operations
+- photography
+- generate images
+- generative image expansion
+- expand an image beyond its original boundaries using generative ai
 - fill a masked region with ai-generated content
+- expand image
+- generate one or more images from a text prompt using adobe firefly
+- content generation
+- ai video generation
+- get the status of an asynchronous firefly generation job
+- generate an ai object and composite it into a scene image
+- creative
+- generate a short video clip from a text prompt
+- generate a video from a text prompt
+- expand an image beyond its boundaries
+- video generation
+- text-to-image generation
+- generate similar images
+- design
+- graphics
+- image generation
+- get the status of an async generation job
+- fill image
 slug: ai-content-generation
 tags:
 - Adobe

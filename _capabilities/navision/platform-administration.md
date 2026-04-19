@@ -46,72 +46,72 @@ personas: []
 provider_name: Microsoft Dynamics NAV
 provider_slug: navision
 search_terms:
-- create a new environment
-- list scheduled background jobs
-- user management
-- finance
-- create automation company
-- get allowed quotas
-- uninstall an extension
-- list security groups
-- company management
-- get environment
-- list configuration packages
-- restore environment
-- list installed apps in an environment
-- list features
-- list companies
-- erp
-- permission sets
-- inventory
-- dynamics nav
-- get scheduled upgrade
-- update user properties
-- list all business central environments
-- copy environment
-- get allowed quotas and limits
-- uninstall extension
-- get a user by id
-- environment management
-- restore an environment from a point in time
-- list rapidstart configuration packages
-- delete a company
 - get quotas
-- install an extension
-- get scheduled upgrade information
-- list permission sets
-- install extension
 - business central
-- create a new company
-- list environments
-- get user
-- list users
-- navision
+- get scheduled upgrade
+- install extension
+- single environment
+- get environment settings
 - microsoft
-- list all environments
-- dynamics 365
-- administration
-- list business central users
-- list published extensions
-- business management
-- list automation companies
+- list users
+- list security groups
 - list extensions
 - copy an environment
-- single environment
-- list scheduled jobs
-- get environment details
-- get environment settings
-- list installed apps
 - extension management
-- get environment storage
-- delete automation company
-- automation
-- update user
-- delete an environment
-- create environment
-- storage quotas
-- delete environment
+- get environment details
+- administration
+- finance
+- list installed apps in an environment
+- list all environments
+- get scheduled upgrade information
+- get environment
+- list companies
+- erp
+- list business central users
+- list scheduled jobs
+- get allowed quotas
+- environment management
+- inventory
+- navision
+- list permission sets
+- install an extension
+- get a user by id
+- dynamics nav
+- uninstall an extension
+- list all business central environments
+- update user properties
+- list published extensions
 - get environment storage usage
+- get user
+- list rapidstart configuration packages
+- create environment
+- restore an environment from a point in time
+- copy environment
+- user management
+- update user
+- list installed apps
+- get allowed quotas and limits
+- dynamics 365
+- storage quotas
+- create a new company
+- delete a company
+- create automation company
+- company management
+- delete automation company
+- uninstall extension
+- list features
+- list scheduled background jobs
+- delete an environment
+- permission sets
+- get environment storage
+- restore environment
+- business management
+- delete environment
+- list configuration packages
+- create a new environment
+- automation
+- list environments
+- list automation companies
 slug: platform-administration
 tags:
 - Business Central

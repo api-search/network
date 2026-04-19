@@ -59,6 +59,11 @@
     "generated": "2026-04-18",
     "name": "Azure Log Analytics"
   },
+  "azure-service-bus": {
+    "file": "azure-service-bus.png",
+    "generated": "2026-04-18",
+    "name": "Azure Service Bus"
+  },
   "bitbucket": {
     "file": "bitbucket.png",
     "generated": "2026-04-18",
@@ -99,10 +104,25 @@
     "generated": "2026-04-18",
     "name": "Crystal Reports"
   },
+  "emc": {
+    "file": "emc.png",
+    "generated": "2026-04-18",
+    "name": "EMC"
+  },
   "facebook": {
     "file": "facebook.png",
     "generated": "2026-04-18",
     "name": "Facebook"
+  },
+  "fusio": {
+    "file": "fusio.png",
+    "generated": "2026-04-18",
+    "name": "Fusio"
+  },
+  "g2": {
+    "file": "g2.png",
+    "generated": "2026-04-18",
+    "name": "G2"
   },
   "gitlab": {
     "file": "gitlab.png",
@@ -124,10 +144,20 @@
     "generated": "2026-04-18",
     "name": "Instagram"
   },
+  "knit": {
+    "file": "knit.png",
+    "generated": "2026-04-18",
+    "name": "Knit"
+  },
   "kong": {
     "file": "kong.png",
     "generated": "2026-04-18",
     "name": "Kong"
+  },
+  "lambda": {
+    "file": "lambda.png",
+    "generated": "2026-04-18",
+    "name": "Lambda"
   },
   "lightroom": {
     "file": "lightroom.png",
@@ -159,6 +189,11 @@
     "generated": "2026-04-18",
     "name": "Microsoft Word"
   },
+  "mulesoft": {
+    "file": "mulesoft.png",
+    "generated": "2026-04-18",
+    "name": "MuleSoft"
+  },
   "navision": {
     "file": "navision.png",
     "generated": "2026-04-18",
@@ -178,6 +213,11 @@
     "file": "oracle-e-business-suite.png",
     "generated": "2026-04-18",
     "name": "Oracle E-Business Suite"
+  },
+  "oracle-enterprise-manager": {
+    "file": "oracle-enterprise-manager.png",
+    "generated": "2026-04-18",
+    "name": "Oracle Enterprise Manager"
   },
   "oracle-goldengate": {
     "file": "oracle-goldengate.png",
@@ -204,6 +244,11 @@
     "generated": "2026-04-18",
     "name": "Productiv"
   },
+  "pulse": {
+    "file": "pulse.png",
+    "generated": "2026-04-18",
+    "name": "Pulse"
+  },
   "qliksense": {
     "file": "qliksense.png",
     "generated": "2026-04-18",
@@ -224,10 +269,20 @@
     "generated": "2026-04-18",
     "name": "Microsoft SharePoint"
   },
+  "sparx-enterprise-architect": {
+    "file": "sparx-enterprise-architect.png",
+    "generated": "2026-04-18",
+    "name": "Sparx Enterprise Architect"
+  },
   "spot": {
     "file": "spot.png",
     "generated": "2026-04-18",
     "name": "Spot"
+  },
+  "sql-server": {
+    "file": "sql-server.png",
+    "generated": "2026-04-18",
+    "name": "Microsoft SQL Server APIs"
   },
   "tableau-desktop": {
     "file": "tableau-desktop.png",
@@ -254,10 +309,20 @@
     "generated": "2026-04-18",
     "name": "Visualforce"
   },
+  "vmware": {
+    "file": "vmware.png",
+    "generated": "2026-04-18",
+    "name": "VMware"
+  },
   "whatsapp": {
     "file": "whatsapp.png",
     "generated": "2026-04-18",
     "name": "WhatsApp"
+  },
+  "workday": {
+    "file": "workday.png",
+    "generated": "2026-04-18",
+    "name": "Workday"
   },
   "zendesk": {
     "file": "zendesk.png",

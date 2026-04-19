@@ -26,46 +26,46 @@ personas: []
 provider_name: Oracle GoldenGate
 provider_slug: oracle-goldengate
 search_terms:
-- list replication process performance metrics
-- create a new compare group
-- create a new comparison job
-- oracle goldengate
-- get details of out-of-sync data
 - get out of sync data
-- comparison jobs
-- compliance
-- data integration
-- compare groups
-- database
-- get comparison job statistics
-- list process metrics
-- list jobs
-- execute a comparison job
-- list veridata database connections
-- create job
-- create group
-- list comparison jobs
-- create a new veridata database connection
-- data quality
-- create connection
-- list groups
-- enterprise
-- run job
-- data synchronization
-- data verification
-- list compare groups for data verification
-- replication process metrics
-- repair out-of-sync data identified by a comparison job
-- real-time replication
 - get veridata server information
-- get goldengate process performance metrics for monitoring replication health
-- list compare groups
+- data synchronization
 - repair job
-- get server info
-- get job statistics
-- list connections
-- cdc
+- oracle goldengate
+- list replication process performance metrics
+- list compare groups
+- replication process metrics
+- data quality
+- enterprise
 - database connections for verification
+- compliance
+- cdc
+- get server info
+- create connection
+- get job statistics
+- list jobs
+- data integration
+- get goldengate process performance metrics for monitoring replication health
+- data verification
+- execute a comparison job
+- real-time replication
+- compare groups
+- list comparison jobs
+- list veridata database connections
+- list connections
+- list groups
+- list process metrics
+- create a new compare group
+- run job
+- create a new veridata database connection
+- comparison jobs
+- get comparison job statistics
+- create a new comparison job
+- get details of out-of-sync data
+- create group
+- repair out-of-sync data identified by a comparison job
+- create job
+- database
+- list compare groups for data verification
 slug: data-verification
 tags:
 - Oracle GoldenGate

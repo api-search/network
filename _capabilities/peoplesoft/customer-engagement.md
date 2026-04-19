@@ -47,47 +47,47 @@ personas: []
 provider_name: PeopleSoft
 provider_slug: peoplesoft
 search_terms:
-- retrieve details for a specific customer.
-- retrieve notifications for the current user.
-- peopletools platform services.
-- retrieve sales opportunities.
-- get customer
-- list notifications
-- campus solutions.
-- support and service cases
-- erp
-- individual customer details
-- notification management
-- crm
-- customer engagement
-- retrieve support and service cases.
-- list opportunities
-- retrieve available chatbot intents.
-- process a chatbot intent fulfillment request.
-- retrieve customer records.
-- case management
-- fulfill intent
-- list cases
-- campus solutions
-- customer records
-- create a new support or service case.
-- hcm
-- chatbot intents
-- supply chain management
 - chatbot
-- human capital management.
-- list intents
-- create case
 - enterprise software
-- chatbot intent fulfillments
-- peoplesoft
-- sales opportunities
-- financial management
+- create case
+- create a new support or service case.
+- retrieve sales opportunities.
 - financial and supply chain management.
-- sales
-- send notification
+- campus solutions.
+- retrieve support and service cases.
+- retrieve customer records.
+- retrieve notifications for the current user.
+- customer engagement
+- campus solutions
+- retrieve available chatbot intents.
+- get customer
+- chatbot intent fulfillments
 - list customers
+- human capital management.
+- erp
+- supply chain management
+- support and service cases
+- case management
+- peopletools platform services.
+- list cases
+- process a chatbot intent fulfillment request.
+- hcm
+- crm
+- fulfill intent
+- notification management
+- sales
+- chatbot intents
+- sales opportunities
+- customer records
+- retrieve details for a specific customer.
 - send a notification via email, text, or in-app channels.
+- send notification
+- individual customer details
+- list intents
+- list notifications
+- list opportunities
+- financial management
+- peoplesoft
 slug: customer-engagement
 tags:
 - PeopleSoft

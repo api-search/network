@@ -29,71 +29,71 @@ personas: []
 provider_name: Azure Databricks
 provider_slug: azure-databricks
 search_terms:
-- start cluster
-- big data
-- import a notebook or file into the workspace
-- list spark versions
+- list available node types
+- data engineering
+- start a terminated cluster
+- get job details
 - delete job
-- edit cluster
-- cancel a running job
+- get details of a specific cluster
+- get job run
+- cancel job run
 - delete workspace object
-- analytics
-- list workspace objects in a directory
+- permanently delete a cluster
+- big data
+- create a new databricks cluster
 - apache spark
-- get workspace object status
-- list all jobs
-- list workspace objects
+- analytics
+- start cluster
+- list job runs
+- get status of a workspace object
+- restart a running cluster
+- delete a workspace object
+- manage workspace objects
+- list workspace objects in a directory
+- delete a job
+- create a directory in the workspace
+- get job run output
+- manage databricks clusters
+- databricks
+- get the output of a completed job run
+- machine learning
 - get cluster
 - create a new cluster
-- get job run
-- create workspace directory
-- list available spark runtime versions
-- get details of a specific cluster
-- data engineering
-- list clusters
-- list jobs
 - list all databricks jobs
-- update job
-- trigger a one-time job run
-- create job
-- terminate cluster
-- list job runs
-- delete a job
-- azure
-- create a new databricks cluster
-- restart cluster
-- get job
-- permanently delete a cluster
-- get details of a specific job run
-- get the output of a completed job run
-- list available node types
-- export a notebook or file from the workspace
-- import workspace object
-- get job details
-- partially update job settings
-- create a new job
-- edit cluster configuration
-- list node types
-- delete cluster
-- manage workspace objects
-- delete a workspace object
-- cancel job run
-- create a directory in the workspace
-- manage databricks clusters
-- restart a running cluster
-- databricks
-- list all databricks clusters
-- get job run output
-- export workspace object
-- get status of a workspace object
-- create cluster
 - manage databricks jobs
-- run job now
-- start a terminated cluster
-- machine learning
-- terminate a running cluster
 - create a new databricks job
+- edit cluster configuration
 - list all clusters
+- partially update job settings
+- list jobs
+- terminate cluster
+- create workspace directory
+- create cluster
+- list all jobs
+- trigger a one-time job run
+- terminate a running cluster
+- import workspace object
+- list spark versions
+- create a new job
+- run job now
+- get job
+- list workspace objects
+- get details of a specific job run
+- list available spark runtime versions
+- azure
+- update job
+- export a notebook or file from the workspace
+- delete cluster
+- restart cluster
+- get workspace object status
+- import a notebook or file into the workspace
+- export workspace object
+- list node types
+- cancel a running job
+- edit cluster
+- create job
+- list clusters
+- list all databricks clusters
 slug: data-engineering
 tags:
 - Azure

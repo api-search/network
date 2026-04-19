@@ -53,50 +53,50 @@ personas: []
 provider_name: Oracle
 provider_slug: oracle
 search_terms:
-- get instance
-- launch instance
-- compute
+- create a custom image from an instance
+- delete a custom image
+- list images
+- terminate instance
+- create image
 - launch a new compute instance
-- update image
-- get image details
-- list volume attachments
 - list instances
 - manage a specific image
-- delete image
-- list compute images
-- list images
-- database
 - oracle
-- infrastructure
-- cloud
-- update instance
-- update image details
 - perform an action on an instance (start, stop, reset)
-- get details of a specific image
-- saas
-- list instance console connections
-- update instance details
-- list console connections
-- delete a custom image
-- list compute instances in a compartment
-- list shapes
-- manage a specific compute instance
-- enterprise
-- list vnic attachments
-- manage compute images
-- list volume attachments in a compartment
 - get image
-- create image
-- get details of a specific instance
-- instance action
+- enterprise
+- list volume attachments in a compartment
+- get instance
+- get image details
+- list compute images
 - list available compute shapes
-- create a custom image from an instance
-- create a custom image
+- cloud
+- infrastructure
+- instance action
+- list volume attachments
+- delete image
+- compute
+- list compute instances in a compartment
+- list instance console connections
+- update image
+- manage a specific compute instance
+- manage compute images
+- get details of a specific instance
+- launch instance
+- list vnic attachments
 - list vnic attachments in a compartment
-- get instance details
-- terminate instance
-- terminate an instance
+- list shapes
+- saas
+- create a custom image
+- update image details
+- update instance details
 - manage compute instances
+- terminate an instance
+- update instance
+- list console connections
+- get instance details
+- database
+- get details of a specific image
 slug: cloud-compute
 tags:
 - Oracle

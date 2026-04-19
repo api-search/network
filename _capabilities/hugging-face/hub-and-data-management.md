@@ -46,76 +46,76 @@ personas: []
 provider_name: Hugging Face
 provider_slug: hugging-face
 search_terms:
-- delete repo
-- update settings for a repository.
-- get dataset splits
-- get model revision
-- list spaces
-- list and search spaces
-- search rows
-- get model information at a specific revision or branch.
-- list and search datasets on the hub.
-- get authenticated user info
+- check if a dataset is valid and available on the hub.
+- list datasets
+- get dataset information
+- get the first rows of a dataset split for preview.
+- models
+- filter dataset
+- get model
+- search dataset
+- list and search datasets
+- get model details
+- get dataset parquet
+- create a new model, dataset, or space repository on the hub.
+- list all available model tags grouped by type.
 - get the list of splits for a dataset.
 - search for rows matching a query in a dataset.
-- get croissant metadata
-- get information about the authenticated user.
-- hub
-- list and search datasets
-- get the first rows of a dataset split for preview.
-- get parquet file urls for a dataset.
-- get dataset statistics
-- get dataset rows
-- list and search ml models on the hugging face hub.
-- hugging face
-- check dataset validity
-- create a new repository
-- get rows
-- check if a dataset is valid and available on the hub.
-- create repo
-- get model details
-- search dataset
-- filter dataset
-- list model tags
 - filter dataset rows using a condition.
-- get detailed information about a specific space.
-- list models
-- search rows in a dataset
-- get detailed information about a specific dataset.
-- manage models on the hub
-- list dataset tags
-- list all available dataset tags grouped by type.
-- get model
+- check dataset validity
 - get dataset
-- list and search models
 - get dataset details
-- get rows from a dataset split with pagination.
-- get model information
-- list all available model tags grouped by type.
-- create repositories
-- list and search spaces on the hub.
-- search dataset rows
-- get detailed information about a specific model.
-- get size information for a dataset.
-- create a new model, dataset, or space repository on the hub.
-- models
-- get statistical information about a dataset split.
-- get space
+- get dataset statistics
 - user information
-- delete a repository from the hub.
-- get dataset information
-- get dataset size
-- update repo settings
-- preview dataset rows
-- list datasets
-- whoami
-- manage datasets on the hub
+- update settings for a repository.
+- get rows from a dataset split with pagination.
+- list and search models
+- create repositories
+- get model information
+- create repo
+- get detailed information about a specific model.
+- get model information at a specific revision or branch.
 - data management
-- manage spaces on the hub
-- get dataset parquet
+- list and search datasets on the hub.
+- list and search spaces on the hub.
 - get croissant metadata for a dataset.
-- datasets
+- delete a repository from the hub.
+- list model tags
+- get dataset rows
+- manage models on the hub
+- search rows
+- list models
 - get rows from a dataset
+- create a new repository
+- list spaces
+- list all available dataset tags grouped by type.
+- search rows in a dataset
+- get parquet file urls for a dataset.
+- get dataset splits
+- preview dataset rows
+- get dataset size
+- get croissant metadata
+- manage datasets on the hub
+- get space
+- manage spaces on the hub
+- get detailed information about a specific dataset.
+- get detailed information about a specific space.
+- delete repo
+- search dataset rows
+- list dataset tags
+- get information about the authenticated user.
+- get rows
+- list and search ml models on the hugging face hub.
+- get statistical information about a dataset split.
+- list and search spaces
+- whoami
+- get size information for a dataset.
+- get authenticated user info
+- hub
+- get model revision
+- update repo settings
+- hugging face
+- datasets
 slug: hub-and-data-management
 tags:
 - Hugging Face

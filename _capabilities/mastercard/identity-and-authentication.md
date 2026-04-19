@@ -31,41 +31,41 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- create an authentication consent request
-- create consent
-- get account identity insights
-- credit cards
-- verify a consumer identity
-- get identity insights for an account
-- authentication consent management
-- authentication
-- financial services
-- identity insights for accounts
-- get identity insights for a transaction
-- kyc
-- initiate strong customer authentication
-- identity insights for transactions
-- initiate authentication
-- get account insights
-- submit identity verification as a trust provider
 - mastercard
-- get identity intelligence insights for an account
-- verification
-- verify identity
-- get transaction insights
-- get transaction identity insights
-- identity
-- payments
-- get identity intelligence insights for a transaction
-- get authentication consent status
-- verify a consumer identity using mastercard id
-- digital identity
-- open banking
-- fraud detection
-- create authentication consent
 - identity verification
+- get identity intelligence insights for an account
+- get authentication consent status
+- verify a consumer identity
+- identity
+- verify identity
 - create auth consent
+- get transaction identity insights
+- digital identity
+- identity insights for accounts
+- submit identity verification as a trust provider
+- get account identity insights
+- kyc
+- payments
+- get identity insights for an account
+- verification
+- get identity insights for a transaction
+- credit cards
 - get consent status
+- get account insights
+- fraud detection
+- authentication
+- initiate authentication
+- open banking
+- get identity intelligence insights for a transaction
+- identity insights for transactions
+- financial services
+- verify a consumer identity using mastercard id
+- initiate strong customer authentication
+- authentication consent management
+- create consent
+- create authentication consent
+- create an authentication consent request
+- get transaction insights
 - submit trust verification
 slug: identity-and-authentication
 tags:

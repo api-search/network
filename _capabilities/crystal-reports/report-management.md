@@ -29,36 +29,36 @@ personas: []
 provider_name: Crystal Reports
 provider_slug: crystal-reports
 search_terms:
-- get grand totals
-- list folder children
-- get report metadata with datasources, fields, parameters, and formulas
-- get report grand totals and summaries
-- business intelligence
-- export report
-- authenticate to crystal reports server
-- get rows
-- sap
-- logon
-- get report summary
-- create a transient report instance
-- get edmx metadata describing the report data model
-- export report to pdf, excel, csv, word, xml, or other format
-- report management
-- push data to a transient report instance
-- get report summary including name, author, and uris
 - get report structure
-- export
-- browse repository
-- list contents of a repository folder
-- crystal reports
-- create instance
-- get report data rows via odata with pagination and filtering
-- get odata metadata
-- data analytics
 - enterprise software
-- browse the bi platform report repository
+- report management
+- get edmx metadata describing the report data model
+- get odata metadata
+- crystal reports
+- list folder children
+- export report
+- browse repository
 - post row
+- export report to pdf, excel, csv, word, xml, or other format
+- business intelligence
+- create a transient report instance
+- push data to a transient report instance
+- sap
+- export
+- list contents of a repository folder
+- logon
+- data analytics
+- authenticate to crystal reports server
+- get report summary including name, author, and uris
 - reporting
+- get report grand totals and summaries
+- get report metadata with datasources, fields, parameters, and formulas
+- get report summary
+- get report data rows via odata with pagination and filtering
+- get rows
+- browse the bi platform report repository
+- create instance
+- get grand totals
 slug: report-management
 tags:
 - Crystal Reports

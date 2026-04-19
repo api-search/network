@@ -35,41 +35,41 @@ provider_name: Adobe Analytics
 provider_slug: adobe-analytics
 search_terms:
 - upload events
-- analytics
-- upload a batch events file.
-- business intelligence
-- list report suites to identify data collection targets.
-- list report suites to identify collection targets.
-- list available dimensions to validate event data mapping.
-- get report suite details.
-- report suite discovery for data collection targeting.
-- web analytics
-- list dimensions to validate event data mapping.
 - validate a batch events file without ingesting data.
-- batch event upload.
-- list dimensions
-- metric discovery for event mapping.
-- validate events
-- digital marketing
-- adobe analytics
-- report suite details.
-- marketing
-- validate event files.
-- dimension discovery for event mapping.
-- customer intelligence
-- events
-- data collection
-- list metrics
-- validate a batch events file without ingesting.
-- upload a gzip-compressed csv file of batched analytics event data.
-- list report suites
-- list available metrics to validate event data mapping.
-- adobe
-- bulk data insertion
-- get report suite
-- get details for a report suite to verify collection configuration.
-- list metrics to validate event data mapping.
 - server side
+- adobe
+- list metrics
+- list report suites to identify data collection targets.
+- analytics
+- web analytics
+- batch event upload.
+- list dimensions to validate event data mapping.
+- business intelligence
+- list report suites
+- report suite discovery for data collection targeting.
+- list metrics to validate event data mapping.
+- customer intelligence
+- metric discovery for event mapping.
+- upload a gzip-compressed csv file of batched analytics event data.
+- digital marketing
+- data collection
+- list dimensions
+- validate a batch events file without ingesting.
+- list available metrics to validate event data mapping.
+- upload a batch events file.
+- report suite details.
+- get report suite details.
+- marketing
+- validate events
+- validate event files.
+- list available dimensions to validate event data mapping.
+- adobe analytics
+- bulk data insertion
+- list report suites to identify collection targets.
+- get details for a report suite to verify collection configuration.
+- events
+- get report suite
+- dimension discovery for event mapping.
 slug: data-collection
 tags:
 - Adobe Analytics

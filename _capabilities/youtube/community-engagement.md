@@ -57,51 +57,51 @@ personas: []
 provider_name: Youtube
 provider_slug: youtube
 search_terms:
-- list channel subscriptions
-- list youtube channels
-- update comment thread
-- manage channel subscriptions
-- unsubscribe
-- google
-- update an existing comment
-- media
-- update channel
-- community
-- list comment threads
-- video
-- unsubscribe from a channel
-- subscribe to a youtube channel
-- create comment
-- delete a comment
-- moderation
-- set moderation status
-- delete comment
-- update a comment
-- manage comment threads
-- streaming
-- subscribe to channel
-- unsubscribe from a youtube channel
-- list subscriptions
-- create comment thread
 - comments
-- subscriptions
-- post a new comment
-- subscribe
-- create a new comment thread
-- update channel settings
-- list comments
+- delete a comment
+- google
 - list channels
-- set moderation status on comments
-- manage individual comments
-- manage channel information
-- list comments on a video or channel
-- update a comment thread
-- subscribe to a channel
-- youtube
-- videos
-- unsubscribe from channel
-- update comment
+- streaming
+- subscribe to a youtube channel
 - social
+- update comment thread
+- delete comment
+- update an existing comment
+- manage channel subscriptions
+- list comments on a video or channel
+- unsubscribe from channel
+- list comment threads
+- unsubscribe from a channel
+- video
+- manage comment threads
+- create a new comment thread
+- list channel subscriptions
+- subscribe to a channel
+- create comment
+- manage channel information
+- manage individual comments
+- moderation
+- update channel
+- subscribe to channel
+- post a new comment
+- youtube
+- update a comment
+- list comments
+- media
+- unsubscribe
+- unsubscribe from a youtube channel
+- update a comment thread
+- create comment thread
+- update channel settings
+- subscribe
+- list subscriptions
+- list youtube channels
+- set moderation status on comments
+- community
+- update comment
+- videos
+- set moderation status
+- subscriptions
 slug: community-engagement
 tags:
 - YouTube
