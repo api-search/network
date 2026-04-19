@@ -1,0 +1,17 @@
+---
+description: VolumeType schema
+layout: schema
+name: VolumeType
+properties_list: []
+provider_name: Amazon Compute Optimizer
+provider_slug: amazon-compute-optimizer
+schema_file: json-schema/compute-optimizer-volume-type-schema.json
+slug: compute-optimizer-volume-type
+tags:
+- AWS
+- Cost Optimization
+- FinOps
+- Machine Learning
+- Resource Recommendations
+title: VolumeType
+---

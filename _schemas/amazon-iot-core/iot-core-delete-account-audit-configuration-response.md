@@ -1,0 +1,17 @@
+---
+description: DeleteAccountAuditConfigurationResponse schema
+layout: schema
+name: DeleteAccountAuditConfigurationResponse
+properties_list: []
+provider_name: Amazon IoT Core
+provider_slug: amazon-iot-core
+schema_file: json-schema/iot-core-delete-account-audit-configuration-response-schema.json
+slug: iot-core-delete-account-audit-configuration-response
+tags:
+- AWS
+- Device Management
+- IoT
+- MQTT
+- Message Routing
+title: DeleteAccountAuditConfigurationResponse
+---

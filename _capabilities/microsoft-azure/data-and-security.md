@@ -28,55 +28,55 @@ personas: []
 provider_name: Microsoft Azure
 provider_slug: microsoft-azure
 search_terms:
-- arm list resources
+- azure
+- resource manager
+- keyvault list certificates
+- list azure subscriptions
+- cosmos db
+- platform as a service
 - arm list subscriptions
-- cosmos list databases
-- list certificates
-- list cosmos db databases
-- list subscription tags
 - list items in a container
-- list blobs in a container
-- arm list providers
-- key vault secret management
-- list containers in a database
+- list subscription tags
+- cloud computing
+- cosmos list databases
+- api management
 - get a secret value
+- list certificates
+- list resource providers
+- list subscriptions
+- arm list resource groups
+- arm list resources
 - list secrets
 - keyvault list keys
-- blob get properties
-- api management
-- list resource providers
+- keyvault list secrets
+- list resources in a subscription
+- key vault secret management
+- cosmos list items
+- cosmos db database management
+- list resource groups
+- list containers in a database
+- list databases
+- cosmos list containers
+- blob list blobs
+- cloud
+- t1
+- key vault
+- get blob properties
+- blob storage
+- enterprise
+- arm list providers
+- infrastructure as a service
+- download a blob
+- blob storage operations
+- list cosmos db databases
+- blob download
 - list cryptographic keys
 - list blobs
-- arm list resource groups
-- list subscriptions
-- keyvault list certificates
-- list resources in a subscription
-- infrastructure as a service
-- key vault
-- t1
-- blob list blobs
+- blob get properties
+- list blobs in a container
+- subscription management
 - keyvault get secret
 - arm list tags
-- resource manager
-- cosmos db database management
-- azure
-- list databases
-- blob storage operations
-- subscription management
-- cloud
-- cosmos db
-- get blob properties
-- cosmos list items
-- keyvault list secrets
-- blob storage
-- blob download
-- cosmos list containers
-- list resource groups
-- download a blob
-- cloud computing
-- list azure subscriptions
-- platform as a service
-- enterprise
 slug: data-and-security
 tags:
 - Azure

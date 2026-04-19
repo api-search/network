@@ -48,52 +48,52 @@ personas: []
 provider_name: PeopleSoft
 provider_slug: peoplesoft
 search_terms:
-- reporting
-- peopletools platform services.
-- trigger index build
-- supply chain management
-- retrieve performance analytics reports.
-- campus solutions.
-- retrieve data for a specific pivot grid.
+- erp
+- search
+- execute a peoplesoft query by name.
+- list queries
 - pivot grid definitions
+- retrieve available pivot grid definitions.
+- full-text search results
+- list pivot grids
+- search content
+- performance analytics reports
+- supply chain management
+- execute a peoplesoft query by name and retrieve results.
+- query
+- list budgets
+- campus solutions
+- crm
+- retrieve data for a specific pivot grid.
+- peopletools platform services.
+- retrieve forecast data and projections.
+- reporting
+- execute query
+- list analytics reports
+- financial management
+- enterprise software
 - query execution
 - financial and supply chain management.
-- financial management
-- full-text search results
-- list analytics reports
-- get pivot grid data
-- retrieve data for a specific pivot grid with optional filters.
-- human capital management.
-- execute a full-text search across peoplesoft indexed content.
-- execute a peoplesoft query by name.
-- list forecasts
-- analytics
-- retrieve forecast data and projections.
-- campus solutions
-- budget definitions and data
-- retrieve budget definitions and data.
-- search
-- crm
-- erp
-- trigger a search index build or incremental update.
-- forecast data and projections
-- dashboards
-- search index operations
-- query
-- peoplesoft query definitions
-- list budgets
-- retrieve available peoplesoft query definitions.
-- performance analytics reports
-- list queries
-- list pivot grids
-- execute a peoplesoft query by name and retrieve results.
 - pivot grid data
-- execute query
-- enterprise software
-- search content
-- hcm
-- retrieve available pivot grid definitions.
+- retrieve budget definitions and data.
 - peoplesoft
+- trigger index build
+- get pivot grid data
+- trigger a search index build or incremental update.
+- human capital management.
+- analytics
+- retrieve available peoplesoft query definitions.
+- retrieve performance analytics reports.
+- budget definitions and data
+- campus solutions.
+- forecast data and projections
+- hcm
+- peoplesoft query definitions
+- search index operations
+- dashboards
+- execute a full-text search across peoplesoft indexed content.
+- retrieve data for a specific pivot grid with optional filters.
+- list forecasts
 slug: reporting-and-analytics
 tags:
 - PeopleSoft

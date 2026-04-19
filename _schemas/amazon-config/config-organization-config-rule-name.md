@@ -1,0 +1,18 @@
+---
+description: OrganizationConfigRuleName schema
+layout: schema
+name: OrganizationConfigRuleName
+properties_list: []
+provider_name: Amazon Config
+provider_slug: amazon-config
+schema_file: json-schema/config-organization-config-rule-name-schema.json
+slug: config-organization-config-rule-name
+tags:
+- Auditing
+- AWS
+- Compliance
+- Configuration Management
+- Governance
+- Security
+title: OrganizationConfigRuleName
+---

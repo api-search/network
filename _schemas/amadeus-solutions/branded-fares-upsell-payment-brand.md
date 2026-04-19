@@ -1,0 +1,19 @@
+---
+description: credit card brand
+layout: schema
+name: PaymentBrand
+properties_list: []
+provider_name: Amadeus Solutions
+provider_slug: amadeus-solutions
+schema_file: json-schema/branded-fares-upsell-payment-brand-schema.json
+slug: branded-fares-upsell-payment-brand
+tags:
+- Airlines
+- Booking
+- Flights
+- GDS
+- Hotels
+- Travel
+- Travel Technology
+title: PaymentBrand
+---

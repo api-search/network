@@ -1,0 +1,36 @@
+---
+description: Information about the vehicle to create.
+layout: schema
+name: CreateVehicleRequestItem
+properties_list:
+- description: ''
+  name: vehicleName
+  type: object
+- description: ''
+  name: modelManifestArn
+  type: object
+- description: ''
+  name: decoderManifestArn
+  type: object
+- description: ''
+  name: attributes
+  type: object
+- description: ''
+  name: associationBehavior
+  type: object
+- description: ''
+  name: tags
+  type: object
+provider_name: Amazon IoT FleetWise
+provider_slug: amazon-iot-fleetwise
+schema_file: json-schema/iot-fleetwise-create-vehicle-request-item-schema.json
+slug: iot-fleetwise-create-vehicle-request-item
+tags:
+- Automotive
+- AWS
+- Connected Vehicles
+- IoT
+- Telematics
+- Vehicle Data
+title: CreateVehicleRequestItem
+---

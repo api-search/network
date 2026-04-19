@@ -1,0 +1,31 @@
+---
+description: ListCoverageRequest schema from Amazon GuardDuty API
+layout: schema
+name: ListCoverageRequest
+properties_list:
+- description: ''
+  name: NextToken
+  type: object
+- description: ''
+  name: MaxResults
+  type: object
+- description: ''
+  name: FilterCriteria
+  type: object
+- description: ''
+  name: SortCriteria
+  type: object
+provider_name: Amazon GuardDuty
+provider_slug: amazon-guardduty
+schema_file: json-schema/guardduty-list-coverage-request-schema.json
+slug: guardduty-list-coverage-request
+tags:
+- Anomaly Detection
+- AWS
+- Compliance
+- Machine Learning
+- Monitoring
+- Security
+- Threat Detection
+title: ListCoverageRequest
+---

@@ -62,64 +62,64 @@ personas: []
 provider_name: LinkedIn
 provider_slug: linkedin
 search_terms:
-- professional networking
-- uses sales navigator for lead generation and crm sync.
-- careers
-- get inmail content
-- create creative
-- b2b advertising, audience targeting, and campaign analytics.
-- content marketing
-- get posts
-- get share statistics
 - retrieve inmail content by id.
-- marketing
-- tracks employee learning activity and completions.
-- archives communications for regulatory compliance.
-- retrieve page statistics.
-- manages b2b ad campaigns and audience targeting on linkedin.
-- retrieve share statistics.
-- sales intelligence, lead management, and crm integration.
-- get sponsored conversations.
-- message archiving and regulatory communications governance.
-- recruiting
-- initialize video upload.
-- posts jobs and manages candidates through ats integrations.
-- initialize video upload
-- create inmail content.
-- create post
-- community management
-- get follower count
-- get page statistics
-- initialize document upload
-- look up organization by id.
-- create a post.
-- initialize document upload.
-- get organization by id
-- authentication, sharing, and verification for consumer apps.
-- retrieve organization follower count.
-- business
+- retrieve social action notifications.
+- careers
+- get posts
+- search creatives
+- content marketing
+- create a sponsored conversation.
 - get follower statistics
-- search for creatives.
-- initialize image upload
-- create inmail content
+- manages b2b ad campaigns and audience targeting on linkedin.
+- employee development tracking and content access.
+- fetch multiple posts.
+- initialize document upload
+- job posting, recruiting, and applicant tracking.
+- business
+- integrates linkedin authentication and sharing into applications.
+- get sponsored conversations.
+- create share
+- get inmail content
+- get notifications
 - retrieve follower statistics.
 - social media
-- employee development tracking and content access.
-- get sponsored conversations
+- look up organization by id.
+- posts jobs and manages candidates through ats integrations.
 - linkedin
-- retrieve social action notifications.
-- integrates linkedin authentication and sharing into applications.
-- search creatives
-- job posting, recruiting, and applicant tracking.
-- get notifications
-- fetch multiple posts.
-- create share
-- create a share with company mention.
-- create a sponsored conversation.
-- create an ad creative.
+- initialize video upload
+- get page statistics
+- initialize document upload.
 - initialize image upload.
-- create sponsored conversation
+- community management
+- marketing
+- create a post.
 - data portability and advertiser transparency for dma.
+- retrieve organization follower count.
+- b2b advertising, audience targeting, and campaign analytics.
+- create a share with company mention.
+- get organization by id
+- uses sales navigator for lead generation and crm sync.
+- get share statistics
+- authentication, sharing, and verification for consumer apps.
+- create an ad creative.
+- retrieve share statistics.
+- sales intelligence, lead management, and crm integration.
+- tracks employee learning activity and completions.
+- message archiving and regulatory communications governance.
+- create inmail content
+- create post
+- create creative
+- archives communications for regulatory compliance.
+- get follower count
+- initialize video upload.
+- retrieve page statistics.
+- professional networking
+- create inmail content.
+- recruiting
+- initialize image upload
+- create sponsored conversation
+- get sponsored conversations
+- search for creatives.
 slug: content-and-community
 tags:
 - LinkedIn

@@ -57,79 +57,79 @@ personas: []
 provider_name: Intuit
 provider_slug: intuit
 search_terms:
-- send an invoice via email.
-- retrieve a quickbooks item by id.
-- get invoice pdf
-- read item
-- retrieve an item by id.
-- create item
-- update an existing quickbooks payment.
-- retrieve a quickbooks invoice by id.
-- void a quickbooks payment.
-- void payment
-- product and service catalog.
-- send invoice
-- create a new customer.
-- customer management.
-- email an invoice to the customer.
+- update payment
 - retrieve an invoice by id.
 - invoicing
-- create a new quickbooks invoice.
-- update an existing quickbooks item.
-- sales tax
-- accounting
-- create payment
-- financial
-- payments
-- single item operations.
-- retrieve a payment by id.
-- tax preparation
-- retrieve a customer by id.
-- update an existing quickbooks invoice.
-- record a new payment.
-- entity query endpoint.
-- send a quickbooks invoice via email.
-- update a quickbooks customer record.
-- update payment
-- financial services
-- void an existing invoice.
-- payroll
-- update invoice
-- retrieve invoice as pdf.
-- create a new item.
-- payment management.
-- create a new customer in quickbooks.
-- taxes
-- void an invoice.
-- single customer operations.
-- custom fields
-- invoice lifecycle management.
-- void a quickbooks invoice.
-- create customer
-- create a new invoice.
-- update customer
-- create a new product or service item.
-- single invoice operations.
-- single payment operations.
-- query quickbooks entities using sql-like syntax.
-- project management
-- create invoice
+- send an invoice via email.
 - small business
-- query quickbooks entities.
+- update customer
+- void payment
+- update an existing quickbooks invoice.
+- retrieve a payment by id.
+- send invoice
+- read item
+- update an existing quickbooks item.
+- create a new invoice.
+- accounting
+- product and service catalog.
+- single item operations.
+- financial services
 - time tracking
+- record a new payment.
+- update invoice
+- read invoice
+- retrieve a customer by id.
+- send a quickbooks invoice via email.
+- payments
+- custom fields
+- create item
 - get invoice pdf.
-- intuit
-- update item
-- query entities
-- get pdf of a quickbooks invoice.
-- retrieve a quickbooks customer by id.
-- record a customer payment in quickbooks.
-- tax
 - retrieve a quickbooks payment by id.
+- project management
 - void invoice
+- update item
+- update an existing quickbooks payment.
+- void a quickbooks invoice.
+- single customer operations.
+- payroll
+- create a new item.
+- retrieve a quickbooks invoice by id.
+- invoice lifecycle management.
+- retrieve a quickbooks item by id.
+- query quickbooks entities using sql-like syntax.
+- get pdf of a quickbooks invoice.
+- email an invoice to the customer.
+- void an invoice.
+- retrieve a quickbooks customer by id.
+- single invoice operations.
+- create invoice
+- intuit
+- taxes
+- tax preparation
+- record a customer payment in quickbooks.
+- entity query endpoint.
+- void an existing invoice.
+- create a new customer in quickbooks.
+- retrieve invoice as pdf.
+- tax
+- single payment operations.
+- retrieve an item by id.
+- get invoice pdf
+- void a quickbooks payment.
+- customer management.
+- financial
+- create customer
+- create a new customer.
 - read payment
 - read customer
-- read invoice
+- create payment
+- update a quickbooks customer record.
+- payment management.
+- query entities
+- query quickbooks entities.
+- create a new quickbooks invoice.
+- sales tax
+- create a new product or service item.
 slug: accounting-and-payments
 tags:
 - Intuit

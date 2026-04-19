@@ -1,0 +1,17 @@
+---
+description: NumberOfAssociations schema from Amazon Network Firewall
+layout: schema
+name: NumberOfAssociations
+properties_list: []
+provider_name: Amazon Network Firewall
+provider_slug: amazon-network-firewall
+schema_file: json-schema/openapi-number-of-associations-schema.json
+slug: openapi-number-of-associations
+tags:
+- AWS
+- Firewall
+- Intrusion Detection
+- Network Security
+- VPC
+title: NumberOfAssociations
+---

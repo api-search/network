@@ -1,0 +1,25 @@
+---
+description: ListCustomEntityTypesResponse schema from Amazon Glue API
+layout: schema
+name: ListCustomEntityTypesResponse
+properties_list:
+- description: ''
+  name: CustomEntityTypes
+  type: object
+- description: ''
+  name: NextToken
+  type: object
+provider_name: Amazon Glue
+provider_slug: amazon-glue
+schema_file: json-schema/glue-list-custom-entity-types-response-schema.json
+slug: glue-list-custom-entity-types-response
+tags:
+- Analytics
+- AWS
+- Data Catalog
+- Data Integration
+- Data Pipeline
+- ETL
+- Serverless
+title: ListCustomEntityTypesResponse
+---

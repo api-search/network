@@ -49,45 +49,45 @@ personas: []
 provider_name: Google Search Console
 provider_slug: google-search-console
 search_terms:
-- webmaster
-- delete site
-- manage search console sites.
-- inspect a url for index status and rich results.
-- get details for a specific site.
-- webmaster tools
 - get site
-- delete a sitemap.
-- add site
-- list sitemaps submitted for a site.
-- remove a site from search console.
-- submit sitemap
-- get sitemap details.
-- query search analytics
-- delete sitemap
-- get details for a specific sitemap.
-- google
-- seo
-- query search traffic data.
-- get sitemap
-- list all search console sites.
-- analytics
-- add a site to search console.
-- list all search console sites for the authenticated user.
-- submit a sitemap for crawling.
-- list sitemaps for a site.
-- query search analytics data with filters.
-- delete a previously submitted sitemap.
 - search
-- inspect url
-- list sites
-- inspect a url for index status, crawl info, mobile usability, and rich results.
-- inspect urls for indexing status.
-- get details for a specific search console site.
-- search console
-- manage sitemaps.
-- submit a sitemap.
-- query search traffic data with filters and dimensions.
 - list sitemaps
+- list all search console sites.
+- delete site
+- remove a site from search console.
+- list sitemaps for a site.
+- list sites
+- list all search console sites for the authenticated user.
+- query search traffic data with filters and dimensions.
+- delete a previously submitted sitemap.
+- submit a sitemap for crawling.
+- get details for a specific search console site.
+- inspect a url for index status, crawl info, mobile usability, and rich results.
+- seo
+- inspect a url for index status and rich results.
+- webmaster tools
+- delete a sitemap.
+- get sitemap details.
+- delete sitemap
+- query search analytics data with filters.
+- get sitemap
+- get details for a specific sitemap.
+- analytics
+- list sitemaps submitted for a site.
+- webmaster
+- submit sitemap
+- manage search console sites.
+- inspect url
+- query search traffic data.
+- submit a sitemap.
+- search console
+- get details for a specific site.
+- query search analytics
+- manage sitemaps.
+- add a site to search console.
+- add site
+- inspect urls for indexing status.
+- google
 slug: seo-management
 tags:
 - Google

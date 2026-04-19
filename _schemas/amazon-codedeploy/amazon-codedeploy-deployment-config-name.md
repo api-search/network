@@ -1,0 +1,19 @@
+---
+description: DeploymentConfigName schema from Amazon CodeDeploy
+layout: schema
+name: DeploymentConfigName
+properties_list: []
+provider_name: Amazon CodeDeploy
+provider_slug: amazon-codedeploy
+schema_file: json-schema/amazon-codedeploy-deployment-config-name-schema.json
+slug: amazon-codedeploy-deployment-config-name
+tags:
+- Amazon
+- AWS
+- Deployment
+- DevOps
+- CI/CD
+- Release Management
+- Blue/Green Deployment
+title: DeploymentConfigName
+---

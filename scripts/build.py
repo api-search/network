@@ -126,24 +126,34 @@ def extract_capability_search_terms(cap_data, vocab_data, provider_tags):
     # From vocabulary workflows
     if vocab_data:
         cap_section = vocab_data.get('capability', {})
-        for workflow in cap_section.get('workflows', []):
-            wf_desc = workflow.get('description', '')
-            if wf_desc:
-                terms.add(wf_desc.lower())
-            for persona_id in workflow.get('personas', []):
-                terms.add(persona_id.replace('-', ' '))
+        if isinstance(cap_section, dict):
+            for workflow in cap_section.get('workflows', []):
+                if not isinstance(workflow, dict):
+                    continue
+                wf_desc = workflow.get('description', '')
+                if wf_desc:
+                    terms.add(wf_desc.lower())
+                for persona_id in workflow.get('personas', []):
+                    if isinstance(persona_id, str):
+                        terms.add(persona_id.replace('-', ' '))
 
         # Personas
         for persona in cap_section.get('personas', []):
-            p_desc = persona.get('description', '')
-            if p_desc:
-                terms.add(p_desc.lower())
+            if isinstance(persona, dict):
+                p_desc = persona.get('description', '')
+                if p_desc:
+                    terms.add(p_desc.lower())
+            elif isinstance(persona, str):
+                terms.add(persona.lower())
 
         # Domains
         for domain in cap_section.get('domains', []):
-            d_desc = domain.get('description', '')
-            if d_desc:
-                terms.add(d_desc.lower())
+            if isinstance(domain, dict):
+                d_desc = domain.get('description', '')
+                if d_desc:
+                    terms.add(d_desc.lower())
+            elif isinstance(domain, str):
+                terms.add(domain.lower())
 
     # Provider tags
     for tag in provider_tags:
@@ -192,10 +202,13 @@ def find_matching_workflow(cap_label, vocab_data):
     if not vocab_data:
         return None
     cap_section = vocab_data.get('capability', {})
+    if not isinstance(cap_section, dict):
+        return None
     for workflow in cap_section.get('workflows', []):
+        if not isinstance(workflow, dict):
+            continue
         if workflow.get('name', '').lower() == cap_label.lower():
             return workflow
-        # Fuzzy match: check if the label contains the workflow name
         if workflow.get('name', '').lower() in cap_label.lower():
             return workflow
     return None
@@ -347,9 +360,11 @@ def process_provider(provider_dir, icon_manifest=None):
                 # Resolve persona names from vocabulary
                 if vocab_data:
                     cap_section = vocab_data.get('capability', {})
-                    persona_list = cap_section.get('personas', [])
+                    persona_list = cap_section.get('personas', []) if isinstance(cap_section, dict) else []
                     for pid in persona_ids:
                         for p in persona_list:
+                            if not isinstance(p, dict):
+                                continue
                             if p.get('id') == pid:
                                 personas.append({
                                     'id': pid,
@@ -414,11 +429,18 @@ def process_provider(provider_dir, icon_manifest=None):
             props = schema_data.get('properties', {})
             properties_list = []
             for prop_name, prop_def in props.items():
-                properties_list.append({
-                    'name': prop_name,
-                    'type': prop_def.get('type', 'object'),
-                    'description': clean_description(prop_def.get('description', ''))[:200]
-                })
+                if isinstance(prop_def, dict):
+                    properties_list.append({
+                        'name': prop_name,
+                        'type': prop_def.get('type', 'object'),
+                        'description': clean_description(prop_def.get('description', ''))[:200]
+                    })
+                else:
+                    properties_list.append({
+                        'name': prop_name,
+                        'type': str(prop_def) if prop_def else 'unknown',
+                        'description': ''
+                    })
 
             schema_entry = {
                 'layout': 'schema',
@@ -757,22 +779,30 @@ def build_vocabulary_index(provider_dirs):
                 })
 
             # Schemas from vocabulary
-            for category, schema_list in operational.get('schemas', {}).items():
-                if isinstance(schema_list, list):
-                    for s in schema_list:
-                        all_schemas_vocab.append({
-                            'name': s.get('name', ''),
-                            'description': clean_description(s.get('description', '')),
-                            'category': category,
-                            'provider': provider_name,
-                            'provider_slug': provider_slug,
-                        })
+            schemas_section = operational.get('schemas', {})
+            if isinstance(schemas_section, dict):
+                for category, schema_list in schemas_section.items():
+                    if isinstance(schema_list, list):
+                        for s in schema_list:
+                            if not isinstance(s, dict):
+                                continue
+                            all_schemas_vocab.append({
+                                'name': s.get('name', ''),
+                                'description': clean_description(s.get('description', '')),
+                                'category': category,
+                                'provider': provider_name,
+                                'provider_slug': provider_slug,
+                            })
 
             # Capability dimension
             cap = vocab_data.get('capability', {})
+            if not isinstance(cap, dict):
+                cap = {}
 
             # Personas
             for persona in cap.get('personas', []):
+                if not isinstance(persona, dict):
+                    continue
                 all_personas.append({
                     'id': persona.get('id', ''),
                     'name': persona.get('name', ''),
@@ -784,6 +814,8 @@ def build_vocabulary_index(provider_dirs):
 
             # Domains
             for domain in cap.get('domains', []):
+                if not isinstance(domain, dict):
+                    continue
                 all_domains.append({
                     'name': domain.get('name', ''),
                     'description': clean_description(domain.get('description', '')),
@@ -871,11 +903,14 @@ def main():
     total_schemas = 0
 
     for provider_dir in provider_dirs:
-        result = process_provider(provider_dir, icon_manifest)
-        if result:
-            providers.append(result)
-            total_apis += result.get('api_count', 0)
-            total_caps += len(result.get('capabilities', []))
+        try:
+            result = process_provider(provider_dir, icon_manifest)
+            if result:
+                providers.append(result)
+                total_apis += result.get('api_count', 0)
+                total_caps += len(result.get('capabilities', []))
+        except Exception as e:
+            print(f"  ERROR processing {os.path.basename(provider_dir)}: {e}")
 
     # Build vocabulary index for advanced search
     vocab_index = build_vocabulary_index(provider_dirs)

@@ -1,0 +1,124 @@
+---
+categories:
+- http
+- info
+- openapi
+- operation
+- parameter
+- paths
+- response
+- schema
+- security
+- servers
+description: Spectral linting rules defining API design standards and conventions for activision-blizzard.
+layout: rules
+name: activision-blizzard API Rules
+provider_name: activision-blizzard
+provider_slug: activision-blizzard
+rule_count: 23
+rules:
+- description: API title should start with "Activision Blizzard" or "Battle.net"
+  given: $.info.title
+  name: info-title-format
+  severity: warn
+- description: Info object must have a description
+  given: $.info
+  name: info-description-required
+  severity: error
+- description: Info object must include a version
+  given: $.info
+  name: info-version-required
+  severity: error
+- description: Should use OpenAPI 3.x
+  given: $.openapi
+  name: openapi-version
+  severity: warn
+- description: At least one server must be defined
+  given: $
+  name: servers-defined
+  severity: error
+- description: All servers should use HTTPS
+  given: $.servers[*].url
+  name: servers-https
+  severity: warn
+- description: Paths must not have trailing slashes
+  given: $.paths[*]~
+  name: paths-no-trailing-slash
+  severity: warn
+- description: Every operation must have a summary
+  given: $.paths[*][get,post,put,patch,delete]
+  name: operation-summary-required
+  severity: error
+- description: Operation summary should start with "Activision Blizzard"
+  given: $.paths[*][get,post,put,patch,delete].summary
+  name: operation-summary-prefix
+  severity: warn
+- description: Every operation should have a description
+  given: $.paths[*][get,post,put,patch,delete]
+  name: operation-description-required
+  severity: warn
+- description: Every operation must have an operationId
+  given: $.paths[*][get,post,put,patch,delete]
+  name: operation-operationId-required
+  severity: error
+- description: OperationId should use camelCase
+  given: $.paths[*][get,post,put,patch,delete].operationId
+  name: operation-operationId-camelCase
+  severity: warn
+- description: Every operation must have at least one tag
+  given: $.paths[*][get,post,put,patch,delete]
+  name: operation-tags-required
+  severity: warn
+- description: Every parameter must have a description
+  given: $.paths[*][get,post,put,patch,delete].parameters[*]
+  name: parameter-description-required
+  severity: warn
+- description: Battle.net data endpoints require namespace parameter
+  given: $.paths[/data/**][get].parameters
+  name: parameter-namespace-required
+  severity: info
+- description: Every operation must have a 2xx response
+  given: $.paths[*][get,post,put,patch,delete].responses
+  name: response-success-required
+  severity: error
+- description: Operations should document 401 Unauthorized
+  given: $.paths[*][get,post,put,patch,delete].responses
+  name: response-401-defined
+  severity: warn
+- description: Every response must have a description
+  given: $.paths[*][get,post,put,patch,delete].responses[*]
+  name: response-description-required
+  severity: error
+- description: Security schemes must be defined in components
+  given: $.components
+  name: security-schemes-defined
+  severity: error
+- description: Battle.net API should use OAuth2 authentication
+  given: $.components.securitySchemes[*].type
+  name: security-oauth2
+  severity: warn
+- description: GET operations should not have a request body
+  given: $.paths[*].get
+  name: http-get-no-request-body
+  severity: error
+- description: Component schemas should have descriptions
+  given: $.components.schemas[*]
+  name: schema-description-required
+  severity: warn
+- description: Schema properties should have example values
+  given: $.components.schemas[*].properties[*]
+  name: schema-property-examples
+  severity: info
+rules_file: rules/activision-blizzard-spectral-rules.yml
+rules_url: https://raw.githubusercontent.com/api-evangelist/activision-blizzard/refs/heads/main/rules/activision-blizzard-spectral-rules.yml
+severity_counts:
+  error: 9
+  hint: 0
+  info: 2
+  warn: 12
+slug: activision-blizzard-spectral-rules
+tags:
+- Spectral
+- Linting
+- API Governance
+---

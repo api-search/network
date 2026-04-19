@@ -1,0 +1,18 @@
+---
+description: ''
+layout: schema
+name: TagResourceResponse
+properties_list: []
+provider_name: Amazon HealthLake
+provider_slug: amazon-healthlake
+schema_file: json-schema/healthlake-tag-resource-response-schema.json
+slug: healthlake-tag-resource-response
+tags:
+- AWS
+- FHIR
+- Health Data
+- Healthcare
+- HIPAA
+- Cloud Computing
+title: TagResourceResponse
+---

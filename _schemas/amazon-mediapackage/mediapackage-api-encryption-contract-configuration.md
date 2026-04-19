@@ -1,0 +1,22 @@
+---
+description: 'Use encryptionContractConfiguration to configure one or more content encryption keys for your endpoints that use SPEKE 2.0. The encryption contract defines which content keys are used to encrypt the audio and video tracks in your stream. To configure the encryption contract, specify which audio and video encryption presets to use. Note the following considerations when using encryptionContractConfiguration: encryptionContractConfiguration can be used for DASH or CMAF endpoints that use SPEKE 2.0. SPEKE 2.0 relies on the CPIX 2.3 specification. You must disable key rotation for this endpoint by setting keyRotationIntervalSeconds to 0.'
+layout: schema
+name: EncryptionContractConfiguration
+properties_list:
+- description: ''
+  name: PresetSpeke20Audio
+  type: object
+- description: ''
+  name: PresetSpeke20Video
+  type: object
+provider_name: Amazon MediaPackage
+provider_slug: amazon-mediapackage
+schema_file: json-schema/mediapackage-api-encryption-contract-configuration-schema.json
+slug: mediapackage-api-encryption-contract-configuration
+tags:
+- AWS
+- Broadcasting
+- Media Processing
+- Media
+title: EncryptionContractConfiguration
+---

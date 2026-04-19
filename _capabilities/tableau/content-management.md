@@ -41,51 +41,51 @@ personas: []
 provider_name: Tableau
 provider_slug: tableau
 search_terms:
-- create a new site
-- update site configuration
-- content management
-- tableau
-- delete a site
-- delete site
-- administration
-- get workbook
-- delete a workbook
-- list data sources
-- list all sites
-- data visualization
-- user operations
-- list users
-- sign out
 - get site
-- workbook operations
-- create site
-- list workbooks on a site
-- single site operations
-- update site
-- data source operations
-- delete data source
-- sign in to tableau server or cloud
-- delete a data source
-- get data source
-- add a user to a site
-- sign out from tableau
-- add user
-- analytics
-- sign in
-- get site details
-- get details of a specific workbook
-- site management
-- dashboards
-- list sites
-- list data sources on a site
-- business intelligence
-- delete workbook
-- list users on a site
-- update a site
-- get details of a specific data source
 - list workbooks
-- list all sites on the server
+- site management
 - get details of a specific site
+- delete site
+- sign out from tableau
+- get workbook
+- get details of a specific workbook
+- list sites
+- get data source
+- data visualization
+- list data sources on a site
+- content management
+- workbook operations
+- list workbooks on a site
+- sign in
+- tableau
+- user operations
+- delete workbook
+- delete a workbook
+- administration
+- create a new site
+- create site
+- list users on a site
+- list users
+- data source operations
+- update site configuration
+- list data sources
+- analytics
+- single site operations
+- list all sites on the server
+- update a site
+- delete a site
+- sign out
+- get details of a specific data source
+- add user
+- delete a data source
+- delete data source
+- dashboards
+- get site details
+- business intelligence
+- update site
+- sign in to tableau server or cloud
+- add a user to a site
+- list all sites
 slug: content-management
 tags:
 - Tableau

@@ -57,57 +57,57 @@ personas: []
 provider_name: Google Workspace
 provider_slug: google-workspace
 search_terms:
-- productivity
-- create a new user.
-- update a user.
-- list org units
-- delete group
-- sign out a user from all sessions.
-- group management
 - user account management.
-- collaboration
-- list users
-- organizational unit management.
-- storage
-- get user details.
-- list groups.
 - individual user management.
-- list organizational units.
-- delete user
-- google workspace
-- domain administration
-- create org unit
-- create a new user in the domain.
-- undelete user
+- create a new user.
+- update a group.
+- patch user properties.
+- list groups.
 - email
 - list groups
-- update a group.
-- undelete a deleted user.
-- individual group management.
-- user management
-- patch user properties.
-- get user
-- update group
-- patch user
-- calendar
-- make user admin
-- list users in the google workspace domain.
-- video conferencing
-- create user
-- update user
-- create an organizational unit.
-- create group
-- delete a group.
-- create a new group.
-- group management.
-- sign out user
-- make a user an admin.
-- list groups in the domain.
 - create a group.
-- get group details.
-- get group
-- list users in the domain.
 - delete a user.
+- list users in the google workspace domain.
+- list users in the domain.
+- create an organizational unit.
+- group management
+- update group
+- collaboration
+- delete a group.
+- patch user
+- user management
+- update a user.
+- organizational unit management.
+- individual group management.
+- get user details.
+- get group details.
+- undelete a deleted user.
+- list groups in the domain.
+- create user
+- create group
+- delete group
+- undelete user
+- delete user
+- list users
+- update user
+- get user
+- create org unit
+- productivity
+- sign out a user from all sessions.
+- storage
+- video conferencing
+- list org units
+- make a user an admin.
+- create a new group.
+- make user admin
+- create a new user in the domain.
+- domain administration
+- list organizational units.
+- sign out user
+- calendar
+- google workspace
+- get group
+- group management.
 slug: domain-administration
 tags:
 - Google Workspace

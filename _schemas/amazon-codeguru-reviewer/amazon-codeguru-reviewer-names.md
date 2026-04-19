@@ -1,0 +1,19 @@
+---
+description: Names schema from Amazon CodeGuru Reviewer
+layout: schema
+name: Names
+properties_list: []
+provider_name: Amazon CodeGuru Reviewer
+provider_slug: amazon-codeguru-reviewer
+schema_file: json-schema/amazon-codeguru-reviewer-names-schema.json
+slug: amazon-codeguru-reviewer-names
+tags:
+- Amazon
+- AWS
+- Code Review
+- Security
+- DevOps
+- Machine Learning
+- Developer Tools
+title: Names
+---

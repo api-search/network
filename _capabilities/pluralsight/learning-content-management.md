@@ -53,53 +53,53 @@ personas: []
 provider_name: Pluralsight
 provider_slug: pluralsight
 search_terms:
-- technology
 - query learning paths
-- query content tags and taxonomy data used to categorize and organize learning content.
-- content management
-- query the general content catalog
+- pluralsight
 - manage channels
-- query the course catalog
-- education
-- resolve content slugs to internal identifiers for content lookup by human-readable url slugs.
-- channels
-- query content catalog
-- skills assessment
-- learning paths
-- query content tags and taxonomy data
+- courses
 - query and manage content channels
-- structured sequences of courses organized around skills and roles
-- query lab catalog and lab activity data for hands-on learning experiences and practical exercises.
-- engineering metrics
-- query course catalog information including titles, descriptions, authors, duration, release dates, and retirement status.
-- content channels for organizing and curating learning content
-- query learning path catalog data
-- query the program catalog including structured learning programs and curriculum offerings.
-- structured learning programs and curriculum offerings
-- query programs
 - resolve content slugs to internal identifiers
-- query learning path catalog data including structured sequences of courses and content organized around specific skills and roles.
-- query content slugs
-- hands-on labs and practical exercises
+- query content tags and taxonomy data
+- learning
+- query and manage content channels including creating channels, managing members and groups, organizing content sections, and tracking channel progress.
+- query the general content catalog
+- course catalog with titles, descriptions, authors, and metadata
+- content management
+- query the program catalog including structured learning programs and curriculum offerings.
 - query lab catalog and activity data
 - content tags and taxonomy for categorization
-- courses
-- query course catalog
-- video training
-- retrieve the full public course catalog including course ids, titles, durations, release dates, and retirement status.
+- query learning path catalog data
+- query the course catalog
 - query the general content catalog including videos, guides, interactive courses, and other content types.
-- pluralsight
-- course catalog with titles, descriptions, authors, and metadata
-- query the program catalog
-- learning
-- general content catalog including videos, guides, and interactive courses
-- query tags
-- retrieve the full public course catalog
-- query and manage content channels including creating channels, managing members and groups, organizing content sections, and tracking channel progress.
-- public course catalog accessible without authentication
 - learning content
+- public course catalog accessible without authentication
+- education
+- retrieve the full public course catalog
 - query labs
+- resolve content slugs to internal identifiers for content lookup by human-readable url slugs.
+- learning paths
+- engineering metrics
+- channels
+- retrieve the full public course catalog including course ids, titles, durations, release dates, and retirement status.
+- structured sequences of courses organized around skills and roles
+- technology
+- structured learning programs and curriculum offerings
+- query programs
+- hands-on labs and practical exercises
+- query content tags and taxonomy data used to categorize and organize learning content.
+- query learning path catalog data including structured sequences of courses and content organized around specific skills and roles.
+- skills assessment
+- general content catalog including videos, guides, and interactive courses
+- video training
+- query the program catalog
+- query content catalog
+- query course catalog
+- content channels for organizing and curating learning content
 - get public course catalog
+- query lab catalog and lab activity data for hands-on learning experiences and practical exercises.
+- query course catalog information including titles, descriptions, authors, duration, release dates, and retirement status.
+- query tags
+- query content slugs
 slug: learning-content-management
 tags:
 - Pluralsight

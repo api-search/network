@@ -81,74 +81,74 @@ personas: []
 provider_name: ZoomInfo
 provider_slug: zoominfo
 search_terms:
-- retrieve news enrichment data.
-- enrich ip addresses with company data.
-- bulk company search and enrichment.
-- get organizational chart data for a company.
-- enrich ip
-- get bulk job status
-- get location data for a company.
-- b2b
-- data
-- enrich location
-- zoominfo
-- get org chart data for a company.
-- sales intelligence
-- submit a bulk contact search job.
-- retrieve intent signal enrichment data.
-- enrich contact
-- bulk contact search and enrichment.
-- enrich a contact record with zoominfo person data including email, phone, title, and company.
-- get corporate hierarchy data showing parent/subsidiary relationships.
-- retrieve contact hashtag data.
-- data enrichment
-- enrich corporate hierarchy
-- b2b data
-- enrich a company record with zoominfo master company data.
-- enrich contact records with zoominfo data.
-- get scoop data for a company.
-- enrich company records with zoominfo data.
-- enrich orgchart
-- enrich a company record with zoominfo firmographic data including revenue, employees, and industry.
-- enrich technology
-- bulk search contacts
-- get bulk job results
-- get the results of a completed bulk job.
-- company data
-- enrich news
 - retrieve technology stack data.
-- enrich hashtags
-- bulk enrich companies
-- bulk enrich contacts
-- retrieve corporate hierarchy data.
-- retrieve company location data.
-- enrich scoop
-- get the status of a bulk job.
-- marketing intelligence
-- get corporate hierarchy showing parent/subsidiary relationships.
-- crm integration
-- retrieve bulk job results.
-- bulk search companies
-- get technology stack data for a company.
-- get news data for a company.
+- enrich orgchart
 - get company data associated with an ip address.
-- lead generation
-- submit a bulk company enrichment job.
-- enrich company master
-- submit a bulk company search job.
-- enrich a contact record with zoominfo person data.
-- get intent signal data for a company.
 - enrich company
+- enrich news
+- enrich scoop
 - enrich intent
-- contact database
-- retrieve organizational chart data.
-- enrich company records with zoominfo master data.
+- bulk enrich contacts
+- get the results of a completed bulk job.
+- enrich a company record with zoominfo master company data.
+- retrieve corporate hierarchy data.
+- get org chart data for a company.
 - enrich a company record with zoominfo firmographic data.
-- submit a bulk contact enrichment job.
-- retrieve scoop enrichment data.
-- get hashtag data for a contact.
-- check bulk job status.
+- retrieve contact hashtag data.
+- enrich a contact record with zoominfo person data including email, phone, title, and company.
+- crm integration
+- marketing intelligence
+- enrich contact records with zoominfo data.
 - contacts
+- get intent signal data for a company.
+- enrich a contact record with zoominfo person data.
+- bulk contact search and enrichment.
+- b2b
+- bulk search contacts
+- bulk company search and enrichment.
+- enrich location
+- enrich ip
+- submit a bulk company enrichment job.
+- check bulk job status.
+- get bulk job status
+- retrieve organizational chart data.
+- zoominfo
+- get organizational chart data for a company.
+- enrich contact
+- enrich company master
+- get location data for a company.
+- retrieve scoop enrichment data.
+- get bulk job results
+- get the status of a bulk job.
+- enrich technology
+- get news data for a company.
+- sales intelligence
+- bulk enrich companies
+- retrieve news enrichment data.
+- get corporate hierarchy showing parent/subsidiary relationships.
+- enrich hashtags
+- company data
+- get technology stack data for a company.
+- get corporate hierarchy data showing parent/subsidiary relationships.
+- enrich company records with zoominfo master data.
+- get scoop data for a company.
+- submit a bulk contact enrichment job.
+- retrieve company location data.
+- retrieve intent signal enrichment data.
+- submit a bulk company search job.
+- data
+- data enrichment
+- bulk search companies
+- contact database
+- lead generation
+- enrich corporate hierarchy
+- enrich company records with zoominfo data.
+- retrieve bulk job results.
+- b2b data
+- get hashtag data for a contact.
+- submit a bulk contact search job.
+- enrich ip addresses with company data.
+- enrich a company record with zoominfo firmographic data including revenue, employees, and industry.
 slug: data-enrichment
 tags:
 - ZoomInfo

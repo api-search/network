@@ -26,52 +26,52 @@ personas: []
 provider_name: Oracle E-Business Suite
 provider_slug: oracle-e-business-suite
 search_terms:
+- supply chain
+- erp
+- business applications
+- mfg get bills of material
+- discrete job management.
+- oracle
+- get inventory items
+- retrieve on-hand quantities.
+- inv get sales orders
+- inv get inventory items
+- manufacturing
+- get bom by id.
+- on-hand quantity management.
+- retrieve bills of material.
+- retrieve routings.
+- mfg complete assembly
+- retrieve deliveries.
+- mfg issue material
+- inv get deliveries
+- list discrete jobs.
+- mfg get routings
+- get bills of material
+- e-business suite
+- mfg create discrete job
+- retrieve discrete jobs.
+- mfg get discrete job by id
+- mfg get wip operations
+- get discrete job by id.
+- list boms.
+- inventory item management.
+- retrieve sales orders.
+- retrieve inventory items.
+- production
+- list on-hand quantities.
+- list inventory items.
 - create a discrete job.
 - get onhand quantities
-- inv get sales orders
-- mfg get bills of material
-- retrieve deliveries.
-- get discrete jobs
-- business applications
-- supply chain
-- retrieve on-hand quantities.
-- mfg get discrete job by id
-- get inventory items
-- production
-- inv get inventory items
-- mfg complete assembly
-- retrieve discrete jobs.
-- get bom by id.
-- list discrete jobs.
-- mfg get bill of material by id
 - complete an assembly.
-- discrete job management.
-- mfg get routings
-- on-hand quantity management.
-- list inventory items.
-- erp
-- get discrete job by id.
-- e-business suite
-- inv get onhand quantities
-- inventory item management.
-- list boms.
-- retrieve bills of material.
-- oracle
-- issue material to a job.
-- inv get deliveries
-- mfg get discrete jobs
-- get bills of material
-- mfg create discrete job
-- list on-hand quantities.
-- retrieve routings.
-- retrieve sales orders.
-- manufacturing
-- mfg get wip operations
-- retrieve wip operations.
 - enterprise
-- mfg issue material
+- inv get onhand quantities
+- mfg get discrete jobs
+- mfg get bill of material by id
+- get discrete jobs
 - bom management.
-- retrieve inventory items.
+- retrieve wip operations.
+- issue material to a job.
 slug: manufacturing-operations
 tags:
 - Oracle

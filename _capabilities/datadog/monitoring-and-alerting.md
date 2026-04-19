@@ -56,67 +56,67 @@ personas: []
 provider_name: Datadog
 provider_slug: datadog
 search_terms:
-- get a monitor
-- getMonitor
-- createMonitor
-- submitMetrics
-- query timeseries metric data
-- GetCSMHostsAndContainersCoverageAnalysis
-- monitoring
-- datadog
-- query timeseries
-- query scalar
-- create a monitor
-- submit metrics
-- updateMonitor
-- host coverage
-- get dashboards in a list
-- validate a monitor configuration
-- list all monitors
-- unmute monitor
-- monitor management
-- add dashboard list items
-- delete monitor
-- platform
-- mute monitor
-- unmute a monitor to resume notifications
-- alerting
-- get hosts coverage
-- queryMetricsTimeseries
-- active metrics
-- muteMonitor
-- get a monitor by id
-- query scalar metric data
-- t1
-- analytics
-- mute a monitor to suppress notifications
-- dashboards
-- deleteMonitor
 - get monitor
-- edit an existing monitor
+- listMonitors
 - mute a monitor
+- mute a monitor to suppress notifications
+- query timeseries
+- mute monitor
+- host coverage
+- alerting
+- query scalar
+- list monitors
+- GetCSMHostsAndContainersCoverageAnalysis
+- create a new monitor
+- deleteMonitor
 - visualizations
-- update monitor
+- infrastructure
+- get csm hosts and containers coverage
+- delete monitor
+- individual monitor operations
+- create monitor
+- GetDashboardListItems
 - get dashboard list items
-- add dashboards to a dashboard list
-- validate monitor
-- submit metric data points
+- get dashboards in a list
+- platform
+- update monitor
 - list active metrics
+- datadog
+- createMonitor
 - dashboard list items
 - query timeseries data
-- individual monitor operations
-- delete a monitor
-- create a new monitor
-- list monitors
-- fetch dashboards in a dashboard list
-- metrics
-- listMonitors
-- update a monitor
-- create monitor
-- get csm hosts and containers coverage
-- GetDashboardListItems
-- infrastructure
+- edit an existing monitor
+- validate monitor
+- active metrics
+- add dashboards to a dashboard list
+- muteMonitor
+- create a monitor
 - listActiveMetrics
+- getMonitor
+- queryMetricsTimeseries
+- unmute monitor
+- monitoring
+- add dashboard list items
+- update a monitor
+- updateMonitor
+- submit metrics
+- analytics
+- monitor management
+- t1
+- unmute a monitor to resume notifications
+- list all monitors
+- validate a monitor configuration
+- fetch dashboards in a dashboard list
+- delete a monitor
+- query timeseries metric data
+- query scalar metric data
+- dashboards
+- get a monitor by id
+- metrics
+- get hosts coverage
+- submit metric data points
+- get a monitor
+- submitMetrics
 slug: monitoring-and-alerting
 tags:
 - Datadog

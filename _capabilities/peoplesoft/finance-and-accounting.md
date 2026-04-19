@@ -47,50 +47,50 @@ personas: []
 provider_name: PeopleSoft
 provider_slug: peoplesoft
 search_terms:
-- general ledger
-- peopletools platform services.
-- list journal entries
+- retrieve accounts payable vouchers.
+- erp
 - supply chain management
-- accounts payable vouchers
-- retrieve performance analytics reports.
-- accounting
-- budgeting
-- campus solutions.
-- list ar items
-- retrieve accounts receivable items.
+- performance analytics reports
 - list expense reports
-- financial and supply chain management.
-- financial management
+- budgeting
+- retrieve general ledger journal entries.
+- list budgets
+- list journal entries
+- campus solutions
+- crm
+- accounting
+- retrieve accounts receivable items.
+- peopletools platform services.
+- retrieve forecast data and projections.
 - list analytics reports
+- finance approval requests
+- individual approval operations
+- financial management
+- accounts payable vouchers
+- enterprise software
+- financial and supply chain management.
+- approve, deny, or push back a finance approval request.
+- list ar items
+- retrieve budget definitions and data.
+- peoplesoft
+- accounts receivable items
+- expense reports
+- forecasting
 - human capital management.
 - retrieve expense reports.
-- list forecasts
-- list pending approvals
-- retrieve general ledger journal entries.
-- retrieve forecast data and projections.
-- list vouchers
-- campus solutions
-- budget definitions and data
-- accounts receivable items
-- retrieve budget definitions and data.
-- finance approval requests
-- crm
-- retrieve accounts payable vouchers.
-- forecast data and projections
+- retrieve performance analytics reports.
 - finance
-- erp
-- forecasting
-- list budgets
-- process approval
-- performance analytics reports
+- budget definitions and data
+- list vouchers
 - retrieve pending finance approval requests.
-- general ledger journal entries
-- expense reports
-- individual approval operations
-- enterprise software
+- campus solutions.
+- forecast data and projections
 - hcm
-- approve, deny, or push back a finance approval request.
-- peoplesoft
+- general ledger journal entries
+- process approval
+- general ledger
+- list pending approvals
+- list forecasts
 slug: finance-and-accounting
 tags:
 - PeopleSoft

@@ -51,62 +51,62 @@ personas: []
 provider_name: LinkedIn
 provider_slug: linkedin
 search_terms:
-- professional networking
-- uses sales navigator for lead generation and crm sync.
-- careers
-- get advertiser transparency data.
-- opt out member
-- get business manager account relationships.
-- b2b advertising, audience targeting, and campaign analytics.
-- marketing
-- tracks employee learning activity and completions.
-- archives communications for regulatory compliance.
-- manages b2b ad campaigns and audience targeting on linkedin.
-- get organization acls
-- recruiting
-- sales intelligence, lead management, and crm integration.
-- message archiving and regulatory communications governance.
-- get organization by id for data portability.
-- posts jobs and manages candidates through ats integrations.
-- get advertiser transparency
-- data portability
-- check member status
-- get business manager relationships
-- get compliance events
-- get posts for data portability.
-- get dma posts
-- opt in member
-- retrieve compliance events for a regulated member.
-- batch get organizations for data portability.
-- get page content analytics
-- compliance
-- get reactions for data portability.
-- authentication, sharing, and verification for consumer apps.
-- get dma reactions
-- business
-- get dma events
-- opt in a member for compliance monitoring.
-- regulatory
-- get organization acls for data portability.
-- employee development tracking and content access.
-- get dma lead gen responses
-- social media
-- batch get organizations
-- get organization
-- linkedin
-- get events for data portability.
-- integrates linkedin authentication and sharing into applications.
-- retrieve compliance events.
 - get comments for data portability.
-- job posting, recruiting, and applicant tracking.
-- get organization by id.
-- opt out a member from compliance monitoring.
-- check member compliance monitoring status.
-- get dma comments
+- careers
+- data portability
 - get page content analytics for data portability.
+- get organization by id for data portability.
+- manages b2b ad campaigns and audience targeting on linkedin.
+- batch get organizations
+- employee development tracking and content access.
+- get organization acls for data portability.
+- business
+- job posting, recruiting, and applicant tracking.
+- retrieve compliance events for a regulated member.
+- get advertiser transparency
+- get business manager relationships
+- batch get organizations for data portability.
+- integrates linkedin authentication and sharing into applications.
+- regulatory
+- get organization acls
+- social media
+- get organization by id.
+- posts jobs and manages candidates through ats integrations.
+- linkedin
+- get reactions for data portability.
+- get compliance events
+- get organization
+- opt out member
 - get lead gen responses for data portability.
+- get dma events
+- marketing
+- get page content analytics
+- check member compliance monitoring status.
+- compliance
 - data portability and advertiser transparency for dma.
+- b2b advertising, audience targeting, and campaign analytics.
+- get events for data portability.
+- uses sales navigator for lead generation and crm sync.
+- get business manager account relationships.
+- authentication, sharing, and verification for consumer apps.
+- check member status
+- sales intelligence, lead management, and crm integration.
+- get advertiser transparency data.
+- tracks employee learning activity and completions.
+- message archiving and regulatory communications governance.
+- opt in member
+- retrieve compliance events.
 - get advertiser transparency data for a sponsored account.
+- archives communications for regulatory compliance.
+- get dma reactions
+- opt in a member for compliance monitoring.
+- professional networking
+- get dma posts
+- recruiting
+- get dma comments
+- get dma lead gen responses
+- opt out a member from compliance monitoring.
+- get posts for data portability.
 slug: compliance-and-regulatory
 tags:
 - LinkedIn

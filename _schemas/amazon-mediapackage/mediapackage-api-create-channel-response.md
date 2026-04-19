@@ -1,0 +1,40 @@
+---
+description: CreateChannelResponse schema from Amazon MediaPackage API
+layout: schema
+name: CreateChannelResponse
+properties_list:
+- description: ''
+  name: Arn
+  type: object
+- description: ''
+  name: CreatedAt
+  type: object
+- description: ''
+  name: Description
+  type: object
+- description: ''
+  name: EgressAccessLogs
+  type: object
+- description: ''
+  name: HlsIngest
+  type: object
+- description: ''
+  name: Id
+  type: object
+- description: ''
+  name: IngressAccessLogs
+  type: object
+- description: ''
+  name: Tags
+  type: object
+provider_name: Amazon MediaPackage
+provider_slug: amazon-mediapackage
+schema_file: json-schema/mediapackage-api-create-channel-response-schema.json
+slug: mediapackage-api-create-channel-response
+tags:
+- AWS
+- Broadcasting
+- Media Processing
+- Media
+title: CreateChannelResponse
+---

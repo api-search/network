@@ -1,0 +1,24 @@
+---
+description: <p>A segment from a trace that has been ingested by the X-Ray service. The segment can be compiled from documents uploaded with <a href="https://docs.aws.amazon.com/xray/latest/api/API_PutTraceSegments.html">PutTraceSegments</a>, or an <code>inferred</code> segment for a downstream service, generated from a subsegment sent by the service that called it.</p> <p>For the full segment document schema, see <a href="https://docs.aws.amazon.com/xray/latest/devguide/xray-api-segmentdocuments.html">Amazon Web Services X-Ray Segment Documents</a> in the <i>Amazon Web Services X-Ray Developer Guide</i>.</p>
+layout: schema
+name: Segment
+properties_list:
+- description: ''
+  name: Id
+  type: object
+- description: ''
+  name: Document
+  type: object
+provider_name: Amazon X-Ray
+provider_slug: amazon-xray
+schema_file: json-schema/xray-segment-schema.json
+slug: xray-segment
+tags:
+- Application Performance
+- AWS
+- Debugging
+- Distributed Tracing
+- Monitoring
+- Observability
+title: Segment
+---

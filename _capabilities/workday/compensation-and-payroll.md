@@ -23,51 +23,51 @@ personas: []
 provider_name: Workday
 provider_slug: workday
 search_terms:
-- benefits list elections
-- submit a benefits change request
-- list benefit elections
-- list all benefit plans
-- get pay group details
-- get eligible benefit plans for a worker
-- compensation
-- workday
-- list pay groups
-- request a one-time payment
-- list plans
-- benefits change
-- payroll list inputs
-- payroll
-- comp request change
-- list all pay groups
-- financial management
-- payroll list pay slips
-- comp request one time payment
-- list pay slips
-- submit a compensation change request
 - payroll get pay group details
-- list payroll inputs
-- pay groups
-- payroll get pay group
-- comp list grades
-- benefits
-- list dependents
-- list compensation scorecards
-- list compensation plans
-- saas
-- comp list plans
-- benefits list plans
-- list compensation grades
-- compensation plans
-- list benefit plans
-- comp list scorecards
-- cloud computing
-- enterprise software
-- get a pay group by id
-- payroll list pay groups
+- benefits list elections
+- list pay groups
+- benefits change
 - benefits list dependents
-- hcm
+- list compensation plans
+- comp list grades
+- payroll list pay groups
+- cloud computing
+- list plans
+- get a pay group by id
+- list pay slips
+- get eligible benefit plans for a worker
+- list benefit elections
+- benefits
+- list all benefit plans
+- payroll
+- financial management
+- enterprise software
+- payroll list pay slips
+- benefits list plans
+- list all pay groups
+- compensation
+- request a one-time payment
+- submit a compensation change request
+- payroll get pay group
+- workday
+- get pay group details
+- comp list scorecards
+- compensation plans
+- submit a benefits change request
+- comp request one time payment
+- pay groups
+- list compensation grades
+- list benefit plans
 - benefit plans
+- payroll list inputs
+- hcm
+- saas
+- list compensation scorecards
+- list dependents
 - benefits get eligible plans
+- comp request change
+- list payroll inputs
+- comp list plans
 slug: compensation-and-payroll
 tags:
 - Workday

@@ -18,35 +18,35 @@ personas: []
 provider_name: LinkedIn
 provider_slug: linkedin
 search_terms:
-- professional networking
-- retrieve ad analytics by various pivots.
-- reporting
-- uses sales navigator for lead generation and crm sync.
 - careers
-- retrieve ad analytics by various pivots and dimensions.
-- b2b advertising, audience targeting, and campaign analytics.
-- marketing
-- tracks employee learning activity and completions.
-- archives communications for regulatory compliance.
 - manages b2b ad campaigns and audience targeting on linkedin.
-- recruiting
-- sales intelligence, lead management, and crm integration.
-- message archiving and regulatory communications governance.
-- get learning activity reports
+- employee development tracking and content access.
+- learning
+- business
+- job posting, recruiting, and applicant tracking.
+- integrates linkedin authentication and sharing into applications.
+- reporting
+- social media
+- retrieve ad analytics by various pivots and dimensions.
 - posts jobs and manages candidates through ats integrations.
-- retrieve learning activity reports aggregated by account, group, individual, or content.
+- linkedin
+- get ad analytics
+- marketing
+- data portability and advertiser transparency for dma.
+- b2b advertising, audience targeting, and campaign analytics.
 - analytics
+- get learning activity reports
+- uses sales navigator for lead generation and crm sync.
 - retrieve learning activity reports.
 - authentication, sharing, and verification for consumer apps.
-- business
-- learning
-- get ad analytics
-- employee development tracking and content access.
-- social media
-- linkedin
-- integrates linkedin authentication and sharing into applications.
-- job posting, recruiting, and applicant tracking.
-- data portability and advertiser transparency for dma.
+- sales intelligence, lead management, and crm integration.
+- tracks employee learning activity and completions.
+- message archiving and regulatory communications governance.
+- retrieve learning activity reports aggregated by account, group, individual, or content.
+- archives communications for regulatory compliance.
+- professional networking
+- recruiting
+- retrieve ad analytics by various pivots.
 slug: reporting-and-analytics
 tags:
 - LinkedIn

@@ -1,0 +1,19 @@
+---
+description: ActionTypeList schema from Amazon CodePipeline
+layout: schema
+name: ActionTypeList
+properties_list: []
+provider_name: Amazon CodePipeline
+provider_slug: amazon-codepipeline
+schema_file: json-schema/amazon-codepipeline-action-type-list-schema.json
+slug: amazon-codepipeline-action-type-list
+tags:
+- Amazon
+- AWS
+- CI/CD
+- Continuous Delivery
+- DevOps
+- Pipeline
+- Release Automation
+title: ActionTypeList
+---

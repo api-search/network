@@ -33,58 +33,58 @@ personas: []
 provider_name: Apple
 provider_slug: apple
 search_terms:
-- add a new beta tester.
-- modify app
-- technology
-- create beta tester
-- add a beta tester.
-- get details of a specific app.
-- delete beta group
-- read beta tester
-- beta group management.
-- developer
-- build management.
-- modify beta group
-- list testers
-- list beta groups
-- list builds
-- list all builds.
-- create a beta group.
-- list all beta groups.
-- macos
-- app management.
-- delete a beta group.
-- list beta groups.
-- list beta testers
-- app management
-- list groups
-- modify build
-- update app metadata.
-- delete beta tester
-- create beta group
-- update a beta group.
-- list apps
-- list all apps.
-- list all beta testers.
-- remove a beta tester.
-- create a new beta group.
-- testflight
-- read app
-- list all apps in app store connect.
-- read beta group
-- create group
-- get build details.
-- ios
-- get beta tester details.
-- app store
-- read build
-- list beta testers.
 - beta tester management.
-- create tester
-- get beta group details.
-- mobile
-- update build information.
+- app management.
+- testflight
 - apple
+- beta group management.
+- list groups
+- delete a beta group.
+- list beta testers
+- update a beta group.
+- create a new beta group.
+- get beta tester details.
+- read build
+- add a beta tester.
+- delete beta tester
+- list testers
+- list all apps.
+- ios
+- get build details.
+- macos
+- list all beta groups.
+- developer
+- update app metadata.
+- mobile
+- read app
+- create beta tester
+- modify build
+- list beta groups.
+- create beta group
+- create group
+- list all builds.
+- modify beta group
+- list builds
+- app store
+- read beta tester
+- app management
+- modify app
+- create tester
+- create a beta group.
+- technology
+- remove a beta tester.
+- list beta testers.
+- list all apps in app store connect.
+- list all beta testers.
+- get details of a specific app.
+- build management.
+- add a new beta tester.
+- delete beta group
+- get beta group details.
+- list beta groups
+- list apps
+- update build information.
+- read beta group
 slug: app-lifecycle
 tags:
 - Apple

@@ -1,0 +1,19 @@
+---
+description: ScanState schema from Amazon CodeGuru Security
+layout: schema
+name: ScanState
+properties_list: []
+provider_name: Amazon CodeGuru Security
+provider_slug: amazon-codeguru-security
+schema_file: json-schema/amazon-codeguru-security-scan-state-schema.json
+slug: amazon-codeguru-security-scan-state
+tags:
+- Amazon
+- AWS
+- Security
+- SAST
+- Code Analysis
+- DevSecOps
+- Developer Tools
+title: ScanState
+---

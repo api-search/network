@@ -1,0 +1,17 @@
+---
+description: ECSServiceRecommendationFilterName schema
+layout: schema
+name: ECSServiceRecommendationFilterName
+properties_list: []
+provider_name: Amazon Compute Optimizer
+provider_slug: amazon-compute-optimizer
+schema_file: json-schema/compute-optimizer-ecs-service-recommendation-filter-name-schema.json
+slug: compute-optimizer-ecs-service-recommendation-filter-name
+tags:
+- AWS
+- Cost Optimization
+- FinOps
+- Machine Learning
+- Resource Recommendations
+title: ECSServiceRecommendationFilterName
+---

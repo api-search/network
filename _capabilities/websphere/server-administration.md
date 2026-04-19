@@ -56,64 +56,64 @@ personas: []
 provider_name: IBM WebSphere
 provider_slug: websphere
 search_terms:
-- list deployed applications on liberty
-- get was health
-- get was config
-- get liberty health check results
-- list clusters in liberty collective
-- was list servers
-- cloud native
-- list was applications
-- administration
-- get liberty server configuration
-- j2ee
-- server configuration
-- get collective controller information
-- stop a was server
-- application server
-- list applications on traditional was
-- get liberty config
-- list mbeans
-- start a was server
-- list jmx mbeans via rest connector
-- list liberty collective clusters
-- middleware
-- get liberty server info
-- list was servers in the cell
-- was start server
-- get was server health status
-- server management
-- list installed liberty features
-- get liberty server runtime information
-- microservices
-- liberty
-- list collective members
-- enterprise java
 - application lifecycle management across was and liberty
-- list servers
-- cluster management
-- liberty feature management
-- list liberty collective members
-- jmx mbean access
-- list liberty applications
-- liberty get server info
+- list installed liberty features
 - list was servers
-- list was configuration resource types
-- list collective clusters
-- get liberty health
-- get controller info
-- list was clusters
-- ibm websphere
-- collective member management
-- was stop server
-- liberty list applications
-- list registered mbeans
-- was list applications
+- list deployed applications on traditional websphere
+- list was servers in the cell
+- list features
 - get liberty server information
 - list applications on liberty
-- list deployed applications on traditional websphere
-- list features
+- collective member management
+- list collective clusters
+- list liberty collective members
+- list liberty applications
+- liberty
+- list was clusters
+- enterprise java
+- server configuration
+- list mbeans
+- list servers
+- was list applications
+- list deployed applications on liberty
+- cluster management
+- get was health
+- server management
+- list was configuration resource types
+- was list servers
+- liberty get server info
+- application server
+- list collective members
+- get liberty health
+- get collective controller information
+- administration
+- get was config
+- get liberty health check results
+- start a was server
+- list registered mbeans
+- cloud native
+- get liberty server runtime information
+- list liberty collective clusters
+- ibm websphere
+- stop a was server
+- list clusters in liberty collective
+- liberty list applications
+- list jmx mbeans via rest connector
+- get liberty server configuration
+- microservices
+- was start server
+- was stop server
+- get was server health status
+- get liberty server info
+- liberty feature management
+- jmx mbean access
+- get controller info
+- j2ee
 - list members
+- list applications on traditional was
+- get liberty config
+- list was applications
+- middleware
 slug: server-administration
 tags:
 - IBM WebSphere

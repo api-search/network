@@ -1,0 +1,19 @@
+---
+description: UnprocessedAccounts schema from Amazon GuardDuty API
+layout: schema
+name: UnprocessedAccounts
+properties_list: []
+provider_name: Amazon GuardDuty
+provider_slug: amazon-guardduty
+schema_file: json-schema/guardduty-unprocessed-accounts-schema.json
+slug: guardduty-unprocessed-accounts
+tags:
+- Anomaly Detection
+- AWS
+- Compliance
+- Machine Learning
+- Monitoring
+- Security
+- Threat Detection
+title: UnprocessedAccounts
+---

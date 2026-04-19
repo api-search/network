@@ -1,0 +1,36 @@
+---
+description: TransferFundsNotification schema from Adyen API
+layout: schema
+name: TransferFundsNotification
+properties_list:
+- description: Details of the fund transfer.
+  name: content
+  type: object
+- description: Error information of failed request. No value provided here if no error occurred on processing.
+  name: error
+  type: object
+- description: The date and time when an event has been completed.
+  name: eventDate
+  type: string
+- description: The event type of the notification.
+  name: eventType
+  type: string
+- description: The user or process that has triggered the notification.
+  name: executingUserKey
+  type: string
+- description: Indicates whether the notification originated from the live environment or the test environment. If true, the notification originated from the live environment. If false, the notification originated f
+  name: live
+  type: boolean
+- description: The PSP reference of the request from which the notification originates.
+  name: pspReference
+  type: string
+provider_name: Adyen
+provider_slug: adyen
+schema_file: json-schema/notifications-transfer-funds-notification-schema.json
+slug: notifications-transfer-funds-notification
+tags:
+- Payments
+- Financial Services
+- Fintech
+title: TransferFundsNotification
+---

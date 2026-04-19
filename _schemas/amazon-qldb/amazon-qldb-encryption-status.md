@@ -1,0 +1,16 @@
+---
+description: EncryptionStatus schema from Amazon QLDB API
+layout: schema
+name: EncryptionStatus
+properties_list: []
+provider_name: Amazon QLDB
+provider_slug: amazon-qldb
+schema_file: json-schema/amazon-qldb-encryption-status-schema.json
+slug: amazon-qldb-encryption-status
+tags:
+- AWS
+- Blockchain
+- Database
+- Ledger
+title: EncryptionStatus
+---

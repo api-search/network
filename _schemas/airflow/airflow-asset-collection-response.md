@@ -1,0 +1,26 @@
+---
+description: Asset collection response.
+layout: schema
+name: AssetCollectionResponse
+properties_list:
+- description: ''
+  name: assets
+  type: array
+- description: ''
+  name: total_entries
+  type: integer
+provider_name: Apache Airflow
+provider_slug: airflow
+schema_file: json-schema/airflow-asset-collection-response-schema.json
+slug: airflow-asset-collection-response
+tags:
+- Workflow Orchestration
+- Data Pipeline
+- Open Source
+- Apache
+- DAG
+- Scheduling
+- ETL
+- Data Engineering
+title: AssetCollectionResponse
+---

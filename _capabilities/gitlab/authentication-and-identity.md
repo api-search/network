@@ -33,38 +33,38 @@ personas: []
 provider_name: GitLab
 provider_slug: gitlab
 search_terms:
-- authentication
-- authenticated user profile information.
-- initiate the device authorization grant flow for input-constrained devices.
-- gitlab
-- device authorization grant flow for input-constrained devices.
-- exchange token
-- code
-- initiate the oauth 2.0 authorization code flow with optional pkce support.
-- oauth 2.0 authorization code flow initiation.
 - revoke token
-- revoke an existing oauth access or refresh token.
-- initiate the oauth 2.0 authorization code flow.
-- token introspection and validation.
-- platform
-- authorize device
 - get user info
-- source control
-- get profile information about the authenticated user.
-- exchange an authorization code, device code, or refresh token for an access token.
-- get profile information about the currently authenticated user.
-- oauth
-- tokens
 - authorize oauth
-- get token info
-- initiate the device authorization grant flow.
-- oauth token exchange and creation.
+- oauth
+- initiate the oauth 2.0 authorization code flow.
+- oauth 2.0 authorization code flow initiation.
+- exchange an authorization code, device code, or refresh token for an access token.
+- initiate the device authorization grant flow for input-constrained devices.
+- authentication
+- platform
 - get information about the current oauth access token including scopes and expiration.
+- initiate the oauth 2.0 authorization code flow with optional pkce support.
+- code
+- oauth token exchange and creation.
 - token revocation.
 - software development
-- get information about the current access token.
+- exchange token
 - identity
 - revoke an oauth access or refresh token.
+- tokens
+- get token info
+- get profile information about the currently authenticated user.
+- get information about the current access token.
+- revoke an existing oauth access or refresh token.
+- authorize device
+- authenticated user profile information.
+- initiate the device authorization grant flow.
+- token introspection and validation.
+- gitlab
+- source control
+- get profile information about the authenticated user.
+- device authorization grant flow for input-constrained devices.
 slug: authentication-and-identity
 tags:
 - Gitlab

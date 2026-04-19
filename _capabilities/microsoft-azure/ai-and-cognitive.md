@@ -27,47 +27,47 @@ provider_name: Microsoft Azure
 provider_slug: microsoft-azure
 search_terms:
 - model listing
-- create text embeddings
-- list openai models
-- generate speech from text
-- openai
-- cognitive services accounts
-- openai create speech
-- create a text completion
-- generate images from text
-- openai create chat completion
-- translate audio to english
-- openai list deployments
-- openai create translation
-- openai create completion
-- chat completion operations
-- embedding operations
-- api management
-- list cognitive accounts
-- create chat completion
-- openai list models
-- t1
-- infrastructure as a service
-- openai create transcription
-- list available openai models
-- transcribe audio to text
-- cognitive list accounts
-- create embedding
-- list model deployments
-- create a chat completion
 - azure
-- cloud
+- chat completion operations
+- openai create translation
+- platform as a service
+- cloud computing
 - ai
+- cognitive services
+- openai list deployments
+- create a chat completion
 - list cognitive services accounts
+- api management
+- list model deployments
+- openai
+- openai create transcription
+- openai create speech
+- openai create chat completion
+- openai create image
+- generate speech from text
 - list available ai models
 - openai create embedding
-- cognitive services
-- create a chat completion using azure openai
-- cloud computing
-- openai create image
-- platform as a service
+- openai list models
 - cognitive list models
+- cognitive services accounts
+- create embedding
+- cognitive list accounts
+- transcribe audio to text
+- translate audio to english
+- create text embeddings
+- t1
+- openai create completion
+- generate images from text
+- cloud
 - enterprise
+- list openai models
+- infrastructure as a service
+- embedding operations
+- list cognitive accounts
+- list available openai models
+- create chat completion
+- create a chat completion using azure openai
+- create a text completion
 slug: ai-and-cognitive
 tags:
 - Azure

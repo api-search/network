@@ -1,0 +1,17 @@
+---
+description: ticket information
+layout: schema
+name: AirTravelDocument
+properties_list: []
+provider_name: Amadeus Reservations
+provider_slug: amadeus-reservations
+schema_file: json-schema/flight-order-management-air-travel-document-schema.json
+slug: flight-order-management-air-travel-document
+tags:
+- Booking
+- Flights
+- Hotels
+- Reservations
+- Travel
+title: AirTravelDocument
+---

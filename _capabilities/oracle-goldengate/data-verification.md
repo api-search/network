@@ -26,46 +26,46 @@ personas: []
 provider_name: Oracle GoldenGate
 provider_slug: oracle-goldengate
 search_terms:
-- get goldengate process performance metrics for monitoring replication health
-- list compare groups for data verification
-- run job
-- cdc
-- get veridata server information
-- list compare groups
-- create job
 - real-time replication
-- list veridata database connections
-- create a new comparison job
-- list connections
-- list comparison jobs
-- execute a comparison job
+- list groups
 - list jobs
 - repair job
-- create connection
-- get comparison job statistics
-- comparison jobs
-- database connections for verification
-- list replication process performance metrics
-- list groups
-- get server info
-- create a new veridata database connection
-- compliance
-- data quality
-- list process metrics
-- replication process metrics
-- data integration
-- get details of out-of-sync data
-- data synchronization
-- create group
-- database
-- create a new compare group
-- get job statistics
+- list veridata database connections
+- create job
 - compare groups
-- repair out-of-sync data identified by a comparison job
-- enterprise
+- list compare groups
 - data verification
+- repair out-of-sync data identified by a comparison job
+- create a new veridata database connection
+- replication process metrics
 - oracle goldengate
+- list process metrics
+- create group
+- get server info
 - get out of sync data
+- database connections for verification
+- database
+- data synchronization
+- list comparison jobs
+- compliance
+- run job
+- get comparison job statistics
+- list compare groups for data verification
+- get details of out-of-sync data
+- get veridata server information
+- list connections
+- cdc
+- execute a comparison job
+- get job statistics
+- comparison jobs
+- create a new comparison job
+- enterprise
+- data quality
+- get goldengate process performance metrics for monitoring replication health
+- list replication process performance metrics
+- create connection
+- create a new compare group
+- data integration
 slug: data-verification
 tags:
 - Oracle GoldenGate

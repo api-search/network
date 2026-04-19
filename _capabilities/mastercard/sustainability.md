@@ -24,29 +24,29 @@ provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
 - carbon footprint
-- create a donation to support environmental causes
-- environmental impact scoring
 - get impact score
-- calculate carbon footprint from transactions
-- credit cards
-- environmental cause donations
-- payments
-- calculate the carbon footprint of payment transactions
-- sustainability
 - carbon footprint calculations
-- financial services
-- get the environmental impact score for a transaction using the aland index
+- sustainability
 - fraud detection
+- environmental impact
+- financial services
+- create environmental donation
+- environmental cause donations
+- calculate carbon footprint from transactions
+- payments
 - create a donation to environmental causes
+- environmental impact scoring
 - esg
-- open banking
 - get environmental impact score
 - mastercard
+- credit cards
 - donate to environment
-- environmental impact
-- create environmental donation
-- digital identity
+- open banking
+- get the environmental impact score for a transaction using the aland index
 - calculate carbon footprint
+- calculate the carbon footprint of payment transactions
+- digital identity
+- create a donation to support environmental causes
 slug: sustainability
 tags:
 - Mastercard

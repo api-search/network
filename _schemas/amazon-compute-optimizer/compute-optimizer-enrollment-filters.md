@@ -1,0 +1,17 @@
+---
+description: EnrollmentFilters schema
+layout: schema
+name: EnrollmentFilters
+properties_list: []
+provider_name: Amazon Compute Optimizer
+provider_slug: amazon-compute-optimizer
+schema_file: json-schema/compute-optimizer-enrollment-filters-schema.json
+slug: compute-optimizer-enrollment-filters
+tags:
+- AWS
+- Cost Optimization
+- FinOps
+- Machine Learning
+- Resource Recommendations
+title: EnrollmentFilters
+---

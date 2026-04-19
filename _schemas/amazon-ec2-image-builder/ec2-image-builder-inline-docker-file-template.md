@@ -1,0 +1,19 @@
+---
+description: InlineDockerFileTemplate schema from EC2 Image Builder
+layout: schema
+name: InlineDockerFileTemplate
+properties_list: []
+provider_name: Amazon EC2 Image Builder
+provider_slug: amazon-ec2-image-builder
+schema_file: json-schema/ec2-image-builder-inline-docker-file-template-schema.json
+slug: ec2-image-builder-inline-docker-file-template
+tags:
+- Amazon Web Services
+- Automation
+- AWS
+- Container Images
+- EC2
+- Image Building
+- Virtual Machine Images
+title: InlineDockerFileTemplate
+---

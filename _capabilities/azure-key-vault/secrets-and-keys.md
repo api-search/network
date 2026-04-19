@@ -45,58 +45,58 @@ personas: []
 provider_name: Azure Key Vault
 provider_slug: azure-key-vault
 search_terms:
-- list keys
-- create a key.
-- sign
+- azure
+- get a secret value.
+- list cryptographic keys in the vault.
+- get secret
+- create certificate
+- decrypt
 - key management.
-- list secrets in the vault.
-- delete a certificate.
+- sign
+- get a secret.
+- delete secret
+- list certificates in the vault.
 - list certificates
-- individual secret management.
-- decrypt data using a key.
-- individual key management.
-- delete key
-- set a secret.
-- create a new certificate.
-- verify a signature.
-- security
-- secrets management
-- create key
-- list secrets.
-- create a new cryptographic key.
+- cryptography
 - list secrets
 - get certificate
-- get key details.
-- get secret
-- decrypt
-- delete a key.
-- cloud security
-- secret management.
-- key vault
-- list cryptographic keys in the vault.
-- list certificates.
-- list certificates in the vault.
-- get a secret value.
-- azure
-- delete certificate
 - certificates
-- key management
-- get a key.
 - get key
-- certificate management.
-- delete secret
-- set a secret value.
-- get a certificate.
-- encrypt data using a key.
-- encrypt
-- set secret
 - sign a digest using a key.
-- create certificate
-- cryptography
+- security
+- create a new certificate.
+- decrypt data using a key.
+- get a key.
+- get a certificate.
+- list keys
+- key management
 - delete a secret.
-- list keys.
-- get a secret.
+- secret management.
+- set secret
+- delete a key.
+- encrypt data using a key.
+- list certificates.
+- set a secret.
 - verify
+- list keys.
+- set a secret value.
+- delete key
+- secrets management
+- create key
+- individual key management.
+- certificate management.
+- individual secret management.
+- key vault
+- get key details.
+- create a key.
+- list secrets in the vault.
+- verify a signature.
+- list secrets.
+- cloud security
+- delete a certificate.
+- encrypt
+- delete certificate
+- create a new cryptographic key.
 slug: secrets-and-keys
 tags:
 - Azure

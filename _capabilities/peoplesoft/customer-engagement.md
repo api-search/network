@@ -47,47 +47,47 @@ personas: []
 provider_name: PeopleSoft
 provider_slug: peoplesoft
 search_terms:
-- peopletools platform services.
-- chatbot intent fulfillments
 - retrieve customer records.
-- case management
-- create a new support or service case.
-- chatbot intents
-- list notifications
+- sales
+- notification management
+- erp
 - supply chain management
 - retrieve support and service cases.
-- campus solutions.
-- retrieve available chatbot intents.
-- customer engagement
-- list opportunities
-- financial and supply chain management.
-- individual customer details
-- financial management
-- get customer
-- create case
-- human capital management.
-- support and service cases
-- retrieve notifications for the current user.
-- fulfill intent
-- campus solutions
 - list customers
+- list opportunities
+- campus solutions
 - crm
-- erp
-- list cases
-- sales
-- send notification
-- retrieve sales opportunities.
+- get customer
+- chatbot intents
+- peopletools platform services.
+- create case
 - retrieve details for a specific customer.
-- notification management
-- chatbot
-- enterprise software
-- process a chatbot intent fulfillment request.
-- send a notification via email, text, or in-app channels.
-- hcm
+- support and service cases
 - list intents
-- customer records
-- sales opportunities
+- enterprise software
+- financial and supply chain management.
+- financial management
+- list notifications
 - peoplesoft
+- process a chatbot intent fulfillment request.
+- customer engagement
+- customer records
+- individual customer details
+- sales opportunities
+- human capital management.
+- retrieve notifications for the current user.
+- list cases
+- retrieve available chatbot intents.
+- campus solutions.
+- send notification
+- send a notification via email, text, or in-app channels.
+- retrieve sales opportunities.
+- hcm
+- fulfill intent
+- chatbot intent fulfillments
+- chatbot
+- case management
+- create a new support or service case.
 slug: customer-engagement
 tags:
 - PeopleSoft

@@ -1,0 +1,19 @@
+---
+description: MemoryRegionsList schema from Amazon GuardDuty API
+layout: schema
+name: MemoryRegionsList
+properties_list: []
+provider_name: Amazon GuardDuty
+provider_slug: amazon-guardduty
+schema_file: json-schema/guardduty-memory-regions-list-schema.json
+slug: guardduty-memory-regions-list
+tags:
+- Anomaly Detection
+- AWS
+- Compliance
+- Machine Learning
+- Monitoring
+- Security
+- Threat Detection
+title: MemoryRegionsList
+---

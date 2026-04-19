@@ -69,106 +69,106 @@ personas:
 provider_name: X (Twitter)
 provider_slug: twitter
 search_terms:
-- marketing
-- engagement specialist
-- data compliance, deletion tracking, and regulatory event monitoring.
-- content
-- deleteLists
-- extracts insights from social data through search, streaming, and analytics.
-- getUsersBookmarks
-- manages brand presence, campaigns, and content strategy.
-- remove a bookmark
-- get analytics for a post
-- advertising
-- data engineer
-- manage list members
-- getListsPosts
-- getPostsByIds
-- conducts academic or market research using x data archives.
-- finalize chunked upload
-- manages user relationships, follows, and interaction strategies.
-- finalizeMediaUpload
-- createUsersBookmark
-- manage a specific post
-- create a new list
-- builds and maintains communities through engagement and moderation.
-- monitor conversations, search posts, analyze trends, and extract insights.
-- data analyst
-- community manager
-- researcher
-- finalize a chunked media upload
-- upload media
-- appendMediaUpload
-- updateLists
-- deletePostById
-- getPostsAnalytics
-- addListsMember
-- get bookmarked posts for the authenticated user
-- platform operations
-- upload media for posts (simple upload for small files)
-- content creator
-- mediaUpload
-- get the members of a list
-- createMediaMetadata
-- retrieve multiple posts by their ids
-- get analytics data for a specific post
-- monitors brand mentions, sentiment, and competitive landscape.
-- get the processing status of an uploaded media
-- create a new post
-- ensures data handling meets regulatory and platform compliance requirements.
-- create a new post (tweet) on x
+- delete a list
+- post creation, editing, media management, and content analytics.
 - social monitoring, search, trending topics, and sentiment analysis.
-- brand manager
-- user relationships, direct messaging, spaces, and community interaction.
-- customer support
+- bookmark a post
+- compliance officer
+- posts
+- update a list's name or description
+- manages data pipelines, streaming ingestion, and compliance data flows.
+- engagement specialist
+- researcher
+- getPostsByIds
+- monitor conversations, search posts, analyze trends, and extract insights.
+- get post analytics
+- content creator
+- getListsById
+- ensures data handling meets regulatory and platform compliance requirements.
+- addListsMember
 - real-time data
-- creates, schedules, and analyzes social media content across platforms.
-- get posts from a list timeline
-- produces original posts, threads, and media content on x.
-- publishing
-- get bookmarked posts
-- createLists
+- getPostsAnalytics
+- get the processing status of an uploaded media
+- data engineer
+- createMediaMetadata
+- updateLists
+- remove a bookmark
+- getListsMembers
+- data analyst
 - manage compliance jobs, data streams, and real-time compliance monitoring.
 - social media manager
-- create and retrieve posts
-- initialize a chunked media upload
-- get list posts
-- initialize chunked upload
-- deleteUsersBookmark
-- manage user bookmarks
-- marketing team
-- retrieve posts by ids
-- getListsById
-- create a new list on x
-- manage user relationships, direct messages, spaces, and community interactions.
-- add a member to a list
-- get posts from a list's timeline
-- createPosts
-- bookmark a post
-- update a list's name or description
-- get post analytics
-- append a chunk to an in-progress media upload
-- post creation, editing, media management, and content analytics.
-- streaming
-- delete a list
-- create or update metadata (alt text) for uploaded media
-- create lists
-- media
+- builds and maintains communities through engagement and moderation.
 - upload media for posts
-- getListsMembers
+- user relationships, direct messaging, spaces, and community interaction.
+- upload media for posts (simple upload for small files)
+- create and retrieve posts
+- publishing
+- retrieve posts by ids
+- mediaUpload
+- social media
+- create a new list
+- manage a specific post
+- upload media
+- marketing
+- media
+- monitors brand mentions, sentiment, and competitive landscape.
+- create a new list on x
+- add a member to a list
 - delete a post by its id
 - initializeMediaUpload
-- getMediaUploadStatus
-- social media
+- manage user relationships, direct messages, spaces, and community interactions.
+- creates, schedules, and analyzes social media content across platforms.
+- advertising
+- get analytics for a post
+- produces original posts, threads, and media content on x.
 - handles customer inquiries and issues via direct messages and replies.
-- get a list by its id
+- getListsPosts
+- conducts academic or market research using x data archives.
+- customer support
+- data compliance, deletion tracking, and regulatory event monitoring.
 - microblogging
-- x api
-- delete a post
-- manages data pipelines, streaming ingestion, and compliance data flows.
-- posts
-- compliance officer
+- get a list by its id
+- manages brand presence, campaigns, and content strategy.
+- append a chunk to an in-progress media upload
+- brand manager
+- get the members of a list
+- create or update metadata (alt text) for uploaded media
+- get posts from a list's timeline
+- create a new post
+- create a new post (tweet) on x
+- get bookmarked posts for the authenticated user
+- streaming
+- deletePostById
+- content
+- initialize a chunked media upload
+- deleteUsersBookmark
+- retrieve multiple posts by their ids
+- appendMediaUpload
 - create, manage, and analyze posts, media, bookmarks, and lists.
+- get analytics data for a specific post
+- platform operations
+- manages user relationships, follows, and interaction strategies.
+- marketing team
+- initialize chunked upload
+- manage user bookmarks
+- get list posts
+- finalizeMediaUpload
+- finalize chunked upload
+- finalize a chunked media upload
+- createUsersBookmark
+- extracts insights from social data through search, streaming, and analytics.
+- get posts from a list timeline
+- manage list members
+- delete a post
+- getMediaUploadStatus
+- createPosts
+- x api
+- create lists
+- deleteLists
+- createLists
+- community manager
+- getUsersBookmarks
+- get bookmarked posts
 slug: content-publishing
 tags:
 - X API

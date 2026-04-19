@@ -35,43 +35,43 @@ personas: []
 provider_name: Google Maps Platform
 provider_slug: google-maps
 search_terms:
-- search for places using a natural language text query like 'pizza in new york'
-- places
-- search places text
-- address to coordinate conversion and reverse geocoding
-- maps
-- google maps
-- get directions between two or more locations with support for driving, walking, bicycling, and transit
-- get detailed information about a place including address, rating, hours, and reviews
-- routing
-- search places nearby
-- get place autocomplete predictions as the user types
-- search for places near a location
-- geolocation
-- search for places near a specific location with type filters
-- place autocomplete predictions
-- autocomplete places
-- get place details
-- get place photo
-- get a photo for a place by place id and photo reference
-- navigation
-- location
-- solar
-- place details retrieval
-- geocode
 - location-based place search
+- navigation
+- get directions
+- places
+- address to coordinate conversion and reverse geocoding
+- geocode an address to coordinates or reverse geocode coordinates to an address
 - directions
 - get detailed information about a place
+- google maps
 - geocode an address or reverse geocode coordinates
+- get directions between two or more locations with support for driving, walking, bicycling, and transit
+- maps
+- routing
+- get detailed information about a place including address, rating, hours, and reviews
+- get place details
+- get a photo for a place by place id and photo reference
 - get place predictions for input text
-- geocoding
 - text-based place search
-- get directions between two or more locations
-- search for places using a text query
-- geocode an address to coordinates or reverse geocode coordinates to an address
-- environment
-- get directions
+- geocoding
 - route computation between locations
+- place autocomplete predictions
+- search places text
+- location
+- search for places using a text query
+- search for places near a specific location with type filters
+- environment
+- autocomplete places
+- get directions between two or more locations
+- geocode
+- search for places near a location
+- geolocation
+- solar
+- get place photo
+- search places nearby
+- search for places using a natural language text query like 'pizza in new york'
+- get place autocomplete predictions as the user types
+- place details retrieval
 slug: location-intelligence
 tags:
 - Google Maps

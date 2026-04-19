@@ -1,0 +1,30 @@
+---
+description: ListAccessPreviewFindingsRequest schema from AWS IAM Access Analyzer API
+layout: schema
+name: ListAccessPreviewFindingsRequest
+properties_list:
+- description: ''
+  name: analyzerArn
+  type: object
+- description: ''
+  name: filter
+  type: object
+- description: ''
+  name: nextToken
+  type: object
+- description: ''
+  name: maxResults
+  type: object
+provider_name: Amazon IAM Access Analyzer
+provider_slug: amazon-iam-access-analyzer
+schema_file: json-schema/iam-access-analyzer-list-access-preview-findings-request-schema.json
+slug: iam-access-analyzer-list-access-preview-findings-request
+tags:
+- Access Control
+- AWS
+- Compliance
+- IAM
+- Policy Management
+- Security
+title: ListAccessPreviewFindingsRequest
+---

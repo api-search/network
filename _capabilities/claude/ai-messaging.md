@@ -41,55 +41,55 @@ personas: []
 provider_name: Claude
 provider_slug: claude
 search_terms:
-- token counting.
-- count tokens
-- get message batch status and details.
-- list models
-- list batches
-- conversational ai
-- artificial intelligence
-- message operations.
-- get batch status.
-- create batch
-- retrieve message batch results
-- list available claude models.
-- get batch
-- natural language processing
-- individual batch management.
 - model details.
-- get model metadata.
-- delete batch
-- delete a completed batch.
-- list all message batches.
-- create a message.
-- batch management.
-- delete a batch.
-- generative ai
-- messaging
-- delete message batch
-- get completed batch results.
-- claude
-- large language models
-- create message batch
-- create a message batch.
-- list available models.
-- list message batches
-- send a message to claude and receive a response.
-- create message
-- anthropic
-- cancel an in-progress batch.
-- count message tokens
-- ai
-- list message batches.
-- count message tokens.
-- create a batch of message requests.
-- retrieve message batch
 - get model
-- cancel message batch
-- count tokens in a message.
-- chatbot
-- model discovery.
+- artificial intelligence
+- get batch status.
 - machine learning
+- ai
+- create batch
+- claude
+- count tokens in a message.
+- delete batch
+- create message batch
+- list batches
+- cancel an in-progress batch.
+- anthropic
+- get completed batch results.
+- delete a batch.
+- create a message.
+- delete message batch
+- list available claude models.
+- token counting.
+- retrieve message batch results
+- model discovery.
+- individual batch management.
+- list message batches
+- count tokens
+- get batch
+- batch management.
+- list message batches.
+- send a message to claude and receive a response.
+- delete a completed batch.
+- large language models
+- conversational ai
+- message operations.
+- messaging
+- list available models.
+- create message
+- retrieve message batch
+- list all message batches.
+- get message batch status and details.
+- cancel message batch
+- list models
+- get model metadata.
+- generative ai
+- chatbot
+- create a batch of message requests.
+- create a message batch.
+- count message tokens.
+- count message tokens
+- natural language processing
 slug: ai-messaging
 tags:
 - Anthropic

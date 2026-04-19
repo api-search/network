@@ -55,76 +55,76 @@ personas: []
 provider_name: GitHub
 provider_slug: github
 search_terms:
-- get a user profile
-- createDiscussion
-- organizations
-- get a gist
-- star repository
-- listDiscussions
-- list team discussions
-- fork a gist
-- list org members
-- get an organization
-- user profile
-- code
-- update gist
-- community
-- list users
-- list gist comments
-- unfollow user
-- fork gist
-- user listing
-- unfollow a user
-- individual gist operations
-- star gist
-- listFollowersOfUser
-- users
 - updategist
-- organization profile
-- getAnOrganization
 - get gist
-- create a team discussion
-- platform
-- listUsers
-- organization members
-- source control
-- update a gist
-- follow a user
 - get a team discussion
-- t1
-- get user
-- starred gists
-- list followers
-- github
-- gists
-- getgist
+- fork gist
 - list starred gists
-- get discussion
-- list starred repositories
-- listStarredGists
-- pipelines
-- star a gist
-- list organization members
+- list discussions
+- update gist
+- discussions
+- user profile
+- getAnOrganization
+- list gist comments
+- list public gists
+- get a gist
+- user followers
+- createDiscussion
+- gists
+- star a repository
+- organizations
+- individual gist operations
+- follow a user
+- getUser
+- follow user
+- fork a gist
+- list starred
+- star gist
 - create discussion
 - gist management
-- listOrganizationMembers
-- discussions
 - team discussions
-- list public gists
-- get organization
-- software development
+- list starred repositories
+- platform
+- get an organization
 - get a user
-- star a repository
+- organization members
 - create a gist comment
-- search users
-- list discussions
+- code
+- get organization
+- star a gist
+- software development
+- organization profile
+- listUsers
+- get a user profile
+- pipelines
+- user listing
+- list users
+- listOrganizationMembers
+- list organization members
+- get user
+- star repository
+- users
+- update a gist
+- community
+- listStarredGists
 - create gist comment
-- follow user
-- getUser
-- list starred
-- listPublicGists
-- user followers
+- github
 - list followers of a user
+- t1
+- list team discussions
+- unfollow user
+- list followers
+- listPublicGists
+- unfollow a user
+- get discussion
+- list org members
+- starred gists
+- getgist
+- source control
+- listDiscussions
+- search users
+- listFollowersOfUser
+- create a team discussion
 slug: community
 tags:
 - GitHub

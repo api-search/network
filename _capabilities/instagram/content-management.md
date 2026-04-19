@@ -49,56 +49,56 @@ personas: []
 provider_name: Instagram
 provider_slug: instagram
 search_terms:
-- container status check.
-- delete an instagram media object (post, story, reel, or carousel).
-- meta
-- content management
-- manages instagram direct conversations for business inquiries.
+- get container
+- get fields on an instagram media object.
+- individual media object operations.
+- get a collection of story ig media objects on the account.
+- get user stories
+- get user media
+- tracks content performance and audience insights.
 - delete an instagram media object.
 - delete media
-- user media collection and container creation.
-- tracks content performance and audience insights.
-- instagram direct messaging.
-- videos
-- create media container
-- get a collection of ig media objects published on the account.
-- update media
-- get user stories
-- get fields on an instagram photo, video, story, reel, or album.
-- website embedding of instagram content.
-- embeds instagram content on websites and applications.
-- publishes and manages content across instagram accounts.
-- comments, mentions, and community interaction.
-- carousel album children.
-- instagram
-- photos
 - create a media container for publishing content. step 1 of the publishing flow.
-- get content publishing limit
-- enable or disable comments on a media object.
-- check the publishing status of a media container.
-- get user media
-- media
-- individual media object operations.
-- publishing
-- get container
-- publish a media container. step 2 of the publishing flow.
+- meta
+- embeds instagram content on websites and applications.
+- content management
+- insights and performance metrics.
 - content publishing rate limit.
 - get current content publishing usage and rate limit status.
-- get fields on an instagram media object.
-- insights and performance metrics.
-- content publishing
-- get a collection of story ig media objects on the account.
+- user media collection and container creation.
+- instagram direct messaging.
+- publishing
+- website embedding of instagram content.
 - social media
-- get media
-- get media objects within a carousel album.
-- publish a media container.
+- carousel album children.
 - get media children
-- monitors mentions, comments, and brand sentiment on instagram.
+- check the publishing status of a media container.
 - content publishing and media management.
-- creates and publishes photos, videos, reels, and stories.
-- user stories collection.
-- create a media container for publishing content.
+- get fields on an instagram photo, video, story, reel, or album.
 - publish media
+- delete an instagram media object (post, story, reel, or carousel).
+- instagram
+- get a collection of ig media objects published on the account.
+- manages instagram direct conversations for business inquiries.
+- create a media container for publishing content.
+- publish a media container. step 2 of the publishing flow.
+- publishes and manages content across instagram accounts.
+- user stories collection.
+- comments, mentions, and community interaction.
+- media
+- create media container
+- container status check.
+- update media
+- monitors mentions, comments, and brand sentiment on instagram.
+- get media
+- publish a media container.
+- enable or disable comments on a media object.
+- content publishing
+- get content publishing limit
+- creates and publishes photos, videos, reels, and stories.
+- videos
+- get media objects within a carousel album.
+- photos
 slug: content-management
 tags:
 - Instagram

@@ -50,65 +50,65 @@ personas: []
 provider_name: Adobe Lightroom
 provider_slug: lightroom
 search_terms:
-- list photo albums.
-- apply presets.
-- get catalog
-- get asset details.
-- preset application.
-- get the lightroom catalog.
-- list albums
-- apply programmatic edits to an image.
-- list album assets
-- apply presets
-- image editing.
-- lightroom
-- apply ai auto tone adjustment.
-- photography
-- edit image
-- get the user's catalog.
-- auto tone
 - get rendition
-- apply auto straighten.
-- get a rendered version of an asset.
-- specific asset operations.
-- ai auto tone.
-- auto straighten
-- upload master
 - lightroom catalog.
-- get a rendition.
-- photo assets.
-- ai auto straighten.
-- get asset
-- upload an original master file.
-- get album
-- get a specific album.
-- ai image editing
-- list albums.
-- get develop xmp
-- metadata
-- delete an album.
-- apply auto tone.
-- get xmp develop settings.
-- photo management
-- list assets
-- list assets in a catalog.
-- delete album
-- add assets to an album.
+- apply presets.
+- list album assets
+- lightroom
+- get a rendered version of an asset.
 - create or update album
-- edit an image.
-- asset renditions.
-- photo albums.
-- album assets.
-- apply lightroom presets to an image.
-- list assets in an album.
-- list photo assets in a catalog.
 - create or update an album.
-- add assets to album
-- adobe
+- upload an original master file.
+- list albums.
 - apply ai auto straighten.
+- album assets.
+- asset renditions.
+- get develop xmp
 - get a specific photo asset.
-- image editing
+- get a rendition.
+- get a specific album.
+- apply programmatic edits to an image.
 - cloud storage
+- list assets in a catalog.
+- photography
+- apply auto tone.
+- list photo albums.
+- get album
+- add assets to album
+- edit image
+- image editing.
+- delete an album.
+- get asset
+- apply auto straighten.
+- get the lightroom catalog.
+- apply lightroom presets to an image.
+- apply ai auto tone adjustment.
+- auto tone
+- get asset details.
+- ai image editing
+- adobe
+- add assets to an album.
+- preset application.
+- upload master
+- photo management
+- ai auto tone.
+- get catalog
+- auto straighten
+- get xmp develop settings.
+- apply presets
+- image editing
+- ai auto straighten.
+- metadata
+- get the user's catalog.
+- specific asset operations.
+- list assets in an album.
+- delete album
+- list photo assets in a catalog.
+- edit an image.
+- list albums
+- photo assets.
+- photo albums.
+- list assets
 slug: photo-management
 tags:
 - Adobe

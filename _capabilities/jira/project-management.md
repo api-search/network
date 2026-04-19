@@ -53,58 +53,58 @@ personas: []
 provider_name: Jira
 provider_slug: jira
 search_terms:
-- delete issue
-- add a comment to a jira issue.
-- list all jira projects.
-- list projects
-- get transitions
-- get jira issue details.
-- get available transitions.
-- issue comments.
-- add a comment.
-- delete an issue.
-- get issue types
-- project management.
-- agile
-- get comments
-- create issue
-- get comments on a jira issue.
-- get all jira priorities.
-- get statuses
-- edit issue
-- transition an issue through its workflow.
-- service management
-- create a new jira issue.
-- get available workflow transitions.
-- do transition
-- search issues
-- get priorities
-- jira
-- edit an existing jira issue.
-- delete a jira issue.
-- single issue operations.
-- issue tracking
-- get issue comments.
-- edit an issue.
-- get all jira issue statuses.
-- create a new issue.
-- project management
-- workflow transitions.
-- issue lifecycle management.
 - list all projects.
-- perform a transition.
-- jql issue search.
-- single project.
-- get project
-- itsm
-- get issue
-- get all jira issue types.
-- add comment
+- list all jira projects.
+- get all jira priorities.
+- delete issue
+- get transitions
+- jira
+- workflow transitions.
+- do transition
+- transition an issue through its workflow.
+- get comments
+- add a comment to a jira issue.
+- project management.
+- search issues
 - get issue details.
-- get jira project details.
-- search with jql.
+- get all jira issue types.
+- get available transitions.
+- issue lifecycle management.
+- add a comment.
+- get issue comments.
+- get all jira issue statuses.
+- get issue
+- list projects
+- project management
+- agile
 - get project details.
+- get comments on a jira issue.
+- get priorities
+- perform a transition.
+- get jira issue details.
+- edit issue
+- get jira project details.
+- get available workflow transitions.
+- get project
+- edit an existing jira issue.
 - search jira issues using jql.
+- delete a jira issue.
+- itsm
+- create a new issue.
+- create issue
+- single issue operations.
+- delete an issue.
+- issue comments.
+- edit an issue.
+- search with jql.
+- single project.
+- issue tracking
+- create a new jira issue.
+- get issue types
+- service management
+- add comment
+- get statuses
+- jql issue search.
 slug: project-management
 tags:
 - Jira

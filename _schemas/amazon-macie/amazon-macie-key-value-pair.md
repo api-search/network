@@ -1,0 +1,25 @@
+---
+description: Provides information about the tags that are associated with an S3 bucket or object. Each tag consists of a required tag key and an associated tag value.
+layout: schema
+name: KeyValuePair
+properties_list:
+- description: ''
+  name: key
+  type: object
+- description: ''
+  name: value
+  type: object
+provider_name: Amazon Macie
+provider_slug: amazon-macie
+schema_file: json-schema/amazon-macie-key-value-pair-schema.json
+slug: amazon-macie-key-value-pair
+tags:
+- AWS
+- Data Security
+- Sensitive Data
+- Privacy
+- Compliance
+- Machine Learning
+- S3
+title: KeyValuePair
+---

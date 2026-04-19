@@ -30,39 +30,39 @@ personas: []
 provider_name: Adobe Launch
 provider_slug: adobe-launch
 search_terms:
+- send interactive event
 - adobe launch
+- send batch events to edge network
+- end a media tracking session
+- send batch events
+- list server-side event forwarding properties
+- send batch events to adobe edge network
 - tag management
 - list secrets for a property
-- send batch events to adobe edge network
-- event forwarding rules
-- send interactive event
-- marketing technology
-- start a media tracking session
-- create a new event forwarding rule
-- event forwarding
 - create secret
-- list secrets for authenticating with forwarding destinations
-- edge network data ingestion
-- secrets for event forwarding destinations
 - list secrets
-- end a media tracking session
-- edge network
-- data collection
-- send an interactive event to adobe edge network
-- send an interactive event to edge network
-- create a secret for an event forwarding destination
-- start media session
-- send batch events
-- list event forwarding properties
-- create event forwarding property
-- end media session
-- list server-side event forwarding properties
 - create event forwarding rule
-- server-side event forwarding properties
-- list event forwarding rules
-- send batch events to edge network
+- secrets for event forwarding destinations
+- data collection
+- list secrets for authenticating with forwarding destinations
+- start a media tracking session
+- event forwarding
+- marketing technology
+- edge network
 - create a new event forwarding property
+- end media session
+- list event forwarding properties
+- send an interactive event to edge network
+- server-side event forwarding properties
+- create a secret for an event forwarding destination
+- create a new event forwarding rule
 - list event forwarding rules for a property
+- event forwarding rules
+- send an interactive event to adobe edge network
+- start media session
+- create event forwarding property
+- list event forwarding rules
+- edge network data ingestion
 slug: data-collection-pipeline
 tags:
 - Adobe Launch

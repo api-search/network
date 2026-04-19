@@ -1,4 +1,244 @@
 {
+  "1-automotive": {
+    "file": "1-automotive.png",
+    "generated": "2026-04-19",
+    "name": "1-Automotive"
+  },
+  "1factory": {
+    "file": "1factory.png",
+    "generated": "2026-04-19",
+    "name": "1Factory"
+  },
+  "1password": {
+    "file": "1password.png",
+    "generated": "2026-04-19",
+    "name": "1Password"
+  },
+  "2020-police-brutality": {
+    "file": "2020-police-brutality.png",
+    "generated": "2026-04-19",
+    "name": "2020 Police Brutality"
+  },
+  "3m": {
+    "file": "3m.png",
+    "generated": "2026-04-19",
+    "name": "3M"
+  },
+  "42crunch": {
+    "file": "42crunch.png",
+    "generated": "2026-04-19",
+    "name": "42Crunch"
+  },
+  "a-mark-precious-metals": {
+    "file": "a-mark-precious-metals.png",
+    "generated": "2026-04-19",
+    "name": "A-Mark Precious Metals"
+  },
+  "a-schulman": {
+    "file": "a-schulman.png",
+    "generated": "2026-04-19",
+    "name": "A. Schulman"
+  },
+  "aar": {
+    "file": "aar.png",
+    "generated": "2026-04-19",
+    "name": "AAR Corp"
+  },
+  "aarons": {
+    "file": "aarons.png",
+    "generated": "2026-04-19",
+    "name": "Aaron's"
+  },
+  "ab-tasty": {
+    "file": "ab-tasty.png",
+    "generated": "2026-04-19",
+    "name": "AB Tasty"
+  },
+  "abacus": {
+    "file": "abacus.png",
+    "generated": "2026-04-19",
+    "name": "Abacus"
+  },
+  "abbott-laboratories": {
+    "file": "abbott-laboratories.png",
+    "generated": "2026-04-19",
+    "name": "Abbott Laboratories"
+  },
+  "abbvie": {
+    "file": "abbvie.png",
+    "generated": "2026-04-19",
+    "name": "AbbVie"
+  },
+  "abbyy": {
+    "file": "abbyy.png",
+    "generated": "2026-04-19",
+    "name": "ABBYY"
+  },
+  "abercrombie-and-fitch": {
+    "file": "abercrombie-and-fitch.png",
+    "generated": "2026-04-19",
+    "name": "Abercrombie and Fitch"
+  },
+  "abm-industries": {
+    "file": "abm-industries.png",
+    "generated": "2026-04-19",
+    "name": "ABM Industries"
+  },
+  "abortion-policy-api": {
+    "file": "abortion-policy-api.png",
+    "generated": "2026-04-19",
+    "name": "Abortion Policy API"
+  },
+  "about-exim-exim-gov-export-import-bank-of-the-united-states": {
+    "file": "about-exim-exim-gov-export-import-bank-of-the-united-states.png",
+    "generated": "2026-04-19",
+    "name": "Export-Import Bank of the United States"
+  },
+  "absence-io": {
+    "file": "absence-io.png",
+    "generated": "2026-04-19",
+    "name": "Absence.io"
+  },
+  "absentify": {
+    "file": "absentify.png",
+    "generated": "2026-04-19",
+    "name": "Absentify"
+  },
+  "abstract-api": {
+    "file": "abstract-api.png",
+    "generated": "2026-04-19",
+    "name": "Abstract API"
+  },
+  "academy-software-foundation": {
+    "file": "academy-software-foundation.png",
+    "generated": "2026-04-19",
+    "name": "Academy Software Foundation"
+  },
+  "acadia": {
+    "file": "acadia.png",
+    "generated": "2026-04-19",
+    "name": "Acadia"
+  },
+  "acadia-healthcare": {
+    "file": "acadia-healthcare.png",
+    "generated": "2026-04-19",
+    "name": "Acadia Healthcare"
+  },
+  "acceldata": {
+    "file": "acceldata.png",
+    "generated": "2026-04-19",
+    "name": "Acceldata"
+  },
+  "acceptance-criteria": {
+    "file": "acceptance-criteria.png",
+    "generated": "2026-04-19",
+    "name": "Acceptance Criteria"
+  },
+  "accessibility-standards": {
+    "file": "accessibility-standards.png",
+    "generated": "2026-04-19",
+    "name": "Accessibility Standards"
+  },
+  "accounting-standards": {
+    "file": "accounting-standards.png",
+    "generated": "2026-04-19",
+    "name": "Accounting Standards"
+  },
+  "accuweather": {
+    "file": "accuweather.png",
+    "generated": "2026-04-19",
+    "name": "AccuWeather"
+  },
+  "ace-hardware": {
+    "file": "ace-hardware.png",
+    "generated": "2026-04-19",
+    "name": "Ace Hardware"
+  },
+  "acid": {
+    "file": "acid.png",
+    "generated": "2026-04-19",
+    "name": "ACID"
+  },
+  "acknowledgments-md": {
+    "file": "acknowledgments-md.png",
+    "generated": "2026-04-19",
+    "name": "ACKNOWLEDGMENTS.md"
+  },
+  "acord": {
+    "file": "acord.png",
+    "generated": "2026-04-19",
+    "name": "ACORD"
+  },
+  "acquia": {
+    "file": "acquia.png",
+    "generated": "2026-04-19",
+    "name": "Acquia"
+  },
+  "acronis": {
+    "file": "acronis.png",
+    "generated": "2026-04-19",
+    "name": "Acronis"
+  },
+  "activecampaign": {
+    "file": "activecampaign.png",
+    "generated": "2026-04-19",
+    "name": "ActiveCampaign"
+  },
+  "activepieces": {
+    "file": "activepieces.png",
+    "generated": "2026-04-19",
+    "name": "Activepieces"
+  },
+  "activision-blizzard": {
+    "file": "activision-blizzard.png",
+    "generated": "2026-04-19",
+    "name": "activision-blizzard"
+  },
+  "actor-model": {
+    "file": "actor-model.png",
+    "generated": "2026-04-19",
+    "name": "Actor Model"
+  },
+  "acuity-brands": {
+    "file": "acuity-brands.png",
+    "generated": "2026-04-19",
+    "name": "acuity-brands"
+  },
+  "adaptigent": {
+    "file": "adaptigent.png",
+    "generated": "2026-04-19",
+    "name": "Adaptigent"
+  },
+  "adaptive-shield": {
+    "file": "adaptive-shield.png",
+    "generated": "2026-04-19",
+    "name": "Adaptive Shield"
+  },
+  "addus-homecare": {
+    "file": "addus-homecare.png",
+    "generated": "2026-04-19",
+    "name": "Addus HomeCare"
+  },
+  "administration-for-community-living-acl-": {
+    "file": "administration-for-community-living-acl-.png",
+    "generated": "2026-04-19",
+    "name": "Administration for Community Living (ACL)"
+  },
+  "administration-for-native-americans-ana-": {
+    "file": "administration-for-native-americans-ana-.png",
+    "generated": "2026-04-19",
+    "name": "Administration for Native Americans (ANA)"
+  },
+  "administrative-conference-of-the-united-states": {
+    "file": "administrative-conference-of-the-united-states.png",
+    "generated": "2026-04-19",
+    "name": "Administrative Conference of the United States"
+  },
+  "administrative-office-of-the-u-s-courts": {
+    "file": "administrative-office-of-the-u-s-courts.png",
+    "generated": "2026-04-19",
+    "name": "Administrative Office of the U.S. Courts"
+  },
   "adobe": {
     "file": "adobe.png",
     "generated": "2026-04-18",
@@ -14,6 +254,11 @@
     "generated": "2026-04-18",
     "name": "adobe-campaign"
   },
+  "adobe-captivate": {
+    "file": "adobe-captivate.png",
+    "generated": "2026-04-19",
+    "name": "Adobe Captivate"
+  },
   "adobe-creative-cloud": {
     "file": "adobe-creative-cloud.png",
     "generated": "2026-04-18",
@@ -23,6 +268,11 @@
     "file": "adobe-creative-suite.png",
     "generated": "2026-04-18",
     "name": "Adobe Creative Suite"
+  },
+  "adobe-experience-cloud": {
+    "file": "adobe-experience-cloud.png",
+    "generated": "2026-04-19",
+    "name": "Adobe Experience Cloud"
   },
   "adobe-illustrator": {
     "file": "adobe-illustrator.png",
@@ -39,10 +289,35 @@
     "generated": "2026-04-18",
     "name": "Adobe Photoshop"
   },
+  "adobe-premiere": {
+    "file": "adobe-premiere.png",
+    "generated": "2026-04-19",
+    "name": "Adobe Premiere Pro"
+  },
   "adobe-suite": {
     "file": "adobe-suite.png",
     "generated": "2026-04-19",
     "name": "Adobe Suite"
+  },
+  "adt": {
+    "file": "adt.png",
+    "generated": "2026-04-19",
+    "name": "ADT"
+  },
+  "advance-auto-parts": {
+    "file": "advance-auto-parts.png",
+    "generated": "2026-04-19",
+    "name": "Advance Auto Parts"
+  },
+  "advanced-excel": {
+    "file": "advanced-excel.png",
+    "generated": "2026-04-19",
+    "name": "Advanced Excel"
+  },
+  "allianz-technology-standards": {
+    "file": "allianz-technology-standards.png",
+    "generated": "2026-04-19",
+    "name": "Allianz Technology Standards"
   },
   "amazon-ecs": {
     "file": "amazon-ecs.png",

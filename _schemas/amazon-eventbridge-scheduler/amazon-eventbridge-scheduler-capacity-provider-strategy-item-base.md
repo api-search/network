@@ -1,0 +1,18 @@
+---
+description: CapacityProviderStrategyItemBase schema from Amazon EventBridge Scheduler
+layout: schema
+name: CapacityProviderStrategyItemBase
+properties_list: []
+provider_name: Amazon EventBridge Scheduler
+provider_slug: amazon-eventbridge-scheduler
+schema_file: json-schema/amazon-eventbridge-scheduler-capacity-provider-strategy-item-base-schema.json
+slug: amazon-eventbridge-scheduler-capacity-provider-strategy-item-base
+tags:
+- Amazon Web Services
+- AWS
+- Cron
+- Event-Driven
+- Scheduling
+- Serverless
+title: CapacityProviderStrategyItemBase
+---

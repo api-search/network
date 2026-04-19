@@ -12,12 +12,73 @@ layout: none
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>{{ site.url }}/providers/</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>{{ site.url }}/tags/</loc>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>{{ site.url }}/support/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>{{ site.url }}/blog/</loc>
+    <priority>0.7</priority>
+  </url>
+  {% for provider in site.providers %}
+  <url>
+    <loc>{{ site.url }}{{ provider.url }}</loc>
+    <priority>0.8</priority>
+  </url>
+  {% endfor %}
   {% for api in site.apis %}
   <url>
     <loc>{{ site.url }}{{ api.url }}</loc>
+    <priority>0.7</priority>
+  </url>
+  {% endfor %}
+  {% for cap in site.capabilities %}
+  <url>
+    <loc>{{ site.url }}{{ cap.url }}</loc>
+    <priority>0.6</priority>
+  </url>
+  {% endfor %}
+  {% for schema in site.schemas %}
+  <url>
+    <loc>{{ site.url }}{{ schema.url }}</loc>
+    <priority>0.5</priority>
+  </url>
+  {% endfor %}
+  {% for async in site.asyncapis %}
+  <url>
+    <loc>{{ site.url }}{{ async.url }}</loc>
+    <priority>0.5</priority>
+  </url>
+  {% endfor %}
+  {% for ld in site.jsonld %}
+  <url>
+    <loc>{{ site.url }}{{ ld.url }}</loc>
+    <priority>0.5</priority>
+  </url>
+  {% endfor %}
+  {% for rule in site.rules %}
+  <url>
+    <loc>{{ site.url }}{{ rule.url }}</loc>
+    <priority>0.5</priority>
+  </url>
+  {% endfor %}
+  {% assign all_tags = "" | split: "" %}
+  {% for doc in site.providers %}{% for tag in doc.tags %}{% unless tag == blank %}{% assign all_tags = all_tags | push: tag %}{% endunless %}{% endfor %}{% endfor %}
+  {% for doc in site.apis %}{% for tag in doc.tags %}{% unless tag == blank %}{% assign all_tags = all_tags | push: tag %}{% endunless %}{% endfor %}{% endfor %}
+  {% for doc in site.capabilities %}{% for tag in doc.tags %}{% unless tag == blank %}{% assign all_tags = all_tags | push: tag %}{% endunless %}{% endfor %}{% endfor %}
+  {% for doc in site.schemas %}{% for tag in doc.tags %}{% unless tag == blank %}{% assign all_tags = all_tags | push: tag %}{% endunless %}{% endfor %}{% endfor %}
+  {% assign unique_tags = all_tags | uniq | sort %}
+  {% for tag in unique_tags %}
+  <url>
+    <loc>{{ site.url }}/tag/{{ tag | slugify }}/</loc>
+    <priority>0.4</priority>
   </url>
   {% endfor %}
 </urlset>
