@@ -248,6 +248,9 @@ def process_provider(provider_dir, icon_manifest=None):
 
     # --- Provider ---
     apis_list = data.get('apis', [])
+    if not apis_list:
+        print(f"  Skipping {provider_name} - no APIs")
+        return None
     common = data.get('common', [])
 
     features = []
