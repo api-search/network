@@ -10,13 +10,13 @@ provider_name: Amazon CloudShell
 provider_slug: amazon-cloudshell
 search_terms:
 - browser-based
-- amazon cloudshell
-- Cloud Administrator
 - terminal
 - aws
-- amazon web services
 - cloudshell
+- Cloud Administrator
 - cli
+- amazon web services
+- amazon cloudshell
 slug: shell-environment
 tags:
 - Amazon Web Services

@@ -45,58 +45,58 @@ personas: []
 provider_name: Azure Key Vault
 provider_slug: azure-key-vault
 search_terms:
-- azure
-- get a secret value.
-- list cryptographic keys in the vault.
-- get secret
+- key vault
+- list secrets.
+- set a secret.
 - create certificate
 - decrypt
-- key management.
-- sign
-- get a secret.
-- delete secret
-- list certificates in the vault.
-- list certificates
-- cryptography
-- list secrets
-- get certificate
-- certificates
+- encrypt
+- list keys.
+- verify
+- delete a certificate.
+- set a secret value.
+- set secret
+- encrypt data using a key.
+- key management
 - get key
+- get certificate
+- list keys
+- sign
+- list certificates in the vault.
+- get a secret.
+- get key details.
+- verify a signature.
+- list secrets
+- secret management.
+- create a new cryptographic key.
+- delete key
+- get a secret value.
+- azure
+- delete a key.
+- delete secret
+- create a key.
+- list cryptographic keys in the vault.
 - sign a digest using a key.
 - security
-- create a new certificate.
 - decrypt data using a key.
+- key management.
+- cryptography
 - get a key.
-- get a certificate.
-- list keys
-- key management
+- get secret
 - delete a secret.
-- secret management.
-- set secret
-- delete a key.
-- encrypt data using a key.
-- list certificates.
-- set a secret.
-- verify
-- list keys.
-- set a secret value.
-- delete key
-- secrets management
-- create key
-- individual key management.
-- certificate management.
-- individual secret management.
-- key vault
-- get key details.
-- create a key.
 - list secrets in the vault.
-- verify a signature.
-- list secrets.
+- individual secret management.
+- list certificates
+- individual key management.
 - cloud security
-- delete a certificate.
-- encrypt
+- certificate management.
+- certificates
+- get a certificate.
+- secrets management
+- create a new certificate.
+- create key
+- list certificates.
 - delete certificate
-- create a new cryptographic key.
 slug: secrets-and-keys
 tags:
 - Azure

@@ -10,10 +10,10 @@ provider_slug: amazon-datasync
 search_terms:
 - storage
 - aws
-- data transfer
-- migration
-- automation
 - hybrid cloud
+- migration
+- data transfer
+- automation
 slug: data-transfer-operations
 tags: []
 tools: []

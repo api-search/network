@@ -29,60 +29,60 @@ personas:
 provider_name: Abstract API
 provider_slug: abstract-api
 search_terms:
-- data engineer
-- engineer building data pipelines and enrichment workflows
-- email validation
-- detection and blocking of fraudulent users, transactions, and bot activity
-- screenshots
-- finance engineer
-- phone validation
-- check email address reputation, deliverability, and risk score to detect fraudulent or disposable emails
-- product engineer
-- automatic enrichment of user profiles with geographic, company, and temporal data
-- web scraping
-- validate phone number and retrieve carrier, line type, voip status, and risk score
-- fraud detection
-- check ip intelligence and security flags
-- contacts
-- fraud analyst
-- vat validation
-- exchange rates, vat validation, and iban validation for financial compliance
-- check ip risk
-- currencies
-- check ip address risk signals
-- security professional responsible for detecting and blocking fraudulent users and transactions
-- analyze ip address for vpn, proxy, tor, abuse, hosting, and security risk signals
 - engineer building fraud detection and threat intelligence systems
-- security
-- abstract api
-- check email risk
-- timezones
-- developer building user onboarding and personalization features
-- check ip intelligence
-- compliance analyst
-- check phone intelligence and risk score
-- developer building payment, billing, and financial compliance systems
-- currency conversion, vat compliance, and banking validation for financial applications
+- automatic enrichment of user profiles with geographic, company, and temporal data
 - public holidays
-- check email reputation
-- check email address risk and reputation
-- exchange rates
-- check phone number risk and validity
-- ip geolocation
-- avatars
-- email reputation, phone intelligence, and ip intelligence for fraud prevention
-- phone intelligence
-- ip geolocation, company enrichment, and timezone data for user profile enrichment
-- professional ensuring regulatory compliance for vat, banking, and financial reporting
-- company enrichment
+- product engineer
+- screenshots
+- fraud detection
+- currencies
 - iban validation
+- validate phone number and retrieve carrier, line type, voip status, and risk score
+- compliance analyst
+- email reputation, phone intelligence, and ip intelligence for fraud prevention
 - image processing
-- check phone risk
-- check email reputation and risk score
-- security engineer
-- ip intelligence
-- check phone intelligence
+- check email address reputation, deliverability, and risk score to detect fraudulent or disposable emails
 - email reputation
+- check email reputation and risk score
+- check phone intelligence and risk score
+- phone intelligence
+- engineer building data pipelines and enrichment workflows
+- detection and blocking of fraudulent users, transactions, and bot activity
+- check phone intelligence
+- check email address risk and reputation
+- check ip intelligence and security flags
+- email validation
+- company enrichment
+- currency conversion, vat compliance, and banking validation for financial applications
+- ip geolocation
+- data engineer
+- avatars
+- security
+- developer building user onboarding and personalization features
+- fraud analyst
+- check ip risk
+- check email risk
+- check phone number risk and validity
+- ip intelligence
+- security professional responsible for detecting and blocking fraudulent users and transactions
+- check ip intelligence
+- web scraping
+- finance engineer
+- check ip address risk signals
+- abstract api
+- analyze ip address for vpn, proxy, tor, abuse, hosting, and security risk signals
+- phone validation
+- check email reputation
+- security engineer
+- exchange rates
+- vat validation
+- check phone risk
+- professional ensuring regulatory compliance for vat, banking, and financial reporting
+- timezones
+- developer building payment, billing, and financial compliance systems
+- contacts
+- ip geolocation, company enrichment, and timezone data for user profile enrichment
+- exchange rates, vat validation, and iban validation for financial compliance
 slug: fraud-detection
 tags:
 - Abstract Api

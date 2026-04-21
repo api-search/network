@@ -25,33 +25,33 @@ personas: []
 provider_name: Amazon Certificate Manager
 provider_slug: amazon-certificate-manager
 search_terms:
-- ssl/tls certificate provisioning, validation, and lifecycle operations
-- devops
-- security professionals overseeing certificate compliance and expiry monitoring
-- request a new ssl/tls certificate with dns or email validation
-- encryption
-- list all acm certificates with optional status filtering
-- request a new acm ssl/tls certificate for a domain using dns or email validation
-- get full details of a specific acm certificate
-- request certificate
-- list certificates
-- ssl
 - Security Engineer
-- get detailed metadata for a specific acm certificate by arn, including domain, status, expiry, and issuer
-- certificates
-- security
-- describe certificate
+- security professionals overseeing certificate compliance and expiry monitoring
+- request a new acm ssl/tls certificate for a domain using dns or email validation
+- ssl
+- encryption
+- devops
 - delete an acm certificate by arn. cannot delete certificates in use by aws services.
-- tls
-- DevOps Engineer
-- aws
-- manage the full lifecycle of acm ssl/tls certificates
-- inspect or delete a specific certificate
-- delete an acm certificate
-- list all acm ssl/tls certificates, optionally filtered by status
+- request certificate
+- get detailed metadata for a specific acm certificate by arn, including domain, status, expiry, and issuer
 - end-to-end ssl/tls certificate provisioning, inspection, and retirement workflow
+- inspect or delete a specific certificate
+- security
 - engineers managing infrastructure and certificate rotation for web services
+- DevOps Engineer
+- tls
 - amazon web services
+- delete an acm certificate
+- ssl/tls certificate provisioning, validation, and lifecycle operations
+- aws
+- list certificates
+- get full details of a specific acm certificate
+- certificates
+- request a new ssl/tls certificate with dns or email validation
+- list all acm ssl/tls certificates, optionally filtered by status
+- list all acm certificates with optional status filtering
+- manage the full lifecycle of acm ssl/tls certificates
+- describe certificate
 - delete certificate
 slug: certificate-lifecycle-management
 tags:

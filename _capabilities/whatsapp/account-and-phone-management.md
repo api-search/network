@@ -74,69 +74,69 @@ personas: []
 provider_name: WhatsApp
 provider_slug: whatsapp
 search_terms:
-- list assigned users
-- disconnects a product catalog.
-- phone numbers associated with a waba.
-- list phone numbers
-- two-step verification pin management.
-- verify phone numbers.
-- connects a product catalog.
-- register phone number
-- deregisters a phone number.
-- updates the whatsapp business profile for a phone number.
-- whatsapp
 - individual phone number information.
-- connect product catalog
-- registration
-- user assignments for a waba.
-- deregister phone number
-- whatsapp business account information.
-- get phone number
-- registers a phone number for use with the cloud api.
-- account management
-- user management
-- disconnect product catalog
-- verifies a phone number using a verification code.
-- lists product catalogs.
-- retrieves information about a registered phone number.
-- product catalogs
-- verify code
+- requests a verification code.
 - lists all phone numbers associated with a waba.
+- product catalogs
+- business profile
+- get business profile
+- whatsapp business profile management.
+- retrieves the whatsapp business profile for a phone number.
+- whatsapp business account information.
+- connects a product catalog to a waba.
+- phone numbers associated with a waba.
+- user management
+- verifies a phone number.
 - retrieves the whatsapp business profile.
 - product catalog management.
-- assign user
-- verifies a phone number.
-- requests a verification code.
-- removes a user from a waba.
-- set two step verification
-- retrieves information about a whatsapp business account.
-- updates the whatsapp business profile.
+- account management
 - registers a phone number for cloud api.
-- whatsapp business profile management.
-- assigns a user to a waba.
-- connects a product catalog to a waba.
-- get business profile
-- lists product catalogs connected to a waba.
-- requests a verification code via sms or voice call for phone registration.
-- remove assigned user
-- sets or updates the two-step verification pin.
-- disconnects a product catalog from a waba.
-- retrieves the whatsapp business profile for a phone number.
-- removes an assigned user.
-- register phone numbers.
-- business profile
-- sets or updates the two-step verification pin for a phone number.
-- lists assigned users.
-- request verification codes for registration.
-- lists all users assigned to a waba.
+- get phone number
 - list product catalogs
 - deregisters a phone number from the cloud api.
+- whatsapp
+- registration
 - request verification code
-- deregister phone numbers.
+- lists product catalogs connected to a waba.
+- removes a user from a waba.
+- lists assigned users.
+- set two step verification
+- lists product catalogs.
+- disconnects a product catalog.
+- lists all users assigned to a waba.
+- connects a product catalog.
+- requests a verification code via sms or voice call for phone registration.
+- user assignments for a waba.
+- assign user
+- removes an assigned user.
 - update business profile
-- assigns a user with specific tasks to a waba.
+- connect product catalog
+- sets or updates the two-step verification pin.
+- deregister phone number
+- verify code
+- disconnects a product catalog from a waba.
+- updates the whatsapp business profile.
+- register phone numbers.
 - get business account
+- remove assigned user
+- disconnect product catalog
+- list assigned users
+- deregisters a phone number.
+- request verification codes for registration.
+- registers a phone number for use with the cloud api.
+- sets or updates the two-step verification pin for a phone number.
+- assigns a user to a waba.
+- updates the whatsapp business profile for a phone number.
 - phone numbers
+- list phone numbers
+- retrieves information about a whatsapp business account.
+- verifies a phone number using a verification code.
+- register phone number
+- assigns a user with specific tasks to a waba.
+- retrieves information about a registered phone number.
+- deregister phone numbers.
+- two-step verification pin management.
+- verify phone numbers.
 slug: account-and-phone-management
 tags:
 - WhatsApp

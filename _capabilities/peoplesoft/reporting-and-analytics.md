@@ -49,51 +49,51 @@ provider_name: PeopleSoft
 provider_slug: peoplesoft
 search_terms:
 - erp
-- search
-- execute a peoplesoft query by name.
-- list queries
-- pivot grid definitions
-- retrieve available pivot grid definitions.
-- full-text search results
-- list pivot grids
-- search content
-- performance analytics reports
-- supply chain management
-- execute a peoplesoft query by name and retrieve results.
-- query
-- list budgets
-- campus solutions
-- crm
-- retrieve data for a specific pivot grid.
-- peopletools platform services.
 - retrieve forecast data and projections.
-- reporting
-- execute query
-- list analytics reports
-- financial management
-- enterprise software
-- query execution
-- financial and supply chain management.
-- pivot grid data
-- retrieve budget definitions and data.
-- peoplesoft
-- trigger index build
-- get pivot grid data
-- trigger a search index build or incremental update.
-- human capital management.
-- analytics
-- retrieve available peoplesoft query definitions.
-- retrieve performance analytics reports.
 - budget definitions and data
-- campus solutions.
+- retrieve performance analytics reports.
+- retrieve data for a specific pivot grid.
+- query
+- analytics
 - forecast data and projections
-- hcm
-- peoplesoft query definitions
-- search index operations
-- dashboards
-- execute a full-text search across peoplesoft indexed content.
-- retrieve data for a specific pivot grid with optional filters.
+- execute a peoplesoft query by name and retrieve results.
+- supply chain management
+- peopletools platform services.
+- search
+- execute query
+- reporting
 - list forecasts
+- crm
+- peoplesoft
+- financial management
+- pivot grid definitions
+- search content
+- execute a full-text search across peoplesoft indexed content.
+- retrieve available pivot grid definitions.
+- list pivot grids
+- search index operations
+- retrieve available peoplesoft query definitions.
+- campus solutions.
+- peoplesoft query definitions
+- list queries
+- list budgets
+- retrieve budget definitions and data.
+- enterprise software
+- retrieve data for a specific pivot grid with optional filters.
+- campus solutions
+- dashboards
+- performance analytics reports
+- human capital management.
+- query execution
+- hcm
+- trigger a search index build or incremental update.
+- list analytics reports
+- execute a peoplesoft query by name.
+- trigger index build
+- financial and supply chain management.
+- get pivot grid data
+- pivot grid data
+- full-text search results
 slug: reporting-and-analytics
 tags:
 - PeopleSoft

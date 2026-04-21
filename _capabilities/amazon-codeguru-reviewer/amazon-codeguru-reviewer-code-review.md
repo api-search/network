@@ -9,37 +9,37 @@ personas: []
 provider_name: Amazon CodeGuru Reviewer
 provider_slug: amazon-codeguru-reviewer
 search_terms:
-- devops
-- devops engineer persona.
-- describe repository association
-- submit feedback on a code review recommendation
 - associate repository
-- unified workflow for devops teams to manage repository associations, trigger code reviews, retrieve recommendations, and track code quality metrics us
-- machine learning
-- create code review
-- associate a repository for code review
-- get details about a repository association
+- list repositories associated with codeguru reviewer
+- list recommendations
 - Security Engineer
-- get details about a code review
+- associate a repository for code review
+- put recommendation feedback
+- developer persona.
 - create a code review
 - code review
-- security
-- list recommendations
+- devops engineer persona.
 - security engineer persona.
-- DevOps Engineer
-- developer persona.
-- list repositories associated with codeguru reviewer
-- developer tools
-- put recommendation feedback
-- aws
-- list code reviews
+- devops
 - amazon
-- Developer
-- unified workflow for devops teams to manage repository associations, trigger code reviews, retrieve
-- list repository associations
+- machine learning
 - describe code review
-- list recommendations from a code review
+- create code review
+- list code reviews
+- unified workflow for devops teams to manage repository associations, trigger code reviews, retrieve recommendations, and track code quality metrics us
+- security
+- get details about a repository association
+- Developer
+- DevOps Engineer
+- unified workflow for devops teams to manage repository associations, trigger code reviews, retrieve
 - list code reviews for a repository
+- submit feedback on a code review recommendation
+- get details about a code review
+- aws
+- developer tools
+- describe repository association
+- list recommendations from a code review
+- list repository associations
 slug: amazon-codeguru-reviewer-code-review
 tags:
 - Amazon

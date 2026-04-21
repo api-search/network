@@ -53,53 +53,53 @@ personas: []
 provider_name: Google Cloud Storage
 provider_slug: gcp-cloud-storage
 search_terms:
-- delete bucket
-- list objects in a bucket.
-- get object
-- backup
-- compose multiple objects into one.
-- list buckets.
-- list buckets
-- create bucket
-- copy object
 - get iam policy.
-- update a bucket.
-- update bucket
-- object storage
-- get bucket details.
-- bucket management.
-- get bucket iam policy.
-- archival
-- cloud storage
-- data management
-- bucket iam management.
-- get object metadata.
-- object management.
-- create a bucket.
-- update object
-- delete a storage bucket.
-- get bucket iam policy
-- list storage buckets in a project.
-- copy an object to another location.
-- update object metadata.
-- individual object management.
-- create a new storage bucket.
-- blob storage
-- data
-- get bucket
-- storage
-- individual bucket management.
-- delete object
-- compose objects
-- list objects.
-- file storage
-- delete an object.
-- set bucket iam policy
-- list objects
-- google cloud
-- delete a bucket.
-- set bucket iam policy.
 - set iam policy.
+- individual object management.
+- data management
+- update bucket
+- compose multiple objects into one.
+- list storage buckets in a project.
+- get object metadata.
+- compose objects
+- delete a bucket.
+- create a bucket.
+- archival
+- get bucket
+- bucket iam management.
+- blob storage
+- delete an object.
+- get object
+- file storage
+- delete a storage bucket.
+- set bucket iam policy
+- list buckets.
+- get bucket iam policy.
+- list objects.
+- delete object
+- cloud storage
+- update object metadata.
+- create bucket
+- create a new storage bucket.
+- object storage
+- bucket management.
+- storage
+- delete bucket
+- google cloud
+- individual bucket management.
+- object management.
+- get bucket details.
+- update object
+- list objects
+- list objects in a bucket.
+- copy object
+- get bucket iam policy
+- list buckets
+- copy an object to another location.
+- set bucket iam policy.
+- data
+- update a bucket.
+- backup
 slug: cloud-storage
 tags:
 - Google Cloud

@@ -38,44 +38,44 @@ provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
 - cross-border payment processing
-- create funding
-- create a disbursement
-- create a person-to-person transfer
-- verify account eligibility for mastercard send
-- get account info
-- create a cross-border international payment
-- create a person-to-person money transfer
-- p2p transfers
-- disbursements
-- disbursement transactions
-- fraud detection
+- cross-border
+- get account information for a send recipient
+- get currency conversion rate for cross-border transactions
+- process direct transaction
 - process a direct service transaction
+- fraud detection
+- open banking
+- create a funding transaction
+- create funding
+- verify account eligibility for mastercard send
+- p2p transfers
+- funding transactions
+- create p2p transfer
 - financial services
 - validate account details before transfer
-- payments
-- create a disbursement to send money to a recipient
-- create cross border payment
-- get account information for a send recipient
-- process direct transaction
-- create p2p transfer
-- create a cross-border payment
-- mastercard send
-- funding transactions
-- validate account
+- currency conversion rates
+- create a person-to-person money transfer
+- verify send account
 - get currency conversion rate
-- get currency conversion rate for cross-border transactions
-- mastercard
 - create a funding transaction via mastercard send
 - credit cards
-- open banking
-- cross-border
-- verify send account
-- get conversion rate
+- mastercard
 - money transfer
+- create a disbursement
 - create disbursement
+- create a cross-border international payment
+- payments
+- create a cross-border payment
+- get conversion rate
+- disbursement transactions
+- disbursements
+- mastercard send
 - digital identity
-- currency conversion rates
-- create a funding transaction
+- create a person-to-person transfer
+- create cross border payment
+- validate account
+- create a disbursement to send money to a recipient
+- get account info
 slug: money-transfer-and-disbursements
 tags:
 - Mastercard

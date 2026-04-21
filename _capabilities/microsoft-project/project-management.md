@@ -45,75 +45,75 @@ personas: []
 provider_name: Microsoft Project
 provider_slug: microsoft-project
 search_terms:
-- task management
-- list all projects
-- list calendars
-- list all microsoft project online projects
-- get details of a specific project by id
-- create a new enterprise resource
-- list all timesheet periods
-- list all workflow phases
-- project creation, checkout, publishing, and workflow governance
-- timesheet management and approval
-- publish a project draft to make changes visible
-- budgeting
-- timesheets
-- list all enterprise custom field definitions
-- list enterprise resources
-- manages enterprise resource pools, capacity planning, and assignment optimization.
-- list tasks
-- create a new project with name and description
-- microsoft
-- list timesheet periods
-- unified project management workflow for managing projects, tasks, resources, assignments, timesheets, and workflows.
-- list resources
-- delete project
-- get task
-- get project details
-- list projects
-- assignment management for a project
-- create a new project
-- project management
-- list enterprise calendars
-- list all assignments in a project
-- program management office managing portfolios, governance workflows, and enterprise configurations.
-- check out project
-- delete a project
-- enterprise resource management
-- list all enterprise calendars
-- create enterprise resource
-- timesheet management
-- microsoft project
-- single project operations
-- publish project
 - gantt charts
-- list phases
-- task management for a project
-- scheduling
-- get project
-- PMO
-- list assignments
-- create a new task in a project draft
-- list all resource assignments in a project
-- list all tasks in a project
-- create draft task
-- list all enterprise resources across projects
-- list custom fields
-- calendar management
-- plans, executes, and tracks projects with task scheduling, resource assignments, and progress reporting.
-- list stages
-- get a specific task from a project
-- task creation, dependencies, and scheduling
+- enterprise resource management
+- list timesheet periods
+- list all enterprise calendars
 - enterprise resources and task assignments
+- publish a project draft to make changes visible
+- microsoft
+- assignment management for a project
+- timesheets
+- delete a project by id
+- PMO
+- portfolio management
+- get details of a specific project by id
+- delete project
+- list resources
+- list all enterprise custom field definitions
+- task management
+- list all workflow stages
+- manages enterprise resource pools, capacity planning, and assignment optimization.
+- task creation, dependencies, and scheduling
+- list all projects
+- list all tasks in a project
+- resource management
+- delete a project
 - Project Manager
 - custom fields, lookup tables, and event handlers
-- portfolio management
-- create project
-- resource management
-- list all workflow stages
-- delete a project by id
+- check out project
+- get project details
+- list all enterprise resources across projects
+- list all workflow phases
+- list phases
+- project management
+- plans, executes, and tracks projects with task scheduling, resource assignments, and progress reporting.
+- unified project management workflow for managing projects, tasks, resources, assignments, timesheets, and workflows.
+- single project operations
+- timesheet management
 - project lifecycle management
+- list assignments
+- list tasks
+- create enterprise resource
+- list all microsoft project online projects
+- create a new task in a project draft
 - check out a project for editing
+- list all timesheet periods
+- get project
+- list projects
+- list custom fields
+- task management for a project
+- project creation, checkout, publishing, and workflow governance
+- publish project
+- timesheet management and approval
+- budgeting
+- calendar management
+- scheduling
+- create a new project
+- list enterprise calendars
+- create a new project with name and description
+- list all resource assignments in a project
+- list calendars
+- get a specific task from a project
+- get task
+- list all assignments in a project
+- create draft task
+- create a new enterprise resource
+- list stages
+- create project
+- list enterprise resources
+- program management office managing portfolios, governance workflows, and enterprise configurations.
+- microsoft project
 slug: project-management
 tags:
 - Microsoft Project

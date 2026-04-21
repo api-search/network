@@ -18,36 +18,36 @@ personas: []
 provider_name: Amadeus Solutions
 provider_slug: amadeus-solutions
 search_terms:
-- confirm pricing for a selected flight offer.
-- travel
-- OTA Developer
-- developer building online travel agency flight search and booking flows.
 - search
+- pricing
+- flight offer discovery and comparison.
+- search for available flights between two airports on a given date, with options for cabin class and passenger count.
+- price confirmation and validation before booking.
+- developer building online travel agency flight search and booking flows.
 - developer building conversational travel assistants for flight search.
 - gds
+- search flights advanced
+- amadeus
+- complete flight shopping flow from search through price confirmation.
+- confirm flight price
+- search flights
+- advanced flight search with complex criteria using request body for multi-city and detailed filters.
+- shopping
+- confirm price
+- travel
+- flights
 - travel technology
 - confirm current price and availability.
-- hotels
-- search for available flights between two airports on a given date, with options for cabin class and passenger count.
-- flights
-- Travel Chatbot Developer
-- pricing
-- complete flight shopping flow from search through price confirmation.
+- confirm pricing for a selected flight offer.
 - confirm the current price and availability of a selected flight offer before creating a booking.
-- shopping
-- amadeus
-- search flights
-- upsell, seat selection, and add-on services.
-- confirm flight price
-- price confirmation and validation before booking.
-- search available flights by origin, destination, and date.
-- search for available flight offers.
-- confirm price
-- booking
+- Travel Chatbot Developer
 - airlines
-- search flights advanced
-- advanced flight search with complex criteria using request body for multi-city and detailed filters.
-- flight offer discovery and comparison.
+- search available flights by origin, destination, and date.
+- hotels
+- OTA Developer
+- booking
+- search for available flight offers.
+- upsell, seat selection, and add-on services.
 slug: flight-shopping
 tags:
 - Amadeus

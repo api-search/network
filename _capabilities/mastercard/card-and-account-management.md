@@ -33,45 +33,45 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- manage a payment account
-- issue a new mastercard card
-- get card details
-- look up bin information
-- get payment account reference
-- request updated card credentials
-- manage a payment account lifecycle
-- submit pan event
-- query payment account reference to link tokens to accounts
-- fraud detection
-- get account catalog
-- digital identity
-- financial services
-- card issuance and management
-- account management
-- payment account management
-- payments
-- create fulfillment order
-- issue a new card
 - create a physical card fulfillment order
+- create fulfillment order
+- submit pan-related event for account level management
+- query payment account reference to link tokens to accounts
+- look up bin information
+- get card details
+- fraud detection
+- manage a payment account
+- open banking
+- card management
+- issue a new mastercard card
 - issuers
+- account management
+- get payment account reference
+- submit pan event
+- financial services
+- request updated card credentials
+- bin lookup
+- credit cards
+- mastercard
+- request updated card credentials for card-on-file
+- payments
+- issue a new card
+- automatic billing updates
+- list bins
+- lookup bin
+- manage account
+- payment account management
 - validate account details
+- look up bin information for a card
+- digital identity
+- issue card
+- retrieve account catalog data
+- get account catalog
 - validate account
 - list available mastercard bins
-- mastercard
+- card issuance and management
 - get billing updates
-- list bins
-- bin lookup
-- card management
-- retrieve account catalog data
-- credit cards
-- open banking
-- lookup bin
-- automatic billing updates
-- manage account
-- look up bin information for a card
-- request updated card credentials for card-on-file
-- issue card
-- submit pan-related event for account level management
+- manage a payment account lifecycle
 - manage payment account
 slug: card-and-account-management
 tags:

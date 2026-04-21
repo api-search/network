@@ -53,53 +53,53 @@ personas: []
 provider_name: ZoomInfo
 provider_slug: zoominfo
 search_terms:
-- get intent topics
-- search zoominfo news for recent company events and announcements.
-- get available intent topic lookup values.
-- search companies
-- search zoominfo contacts by criteria such as job title, company, location, and more.
-- get departments
-- get available revenue range lookup values.
-- reference data for industry codes.
-- marketing intelligence
-- get job functions
-- get available job function lookup values for filtering contact searches.
-- prospecting
-- search scoops
-- search zoominfo intent data to identify companies actively researching topics.
-- get available industry code lookup values for filtering searches.
-- get available management level lookup values.
-- contacts
-- search for contacts matching prospecting criteria.
-- search zoominfo scoops for buying signals like funding, expansion, and leadership changes.
-- reference data for contact departments.
-- reference data for revenue ranges.
-- b2b
-- reference data for management levels.
-- zoominfo
 - search for buying signals and scoops.
-- reference data for job functions.
-- search for companies matching prospecting criteria.
-- get available industry code lookup values.
-- sales intelligence
 - get available department lookup values.
-- search intent
-- search news
-- get industries
-- get available job function lookup values.
-- search zoominfo companies by criteria such as industry, revenue, employee count, and more.
-- company data
-- get revenue ranges
-- search for buyer intent signals.
+- search zoominfo news for recent company events and announcements.
+- get job functions
+- search zoominfo contacts by criteria such as job title, company, location, and more.
+- search scoops
 - get management levels
-- search for company news articles.
-- data
-- reference data for intent topics.
+- company data
 - contact database
+- reference data for management levels.
+- get revenue ranges
+- search zoominfo companies by criteria such as industry, revenue, employee count, and more.
 - lead generation
-- get available department lookup values for filtering contact searches.
+- get available management level lookup values.
+- get available job function lookup values for filtering contact searches.
+- search zoominfo scoops for buying signals like funding, expansion, and leadership changes.
+- prospecting
+- search for buyer intent signals.
+- get departments
+- search intent
+- search for companies matching prospecting criteria.
+- get available industry code lookup values for filtering searches.
+- search zoominfo intent data to identify companies actively researching topics.
+- get intent topics
+- search for contacts matching prospecting criteria.
+- search for company news articles.
+- get available revenue range lookup values.
+- get available industry code lookup values.
+- reference data for job functions.
+- get available intent topic lookup values.
 - b2b data
+- search companies
+- reference data for contact departments.
+- search news
+- reference data for revenue ranges.
+- reference data for intent topics.
+- zoominfo
+- data
+- contacts
+- get industries
+- b2b
+- sales intelligence
+- get available department lookup values for filtering contact searches.
 - search contacts
+- marketing intelligence
+- reference data for industry codes.
+- get available job function lookup values.
 slug: prospecting-and-search
 tags:
 - ZoomInfo

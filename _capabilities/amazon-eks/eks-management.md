@@ -49,44 +49,44 @@ personas: []
 provider_name: Amazon EKS
 provider_slug: amazon-eks
 search_terms:
-- engineers managing amazon eks resources on aws.
+- list nodegroups
+- CreateFargateProfile
+- ListFargateProfiles
+- create fargate profile
+- DeleteCluster
+- ListNodegroups
+- amazon eks delete an eks cluster
+- kubernetes
+- DescribeCluster
+- amazon eks delete a managed node group
+- delete nodegroup
+- describe nodegroup
+- eks
+- list clusters
+- ListClusters
+- amazon eks describe an eks cluster
+- workflow capability for kubernetes platform management.
+- create nodegroup
+- amazon eks list managed node groups
+- create cluster
+- list fargate profiles
+- describe cluster
+- CreateCluster
+- amazon eks
+- amazon eks describe a managed node group
+- amazon eks list eks clusters
+- DescribeNodegroup
+- containers
+- aws
+- amazon eks create a new eks cluster
+- CreateNodegroup
 - container orchestration
 - amazon eks create a fargate profile
-- create fargate profile
-- containers
-- amazon eks list eks clusters
-- CreateNodegroup
-- DescribeCluster
-- DeleteNodegroup
-- amazon eks delete an eks cluster
-- describe cluster
-- amazon eks list fargate profiles
-- kubernetes platform management business domain for amazon eks.
-- list clusters
-- delete nodegroup
-- amazon eks
-- eks
-- amazon eks list managed node groups
-- amazon eks delete a managed node group
-- workflow capability for kubernetes platform management.
-- kubernetes
-- DeleteCluster
 - delete cluster
-- ListClusters
-- aws
-- create nodegroup
-- DescribeNodegroup
-- amazon eks create a new eks cluster
-- ListNodegroups
-- create cluster
-- amazon eks describe a managed node group
-- list nodegroups
-- list fargate profiles
-- CreateCluster
-- amazon eks describe an eks cluster
-- ListFargateProfiles
-- CreateFargateProfile
-- describe nodegroup
+- kubernetes platform management business domain for amazon eks.
+- DeleteNodegroup
+- amazon eks list fargate profiles
+- engineers managing amazon eks resources on aws.
 - amazon eks create a managed node group
 slug: eks-management
 tags:

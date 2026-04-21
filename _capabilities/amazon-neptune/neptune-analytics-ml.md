@@ -18,42 +18,42 @@ personas: []
 provider_name: Amazon Neptune
 provider_slug: amazon-neptune
 search_terms:
-- neptune analytics graph management
-- list neptune analytics graphs for in-memory graph analysis
-- graph analytics
-- create a neptune ml inference endpoint for predictions
-- manages neptune clusters, instances, and infrastructure
-- list ml jobs
-- graph analytics, vector search, and ml model training and inference
-- list neptune ml graph neural network training jobs
-- neptune ml training job management
-- machine learning
-- list neptune ml training jobs
-- data streaming
-- Graph Database Administrator
 - neptune
-- ML Engineer
-- gremlin
+- bulk loading
+- list neptune ml graph neural network training jobs
 - create analytics graph
-- list ml training jobs
-- graph database management, querying, and data streaming
-- writes gremlin, sparql, and opencypher queries against neptune
-- database
-- property graph
+- neptune analytics graph management
+- Graph Database Administrator
+- list neptune analytics graphs
+- machine learning
+- rdf
+- create a neptune ml inference endpoint for predictions
+- create ml inference endpoint
+- Data Scientist
+- manages neptune clusters, instances, and infrastructure
+- Graph Developer
+- ML Engineer
 - performs graph analytics and builds ml models on graph data
 - list analytics graphs
-- trains and deploys neptune ml graph neural network models
+- data streaming
+- graph analytics, vector search, and ml model training and inference
+- neptune ml training job management
+- graph analytics
+- writes gremlin, sparql, and opencypher queries against neptune
+- list neptune ml training jobs
+- list ml training jobs
 - aws
-- graph database
+- trains and deploys neptune ml graph neural network models
+- gremlin
+- database
+- property graph
+- list ml jobs
 - sparql
-- rdf
-- create a neptune analytics graph for graph analytics workloads
-- bulk loading
-- Data Scientist
-- Graph Developer
-- create ml inference endpoint
-- list neptune analytics graphs
+- list neptune analytics graphs for in-memory graph analysis
+- graph database
+- graph database management, querying, and data streaming
 - amazon neptune
+- create a neptune analytics graph for graph analytics workloads
 slug: neptune-analytics-ml
 tags:
 - Amazon Neptune

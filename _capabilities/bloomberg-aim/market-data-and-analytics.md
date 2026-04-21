@@ -35,46 +35,46 @@ provider_name: Bloomberg AIM
 provider_slug: bloomberg-aim
 search_terms:
 - historical data access
-- get historical data
-- list field lists
-- get reference data
-- get reference data for securities via http api
-- order management
-- list distributions
-- create data request
-- security universe management
-- data distributions
-- financial analytics
-- get historical end-of-day data
-- create a security universe for data requests
-- get historical data for securities
-- search for securities and instruments
-- search available bloomberg data fields
-- financial data
-- create a bloomberg data request
-- search fields
-- bloomberg
-- data catalog browsing
-- get intraday bar data
-- get data catalog details
-- field list management
-- list security universes
-- search instruments
-- list catalogs
-- create universe
-- market data
-- list available bloomberg data catalogs
-- get catalog
-- get reference data for securities
-- list completed data distributions
-- get intraday bars
 - list available data catalogs
-- portfolio management
-- list field lists for data requests
-- trading
+- financial analytics
 - reference data access
-- list universes
+- get intraday bar data
+- portfolio management
+- data distributions
+- list security universes
+- create universe
+- financial data
+- list completed data distributions
+- get historical end-of-day data
+- get reference data
+- create a bloomberg data request
+- order management
+- market data
+- security universe management
+- list field lists
+- get reference data for securities
 - reference data
+- bloomberg
+- get data catalog details
+- trading
+- list universes
+- create a security universe for data requests
+- search instruments
+- data catalog browsing
+- get intraday bars
+- create data request
+- list distributions
+- search available bloomberg data fields
+- search for securities and instruments
+- get historical data
+- get reference data for securities via http api
+- list available bloomberg data catalogs
+- get historical data for securities
+- list field lists for data requests
+- list catalogs
+- search fields
+- field list management
+- get catalog
 slug: market-data-and-analytics
 tags:
 - Bloomberg

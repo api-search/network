@@ -31,42 +31,42 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- verify a consumer identity using mastercard id
-- get transaction identity insights
-- fraud detection
-- verify a consumer identity
-- create auth consent
-- identity insights for transactions
+- submit identity verification as a trust provider
+- get consent status
 - authentication
-- verify identity
+- initiate authentication
+- get authentication consent status
+- get transaction identity insights
+- get identity insights for an account
 - submit trust verification
+- fraud detection
+- authentication consent management
+- open banking
+- create an authentication consent request
+- get identity intelligence insights for an account
+- initiate strong customer authentication
 - financial services
 - get identity insights for a transaction
-- payments
-- authentication consent management
-- initiate strong customer authentication
-- get authentication consent status
-- get account insights
-- create consent
-- create authentication consent
-- get identity intelligence insights for an account
-- identity
-- get consent status
-- submit identity verification as a trust provider
-- mastercard
-- get identity intelligence insights for a transaction
-- kyc
 - verification
-- credit cards
-- identity verification
-- open banking
 - identity insights for accounts
-- get identity insights for an account
-- initiate authentication
-- get transaction insights
-- get account identity insights
+- create auth consent
+- credit cards
+- mastercard
+- create authentication consent
+- verify a consumer identity
+- payments
+- identity insights for transactions
+- get identity intelligence insights for a transaction
+- verify a consumer identity using mastercard id
+- identity verification
 - digital identity
-- create an authentication consent request
+- create consent
+- verify identity
+- identity
+- get transaction insights
+- get account insights
+- kyc
+- get account identity insights
 slug: identity-and-authentication
 tags:
 - Mastercard

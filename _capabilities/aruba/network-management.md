@@ -53,61 +53,61 @@ personas: []
 provider_name: Aruba
 provider_slug: aruba
 search_terms:
-- get site
-- network management
-- list gateways
-- list groups
-- device inventory management
-- site management
-- delete site
-- remove device
-- list all configuration groups
-- delete a configuration group
-- list sites
-- gateway monitoring
-- create a new configuration group
-- infrastructure
-- associate devices to a site
-- get access point details by serial number
-- sd-wan
-- list all devices in the aruba central device inventory
-- list networks
-- list clients
-- security
-- list devices
-- create group
-- delete group
-- get access point
-- remove a device from inventory
-- aruba
-- create a new site
-- list all devices in the network inventory
-- create site
-- monitoring
-- configuration group management
-- get device
-- list all networks
 - list access points
-- network monitoring
-- client connectivity
-- get device details by serial number
-- associate devices to site
-- cloud
-- list all gateways
-- list all connected clients
-- get group details by name
-- wireless
-- switches
-- delete a site
-- cloud management
-- list all access points with status and statistics
-- get site details by id
 - device details
-- access point monitoring
-- list all access points with status
-- networking
-- get group
+- aruba
+- configuration group management
+- create a new site
 - list all sites
+- client connectivity
+- list all networks
+- access point monitoring
+- get device
+- get group details by name
+- site management
+- gateway monitoring
+- networking
+- wireless
+- create group
+- list all access points with status
+- cloud
+- list all connected clients
+- list all access points with status and statistics
+- get group
+- get access point
+- list devices
+- delete a configuration group
+- delete site
+- delete a site
+- list all devices in the network inventory
+- associate devices to site
+- create a new configuration group
+- create site
+- list all devices in the aruba central device inventory
+- switches
+- list gateways
+- monitoring
+- security
+- get site details by id
+- device inventory management
+- infrastructure
+- list groups
+- network monitoring
+- get site
+- remove device
+- associate devices to a site
+- get device details by serial number
+- get access point details by serial number
+- delete group
+- list clients
+- list all configuration groups
+- sd-wan
+- list networks
+- list all gateways
+- remove a device from inventory
+- cloud management
+- network management
+- list sites
 slug: network-management
 tags:
 - Aruba

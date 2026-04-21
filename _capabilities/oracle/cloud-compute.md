@@ -53,49 +53,49 @@ personas: []
 provider_name: Oracle
 provider_slug: oracle
 search_terms:
-- list instance console connections
-- manage a specific image
-- list compute instances in a compartment
-- list compute images
-- get instance
-- delete image
-- manage compute images
-- manage a specific compute instance
+- enterprise
+- update instance
+- manage compute instances
+- update image
 - launch instance
-- oracle
-- create image
-- infrastructure
+- list volume attachments in a compartment
+- compute
+- create a custom image
+- terminate an instance
+- cloud
+- list shapes
+- manage compute images
+- list vnic attachments
+- perform an action on an instance (start, stop, reset)
+- list volume attachments
+- get instance details
+- delete image
+- delete a custom image
+- get image
+- get instance
+- create a custom image from an instance
 - terminate instance
+- list instance console connections
+- manage a specific compute instance
+- infrastructure
+- instance action
+- saas
+- list vnic attachments in a compartment
+- list compute images
 - update instance details
 - list instances
-- update image
-- terminate an instance
-- get details of a specific image
-- get image
-- perform an action on an instance (start, stop, reset)
-- delete a custom image
-- list vnic attachments
-- database
-- manage compute instances
-- list volume attachments
-- list images
-- list console connections
-- list volume attachments in a compartment
-- create a custom image from an instance
-- list vnic attachments in a compartment
-- get instance details
-- create a custom image
-- update instance
-- get image details
-- list shapes
-- cloud
-- update image details
-- instance action
-- enterprise
-- compute
-- launch a new compute instance
-- saas
+- create image
 - list available compute shapes
+- oracle
+- manage a specific image
+- database
+- list compute instances in a compartment
+- list console connections
+- get image details
+- list images
+- update image details
+- launch a new compute instance
+- get details of a specific image
 - get details of a specific instance
 slug: cloud-compute
 tags:

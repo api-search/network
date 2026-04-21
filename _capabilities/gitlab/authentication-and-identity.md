@@ -33,38 +33,38 @@ personas: []
 provider_name: GitLab
 provider_slug: gitlab
 search_terms:
-- revoke token
-- get user info
-- authorize oauth
-- oauth
-- initiate the oauth 2.0 authorization code flow.
-- oauth 2.0 authorization code flow initiation.
-- exchange an authorization code, device code, or refresh token for an access token.
-- initiate the device authorization grant flow for input-constrained devices.
-- authentication
-- platform
 - get information about the current oauth access token including scopes and expiration.
-- initiate the oauth 2.0 authorization code flow with optional pkce support.
-- code
 - oauth token exchange and creation.
-- token revocation.
-- software development
-- exchange token
-- identity
-- revoke an oauth access or refresh token.
-- tokens
 - get token info
-- get profile information about the currently authenticated user.
-- get information about the current access token.
-- revoke an existing oauth access or refresh token.
-- authorize device
+- authentication
+- initiate the device authorization grant flow for input-constrained devices.
+- authorize oauth
+- platform
+- revoke an oauth access or refresh token.
 - authenticated user profile information.
+- get user info
+- authorize device
+- exchange an authorization code, device code, or refresh token for an access token.
 - initiate the device authorization grant flow.
-- token introspection and validation.
-- gitlab
-- source control
-- get profile information about the authenticated user.
+- token revocation.
+- revoke an existing oauth access or refresh token.
+- software development
+- get information about the current access token.
+- revoke token
+- exchange token
+- oauth 2.0 authorization code flow initiation.
+- oauth
 - device authorization grant flow for input-constrained devices.
+- source control
+- tokens
+- get profile information about the currently authenticated user.
+- get profile information about the authenticated user.
+- initiate the oauth 2.0 authorization code flow with optional pkce support.
+- gitlab
+- identity
+- token introspection and validation.
+- initiate the oauth 2.0 authorization code flow.
+- code
 slug: authentication-and-identity
 tags:
 - Gitlab

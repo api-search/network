@@ -23,51 +23,51 @@ personas: []
 provider_name: Workday
 provider_slug: workday
 search_terms:
-- payroll get pay group details
-- benefits list elections
-- list pay groups
-- benefits change
+- list benefit elections
+- submit a benefits change request
+- compensation
+- list dependents
+- list compensation grades
+- get eligible benefit plans for a worker
+- list compensation scorecards
 - benefits list dependents
-- list compensation plans
-- comp list grades
-- payroll list pay groups
-- cloud computing
 - list plans
+- list all pay groups
+- payroll list inputs
+- benefits change
+- payroll get pay group
+- get pay group details
+- comp list grades
+- financial management
+- list payroll inputs
+- benefits list elections
+- request a one-time payment
+- pay groups
+- submit a compensation change request
+- comp request one time payment
+- payroll get pay group details
+- benefits get eligible plans
+- benefits
+- benefit plans
+- workday
+- saas
+- list pay groups
 - get a pay group by id
 - list pay slips
-- get eligible benefit plans for a worker
-- list benefit elections
-- benefits
-- list all benefit plans
-- payroll
-- financial management
-- enterprise software
-- payroll list pay slips
-- benefits list plans
-- list all pay groups
-- compensation
-- request a one-time payment
-- submit a compensation change request
-- payroll get pay group
-- workday
-- get pay group details
 - comp list scorecards
+- enterprise software
+- cloud computing
 - compensation plans
-- submit a benefits change request
-- comp request one time payment
-- pay groups
-- list compensation grades
-- list benefit plans
-- benefit plans
-- payroll list inputs
+- payroll list pay slips
+- list compensation plans
+- payroll list pay groups
 - hcm
-- saas
-- list compensation scorecards
-- list dependents
-- benefits get eligible plans
-- comp request change
-- list payroll inputs
+- list all benefit plans
 - comp list plans
+- payroll
+- list benefit plans
+- comp request change
+- benefits list plans
 slug: compensation-and-payroll
 tags:
 - Workday

@@ -26,53 +26,53 @@ personas: []
 provider_name: Teradata
 provider_slug: teradata
 search_terms:
-- list all data fabric configurations.
-- execute sql queries and analytics.
-- teradata
-- sql
-- Application Developer
-- machine learning
-- list all connectors for system integration.
-- manages data fabric infrastructure and cross-system connectivity.
-- list connectors
-- list data centers
-- data fabric
-- health monitoring and issue detection.
-- data management
-- list fabrics
-- list all bridges connecting systems.
-- run a diagnostic check on querygrid systems.
-- issue monitoring.
 - list all current issues in the querygrid environment.
-- Platform Administrator
-- database
-- administration
-- data warehousing
-- list all current issues.
-- system and fabric configuration management.
-- analytics
-- run diagnostic check
-- administers querygrid systems, nodes, and software.
 - list all configured data centers.
+- execute sql queries and analytics.
+- run diagnostic check
+- enterprise
+- list fabrics
+- data management
+- administers querygrid systems, nodes, and software.
+- analytics
+- list all registered systems.
+- Application Developer
+- administration
+- system and fabric configuration management.
 - bridge management.
 - list all registered systems in querygrid.
+- teradata
 - cloud
-- Data Engineer
-- Data Analyst
-- enterprise
-- executes queries and analyzes data across vantage systems.
 - manage querygrid data fabric infrastructure.
-- data center management.
-- list all data centers.
-- list systems
-- list all registered systems.
-- integrates applications with teradata via rest apis.
-- list issues
-- sql query execution and session management.
 - configuration
-- list bridges
+- sql
+- data center management.
 - system management.
+- run a diagnostic check on querygrid systems.
+- health monitoring and issue detection.
+- machine learning
+- data warehousing
+- Data Engineer
+- list all connectors for system integration.
+- list data centers
+- integrates applications with teradata via rest apis.
+- list systems
+- list issues
 - list all bridges.
+- Data Analyst
+- list all bridges connecting systems.
+- sql query execution and session management.
+- list all current issues.
+- Platform Administrator
+- issue monitoring.
+- data fabric
+- list bridges
+- manages data fabric infrastructure and cross-system connectivity.
+- executes queries and analyzes data across vantage systems.
+- database
+- list all data fabric configurations.
+- list all data centers.
+- list connectors
 slug: data-fabric-management
 tags:
 - Teradata

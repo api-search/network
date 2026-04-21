@@ -45,61 +45,61 @@ personas: []
 provider_name: Amazon DynamoDB
 provider_slug: dynamodb
 search_terms:
-- transact get items
-- list backups
-- list tables
-- get an item.
+- table management.
 - delete a dynamodb table.
-- get an item by primary key.
-- delete an item.
-- individual table management.
-- create a new dynamodb table.
-- get multiple items from one or more tables.
-- query
-- create table
-- batch write item
-- transact write items
-- update table
-- create or replace an item.
-- nosql
-- update an item.
-- create a table.
-- list dynamodb tables.
-- update a table.
-- key-value
+- list tables
 - create an on-demand backup.
+- get an item.
+- query
+- list on-demand backups.
+- update table
+- get an item by primary key.
+- put or delete multiple items in batch.
+- write items in a transaction.
+- list dynamodb tables.
+- query operations.
+- list backups
+- create or replace an item.
+- cloud
 - document store
+- serverless
+- batch write item
+- list tables.
 - describe a dynamodb table.
+- create backup
 - update item
-- describe a table.
+- individual table management.
+- create a table.
+- get items in a transaction.
+- create a new dynamodb table.
 - delete a table.
 - put item
-- database
-- database management
-- scan an entire table or index.
-- create backup
-- describe table
-- query operations.
-- aws
-- list tables.
-- delete item
-- serverless
-- scan a table.
-- delete table
-- cloud
-- scan
-- list on-demand backups.
-- table management.
-- managed service
-- get item
 - query items.
-- dynamodb
+- delete item
+- scan an entire table or index.
 - batch get item
-- get items in a transaction.
-- write items in a transaction.
-- put or delete multiple items in batch.
+- get multiple items from one or more tables.
 - query items by primary key.
+- transact get items
+- managed service
+- describe a table.
+- create table
+- aws
+- delete an item.
+- database
+- describe table
+- scan
+- database management
 - item operations.
+- update an item.
+- nosql
+- delete table
+- get item
+- dynamodb
+- update a table.
+- scan a table.
+- transact write items
+- key-value
 slug: database-management
 tags:
 - AWS

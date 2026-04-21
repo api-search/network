@@ -25,43 +25,43 @@ personas: []
 provider_name: Allianz Technology Standards
 provider_slug: allianz-technology-standards
 search_terms:
-- technology standards
-- get technology standard
-- standards catalog
-- list technology standards
 - get pagination standard
-- get the full rules and definition of a specific allianz technology standard
-- get pagination guidelines
-- pagination guidelines
-- governance
-- individual standard detail
-- enterprise architecture
-- api design
-- check an openapi specification for compliance with allianz technology standards and get violations
-- best practices
-- checking and enforcing compliance with api design standards
-- defining and maintaining allianz technology standards
-- 'get allianz rest api pagination standard: pagesize, page, totalrequired parameters and response headers'
-- compliance checking
-- developer building apis on the allianz platform who needs to comply with technology standards
-- check compliance
-- software development
-- query standards and check api compliance for architects and developers
 - compliance
-- get standard
-- get standard definition
+- query standards and check api compliance for architects and developers
+- get technology standard
+- check an openapi specification for compliance with allianz technology standards and get violations
+- enterprise architecture
 - 'get allianz webhook implementation standard: technical/functional types, https, ip whitelisting requirements'
-- check api compliance
-- Enterprise Architect
-- Platform Governance Team
+- individual standard detail
 - list standards
+- developer building apis on the allianz platform who needs to comply with technology standards
+- best practices
+- standards catalog
+- checking and enforcing compliance with api design standards
+- Platform Governance Team
+- software development
+- get standard definition
 - team responsible for enforcing allianz api and technology standards across engineering teams
-- list all allianz technology standards categorized by api-design, backend, architecture, security, and testing
-- architect responsible for allianz technology standards governance and enforcement
-- openapi
+- 'get allianz rest api pagination standard: pagesize, page, totalrequired parameters and response headers'
+- governance
+- get pagination guidelines
 - API Developer
-- guidelines
 - get webhook standard
+- check api compliance
+- technology standards
+- compliance checking
+- guidelines
+- openapi
+- pagination guidelines
+- list technology standards
+- architect responsible for allianz technology standards governance and enforcement
+- list all allianz technology standards categorized by api-design, backend, architecture, security, and testing
+- api design
+- get the full rules and definition of a specific allianz technology standard
+- defining and maintaining allianz technology standards
+- get standard
+- Enterprise Architect
+- check compliance
 slug: standards-compliance-workflow
 tags:
 - Technology Standards

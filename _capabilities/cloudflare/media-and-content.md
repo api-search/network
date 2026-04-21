@@ -18,58 +18,58 @@ personas: []
 provider_name: Cloudflare
 provider_slug: cloudflare
 search_terms:
-- video management.
-- images
-- api gateway
-- upload a video from url.
-- delete a video.
-- list videos
-- artificial intelligence
-- edge
-- web performance
-- ddos protection
-- list all images.
-- containers
-- stream delete video
-- list all videos.
-- list images.
-- object storage
 - stream list live inputs
-- images create direct upload
-- real-time communication
-- get video details.
-- platform
-- create a direct upload url for images.
-- upload an image.
-- stream create direct upload
 - cloudflare
-- video
-- security
-- create a direct upload url.
-- images delete image
-- images list images
 - create a live streaming input.
-- ai gateway
-- list images
-- list image variants.
-- serverless
+- images upload image
+- list videos
+- list all videos.
+- images create direct upload
 - media
 - stream list videos
-- get image details.
-- delete an image.
-- images upload image
-- cloud
-- dns
+- list all images.
+- upload an image.
 - list live streaming inputs.
-- stream get video
-- stream upload video
-- stream create live input
-- edge computing
-- images list variants
+- get video details.
+- platform
+- delete a video.
+- get image details.
 - list videos.
-- cdn
-- image management.
+- api gateway
+- web performance
+- video management.
+- images delete image
+- cloud
+- ddos protection
+- images list images
+- serverless
+- delete an image.
+- stream create live input
+- stream upload video
+- list image variants.
+- images list variants
+- stream get video
+- edge computing
+- ai gateway
 - images get image
+- stream delete video
+- object storage
+- stream create direct upload
+- create a direct upload url for images.
+- security
+- dns
+- edge
+- cdn
+- images
+- containers
+- video
+- upload a video from url.
+- real-time communication
+- list images.
+- artificial intelligence
+- list images
+- create a direct upload url.
+- image management.
 slug: media-and-content
 tags:
 - Cloudflare

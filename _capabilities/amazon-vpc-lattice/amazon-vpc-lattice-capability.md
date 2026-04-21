@@ -9,9 +9,9 @@ provider_name: Amazon VPC Lattice
 provider_slug: amazon-vpc-lattice
 search_terms:
 - aws
+- microservices
 - service networking
 - service mesh
-- microservices
 slug: amazon-vpc-lattice-capability
 tags: []
 tools: []

@@ -41,47 +41,47 @@ personas: []
 provider_name: ZoomInfo
 provider_slug: zoominfo
 search_terms:
-- get api usage data.
-- create a new webhook subscription for data change notifications.
-- available webhook subscription types.
-- check compliance status for specified contacts.
-- marketing intelligence
-- webhook target url validation.
-- get subscription types
-- webhooks
-- contacts
-- validate a webhook target url.
-- update an existing webhook subscription.
-- check data compliance status for specified contacts.
-- delete webhook
-- b2b
-- get api usage data and consumption metrics.
-- zoominfo
-- get available webhook subscription types.
-- data compliance operations.
-- api usage
-- check compliance
-- sales intelligence
-- list all configured webhook subscriptions.
-- list all webhook subscriptions.
-- compliance
-- delete a webhook subscription.
-- monitoring
 - list webhooks
-- company data
-- validate a webhook target url is reachable.
-- create webhook
-- individual webhook management.
-- validate target url
-- create a new webhook subscription.
-- update webhook
-- data
+- available webhook subscription types.
+- get api usage data and consumption metrics.
+- get available webhook subscription types.
+- compliance
 - contact database
+- company data
+- delete a webhook subscription.
+- validate a webhook target url is reachable.
+- check compliance status for specified contacts.
 - lead generation
-- get usage
-- api usage tracking.
-- b2b data
+- individual webhook management.
+- create webhook
 - webhook subscription management.
+- api usage tracking.
+- validate a webhook target url.
+- api usage
+- create a new webhook subscription for data change notifications.
+- get subscription types
+- monitoring
+- get api usage data.
+- data compliance operations.
+- webhook target url validation.
+- marketing intelligence
+- webhooks
+- check data compliance status for specified contacts.
+- update an existing webhook subscription.
+- b2b data
+- get usage
+- delete webhook
+- zoominfo
+- create a new webhook subscription.
+- data
+- contacts
+- b2b
+- update webhook
+- sales intelligence
+- list all webhook subscriptions.
+- validate target url
+- check compliance
+- list all configured webhook subscriptions.
 slug: monitoring-and-compliance
 tags:
 - ZoomInfo

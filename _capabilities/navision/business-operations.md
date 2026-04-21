@@ -57,63 +57,63 @@ personas: []
 provider_name: Microsoft Dynamics NAV
 provider_slug: navision
 search_terms:
-- list all vendors
 - erp
-- sales
-- get a customer by id
-- list items
+- purchase orders
+- finance
+- list purchase invoices
 - list available companies
-- list all sales orders
-- create purchase order
+- microsoft
 - create a new customer
+- navision
+- list all sales orders
+- sales
+- list sales invoices
+- inventory items
+- list inventory items
+- list employees
+- create a new inventory item
+- list companies
+- sales invoices
+- list accounts
+- create purchase order
+- general ledger accounts
+- create a new sales order
+- get a customer
+- general journals
+- single customer
 - create vendor
+- create a new vendor
+- create sales order
+- inventory
+- list purchase orders
+- list all customers
+- create a customer
+- list items
+- sales orders
+- get a customer by id
+- create customer
+- business management
+- list general journals
+- create a sales order
+- list all vendors
+- list sales orders
 - list customers
 - list all items
-- microsoft
-- dynamics 365
-- list general ledger accounts
 - list journals
-- inventory
 - list all employees
-- get customer
-- list inventory items
-- create a new inventory item
-- business management
-- create a new sales order
-- business central
-- general ledger accounts
-- dynamics nav
-- create item
-- create a sales order
-- list sales invoices
-- create a customer
-- single customer
-- list purchase orders
+- dynamics 365
 - create a new purchase order
-- company information
-- sales invoices
-- get a customer
-- list vendors
-- inventory items
-- navision
-- finance
-- sales orders
-- vendor management
-- list accounts
-- list all customers
-- general journals
+- business central
 - purchasing
-- purchase orders
+- list vendors
+- create item
 - list all purchase orders
-- create customer
-- list employees
-- list sales orders
-- create a new vendor
-- list companies
-- create sales order
 - customer management
-- list general journals
-- list purchase invoices
+- vendor management
+- list general ledger accounts
+- company information
+- dynamics nav
+- get customer
 slug: business-operations
 tags:
 - Business Central

@@ -33,44 +33,44 @@ personas: []
 provider_name: Amdocs
 provider_slug: amdocs
 search_terms:
-- product and service catalog
-- telecom
-- amdocs
-- telecom customer account management
-- list customers
-- add a service subscription to a customer account
-- list invoices
-- add a service subscription
+- BSS Operator
+- onboard a new customer
 - Billing Team
-- list subscriptions
-- customer subscription management
-- browse the service catalog and available plans
-- browse available products and plans
-- list subscriptions for a customer
-- customer billing invoices
-- bss
 - list service subscriptions for a customer
-- oss
-- list invoices for a customer
+- list products
+- Customer Care Agent
 - list all customer accounts
 - billing
-- unified bss workflow for customer onboarding, billing, and service management
-- BSS Operator
-- handles customer inquiries and account management
-- mvno
-- onboard a new customer
-- create subscription
-- manages invoicing, payments, and revenue assurance
-- Customer Care Agent
-- retrieve billing invoices for a customer
+- telecom customer account management
+- list invoices
+- add a service subscription
+- list subscriptions
 - onboard a new telecom customer
-- create customer
-- 5g
-- manages telco bss operations and system configuration
+- customer subscription management
+- list subscriptions for a customer
+- amdocs
+- mvno
+- product and service catalog
+- handles customer inquiries and account management
+- oss
+- manages invoicing, payments, and revenue assurance
+- add a service subscription to a customer account
+- customer billing invoices
 - saas
+- bss
+- create customer
+- telecom
+- list customers
+- retrieve billing invoices for a customer
+- create subscription
 - list telecom customer accounts
-- list products
+- unified bss workflow for customer onboarding, billing, and service management
+- list invoices for a customer
+- browse available products and plans
+- manages telco bss operations and system configuration
 - customer management
+- browse the service catalog and available plans
+- 5g
 slug: telco-customer-management
 tags:
 - Amdocs

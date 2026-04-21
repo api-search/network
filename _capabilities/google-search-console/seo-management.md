@@ -49,45 +49,45 @@ personas: []
 provider_name: Google Search Console
 provider_slug: google-search-console
 search_terms:
-- get site
-- search
-- list sitemaps
+- add site
+- analytics
+- seo
 - list all search console sites.
-- delete site
 - remove a site from search console.
-- list sitemaps for a site.
-- list sites
-- list all search console sites for the authenticated user.
-- query search traffic data with filters and dimensions.
+- webmaster tools
+- search
+- inspect url
 - delete a previously submitted sitemap.
 - submit a sitemap for crawling.
-- get details for a specific search console site.
-- inspect a url for index status, crawl info, mobile usability, and rich results.
-- seo
-- inspect a url for index status and rich results.
-- webmaster tools
-- delete a sitemap.
-- get sitemap details.
-- delete sitemap
-- query search analytics data with filters.
-- get sitemap
-- get details for a specific sitemap.
-- analytics
-- list sitemaps submitted for a site.
-- webmaster
-- submit sitemap
+- query search traffic data with filters and dimensions.
 - manage search console sites.
-- inspect url
-- query search traffic data.
-- submit a sitemap.
 - search console
+- delete site
+- inspect a url for index status and rich results.
+- inspect a url for index status, crawl info, mobile usability, and rich results.
+- add a site to search console.
+- list all search console sites for the authenticated user.
+- list sitemaps
+- get details for a specific search console site.
+- google
+- delete a sitemap.
+- submit sitemap
+- inspect urls for indexing status.
+- get site
+- list sitemaps submitted for a site.
+- delete sitemap
+- submit a sitemap.
+- get sitemap
+- query search traffic data.
 - get details for a specific site.
 - query search analytics
 - manage sitemaps.
-- add a site to search console.
-- add site
-- inspect urls for indexing status.
-- google
+- list sitemaps for a site.
+- webmaster
+- list sites
+- get details for a specific sitemap.
+- get sitemap details.
+- query search analytics data with filters.
 slug: seo-management
 tags:
 - Google

@@ -69,54 +69,54 @@ personas: []
 provider_name: Youtube
 provider_slug: youtube
 search_terms:
-- upload video
-- create playlist
-- delete playlist
-- list videos
-- list youtube playlists
-- upload a new video
-- update caption
-- social
-- list playlists
-- delete a caption track
-- captions
-- list youtube videos matching criteria
-- update playlist details
-- playlists
-- content management
-- update video
-- upload a new video to youtube
-- delete video
-- upload caption
-- video
-- delete a playlist
-- list caption tracks for a video
-- manage youtube videos
-- upload a caption track
-- delete a video
-- add a video to a playlist
-- delete a video from youtube
-- add playlist item
 - list captions
-- media
-- streaming
-- list items in a playlist
-- manage items within playlists
-- list videos matching criteria
-- update video metadata
-- update playlist
-- create a new playlist
-- list playlist items
+- upload video
 - youtube
-- remove a video from a playlist
+- list playlists
+- delete a video
+- list videos
+- create a new playlist
+- update playlist
+- upload caption
+- upload a caption track
+- update caption
 - delete caption
-- upload a new caption track
-- videos
-- update a caption track
-- remove playlist item
-- google
+- add playlist item
+- content management
+- upload a new video
+- media
+- social
+- delete a playlist
 - manage video captions
+- update video
+- update video metadata
+- manage items within playlists
+- manage youtube videos
+- delete a video from youtube
 - manage youtube playlists
+- delete video
+- add a video to a playlist
+- list playlist items
+- list items in a playlist
+- create playlist
+- playlists
+- streaming
+- list youtube videos matching criteria
+- remove a video from a playlist
+- google
+- captions
+- update playlist details
+- list youtube playlists
+- upload a new caption track
+- list videos matching criteria
+- delete playlist
+- list caption tracks for a video
+- delete a caption track
+- video
+- videos
+- remove playlist item
+- upload a new video to youtube
+- update a caption track
 slug: content-management
 tags:
 - YouTube

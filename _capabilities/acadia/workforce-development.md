@@ -34,43 +34,43 @@ personas:
 provider_name: Acadia
 provider_slug: acadia
 search_terms:
-- list all digital work instructions with status and category filtering
-- list quizzes
-- list all job roles with training requirements and completion rates
 - acadia
-- list all active quizzes and assessments available in the platform
-- training management
-- create work instruction
-- end-to-end employee training management from work instructions to skill validation
-- create a new digital work instruction with title, category, and steps
-- list all digital work instructions
-- list job roles and training requirements
-- knowledge management
-- list all employees with training completion data
 - connected worker
-- get employee skills
 - manufacturing
-- list employees and their training status
-- list roles
 - workforce development
-- professional responsible for creating and assigning work instructions and quizzes
-- get the complete skills matrix for an employee showing required and completed skills
-- training
-- get skills matrix for a specific employee
-- list work instructions
-- hr manager
-- list employees with training completion percentages, filtered by role or department
-- list all job roles with training requirements
-- skills management
-- manage digital work instructions
-- manager monitoring team skill gaps, compliance, and training completion rates
-- training coordinator
-- get employee skills matrix
+- list all active quizzes and assessments available in the platform
+- knowledge management
 - digital work instructions, employee skills, quizzes, and role management
+- list all job roles with training requirements and completion rates
+- list all digital work instructions
+- professional responsible for creating and assigning work instructions and quizzes
+- get employee skills matrix
+- list all employees with training completion data
 - list employees
-- tracking and managing employee skills, roles, and career development
-- operations manager
+- training
+- end-to-end employee training management from work instructions to skill validation
+- list job roles and training requirements
 - hr professional managing employee training records, skills matrices, and role requirements
+- list quizzes
+- tracking and managing employee skills, roles, and career development
+- list all job roles with training requirements
+- training management
+- operations manager
+- list all digital work instructions with status and category filtering
+- manager monitoring team skill gaps, compliance, and training completion rates
+- create a new digital work instruction with title, category, and steps
+- list work instructions
+- manage digital work instructions
+- get employee skills
+- create work instruction
+- list roles
+- get skills matrix for a specific employee
+- hr manager
+- get the complete skills matrix for an employee showing required and completed skills
+- list employees and their training status
+- skills management
+- list employees with training completion percentages, filtered by role or department
+- training coordinator
 slug: workforce-development
 tags:
 - Acadia

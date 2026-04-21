@@ -24,29 +24,29 @@ provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
 - get consumer analytics
-- credit analytics
-- retrieve consumer accounts via open banking
-- get consumer credit analytics and spending insights
-- fraud detection
-- financial services
-- data analytics
-- payments
-- retrieve account transactions via open banking
-- get accounts
 - get small business credit analytics
-- open banking account data
-- get consumer accounts
-- mastercard
-- small business credit analytics
-- retrieve consumer accounts
-- open banking
-- get account transactions
-- credit cards
-- consumer credit analytics
 - fintech
-- get small business analytics
+- fraud detection
+- open banking
 - get consumer credit analytics
+- get accounts
+- data analytics
+- financial services
+- credit analytics
+- consumer credit analytics
+- retrieve consumer accounts
+- retrieve account transactions via open banking
+- credit cards
+- mastercard
+- get consumer credit analytics and spending insights
+- get consumer accounts
+- get small business analytics
+- payments
+- small business credit analytics
+- get account transactions
 - digital identity
+- retrieve consumer accounts via open banking
+- open banking account data
 slug: open-banking-and-data
 tags:
 - Mastercard

@@ -25,37 +25,37 @@ personas: []
 provider_name: Amazon Cloud Map
 provider_slug: amazon-cloud-map
 search_terms:
-- list all cloud map service discovery namespaces
-- devops
-- create a service
-- list services
-- list all namespaces
-- discover service instances
-- list namespaces
-- manage service discovery namespaces
-- list services registered in cloud map
-- register an instance with a cloud map service
-- dynamic service registry and health-based routing
-- engineers managing service registries and microservice infrastructure
-- create a new cloud map service within a namespace
-- devops practitioners automating service registration and health monitoring
-- discover healthy service instances by namespace and service name
-- list instances
-- discover healthy instances
-- create service
-- discover instances
-- DevOps Engineer
-- microservices
-- aws
-- list all instances registered with a specific cloud map service
 - cloud map
-- service discovery
-- dns
+- discover service instances
 - Platform Engineer
-- register instance
-- amazon web services
 - manage services
+- devops practitioners automating service registration and health monitoring
+- service discovery
+- list services
+- list services registered in cloud map
+- list all cloud map service discovery namespaces
+- create service
+- list all namespaces
+- devops
+- discover healthy instances
+- list all instances registered with a specific cloud map service
+- manage service discovery namespaces
+- create a service
+- dns
+- register instance
+- DevOps Engineer
+- list instances
+- create a new cloud map service within a namespace
+- list namespaces
+- amazon web services
+- register an instance with a cloud map service
+- aws
 - dynamic microservice registration and discovery
+- discover healthy service instances by namespace and service name
+- discover instances
+- dynamic service registry and health-based routing
+- microservices
+- engineers managing service registries and microservice infrastructure
 slug: service-discovery
 tags:
 - Amazon Web Services

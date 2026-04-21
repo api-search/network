@@ -25,39 +25,39 @@ personas: []
 provider_name: AIMLAPI
 provider_slug: aimlapi
 search_terms:
-- api gateway
-- video generation
-- artificial intelligence
-- ai model inference across modalities
-- chat completions via 400+ llms
-- machine learning
-- generate image
-- create a chat completion
-- list all models
-- create image
-- speech
-- AI Engineer
-- embeddings
-- ai engineer evaluating and comparing models for ml pipelines
-- discover all 400+ available ai models on aimlapi platform
-- generate an image
-- generate an image from a text prompt using aimlapi image generation models
-- create embeddings
-- generate embeddings
-- llm
-- create embedding
-- generate a chat response from any of 400+ ai language models via aimlapi
-- access 400+ ai models for chat, image generation, embeddings, and model discovery
-- developer tools
-- image generation
-- developer integrating ai capabilities into applications via aimlapi
-- list available models
-- ai models
-- Developer
 - generate vector embeddings for semantic search and rag applications
-- api key management and model discovery
-- list models
+- discover all 400+ available ai models on aimlapi platform
+- video generation
+- image generation
 - create chat completion
+- api gateway
+- AI Engineer
+- list models
+- generate an image from a text prompt using aimlapi image generation models
+- machine learning
+- api key management and model discovery
+- embeddings
+- list available models
+- create embedding
+- list all models
+- Developer
+- ai models
+- developer integrating ai capabilities into applications via aimlapi
+- ai engineer evaluating and comparing models for ml pipelines
+- generate an image
+- generate a chat response from any of 400+ ai language models via aimlapi
+- create image
+- generate embeddings
+- ai model inference across modalities
+- create a chat completion
+- developer tools
+- access 400+ ai models for chat, image generation, embeddings, and model discovery
+- speech
+- chat completions via 400+ llms
+- artificial intelligence
+- llm
+- create embeddings
+- generate image
 slug: ai-model-operations
 tags:
 - Artificial Intelligence

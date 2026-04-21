@@ -8,13 +8,13 @@ personas: []
 provider_name: Amazon Firewall Manager
 provider_slug: amazon-firewall-manager
 search_terms:
-- network security
-- compliance
-- aws organizations
-- firewall
 - aws
 - security
+- compliance
+- network security
 - multi-account
+- firewall
+- aws organizations
 slug: amazon-firewall-manager-security-governance
 tags:
 - Security

@@ -50,51 +50,51 @@ personas: []
 provider_name: New Relic
 provider_slug: new-relic
 search_terms:
-- devops
-- send custom events for application tracking
-- performance
-- record a new deployment
-- get or update an application
-- get application details
-- list key transactions
-- list all monitored applications
-- record a new deployment for an application
-- get application
-- get deployments
-- get key transactions
-- create deployment
-- get application hosts
-- infrastructure
-- get applications
-- get application metrics data
-- list application metrics
-- application monitoring
-- platform
-- query metric data
+- list application hosts
 - send events
-- query metric data for an application
-- get details of a specific application
-- send custom events
-- monitoring
+- deployments
 - query metric data points for an application
 - update application settings
-- list available metric names
 - analytics
+- send custom events for application tracking
 - analysis
-- manage deployments
-- new relic
-- list deployments for an application
-- list applications
-- list hosts for an application
-- list application hosts
-- observability
+- get key transactions
+- performance
+- record a new deployment for an application
+- platform
+- get application
+- list available metric names
+- list key transactions
 - list available metric names for an application
-- update application
-- deployments
-- apm
-- get application metrics
+- create deployment
+- devops
 - list deployment records for an application
+- observability
+- get application details
+- record a new deployment
+- apm
 - developer
+- manage deployments
+- get deployments
+- monitoring
+- list hosts for an application
+- infrastructure
+- send custom events
+- get application metrics data
+- update application
+- get applications
+- application monitoring
+- list deployments for an application
+- get or update an application
+- get application metrics
+- list applications
+- list all monitored applications
+- list application metrics
+- query metric data
+- new relic
+- query metric data for an application
+- get application hosts
+- get details of a specific application
 slug: application-monitoring
 tags:
 - New Relic

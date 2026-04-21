@@ -33,46 +33,46 @@ personas: []
 provider_name: Amazon Private CA
 provider_slug: amazon-private-ca
 search_terms:
-- certificate authority hierarchy management
-- retrieve a certificate
-- list all private certificate authorities
-- certificate lifecycle management
+- certificate authority
+- retrieve an issued certificate by arn
+- Platform Engineer
+- describe ca
 - x.509
-- revoke an issued certificate
-- issues certificates for internal services and manages certificate lifecycle
-- iot
-- list cas
-- pki
-- create certificate authority
 - Security Engineer
-- certificate management
+- individual certificate operations
+- get certificate
+- issue a new x.509 certificate from a certificate authority
+- describe certificate authority
+- revoke an issued certificate
+- get details about a specific certificate authority
+- iot
+- create certificate authority
+- list certificate authorities
+- individual certificate authority operations
+- amazon
+- create a new private certificate authority in the ca hierarchy
+- list all certificate authorities
+- revoke certificate
+- security
+- pki
+- list cas
+- get certificate authority details
+- tls
+- certificate lifecycle management
 - manages pki infrastructure, ca hierarchies, and certificate policies
 - create ca
-- get certificate
-- certificates
-- issue certificate
-- describe certificate authority
-- security
-- list certificate authorities
-- create a new private certificate authority in the ca hierarchy
-- get certificate authority details
-- retrieve an issued certificate by arn
-- individual certificate authority operations
-- tls
-- individual certificate operations
-- certificate authority
-- describe ca
-- aws
-- revoke a certificate
-- amazon
-- list all certificate authorities
-- issue a new x.509 certificate from a certificate authority
-- Platform Engineer
-- issue a new certificate
+- certificate management
 - create a new private certificate authority
+- issue a new certificate
+- aws
+- retrieve a certificate
+- issues certificates for internal services and manages certificate lifecycle
 - private pki infrastructure management workflow
-- get details about a specific certificate authority
-- revoke certificate
+- certificates
+- list all private certificate authorities
+- revoke a certificate
+- certificate authority hierarchy management
+- issue certificate
 slug: pki-management
 tags:
 - Amazon

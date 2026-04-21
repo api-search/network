@@ -13,20 +13,20 @@ personas: []
 provider_name: Amazon Payment Cryptography
 provider_slug: amazon-payment-cryptography
 search_terms:
-- amazon payment cryptography
-- primary amazon payment cryptography resources
-- list resources
-- financial services
-- payment processing
-- cryptography
-- core api workflow
-- aws
 - list amazon payment cryptography resources
-- pci
-- developer using amazon payment cryptography apis
-- list openapi.yml
+- amazon payment cryptography
+- aws
+- core api workflow
+- financial services
 - list and manage openapi.yml resources
 - Developer
+- cryptography
+- payment processing
+- developer using amazon payment cryptography apis
+- list resources
+- list openapi.yml
+- primary amazon payment cryptography resources
+- pci
 slug: amazon-payment-cryptography-workflow
 tags:
 - Amazon Payment Cryptography

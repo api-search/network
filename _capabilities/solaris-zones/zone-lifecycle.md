@@ -45,60 +45,60 @@ personas: []
 provider_name: Solaris Zones
 provider_slug: solaris-zones
 search_terms:
-- list zones
-- verify zone
-- verify zone configuration integrity.
-- halt a zone immediately.
-- containers
-- gracefully shutdown.
-- boot a zone.
-- boot a solaris zone.
-- gracefully shutdown a zone.
-- migrate a zone to another host.
-- get current zone state.
-- oracle
-- boot zone
-- virtualization
-- reboot zone
-- create a new zone.
-- zones
-- get zone
-- get zone details.
-- shutdown zone
-- migrate to another host.
-- migrate a zone.
 - individual zone operations.
-- create zone
-- resource management
-- delete zone
-- zone state operations.
-- install zone
-- delete a solaris zone.
-- halt zone
-- get solaris zone details.
-- delete a zone.
-- reboot the zone.
-- uninstall a solaris zone.
-- operating systems
-- statsstore
-- uninstall zone
-- get zone state
-- clone a solaris zone.
-- rad
-- lifecycle management
-- boot the zone.
-- solaris
-- clone zone
-- install a solaris zone.
-- shutdown a zone.
-- list all zones.
 - zone inventory and creation.
-- reboot a zone.
+- get zone details.
+- boot a solaris zone.
+- shutdown zone
+- halt zone
+- clone a solaris zone.
+- uninstall zone
+- statsstore
+- boot a zone.
+- rad
+- reboot zone
+- delete a zone.
+- install zone
+- uninstall a solaris zone.
+- solaris
+- get zone
+- create zone
+- reboot a solaris zone.
+- lifecycle management
+- resource management
+- boot zone
+- zones
+- migrate to another host.
+- get current zone state.
+- get solaris zone details.
 - migrate zone
+- reboot a zone.
+- boot the zone.
+- shutdown a zone.
+- migrate a zone to another host.
+- operating systems
+- verify zone configuration integrity.
+- clone zone
+- virtualization
+- list all zones.
+- delete a solaris zone.
 - kernel zones
 - create a new solaris zone.
 - list all solaris zones with status.
-- reboot a solaris zone.
+- oracle
+- migrate a zone.
+- containers
+- gracefully shutdown.
+- verify zone
+- halt a zone immediately.
+- list zones
+- create a new zone.
+- reboot the zone.
+- get zone state
+- install a solaris zone.
+- zone state operations.
+- gracefully shutdown a zone.
+- delete zone
 slug: zone-lifecycle
 tags:
 - Solaris

@@ -41,46 +41,46 @@ personas: []
 provider_name: Amazon Proton
 provider_slug: amazon-proton
 search_terms:
-- devops
-- list environments
-- create environment
-- list all deployed environments
-- list services
-- deploy a new application service from a service template
-- Application Developer
-- list environment templates
-- deploys services using self-service templates provided by platform engineers
-- list environment templates for standardized infrastructure
-- platform engineering
-- create a service template
-- environment template management for platform engineers
-- list service templates available for developer self-service
-- infrastructure as code
 - platform engineering template and deployment workflow
-- deployed service management
+- deployed environment management
+- deploy a new environment from a standardized template
+- Platform Engineer
+- service template catalog for developers
+- Application Developer
+- list services
+- templates
+- list environments
+- create a service template
+- create service template
+- list deployed environments
+- create an environment template
+- deploys services using self-service templates provided by platform engineers
 - list deployed services
 - create service
-- create a service from a template
-- list deployed environments
-- deployed environment management
-- create an environment template
-- aws
-- creates and manages environment and service templates for standardized deployments
 - serverless
+- devops
 - amazon
-- create an environment from a template
-- self-service
 - list all deployed services
-- Platform Engineer
-- create environment template
-- service template catalog for developers
-- create service template
-- ci/cd
-- deploy a new environment from a standardized template
-- create a new standardized environment template for developers
 - create a new service template for standardized application deployments
-- templates
+- list service templates available for developer self-service
+- create environment
+- list environment templates for standardized infrastructure
+- create a service from a template
+- platform engineering
+- list all deployed environments
+- deploy a new application service from a service template
+- creates and manages environment and service templates for standardized deployments
+- create a new standardized environment template for developers
 - list service templates
+- infrastructure as code
+- self-service
+- aws
+- list environment templates
+- ci/cd
+- environment template management for platform engineers
+- create environment template
+- create an environment from a template
+- deployed service management
 slug: platform-engineering
 tags:
 - Amazon

@@ -29,48 +29,48 @@ personas: []
 provider_name: Amazon IAM Access Analyzer
 provider_slug: amazon-iam-access-analyzer
 search_terms:
-- get generated policy
-- start policy generation
-- manage analyzers, findings, validate policies, and generate least-privilege policies
-- validate policy
-- list analyzers
+- create a new iam access analyzer for an account or organization
+- validate an iam policy for best practices
+- compliance
+- list all iam access analyzers configured in the account
 - manage access analyzers
-- list findings from an analyzer
-- list all access analyzers in the account
-- Security Engineer
-- iam
+- list analyzers
 - create access preview
-- reviews access findings and remediates unintended access
-- list findings
-- validate an iam policy document for best practices and security issues
+- Security Engineer
 - review access analyzer findings
-- generate iam policies from activity logs
-- managing who can access what resources
+- create analyzer
+- retrieve a policy generated from cloudtrail activity
+- Cloud Security Engineer
+- list archive rules for an analyzer
+- get details of a specific access finding
+- list findings from an analyzer
 - get finding
+- iam
+- reviews access findings and remediates unintended access
+- start policy generation
+- list security findings from an access analyzer
+- validate policy
+- ensuring access controls meet security standards
+- list all access analyzers in the account
 - security
 - validate iam policies
-- ensuring access controls meet security standards
-- validate an iam policy for best practices
-- list archive rules for an analyzer
+- get generated policy
+- generate iam policies from activity logs
+- manage analyzers, findings, validate policies, and generate least-privilege policies
+- list findings
 - preview access changes before deploying permission changes
-- compliance
-- generate an iam policy based on cloudtrail access activity logs
-- list all iam access analyzers configured in the account
-- creating, validating, and optimizing iam policies
-- aws
-- create a new iam access analyzer for an account or organization
-- retrieve a policy generated from cloudtrail activity
 - policy management
-- manages iam policies, roles, and access controls
-- create analyzer
-- get details of a specific access finding
-- IAM Administrator
-- start generating a policy based on cloudtrail activity
-- list security findings from an access analyzer
-- create a new access analyzer
-- list archive rules
 - access control
-- Cloud Security Engineer
+- creating, validating, and optimizing iam policies
+- list archive rules
+- generate an iam policy based on cloudtrail access activity logs
+- aws
+- create a new access analyzer
+- IAM Administrator
+- managing who can access what resources
+- start generating a policy based on cloudtrail activity
+- manages iam policies, roles, and access controls
+- validate an iam policy document for best practices and security issues
 slug: access-security-management
 tags:
 - AWS

@@ -39,49 +39,49 @@ personas: []
 provider_name: Factset
 provider_slug: factset
 search_terms:
-- research
-- entity data
-- get georev
-- get entity
-- get people
-- get geographic revenue.
-- translate between identifier types.
-- get esg scores.
-- get entity data.
-- get industry classifications.
-- get ownership data.
-- concordance lookup
-- factset
-- look up security identifiers.
-- esg data.
-- get entities
-- id lookup
-- get entity reference data.
-- financial data
-- investment analytics
-- fundamental data.
-- get fundamentals
-- entity data.
-- concordance lookup.
-- entity concordance.
 - get rbics classifications.
-- get people profiles.
-- concordance entity lookup.
-- get people data.
+- fundamental data.
 - concord
-- company research
-- get fundamental financial data.
-- market data
-- portfolio analytics
-- get fundamentals.
-- symbology translate
-- financial
-- get esg data.
-- people data.
-- fundamentals
-- get ownership
+- concordance entity lookup.
+- get entity reference data.
+- id lookup
+- get geographic revenue.
 - get rbics
 - get esg
+- get fundamental financial data.
+- get entity
+- get ownership data.
+- look up security identifiers.
+- financial data
+- get industry classifications.
+- get fundamentals
+- symbology translate
+- investment analytics
+- market data
+- get esg data.
+- get entities
+- concordance lookup
+- get entity data.
+- get esg scores.
+- entity data
+- research
+- translate between identifier types.
+- fundamentals
+- get people profiles.
+- esg data.
+- factset
+- get people
+- get ownership
+- concordance lookup.
+- entity data.
+- portfolio analytics
+- entity concordance.
+- people data.
+- company research
+- get people data.
+- financial
+- get georev
+- get fundamentals.
 - get classifications
 slug: company-research
 tags:

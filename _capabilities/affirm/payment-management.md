@@ -54,61 +54,61 @@ personas:
 provider_name: affirm
 provider_slug: affirm
 search_terms:
-- get dispute
-- submit dispute evidence
-- submit evidence to contest an affirm payment dispute.
-- backend developer integrating affirm bnpl into a merchant's e-commerce checkout.
-- authorization, capture, void, and refund of payment transactions.
-- read checkout
-- specific dispute operations.
-- payment transaction management.
-- void an authorized affirm transaction before capture.
-- disputes
-- transactions
-- get promotional financing terms.
-- get affirm promotional financing terms and messaging for a purchase amount.
-- displaying financing terms and promotional messaging to customers.
-- capture a transaction.
-- dispute management.
-- merchant engineer
-- affirm
-- capture an authorized affirm transaction to collect funds.
-- authorize transaction
-- list disputes
-- read an affirm checkout session by token.
-- payments
-- promotional messaging.
-- retrieve or update a checkout session.
-- refund transaction
-- refund a transaction.
-- merchant operations team member managing transaction reconciliation and dispute resolution.
-- void transaction
-- get promo messaging
-- payment ops
-- authorize a transaction.
-- checkout session management.
-- list transactions
-- capture transaction
-- refund a captured transaction.
-- list all disputes.
-- list all affirm payment transactions for reconciliation.
-- authorize an affirm transaction using a checkout token.
-- refund a captured affirm transaction partially or fully.
-- handling of customer chargebacks and disputes.
-- get dispute details.
-- get promo
-- checkout
-- read a checkout session.
-- list all affirm payment disputes for a merchant.
-- initiation and management of customer financing sessions.
-- full bnpl payment lifecycle from checkout through capture, refund, and dispute management.
-- list all transactions.
-- get details of a specific affirm payment dispute.
-- store checkout
-- create an affirm checkout session.
-- capture an authorized transaction.
 - buy now pay later
+- backend developer integrating affirm bnpl into a merchant's e-commerce checkout.
 - create an affirm bnpl checkout session for a customer purchase.
+- void an authorized affirm transaction before capture.
+- affirm
+- authorize a transaction.
+- refund a transaction.
+- get dispute
+- list all affirm payment disputes for a merchant.
+- get promo messaging
+- checkout session management.
+- get promotional financing terms.
+- merchant operations team member managing transaction reconciliation and dispute resolution.
+- payment ops
+- initiation and management of customer financing sessions.
+- payment transaction management.
+- get promo
+- refund a captured affirm transaction partially or fully.
+- list disputes
+- void transaction
+- refund transaction
+- merchant engineer
+- read an affirm checkout session by token.
+- capture an authorized affirm transaction to collect funds.
+- submit dispute evidence
+- list all disputes.
+- promotional messaging.
+- create an affirm checkout session.
+- list all transactions.
+- capture an authorized transaction.
+- payments
+- specific dispute operations.
+- disputes
+- handling of customer chargebacks and disputes.
+- read checkout
+- capture a transaction.
+- store checkout
+- get dispute details.
+- transactions
+- get affirm promotional financing terms and messaging for a purchase amount.
+- refund a captured transaction.
+- list transactions
+- authorize an affirm transaction using a checkout token.
+- capture transaction
+- displaying financing terms and promotional messaging to customers.
+- submit evidence to contest an affirm payment dispute.
+- full bnpl payment lifecycle from checkout through capture, refund, and dispute management.
+- checkout
+- dispute management.
+- list all affirm payment transactions for reconciliation.
+- read a checkout session.
+- authorization, capture, void, and refund of payment transactions.
+- get details of a specific affirm payment dispute.
+- authorize transaction
+- retrieve or update a checkout session.
 slug: payment-management
 tags:
 - Affirm

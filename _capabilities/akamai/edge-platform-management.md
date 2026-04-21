@@ -22,32 +22,32 @@ personas: []
 provider_name: Akamai
 provider_slug: akamai
 search_terms:
-- create edgeworker
-- create a new akamai edgeworker serverless function
-- network lists and access control for ip and geographic filtering
-- network security
-- platform
 - networks
-- security
-- DevOps Engineer
+- Platform Engineer
+- network security
 - edgeworkers serverless execution and edgekv storage at the edge
-- content delivery property management and configuration
-- list edgeworker identifiers
+- automates akamai configuration deployment via ci/cd pipelines
 - network list management
+- platform
+- edgeworker serverless function management
+- list network lists
+- cloud
+- list all akamai edgeworker serverless functions
+- edge computing
+- security
+- list edgeworkers
+- content delivery property management and configuration
+- cdn
+- DevOps Engineer
+- platform management
+- manage akamai edge platform including edgeworkers and network lists
+- manages akamai property configurations and edge deployments
+- create edgeworker
 - list all akamai network lists for ip and geographic access control
 - akamai
-- cloud
-- Platform Engineer
-- edge computing
-- edgeworker serverless function management
-- manages akamai property configurations and edge deployments
-- automates akamai configuration deployment via ci/cd pipelines
-- list all akamai edgeworker serverless functions
-- list network lists
-- platform management
-- cdn
-- manage akamai edge platform including edgeworkers and network lists
-- list edgeworkers
+- network lists and access control for ip and geographic filtering
+- create a new akamai edgeworker serverless function
+- list edgeworker identifiers
 slug: edge-platform-management
 tags:
 - Akamai

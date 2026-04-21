@@ -39,47 +39,47 @@ personas: []
 provider_name: IBM WebSphere
 provider_slug: websphere
 search_terms:
-- get liberty metrics
-- get all open liberty metrics
-- get open liberty overall health
-- check if liberty server is alive
-- get batch job
-- performance data
-- list batch jobs
-- get liberty admin metrics
-- enterprise java
-- list jakarta batch job instances
-- get batch job instance details
-- get was health
-- get liveness
-- application server
-- get liberty health
-- get log config
-- cloud native
-- monitoring
-- microservices
-- ibm websphere
-- get all metrics
-- get was performance monitoring data
-- get liberty log messages
-- get performance data
-- metrics collection
-- check if liberty server is ready for traffic
-- get recent liberty log messages
-- health check endpoints
-- get log messages
-- get was server health status
-- observability
-- get was server health
-- get readiness
-- j2ee
-- list batch job instances
-- get open liberty overall health status
 - log management
+- get liveness
+- list jakarta batch job instances
+- get liberty health
+- get performance data
 - batch job monitoring
-- get liberty logging configuration
+- get was health
+- get recent liberty log messages
+- performance data
+- ibm websphere
+- check if liberty server is alive
+- get liberty log messages
+- get log config
+- get open liberty overall health status
+- get batch job
+- observability
+- check if liberty server is ready for traffic
+- j2ee
+- get log messages
+- get open liberty overall health
+- get was server health status
+- health check endpoints
+- list batch jobs
+- monitoring
 - metrics
+- cloud native
+- get all open liberty metrics
+- get readiness
+- get liberty admin metrics
+- get batch job instance details
+- list batch job instances
 - middleware
+- get liberty metrics
+- get was performance monitoring data
+- enterprise java
+- microservices
+- application server
+- get was server health
+- metrics collection
+- get liberty logging configuration
+- get all metrics
 slug: monitoring-and-observability
 tags:
 - IBM WebSphere

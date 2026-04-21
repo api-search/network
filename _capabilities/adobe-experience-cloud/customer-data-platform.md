@@ -25,49 +25,49 @@ personas: []
 provider_name: Adobe Experience Cloud
 provider_slug: adobe-experience-cloud
 search_terms:
-- list audience segments.
-- list audience segment definitions in adobe experience platform.
-- technical marketer integrating experience cloud apis into marketing stack.
-- list all datasets.
-- unified customer profiles and data management.
-- get customer profile
-- journey orchestration
-- unified customer profiles.
-- create a new audience segment using pql expression in adobe experience platform.
-- digital analytics reporting and audience insights.
-- campaign management
-- customer experience
-- audience segments.
-- audience segmentation
-- customer data platform
-- data management
-- list datasets
-- create a new audience segment.
-- multi-channel customer journey management.
-- create audience segment
-- list segments
-- get a unified customer profile.
-- personalization
-- CDP Administrator
 - retrieve a unified real-time customer profile from adobe experience platform by identity.
-- Marketing Technologist
-- data sets.
-- digital marketing
-- list audience segments
-- real-time profiles
-- administrator managing customer profiles, segments, and identity resolution.
-- list all datasets ingested into adobe experience platform.
-- adobe experience platform
-- profile management, audience segmentation, and data ingestion.
-- analytics
+- data management
 - Digital Marketer
-- a/b testing and content personalization.
-- Data Engineer
-- marketing professional using analytics, personalization, and journey tools.
-- engineer managing data pipelines, schemas, and datasets in experience platform.
-- analytics, a/b testing, and journey orchestration for digital marketers.
+- analytics
+- campaign management
+- get customer profile
 - create segment
+- CDP Administrator
+- digital analytics reporting and audience insights.
+- list audience segments.
+- marketing professional using analytics, personalization, and journey tools.
+- analytics, a/b testing, and journey orchestration for digital marketers.
+- list all datasets.
+- administrator managing customer profiles, segments, and identity resolution.
+- Data Engineer
+- Marketing Technologist
+- a/b testing and content personalization.
+- customer experience
+- journey orchestration
+- engineer managing data pipelines, schemas, and datasets in experience platform.
+- technical marketer integrating experience cloud apis into marketing stack.
+- list audience segment definitions in adobe experience platform.
+- multi-channel customer journey management.
+- customer data platform
+- list audience segments
+- list all datasets ingested into adobe experience platform.
+- list segments
 - get profile
+- create audience segment
+- adobe experience platform
+- real-time profiles
+- personalization
+- get a unified customer profile.
+- create a new audience segment.
+- audience segmentation
+- unified customer profiles and data management.
+- digital marketing
+- unified customer profiles.
+- data sets.
+- create a new audience segment using pql expression in adobe experience platform.
+- profile management, audience segmentation, and data ingestion.
+- audience segments.
+- list datasets
 slug: customer-data-platform
 tags:
 - Adobe Experience Platform

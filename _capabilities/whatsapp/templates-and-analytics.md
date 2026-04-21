@@ -33,33 +33,33 @@ personas: []
 provider_name: WhatsApp
 provider_slug: whatsapp
 search_terms:
-- lists all message templates for a waba.
-- deletes a message template.
-- individual message template management.
-- whatsapp
-- retrieves conversation analytics for a waba with configurable time range, granularity, and dimensional breakdown.
-- updates an existing message template. only approved or paused templates can be edited. edits re-trigger the approval process.
+- message template management.
+- lists all message templates for a whatsapp business account. supports filtering by name, language, status, and category.
 - retrieves template analytics.
-- list message templates
-- creates a new message template.
+- analytics
+- template performance analytics.
 - reporting
 - update message template
-- template performance analytics.
-- updates an existing message template.
-- deletes a message template. deleting by name removes all language variants.
-- marketing
-- message template management.
-- retrieves analytics for specific message templates including sent, delivered, read, clicked, and cost metrics.
 - get template analytics
+- creates a new message template.
 - creates a new message template. templates must be approved by meta before use.
-- analytics
-- get conversation analytics
+- retrieves analytics for specific message templates including sent, delivered, read, clicked, and cost metrics.
+- whatsapp
 - retrieves conversation analytics.
-- message templates
-- create message template
-- delete message template
+- retrieves conversation analytics for a waba with configurable time range, granularity, and dimensional breakdown.
 - conversation analytics and reporting.
-- lists all message templates for a whatsapp business account. supports filtering by name, language, status, and category.
+- message templates
+- lists all message templates for a waba.
+- updates an existing message template.
+- get conversation analytics
+- deletes a message template.
+- marketing
+- list message templates
+- individual message template management.
+- delete message template
+- deletes a message template. deleting by name removes all language variants.
+- create message template
+- updates an existing message template. only approved or paused templates can be edited. edits re-trigger the approval process.
 slug: templates-and-analytics
 tags:
 - WhatsApp

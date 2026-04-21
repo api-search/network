@@ -10,13 +10,13 @@ provider_name: Amazon CloudSearch
 provider_slug: amazon-cloudsearch
 search_terms:
 - managed
+- aws
+- Application Developer
 - full-text search
 - search
 - cloudsearch
-- Application Developer
-- aws
-- amazon web services
 - amazon cloudsearch
+- amazon web services
 slug: search-management
 tags:
 - Amazon Web Services

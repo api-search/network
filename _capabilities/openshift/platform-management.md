@@ -13,37 +13,37 @@ personas: []
 provider_name: OpenShift
 provider_slug: openshift
 search_terms:
-- devops
-- list cluster nodes
+- list nodes
+- get pod
+- enterprise
+- list config maps
 - list services
 - list image streams
-- containers
-- list operators
-- list storage
-- list openshift projects
-- list persistent volumes
+- list pods
 - platform
-- openshift
-- get project details
-- list config maps
-- list projects
-- project management
-- list nodes
-- list builds
-- list routes
-- get pod details
 - kubernetes
-- cloud native
-- list images
-- get project
+- list cluster nodes
+- list openshift projects
+- get project details
+- list installed operators
+- project management
+- devops
+- get pod details
+- list configmaps
 - paas
 - list deployments
-- enterprise
-- list configmaps
+- get project
+- list projects
+- cloud native
+- list builds
+- list routes
+- list operators
+- list storage
+- containers
+- list persistent volumes
 - ci/cd
-- list installed operators
-- get pod
-- list pods
+- openshift
+- list images
 slug: platform-management
 tags:
 - OpenShift

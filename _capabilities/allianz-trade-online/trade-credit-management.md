@@ -9,11 +9,11 @@ provider_name: Allianz Trade
 provider_slug: allianz-trade-online
 search_terms:
 - risk management
-- insurance
-- e-commerce
-- credit insurance
-- trade credit
 - surety
+- trade credit
+- insurance
+- credit insurance
+- e-commerce
 slug: trade-credit-management
 tags: []
 tools: []

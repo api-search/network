@@ -35,55 +35,55 @@ personas: []
 provider_name: 1Password
 provider_slug: 1password
 search_terms:
-- devops
-- retrieve 1password sign-in attempt events for security monitoring.
-- update an existing item in a 1password vault.
-- Security Operations
-- event streaming for sign-ins, item usage, and audit trails
-- list items
-- create account
-- create a new item in a vault.
-- list api activity
-- vault and item crud operations via connect server
-- monitors sign-in events, item usage, and audit logs for security compliance
-- retrieve sign-in audit events.
-- account provisioning for 1password partners
-- provision partner account
-- list all items in a vault.
-- provision a new 1password account for a partner customer.
-- retrieve 1password audit events for compliance reporting.
-- create a new item in a 1password vault.
-- create item
-- security
-- manage partner billing accounts.
-- retrieve sign-in attempt events for security monitoring.
-- update item
-- 1Password Partner
-- list all 1password vaults accessible to the connect server.
-- retrieve item usage audit events.
-- DevOps Engineer
-- delete an item from a 1password vault.
-- provisions and manages 1password accounts for partner customers
-- get audit events
 - password manager
 - manage items within a vault.
-- manage 1password vaults.
-- delete item
-- secrets
-- list all api requests made to the 1password connect server.
-- get sign in events
-- retrieve 1password item usage events for compliance auditing.
-- list all accessible vaults.
-- manages secrets injection into applications and infrastructure using connect server
+- update an existing item in a 1password vault.
+- retrieve 1password sign-in attempt events for security monitoring.
+- event streaming for sign-ins, item usage, and audit trails
+- get a specific item from a 1password vault.
+- retrieve 1password audit events for compliance reporting.
+- retrieve sign-in attempt events for security monitoring.
 - list vaults
+- passwords
+- provisions and manages 1password accounts for partner customers
+- retrieve item usage events for compliance and auditing.
+- devops
+- monitors sign-in events, item usage, and audit logs for security compliance
 - list all items stored in a specific 1password vault.
 - list vault items
+- get sign in events
+- update item
+- manages secrets injection into applications and infrastructure using connect server
+- list api activity
+- vault and item crud operations via connect server
+- retrieve sign-in audit events.
+- create a new item in a 1password vault.
+- provision partner account
+- list all accessible vaults.
+- security
+- 1Password Partner
+- delete item
+- Security Operations
+- create a new item in a vault.
+- DevOps Engineer
+- list items
+- retrieve 1password item usage events for compliance auditing.
+- manage partner billing accounts.
+- create account
+- list all items in a vault.
+- list all 1password vaults accessible to the connect server.
+- retrieve item usage audit events.
+- unified secrets management, security monitoring, and account provisioning
+- account provisioning for 1password partners
+- create item
+- get audit events
+- delete an item from a 1password vault.
+- provision a new 1password account for a partner customer.
 - get item usage events
 - get item
-- passwords
-- unified secrets management, security monitoring, and account provisioning
-- retrieve item usage events for compliance and auditing.
-- get a specific item from a 1password vault.
+- secrets
+- manage 1password vaults.
+- list all api requests made to the 1password connect server.
 slug: 1password-secrets-management
 tags:
 - Security

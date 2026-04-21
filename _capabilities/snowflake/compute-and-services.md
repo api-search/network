@@ -45,54 +45,54 @@ personas: []
 provider_name: Snowflake
 provider_slug: snowflake
 search_terms:
-- list compute pools
-- list warehouses
-- create a service
-- list services
-- execute an alert
-- sql
-- delete warehouse
-- containers
-- delete a warehouse
-- list image repositories
-- suspend a running service
-- infrastructure
-- warehouse management
-- data sharing
-- create an alert
-- list virtual warehouses
-- list container services
-- snowflake
 - create alert
+- warehouse management
 - fetch warehouse
+- compute
+- execute an alert
+- compute pool management
+- list services
+- list container services
+- create an alert
 - create service
-- database
+- suspend a running service
+- sql
+- data sharing
+- delete a warehouse
+- resume service
+- list image repositories
 - data warehousing
+- resume a suspended service
+- fetch service logs
+- create a monitoring alert
+- create warehouse
+- create a virtual warehouse
+- alert management
+- execute alert
+- list alerts
+- create a service
+- list warehouses
+- infrastructure
+- delete warehouse
+- get service status
+- list compute pools
+- list virtual warehouses
+- create an image repository
+- get service logs
+- data lakes
 - container service management
+- create a compute pool
+- containers
+- list monitoring alerts
+- create compute pool
+- database
+- create a warehouse
+- fetch warehouse details
 - suspend service
 - fetch service status
-- create a virtual warehouse
-- resume a suspended service
-- get service status
-- create warehouse
-- create a warehouse
-- compute pool management
 - create a container service
-- get service logs
-- list alerts
-- resume service
-- execute alert
-- data lakes
-- compute
-- fetch warehouse details
-- create an image repository
 - create image repository
-- create a monitoring alert
-- create compute pool
-- list monitoring alerts
-- create a compute pool
-- fetch service logs
-- alert management
+- snowflake
 slug: compute-and-services
 tags:
 - Snowflake

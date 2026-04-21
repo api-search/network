@@ -33,46 +33,46 @@ personas: []
 provider_name: Bloomberg
 provider_slug: bloomberg
 search_terms:
-- request reference data.
-- intraday bar request
-- quantitative analysis
-- search for fields.
-- execution management
-- intraday bar queries.
-- search the bloomberg api data dictionary for fields.
-- request reference data for securities and fields.
-- subscribe market data
-- field info request
 - request historical data.
+- enterprise
+- intraday bar request
+- subscribe market bar
+- field info request
+- analytics
+- request reference data.
+- search the bloomberg api data dictionary for fields.
+- historical data queries.
+- search for fields.
+- request reference data for securities and fields.
 - financial services
-- subscribe to custom vwap stream.
 - field search request
-- request intraday bars.
-- intraday tick queries.
+- request intraday ohlc bars for a security.
+- subscribe to custom vwap stream.
+- reference data request
+- subscribe market data
+- market data
 - request end-of-day historical data for securities.
 - bloomberg
-- transaction cost analysis
-- historical data queries.
-- subscribe to streaming real-time market data.
-- reference data queries.
-- look up metadata for bloomberg field mnemonics.
-- analytics
-- look up field metadata.
-- market data
-- field discovery.
 - subscribe to interval-based real-time bars.
-- historical data request
-- news
-- request intraday ticks.
-- enterprise
-- subscribe market bar
-- data license
-- trading
-- request raw intraday tick data for a security.
-- intraday tick request
-- request intraday ohlc bars for a security.
 - business intelligence
-- reference data request
+- transaction cost analysis
+- trading
+- execution management
+- intraday bar queries.
+- intraday tick queries.
+- subscribe to streaming real-time market data.
+- look up metadata for bloomberg field mnemonics.
+- look up field metadata.
+- request intraday ticks.
+- request intraday bars.
+- field discovery.
+- request raw intraday tick data for a security.
+- historical data request
+- data license
+- intraday tick request
+- reference data queries.
+- news
+- quantitative analysis
 - subscribe market vwap
 slug: market-data
 tags:

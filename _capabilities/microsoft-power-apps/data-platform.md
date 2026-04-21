@@ -17,43 +17,43 @@ personas: []
 provider_name: Microsoft Power Apps
 provider_slug: microsoft-power-apps
 search_terms:
-- retrieve multiple accounts
-- business applications
-- get contact
-- create account
-- update an account
-- get entity
-- retrieve entity definitions
-- update a contact
-- microsoft
-- retrieve a single contact
 - power apps
-- delete account
-- account management
-- get account
-- create a new contact
-- delete contact
-- list contacts
-- create a new account
-- delete an account
-- update contact
-- low-code
-- power platform
-- create contact
-- create an account
-- retrieve a single entity definition
-- cloud
-- list accounts
-- no-code
-- retrieve multiple contacts
 - enterprise
+- microsoft
+- retrieve a single entity definition
+- retrieve multiple accounts
+- update an account
+- create a new account
+- account management
+- delete an account
+- delete contact
+- retrieve multiple contacts
+- retrieve entity definitions
+- cloud
+- get entity
+- list accounts
+- create a new contact
+- list contacts
+- business applications
 - dataverse
-- saas
+- delete a contact
 - retrieve a single account
 - data platform
-- delete a contact
+- power platform
+- update a contact
+- saas
+- get account
+- create account
+- create an account
+- update contact
+- no-code
+- low-code
+- delete account
+- retrieve a single contact
 - list entities
 - update account
+- create contact
+- get contact
 slug: data-platform
 tags:
 - Microsoft

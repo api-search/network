@@ -45,57 +45,57 @@ personas: []
 provider_name: Amazon Pinpoint
 provider_slug: amazon-pinpoint
 search_terms:
+- create a new pinpoint application
+- pinpoint application management
 - create a new marketing campaign
-- email
-- audience segment management
-- integrates messaging apis and manages endpoints
-- list campaigns
-- sms
-- marketing campaign management
-- Marketing Manager
-- list journeys
-- campaigns
-- send messages
 - create a new pinpoint application for customer engagement
-- send transactional messages (confirmations, alerts, notifications) to customer endpoints
-- create a new customer journey
-- journeys
-- create a multi-step automated customer engagement journey
-- multi-channel customer engagement workflow
+- customer journey workflow management
+- list all pinpoint applications
+- Marketing Manager
+- sms
+- analytics
+- integrates messaging apis and manages endpoints
+- push notifications
+- create segment
+- send transactional messages
+- email
+- send messages
 - list audience segments for targeting campaigns and journeys
+- messaging
+- customer engagement
+- marketing campaign management
+- create journey
+- send transactional messages (confirmations, alerts, notifications) to customer endpoints
+- manages campaigns, segments, and journeys
+- segmentation
+- communications
+- amazon
+- create a new customer audience segment based on attributes or imported data
+- list customer journeys
+- Growth Engineer
+- list marketing campaigns for a pinpoint application
+- list campaigns
+- create a new audience segment
+- campaigns
+- list automated customer journey workflows
+- multi-channel customer engagement workflow
+- list audience segments
+- send transactional messages to customer endpoints
+- journeys
+- audience segment management
+- list segments
 - voice
 - create audience segment
-- manages campaigns, segments, and journeys
-- list segments
-- send transactional messages to customer endpoints
-- create a new multi-channel marketing campaign
-- create a new customer audience segment based on attributes or imported data
-- segmentation
-- list automated customer journey workflows
-- Growth Engineer
-- create journey
+- list campaigns for an application
+- aws
 - marketing
 - create app
-- list audience segments
-- customer engagement
-- communications
-- aws
-- analytics
-- amazon
-- messaging
-- create a new pinpoint application
-- list marketing campaigns for a pinpoint application
-- list customer journeys
-- list campaigns for an application
-- list all pinpoint applications
-- send transactional messages
-- push notifications
-- create campaign
-- create segment
-- pinpoint application management
-- customer journey workflow management
-- create a new audience segment
+- create a new customer journey
 - list apps
+- create a new multi-channel marketing campaign
+- list journeys
+- create campaign
+- create a multi-step automated customer engagement journey
 slug: customer-engagement
 tags:
 - Amazon

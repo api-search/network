@@ -34,47 +34,47 @@ personas: []
 provider_name: Alaska Airlines
 provider_slug: alaska-air
 search_terms:
-- travel
-- real-time flight status, schedules, and airport data
-- travel operations
-- cargo shipment booking and listing
-- track cargo shipment
-- get cargo rate estimate
-- cargo
-- Corporate Travel Manager
-- get real-time status for a specific alaska airlines flight including departure/arrival times, gate, and delay information.
-- book a new alaska air cargo shipment to 115+ destinations worldwide
-- flight status
-- book a new cargo shipment
-- list flights
-- track alaska air cargo shipment by air waybill number with event history
-- get flight status
-- get cargo rate
-- real-time flight status
-- travel professional monitoring alaska airlines flight status and delays for customer itinerary management.
-- loyalty
-- flight status and scheduling
-- flight tracking and cargo management for travel operations
-- cargo booking, tracking, and rate management
-- get real-time status for a specific flight
-- aviation
-- corporate travel manager tracking employee flights on alaska airlines and managing cargo logistics.
-- cargo shipment tracking
-- cargo professional booking and tracking alaska air cargo shipments across 115+ domestic and international destinations.
 - Travel Agent
-- alaska airlines
-- airlines
-- Freight Forwarder
-- cargo rate estimation
-- list alaska airlines flights for a specific route and date with real-time status, delays, and gate assignments.
-- list alaska airlines flights by route and date
-- book cargo shipment
-- track cargo shipment by awb number
 - get alaska flight status
+- aviation
+- loyalty
+- travel operations
 - mileage plan member management and partner miles
 - list alaska flights
-- list cargo shipments
+- track cargo shipment
+- get real-time status for a specific alaska airlines flight including departure/arrival times, gate, and delay information.
+- list alaska airlines flights for a specific route and date with real-time status, delays, and gate assignments.
+- flight status
+- track alaska air cargo shipment by air waybill number with event history
+- cargo shipment booking and listing
+- cargo booking, tracking, and rate management
+- real-time flight status
+- alaska airlines
+- track cargo shipment by awb number
+- list flights
+- cargo shipment tracking
+- Freight Forwarder
+- get flight status
 - get rate estimate for alaska air cargo shipment based on origin, destination, weight, and number of pieces.
+- book a new cargo shipment
+- list alaska airlines flights by route and date
+- book a new alaska air cargo shipment to 115+ destinations worldwide
+- travel
+- cargo
+- flight tracking and cargo management for travel operations
+- real-time flight status, schedules, and airport data
+- cargo rate estimation
+- travel professional monitoring alaska airlines flight status and delays for customer itinerary management.
+- book cargo shipment
+- cargo professional booking and tracking alaska air cargo shipments across 115+ domestic and international destinations.
+- get real-time status for a specific flight
+- flight status and scheduling
+- get cargo rate estimate
+- airlines
+- get cargo rate
+- Corporate Travel Manager
+- list cargo shipments
+- corporate travel manager tracking employee flights on alaska airlines and managing cargo logistics.
 slug: travel-operations
 tags:
 - Alaska Airlines

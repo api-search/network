@@ -14,21 +14,21 @@ provider_name: Amazon OpenSearch Service
 provider_slug: amazon-opensearch-service
 search_terms:
 - list amazon opensearch service resources
-- full-text search
-- list resources
-- opensearch
-- search
-- log analytics
-- core api workflow
-- primary amazon opensearch service resources
-- developer using amazon opensearch service apis
-- amazon opensearch service
 - aws
-- analytics
-- elasticsearch
-- list openapi.yml
+- core api workflow
+- developer using amazon opensearch service apis
 - list and manage openapi.yml resources
 - Developer
+- analytics
+- full-text search
+- search
+- opensearch
+- amazon opensearch service
+- primary amazon opensearch service resources
+- list resources
+- elasticsearch
+- list openapi.yml
+- log analytics
 slug: amazon-opensearch-service-workflow
 tags:
 - Amazon OpenSearch Service

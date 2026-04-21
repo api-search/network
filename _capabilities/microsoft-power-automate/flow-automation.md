@@ -37,50 +37,50 @@ personas: []
 provider_name: Microsoft Power Automate
 provider_slug: microsoft-power-automate
 search_terms:
-- list environments
-- get details of a specific connector
-- update a flow
 - microsoft power automate
 - turn off flow
-- list available connectors in an environment
-- get flow
-- update flow
-- microsoft
-- list connectors
-- stop/deactivate a flow
-- list all power automate environments
-- flow lifecycle management
-- start/activate a flow
-- create a flow
-- rpa
-- list flows
-- list flows in an environment
-- workflow
-- Platform Administrator
-- Automation Engineer
-- delete a flow
-- integration
-- create flow
-- turn on flow
-- get flow details
-- list all environments
-- low-code
-- delete flow
-- update a flow's properties
-- managing environments and available connectors
-- power platform
-- automation
-- manage flows, environments, and connectors
-- get connector
 - creating, running, and managing automation flows
-- create a new automation flow
+- microsoft
+- get connector
 - get details of a specific flow
-- manages environments, connectors, and permissions
+- update flow
+- list environments
 - environment management
-- business process
-- creates and manages automation flows
-- flow management
+- create flow
+- update a flow's properties
+- turn on flow
+- get details of a specific connector
+- manage flows, environments, and connectors
+- stop/deactivate a flow
+- manages environments, connectors, and permissions
+- start/activate a flow
+- automation
+- get flow details
+- create a new automation flow
+- list available connectors in an environment
+- update a flow
+- integration
+- list flows in an environment
+- delete a flow
+- power platform
+- Platform Administrator
+- rpa
 - connector management
+- flow lifecycle management
+- flow management
+- low-code
+- create a flow
+- list all environments
+- list all power automate environments
+- managing environments and available connectors
+- creates and manages automation flows
+- delete flow
+- workflow
+- list flows
+- Automation Engineer
+- list connectors
+- business process
+- get flow
 slug: flow-automation
 tags:
 - Microsoft Power Automate

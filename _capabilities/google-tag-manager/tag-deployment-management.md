@@ -37,63 +37,63 @@ personas: []
 provider_name: Google Tag Manager
 provider_slug: google-tag-manager
 search_terms:
-- list all gtm accounts
-- get container
-- list workspaces
-- list variables
-- create a new tag
-- get account details
-- create tag
-- tag management
-- delete a container
-- list variables in a workspace
-- create workspace
-- tracking
-- list containers
-- account management
 - delete trigger
-- create container
-- get account
-- create trigger
-- list tags in a workspace
-- list triggers
-- delete a variable
-- list tags
-- delete workspace
-- get tag
-- delete a tag
-- create a new workspace
-- marketing
-- google tag manager
-- publish version
-- delete tag
-- create a new variable
-- variable management
 - create a new container
+- delete tag
+- list variables
+- list tags
 - analytics
-- delete a trigger
+- variable management
+- list workspaces
+- update account settings
+- account management
+- create tag
+- create a new workspace
+- list variables in a workspace
+- get container
+- list tags in a workspace
 - create variable
-- delete variable
-- get container details
-- list containers in an account
-- create a new trigger
+- delete a variable
+- tracking
 - list accounts
-- container management
-- list versions
+- list containers
 - create a tag
+- delete a tag
+- delete a trigger
+- conversion tracking
+- list all gtm accounts
+- create a new tag
+- delete container
+- tag management
+- get container details
+- create a new trigger
+- create container
+- get account details
+- list container version headers
+- list containers in an account
 - trigger management
 - list triggers in a workspace
-- list workspaces in a container
-- delete container
+- get account
 - list all google tag manager accounts
-- list container version headers
-- publish a container version
-- conversion tracking
+- list versions
 - create a container
+- publish version
+- create workspace
+- delete workspace
+- marketing
+- delete variable
+- container management
+- publish a container version
+- list workspaces in a container
+- create a new variable
 - get tag details
-- delete a workspace
-- update account settings
+- google tag manager
+- create trigger
+- delete a container
 - update account
+- delete a workspace
+- get tag
+- list triggers
 slug: tag-deployment-management
 tags:
 - Google Tag Manager

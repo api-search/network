@@ -8,10 +8,10 @@ personas: []
 provider_name: Amazon Verified Access
 provider_slug: amazon-verified-access
 search_terms:
-- aws
 - access management
-- security
+- aws
 - zero trust
+- security
 slug: amazon-verified-access-capability
 tags: []
 tools: []

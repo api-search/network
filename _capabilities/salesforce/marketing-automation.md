@@ -73,80 +73,80 @@ personas: []
 provider_name: Salesforce
 provider_slug: salesforce
 search_terms:
-- sales
-- get message status
-- get contact
-- get a contact by contact key.
-- create and initiate a triggered email send.
-- list contacts in the marketing cloud account.
-- commerce
-- customer service
-- marketing automation
-- insert or upsert rows into a data extension.
-- update a content asset.
-- get a content builder asset by id.
-- update a content builder asset.
-- ai
-- data extension row operations.
-- create email send
-- delete contacts
-- list journeys
-- get journey
-- marketing cloud
-- get a content asset by id.
-- delete asset
-- email marketing
-- get rows from a data extension.
-- journeys
-- get the delivery status of an email message.
-- get detailed information about a marketing cloud journey.
-- delete a content builder asset.
-- fire a journey entry event to enroll a contact.
 - triggered email send operations.
-- platform
-- content builder asset management.
-- get a marketing cloud contact by contact key.
-- journey entry event operations.
-- crm
-- list contacts
-- sms send operations.
-- get asset
-- create a new content asset in content builder.
-- marketing
-- list content assets.
-- contact deletion operations.
-- delete one or more contacts from marketing cloud.
-- get rows from a marketing cloud data extension.
 - create and initiate an sms send to one or more recipients.
-- insert data extension rows
-- create and initiate an sms send.
-- create sms send
-- insert or upsert rows into a marketing cloud data extension.
-- message delivery status.
-- analytics
-- list marketing cloud journey builder journeys.
-- create a content asset.
-- fire journey event
+- create and initiate a triggered email send.
 - update asset
-- individual asset operations.
-- cloud
-- create asset
-- delete one or more contacts.
-- fire a journey entry event to enroll a contact in a journey.
-- individual journey operations.
-- get a journey by id.
-- journey builder journey management.
+- insert or upsert rows into a marketing cloud data extension.
+- create a new content asset in content builder.
+- delete contacts
 - enterprise
 - marketing cloud contact management.
-- delete a content asset.
-- create and initiate a triggered email send to one or more recipients.
+- analytics
+- insert or upsert rows into a data extension.
+- contact deletion operations.
+- insert data extension rows
+- get message status
+- sales
+- message delivery status.
+- delete one or more contacts from marketing cloud.
+- get the delivery status of a triggered email send.
+- update a content asset.
+- create email send
+- get rows from a data extension.
+- create and initiate an sms send.
 - individual contact operations.
 - list marketing cloud content builder assets.
-- get the delivery status of a triggered email send.
-- get data extension rows
+- create asset
+- crm
+- platform
+- fire journey event
+- list contacts in the marketing cloud account.
+- individual journey operations.
+- delete a content asset.
+- get rows from a marketing cloud data extension.
+- list marketing cloud journey builder journeys.
+- journey builder journey management.
+- create a content asset.
+- cloud
+- commerce
 - salesforce
+- list contacts
+- get data extension rows
+- get journey
+- fire a journey entry event to enroll a contact.
+- list content assets.
+- data extension row operations.
 - list marketing cloud journeys.
+- ai
+- delete asset
+- get the delivery status of an email message.
+- content builder asset management.
+- create and initiate a triggered email send to one or more recipients.
+- create sms send
+- get a contact by contact key.
+- journey entry event operations.
+- get asset
+- journeys
 - list assets
+- update a content builder asset.
+- individual asset operations.
+- delete a content builder asset.
+- customer service
+- email marketing
+- get a marketing cloud contact by contact key.
+- marketing
+- get a content builder asset by id.
+- get a journey by id.
+- get a content asset by id.
+- marketing automation
+- fire a journey entry event to enroll a contact in a journey.
+- sms send operations.
+- list journeys
+- marketing cloud
+- get detailed information about a marketing cloud journey.
+- delete one or more contacts.
+- get contact
 slug: marketing-automation
 tags:
 - Salesforce

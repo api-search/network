@@ -33,46 +33,46 @@ personas: []
 provider_name: OpenAI
 provider_slug: openai
 search_terms:
-- content generation
-- translate audio to english text
-- chat completion
-- artificial intelligence
-- text embeddings
-- generate vector embeddings for text input
-- create a variation of an existing image
-- ai
-- audio create translation
-- images create
-- create a chat completion
-- create image
-- images edit
-- models get
-- openai
-- audio create speech
-- generate a conversational response using gpt models
-- get details of a specific model
-- generate speech
-- edit an existing image with a text prompt
 - audio create transcription
-- generate an image
-- create embeddings
-- transcribe audio to text using whisper
-- create embedding
-- images create variation
-- large language models
-- image generation
-- models list
-- generate an image from a text prompt using dall-e
-- available models
-- generate audio from text using tts models
-- t1
-- text to speech
-- chat create completion
 - list all available openai models
-- list models
-- create speech
+- chat create completion
+- edit an existing image with a text prompt
+- transcribe audio to text using whisper
+- create a variation of an existing image
+- image generation
 - create chat completion
+- get details of a specific model
+- list models
+- generate audio from text using tts models
+- images edit
+- ai
+- text embeddings
+- openai
+- t1
+- generate speech
+- create embedding
+- translate audio to english text
+- audio create translation
+- generate a conversational response using gpt models
+- text to speech
+- generate an image
+- generate vector embeddings for text input
+- create image
+- create a chat completion
+- images create
+- chat completion
+- models get
+- create speech
+- content generation
+- available models
+- images create variation
+- audio create speech
+- artificial intelligence
+- create embeddings
 - embeddings create
+- generate an image from a text prompt using dall-e
+- large language models
+- models list
 slug: content-generation
 tags:
 - OpenAI

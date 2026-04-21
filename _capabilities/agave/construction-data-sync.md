@@ -47,52 +47,52 @@ personas:
 provider_name: Agave
 provider_slug: agave
 search_terms:
-- agave
-- construction company admin using connected tools to sync financial and project data between systems.
-- vendor records.
-- invoice processing and vendor payment management.
-- employee and timesheet management.
-- list budgets
-- list invoices
-- ap invoices.
-- employee records.
-- list employee timesheets from a connected construction system.
-- accounting
-- full construction data synchronization covering projects, budgets, contracts, invoices, timesheets, and employees.
-- create an ap invoice in a connected construction source system.
-- list employee records from a connected construction system.
-- list construction projects.
-- list budget items.
-- list projects
-- list vendors and subcontractors from a connected construction system.
-- list accounts payable invoices from a connected construction system.
-- create an invoice.
-- list timesheets
-- integration
-- construction project tracking and management.
-- list vendors
 - list employees.
 - list contracts
-- employee timesheets.
-- create invoice
-- list contracts.
-- list project budget line items from a connected construction system.
-- construction
-- contractor admin
-- construction project data.
 - budget, cost code, and cost tracking for construction jobs.
-- list construction projects from any connected source system via agave.
-- job costing
-- prime contracts.
-- construction software engineer
-- list prime contracts from a connected construction system.
-- list employees
-- budget line items.
-- list invoices.
-- invoices
-- list vendors.
+- full construction data synchronization covering projects, budgets, contracts, invoices, timesheets, and employees.
 - developer integrating a construction software platform with other systems via agave's unified api.
+- create invoice
+- accounting
+- employee timesheets.
+- list vendors and subcontractors from a connected construction system.
+- list project budget line items from a connected construction system.
+- construction project data.
+- list invoices
+- list employees
+- list timesheets
+- create an ap invoice in a connected construction source system.
+- construction company admin using connected tools to sync financial and project data between systems.
+- list vendors.
+- construction project tracking and management.
+- list prime contracts from a connected construction system.
+- list accounts payable invoices from a connected construction system.
+- create an invoice.
+- integration
+- invoices
+- prime contracts.
 - list timesheets.
+- list projects
+- vendor records.
+- ap invoices.
+- budget line items.
+- job costing
+- employee and timesheet management.
+- list employee timesheets from a connected construction system.
+- list budgets
+- contractor admin
+- invoice processing and vendor payment management.
+- list employee records from a connected construction system.
+- list budget items.
+- list construction projects.
+- list contracts.
+- construction software engineer
+- list vendors
+- construction
+- list construction projects from any connected source system via agave.
+- list invoices.
+- agave
+- employee records.
 slug: construction-data-sync
 tags:
 - Agave

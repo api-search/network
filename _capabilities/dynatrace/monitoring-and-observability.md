@@ -60,64 +60,64 @@ personas: []
 provider_name: Dynatrace
 provider_slug: dynatrace
 search_terms:
-- search logs
-- query metric data points
-- query metric data points with selectors and time ranges
-- ingest log records into dynatrace grail
-- digital experience management
-- list monitored entities matching a selector
-- get entity
-- aggregate log data grouped by specified fields
-- get the descriptor for a specific metric
-- intelligence
-- aggregate logs
-- list events from the dynatrace environment
-- get entity details
-- cloud monitoring
-- aggregate logs by dimensions
-- list all available metrics
-- delete custom metric
-- get metric descriptor
-- export logs for bulk retrieval
-- query metric data
-- ingest logs into grail
-- export log records for bulk retrieval
-- list metrics
-- export logs
-- ai operations
-- ingest custom metrics via mint protocol
-- dynatrace
-- search log records
-- search log records using dql queries
-- delete a custom metric
-- monitoring
-- list entities matching a selector
-- search logs using dql queries
-- list events
-- ingest custom metric data points via mint protocol
-- analytics
-- query events
-- get details of a specific monitored entity
-- automation
-- get descriptor for a specific metric
-- application performance monitoring
-- application security
-- export log records
-- observability
-- delete a custom metric from the environment
-- logs
-- apm
 - ops engineering
-- list metric descriptors
-- ingest custom metrics
+- list monitored entities matching a selector
+- export log records for bulk retrieval
+- application performance monitoring
+- logs
+- get descriptor for a specific metric
+- get details of a specific monitored entity
+- analytics
+- ingest log records into dynatrace grail
+- search logs
+- delete a custom metric from the environment
+- list metrics
+- delete custom metric
+- export logs for bulk retrieval
+- search log records
+- intelligence
+- search log records using dql queries
 - ingest log records
-- list entities
-- ingest logs
 - aggregate log data
-- query monitored entities
-- metrics
+- digital experience management
+- get entity
+- ingest custom metrics via mint protocol
+- export log records
+- ingest logs into grail
+- list events
+- ai operations
+- observability
+- export logs
+- automation
+- aggregate logs by dimensions
 - list all available metric descriptors
+- application security
+- query metric data points
+- apm
+- list entities matching a selector
+- monitoring
+- metrics
+- list metric descriptors
+- search logs using dql queries
+- ingest custom metric data points via mint protocol
+- ingest custom metrics
+- query monitored entities
+- ingest logs
+- cloud monitoring
+- query events
+- list events from the dynatrace environment
+- aggregate logs
+- aggregate log data grouped by specified fields
+- get entity details
+- list all available metrics
+- delete a custom metric
+- query metric data
+- query metric data points with selectors and time ranges
+- list entities
 - query metric data with selectors and time ranges
+- get the descriptor for a specific metric
+- dynatrace
+- get metric descriptor
 slug: monitoring-and-observability
 tags:
 - Dynatrace

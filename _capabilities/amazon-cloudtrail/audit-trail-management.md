@@ -9,15 +9,15 @@ personas: []
 provider_name: Amazon CloudTrail
 provider_slug: amazon-cloudtrail
 search_terms:
-- governance
-- compliance
 - Security Analyst
 - aws
-- amazon web services
-- amazon cloudtrail
+- governance
 - security
 - audit
+- compliance
+- amazon cloudtrail
 - cloudtrail
+- amazon web services
 slug: audit-trail-management
 tags:
 - Amazon Web Services

@@ -21,32 +21,32 @@ personas: []
 provider_name: Factset
 provider_slug: factset
 search_terms:
-- factset optimize
+- risk models
+- barra optimize
+- portfolio optimization
+- axioma equity optimize
+- get open risk models.
+- run axioma equity optimization.
+- portfolio optimization.
+- run northfield optimization.
+- financial data
+- investment analytics
+- market data
 - research
 - list risk models.
-- run axioma equity optimization.
-- northfield optimize
-- list risk models
-- portfolio optimization
-- get open risk models.
-- factset
-- risk models
-- financial data
-- barra optimize
 - get risk models
-- investment analytics
-- list optimizations.
-- run barra optimization.
-- run northfield optimization.
-- market data
-- portfolio analytics
-- run factset portfolio optimization.
-- list optimizations
-- financial
-- portfolio optimization.
-- open risk models.
-- axioma equity optimize
+- factset
 - asset allocation
+- list risk models
+- run factset portfolio optimization.
+- portfolio analytics
+- financial
+- factset optimize
+- list optimizations.
+- open risk models.
+- list optimizations
+- northfield optimize
+- run barra optimization.
 slug: portfolio-optimization
 tags:
 - FactSet

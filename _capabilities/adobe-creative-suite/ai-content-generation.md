@@ -37,45 +37,45 @@ personas: []
 provider_name: Adobe Creative Suite
 provider_slug: adobe-creative-suite
 search_terms:
-- content generation
-- expand image
-- video generation
-- get job status
-- fill a masked region of an image with ai-generated content
-- graphics
-- design
-- similar image generation from reference
-- generate a video from a text prompt
-- photography
-- generate images similar to a reference image
-- generate images visually similar to a reference image
-- expand an image beyond its original boundaries using generative ai
-- get the status of an asynchronous firefly generation job
-- video
-- generate images
-- fill image
-- generative image expansion
-- text-to-image generation
-- firefly
-- generate a short video clip from a text prompt
-- generate video
-- image generation
-- adobe
-- ai video generation
-- get the status of an async generation job
-- generate and composite an ai object into a scene
-- generate one or more images from a text prompt using adobe firefly
-- fill a masked region with ai-generated content
-- generate similar images
 - creative
-- generative ai
-- generate images from a text prompt
-- ai object compositing
-- generate an ai object and composite it into a scene image
-- generate composite
-- generation job status
+- design
+- expand an image beyond its original boundaries using generative ai
 - generative fill operations
+- generate one or more images from a text prompt using adobe firefly
+- adobe
+- fill a masked region with ai-generated content
+- generation job status
+- generate video
+- fill a masked region of an image with ai-generated content
+- get the status of an asynchronous firefly generation job
+- generate a video from a text prompt
+- generate a short video clip from a text prompt
+- video generation
+- text-to-image generation
+- ai video generation
+- graphics
+- image generation
+- ai object compositing
+- generative image expansion
+- generate an ai object and composite it into a scene image
+- generative ai
+- generate composite
+- generate and composite an ai object into a scene
 - expand an image beyond its boundaries
+- generate images
+- video
+- generate images from a text prompt
+- similar image generation from reference
+- generate images visually similar to a reference image
+- content generation
+- firefly
+- get job status
+- photography
+- get the status of an async generation job
+- generate similar images
+- generate images similar to a reference image
+- fill image
+- expand image
 slug: ai-content-generation
 tags:
 - Adobe

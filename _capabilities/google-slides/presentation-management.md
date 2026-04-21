@@ -29,31 +29,31 @@ personas: []
 provider_name: Google Slides
 provider_slug: google-slides
 search_terms:
-- presentations
-- slides
-- apply batch updates.
-- collaboration
 - access individual pages and thumbnails.
-- get a page thumbnail.
-- content creation
-- get a presentation by id.
-- create and manage presentations.
-- get page thumbnail
 - create presentation
-- get page
-- batch update presentation
-- batch update
-- create a new blank google slides presentation.
-- get a thumbnail image of a presentation page.
-- get presentation
-- get a presentation by id with all slides, masters, and layouts.
+- get a page thumbnail.
 - productivity
-- get a specific page.
-- apply batch updates to a presentation (add slides, insert text, create shapes, embed images).
-- create a new presentation.
 - get a specific page from a presentation.
-- google workspace
+- get a presentation by id.
+- get a specific page.
+- slides
+- get a presentation by id with all slides, masters, and layouts.
+- get a thumbnail image of a presentation page.
+- batch update presentation
 - google
+- get presentation
+- get page thumbnail
+- create and manage presentations.
+- collaboration
+- content creation
+- presentations
+- google workspace
+- create a new blank google slides presentation.
+- get page
+- apply batch updates.
+- batch update
+- create a new presentation.
+- apply batch updates to a presentation (add slides, insert text, create shapes, embed images).
 slug: presentation-management
 tags:
 - Google

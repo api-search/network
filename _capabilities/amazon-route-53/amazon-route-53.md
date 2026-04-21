@@ -13,19 +13,19 @@ personas: []
 provider_name: Amazon Route 53
 provider_slug: amazon-route-53
 search_terms:
-- list resources
-- amazon route 53 resources
 - health checks
-- dns
-- engineer managing amazon route 53 resources
-- cloud operations
-- domain registration
 - aws
-- routing
-- amazon route 53
-- list amazon route 53 resources
+- amazon route 53 resources
 - automation workflow for amazon route 53
+- dns
+- domain registration
 - aws cloud resource management
+- engineer managing amazon route 53 resources
+- amazon route 53
+- routing
+- list amazon route 53 resources
+- list resources
+- cloud operations
 slug: amazon-route-53
 tags:
 - Amazon Route 53

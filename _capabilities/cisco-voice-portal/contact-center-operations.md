@@ -44,47 +44,47 @@ personas: []
 provider_name: Cisco Voice Portal
 provider_slug: cisco-voice-portal
 search_terms:
-- list all active calls on the cvp call server
-- vxml
-- active call management
-- real-time statistics
-- call detail records
-- get health
-- list managed devices
-- list active vxml sessions
 - list vxml applications
-- list active sessions
-- list call detail records
-- voice
-- contact center
-- list call detail records from the reporting server
-- cisco
-- list managed cvp devices
-- get call server health
-- list configured dialed number patterns
-- list dialed number patterns
-- list devices
-- system health
-- get details of a specific active call
-- list cdrs
-- vxml session monitoring
-- list deployed applications
-- device management
-- list active calls
-- application management
-- list sessions
-- get call
-- get statistics
-- get real-time call statistics
-- list applications
-- check cvp call server health status
-- list deployed cvp applications
-- individual call details
-- telephony
-- list deployed vxml applications
 - voice portal
-- get call details
+- list cdrs
+- get details of a specific active call
+- get call server health
+- individual call details
 - ivr
+- list deployed vxml applications
+- vxml
+- list call detail records
+- device management
+- get health
+- get call details
+- list devices
+- call detail records
+- list call detail records from the reporting server
+- telephony
+- check cvp call server health status
+- list active calls
+- contact center
+- list managed cvp devices
+- get statistics
+- list dialed number patterns
+- real-time statistics
+- list sessions
+- active call management
+- cisco
+- list active vxml sessions
+- list deployed applications
+- list configured dialed number patterns
+- voice
+- get call
+- list active sessions
+- list managed devices
+- list applications
+- list all active calls on the cvp call server
+- get real-time call statistics
+- system health
+- vxml session monitoring
+- list deployed cvp applications
+- application management
 slug: contact-center-operations
 tags:
 - Cisco

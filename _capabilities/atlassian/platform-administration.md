@@ -33,39 +33,39 @@ personas: []
 provider_name: Atlassian
 provider_slug: atlassian
 search_terms:
-- list organization audit events
-- list policies
-- list all atlassian organizations
-- list groups
-- list domains in an organization
-- list organization domains
-- group management
-- collaboration
-- list organization groups
-- audit events
-- list organizations
+- administration
+- domain management
 - user management
+- list organization policies
+- productivity
 - platform
+- list audit events
+- organization management
 - list users in an organization
-- atlassian
-- code
+- list events
+- list organizations
 - get organization
 - software development
-- administration
+- list domains in an organization
 - list users
-- identity
-- list events
-- policy management
+- list all atlassian organizations
 - list organization users
-- domain management
-- productivity
-- list audit events
+- list groups
+- list organization domains
+- policy management
 - list groups in an organization
+- collaboration
 - list atlassian organizations
-- list organization policies
-- get organization details
-- organization management
+- list organization groups
 - list domains
+- list policies
+- identity
+- list organization audit events
+- group management
+- get organization details
+- code
+- atlassian
+- audit events
 slug: platform-administration
 tags:
 - Administration

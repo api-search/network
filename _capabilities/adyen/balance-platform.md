@@ -29,43 +29,43 @@ personas: []
 provider_name: Adyen
 provider_slug: adyen
 search_terms:
-- create a balance account.
-- balance platform
-- issuing
-- get balance account details.
-- create a new account holder on the adyen balance platform.
-- retrieve details of an account holder.
-- transfers
-- create account holder
-- 'unified capability for building financial products on adyen''s balance platform. combines the configuration api for account holder and card management with the transfers api for fund movement. used by marketplace and platform builders to onboard users, issue cards, and manage fund transfers. primary persona: platform engineer or marketplace developer.'
-- manage payment instruments including virtual and physical cards.
 - issue a virtual or physical payment card for an account holder.
-- create a balance account for an account holder.
-- create an account holder.
-- get balance and details of a balance account.
-- manage account holders on the balance platform.
-- financial services
-- online and in-person payment acceptance.
-- builds marketplace and fintech platforms using adyen balance platform.
-- payments
-- manages merchant accounts, terminals, and dispute responses.
-- create a payment instrument (card).
-- 'unified capability for accepting and managing online payments. combines the checkout api and payments api to provide merchants and developers with a complete payment acceptance workflow including session creation, payment authorisation, refunds, and cancellations. primary persona: developer or merchant platform engineer.'
-- get balance account
-- chargeback and dispute handling.
-- manage balance accounts.
-- create balance account
-- create payment instrument
-- marketplaces
-- get account holder
-- get account holder details.
-- adyen
-- builds payment integrations using adyen apis and sdks.
+- 'unified capability for building financial products on adyen''s balance platform. combines the configuration api for account holder and card management with the transfers api for fund movement. used by marketplace and platform builders to onboard users, issue cards, and manage fund transfers. primary persona: platform engineer or marketplace developer.'
 - fintech
+- create an account holder.
+- 'unified capability for accepting and managing online payments. combines the checkout api and payments api to provide merchants and developers with a complete payment acceptance workflow including session creation, payment authorisation, refunds, and cancellations. primary persona: developer or merchant platform engineer.'
+- manage account holders on the balance platform.
+- builds payment integrations using adyen apis and sdks.
+- builds marketplace and fintech platforms using adyen balance platform.
+- create a balance account.
+- create balance account
+- manage balance accounts.
+- financial services
+- retrieve details of an account holder.
+- get account holder
+- online and in-person payment acceptance.
+- marketplaces
+- manages merchant accounts, terminals, and dispute responses.
+- create payment instrument
+- transfers
 - merchant account and balance platform configuration.
-- marketplace and platform fund management.
+- get balance account details.
+- manage payment instruments including virtual and physical cards.
+- payments
+- issuing
+- get balance and details of a balance account.
 - issue card
+- create a payment instrument (card).
+- create account holder
+- get balance account
+- adyen
+- balance platform
+- create a new account holder on the adyen balance platform.
+- create a balance account for an account holder.
+- get account holder details.
+- marketplace and platform fund management.
 - 'unified capability for managing adyen merchant accounts, stores, payment terminals, and dispute resolution. combines management api and disputes api to give operations teams and platform administrators complete control over merchant configuration and chargeback handling. primary persona: merchant operations team or platform administrator.'
+- chargeback and dispute handling.
 slug: balance-platform
 tags:
 - Adyen

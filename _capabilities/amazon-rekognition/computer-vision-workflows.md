@@ -65,98 +65,98 @@ personas: []
 provider_name: Amazon Rekognition
 provider_slug: amazon-rekognition
 search_terms:
-- celebrity recognition
-- manage faces in a collection
+- facial recognition
+- search for matching faces in a collection using an image
+- compare a face in a source image with faces in a target image for identity verification
+- unified computer vision, identity verification, and content moderation workflows
+- detect text in image
+- security teams using facial recognition and liveness detection for identity verification and fraud prevention.
+- compare faces for identity verification
+- create session
+- start asynchronous detection of labels in a video stored in amazon s3
+- developers building apps with computer vision features such as image search, face login, and text extraction.
+- create face collection
+- create
+- identify celebrities in an image and return names and reference urls
+- get the results of a video label detection job
+- get results
+- detect inappropriate content
+- identify celebrities in an image
+- compare faces
+- image analysis
+- aws
 - recognize
-- asynchronous label detection in stored videos
+- celebrity recognition in images
+- face liveness verification for fraud prevention
+- create a new face collection
+- retrieve face liveness session results
+- asynchronous analysis of stored and streaming video
+- recognize celebrities
+- detect faces
+- list all face collections in the aws account
+- Application Developer
+- Security Engineer
+- content moderation
+- search faces by image
+- trust and safety teams moderating user-generated content for inappropriate or explicit imagery.
+- synchronous analysis of images for labels, faces, text, and moderation
+- index faces in collection
+- face liveness
+- detect labels
+- detect and extract printed and handwritten text from an image
+- detect faces and analyze facial attributes
+- start asynchronous label detection in a video
+- create liveness session
+- identity verification
+- get the confidence score and status from a face liveness verification session
+- start
+- list all face collections
+- detect and extract text from an image
+- detect image labels
+- detect custom labels in an image using a trained amazon rekognition custom labels model
 - detect faces in an image and return facial attributes including age range, emotions, and smile
 - custom labels
-- search a face collection for faces matching a provided image
-- machine learning
-- detect faces and analyze facial attributes
-- detect text
-- create a new face collection
-- get results
-- detect unsafe or explicit content in an image
-- create a face liveness verification session to confirm a user is physically present
-- Security Engineer
-- video analysis
-- detect inappropriate content
-- list all face collections in the aws account
-- facial recognition
-- face liveness
-- list
-- create face collection
-- aws
-- detect and extract text from an image
-- get video label detection results
-- identity verification
-- create a new face collection for storing and indexing face data
+- celebrity recognition
 - detect objects, scenes, and concepts in an image
-- detect labels
-- security teams using facial recognition and liveness detection for identity verification and fraud prevention.
-- search by image
-- get the results of a video label detection job
-- celebrity recognition in images
-- content moderation
-- identify celebrities in an image and return names and reference urls
+- list
 - content moderation for inappropriate imagery
-- compare faces
-- object detection
-- compare faces for identity verification
-- get liveness results
-- detect text in image
-- computer vision
-- detect custom labels in an image using a trained amazon rekognition custom labels model
-- asynchronous analysis of stored and streaming video
-- compare a face in a source image with a target image
-- create session
-- search faces by image
-- amazon rekognition
-- start asynchronous label detection in a video
-- index faces from an image into a face collection for future searching
-- developers building apps with computer vision features such as image search, face login, and text extraction.
-- detect labels and objects in images
-- list face collections
-- synchronous analysis of images for labels, faces, text, and moderation
-- search for matching faces in a collection using an image
+- search a face collection for faces matching a provided image
 - start video label detection
-- face comparison, collection search, and liveness detection for user identity
-- Content Moderator
-- recognize celebrities
-- start asynchronous detection of labels in a video stored in amazon s3
-- get the confidence score and status from a face liveness verification session
-- detect image labels
-- face liveness verification for fraud prevention
+- detect labels and objects in images
+- search by image
+- asynchronous label detection in stored videos
 - text detection
-- detect and analyze facial attributes
-- detect custom labels
-- trust and safety teams moderating user-generated content for inappropriate or explicit imagery.
-- start
-- create liveness session
-- search face collections for matching identities
-- manage face collections
-- image analysis
-- Application Developer
-- detect faces
-- compare a face in a source image with faces in a target image for identity verification
-- detect objects, scenes, and concepts in an image using amazon rekognition
-- index faces into a collection
-- create a face liveness verification session
-- index faces in collection
-- extract text from images
 - moderate image content
-- retrieve face liveness session results
-- list all face collections
-- unified computer vision, identity verification, and content moderation workflows
-- create
+- face comparison, collection search, and liveness detection for user identity
+- amazon rekognition
+- machine learning
 - get the results of an asynchronous video label detection job
-- detect and extract printed and handwritten text from an image
-- get the results of a face liveness session
-- index
+- manage faces in a collection
+- detect and analyze facial attributes
+- detect objects, scenes, and concepts in an image using amazon rekognition
 - detect explicit, inappropriate, or violent content in an image for content moderation
+- index
+- index faces from an image into a face collection for future searching
+- detect text
+- Content Moderator
+- search face collections for matching identities
+- object detection
+- get the results of a face liveness session
+- get liveness results
+- create a face liveness verification session to confirm a user is physically present
+- extract text from images
+- computer vision
+- create a new face collection for storing and indexing face data
+- create a face liveness verification session
+- compare a face in a source image with a target image
+- detect custom labels
+- list face collections
+- index faces into a collection
+- detect unsafe or explicit content in an image
+- video analysis
+- manage face collections
+- get video label detection results
 - deep learning
-- identify celebrities in an image
 slug: computer-vision-workflows
 tags:
 - Amazon Rekognition

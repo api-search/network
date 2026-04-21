@@ -11,8 +11,8 @@ search_terms:
 - index
 - network
 - aws
-- amazon
 - cloud
+- amazon
 slug: amazon-web-services-capability
 tags: []
 tools: []

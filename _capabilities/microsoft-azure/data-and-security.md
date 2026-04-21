@@ -28,55 +28,55 @@ personas: []
 provider_name: Microsoft Azure
 provider_slug: microsoft-azure
 search_terms:
-- azure
-- resource manager
-- keyvault list certificates
-- list azure subscriptions
-- cosmos db
-- platform as a service
-- arm list subscriptions
-- list items in a container
-- list subscription tags
-- cloud computing
-- cosmos list databases
-- api management
-- get a secret value
-- list certificates
-- list resource providers
-- list subscriptions
-- arm list resource groups
-- arm list resources
-- list secrets
-- keyvault list keys
-- keyvault list secrets
-- list resources in a subscription
-- key vault secret management
+- key vault
 - cosmos list items
-- cosmos db database management
+- enterprise
+- keyvault list secrets
+- subscription management
+- download a blob
+- blob list blobs
+- blob storage
+- cosmos db
+- arm list subscriptions
+- list blobs in a container
+- blob get properties
+- list subscriptions
+- list azure subscriptions
+- arm list tags
+- cloud
+- blob storage operations
 - list resource groups
 - list containers in a database
-- list databases
-- cosmos list containers
-- blob list blobs
-- cloud
-- t1
-- key vault
-- get blob properties
-- blob storage
-- enterprise
-- arm list providers
-- infrastructure as a service
-- download a blob
-- blob storage operations
+- list secrets
 - list cosmos db databases
+- arm list resources
+- arm list resource groups
+- arm list providers
+- t1
+- azure
+- get a secret value
+- cosmos list containers
+- cosmos list databases
+- infrastructure as a service
+- cosmos db database management
 - blob download
+- list databases
+- keyvault list certificates
+- list resource providers
+- list items in a container
+- keyvault list keys
+- cloud computing
+- list certificates
+- platform as a service
 - list cryptographic keys
 - list blobs
-- blob get properties
-- list blobs in a container
-- subscription management
+- api management
+- resource manager
 - keyvault get secret
-- arm list tags
+- get blob properties
+- list subscription tags
+- key vault secret management
+- list resources in a subscription
 slug: data-and-security
 tags:
 - Azure

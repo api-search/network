@@ -26,52 +26,52 @@ personas: []
 provider_name: Oracle E-Business Suite
 provider_slug: oracle-e-business-suite
 search_terms:
-- supply chain
 - erp
-- business applications
-- mfg get bills of material
-- discrete job management.
-- oracle
-- get inventory items
-- retrieve on-hand quantities.
-- inv get sales orders
-- inv get inventory items
 - manufacturing
-- get bom by id.
-- on-hand quantity management.
-- retrieve bills of material.
-- retrieve routings.
-- mfg complete assembly
-- retrieve deliveries.
-- mfg issue material
-- inv get deliveries
-- list discrete jobs.
-- mfg get routings
-- get bills of material
-- e-business suite
-- mfg create discrete job
-- retrieve discrete jobs.
-- mfg get discrete job by id
-- mfg get wip operations
-- get discrete job by id.
-- list boms.
-- inventory item management.
-- retrieve sales orders.
-- retrieve inventory items.
-- production
-- list on-hand quantities.
-- list inventory items.
-- create a discrete job.
-- get onhand quantities
-- complete an assembly.
-- enterprise
-- inv get onhand quantities
-- mfg get discrete jobs
-- mfg get bill of material by id
 - get discrete jobs
-- bom management.
-- retrieve wip operations.
+- enterprise
 - issue material to a job.
+- inv get sales orders
+- get bills of material
+- supply chain
+- retrieve routings.
+- retrieve discrete jobs.
+- mfg complete assembly
+- list discrete jobs.
+- e-business suite
+- mfg get discrete jobs
+- retrieve wip operations.
+- list boms.
+- business applications
+- get discrete job by id.
+- inv get deliveries
+- mfg get discrete job by id
+- retrieve deliveries.
+- retrieve sales orders.
+- retrieve bills of material.
+- mfg get routings
+- get bom by id.
+- production
+- retrieve inventory items.
+- mfg get wip operations
+- oracle
+- retrieve on-hand quantities.
+- get onhand quantities
+- list inventory items.
+- bom management.
+- mfg get bill of material by id
+- complete an assembly.
+- mfg create discrete job
+- on-hand quantity management.
+- get inventory items
+- list on-hand quantities.
+- inv get inventory items
+- inventory item management.
+- inv get onhand quantities
+- create a discrete job.
+- discrete job management.
+- mfg get bills of material
+- mfg issue material
 slug: manufacturing-operations
 tags:
 - Oracle

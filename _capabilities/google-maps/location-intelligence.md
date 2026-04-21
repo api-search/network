@@ -35,43 +35,43 @@ personas: []
 provider_name: Google Maps Platform
 provider_slug: google-maps
 search_terms:
-- location-based place search
-- navigation
-- get directions
-- places
-- address to coordinate conversion and reverse geocoding
-- geocode an address to coordinates or reverse geocode coordinates to an address
-- directions
-- get detailed information about a place
-- google maps
-- geocode an address or reverse geocode coordinates
-- get directions between two or more locations with support for driving, walking, bicycling, and transit
-- maps
-- routing
-- get detailed information about a place including address, rating, hours, and reviews
-- get place details
 - get a photo for a place by place id and photo reference
 - get place predictions for input text
-- text-based place search
-- geocoding
-- route computation between locations
-- place autocomplete predictions
-- search places text
-- location
-- search for places using a text query
-- search for places near a specific location with type filters
-- environment
-- autocomplete places
 - get directions between two or more locations
-- geocode
-- search for places near a location
-- geolocation
-- solar
-- get place photo
-- search places nearby
 - search for places using a natural language text query like 'pizza in new york'
-- get place autocomplete predictions as the user types
+- get directions between two or more locations with support for driving, walking, bicycling, and transit
+- geocode
+- google maps
+- get place details
+- geolocation
+- place autocomplete predictions
+- solar
+- search for places near a location
+- search places text
+- navigation
+- address to coordinate conversion and reverse geocoding
+- geocode an address or reverse geocode coordinates
+- geocoding
 - place details retrieval
+- get directions
+- search for places using a text query
+- environment
+- location-based place search
+- routing
+- search for places near a specific location with type filters
+- location
+- places
+- directions
+- maps
+- geocode an address to coordinates or reverse geocode coordinates to an address
+- get detailed information about a place
+- text-based place search
+- route computation between locations
+- get detailed information about a place including address, rating, hours, and reviews
+- search places nearby
+- get place autocomplete predictions as the user types
+- autocomplete places
+- get place photo
 slug: location-intelligence
 tags:
 - Google Maps

@@ -10,24 +10,24 @@ provider_name: Amazon Location Service
 provider_slug: amazon-location-service
 search_terms:
 - map resources list maps
+- Administrator
+- map resources describe map
+- geocoding
+- geofencing
+- amazon location service
+- Developer
+- routing
+- manages resources and configurations
+- location
 - integrates api into applications
 - maps
-- routing
-- workflow
-- geocoding
-- location
-- aws
-- Administrator
-- unified workflow for amazon location service resource management
-- manages resources and configurations
-- Developer
 - retrieves the map resource details.
-- geofencing
-- map resources describe map
-- amazon location service
-- creates a map resource in your aws account.
+- aws
 - lists map resources in your aws account.
 - map resources create map
+- unified workflow for amazon location service resource management
+- workflow
+- creates a map resource in your aws account.
 slug: amazon-location-service-workflow
 tags:
 - Amazon Location Service

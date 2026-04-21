@@ -90,4 +90,3 @@ use_cases:
 - description: Use BFF and API-first standards as criteria for architecture reviews and technical decision documentation.
   name: Architecture Review
 ---
-
