@@ -4,6 +4,7 @@ image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jp
 url: https://apis.io
 
 node: website
+nav_active: search
 
 keywords:
   - APIs
@@ -16,7 +17,7 @@ keywords:
   - Capabilities
 
 permalink: /:categories/:year/:month/:day/:title/
-exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "scripts"]
+exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "scripts", "_shared"]
 
 # Site-wide alert banner
 alert:
@@ -28,69 +29,7 @@ categories_path : /categories.html
 tags_path : /tags.html
 
 github_org: api-search
-github_repo: website
-
-search_local: true
+github_repo: network
 
 paginate:           25
 paginate_path:      "/blog/:num/"
-
-collections:
-  providers:
-    output:         true
-    permalink:      /providers/:path/
-  apis:
-    output:         true
-    permalink:      /apis/:path/
-  capabilities:
-    output:         true
-    permalink:      /capabilities/:path/
-  schemas:
-    output:         true
-    permalink:      /schemas/:path/
-  asyncapis:
-    output:         true
-    permalink:      /asyncapis/:path/
-  jsonld:
-    output:         true
-    permalink:      /jsonld/:path/
-  rules:
-    output:         true
-    permalink:      /rules/:path/
-
-defaults:
-  - scope:
-      path:         ""
-      type:         providers
-    values:
-      layout:       provider
-  - scope:
-      path:         ""
-      type:         apis
-    values:
-      layout:       api
-  - scope:
-      path:         ""
-      type:         capabilities
-    values:
-      layout:       capability
-  - scope:
-      path:         ""
-      type:         schemas
-    values:
-      layout:       schema
-  - scope:
-      path:         ""
-      type:         asyncapis
-    values:
-      layout:       asyncapi
-  - scope:
-      path:         ""
-      type:         jsonld
-    values:
-      layout:       jsonld
-  - scope:
-      path:         ""
-      type:         rules
-    values:
-      layout:       rules

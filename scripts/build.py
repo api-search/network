@@ -1,10 +1,18 @@
 #!/usr/bin/env python3
 """
 Build script that reads api-evangelist repos and generates Jekyll collections
-for the apis.io network site.
+for the apis.io network of subdomain sites.
 
-Generates seven collections: _providers, _apis, _capabilities, _schemas,
-_asyncapis, _jsonld, _rules
+Outputs to separate repos:
+  - providers/   -> providers.apis.io
+  - apis/        -> apis.apis.io
+  - capabilities/ -> capabilities.apis.io
+  - schemas/     -> schemas.apis.io
+  - asyncapi/    -> asyncapi.apis.io
+  - json-ld/     -> json-ld.apis.io
+  - rules/       -> rules.apis.io
+  - vocabularies/ -> vocabularies.apis.io (vocabulary.json)
+  - network/     -> apis.io (icon manifest stays here)
 """
 
 import os
@@ -21,15 +29,29 @@ SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 NETWORK_DIR = os.path.dirname(SCRIPT_DIR)
 ROOT_DIR = os.path.dirname(NETWORK_DIR)
 EVANGELIST_DIR = os.path.join(ROOT_DIR, 'api-evangelist')
+SHARED_DIR = os.path.join(NETWORK_DIR, '_shared')
 
-# Output dirs
-PROVIDERS_DIR = os.path.join(NETWORK_DIR, '_providers')
-APIS_DIR = os.path.join(NETWORK_DIR, '_apis')
-CAPABILITIES_DIR = os.path.join(NETWORK_DIR, '_capabilities')
-SCHEMAS_DIR = os.path.join(NETWORK_DIR, '_schemas')
-ASYNCAPIS_DIR = os.path.join(NETWORK_DIR, '_asyncapis')
-JSONLD_DIR = os.path.join(NETWORK_DIR, '_jsonld')
-RULES_DIR = os.path.join(NETWORK_DIR, '_rules')
+# Output dirs - each goes to its own subdomain repo
+PROVIDERS_DIR = os.path.join(ROOT_DIR, 'providers', '_providers')
+APIS_DIR = os.path.join(ROOT_DIR, 'apis', '_apis')
+CAPABILITIES_DIR = os.path.join(ROOT_DIR, 'capabilities', '_capabilities')
+SCHEMAS_DIR = os.path.join(ROOT_DIR, 'schemas', '_schemas')
+ASYNCAPIS_DIR = os.path.join(ROOT_DIR, 'asyncapi', '_asyncapis')
+JSONLD_DIR = os.path.join(ROOT_DIR, 'json-ld', '_jsonld')
+RULES_DIR = os.path.join(ROOT_DIR, 'rules', '_rules')
+
+# Subdomain URLs for cross-linking
+SUBDOMAINS = {
+    'network': 'https://apis.io',
+    'providers': 'https://providers.apis.io',
+    'apis': 'https://apis.apis.io',
+    'capabilities': 'https://capabilities.apis.io',
+    'schemas': 'https://schemas.apis.io',
+    'asyncapi': 'https://asyncapi.apis.io',
+    'json-ld': 'https://json-ld.apis.io',
+    'rules': 'https://rules.apis.io',
+    'vocabularies': 'https://vocabularies.apis.io',
+}
 
 
 def slugify(text):
@@ -46,7 +68,6 @@ def clean_description(desc):
     if not desc:
         return ''
     desc = str(desc).strip()
-    # Remove newlines for single-line YAML
     desc = re.sub(r'\s+', ' ', desc)
     return desc
 
@@ -84,7 +105,6 @@ def extract_api_slug(aid):
 def extract_schema_slug(filename):
     """Extract slug from schema filename."""
     slug = os.path.splitext(filename)[0]
-    # Remove -schema suffix
     if slug.endswith('-schema'):
         slug = slug[:-7]
     return slug
@@ -94,12 +114,10 @@ def extract_capability_search_terms(cap_data, vocab_data, provider_tags):
     """Extract search terms from capability data for capability-first search."""
     terms = set()
 
-    # From capability info
     info = cap_data.get('info', {})
     for tag in info.get('tags', []):
         terms.add(tag.lower())
 
-    # From capability exposes
     capability = cap_data.get('capability', {})
     for exposed in capability.get('exposes', []):
         for resource in exposed.get('resources', []):
@@ -114,7 +132,6 @@ def extract_capability_search_terms(cap_data, vocab_data, provider_tags):
                 if op_desc:
                     terms.add(op_desc.lower())
 
-        # MCP tools
         for tool in exposed.get('tools', []):
             tool_desc = tool.get('description', '')
             if tool_desc:
@@ -123,7 +140,6 @@ def extract_capability_search_terms(cap_data, vocab_data, provider_tags):
             if tool_name:
                 terms.add(tool_name)
 
-    # From vocabulary workflows
     if vocab_data:
         cap_section = vocab_data.get('capability', {})
         if isinstance(cap_section, dict):
@@ -137,29 +153,25 @@ def extract_capability_search_terms(cap_data, vocab_data, provider_tags):
                     if isinstance(persona_id, str):
                         terms.add(persona_id.replace('-', ' '))
 
-        # Personas
-        for persona in cap_section.get('personas', []):
-            if isinstance(persona, dict):
-                p_desc = persona.get('description', '')
-                if p_desc:
-                    terms.add(p_desc.lower())
-            elif isinstance(persona, str):
-                terms.add(persona.lower())
+            for persona in cap_section.get('personas', []):
+                if isinstance(persona, dict):
+                    p_desc = persona.get('description', '')
+                    if p_desc:
+                        terms.add(p_desc.lower())
+                elif isinstance(persona, str):
+                    terms.add(persona.lower())
 
-        # Domains
-        for domain in cap_section.get('domains', []):
-            if isinstance(domain, dict):
-                d_desc = domain.get('description', '')
-                if d_desc:
-                    terms.add(d_desc.lower())
-            elif isinstance(domain, str):
-                terms.add(domain.lower())
+            for domain in cap_section.get('domains', []):
+                if isinstance(domain, dict):
+                    d_desc = domain.get('description', '')
+                    if d_desc:
+                        terms.add(d_desc.lower())
+                elif isinstance(domain, str):
+                    terms.add(domain.lower())
 
-    # Provider tags
     for tag in provider_tags:
         terms.add(tag.lower())
 
-    # Clean and deduplicate
     cleaned = []
     for term in terms:
         term = term.strip()
@@ -238,7 +250,6 @@ def process_provider(provider_dir, icon_manifest=None):
     apis_list = data.get('apis', [])
     common = data.get('common', [])
 
-    # Extract features, use cases, integrations, solutions from common
     features = []
     use_cases = []
     integrations = []
@@ -299,7 +310,6 @@ def process_provider(provider_dir, icon_manifest=None):
             'description': api_desc[:200]
         })
 
-        # Resolve local property URLs to GitHub raw URLs
         github_raw_base = f"https://raw.githubusercontent.com/api-evangelist/{provider_slug}/refs/heads/main"
         resolved_properties = []
         for prop in api.get('properties', []):
@@ -309,7 +319,6 @@ def process_provider(provider_dir, icon_manifest=None):
                 p['url'] = f"{github_raw_base}/{url}"
             resolved_properties.append(p)
 
-        # Build API file
         api_data = {
             'layout': 'api',
             'aid': api_aid,
@@ -349,15 +358,12 @@ def process_provider(provider_dir, icon_manifest=None):
             cap_desc = clean_description(info.get('description', ''))
             cap_tags = info.get('tags', [])
 
-            # Extract operations and tools
             operations, tools = extract_operations_from_capability(cap_data)
 
-            # Find matching vocabulary workflow
             workflow = find_matching_workflow(cap_label, vocab_data)
             personas = []
             if workflow:
                 persona_ids = workflow.get('personas', [])
-                # Resolve persona names from vocabulary
                 if vocab_data:
                     cap_section = vocab_data.get('capability', {})
                     persona_list = cap_section.get('personas', []) if isinstance(cap_section, dict) else []
@@ -373,7 +379,6 @@ def process_provider(provider_dir, icon_manifest=None):
                                 })
                                 break
 
-            # Extract consumed APIs
             capability_block = cap_data.get('capability', {})
             consumed_apis = []
             for consumed in capability_block.get('consumes', []):
@@ -381,7 +386,6 @@ def process_provider(provider_dir, icon_manifest=None):
                 if import_name:
                     consumed_apis.append(import_name)
 
-            # Search terms
             search_terms = extract_capability_search_terms(cap_data, vocab_data, provider_tags)
 
             cap_entry = {
@@ -403,7 +407,6 @@ def process_provider(provider_dir, icon_manifest=None):
             write_frontmatter_file(cap_filepath, cap_entry)
             cap_entries.append(cap_entry)
 
-        # Add capability summaries to provider
         provider_data['capabilities'] = [
             {'slug': c['slug'], 'name': c['name'], 'description': c['description'][:200]}
             for c in cap_entries
@@ -425,7 +428,6 @@ def process_provider(provider_dir, icon_manifest=None):
             title = schema_data.get('title', schema_slug.replace('-', ' ').title())
             desc = clean_description(schema_data.get('description', ''))
 
-            # Extract properties list
             props = schema_data.get('properties', {})
             properties_list = []
             for prop_name, prop_def in props.items():
@@ -479,14 +481,12 @@ def process_provider(provider_dir, icon_manifest=None):
             desc = clean_description(info.get('description', ''))
             version = info.get('version', '')
 
-            # Extract channels and messages
             channels = []
             for channel_name, channel_def in asyncapi_data.get('channels', {}).items():
                 channel_info = {
                     'name': channel_name,
                     'description': clean_description(channel_def.get('description', '')),
                 }
-                # Extract operation info
                 for op_type in ('publish', 'subscribe'):
                     op = channel_def.get(op_type)
                     if op:
@@ -496,7 +496,6 @@ def process_provider(provider_dir, icon_manifest=None):
                         break
                 channels.append(channel_info)
 
-            # Extract messages
             messages = []
             for msg_name, msg_def in asyncapi_data.get('components', {}).get('messages', {}).items():
                 messages.append({
@@ -506,7 +505,6 @@ def process_provider(provider_dir, icon_manifest=None):
                     'description': clean_description(msg_def.get('description', ''))[:300],
                 })
 
-            # Extract servers
             servers = []
             for srv_name, srv_def in asyncapi_data.get('servers', {}).items():
                 servers.append({
@@ -538,7 +536,6 @@ def process_provider(provider_dir, icon_manifest=None):
             write_frontmatter_file(asyncapi_filepath, asyncapi_entry)
             asyncapi_entries.append(asyncapi_entry)
 
-    # Add asyncapi summaries to provider
     if asyncapi_entries:
         provider_data['asyncapis'] = [
             {'slug': a['slug'], 'name': a['name'], 'description': a['description'][:200]}
@@ -560,12 +557,8 @@ def process_provider(provider_dir, icon_manifest=None):
                 continue
 
             context = jsonld_data.get('@context', {})
-
-            # Extract namespace prefixes (string values that look like URLs)
             namespaces = []
-            # Extract class definitions (string values mapping to namespace:Class)
             classes = []
-            # Extract property definitions (dict values with @id)
             properties = []
 
             for key, value in context.items():
@@ -578,7 +571,6 @@ def process_provider(provider_dir, icon_manifest=None):
                         classes.append(key)
                 elif isinstance(value, dict):
                     prop_type = value.get('@type', '')
-                    # Clean up type for display
                     if prop_type.startswith('xsd:'):
                         prop_type = prop_type[4:]
                     elif prop_type == '@id':
@@ -592,9 +584,7 @@ def process_provider(provider_dir, icon_manifest=None):
                         'container': container,
                     })
 
-            # Derive title from filename
             title = jsonld_slug.replace('-', ' ').title()
-            # Try to clean it up
             title = title.replace('Context', '').replace('  ', ' ').strip()
             if not title:
                 title = jsonld_slug
@@ -622,7 +612,6 @@ def process_provider(provider_dir, icon_manifest=None):
             write_frontmatter_file(jsonld_filepath, jsonld_entry)
             jsonld_entries.append(jsonld_entry)
 
-    # Add jsonld summaries to provider
     if jsonld_entries:
         provider_data['jsonld'] = [
             {'slug': j['slug'], 'name': j['name'], 'class_count': j['class_count'], 'property_count': j['property_count']}
@@ -646,8 +635,6 @@ def process_provider(provider_dir, icon_manifest=None):
                 continue
 
             raw_rules = rules_data.get('rules', {})
-
-            # Extract rule details
             rules_list = []
             severity_counts = {'error': 0, 'warn': 0, 'info': 0, 'hint': 0}
             categories = set()
@@ -658,7 +645,6 @@ def process_provider(provider_dir, icon_manifest=None):
                 severity = rule_def.get('severity', 'warn')
                 severity_counts[severity] = severity_counts.get(severity, 0) + 1
 
-                # Derive category from rule name prefix
                 parts = rule_name.split('-')
                 if len(parts) >= 2:
                     categories.add(parts[0])
@@ -671,7 +657,6 @@ def process_provider(provider_dir, icon_manifest=None):
                 })
 
             title = rules_slug.replace('-', ' ').title()
-
             github_raw_base = f"https://raw.githubusercontent.com/api-evangelist/{provider_slug}/refs/heads/main"
 
             rules_entry = {
@@ -694,7 +679,6 @@ def process_provider(provider_dir, icon_manifest=None):
             write_frontmatter_file(rules_filepath, rules_entry)
             rules_entries.append(rules_entry)
 
-    # Add rules summaries to provider
     if rules_entries:
         provider_data['rules'] = [
             {'slug': r['slug'], 'name': r['name'], 'rule_count': r['rule_count'], 'severity_counts': r['severity_counts']}
@@ -721,6 +705,15 @@ def clear_collections():
     print("Cleared existing collections.")
 
 
+def copy_shared_assets():
+    """Copy shared layouts and assets to all subdomain repos."""
+    import subprocess
+    # Run the bootstrap script to copy shared assets
+    bootstrap_script = os.path.join(SCRIPT_DIR, 'bootstrap-sites.py')
+    if os.path.exists(bootstrap_script):
+        subprocess.run([sys.executable, bootstrap_script], check=True)
+
+
 def build_vocabulary_index(provider_dirs):
     """Build a consolidated vocabulary index from all provider repos."""
     all_resources = []
@@ -740,10 +733,8 @@ def build_vocabulary_index(provider_dirs):
         if not vocab_data:
             continue
 
-        # Determine format
         is_structured = 'vocabulary' in vocab_data or 'operational' in vocab_data
 
-        # Get provider info
         if is_structured:
             info = vocab_data.get('info', {})
             provider_name = info.get('provider', os.path.basename(provider_dir))
@@ -756,7 +747,6 @@ def build_vocabulary_index(provider_dirs):
         if is_structured:
             operational = vocab_data.get('operational', {})
 
-            # Resources
             for res in operational.get('resources', []):
                 all_resources.append({
                     'name': res.get('name', ''),
@@ -767,7 +757,6 @@ def build_vocabulary_index(provider_dirs):
                     'apis': res.get('apis', []),
                 })
 
-            # Actions
             for action in operational.get('actions', []):
                 all_actions.append({
                     'name': action.get('name', ''),
@@ -778,7 +767,6 @@ def build_vocabulary_index(provider_dirs):
                     'provider_slug': provider_slug,
                 })
 
-            # Schemas from vocabulary
             schemas_section = operational.get('schemas', {})
             if isinstance(schemas_section, dict):
                 for category, schema_list in schemas_section.items():
@@ -794,12 +782,10 @@ def build_vocabulary_index(provider_dirs):
                                 'provider_slug': provider_slug,
                             })
 
-            # Capability dimension
             cap = vocab_data.get('capability', {})
             if not isinstance(cap, dict):
                 cap = {}
 
-            # Personas
             for persona in cap.get('personas', []):
                 if not isinstance(persona, dict):
                     continue
@@ -812,7 +798,6 @@ def build_vocabulary_index(provider_dirs):
                     'workflows': persona.get('workflows', []),
                 })
 
-            # Domains
             for domain in cap.get('domains', []):
                 if not isinstance(domain, dict):
                     continue
@@ -823,13 +808,10 @@ def build_vocabulary_index(provider_dirs):
                     'provider_slug': provider_slug,
                     'resources': domain.get('resources', []),
                 })
-
         else:
-            # Simple format - extract tags as searchable terms
             for tag in vocab_data.get('tags', []):
                 all_tags.add(tag)
 
-    # Deduplicate actions by name
     seen_actions = {}
     for a in all_actions:
         key = a['name']
@@ -864,9 +846,9 @@ def build_vocabulary_index(provider_dirs):
 
 
 def main():
-    print("=== APIs.io Build Script ===")
+    print("=== APIs.io Build Script (Subdomain Architecture) ===")
     print(f"Source: {EVANGELIST_DIR}")
-    print(f"Output: {NETWORK_DIR}")
+    print(f"Output: {ROOT_DIR}")
 
     if not os.path.isdir(EVANGELIST_DIR):
         print(f"ERROR: api-evangelist directory not found at {EVANGELIST_DIR}")
@@ -886,6 +868,19 @@ def main():
 
     print(f"Found {len(provider_dirs)} provider(s)")
 
+    # Copy shared assets to all sites
+    print("\nCopying shared assets to subdomain sites...")
+    copy_shared_assets()
+
+    # Copy icon assets to providers site (icons live with providers)
+    icons_src = os.path.join(NETWORK_DIR, 'assets', 'icons')
+    icons_dst = os.path.join(ROOT_DIR, 'providers', 'assets', 'icons')
+    if os.path.isdir(icons_src):
+        if os.path.exists(icons_dst):
+            shutil.rmtree(icons_dst)
+        shutil.copytree(icons_src, icons_dst)
+        print(f"Copied icons to providers site")
+
     # Load icon manifest
     icons_manifest_path = os.path.join(NETWORK_DIR, 'assets', 'icons', 'manifest.json')
     icon_manifest = {}
@@ -900,7 +895,6 @@ def main():
     providers = []
     total_apis = 0
     total_caps = 0
-    total_schemas = 0
 
     for provider_dir in provider_dirs:
         try:
@@ -912,11 +906,11 @@ def main():
         except Exception as e:
             print(f"  ERROR processing {os.path.basename(provider_dir)}: {e}")
 
-    # Build vocabulary index for advanced search
+    # Build vocabulary index -> vocabularies site
     vocab_index = build_vocabulary_index(provider_dirs)
-    data_dir = os.path.join(NETWORK_DIR, '_data')
-    os.makedirs(data_dir, exist_ok=True)
-    vocab_path = os.path.join(data_dir, 'vocabulary.json')
+    vocab_dir = os.path.join(ROOT_DIR, 'vocabularies')
+    os.makedirs(vocab_dir, exist_ok=True)
+    vocab_path = os.path.join(vocab_dir, 'vocabulary.json')
     with open(vocab_path, 'w') as f:
         json.dump(vocab_index, f, indent=2)
     print(f"Vocabulary:   {vocab_index['stats']['providers']} providers, {vocab_index['stats']['resources']} resources, {vocab_index['stats']['personas']} personas, {vocab_index['stats']['domains']} domains")

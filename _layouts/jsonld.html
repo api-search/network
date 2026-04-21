@@ -28,15 +28,15 @@ layout: default
 
 <nav aria-label="breadcrumb" style="margin-bottom: 1rem;">
   <ol class="breadcrumb" style="font-size: 0.85rem;">
-    <li class="breadcrumb-item"><a href="{{ site.url }}/">Home</a></li>
-    <li class="breadcrumb-item"><a href="{{ site.url }}/providers/{{ page.provider_slug }}/">{{ page.provider_name }}</a></li>
+    <li class="breadcrumb-item"><a href="https://apis.io/">Home</a></li>
+    <li class="breadcrumb-item"><a href="https://providers.apis.io/providers/{{ page.provider_slug }}/">{{ page.provider_name }}</a></li>
     <li class="breadcrumb-item active" aria-current="page">{{ page.name }}</li>
   </ol>
 </nav>
 
 <div class="ld-hero">
   <div class="ld-overline">
-    <a href="{{ site.url }}/providers/{{ page.provider_slug }}/">{{ page.provider_name }}</a> &middot; JSON-LD Context
+    <a href="https://providers.apis.io/providers/{{ page.provider_slug }}/">{{ page.provider_name }}</a> &middot; JSON-LD Context
   </div>
   <h1 class="ld-title">{{ page.name }}</h1>
   {% if page.description %}<p class="ld-desc">{{ page.description }}</p>{% endif %}
@@ -108,13 +108,13 @@ layout: default
       "@type": "ListItem",
       "position": 1,
       "name": "Home",
-      "item": "{{ site.url }}/"
+      "item": "https://apis.io/"
     },
     {
       "@type": "ListItem",
       "position": 2,
       "name": {{ page.provider_name | jsonify }},
-      "item": "{{ site.url }}/providers/{{ page.provider_slug }}/"
+      "item": "https://providers.apis.io/providers/{{ page.provider_slug }}/"
     },
     {
       "@type": "ListItem",

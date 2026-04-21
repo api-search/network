@@ -4,20 +4,6 @@ meta_title: "APIs.io - Search APIs by What You Want to Accomplish"
 meta_description: "Search APIs by capability, provider, schema, or name. Find the right API for what you want to accomplish."
 ---
 
-{% assign total_apis = site.apis | size %}
-{% assign total_providers = site.providers | size %}
-{% assign total_caps = site.capabilities | size %}
-{% assign total_schemas = site.schemas | size %}
-{% assign total_asyncapis = site.asyncapis | size %}
-{% assign total_jsonld = site.jsonld | size %}
-{% assign total_rules = site.rules | size %}
-{% assign total_items = total_apis | plus: total_providers | plus: total_caps | plus: total_schemas | plus: total_asyncapis | plus: total_jsonld | plus: total_rules %}
-
-{% assign all_tags = "" | split: "" %}
-{% for item in site.apis %}{% for tag in item.tags %}{% if tag != "" %}{% assign all_tags = all_tags | push: tag %}{% endif %}{% endfor %}{% endfor %}
-{% for item in site.capabilities %}{% for tag in item.tags %}{% if tag != "" %}{% assign all_tags = all_tags | push: tag %}{% endif %}{% endfor %}{% endfor %}
-{% assign unique_tags = all_tags | uniq %}
-
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -38,8 +24,8 @@ meta_description: "Search APIs by capability, provider, schema, or name. Find th
 
 <div style="text-align: center; padding: 2rem 0 1rem;">
   <h1 style="font-size: 2rem; margin-bottom: 0.5rem;">API Search</h1>
-  <p style="color: #666; margin-bottom: 1.5rem;">
-    Search across <strong>{{ total_providers }}</strong> providers, <strong>{{ total_apis }}</strong> APIs, <strong>{{ total_caps }}</strong> capabilities, <strong>{{ total_schemas }}</strong> schemas, <strong>{{ total_asyncapis }}</strong> event specs, <strong>{{ total_jsonld }}</strong> vocabularies, and <strong>{{ total_rules }}</strong> rulesets
+  <p id="search-stats" style="color: #666; margin-bottom: 1.5rem;">
+    Search across the APIs.io network of providers, APIs, capabilities, schemas, and more
   </p>
 
   <form onsubmit="runSearch(); return false;" style="max-width: 640px; margin: 0 auto; position: relative;" autocomplete="off">
@@ -62,7 +48,7 @@ meta_description: "Search APIs by capability, provider, schema, or name. Find th
 
     <p style="font-size: 0.8rem; color: #999; margin-top: 0.5rem;">
       Try: "run reports", "firewall rules", "event tracking", "audience segmentation", "compliance"
-      <br><a href="{{ site.url }}/advanced/" style="color: #0d6efd;">Advanced Search</a> &mdash; search by resource, action, persona, domain, and schema
+      <br><a href="https://vocabularies.apis.io/" style="color: #0d6efd;">Advanced Search</a> &mdash; search by resource, action, persona, domain, and schema
     </p>
   </form>
 </div>
@@ -80,11 +66,7 @@ meta_description: "Search APIs by capability, provider, schema, or name. Find th
 
 <noscript>
   <h2>Browse APIs</h2>
-  <ul>
-    {% for api in site.apis limit: 100 %}
-    <li><a href="{{ api.url }}">{{ api.name }}</a> — {{ api.description | strip_html | truncate: 120 }}</li>
-    {% endfor %}
-  </ul>
+  <p>Visit <a href="https://providers.apis.io/">providers.apis.io</a> to browse all providers, or <a href="https://apis.apis.io/">apis.apis.io</a> to browse individual APIs.</p>
 </noscript>
 
 <style>
@@ -109,7 +91,7 @@ meta_description: "Search APIs by capability, provider, schema, or name. Find th
   .btn-purple { background: #7c3aed; color: white; border-color: #7c3aed; }
 </style>
 
-<script src="{{ site.url }}/assets/minisearch.min.js"></script>
+<script src="/assets/minisearch.min.js"></script>
 <script>
 (function() {
   var PAGE_SIZE = 25;
@@ -123,32 +105,70 @@ meta_description: "Search APIs by capability, provider, schema, or name. Find th
   var activeDimension = 'all';
   var debounceTimer = null;
 
+  // Federated search indexes from all subdomain sites
+  var INDEXES = [
+    'https://providers.apis.io/search-index.json',
+    'https://apis.apis.io/search-index.json',
+    'https://capabilities.apis.io/search-index.json',
+    'https://schemas.apis.io/search-index.json',
+    'https://asyncapi.apis.io/search-index.json',
+    'https://json-ld.apis.io/search-index.json',
+    'https://rules.apis.io/search-index.json'
+  ];
+
   function loadIndex() {
     if (indexLoading) return indexLoading;
     setStatus('Loading search index...');
-    indexLoading = fetch('{{ site.baseurl }}/search-index.json')
-      .then(function(r) { return r.json(); })
-      .then(function(data) {
-        index = data;
-        miniSearch = new MiniSearch({
-          fields: ['n', 'd', 't', 'st'],
-          storeFields: ['i'],
-          idField: 'i',
-          extractField: function(doc, field) {
-            if (field === 't') return (doc.t || []).join(' ');
-            return doc[field] || '';
-          },
-          searchOptions: {
-            boost: { n: 4, st: 3, t: 2, d: 1 },
-            prefix: true,
-            fuzzy: 0.2,
-            combineWith: 'AND'
-          }
-        });
-        miniSearch.addAll(data);
-        setStatus('');
-        return index;
+    indexLoading = Promise.all(INDEXES.map(function(url) {
+      return fetch(url).then(function(r) { return r.json(); }).catch(function() { return []; });
+    })).then(function(results) {
+      // Merge all indexes, re-index the i field sequentially
+      var merged = [];
+      var idx = 0;
+      for (var r = 0; r < results.length; r++) {
+        for (var j = 0; j < results[r].length; j++) {
+          var item = results[r][j];
+          item.i = idx++;
+          merged.push(item);
+        }
+      }
+      index = merged;
+
+      // Update stats
+      var counts = {};
+      merged.forEach(function(it) { counts[it.type] = (counts[it.type] || 0) + 1; });
+      var statsEl = document.getElementById('search-stats');
+      if (statsEl) {
+        var parts = [];
+        if (counts.provider) parts.push('<strong>' + counts.provider + '</strong> providers');
+        if (counts.api) parts.push('<strong>' + counts.api + '</strong> APIs');
+        if (counts.capability) parts.push('<strong>' + counts.capability + '</strong> capabilities');
+        if (counts.schema) parts.push('<strong>' + counts.schema + '</strong> schemas');
+        if (counts.asyncapi) parts.push('<strong>' + counts.asyncapi + '</strong> event specs');
+        if (counts.jsonld) parts.push('<strong>' + counts.jsonld + '</strong> vocabularies');
+        if (counts.rules) parts.push('<strong>' + counts.rules + '</strong> rulesets');
+        statsEl.innerHTML = 'Search across ' + parts.join(', ');
+      }
+
+      miniSearch = new MiniSearch({
+        fields: ['n', 'd', 't', 'st'],
+        storeFields: ['i'],
+        idField: 'i',
+        extractField: function(doc, field) {
+          if (field === 't') return (doc.t || []).join(' ');
+          return doc[field] || '';
+        },
+        searchOptions: {
+          boost: { n: 4, st: 3, t: 2, d: 1 },
+          prefix: true,
+          fuzzy: 0.2,
+          combineWith: 'AND'
+        }
       });
+      miniSearch.addAll(merged);
+      setStatus('');
+      return index;
+    });
     return indexLoading;
   }
 
@@ -178,11 +198,9 @@ meta_description: "Search APIs by capability, provider, schema, or name. Find th
   }
 
   function applyFilters(results) {
-    // Dimension filter
     if (activeDimension !== 'all') {
       results = results.filter(function(item) { return item.type === activeDimension; });
     }
-    // Tag filter
     if (activeTags.size > 0) {
       results = results.filter(function(item) {
         if (!item.t) return false;
@@ -271,7 +289,6 @@ meta_description: "Search APIs by capability, provider, schema, or name. Find th
       html += '</h6>';
       if (item.d) html += '<p style="font-size: 0.85rem; color: #666; margin-bottom: 0.4rem;">' + desc + '</p>';
 
-      // Provider stats
       if (item.type === 'provider') {
         html += '<div style="font-size: 0.8rem; color: #999;">';
         if (item.ac) html += item.ac + ' APIs';
@@ -366,7 +383,6 @@ meta_description: "Search APIs by capability, provider, schema, or name. Find th
     });
   }
 
-
   function updateUrl(query) {
     if (window.history.replaceState) {
       var url = query ? '?search=' + encodeURIComponent(query) : window.location.pathname;
@@ -394,7 +410,6 @@ meta_description: "Search APIs by capability, provider, schema, or name. Find th
         b.classList.add(outlineClass);
       });
       btn.classList.add('active');
-      // Remove outline, add solid
       var dim = btn.getAttribute('data-dim');
       var solidMap = {
         all: ['btn-outline-dark', 'btn-dark'],
