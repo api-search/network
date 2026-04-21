@@ -927,6 +927,21 @@ def main():
     total_jsonld = count_md(JSONLD_DIR)
     total_rules = count_md(RULES_DIR)
 
+    # Write stats to network _data for homepage counts
+    network_data_dir = os.path.join(NETWORK_DIR, '_data')
+    os.makedirs(network_data_dir, exist_ok=True)
+    stats = {
+        'providers': len(providers),
+        'apis': total_apis,
+        'capabilities': total_caps,
+        'schemas': total_schemas,
+        'asyncapis': total_asyncapis,
+        'jsonld': total_jsonld,
+        'rules': total_rules,
+    }
+    with open(os.path.join(network_data_dir, 'stats.json'), 'w') as f:
+        json.dump(stats, f, indent=2)
+
     print(f"\n=== Build Complete ===")
     print(f"Providers:    {len(providers)}")
     print(f"APIs:         {total_apis}")
