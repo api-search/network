@@ -1,13 +1,14 @@
 ---
+image: /assets/images/blog/spec-driven-integration-and-the-future-of-api-discovery.png
 layout: post
-title: 'Spec-Driven Integration and the Future of API Discovery'
-image: /assets/images/sdi-future-of-api-discovery.png
 tags:
-    - Spec-Driven Integration
-    - API Discovery
-    - MCP
-    - AI Agents
+- Spec-Driven Integration
+- API Discovery
+- MCP
+- AI Agents
+title: Spec-Driven Integration and the Future of API Discovery
 ---
+
 APIs.io has always been about making APIs discoverable by machines. The APIs.json format provides a machine-readable index of what APIs exist and where to find them. That solves the discovery problem for APIs themselves.
 
 But APIs are only half the story. The integrations built on top of APIs — the clients, the wrappers, the middleware that connects system A to system B — are largely invisible. They are not indexed. They are not machine-readable. They live as code in repos that nobody outside the building team knows about.
