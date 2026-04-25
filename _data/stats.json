@@ -1,9 +1,9 @@
 {
-  "providers": 1240,
-  "apis": 6242,
+  "providers": 1302,
+  "apis": 6494,
   "capabilities": 746,
-  "schemas": 42835,
-  "asyncapis": 70,
-  "jsonld": 2427,
+  "schemas": 42884,
+  "asyncapis": 71,
+  "jsonld": 2449,
   "rules": 615
 }
