@@ -205,6 +205,64 @@ def write_cname(site_dir, subdomain):
         f.write(subdomain + '\n')
 
 
+ROBOTS_TEMPLATE = """---
+layout: none
+---
+# NOTICE: APIs.io is a public catalog of API metadata intended for both human
+# and machine consumption. Indexing, AI inference (RAG/grounding), and training
+# are all explicitly permitted. See https://apis.io/terms/ for the terms of use.
+
+User-agent: *
+Allow: /
+
+# Cloudflare Content Signals (https://blog.cloudflare.com/content-signals-policy/)
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+
+# AIPREF Content-Usage (draft-ietf-aipref-attach)
+Content-Usage: search=y, ai-input=y, ai-train=y
+
+Sitemap: {{ site.url }}/sitemap.xml
+"""
+
+
+def write_robots(site_dir):
+    """Write robots.txt with Cloudflare Content Signals + AIPREF Content-Usage."""
+    with open(os.path.join(site_dir, 'robots.txt'), 'w') as f:
+        f.write(ROBOTS_TEMPLATE)
+
+
+def sitemap_template(collection):
+    """Return a Jekyll sitemap.xml template scoped to one collection (or none)."""
+    head = """---
+layout: none
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>{{ site.url }}/</loc>
+    <priority>1.0</priority>
+  </url>
+"""
+    body = ""
+    if collection:
+        body = (
+            "  {% for item in site." + collection + " %}\n"
+            "  <url>\n"
+            "    <loc>{{ site.url }}{{ item.url }}</loc>\n"
+            "    <priority>0.7</priority>\n"
+            "  </url>\n"
+            "  {% endfor %}\n"
+        )
+    tail = "</urlset>\n"
+    return head + body + tail
+
+
+def write_sitemap(site_dir, collection):
+    """Write a Jekyll sitemap.xml scoped to the site's collection."""
+    with open(os.path.join(site_dir, 'sitemap.xml'), 'w') as f:
+        f.write(sitemap_template(collection))
+
+
 def copy_type_layout(site_dir, layout_name):
     """Copy type-specific layout from network."""
     src = os.path.join(NETWORK_DIR, '_layouts', f'{layout_name}.html')
@@ -248,6 +306,11 @@ def main():
         # Write CNAME
         write_cname(site_dir, site['subdomain'])
         print(f"  Wrote CNAME: {site['subdomain']}")
+
+        # Write robots.txt + sitemap.xml
+        write_robots(site_dir)
+        write_sitemap(site_dir, site['collection'])
+        print("  Wrote robots.txt and sitemap.xml")
 
         # Create collection directory if needed
         if site['collection']:
