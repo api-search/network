@@ -7,6 +7,7 @@
     <meta name="description" content="{% if page.meta_description %}{{ page.meta_description }}{% elsif page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
     <meta name="keywords" content="{% if page.tags %}{{ page.tags | join: ', ' }}, {% endif %}{{ site.keywords | join: ', ' }}">
     <link rel="canonical" href="{{ page.url | absolute_url }}">
+    <link rel="api-catalog" href="https://apis.apis.io/.well-known/api-catalog" type="application/linkset+json">
 
     <!-- Open Graph -->
     <meta property="og:title" content="{% if page.title %}{{ page.title }} | {{ site.name }}{% elsif page.name %}{{ page.name }} | {{ site.name }}{% else %}{{ site.name }}{% endif %}">

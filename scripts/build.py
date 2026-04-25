@@ -698,6 +698,111 @@ def process_provider(provider_dir, icon_manifest=None):
     return provider_data
 
 
+# RFC 9727 api-catalog property type -> linkset relation + media type
+PROPERTY_TYPE_MAP = {
+    'OpenAPI':           ('service-desc', 'application/vnd.oai.openapi'),
+    'AsyncAPI':          ('service-desc', 'application/vnd.aai.asyncapi'),
+    'Postman':           ('service-desc', 'application/vnd.postman.collection+json'),
+    'Postman Collection':('service-desc', 'application/vnd.postman.collection+json'),
+    'Documentation':     ('service-doc',  'text/html'),
+    'JSON Schema':       ('describedby',  'application/schema+json'),
+    'Schema':            ('describedby',  'application/schema+json'),
+    'JSON-LD':           ('describedby',  'application/ld+json'),
+}
+
+
+def build_api_catalogs():
+    """Generate RFC 9727 /.well-known/api-catalog linksets for apis & providers sites."""
+    by_provider = {}
+    for provider_dir in sorted(glob.glob(os.path.join(APIS_DIR, '*'))):
+        if not os.path.isdir(provider_dir):
+            continue
+        provider_slug = os.path.basename(provider_dir)
+        for api_md in sorted(glob.glob(os.path.join(provider_dir, '*.md'))):
+            with open(api_md) as fh:
+                text = fh.read()
+            if not text.startswith('---\n'):
+                continue
+            end = text.find('\n---\n', 4)
+            if end == -1:
+                continue
+            try:
+                fm = yaml.safe_load(text[4:end]) or {}
+            except yaml.YAMLError:
+                continue
+            by_provider.setdefault(provider_slug, []).append(fm)
+
+    def api_links(fm):
+        sd, doc, db = [], [], []
+        for prop in fm.get('properties', []) or []:
+            url = prop.get('url')
+            ptype = prop.get('type', '')
+            if not url:
+                continue
+            rel, media = PROPERTY_TYPE_MAP.get(ptype, ('describedby', None))
+            link = {'href': url}
+            if media:
+                link['type'] = media
+            if ptype and ptype not in PROPERTY_TYPE_MAP:
+                link['title'] = ptype
+            {'service-desc': sd, 'service-doc': doc, 'describedby': db}[rel].append(link)
+        if fm.get('humanURL') and not any(d['href'] == fm['humanURL'] for d in doc):
+            doc.append({'href': fm['humanURL'], 'type': 'text/html'})
+        return sd, doc, db
+
+    apis_linkset = []
+    for provider_slug in sorted(by_provider):
+        for fm in by_provider[provider_slug]:
+            api_slug = fm.get('slug', '')
+            if not api_slug:
+                continue
+            sd, doc, db = api_links(fm)
+            if not (sd or doc or db):
+                continue
+            entry = {'anchor': f"https://apis.apis.io/apis/{provider_slug}/{api_slug}/"}
+            if fm.get('name'):
+                entry['title'] = fm['name']
+            if sd: entry['service-desc'] = sd
+            if doc: entry['service-doc'] = doc
+            if db: entry['describedby'] = db
+            apis_linkset.append(entry)
+
+    apis_wk = os.path.join(ROOT_DIR, 'apis', '.well-known')
+    os.makedirs(apis_wk, exist_ok=True)
+    apis_catalog = {'linkset': apis_linkset}
+    for fname in ('api-catalog', 'api-catalog.json'):
+        with open(os.path.join(apis_wk, fname), 'w') as fh:
+            json.dump(apis_catalog, fh, indent=2)
+
+    providers_linkset = []
+    for provider_slug in sorted(by_provider):
+        anchor = f"https://providers.apis.io/providers/{provider_slug}/"
+        sd, doc, db = [], [], []
+        for fm in by_provider[provider_slug]:
+            psd, pdoc, pdb = api_links(fm)
+            for link in psd:
+                link = dict(link)
+                link.setdefault('title', fm.get('name', ''))
+                sd.append(link)
+            for link in pdoc:
+                link = dict(link)
+                link.setdefault('title', fm.get('name', ''))
+                doc.append(link)
+        entry = {'anchor': anchor, 'title': provider_slug}
+        if sd: entry['service-desc'] = sd
+        if doc: entry['service-doc'] = doc
+        providers_linkset.append(entry)
+
+    providers_wk = os.path.join(ROOT_DIR, 'providers', '.well-known')
+    os.makedirs(providers_wk, exist_ok=True)
+    providers_catalog = {'linkset': providers_linkset}
+    for fname in ('api-catalog', 'api-catalog.json'):
+        with open(os.path.join(providers_wk, fname), 'w') as fh:
+            json.dump(providers_catalog, fh, indent=2)
+
+    print(f"api-catalog:  {len(apis_linkset)} APIs ({sum(1 for e in apis_linkset if 'service-desc' in e)} with machine description), {len(providers_linkset)} providers")
+
+
 def clear_collections():
     """Remove existing collection directories."""
     for d in [PROVIDERS_DIR, APIS_DIR, CAPABILITIES_DIR, SCHEMAS_DIR,
@@ -944,6 +1049,9 @@ def main():
     }
     with open(os.path.join(network_data_dir, 'stats.json'), 'w') as f:
         json.dump(stats, f, indent=2)
+
+    # RFC 9727 api-catalog
+    build_api_catalogs()
 
     print(f"\n=== Build Complete ===")
     print(f"Providers:    {len(providers)}")

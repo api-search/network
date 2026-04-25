@@ -160,6 +160,7 @@ def write_config(site_dir, site):
         "  - Discovery",
         "",
         'exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "scripts"]',
+        'include: [".well-known"]',
         "",
         "github_org: api-search",
         f"github_repo: {site['repo']}",
