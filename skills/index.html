@@ -1,0 +1,66 @@
+---
+layout: default
+title: Agent Skills
+meta_description: Filesystem-style agent skills for discovering and consuming APIs in the apis.io federated catalog.
+permalink: /skills/
+---
+
+<div class="container py-5">
+  <h1>Agent Skills</h1>
+  <p class="lead">
+    Filesystem-style skills (<a href="https://agentskills.io/">agentskills.io</a>) that teach an
+    agent how to use the apis.io network — its catalogs, content negotiation, and discovery endpoints.
+  </p>
+  <p>
+    Browse the manifest at <a href="/skills/index.json"><code>/skills/index.json</code></a>,
+    or fetch each <code>SKILL.md</code> directly.
+  </p>
+
+  <div class="row mt-4">
+    <div class="col-md-12">
+      <div class="card mb-3">
+        <div class="card-body">
+          <h3 class="card-title">
+            <a href="/skills/discover-apis-io/SKILL.md">discover-apis-io</a>
+          </h3>
+          <p class="card-text">
+            Discover the structure of the apis.io network — its subdomains, machine-readable
+            catalogs, and content-negotiation conventions — so other skills can find APIs efficiently.
+          </p>
+          <a href="/skills/discover-apis-io/SKILL.md" class="btn btn-sm btn-outline-primary">View SKILL.md</a>
+        </div>
+      </div>
+
+      <div class="card mb-3">
+        <div class="card-body">
+          <h3 class="card-title">
+            <a href="/skills/search-apis/SKILL.md">search-apis</a>
+          </h3>
+          <p class="card-text">
+            Find APIs in the apis.io catalog by keyword, capability, tag, or provider.
+          </p>
+          <a href="/skills/search-apis/SKILL.md" class="btn btn-sm btn-outline-primary">View SKILL.md</a>
+        </div>
+      </div>
+
+      <div class="card mb-3">
+        <div class="card-body">
+          <h3 class="card-title">
+            <a href="/skills/fetch-api-spec/SKILL.md">fetch-api-spec</a>
+          </h3>
+          <p class="card-text">
+            Given an apis.io API URL or catalog entry, fetch the OpenAPI / AsyncAPI / Postman
+            specification for that API.
+          </p>
+          <a href="/skills/fetch-api-spec/SKILL.md" class="btn btn-sm btn-outline-primary">View SKILL.md</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="mt-5">For agents</h2>
+  <pre><code class="language-bash">curl https://apis.io/skills/index.json | jq '.skills[] | {name, url}'</code></pre>
+  <p>
+    Each skill is a self-contained markdown file. No build step, no installer — fetch and follow.
+  </p>
+</div>

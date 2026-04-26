@@ -1,0 +1,23 @@
+{
+  "$schema": "https://agentskills.io/schema/index.json",
+  "name": "apis.io agent skills",
+  "description": "Skills for discovering and consuming APIs in the apis.io federated catalog.",
+  "url": "https://apis.io/skills/",
+  "skills": [
+    {
+      "name": "discover-apis-io",
+      "description": "Discover the structure of the apis.io network — its subdomains, machine-readable catalogs, and content-negotiation conventions — so other skills can find APIs efficiently.",
+      "url": "https://apis.io/skills/discover-apis-io/SKILL.md"
+    },
+    {
+      "name": "search-apis",
+      "description": "Find APIs in the apis.io catalog by keyword, capability, tag, or provider.",
+      "url": "https://apis.io/skills/search-apis/SKILL.md"
+    },
+    {
+      "name": "fetch-api-spec",
+      "description": "Given an apis.io API URL or catalog entry, fetch the OpenAPI / AsyncAPI / Postman specification for that API.",
+      "url": "https://apis.io/skills/fetch-api-spec/SKILL.md"
+    }
+  ]
+}

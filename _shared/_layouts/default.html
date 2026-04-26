@@ -8,6 +8,7 @@
     <meta name="keywords" content="{% if page.tags %}{{ page.tags | join: ', ' }}, {% endif %}{{ site.keywords | join: ', ' }}">
     <link rel="canonical" href="{{ page.url | absolute_url }}">
     <link rel="api-catalog" href="https://apis.apis.io/.well-known/api-catalog" type="application/linkset+json">
+    <link rel="agent-skills" href="https://apis.io/skills/" type="application/json">
 
     <!-- Open Graph -->
     <meta property="og:title" content="{% if page.title %}{{ page.title }} | {{ site.name }}{% elsif page.name %}{{ page.name }} | {{ site.name }}{% else %}{{ site.name }}{% endif %}">
