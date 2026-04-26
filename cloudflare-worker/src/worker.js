@@ -141,6 +141,7 @@ function inspectBotAuth(request) {
 function withLinkHeaders(response, url, botAuth) {
   const links = [
     `<https://apis.apis.io/.well-known/api-catalog>; rel="api-catalog"; type="application/linkset+json"`,
+    `<https://apis.io/skills/>; rel="agent-skills"; type="application/json"`,
     `<${url.origin}/sitemap.xml>; rel="sitemap"; type="application/xml"`,
     `<${url.href}>; rel="alternate"; type="text/markdown"`,
   ];
