@@ -1,6 +1,6 @@
 // apis.io agent-readiness Worker.
 //
-// Sits in front of *.apis.io. Three jobs:
+// Sits in front of *.apis.io. Four jobs:
 //   1. Fix Content-Type for /.well-known/api-catalog -> application/linkset+json.
 //   2. Add Link headers (RFC 8288) to HTML responses: api-catalog, sitemap,
 //      and an alternate text/markdown advertisement.
@@ -8,6 +8,10 @@
 //      URL is /apis/<provider>/<slug>/ on apis.apis.io or /providers/<slug>/
 //      on providers.apis.io, synthesize a markdown response from the cached
 //      api-catalog instead of returning HTML.
+//   4. Web Bot Auth observability: detect RFC 9421 HTTP Message Signatures
+//      tagged "web-bot-auth" (draft-meunier-web-bot-auth-architecture) and
+//      surface them in an `x-bot-auth` response header. Verification is
+//      stubbed — Cloudflare's edge verdict is consumed when present.
 //
 // `fetch(request)` from inside a Worker bypasses the Worker route, so it goes
 // directly to the GitHub Pages origin. No recursion.
@@ -55,6 +59,19 @@ function findEntry(catalog, anchor) {
   return catalog.linkset.find((e) => e.anchor === anchor) || null;
 }
 
+const TYPE_LABELS = {
+  "application/vnd.oai.openapi": "OpenAPI",
+  "application/vnd.aai.asyncapi": "AsyncAPI",
+  "application/vnd.postman.collection+json": "Postman Collection",
+  "application/schema+json": "JSON Schema",
+  "application/ld+json": "JSON-LD",
+};
+
+function linkLabel(link, fallback) {
+  return link.title || TYPE_LABELS[link.type] || fallback || link.type ||
+    link.href;
+}
+
 function entryToMarkdown(entry, kind) {
   const lines = [];
   lines.push(`# ${entry.title || entry.anchor}`);
@@ -64,7 +81,7 @@ function entryToMarkdown(entry, kind) {
   if (entry["service-desc"]?.length) {
     lines.push("## Machine-readable descriptions");
     for (const link of entry["service-desc"]) {
-      const label = link.title || link.type || "description";
+      const label = linkLabel(link, "description");
       const type = link.type ? ` — \`${link.type}\`` : "";
       lines.push(`- [${label}](${link.href})${type}`);
     }
@@ -73,15 +90,15 @@ function entryToMarkdown(entry, kind) {
   if (entry["service-doc"]?.length) {
     lines.push("## Documentation");
     for (const link of entry["service-doc"]) {
-      lines.push(`- [${link.title || "Documentation"}](${link.href})`);
+      lines.push(`- [${linkLabel(link, "Documentation")}](${link.href})`);
     }
     lines.push("");
   }
   if (entry.describedby?.length) {
     lines.push("## Schemas & related");
     for (const link of entry.describedby) {
-      const label = link.title || link.href.split("/").pop();
-      lines.push(`- [${label}](${link.href})`);
+      const fallback = link.href.split("/").pop();
+      lines.push(`- [${linkLabel(link, fallback)}](${link.href})`);
     }
     lines.push("");
   }
@@ -90,7 +107,38 @@ function entryToMarkdown(entry, kind) {
   return lines.join("\n");
 }
 
-function withLinkHeaders(response, url) {
+// Web Bot Auth (draft-meunier-web-bot-auth-architecture) observability.
+//
+// Detects RFC 9421 HTTP Message Signatures with the `tag="web-bot-auth"` marker.
+// Cloudflare may verify these at the edge and stamp `cf-verified-bot`; if so we
+// trust that. Otherwise the request only "claims" web-bot-auth — we surface
+// it but do not treat as authenticated. Full verification (Ed25519 signature
+// over the canonical message, key fetch from the agent's directory) is a
+// follow-up; this scaffolding gives us logs to drive that work.
+function inspectBotAuth(request) {
+  const sig = request.headers.get("Signature");
+  const sigInput = request.headers.get("Signature-Input");
+  const sigAgent = request.headers.get("Signature-Agent");
+  const cfVerified = request.headers.get("cf-verified-bot");
+
+  const claimsAuth = !!(sig && sigInput && /tag="web-bot-auth"/.test(sigInput));
+  if (!claimsAuth && cfVerified !== "true") return { state: "none" };
+
+  let keyid = null, alg = null;
+  if (sigInput) {
+    const km = sigInput.match(/keyid="([^"]+)"/);
+    if (km) keyid = km[1];
+    const am = sigInput.match(/alg="([^"]+)"/);
+    if (am) alg = am[1];
+  }
+
+  if (cfVerified === "true") {
+    return { state: "verified-by-edge", keyid, alg, agent: sigAgent };
+  }
+  return { state: "claimed-unverified", keyid, alg, agent: sigAgent };
+}
+
+function withLinkHeaders(response, url, botAuth) {
   const links = [
     `<https://apis.apis.io/.well-known/api-catalog>; rel="api-catalog"; type="application/linkset+json"`,
     `<${url.origin}/sitemap.xml>; rel="sitemap"; type="application/xml"`,
@@ -98,6 +146,10 @@ function withLinkHeaders(response, url) {
   ];
   const headers = new Headers(response.headers);
   for (const link of links) headers.append("Link", link);
+  if (botAuth && botAuth.state !== "none") {
+    headers.set("x-bot-auth", botAuth.state);
+    if (botAuth.keyid) headers.set("x-bot-auth-keyid", botAuth.keyid);
+  }
   // Vary so caches don't poison HTML for markdown clients.
   const vary = headers.get("Vary");
   headers.set("Vary", vary ? `${vary}, Accept` : "Accept");
@@ -111,6 +163,7 @@ function withLinkHeaders(response, url) {
 async function handle(request) {
   const url = new URL(request.url);
   const accept = request.headers.get("Accept") || "";
+  const botAuth = inspectBotAuth(request);
 
   // (1) Fix Content-Type on the api-catalog files.
   if (
@@ -175,7 +228,17 @@ async function handle(request) {
   const r = await fetch(request);
   const ct = r.headers.get("Content-Type") || "";
   if (ct.includes("text/html")) {
-    return withLinkHeaders(r, url);
+    return withLinkHeaders(r, url, botAuth);
+  }
+  if (botAuth.state !== "none") {
+    const headers = new Headers(r.headers);
+    headers.set("x-bot-auth", botAuth.state);
+    if (botAuth.keyid) headers.set("x-bot-auth-keyid", botAuth.keyid);
+    return new Response(r.body, {
+      status: r.status,
+      statusText: r.statusText,
+      headers,
+    });
   }
   return r;
 }
