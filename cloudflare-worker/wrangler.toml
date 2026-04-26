@@ -2,7 +2,7 @@ name = "apis-io-agent-readiness"
 main = "src/worker.js"
 compatibility_date = "2026-04-01"
 
-# Routes cover the apex and every subdomain in the apis.io network.
+# Worker fronts the entire apis.io network: hub plus every subdomain site.
 routes = [
   { pattern = "apis.io/*", zone_name = "apis.io" },
   { pattern = "*.apis.io/*", zone_name = "apis.io" },
