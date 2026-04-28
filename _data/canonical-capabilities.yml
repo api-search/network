@@ -66,7 +66,7 @@
     - list-runs
     - cancel-run
   matchers:
-    tags: [Automation, Workflow Automation, RPA, Workflow]
+    tags: [Automation, Workflow Automation, RPA]
     keywords: [automation, automate, runbook, scheduled, scheduler]
     tool_patterns: [run-workflow, schedule-task, trigger-run]
   related: [ci-cd, data-engineering]
@@ -203,8 +203,8 @@
     - list-segments
     - get-engagement-stats
   matchers:
-    tags: [Customer Engagement, Marketing, Marketing Automation, Engagement, Customer Experience, CX, Loyalty, Campaigns]
-    keywords: [engagement, campaign, customer experience, marketing automation, segment, loyalty]
+    tags: [Customer Engagement, Marketing Automation, Engagement, Customer Experience, CX, Loyalty, Campaigns]
+    keywords: [customer engagement, customer experience, marketing automation, marketing campaign, loyalty program]
     tool_patterns: [send-campaign, list-campaigns, list-segments]
   related: [messaging, crm-sales]
 
@@ -300,8 +300,8 @@
     - send-command
   matchers:
     tags: [IoT, Internet of Things, Device Management, Edge, Connected Devices, Telematics]
-    keywords: [iot, device, telemetry, edge, sensor, connected device, fleet]
-    tool_patterns: [list-devices, register-device, get-telemetry]
+    keywords: [iot, telemetry, sensor, connected device]
+    tool_patterns: [register-device, get-telemetry]
   related: [messaging, monitoring]
 
 - slug: machine-learning
@@ -379,8 +379,8 @@
     - delete-object
     - copy-object
   matchers:
-    tags: [Storage, Object Storage, Blob Storage, S3, Cloud Storage, Buckets]
-    keywords: [storage, bucket, blob, object, file storage]
+    tags: [Object Storage, Blob Storage, S3, Cloud Storage, Buckets]
+    keywords: [bucket, blob, object storage]
     tool_patterns: [list-buckets, list-objects, put-object, get-object]
   related: [data-engineering, document-processing]
 
@@ -399,8 +399,8 @@
     - create-subscription
     - list-invoices
   matchers:
-    tags: [Payments, Billing, Commerce, Subscriptions, Checkout, Invoicing]
-    keywords: [payment, billing, charge, invoice, subscription, refund, checkout]
+    tags: [Payments, Billing, Subscriptions, Checkout, Invoicing]
+    keywords: [payment processing, billing, invoice, refund, checkout]
     tool_patterns: [create-charge, list-payments, refund-payment, create-subscription]
   related: [identity-access, compliance]
 
@@ -419,8 +419,8 @@
     - list-benefits
     - get-employee
   matchers:
-    tags: [Payroll, HR, Human Resources, Workforce, Workforce Management, Absence Management, Leave Management, Benefits, Time Tracking, Onboarding]
-    keywords: [payroll, employee, workforce, hr, human resources, leave, benefit, time off, hris]
+    tags: [Payroll, HR, Human Resources, Workforce Management, Absence Management, Leave Management, Time Tracking]
+    keywords: [payroll, employee, workforce, human resources, leave management, time off, hris]
     tool_patterns: [list-employees, run-payroll, list-time-off, list-benefits]
   related: [recruiting-ats, identity-access]
 
