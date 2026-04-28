@@ -115,6 +115,58 @@ layout: default
 </div>
 {% endif %}
 
+<!-- Source YAML widget -->
+{% if page.source_yaml %}
+<link rel="stylesheet" href="/assets/prism/prism-coy.min.css">
+<style>
+  .yaml-widget { background: #fdfdfd; border: 1px solid #e3e7ee; border-radius: 10px; overflow: hidden; margin-top: 0.75rem; }
+  .yaml-widget-head { display: flex; align-items: center; justify-content: space-between; padding: 0.6rem 0.9rem; background: #f8fafc; border-bottom: 1px solid #e3e7ee; font-size: 0.85rem; }
+  .yaml-widget-head .yaml-label { color: #475569; font-weight: 600; }
+  .yaml-widget-head .yaml-actions a, .yaml-widget-head .yaml-actions button { background: none; border: none; padding: 0.2em 0.55em; color: #1e40af; font-size: 0.8rem; font-weight: 500; cursor: pointer; text-decoration: none; border-radius: 4px; }
+  .yaml-widget-head .yaml-actions a:hover, .yaml-widget-head .yaml-actions button:hover { background: #eef2f7; }
+  .yaml-widget pre[class*="language-"] { margin: 0; padding: 1rem 1.2rem; background: #fdfdfd; box-shadow: none; border: none; max-height: 540px; overflow: auto; font-size: 0.82rem; line-height: 1.5; }
+  .yaml-widget pre[class*="language-"] > code { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+  .yaml-widget pre[class*="language-"]::before, .yaml-widget pre[class*="language-"]::after { display: none; }
+  .yaml-widget .token.key { color: #1e40af; font-weight: 600; }
+  .yaml-widget .token.string { color: #047857; }
+  .yaml-widget .token.number, .yaml-widget .token.boolean, .yaml-widget .token.null { color: #b45309; }
+  .yaml-widget .token.comment { color: #94a3b8; font-style: italic; }
+  .yaml-widget .token.punctuation { color: #64748b; }
+  .yaml-widget .token.tag { color: #7c3aed; }
+  .yaml-widget .token.anchor, .yaml-widget .token.alias { color: #be185d; }
+  .yaml-copied { color: #047857 !important; }
+</style>
+<h3 class="section-title" id="source-yaml">Capability Spec (YAML)</h3>
+<div class="yaml-widget" data-yaml-widget>
+  <div class="yaml-widget-head">
+    <span class="yaml-label">{{ page.slug }}.yaml</span>
+    <span class="yaml-actions">
+      {% if page.source_yaml_url %}<a href="{{ page.source_yaml_url }}" target="_blank" rel="noopener">Raw &uarr;</a>{% endif %}
+      <button type="button" data-yaml-copy>Copy</button>
+    </span>
+  </div>
+  <pre class="language-yaml"><code class="language-yaml">{{ page.source_yaml | xml_escape }}</code></pre>
+</div>
+<script src="/assets/prism/prism-core.min.js" defer></script>
+<script src="/assets/prism/prism-yaml.min.js" defer></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var btn = document.querySelector('[data-yaml-copy]');
+    if (!btn) return;
+    btn.addEventListener('click', function () {
+      var code = document.querySelector('[data-yaml-widget] code');
+      if (!code) return;
+      navigator.clipboard.writeText(code.textContent).then(function () {
+        var orig = btn.textContent;
+        btn.textContent = 'Copied';
+        btn.classList.add('yaml-copied');
+        setTimeout(function () { btn.textContent = orig; btn.classList.remove('yaml-copied'); }, 1500);
+      });
+    });
+  });
+</script>
+{% endif %}
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",

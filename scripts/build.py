@@ -401,6 +401,13 @@ def process_provider(provider_dir, icon_manifest=None, category_suggestions=None
                 info, provider_slug, cap_slug, category_suggestions or {}
             )
 
+            try:
+                with open(cap_file) as fh:
+                    raw_yaml = fh.read()
+            except OSError:
+                raw_yaml = ''
+            source_yaml_url = f"https://raw.githubusercontent.com/api-evangelist/{provider_slug}/refs/heads/main/capabilities/{cap_filename}"
+
             cap_entry = {
                 'layout': 'capability',
                 'slug': cap_slug,
@@ -415,6 +422,8 @@ def process_provider(provider_dir, icon_manifest=None, category_suggestions=None
                 'personas': personas,
                 'consumed_apis': consumed_apis,
                 'search_terms': search_terms,
+                'source_yaml': raw_yaml,
+                'source_yaml_url': source_yaml_url,
             }
 
             cap_filepath = os.path.join(CAPABILITIES_DIR, provider_slug, f"{cap_slug}.md")
