@@ -1,0 +1,108 @@
+---
+layout: default
+---
+<style>
+  .cat-hero { background: linear-gradient(135deg, #eef4fb 0%, #dbeafe 100%); border: 1px solid #bfdbfe; border-radius: 12px; padding: 2rem; margin-bottom: 2rem; }
+  .cat-overline { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; color: #1e40af; font-weight: 600; margin-bottom: 0.5rem; }
+  .cat-title { font-size: 2rem; font-weight: 700; margin-bottom: 0.75rem; color: #1a1a2e; }
+  .cat-short { color: #2c3e50; line-height: 1.55; font-size: 1.1rem; margin-bottom: 0.5rem; }
+  .cat-stats { display: flex; flex-wrap: wrap; gap: 1.25rem; margin-top: 1rem; font-size: 0.9rem; color: #1e3a8a; }
+  .cat-stats strong { color: #1a1a2e; font-weight: 700; }
+  .section-title { font-size: 1.1rem; font-weight: 700; color: #1a1a2e; margin: 2rem 0 0.75rem; padding-bottom: 0.5rem; border-bottom: 2px solid #e3e7ee; }
+  .cat-desc { color: #4a5568; line-height: 1.65; }
+  .op-list { list-style: none; padding: 0; }
+  .op-list li { padding: 0.4rem 0; font-family: monospace; font-size: 0.9rem; color: #1a1a2e; border-bottom: 1px solid #f0f2f5; }
+  .op-list li:last-child { border-bottom: none; }
+  .op-list li::before { content: "→ "; color: #94a3b8; }
+  .impl-table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+  .impl-table th, .impl-table td { padding: 0.75rem 0.6rem; text-align: left; border-bottom: 1px solid #e3e7ee; vertical-align: middle; }
+  .impl-table th { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.5px; color: #6c757d; font-weight: 600; }
+  .impl-table tr:hover { background: #f8fafc; }
+  .impl-provider { font-weight: 600; color: #1a1a2e; }
+  .impl-provider a { color: #1e40af; text-decoration: none; }
+  .impl-provider a:hover { text-decoration: underline; }
+  .impl-cap a { color: #1a1a2e; text-decoration: none; }
+  .impl-cap a:hover { color: #1e40af; text-decoration: underline; }
+  .impl-num { font-family: monospace; color: #475569; font-size: 0.85rem; text-align: right; }
+  .related-pill { display: inline-block; padding: 0.3em 0.75em; background: #eef2f7; color: #1e40af; border-radius: 999px; font-size: 0.8rem; text-decoration: none; margin: 0.25rem 0.25rem 0.25rem 0; }
+  .related-pill:hover { background: #dbeafe; }
+  .domain-badge { display: inline-block; padding: 0.2em 0.6em; background: #ddd6fe; color: #5b21b6; border-radius: 4px; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 600; }
+</style>
+
+<nav aria-label="breadcrumb" style="margin-bottom: 1rem;">
+  <ol class="breadcrumb" style="font-size: 0.85rem;">
+    <li class="breadcrumb-item"><a href="https://apis.io/">Home</a></li>
+    <li class="breadcrumb-item"><a href="https://capabilities.apis.io/">Capabilities</a></li>
+    <li class="breadcrumb-item"><a href="https://capabilities.apis.io/categories/">Categories</a></li>
+    <li class="breadcrumb-item active" aria-current="page">{{ page.name }}</li>
+  </ol>
+</nav>
+
+<div class="cat-hero">
+  <div class="cat-overline">
+    Canonical capability {% if page.domain %}&middot; <span class="domain-badge">{{ page.domain }}</span>{% endif %}
+  </div>
+  <h1 class="cat-title">{{ page.name }}</h1>
+  {% if page.short %}<p class="cat-short">{{ page.short }}</p>{% endif %}
+  <div class="cat-stats">
+    <span><strong>{{ page.implementation_count }}</strong> capabilit{% if page.implementation_count == 1 %}y{% else %}ies{% endif %}</span>
+    <span><strong>{{ page.provider_count }}</strong> provider{% if page.provider_count == 1 %}{% else %}s{% endif %}</span>
+  </div>
+</div>
+
+{% if page.description %}
+<h3 class="section-title">About this category</h3>
+<div class="cat-desc">
+  {{ page.description | markdownify }}
+</div>
+{% endif %}
+
+{% if page.common_operations.size > 0 %}
+<h3 class="section-title">Common operations</h3>
+<ul class="op-list">
+  {% for op in page.common_operations %}<li>{{ op }}</li>{% endfor %}
+</ul>
+{% endif %}
+
+<h3 class="section-title" id="implementations">Implementations</h3>
+<table class="impl-table">
+  <thead>
+    <tr>
+      <th>Provider</th>
+      <th>Capability</th>
+      <th class="impl-num">Operations</th>
+      <th class="impl-num">Tools</th>
+      <th class="impl-num">APIs Consumed</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for impl in page.implementations %}
+    <tr>
+      <td class="impl-provider">
+        <a href="https://providers.apis.io/providers/{{ impl.provider_slug }}/">{{ impl.provider_name }}</a>
+      </td>
+      <td class="impl-cap">
+        <a href="{{ impl.capability_url }}">{{ impl.capability_name }}</a>
+      </td>
+      <td class="impl-num">{{ impl.operation_count }}</td>
+      <td class="impl-num">{{ impl.tool_count }}</td>
+      <td class="impl-num">{{ impl.consumed_api_count }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+{% if page.related.size > 0 %}
+<h3 class="section-title">Related categories</h3>
+<div>
+  {% for rel in page.related %}
+  <a class="related-pill" href="https://capabilities.apis.io/categories/{{ rel }}/">{{ rel | replace: '-', ' ' }}</a>
+  {% endfor %}
+</div>
+{% endif %}
+
+{% if page.aliases.size > 0 %}
+<p style="margin-top: 1.5rem; color: #6c757d; font-size: 0.85rem;">
+  Also known as: {% for a in page.aliases %}<code>{{ a }}</code>{% if forloop.last == false %}, {% endif %}{% endfor %}
+</p>
+{% endif %}

@@ -1,0 +1,181 @@
+#!/usr/bin/env python3
+"""Auto-suggest canonical categories for every capability YAML based on the
+seed taxonomy. Writes a review file at network/_data/category-suggestions.yml.
+Does NOT modify any provider YAMLs or the build pipeline."""
+import glob
+import os
+import re
+import sys
+from collections import Counter, defaultdict
+from pathlib import Path
+
+import yaml
+
+ROOT = Path(__file__).resolve().parent.parent.parent
+EVANGELIST = ROOT / "api-evangelist"
+TAXONOMY = ROOT / "network" / "_data" / "canonical-capabilities.yml"
+OUTPUT = ROOT / "network" / "_data" / "category-suggestions.yml"
+
+# Score weights.
+W_TAG = 4
+W_LABEL_KEYWORD = 3
+W_DESC_KEYWORD = 1
+W_TOOL_PATTERN = 2
+TOP_K = 3
+MIN_SCORE = 3
+
+
+def load_taxonomy():
+    with open(TAXONOMY) as f:
+        rows = yaml.safe_load(f)
+    matchers = []
+    for r in rows:
+        m = r.get("matchers") or {}
+        matchers.append({
+            "slug": r["slug"],
+            "name": r["name"],
+            "tags": {t.lower() for t in (m.get("tags") or [])},
+            "keywords": [k.lower() for k in (m.get("keywords") or [])],
+            "tool_patterns": [p.lower() for p in (m.get("tool_patterns") or [])],
+        })
+    return matchers
+
+
+def load_capability(path):
+    try:
+        with open(path) as f:
+            data = yaml.safe_load(f)
+    except (yaml.YAMLError, OSError):
+        return None
+    if not isinstance(data, dict):
+        return None
+    info = data.get("info")
+    if not isinstance(info, dict) or not info.get("label"):
+        return None
+    cap = data.get("capability")
+    tools = []
+    if isinstance(cap, dict):
+        for surface in cap.get("exposes") or []:
+            if not isinstance(surface, dict):
+                continue
+            for t in surface.get("tools") or []:
+                if isinstance(t, dict) and t.get("name"):
+                    tools.append(t["name"].lower())
+    parts = path.split(os.sep)
+    try:
+        idx = parts.index("api-evangelist")
+        provider = parts[idx + 1]
+    except ValueError:
+        provider = ""
+    return {
+        "provider": provider,
+        "slug": Path(path).stem,
+        "label": info.get("label", ""),
+        "description": info.get("description") or "",
+        "tags": [t for t in (info.get("tags") or []) if isinstance(t, str)],
+        "tools": tools,
+        "explicit_categories": info.get("categories") or [],
+    }
+
+
+def score_capability(cap, matcher):
+    score = 0
+    evidence = []
+    cap_tags_lower = {t.lower() for t in cap["tags"]}
+    tag_hits = sorted(cap_tags_lower & matcher["tags"])
+    if tag_hits:
+        score += W_TAG * len(tag_hits)
+        evidence.append("tags=" + ",".join(tag_hits))
+    label_lower = cap["label"].lower()
+    desc_lower = cap["description"].lower()
+    label_kws = []
+    desc_kws = []
+    for kw in matcher["keywords"]:
+        pat = rf"\b{re.escape(kw)}\b"
+        if re.search(pat, label_lower):
+            score += W_LABEL_KEYWORD
+            label_kws.append(kw)
+        elif re.search(pat, desc_lower):
+            score += W_DESC_KEYWORD
+            desc_kws.append(kw)
+    if label_kws:
+        evidence.append("label=" + ",".join(label_kws[:3]))
+    if desc_kws:
+        evidence.append("desc=" + ",".join(desc_kws[:2]))
+    tool_blob = " ".join(cap["tools"])
+    tool_hits = [tp for tp in matcher["tool_patterns"] if tp in tool_blob]
+    if tool_hits:
+        score += W_TOOL_PATTERN * len(tool_hits)
+        evidence.append("tools=" + ",".join(tool_hits[:3]))
+    return score, evidence
+
+
+def main():
+    matchers = load_taxonomy()
+    print(f"Loaded {len(matchers)} canonical capabilities")
+
+    paths = sorted(glob.glob(str(EVANGELIST / "*" / "capabilities" / "*.yaml")))
+    suggestions = []
+    no_match_count = 0
+    skipped = 0
+    by_top_cat = Counter()
+    by_provider_cat = defaultdict(set)
+
+    for p in paths:
+        cap = load_capability(p)
+        if not cap:
+            skipped += 1
+            continue
+        scores = []
+        for m in matchers:
+            s, ev = score_capability(cap, m)
+            if s >= MIN_SCORE:
+                scores.append((s, m["slug"], ev))
+        scores.sort(reverse=True)
+
+        entry = {
+            "provider": cap["provider"],
+            "slug": cap["slug"],
+            "label": cap["label"],
+            "tags": cap["tags"],
+        }
+        if cap["explicit_categories"]:
+            entry["already_set"] = cap["explicit_categories"]
+        if not scores:
+            entry["candidates"] = []
+            no_match_count += 1
+        else:
+            top = scores[:TOP_K]
+            entry["candidates"] = [
+                {"category": s[1], "score": s[0], "evidence": s[2]}
+                for s in top
+            ]
+            by_top_cat[top[0][1]] += 1
+            by_provider_cat[top[0][1]].add(cap["provider"])
+        suggestions.append(entry)
+
+    OUTPUT.parent.mkdir(parents=True, exist_ok=True)
+    header = (
+        "# Auto-suggested category mappings for review.\n"
+        f"# Generated by network/scripts/suggest-categories.py against {len(matchers)} canonical capabilities.\n"
+        f"# {len(suggestions)} capabilities scored, {no_match_count} with no match (likely off-taxonomy).\n"
+        f"# Score weights: tag={W_TAG}, label-kw={W_LABEL_KEYWORD}, desc-kw={W_DESC_KEYWORD}, tool-pattern={W_TOOL_PATTERN}\n"
+        f"# Min score threshold: {MIN_SCORE}; top-{TOP_K} candidates kept per capability.\n\n"
+    )
+    with open(OUTPUT, "w") as f:
+        f.write(header)
+        yaml.safe_dump(suggestions, f, sort_keys=False, allow_unicode=True, width=140)
+
+    print(f"\nWrote {OUTPUT.relative_to(ROOT)}")
+    print(f"  scored:    {len(suggestions)}")
+    print(f"  matched:   {len(suggestions) - no_match_count}")
+    print(f"  no-match:  {no_match_count}")
+    print(f"  skipped:   {skipped} (unparseable or no label)")
+
+    print("\nTop primary category by capability count (provider count in parens):")
+    for cat, count in by_top_cat.most_common():
+        print(f"  {count:>4}  {len(by_provider_cat[cat]):>4}p  {cat}")
+
+
+if __name__ == "__main__":
+    sys.exit(main() or 0)

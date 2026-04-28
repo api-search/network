@@ -35,10 +35,16 @@ SHARED_DIR = os.path.join(NETWORK_DIR, '_shared')
 PROVIDERS_DIR = os.path.join(ROOT_DIR, 'providers', '_providers')
 APIS_DIR = os.path.join(ROOT_DIR, 'apis', '_apis')
 CAPABILITIES_DIR = os.path.join(ROOT_DIR, 'capabilities', '_capabilities')
+CATEGORIES_DIR = os.path.join(ROOT_DIR, 'capabilities', '_categories')
 SCHEMAS_DIR = os.path.join(ROOT_DIR, 'schemas', '_schemas')
 ASYNCAPIS_DIR = os.path.join(ROOT_DIR, 'asyncapi', '_asyncapis')
 JSONLD_DIR = os.path.join(ROOT_DIR, 'json-ld', '_jsonld')
 RULES_DIR = os.path.join(ROOT_DIR, 'rules', '_rules')
+
+# Canonical capability taxonomy + suggestions for the category aggregation layer.
+CANONICAL_CAPS_PATH = os.path.join(NETWORK_DIR, '_data', 'canonical-capabilities.yml')
+CATEGORY_SUGGESTIONS_PATH = os.path.join(NETWORK_DIR, '_data', 'category-suggestions.yml')
+MIN_FALLBACK_SUGGESTION_SCORE = 5
 
 # Subdomain URLs for cross-linking
 SUBDOMAINS = {
@@ -226,7 +232,7 @@ def find_matching_workflow(cap_label, vocab_data):
     return None
 
 
-def process_provider(provider_dir, icon_manifest=None):
+def process_provider(provider_dir, icon_manifest=None, category_suggestions=None, category_implementations=None):
     """Process a single api-evangelist provider repo."""
     apis_yml_path = os.path.join(provider_dir, 'apis.yml')
     if not os.path.exists(apis_yml_path):
@@ -391,6 +397,10 @@ def process_provider(provider_dir, icon_manifest=None):
 
             search_terms = extract_capability_search_terms(cap_data, vocab_data, provider_tags)
 
+            cap_categories = resolve_capability_categories(
+                info, provider_slug, cap_slug, category_suggestions or {}
+            )
+
             cap_entry = {
                 'layout': 'capability',
                 'slug': cap_slug,
@@ -399,6 +409,7 @@ def process_provider(provider_dir, icon_manifest=None):
                 'provider_slug': provider_slug,
                 'provider_name': provider_name,
                 'tags': cap_tags,
+                'categories': cap_categories,
                 'operations': operations,
                 'tools': tools,
                 'personas': personas,
@@ -409,6 +420,21 @@ def process_provider(provider_dir, icon_manifest=None):
             cap_filepath = os.path.join(CAPABILITIES_DIR, provider_slug, f"{cap_slug}.md")
             write_frontmatter_file(cap_filepath, cap_entry)
             cap_entries.append(cap_entry)
+
+            if category_implementations is not None and cap_categories:
+                impl = {
+                    'provider_slug': provider_slug,
+                    'provider_name': provider_name,
+                    'capability_slug': cap_slug,
+                    'capability_name': cap_label,
+                    'capability_url': f"https://capabilities.apis.io/capabilities/{provider_slug}/{cap_slug}/",
+                    'operation_count': len(operations),
+                    'tool_count': len(tools),
+                    'consumed_api_count': len(consumed_apis),
+                    'tags': cap_tags,
+                }
+                for cat in cap_categories:
+                    category_implementations.setdefault(cat, []).append(impl)
 
         provider_data['capabilities'] = [
             {'slug': c['slug'], 'name': c['name'], 'description': c['description'][:200]}
@@ -805,12 +831,83 @@ def build_api_catalogs():
 
 def clear_collections():
     """Remove existing collection directories."""
-    for d in [PROVIDERS_DIR, APIS_DIR, CAPABILITIES_DIR, SCHEMAS_DIR,
-              ASYNCAPIS_DIR, JSONLD_DIR, RULES_DIR]:
+    for d in [PROVIDERS_DIR, APIS_DIR, CAPABILITIES_DIR, CATEGORIES_DIR,
+              SCHEMAS_DIR, ASYNCAPIS_DIR, JSONLD_DIR, RULES_DIR]:
         if os.path.exists(d):
             shutil.rmtree(d)
         os.makedirs(d, exist_ok=True)
     print("Cleared existing collections.")
+
+
+def load_canonical_capabilities():
+    """Load the seed taxonomy keyed by slug."""
+    if not os.path.exists(CANONICAL_CAPS_PATH):
+        return {}
+    rows = load_yaml(CANONICAL_CAPS_PATH) or []
+    return {r['slug']: r for r in rows if isinstance(r, dict) and r.get('slug')}
+
+
+def load_category_suggestions():
+    """Return {(provider_slug, cap_slug): [category_slug, ...]} from suggestions
+    file. Only the top candidate above MIN_FALLBACK_SUGGESTION_SCORE is used."""
+    if not os.path.exists(CATEGORY_SUGGESTIONS_PATH):
+        return {}
+    rows = load_yaml(CATEGORY_SUGGESTIONS_PATH) or []
+    out = {}
+    for r in rows:
+        if not isinstance(r, dict):
+            continue
+        cands = r.get('candidates') or []
+        chosen = []
+        for c in cands[:1]:
+            if isinstance(c, dict) and c.get('score', 0) >= MIN_FALLBACK_SUGGESTION_SCORE:
+                chosen.append(c['category'])
+        if chosen:
+            out[(r.get('provider', ''), r.get('slug', ''))] = chosen
+    return out
+
+
+def resolve_capability_categories(info, provider_slug, cap_slug, suggestions):
+    """Pick categories: explicit info.categories wins; else fall back to suggestions."""
+    explicit = info.get('categories') or []
+    if isinstance(explicit, list) and explicit:
+        return [c for c in explicit if isinstance(c, str)]
+    return suggestions.get((provider_slug, cap_slug), [])
+
+
+def build_category_pages(canonicals, implementations):
+    """Emit one Jekyll page per canonical capability that has implementations."""
+    os.makedirs(CATEGORIES_DIR, exist_ok=True)
+    pages = 0
+    total_impls = 0
+    for slug in sorted(canonicals.keys()):
+        canonical = canonicals[slug]
+        impls = sorted(
+            implementations.get(slug, []),
+            key=lambda i: (i['provider_slug'], i['capability_slug']),
+        )
+        if not impls:
+            continue
+        provider_count = len({i['provider_slug'] for i in impls})
+        page = {
+            'layout': 'category',
+            'slug': slug,
+            'name': canonical.get('name', slug),
+            'short': canonical.get('short', ''),
+            'description': canonical.get('description', ''),
+            'domain': canonical.get('domain', ''),
+            'common_operations': canonical.get('common_operations', []) or [],
+            'related': canonical.get('related', []) or [],
+            'aliases': canonical.get('aliases', []) or [],
+            'implementations': impls,
+            'implementation_count': len(impls),
+            'provider_count': provider_count,
+        }
+        write_frontmatter_file(os.path.join(CATEGORIES_DIR, f"{slug}.md"), page)
+        pages += 1
+        total_impls += len(impls)
+    print(f"Categories:   {pages} category pages, {total_impls} implementations")
+    return pages, total_impls
 
 
 def copy_shared_assets():
@@ -1000,19 +1097,35 @@ def main():
     # Clear and rebuild
     clear_collections()
 
+    # Load canonical capability taxonomy + auto-suggested fallback mappings.
+    canonical_capabilities = load_canonical_capabilities()
+    category_suggestions = load_category_suggestions()
+    category_implementations = {}
+    print(f"Canonical capabilities: {len(canonical_capabilities)} entries; "
+          f"{len(category_suggestions)} fallback suggestions loaded")
+
     providers = []
     total_apis = 0
     total_caps = 0
 
     for provider_dir in provider_dirs:
         try:
-            result = process_provider(provider_dir, icon_manifest)
+            result = process_provider(
+                provider_dir,
+                icon_manifest,
+                category_suggestions=category_suggestions,
+                category_implementations=category_implementations,
+            )
             if result:
                 providers.append(result)
                 total_apis += result.get('api_count', 0)
                 total_caps += len(result.get('capabilities', []))
         except Exception as e:
             print(f"  ERROR processing {os.path.basename(provider_dir)}: {e}")
+
+    # Generate cross-provider category pages.
+    if canonical_capabilities:
+        build_category_pages(canonical_capabilities, category_implementations)
 
     # Build vocabulary index -> vocabularies site
     vocab_index = build_vocabulary_index(provider_dirs)
@@ -1034,6 +1147,7 @@ def main():
     total_asyncapis = count_md(ASYNCAPIS_DIR)
     total_jsonld = count_md(JSONLD_DIR)
     total_rules = count_md(RULES_DIR)
+    total_categories = count_md(CATEGORIES_DIR)
 
     # Write stats to network _data for homepage counts
     network_data_dir = os.path.join(NETWORK_DIR, '_data')
@@ -1042,6 +1156,7 @@ def main():
         'providers': len(providers),
         'apis': total_apis,
         'capabilities': total_caps,
+        'categories': total_categories,
         'schemas': total_schemas,
         'asyncapis': total_asyncapis,
         'jsonld': total_jsonld,
@@ -1057,6 +1172,7 @@ def main():
     print(f"Providers:    {len(providers)}")
     print(f"APIs:         {total_apis}")
     print(f"Capabilities: {total_caps}")
+    print(f"Categories:   {total_categories}")
     print(f"Schemas:      {total_schemas}")
     print(f"AsyncAPIs:    {total_asyncapis}")
     print(f"JSON-LD:      {total_jsonld}")

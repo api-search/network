@@ -1,0 +1,525 @@
+# Seed taxonomy of canonical capabilities for the apis.io network.
+#
+# Each entry describes a cross-provider capability that multiple providers
+# implement (e.g., "object-storage" is implemented by S3, GCS, Azure Blob, etc.).
+# Per-provider capability YAMLs in api-evangelist/<provider>/capabilities/
+# can declare `info.categories: [<slug>, ...]` to be aggregated under these.
+#
+# Matchers drive auto-suggestion (suggest-categories.py); they are NOT used at
+# runtime once a capability has explicit `info.categories`.
+#
+# This file is currently consumed by suggest-categories.py only — the build
+# pipeline does not read it yet.
+
+- slug: analytics
+  name: Analytics
+  short: Analyze, query, and visualize datasets to surface insights.
+  description: |
+    Capabilities that ingest, transform, and query datasets to produce metrics,
+    reports, dashboards, or ad-hoc analyses. Distinguished from raw query/SQL
+    APIs by a focus on aggregation, summarization, and presentation.
+  domain: data
+  common_operations:
+    - run-query
+    - get-report
+    - list-reports
+    - list-dashboards
+    - list-metrics
+  matchers:
+    tags: [Analytics, Reporting, Business Intelligence, BI]
+    keywords: [analytics, reporting, dashboard, insights, business intelligence]
+    tool_patterns: [run-query, get-report, list-dashboards]
+  related: [data-engineering, monitoring]
+
+- slug: api-management
+  name: API Management
+  short: Manage API gateways, policies, rate limits, and developer portals.
+  description: |
+    Capabilities that operate API gateways and developer-platform infrastructure
+    — provisioning APIs, applying security and rate-limit policies, publishing
+    developer portals, and managing API products and consumers. Includes
+    Apigee, Kong, Tyk, AWS API Gateway, Mulesoft, and similar.
+  domain: developer-tools
+  common_operations:
+    - list-apis
+    - deploy-api
+    - list-policies
+    - get-rate-limit
+    - list-developers
+  matchers:
+    tags: [API Gateway, API Management, Apigee, Kong, Tyk, Developer Portal]
+    keywords: [api gateway, api management, rate limit, developer portal, api product]
+    tool_patterns: [deploy-api, list-policies, list-apis]
+  related: [ci-cd, identity-access]
+
+- slug: automation
+  name: Automation
+  short: Run scripted, scheduled, or event-driven workflows without human input.
+  description: |
+    Capabilities for orchestrating multi-step processes — runbooks, scheduled
+    jobs, RPA, workflow engines. Operations focus on triggering, scheduling,
+    and tracking automated executions.
+  domain: operations
+  common_operations:
+    - run-workflow
+    - schedule-task
+    - list-runs
+    - cancel-run
+  matchers:
+    tags: [Automation, Workflow Automation, RPA, Workflow]
+    keywords: [automation, automate, runbook, scheduled, scheduler]
+    tool_patterns: [run-workflow, schedule-task, trigger-run]
+  related: [ci-cd, data-engineering]
+
+- slug: ci-cd
+  name: CI/CD
+  short: Build, test, and deploy software through automated pipelines.
+  description: |
+    Continuous integration and continuous delivery — source-to-deployment
+    pipelines, build farms, release management. Operations focus on triggering
+    builds, inspecting pipeline state, and managing deployments.
+  domain: developer-tools
+  common_operations:
+    - trigger-build
+    - list-pipelines
+    - get-build
+    - list-deployments
+    - get-deployment
+  matchers:
+    tags: ["CI/CD", Continuous Integration, Continuous Deployment, DevOps, Pipeline, Build, Deploy]
+    keywords: ["ci/cd", build, pipeline, deployment, release, jenkins, github actions]
+    tool_patterns: [trigger-build, list-pipelines, list-deployments]
+  related: [container-orchestration, automation]
+
+- slug: collaboration
+  name: Collaboration
+  short: Coordinate work across teams via shared documents, channels, and spaces.
+  description: |
+    Capabilities for team productivity — shared documents, channels, comments,
+    presence, and co-editing. Distinguished from messaging by the focus on
+    persistent shared workspaces rather than transient messages.
+  domain: productivity
+  common_operations:
+    - list-channels
+    - list-documents
+    - share-document
+    - list-comments
+  matchers:
+    tags: [Collaboration, Productivity, Office, Team, Workspace]
+    keywords: [collaboration, workspace, channel, comment, share]
+    tool_patterns: [share-document, list-channels]
+  related: [messaging, document-processing]
+
+- slug: compliance
+  name: Compliance
+  short: Track, enforce, and audit conformance to regulatory and policy requirements.
+  description: |
+    Capabilities for compliance posture — audit trails, policy enforcement,
+    evidence collection, regulatory reporting (SOC2, HIPAA, PCI, GDPR).
+  domain: governance
+  common_operations:
+    - list-audit-logs
+    - list-policies
+    - run-assessment
+    - export-evidence
+  matchers:
+    tags: [Compliance, Audit, Governance, Regulatory]
+    keywords: [compliance, audit, governance, regulation, policy, hipaa, pci, gdpr, soc2]
+    tool_patterns: [list-audit-logs, list-policies, run-assessment]
+  related: [security, identity-access]
+
+- slug: container-orchestration
+  name: Container Orchestration
+  short: Schedule, scale, and operate containerized workloads.
+  description: |
+    Kubernetes-style or proprietary orchestrators that schedule containers
+    onto a fleet of nodes — pods, deployments, services, ingress, autoscaling.
+  domain: infrastructure
+  common_operations:
+    - list-clusters
+    - list-pods
+    - deploy-container
+    - scale-deployment
+  matchers:
+    tags: [Kubernetes, Containers, Container, Orchestration, EKS, AKS, GKE]
+    keywords: [kubernetes, container, orchestration, pod, cluster, kubectl]
+    tool_patterns: [list-clusters, list-pods, list-deployments]
+  related: [serverless, ci-cd]
+
+- slug: content-management
+  name: Content Management
+  short: Author, store, version, and deliver structured content and media assets.
+  description: |
+    CMS, headless CMS, and digital asset management — content authoring,
+    versioning, publishing workflows, asset libraries, and content delivery.
+    Distinguished from object-storage by the focus on editorial structure
+    (entries, fields, taxonomies) over raw binary storage.
+  domain: content
+  common_operations:
+    - list-assets
+    - upload-asset
+    - list-content-items
+    - publish-content
+    - list-collections
+  matchers:
+    tags: [Content, Content Management, CMS, DAM, Digital Asset Management, Media, Publishing, Headless CMS]
+    keywords: [content management, asset, cms, dam, publishing, headless, editorial]
+    tool_patterns: [list-assets, upload-asset, publish-content, list-collections]
+  related: [object-storage, collaboration]
+
+- slug: crm-sales
+  name: CRM & Sales
+  short: Manage customer accounts, contacts, deals, and sales pipelines.
+  description: |
+    Customer relationship management — accounts, contacts, leads, deals,
+    opportunities, and pipeline stages. Operations focus on tracking the
+    sales process from lead capture through close. Salesforce, HubSpot,
+    Pipedrive, ActiveCampaign, Zoho.
+  domain: sales
+  common_operations:
+    - list-contacts
+    - list-accounts
+    - list-deals
+    - list-opportunities
+    - update-deal-stage
+  matchers:
+    tags: [CRM, Sales, Salesforce, HubSpot, Deals, Accounts, Opportunities, Customer Relationship Management, Pipeline]
+    keywords: [crm, sales pipeline, deal, lead, opportunity, customer relationship, account]
+    tool_patterns: [list-contacts, list-deals, list-accounts, list-opportunities]
+  related: [customer-engagement, payments]
+
+- slug: customer-engagement
+  name: Customer Engagement
+  short: Run campaigns, segment audiences, and track customer interactions.
+  description: |
+    Marketing automation, lifecycle campaigns, audience segmentation, customer
+    experience tracking, and loyalty programs. Operations focus on reaching
+    customers across channels and measuring engagement, distinct from CRM's
+    pipeline focus and messaging's transactional sends.
+  domain: marketing
+  common_operations:
+    - send-campaign
+    - list-campaigns
+    - list-segments
+    - get-engagement-stats
+  matchers:
+    tags: [Customer Engagement, Marketing, Marketing Automation, Engagement, Customer Experience, CX, Loyalty, Campaigns]
+    keywords: [engagement, campaign, customer experience, marketing automation, segment, loyalty]
+    tool_patterns: [send-campaign, list-campaigns, list-segments]
+  related: [messaging, crm-sales]
+
+- slug: data-engineering
+  name: Data Engineering
+  short: Move, transform, and stage data through pipelines (ETL/ELT).
+  description: |
+    Capabilities for ingesting, transforming, and loading data — ETL/ELT
+    pipelines, change data capture, streaming ingestion, data integration.
+    Distinguished from analytics by the focus on movement and shape rather
+    than query and visualization.
+  domain: data
+  common_operations:
+    - run-pipeline
+    - list-jobs
+    - list-streams
+    - submit-statement
+  matchers:
+    tags: [Data Engineering, ETL, ELT, Data Pipeline, Data Integration, Data Management]
+    keywords: [etl, elt, pipeline, ingestion, transformation, data engineering, data integration, change data capture]
+    tool_patterns: [run-pipeline, list-streams, list-jobs]
+  related: [analytics, object-storage]
+
+- slug: document-processing
+  name: Document Processing
+  short: Extract, parse, generate, or convert documents (PDFs, scans, structured text).
+  description: |
+    OCR, PDF generation, document parsing, structured-data extraction, format
+    conversion. Operations focus on transforming opaque or semi-structured
+    documents into usable data.
+  domain: ai-ml
+  common_operations:
+    - extract-text
+    - parse-document
+    - generate-pdf
+    - convert-document
+  matchers:
+    tags: [Document, Document Processing, OCR, PDF, Document AI, Forms]
+    keywords: [document, ocr, pdf, parsing, extraction, form recognizer]
+    tool_patterns: [extract-text, parse-document, generate-pdf]
+  related: [machine-learning, object-storage]
+
+- slug: identity-access
+  name: Identity & Access
+  short: Manage users, roles, and authorization across systems.
+  description: |
+    Identity management, authentication, authorization, single sign-on,
+    role-based access control, federated identity. Often abbreviated IAM.
+  domain: security
+  common_operations:
+    - list-users
+    - create-user
+    - list-roles
+    - assign-role
+    - list-permissions
+  matchers:
+    tags: [Identity, Authentication, Authorization, IAM, Access Management, SSO, Identity Access]
+    keywords: [identity, authentication, authorization, sso, iam, role, permission, access management]
+    tool_patterns: [list-users, list-roles, assign-role, list-permissions]
+  related: [security, compliance]
+  aliases: [iam]
+
+- slug: incident-management
+  name: Incident Management
+  short: Detect, page, track, and resolve operational incidents.
+  description: |
+    Capabilities for SRE / on-call operations — incident creation, escalation
+    policies, paging, post-mortems, status pages. Often integrates with
+    monitoring for detection and ticketing for tracking.
+  domain: operations
+  common_operations:
+    - create-incident
+    - list-incidents
+    - page-on-call
+    - update-incident-status
+  matchers:
+    tags: [Incident Management, On-Call, Paging, SRE, Service Reliability, Ticketing, Alerting]
+    keywords: [incident, on-call, paging, alert, escalation, post-mortem]
+    tool_patterns: [create-incident, list-incidents, page-on-call]
+  related: [monitoring, collaboration]
+
+- slug: iot
+  name: IoT & Device Management
+  short: Register, configure, monitor, and ingest telemetry from connected devices.
+  description: |
+    Capabilities for fleets of connected devices — registration, configuration,
+    OTA updates, telemetry ingestion, edge compute coordination.
+  domain: infrastructure
+  common_operations:
+    - list-devices
+    - register-device
+    - get-telemetry
+    - send-command
+  matchers:
+    tags: [IoT, Internet of Things, Device Management, Edge, Connected Devices, Telematics]
+    keywords: [iot, device, telemetry, edge, sensor, connected device, fleet]
+    tool_patterns: [list-devices, register-device, get-telemetry]
+  related: [messaging, monitoring]
+
+- slug: machine-learning
+  name: Machine Learning & AI
+  short: Train, deploy, and run inference against ML models.
+  description: |
+    Capabilities for ML/AI services — model training, inference endpoints,
+    embeddings, fine-tuning, batch prediction. Includes managed model APIs
+    (LLMs, vision, speech) and ML-platform tooling.
+  domain: ai-ml
+  common_operations:
+    - invoke-model
+    - list-models
+    - create-model
+    - run-inference
+  matchers:
+    tags: [Machine Learning, ML, AI, Artificial Intelligence, MLOps, LLM, Embeddings]
+    keywords: [machine learning, model, inference, training, embedding, ai, llm, fine-tune]
+    tool_patterns: [invoke-model, list-models, create-prediction]
+  related: [analytics, document-processing]
+
+- slug: messaging
+  name: Messaging
+  short: Send transactional or marketing messages — SMS, email, push, in-app.
+  description: |
+    Outbound and inbound transactional and marketing messaging across SMS,
+    email, push notifications, voice, in-app. Operations focus on send,
+    track delivery, manage templates and recipients.
+  domain: communications
+  common_operations:
+    - send-message
+    - list-messages
+    - send-sms
+    - send-email
+    - send-notification
+  matchers:
+    tags: [Messaging, SMS, Email, Push Notifications, Chat, Notifications, Voice]
+    keywords: [messaging, sms, email, notification, push, send message, twilio, sendgrid]
+    tool_patterns: [send-message, send-sms, send-email, list-messages]
+  related: [collaboration, customer-engagement]
+
+- slug: monitoring
+  name: Monitoring & Observability
+  short: Collect, query, and alert on metrics, logs, and traces from running systems.
+  description: |
+    Capabilities for runtime visibility — metrics, logs, traces, alerts,
+    dashboards over operational data. Includes APM, infrastructure monitoring,
+    and observability platforms. Aliased to "observability" — same domain.
+  domain: operations
+  common_operations:
+    - list-alerts
+    - get-metric
+    - list-logs
+    - query-traces
+    - create-alert
+  matchers:
+    tags: [Monitoring, Observability, Logging, Logs, Metrics, Tracing, APM, Cloud Operations]
+    keywords: [monitoring, observability, logs, metric, alerting, traces, apm, telemetry]
+    tool_patterns: [list-alerts, get-metric, list-logs]
+  related: [incident-management, analytics]
+  aliases: [observability]
+
+- slug: object-storage
+  name: Object Storage
+  short: Store and retrieve binary objects in flat key-addressable namespaces.
+  description: |
+    Buckets, blobs, key-addressable opaque object stores. Operations are
+    typically PUT/GET/HEAD/DELETE plus listing, ACLs, lifecycle policies.
+    Implementations include S3, GCS, Azure Blob, Wasabi, B2.
+  domain: infrastructure
+  common_operations:
+    - put-object
+    - get-object
+    - list-objects
+    - delete-object
+    - copy-object
+  matchers:
+    tags: [Storage, Object Storage, Blob Storage, S3, Cloud Storage, Buckets]
+    keywords: [storage, bucket, blob, object, file storage]
+    tool_patterns: [list-buckets, list-objects, put-object, get-object]
+  related: [data-engineering, document-processing]
+
+- slug: payments
+  name: Payments & Billing
+  short: Process payments, manage subscriptions, issue invoices and refunds.
+  description: |
+    Card processing, ACH, wallets, subscription billing, invoicing, refunds.
+    Includes both gateway-level (Stripe, Adyen) and platform-level (Shopify,
+    Square) commerce APIs.
+  domain: commerce
+  common_operations:
+    - create-charge
+    - list-payments
+    - refund-payment
+    - create-subscription
+    - list-invoices
+  matchers:
+    tags: [Payments, Billing, Commerce, Subscriptions, Checkout, Invoicing]
+    keywords: [payment, billing, charge, invoice, subscription, refund, checkout]
+    tool_patterns: [create-charge, list-payments, refund-payment, create-subscription]
+  related: [identity-access, compliance]
+
+- slug: payroll-hr
+  name: Payroll & HR
+  short: Manage employees, time off, payroll runs, and benefits.
+  description: |
+    HRIS, payroll, time tracking, leave management, benefits administration,
+    and workforce management. Operations focus on the employee lifecycle
+    and money-out flows for compensation and benefits.
+  domain: hr
+  common_operations:
+    - list-employees
+    - run-payroll
+    - list-time-off
+    - list-benefits
+    - get-employee
+  matchers:
+    tags: [Payroll, HR, Human Resources, Workforce, Workforce Management, Absence Management, Leave Management, Benefits, Time Tracking, Onboarding]
+    keywords: [payroll, employee, workforce, hr, human resources, leave, benefit, time off, hris]
+    tool_patterns: [list-employees, run-payroll, list-time-off, list-benefits]
+  related: [recruiting-ats, identity-access]
+
+- slug: procurement-supply-chain
+  name: Procurement & Supply Chain
+  short: Manage purchase orders, vendors, sourcing, and logistics.
+  description: |
+    Procurement, supplier management, sourcing, contracts, purchase orders,
+    inventory, shipments, and supply chain logistics. Includes ERP-adjacent
+    procurement modules (SAP Ariba, Coupa, Oracle Procurement) and standalone
+    supply chain platforms.
+  domain: operations
+  common_operations:
+    - list-purchase-orders
+    - list-vendors
+    - list-suppliers
+    - list-shipments
+    - create-purchase-order
+  matchers:
+    tags: [Procurement, Supply Chain, Sourcing, Vendors, Suppliers, Logistics, Manufacturing, Purchasing, Ariba, SAP, Inventory]
+    keywords: [procurement, supply chain, vendor, supplier, sourcing, purchase order, logistics, shipment, inventory]
+    tool_patterns: [list-purchase-orders, list-vendors, list-suppliers, list-shipments]
+  related: [payments, content-management]
+
+- slug: recruiting-ats
+  name: Recruiting & ATS
+  short: Track candidates, jobs, and applications through hiring pipelines.
+  description: |
+    Applicant tracking systems and talent acquisition platforms — job
+    requisitions, candidate sourcing, applications, interview scheduling,
+    offer management. Greenhouse, Lever, Workable, SmartRecruiters.
+  domain: hr
+  common_operations:
+    - list-candidates
+    - list-jobs
+    - list-applications
+    - schedule-interview
+    - list-offers
+  matchers:
+    tags: [Recruiting, ATS, Applicant Tracking, Talent Acquisition, Hiring, Talent, Candidates]
+    keywords: [recruiting, candidate, applicant, hiring, talent acquisition, ats, requisition]
+    tool_patterns: [list-candidates, list-applications, schedule-interview]
+  related: [payroll-hr, identity-access]
+
+- slug: security
+  name: Security
+  short: Detect threats, manage vulnerabilities, and harden security posture.
+  description: |
+    Threat detection, vulnerability management, firewall and WAF rules,
+    secrets management, security posture assessment. Distinguished from
+    compliance by the focus on active defense rather than audit/policy.
+  domain: security
+  common_operations:
+    - list-vulnerabilities
+    - run-scan
+    - list-findings
+    - list-firewall-rules
+  matchers:
+    tags: [Security, InfoSec, Vulnerability, Threat, Firewall, WAF, Secrets, Cybersecurity]
+    keywords: [security, vulnerability, threat, firewall, waf, scanning, secret, encryption]
+    tool_patterns: [list-vulnerabilities, run-scan, list-findings]
+  related: [compliance, identity-access]
+
+- slug: serverless
+  name: Serverless Functions
+  short: Run code in response to events without managing servers.
+  description: |
+    Function-as-a-Service compute — short-lived event-triggered functions,
+    HTTP triggers, queue triggers, scheduled triggers. Includes AWS Lambda,
+    Azure Functions, GCP Cloud Functions, Cloudflare Workers.
+  domain: infrastructure
+  common_operations:
+    - invoke-function
+    - list-functions
+    - deploy-function
+    - get-function-logs
+  matchers:
+    tags: [Serverless, Functions, FaaS, Lambda, Function Apps]
+    keywords: [serverless, function, lambda, faas]
+    tool_patterns: [invoke-function, list-functions, deploy-function]
+  related: [container-orchestration, ci-cd]
+
+- slug: travel-booking
+  name: Travel & Booking
+  short: Search and book flights, hotels, cars, and travel packages.
+  description: |
+    Travel distribution and booking — GDS access (Amadeus, Sabre, Travelport),
+    hotel booking engines, airline APIs, car rental, and itinerary
+    management. Operations focus on availability search, booking creation,
+    and reservation lifecycle.
+  domain: travel
+  common_operations:
+    - search-flights
+    - search-hotels
+    - create-booking
+    - list-bookings
+    - get-itinerary
+  matchers:
+    tags: [Travel, Hotels, Flights, Booking, Amadeus, Sabre, Reservation, Tourism, Airlines, Trips]
+    keywords: [travel, flight, hotel, booking, reservation, itinerary, airline]
+    tool_patterns: [search-flights, search-hotels, create-booking, list-bookings]
+  related: [payments, customer-engagement]

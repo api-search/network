@@ -46,6 +46,9 @@ SITES = [
         'layout': 'capability',
         'permalink': '/capabilities/:path/',
         'description': 'Browse API capabilities and workflows across the APIs.io network.',
+        'extra_collections': [
+            {'name': 'categories', 'permalink': '/categories/:path/', 'layout': 'category'},
+        ],
     },
     {
         'repo': 'schemas',
@@ -168,20 +171,29 @@ def write_config(site_dir, site):
     ]
 
     if site['collection']:
-        lines.extend([
-            "collections:",
-            f"  {site['collection']}:",
-            "    output: true",
-            f"    permalink: {site['permalink']}",
-            "",
-            "defaults:",
-            "  - scope:",
-            '      path: ""',
-            f"      type: {site['collection_type']}",
-            "    values:",
-            f"      layout: {site['layout']}",
-            "",
-        ])
+        extra = site.get('extra_collections') or []
+        lines.append("collections:")
+        lines.append(f"  {site['collection']}:")
+        lines.append("    output: true")
+        lines.append(f"    permalink: {site['permalink']}")
+        for ec in extra:
+            lines.append(f"  {ec['name']}:")
+            lines.append("    output: true")
+            lines.append(f"    permalink: {ec['permalink']}")
+        lines.append("")
+        lines.append("defaults:")
+        lines.append("  - scope:")
+        lines.append('      path: ""')
+        lines.append(f"      type: {site['collection_type']}")
+        lines.append("    values:")
+        lines.append(f"      layout: {site['layout']}")
+        for ec in extra:
+            lines.append("  - scope:")
+            lines.append('      path: ""')
+            lines.append(f"      type: {ec['name']}")
+            lines.append("    values:")
+            lines.append(f"      layout: {ec['layout']}")
+        lines.append("")
 
     config_path = os.path.join(site_dir, '_config.yml')
     with open(config_path, 'w') as f:
@@ -291,6 +303,10 @@ def main():
         if site['layout']:
             copy_type_layout(site_dir, site['layout'])
             print(f"  Copied {site['layout']}.html layout")
+        # Copy any extra-collection layouts
+        for ec in site.get('extra_collections') or []:
+            copy_type_layout(site_dir, ec['layout'])
+            print(f"  Copied {ec['layout']}.html layout (extra: {ec['name']})")
 
         # Write config
         write_config(site_dir, site)

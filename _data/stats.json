@@ -2,6 +2,7 @@
   "providers": 1302,
   "apis": 6494,
   "capabilities": 746,
+  "categories": 26,
   "schemas": 42884,
   "asyncapis": 71,
   "jsonld": 2449,
