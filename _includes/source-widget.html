@@ -1,0 +1,77 @@
+{% comment %}
+  Source widget — renders the upstream YAML or JSON for a detail page with
+  Prism syntax highlighting and a copy button. Shows when the page has either
+  `source_yaml` or `source_json` set; respects optional `source_yaml_url` /
+  `source_json_url` for the "Raw" link.
+{% endcomment %}
+{% if page.source_yaml or page.source_json %}
+{% if page.source_yaml %}
+  {% assign _src = page.source_yaml %}
+  {% assign _lang = "yaml" %}
+  {% assign _url = page.source_yaml_url %}
+  {% assign _heading = "Source (YAML)" %}
+{% else %}
+  {% assign _src = page.source_json %}
+  {% assign _lang = "json" %}
+  {% assign _url = page.source_json_url %}
+  {% assign _heading = "Source (JSON)" %}
+{% endif %}
+{% if include.heading %}{% assign _heading = include.heading %}{% endif %}
+{% if include.filename %}{% assign _filename = include.filename %}{% else %}{% assign _filename = page.slug | append: "." | append: _lang %}{% endif %}
+
+<link rel="stylesheet" href="/assets/prism/prism-coy.min.css">
+<style>
+  .src-widget { background: #fdfdfd; border: 1px solid #e3e7ee; border-radius: 10px; overflow: hidden; margin-top: 0.75rem; }
+  .src-widget-head { display: flex; align-items: center; justify-content: space-between; padding: 0.6rem 0.9rem; background: #f8fafc; border-bottom: 1px solid #e3e7ee; font-size: 0.85rem; }
+  .src-widget-head .src-label { color: #475569; font-weight: 600; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 0.8rem; }
+  .src-widget-head .src-actions a, .src-widget-head .src-actions button { background: none; border: none; padding: 0.2em 0.55em; color: #1e40af; font-size: 0.8rem; font-weight: 500; cursor: pointer; text-decoration: none; border-radius: 4px; }
+  .src-widget-head .src-actions a:hover, .src-widget-head .src-actions button:hover { background: #eef2f7; }
+  .src-widget pre[class*="language-"] { margin: 0; padding: 1rem 1.2rem; background: #fdfdfd; box-shadow: none; border: none; max-height: 540px; overflow: auto; font-size: 0.82rem; line-height: 1.5; }
+  .src-widget pre[class*="language-"] > code { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+  .src-widget pre[class*="language-"]::before, .src-widget pre[class*="language-"]::after { display: none; }
+  .src-widget .token.key, .src-widget .token.property, .src-widget .token.atrule { color: #1e40af; font-weight: 600; }
+  .src-widget .token.string { color: #047857; }
+  .src-widget .token.number, .src-widget .token.boolean, .src-widget .token.null { color: #b45309; }
+  .src-widget .token.comment { color: #94a3b8; font-style: italic; }
+  .src-widget .token.punctuation, .src-widget .token.operator { color: #64748b; }
+  .src-widget .token.tag { color: #7c3aed; }
+  .src-widget .token.anchor, .src-widget .token.alias { color: #be185d; }
+  .src-copied { color: #047857 !important; }
+</style>
+<h3 class="section-title" id="source">{{ _heading }}</h3>
+<div class="src-widget" data-src-widget>
+  <div class="src-widget-head">
+    <span class="src-label">{{ _filename }}</span>
+    <span class="src-actions">
+      {% if _url %}<a href="{{ _url }}" target="_blank" rel="noopener">Raw &uarr;</a>{% endif %}
+      <button type="button" data-src-copy>Copy</button>
+    </span>
+  </div>
+  <pre class="language-{{ _lang }}"><code class="language-{{ _lang }}">{{ _src | xml_escape }}</code></pre>
+</div>
+<script src="/assets/prism/prism-core.min.js" defer></script>
+<script src="/assets/prism/prism-yaml.min.js" defer></script>
+<script src="/assets/prism/prism-json.min.js" defer></script>
+<script>
+  (function () {
+    if (window.__srcWidgetInit) return;
+    window.__srcWidgetInit = true;
+    document.addEventListener('DOMContentLoaded', function () {
+      document.querySelectorAll('[data-src-copy]').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var widget = btn.closest('[data-src-widget]');
+          if (!widget) return;
+          var code = widget.querySelector('code');
+          if (!code) return;
+          navigator.clipboard.writeText(code.textContent).then(function () {
+            var orig = btn.textContent;
+            btn.textContent = 'Copied';
+            btn.classList.add('src-copied');
+            setTimeout(function () { btn.textContent = orig; btn.classList.remove('src-copied'); }, 1500);
+          });
+        });
+      });
+    });
+  })();
+</script>
+{% endif %}

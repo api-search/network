@@ -272,6 +272,8 @@ layout: default
   {% if number_of_tags > 0 %},"keywords": {{ page.tags | join: ', ' | jsonify }}{% endif %}
 }
 </script>
+{% include source-widget.html heading="API entry from apis.yml" %}
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",

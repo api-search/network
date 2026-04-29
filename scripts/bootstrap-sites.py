@@ -131,12 +131,20 @@ SITES = [
 
 
 def copy_shared(site_dir):
-    """Copy shared layouts and assets to site."""
+    """Copy shared layouts, includes, and assets to site."""
     # Layouts
     shared_layouts = os.path.join(SHARED_DIR, '_layouts')
     site_layouts = os.path.join(site_dir, '_layouts')
     os.makedirs(site_layouts, exist_ok=True)
     shutil.copy2(os.path.join(shared_layouts, 'default.html'), os.path.join(site_layouts, 'default.html'))
+
+    # Includes (Jekyll partials shared across subdomains)
+    network_includes = os.path.join(NETWORK_DIR, '_includes')
+    site_includes = os.path.join(site_dir, '_includes')
+    if os.path.isdir(network_includes):
+        if os.path.exists(site_includes):
+            shutil.rmtree(site_includes)
+        shutil.copytree(network_includes, site_includes)
 
     # Assets
     shared_assets = os.path.join(SHARED_DIR, 'assets')

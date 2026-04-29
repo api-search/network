@@ -46,6 +46,27 @@ CANONICAL_CAPS_PATH = os.path.join(NETWORK_DIR, '_data', 'canonical-capabilities
 CATEGORY_SUGGESTIONS_PATH = os.path.join(NETWORK_DIR, '_data', 'category-suggestions.yml')
 MIN_FALLBACK_SUGGESTION_SCORE = 5
 
+# Inline source-widget content cap. Embeds over this size show a truncation
+# notice plus the source URL — keeps the schemas repo from ballooning when a
+# few specs (Salesforce metadata, etc.) are multi-megabyte.
+SOURCE_WIDGET_MAX_BYTES = 32 * 1024
+
+
+def cap_source(text, source_url):
+    """Truncate inline source for the widget when oversized; keep the link."""
+    if not text:
+        return text
+    raw = text.encode('utf-8', errors='replace')
+    if len(raw) <= SOURCE_WIDGET_MAX_BYTES:
+        return text
+    head = raw[:SOURCE_WIDGET_MAX_BYTES].decode('utf-8', errors='replace')
+    notice = (
+        f"\n\n# --- truncated at {SOURCE_WIDGET_MAX_BYTES // 1024} KB "
+        f"({len(raw) // 1024} KB total) ---\n"
+        f"# Full source: {source_url}\n"
+    )
+    return head + notice
+
 # Subdomain URLs for cross-linking
 SUBDOMAINS = {
     'network': 'https://apis.io',
@@ -328,6 +349,13 @@ def process_provider(provider_dir, icon_manifest=None, category_suggestions=None
                 p['url'] = f"{github_raw_base}/{url}"
             resolved_properties.append(p)
 
+        api_source_url = f"https://raw.githubusercontent.com/api-evangelist/{provider_slug}/refs/heads/main/apis.yml"
+        try:
+            api_yaml_str = yaml.dump(api, default_flow_style=False, allow_unicode=True, sort_keys=False, width=100)
+            api_yaml_str = cap_source(api_yaml_str, api_source_url)
+        except Exception:
+            api_yaml_str = ''
+
         api_data = {
             'layout': 'api',
             'aid': api_aid,
@@ -341,6 +369,8 @@ def process_provider(provider_dir, icon_manifest=None, category_suggestions=None
             'baseURL': api.get('baseURL', ''),
             'tags': api.get('tags', []),
             'properties': resolved_properties,
+            'source_yaml': api_yaml_str,
+            'source_yaml_url': f"https://raw.githubusercontent.com/api-evangelist/{provider_slug}/refs/heads/main/apis.yml",
         }
 
         api_filepath = os.path.join(APIS_DIR, provider_slug, f"{api_slug}.md")
@@ -401,12 +431,12 @@ def process_provider(provider_dir, icon_manifest=None, category_suggestions=None
                 info, provider_slug, cap_slug, category_suggestions or {}
             )
 
+            source_yaml_url = f"https://raw.githubusercontent.com/api-evangelist/{provider_slug}/refs/heads/main/capabilities/{cap_filename}"
             try:
                 with open(cap_file) as fh:
-                    raw_yaml = fh.read()
+                    raw_yaml = cap_source(fh.read(), source_yaml_url)
             except OSError:
                 raw_yaml = ''
-            source_yaml_url = f"https://raw.githubusercontent.com/api-evangelist/{provider_slug}/refs/heads/main/capabilities/{cap_filename}"
 
             cap_entry = {
                 'layout': 'capability',
@@ -482,6 +512,13 @@ def process_provider(provider_dir, icon_manifest=None, category_suggestions=None
                         'description': ''
                     })
 
+            schema_source_url = f"https://raw.githubusercontent.com/api-evangelist/{provider_slug}/refs/heads/main/json-schema/{schema_filename}"
+            try:
+                with open(schema_file) as fh:
+                    raw_schema = cap_source(fh.read(), schema_source_url)
+            except OSError:
+                raw_schema = ''
+
             schema_entry = {
                 'layout': 'schema',
                 'slug': schema_slug,
@@ -493,6 +530,8 @@ def process_provider(provider_dir, icon_manifest=None, category_suggestions=None
                 'properties_list': properties_list,
                 'tags': provider_tags,
                 'schema_file': f"json-schema/{schema_filename}",
+                'source_json': raw_schema,
+                'source_json_url': schema_source_url,
             }
 
             schema_filepath = os.path.join(SCHEMAS_DIR, provider_slug, f"{schema_slug}.md")
@@ -554,6 +593,13 @@ def process_provider(provider_dir, icon_manifest=None, category_suggestions=None
 
             github_raw_base = f"https://raw.githubusercontent.com/api-evangelist/{provider_slug}/refs/heads/main"
 
+            asyncapi_source_url = f"{github_raw_base}/asyncapi/{asyncapi_filename}"
+            try:
+                with open(asyncapi_file) as fh:
+                    raw_async = cap_source(fh.read(), asyncapi_source_url)
+            except OSError:
+                raw_async = ''
+
             asyncapi_entry = {
                 'layout': 'asyncapi',
                 'slug': asyncapi_slug,
@@ -568,6 +614,8 @@ def process_provider(provider_dir, icon_manifest=None, category_suggestions=None
                 'servers': servers,
                 'spec_file': f"asyncapi/{asyncapi_filename}",
                 'spec_url': f"{github_raw_base}/asyncapi/{asyncapi_filename}",
+                'source_yaml': raw_async,
+                'source_yaml_url': asyncapi_source_url,
             }
 
             asyncapi_filepath = os.path.join(ASYNCAPIS_DIR, provider_slug, f"{asyncapi_slug}.md")
@@ -629,6 +677,13 @@ def process_provider(provider_dir, icon_manifest=None, category_suggestions=None
 
             github_raw_base = f"https://raw.githubusercontent.com/api-evangelist/{provider_slug}/refs/heads/main"
 
+            jsonld_source_url = f"{github_raw_base}/json-ld/{jsonld_filename}"
+            try:
+                with open(jsonld_file) as fh:
+                    raw_jsonld = cap_source(fh.read(), jsonld_source_url)
+            except OSError:
+                raw_jsonld = ''
+
             jsonld_entry = {
                 'layout': 'jsonld',
                 'slug': jsonld_slug,
@@ -644,6 +699,8 @@ def process_provider(provider_dir, icon_manifest=None, category_suggestions=None
                 'property_count': len(properties),
                 'context_file': f"json-ld/{jsonld_filename}",
                 'context_url': f"{github_raw_base}/json-ld/{jsonld_filename}",
+                'source_json': raw_jsonld,
+                'source_json_url': jsonld_source_url,
             }
 
             jsonld_filepath = os.path.join(JSONLD_DIR, provider_slug, f"{jsonld_slug}.md")
@@ -713,6 +770,15 @@ def process_provider(provider_dir, icon_manifest=None, category_suggestions=None
                 'rules_url': f"{github_raw_base}/rules/{rules_filename}",
             }
 
+            rules_source_url = f"{github_raw_base}/rules/{rules_filename}"
+            try:
+                with open(rules_file) as fh:
+                    raw_rules_text = cap_source(fh.read(), rules_source_url)
+            except OSError:
+                raw_rules_text = ''
+            rules_entry['source_yaml'] = raw_rules_text
+            rules_entry['source_yaml_url'] = rules_source_url
+
             rules_filepath = os.path.join(RULES_DIR, provider_slug, f"{rules_slug}.md")
             write_frontmatter_file(rules_filepath, rules_entry)
             rules_entries.append(rules_entry)
@@ -726,6 +792,17 @@ def process_provider(provider_dir, icon_manifest=None, category_suggestions=None
     # Apply icon override from manifest
     if icon_manifest and provider_slug in icon_manifest:
         provider_data['image'] = f"/assets/icons/{provider_slug}.png"
+
+    # Embed source apis.yml for the YAML widget (size-capped for big files)
+    provider_source_url = (
+        f"https://raw.githubusercontent.com/api-evangelist/{provider_slug}/refs/heads/main/apis.yml"
+    )
+    try:
+        with open(apis_yml_path) as fh:
+            provider_data['source_yaml'] = cap_source(fh.read(), provider_source_url)
+    except OSError:
+        provider_data['source_yaml'] = ''
+    provider_data['source_yaml_url'] = provider_source_url
 
     # Write provider file once with all data
     write_frontmatter_file(provider_filepath, provider_data)
