@@ -28,6 +28,9 @@
   .src-widget { background: #fdfdfd; border: 1px solid #e3e7ee; border-radius: 10px; overflow: hidden; margin-top: 0.75rem; }
   .src-widget-head { display: flex; align-items: center; gap: 0.5rem; padding: 0.55rem 0.85rem; background: #f8fafc; border-bottom: 1px solid #e3e7ee; flex-wrap: wrap; }
   .src-label { color: #475569; font-weight: 600; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 0.8rem; flex: 0 0 auto; }
+  .src-picker { flex: 0 0 auto; max-width: 360px; padding: 0.3em 0.55em; border: 1px solid #cbd5e1; border-radius: 4px; background: #fff; font-size: 0.78rem; color: #1a1a2e; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; cursor: pointer; }
+  .src-picker:focus { outline: none; border-color: #1e40af; box-shadow: 0 0 0 2px rgba(30, 64, 175, 0.15); }
+  .src-loading { color: #94a3b8; font-style: italic; padding: 1rem; }
   .src-search { flex: 1 1 200px; min-width: 140px; }
   .src-search input { width: 100%; padding: 0.3em 0.6em; border: 1px solid #cbd5e1; border-radius: 4px; font-size: 0.8rem; background: #fff; color: #1a1a2e; }
   .src-search input:focus { outline: none; border-color: #1e40af; box-shadow: 0 0 0 2px rgba(30, 64, 175, 0.15); }
@@ -60,7 +63,16 @@
 <h3 class="section-title" id="source">{{ _heading }}</h3>
 <div class="src-widget" data-src-widget data-original-lang="{{ _lang }}" data-current-lang="{{ _lang }}" data-original-filename="{{ _filename }}">
   <div class="src-widget-head">
+    {% if page.api_specs and page.api_specs.size > 0 %}
+    <select class="src-picker" data-src-picker aria-label="Choose source">
+      <option value="" data-format="{{ _lang }}" data-filename="{{ _filename }}" data-heading="{{ _heading }}" selected>{{ _filename }}</option>
+      {% for spec in page.api_specs %}
+      <option value="{{ spec.url }}" data-url="{{ spec.url }}" data-format="{{ spec.format }}" data-filename="{{ spec.filename }}" data-heading="{{ spec.spec_type }} Specification">{{ spec.label }} — {{ spec.spec_type }}</option>
+      {% endfor %}
+    </select>
+    {% else %}
     <span class="src-label" data-src-filename>{{ _filename }}</span>
+    {% endif %}
     <span class="src-search">
       <input type="search" data-src-search placeholder="Search in source… (n / N to navigate)" aria-label="Search source">
     </span>
@@ -68,7 +80,7 @@
       <button type="button" data-src-toggle data-target="yaml" aria-label="View as YAML">YAML</button>
       <button type="button" data-src-toggle data-target="json" aria-label="View as JSON">JSON</button>
       <button type="button" data-src-download aria-label="Download source">Download</button>
-      {% if _url %}<a href="{{ _url }}" target="_blank" rel="noopener">Raw &uarr;</a>{% endif %}
+      {% if _url %}<a data-src-raw href="{{ _url }}" target="_blank" rel="noopener">Raw &uarr;</a>{% endif %}
       <button type="button" data-src-copy>Copy</button>
     </span>
   </div>
@@ -92,6 +104,11 @@
       var downloadBtn = widget.querySelector('[data-src-download]');
       var copyBtn = widget.querySelector('[data-src-copy]');
       var fileLabel = widget.querySelector('[data-src-filename]');
+      var picker = widget.querySelector('[data-src-picker]');
+      var rawLink = widget.querySelector('[data-src-raw]');
+      var headingEl = widget.previousElementSibling && widget.previousElementSibling.tagName === 'H3'
+        ? widget.previousElementSibling : null;
+      var fetchedCache = {};
 
       // Original raw text — we always re-render from this so toggles + searches don't compound.
       var originalLang = widget.dataset.originalLang;
@@ -114,9 +131,14 @@
       }
 
       function updateFilenameForLang() {
-        var base = originalFilename.replace(/\.(ya?ml|json)$/i, '');
+        if (!fileLabel) return;
+        var base = (currentSourceFilename || originalFilename).replace(/\.(ya?ml|json)$/i, '');
         fileLabel.textContent = base + '.' + currentLang;
       }
+
+      var currentSourceFilename = originalFilename;
+      var currentSourceUrl = null;
+      if (rawLink) currentSourceUrl = rawLink.getAttribute('href');
 
       function setLangContent(lang, text) {
         currentLang = lang;
@@ -238,6 +260,54 @@
           setTimeout(function () { copyBtn.textContent = orig; copyBtn.classList.remove('src-copied'); }, 1500);
         });
       });
+
+      // ---- Picker (provider pages with multiple specs) ----
+      function applySource(text, lang, filename, url, heading) {
+        currentSourceFilename = filename || originalFilename;
+        currentSourceUrl = url || null;
+        if (rawLink) {
+          if (url) { rawLink.setAttribute('href', url); rawLink.style.display = ''; }
+          else { rawLink.style.display = 'none'; }
+        }
+        if (headingEl && heading) headingEl.textContent = heading;
+        setLangContent(lang, text);
+      }
+
+      if (picker) {
+        picker.addEventListener('change', function () {
+          var opt = picker.options[picker.selectedIndex];
+          var url = opt.dataset.url;
+          var fmt = opt.dataset.format || 'yaml';
+          var fname = opt.dataset.filename || '';
+          var heading = opt.dataset.heading || '';
+          if (!url) {
+            // Original embedded source
+            applySource(originalText, originalLang, originalFilename, picker.options[0].dataset.url || null, picker.options[0].dataset.heading || '');
+            return;
+          }
+          if (fetchedCache[url]) {
+            applySource(fetchedCache[url], fmt, fname, url, heading);
+            return;
+          }
+          codeEl.textContent = 'Loading ' + fname + '…';
+          codeEl.className = '';
+          preEl.className = '';
+          fetch(url).then(function (r) {
+            if (!r.ok) throw new Error('HTTP ' + r.status);
+            return r.text();
+          }).then(function (text) {
+            fetchedCache[url] = text;
+            applySource(text, fmt, fname, url, heading);
+          }).catch(function (err) {
+            codeEl.textContent = 'Could not load: ' + err.message;
+          });
+        });
+        // Stash the default option's url so we can restore "Raw" link when reset.
+        if (rawLink && picker.options[0]) {
+          picker.options[0].dataset.url = rawLink.getAttribute('href') || '';
+          picker.options[0].dataset.heading = (headingEl ? headingEl.textContent : '') || '';
+        }
+      }
 
       // Initial state
       setActiveToggle();

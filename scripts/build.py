@@ -852,6 +852,31 @@ def process_provider(provider_dir, icon_manifest=None, category_suggestions=None
     except OSError:
         provider_data['source_yaml'] = ''
     provider_data['source_yaml_url'] = provider_source_url
+    provider_data['source_filename'] = 'apis.yml'
+
+    # Picker: every API that has its own OpenAPI/AsyncAPI/Postman spec gets
+    # listed so the widget can swap between them on demand. Specs are NOT
+    # embedded inline — the widget fetches the URL when the user picks one.
+    api_specs = []
+    for entry in api_entries:
+        is_json = 'source_json_url' in entry
+        spec_url = entry.get('source_json_url') if is_json else entry.get('source_yaml_url')
+        spec_filename = entry.get('source_filename') or ''
+        # skip APIs that fell back to apis.yml entry (no real spec)
+        if not spec_url or not spec_filename or spec_filename == 'apis.yml':
+            continue
+        spec_heading = entry.get('source_heading') or ''
+        spec_type = spec_heading.split(' ')[0] if spec_heading else ''
+        api_specs.append({
+            'slug': entry.get('slug', ''),
+            'label': entry.get('name', entry.get('slug', '')),
+            'spec_type': spec_type,
+            'format': 'json' if is_json else 'yaml',
+            'url': spec_url,
+            'filename': spec_filename,
+        })
+    if api_specs:
+        provider_data['api_specs'] = api_specs
 
     # Write provider file once with all data
     write_frontmatter_file(provider_filepath, provider_data)
