@@ -10,17 +10,27 @@
     <link rel="api-catalog" href="https://apis.apis.io/.well-known/api-catalog" type="application/linkset+json">
     <link rel="agent-skills" href="https://apis.io/skills/" type="application/json">
 
+    {% if page.image %}{% assign _og_image = page.image | absolute_url %}{% else %}{% assign _og_image = site.image %}{% endif %}
+    {% if page.layout == "post" %}{% assign _og_type = "article" %}{% else %}{% assign _og_type = "website" %}{% endif %}
+
     <!-- Open Graph -->
     <meta property="og:title" content="{% if page.title %}{{ page.title }} | {{ site.name }}{% elsif page.name %}{{ page.name }} | {{ site.name }}{% else %}{{ site.name }}{% endif %}">
     <meta property="og:description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 200 }}{% else %}{{ site.description }}{% endif %}">
     <meta property="og:url" content="{{ page.url | absolute_url }}">
     <meta property="og:site_name" content="{{ site.name }}">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="{{ site.image }}">
+    <meta property="og:type" content="{{ _og_type }}">
+    <meta property="og:image" content="{{ _og_image }}">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="{% if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}">
+    {% if page.layout == "post" and page.date %}<meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">{% endif %}
+    {% if page.layout == "post" and page.tags %}{% for tag in page.tags %}<meta property="article:tag" content="{{ tag }}">
+    {% endfor %}{% endif %}
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="{{ site.image }}">
+    <meta name="twitter:image" content="{{ _og_image }}">
+    <meta name="twitter:image:alt" content="{% if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}">
     <meta name="twitter:title" content="{% if page.title %}{{ page.title }} | {{ site.name }}{% elsif page.name %}{{ page.name }} | {{ site.name }}{% else %}{{ site.name }}{% endif %}">
     <meta name="twitter:description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 200 }}{% else %}{{ site.description }}{% endif %}">
 

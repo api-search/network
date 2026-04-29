@@ -159,7 +159,7 @@ def write_config(site_dir, site):
     lines = [
         f"name: {site['name']}",
         f"description: {site['description']}",
-        "image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg",
+        "image: https://apis.io/assets/branding/apisio-social-card.png",
         f"url: https://{site['subdomain']}",
         "",
         "node: website",
