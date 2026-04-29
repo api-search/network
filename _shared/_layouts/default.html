@@ -36,7 +36,8 @@
     <style>
       body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; color: #333; }
       .navbar { padding: 0.75rem 0; }
-      .navbar-brand { font-weight: 700; font-size: 1.4rem; letter-spacing: -0.5px; }
+      .navbar-brand { font-weight: 700; font-size: 1.4rem; letter-spacing: -0.5px; padding-top: 0; padding-bottom: 0; }
+      .navbar-brand img { display: block; height: 28px; width: auto; }
       .nav-link { font-size: 0.95rem; padding: 0.5rem 1rem !important; }
       .container.my-5 { max-width: 960px; }
       .footer { background-color: #f8f9fa; border-top: 1px solid #e9ecef; }
@@ -69,7 +70,7 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
-        <a class="navbar-brand" href="https://apis.io/">APIs.io</a>
+        <a class="navbar-brand" href="https://apis.io/" aria-label="apis.io home"><img src="/assets/branding/apisio-wordmark-white.png" alt="apis.io"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
