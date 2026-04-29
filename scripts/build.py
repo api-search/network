@@ -636,6 +636,8 @@ def process_provider(provider_dir, icon_manifest=None, category_suggestions=None
                 'schema_file': f"json-schema/{schema_filename}",
                 'source_json': raw_schema,
                 'source_json_url': schema_source_url,
+                'source_heading': 'JSON Schema',
+                'source_filename': schema_filename,
             }
 
             schema_filepath = os.path.join(SCHEMAS_DIR, provider_slug, f"{schema_slug}.md")
@@ -720,6 +722,8 @@ def process_provider(provider_dir, icon_manifest=None, category_suggestions=None
                 'spec_url': f"{github_raw_base}/asyncapi/{asyncapi_filename}",
                 'source_yaml': raw_async,
                 'source_yaml_url': asyncapi_source_url,
+                'source_heading': 'AsyncAPI Specification',
+                'source_filename': asyncapi_filename,
             }
             if provider_api_specs:
                 asyncapi_entry['api_specs'] = provider_api_specs
@@ -807,6 +811,8 @@ def process_provider(provider_dir, icon_manifest=None, category_suggestions=None
                 'context_url': f"{github_raw_base}/json-ld/{jsonld_filename}",
                 'source_json': raw_jsonld,
                 'source_json_url': jsonld_source_url,
+                'source_heading': 'JSON-LD Document',
+                'source_filename': jsonld_filename,
             }
             if provider_api_specs:
                 jsonld_entry['api_specs'] = provider_api_specs
@@ -886,6 +892,8 @@ def process_provider(provider_dir, icon_manifest=None, category_suggestions=None
                 raw_rules_text = ''
             rules_entry['source_yaml'] = raw_rules_text
             rules_entry['source_yaml_url'] = rules_source_url
+            rules_entry['source_heading'] = 'Spectral Ruleset'
+            rules_entry['source_filename'] = rules_filename
             if provider_api_specs:
                 rules_entry['api_specs'] = provider_api_specs
 
@@ -914,6 +922,7 @@ def process_provider(provider_dir, icon_manifest=None, category_suggestions=None
         provider_data['source_yaml'] = ''
     provider_data['source_yaml_url'] = provider_source_url
     provider_data['source_filename'] = 'apis.yml'
+    provider_data['source_heading'] = 'Sources'
 
     # Picker: reuse the provider_api_specs list computed earlier so the
     # widget can swap between apis.yml and per-API specs on demand.
