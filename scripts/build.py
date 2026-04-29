@@ -469,10 +469,39 @@ def process_provider(provider_dir, icon_manifest=None, category_suggestions=None
 
             capability_block = cap_data.get('capability', {})
             consumed_apis = []
+            cap_github_raw_base = f"https://raw.githubusercontent.com/api-evangelist/{provider_slug}/refs/heads/main"
+            cap_specs = []
             for consumed in capability_block.get('consumes', []):
                 import_name = consumed.get('import', '')
-                if import_name:
-                    consumed_apis.append(import_name)
+                if not import_name:
+                    continue
+                consumed_apis.append(import_name)
+                # Try to surface the upstream OpenAPI for this consumed import.
+                location = consumed.get('location', '') or ''
+                basename = os.path.splitext(os.path.basename(location))[0] if location else ''
+                if not basename:
+                    continue
+                for rel in (
+                    f"openapi/{basename}.yml",
+                    f"openapi/{basename}.yaml",
+                    f"openapi/{basename}.json",
+                    f"openapi/{basename}-openapi.yml",
+                    f"openapi/{basename}-openapi.yaml",
+                    f"openapi/{basename}-openapi.json",
+                ):
+                    local_path = os.path.join(provider_dir, rel)
+                    if not os.path.exists(local_path):
+                        continue
+                    fmt = 'json' if rel.endswith('.json') else 'yaml'
+                    cap_specs.append({
+                        'slug': import_name,
+                        'label': import_name,
+                        'spec_type': 'OpenAPI',
+                        'format': fmt,
+                        'url': f"{cap_github_raw_base}/{rel}",
+                        'filename': os.path.basename(rel),
+                    })
+                    break
 
             search_terms = extract_capability_search_terms(cap_data, vocab_data, provider_tags)
 
@@ -503,7 +532,11 @@ def process_provider(provider_dir, icon_manifest=None, category_suggestions=None
                 'search_terms': search_terms,
                 'source_yaml': raw_yaml,
                 'source_yaml_url': source_yaml_url,
+                'source_filename': cap_filename,
+                'source_heading': 'Capability Spec',
             }
+            if cap_specs:
+                cap_entry['api_specs'] = cap_specs
 
             cap_filepath = os.path.join(CAPABILITIES_DIR, provider_slug, f"{cap_slug}.md")
             write_frontmatter_file(cap_filepath, cap_entry)
