@@ -426,6 +426,28 @@ def process_provider(provider_dir, icon_manifest=None, category_suggestions=None
         write_frontmatter_file(api_filepath, api_data)
         api_entries.append(api_data)
 
+    # Compute the provider's API spec picker list once and share it across
+    # entity types (provider, asyncapi, jsonld, rules) that benefit from it.
+    # Schemas are excluded — too many per provider × too many schemas would
+    # bloat the schemas repo by hundreds of MB.
+    provider_api_specs = []
+    for entry in api_entries:
+        is_json = 'source_json_url' in entry
+        spec_url = entry.get('source_json_url') if is_json else entry.get('source_yaml_url')
+        spec_filename = entry.get('source_filename') or ''
+        if not spec_url or not spec_filename or spec_filename == 'apis.yml':
+            continue
+        spec_heading = entry.get('source_heading') or ''
+        spec_type = spec_heading.split(' ')[0] if spec_heading else ''
+        provider_api_specs.append({
+            'slug': entry.get('slug', ''),
+            'label': entry.get('name', entry.get('slug', '')),
+            'spec_type': spec_type,
+            'format': 'json' if is_json else 'yaml',
+            'url': spec_url,
+            'filename': spec_filename,
+        })
+
     provider_filepath = os.path.join(PROVIDERS_DIR, f"{provider_slug}.md")
 
     # --- Capabilities ---
@@ -699,6 +721,8 @@ def process_provider(provider_dir, icon_manifest=None, category_suggestions=None
                 'source_yaml': raw_async,
                 'source_yaml_url': asyncapi_source_url,
             }
+            if provider_api_specs:
+                asyncapi_entry['api_specs'] = provider_api_specs
 
             asyncapi_filepath = os.path.join(ASYNCAPIS_DIR, provider_slug, f"{asyncapi_slug}.md")
             write_frontmatter_file(asyncapi_filepath, asyncapi_entry)
@@ -784,6 +808,8 @@ def process_provider(provider_dir, icon_manifest=None, category_suggestions=None
                 'source_json': raw_jsonld,
                 'source_json_url': jsonld_source_url,
             }
+            if provider_api_specs:
+                jsonld_entry['api_specs'] = provider_api_specs
 
             jsonld_filepath = os.path.join(JSONLD_DIR, provider_slug, f"{jsonld_slug}.md")
             write_frontmatter_file(jsonld_filepath, jsonld_entry)
@@ -860,6 +886,8 @@ def process_provider(provider_dir, icon_manifest=None, category_suggestions=None
                 raw_rules_text = ''
             rules_entry['source_yaml'] = raw_rules_text
             rules_entry['source_yaml_url'] = rules_source_url
+            if provider_api_specs:
+                rules_entry['api_specs'] = provider_api_specs
 
             rules_filepath = os.path.join(RULES_DIR, provider_slug, f"{rules_slug}.md")
             write_frontmatter_file(rules_filepath, rules_entry)
@@ -887,29 +915,10 @@ def process_provider(provider_dir, icon_manifest=None, category_suggestions=None
     provider_data['source_yaml_url'] = provider_source_url
     provider_data['source_filename'] = 'apis.yml'
 
-    # Picker: every API that has its own OpenAPI/AsyncAPI/Postman spec gets
-    # listed so the widget can swap between them on demand. Specs are NOT
-    # embedded inline — the widget fetches the URL when the user picks one.
-    api_specs = []
-    for entry in api_entries:
-        is_json = 'source_json_url' in entry
-        spec_url = entry.get('source_json_url') if is_json else entry.get('source_yaml_url')
-        spec_filename = entry.get('source_filename') or ''
-        # skip APIs that fell back to apis.yml entry (no real spec)
-        if not spec_url or not spec_filename or spec_filename == 'apis.yml':
-            continue
-        spec_heading = entry.get('source_heading') or ''
-        spec_type = spec_heading.split(' ')[0] if spec_heading else ''
-        api_specs.append({
-            'slug': entry.get('slug', ''),
-            'label': entry.get('name', entry.get('slug', '')),
-            'spec_type': spec_type,
-            'format': 'json' if is_json else 'yaml',
-            'url': spec_url,
-            'filename': spec_filename,
-        })
-    if api_specs:
-        provider_data['api_specs'] = api_specs
+    # Picker: reuse the provider_api_specs list computed earlier so the
+    # widget can swap between apis.yml and per-API specs on demand.
+    if provider_api_specs:
+        provider_data['api_specs'] = provider_api_specs
 
     # Write provider file once with all data
     write_frontmatter_file(provider_filepath, provider_data)
