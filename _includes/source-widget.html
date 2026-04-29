@@ -19,8 +19,8 @@
   {% assign _ext = "json" %}
   {% assign _heading = "Source (JSON)" %}
 {% endif %}
-{% if include.heading %}{% assign _heading = include.heading %}{% endif %}
-{% if include.filename %}{% assign _filename = include.filename %}{% else %}{% assign _filename = page.slug | append: "." | append: _ext %}{% endif %}
+{% if include.heading %}{% assign _heading = include.heading %}{% elsif page.source_heading %}{% assign _heading = page.source_heading %}{% endif %}
+{% if include.filename %}{% assign _filename = include.filename %}{% elsif page.source_filename %}{% assign _filename = page.source_filename %}{% else %}{% assign _filename = page.slug | append: "." | append: _ext %}{% endif %}
 
 <link rel="stylesheet" href="/assets/prism/prism-coy.min.css">
 <link rel="stylesheet" href="/assets/prism/prism-line-numbers.min.css">

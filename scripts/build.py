@@ -349,12 +349,42 @@ def process_provider(provider_dir, icon_manifest=None, category_suggestions=None
                 p['url'] = f"{github_raw_base}/{url}"
             resolved_properties.append(p)
 
-        api_source_url = f"https://raw.githubusercontent.com/api-evangelist/{provider_slug}/refs/heads/main/apis.yml"
-        try:
-            api_yaml_str = yaml.dump(api, default_flow_style=False, allow_unicode=True, sort_keys=False, width=100)
-            api_yaml_str = cap_source(api_yaml_str, api_source_url)
-        except Exception:
-            api_yaml_str = ''
+        # Prefer the API's OpenAPI spec for the source widget; fall back to
+        # AsyncAPI / Postman; last resort is the apis.yml entry itself.
+        spec_pref = [
+            ('openapi', 'OpenAPI Specification'),
+            ('asyncapi', 'AsyncAPI Specification'),
+            ('postman', 'Postman Collection'),
+            ('postman collection', 'Postman Collection'),
+        ]
+        spec_text = None
+        spec_url = None
+        spec_format = None
+        spec_heading = None
+        spec_filename = None
+        for ptype_target, heading in spec_pref:
+            for prop in api.get('properties', []) or []:
+                if (prop.get('type') or '').lower() != ptype_target:
+                    continue
+                purl = prop.get('url') or ''
+                if not purl or purl.startswith('http'):
+                    continue
+                local_path = os.path.join(provider_dir, purl)
+                if not os.path.exists(local_path):
+                    continue
+                try:
+                    with open(local_path) as fh:
+                        spec_text = fh.read()
+                except OSError:
+                    continue
+                ext = os.path.splitext(purl)[1].lower()
+                spec_format = 'json' if ext == '.json' else 'yaml'
+                spec_url = f"{github_raw_base}/{purl}"
+                spec_heading = heading
+                spec_filename = os.path.basename(purl)
+                break
+            if spec_text:
+                break
 
         api_data = {
             'layout': 'api',
@@ -369,9 +399,28 @@ def process_provider(provider_dir, icon_manifest=None, category_suggestions=None
             'baseURL': api.get('baseURL', ''),
             'tags': api.get('tags', []),
             'properties': resolved_properties,
-            'source_yaml': api_yaml_str,
-            'source_yaml_url': f"https://raw.githubusercontent.com/api-evangelist/{provider_slug}/refs/heads/main/apis.yml",
         }
+        if spec_text and spec_format == 'json':
+            api_data['source_json'] = cap_source(spec_text, spec_url)
+            api_data['source_json_url'] = spec_url
+            api_data['source_heading'] = spec_heading
+            api_data['source_filename'] = spec_filename
+        elif spec_text:
+            api_data['source_yaml'] = cap_source(spec_text, spec_url)
+            api_data['source_yaml_url'] = spec_url
+            api_data['source_heading'] = spec_heading
+            api_data['source_filename'] = spec_filename
+        else:
+            # Fallback: dump the API entry from apis.yml so there's still a source view.
+            api_source_url = f"{github_raw_base}/apis.yml"
+            try:
+                api_yaml_str = yaml.dump(api, default_flow_style=False, allow_unicode=True, sort_keys=False, width=100)
+                api_data['source_yaml'] = cap_source(api_yaml_str, api_source_url)
+                api_data['source_yaml_url'] = api_source_url
+                api_data['source_heading'] = 'API entry from apis.yml'
+                api_data['source_filename'] = 'apis.yml'
+            except Exception:
+                pass
 
         api_filepath = os.path.join(APIS_DIR, provider_slug, f"{api_slug}.md")
         write_frontmatter_file(api_filepath, api_data)
