@@ -51,6 +51,17 @@ MIN_FALLBACK_SUGGESTION_SCORE = 5
 # few specs (Salesforce metadata, etc.) are multi-megabyte.
 SOURCE_WIDGET_MAX_BYTES = 32 * 1024
 
+# Tags that are stripped from all output regardless of what the source repos say.
+# Add entries here to suppress noise tags globally across every build.
+TAG_BLOCKLIST = {'AWS'}
+
+
+def filter_tags(tags):
+    """Remove blocked tags from a tag list."""
+    if not tags:
+        return tags
+    return [t for t in tags if t not in TAG_BLOCKLIST]
+
 
 def cap_source(text, source_url):
     """Truncate inline source for the widget when oversized; keep the link."""
@@ -263,7 +274,7 @@ def process_provider(provider_dir, icon_manifest=None, category_suggestions=None
     data = load_yaml(apis_yml_path)
     provider_slug = data.get('aid', os.path.basename(provider_dir))
     provider_name = data.get('name', provider_slug)
-    provider_tags = data.get('tags', [])
+    provider_tags = filter_tags(data.get('tags', []))
 
     print(f"  Processing: {provider_name} ({provider_slug})")
 
@@ -367,8 +378,18 @@ def process_provider(provider_dir, icon_manifest=None, category_suggestions=None
                 if (prop.get('type') or '').lower() != ptype_target:
                     continue
                 purl = prop.get('url') or ''
-                if not purl or purl.startswith('http'):
+                if not purl:
                     continue
+                if purl.startswith('http'):
+                    # External URL — record it directly; the source widget will
+                    # lazy-fetch the content on page load rather than inlining it.
+                    clean = purl.split('?')[0]
+                    ext = os.path.splitext(clean)[1].lower()
+                    spec_format = 'json' if ext == '.json' else 'yaml'
+                    spec_url = purl
+                    spec_heading = heading
+                    spec_filename = os.path.basename(clean) or (ptype_target + '.yaml')
+                    break
                 local_path = os.path.join(provider_dir, purl)
                 if not os.path.exists(local_path):
                     continue
@@ -383,7 +404,7 @@ def process_provider(provider_dir, icon_manifest=None, category_suggestions=None
                 spec_heading = heading
                 spec_filename = os.path.basename(purl)
                 break
-            if spec_text:
+            if spec_text or spec_url:
                 break
 
         api_data = {
@@ -397,7 +418,7 @@ def process_provider(provider_dir, icon_manifest=None, category_suggestions=None
             'image': api.get('image', ''),
             'humanURL': api.get('humanURL', ''),
             'baseURL': api.get('baseURL', ''),
-            'tags': api.get('tags', []),
+            'tags': filter_tags(api.get('tags', [])),
             'properties': resolved_properties,
         }
         if spec_text and spec_format == 'json':
@@ -408,6 +429,12 @@ def process_provider(provider_dir, icon_manifest=None, category_suggestions=None
         elif spec_text:
             api_data['source_yaml'] = cap_source(spec_text, spec_url)
             api_data['source_yaml_url'] = spec_url
+            api_data['source_heading'] = spec_heading
+            api_data['source_filename'] = spec_filename
+        elif spec_url:
+            # Remote URL only — no inline content; widget lazy-fetches on page load.
+            url_key = 'source_json_url' if spec_format == 'json' else 'source_yaml_url'
+            api_data[url_key] = spec_url
             api_data['source_heading'] = spec_heading
             api_data['source_filename'] = spec_filename
         else:
@@ -466,7 +493,7 @@ def process_provider(provider_dir, icon_manifest=None, category_suggestions=None
             info = cap_data.get('info', {})
             cap_label = info.get('label', cap_slug.replace('-', ' ').title())
             cap_desc = clean_description(info.get('description', ''))
-            cap_tags = info.get('tags', [])
+            cap_tags = filter_tags(info.get('tags', []))
 
             operations, tools = extract_operations_from_capability(cap_data)
 

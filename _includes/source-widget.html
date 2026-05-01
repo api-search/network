@@ -2,18 +2,32 @@
   Source widget — renders the upstream YAML or JSON for a detail page with
   Prism syntax highlighting, line numbers, in-widget search, format toggle
   (YAML <-> JSON via js-yaml), and download button. Shows when the page has
-  either `source_yaml` or `source_json` set; respects optional
-  `source_yaml_url` / `source_json_url` for the "Raw" link.
+  either `source_yaml` or `source_json` set (inline content), or when only
+  `source_yaml_url` / `source_json_url` is set (widget lazy-fetches on load).
 {% endcomment %}
-{% if page.source_yaml or page.source_json %}
+{% assign _has_inline = page.source_yaml | default: page.source_json %}
+{% assign _has_url = page.source_yaml_url | default: page.source_json_url %}
+{% if _has_inline or _has_url %}
 {% if page.source_yaml %}
   {% assign _src = page.source_yaml %}
   {% assign _lang = "yaml" %}
   {% assign _url = page.source_yaml_url %}
   {% assign _ext = "yaml" %}
   {% assign _heading = "Source (YAML)" %}
-{% else %}
+{% elsif page.source_json %}
   {% assign _src = page.source_json %}
+  {% assign _lang = "json" %}
+  {% assign _url = page.source_json_url %}
+  {% assign _ext = "json" %}
+  {% assign _heading = "Source (JSON)" %}
+{% elsif page.source_yaml_url %}
+  {% assign _src = "" %}
+  {% assign _lang = "yaml" %}
+  {% assign _url = page.source_yaml_url %}
+  {% assign _ext = "yaml" %}
+  {% assign _heading = "Source (YAML)" %}
+{% else %}
+  {% assign _src = "" %}
   {% assign _lang = "json" %}
   {% assign _url = page.source_json_url %}
   {% assign _ext = "json" %}
@@ -307,6 +321,30 @@
           picker.options[0].dataset.url = rawLink.getAttribute('href') || '';
           picker.options[0].dataset.heading = (headingEl ? headingEl.textContent : '') || '';
         }
+      }
+
+      // Auto-fetch when initial source is empty but a remote URL is available.
+      // This happens when the build found an external OpenAPI URL but didn't
+      // inline the content — the widget fetches it on page load instead.
+      if (!originalText.trim() && currentSourceUrl) {
+        var remoteUrl = currentSourceUrl;
+        codeEl.textContent = 'Loading…';
+        codeEl.className = '';
+        preEl.className = 'line-numbers language-' + originalLang;
+        fetch(remoteUrl)
+          .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.text(); })
+          .then(function (text) {
+            var ext = remoteUrl.replace(/\?.*/, '').split('.').pop().toLowerCase();
+            var fmt = ext === 'json' ? 'json' : 'yaml';
+            originalText = text;
+            originalLang = fmt;
+            currentLang = fmt;
+            widget.dataset.originalLang = fmt;
+            applySource(text, fmt, originalFilename, remoteUrl, headingEl ? headingEl.textContent : '');
+          })
+          .catch(function (err) {
+            codeEl.textContent = 'Could not load spec: ' + err.message;
+          });
       }
 
       // Initial state
