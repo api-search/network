@@ -12,6 +12,7 @@ tags:
 title: Profiling HubSpot's 63 APIs and 11 Capabilities
 ---
 
+
 HubSpot is one of the wider provider profiles in the APIs.io catalog — wider than most because the platform has grown well past its CRM origins and now spans marketing, content, commerce, customer service, and a developer platform with its own primitives. The [HubSpot profile](https://github.com/api-search/hubspot) currently catalogs **63 APIs** described in [apis.yml](https://raw.githubusercontent.com/api-evangelist/hubspot/refs/heads/main/apis.yml), with **26 of them carrying machine-readable OpenAPI definitions** and **11 capability bundles** describing how those APIs combine into something an agent can actually run.
 
 This post walks through what's in there.
