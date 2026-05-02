@@ -1,0 +1,70 @@
+name: APIs.io
+description: Search and discover APIs by what you want to accomplish. Find API providers, individual APIs, capabilities, and schemas across the APIs.io network.
+url: https://apis.io/apis.json
+image: https://apis.io/assets/branding/apisio-social-card.png
+created: "2024-04-13"
+modified: "2026-05-02"
+specificationVersion: "0.20"
+tags:
+  - APIs
+  - Search
+  - Discovery
+  - API Directory
+  - API Catalog
+  - REST APIs
+  - APIs.json
+  - Capabilities
+maintainers:
+  - FN: Kin Lane
+    email: info@apievangelist.com
+    url: https://kinlane.com
+common:
+  - type: Website
+    url: https://apis.io
+  - type: Portal
+    url: https://developer.apis.io
+  - type: Blog
+    url: https://apis.io/blog/
+  - type: BlogFeed
+    url: https://apis.io/atom.xml
+  - type: About
+    url: https://apis.io/about/
+  - type: Support
+    url: https://apis.io/support/
+  - type: TermsOfService
+    url: https://apis.io/terms-of-service/
+  - type: PrivacyPolicy
+    url: https://apis.io/privacy-policy/
+  - type: GitHubOrganization
+    url: https://github.com/api-search
+  - type: GitHubRepository
+    url: https://github.com/api-search/network
+  - type: AgentSkills
+    url: https://apis.io/skills/index.json
+  - type: APICatalog
+    url: https://apis.io/.well-known/api-catalog
+network:
+  - name: APIs Feed
+    url: https://apis.apis.io/apis.json
+  - name: Providers Feed
+    url: https://providers.apis.io/apis.json
+  - name: Capabilities Feed
+    url: https://capabilities.apis.io/apis.json
+  - name: Tags Feed
+    url: https://tags.apis.io/apis.json
+  - name: Schemas Feed
+    url: https://schemas.apis.io/apis.json
+  - name: AsyncAPI Feed
+    url: https://asyncapi.apis.io/apis.json
+  - name: JSON-LD Feed
+    url: https://json-ld.apis.io/apis.json
+  - name: Rules Feed
+    url: https://rules.apis.io/apis.json
+  - name: Vocabularies Feed
+    url: https://vocabularies.apis.io/apis.json
+  - name: Developer Portal
+    url: https://developer.apis.io/apis.json
+  - name: API Commons
+    url: https://apicommons.org/apis.json
+  - name: APIs.json
+    url: https://apisjson.org/apis.json
