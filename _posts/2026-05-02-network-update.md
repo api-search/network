@@ -1,4 +1,5 @@
 ---
+image: /assets/images/blog/network-update.png
 layout: post
 title: APIs.io Crosses 10,000 APIs as April Profiling Completes
 tags:
