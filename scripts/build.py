@@ -28,7 +28,7 @@ import yaml
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 NETWORK_DIR = os.path.dirname(SCRIPT_DIR)
 ROOT_DIR = os.path.dirname(NETWORK_DIR)
-EVANGELIST_DIR = os.path.join(ROOT_DIR, 'api-evangelist')
+EVANGELIST_DIR = os.environ.get('EVANGELIST_DIR') or os.path.join(ROOT_DIR, 'api-evangelist')
 SHARED_DIR = os.path.join(NETWORK_DIR, '_shared')
 
 # Output dirs - each goes to its own subdomain repo
@@ -1191,6 +1191,8 @@ def build_vocabulary_index(provider_dirs):
             operational = vocab_data.get('operational', {})
 
             for res in operational.get('resources', []):
+                if not isinstance(res, dict):
+                    continue
                 all_resources.append({
                     'name': res.get('name', ''),
                     'description': clean_description(res.get('description', '')),
@@ -1201,6 +1203,8 @@ def build_vocabulary_index(provider_dirs):
                 })
 
             for action in operational.get('actions', []):
+                if not isinstance(action, dict):
+                    continue
                 all_actions.append({
                     'name': action.get('name', ''),
                     'verb': action.get('verb', ''),

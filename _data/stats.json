@@ -1,10 +1,10 @@
 {
-  "providers": 3586,
-  "apis": 13530,
-  "capabilities": 895,
+  "providers": 3769,
+  "apis": 14475,
+  "capabilities": 1366,
   "categories": 26,
   "schemas": 44641,
-  "asyncapis": 183,
-  "jsonld": 3129,
-  "rules": 896
+  "asyncapis": 196,
+  "jsonld": 3606,
+  "rules": 1303
 }
