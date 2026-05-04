@@ -1,15 +1,16 @@
 ---
-image: /assets/images/blog/network-update.png
-layout: post
-title: Finding Event-Driven APIs, Webhooks, and Streams in the Index
-tags:
-  - AsyncAPI
-  - Event-Driven
-  - Webhooks
-  - Search
-  - Discovery
 date: 2026-05-03
+image: /assets/images/blog/finding-event-driven-apis-and-webhooks.png
+layout: post
+tags:
+- AsyncAPI
+- Event-Driven
+- Webhooks
+- Search
+- Discovery
+title: Finding Event-Driven APIs, Webhooks, and Streams in the Index
 ---
+
 
 Most of what gets profiled in the catalog is request/response — REST APIs documented with OpenAPI. But a growing slice of the network is the other half of the integration story: events, webhooks, message queues, and streams. Those don't surface well through OpenAPI alone, so we describe them with [AsyncAPI](https://www.asyncapi.com/) and index them as a first-class collection at [asyncapi.apis.io](https://asyncapi.apis.io).
 
