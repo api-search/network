@@ -53,25 +53,28 @@ Plus CRM, incident management, payroll/HR, collaboration, customer engagement, C
 
 The capability YAML in the catalog isn't documentation. It's an executable spec. Pick any capability page on [capabilities.apis.io](https://capabilities.apis.io), download the YAML, and the [Naftiko framework](https://github.com/naftiko/framework) will run it as a live multi-protocol service.
 
-The shortest version of getting from a capability page to a running surface looks like this:
+The framework engine ships as a Docker image (and an optional CLI for authoring). Per the [official installation guide](https://github.com/naftiko/framework/wiki/Installation), the shortest path from a capability page to a running surface looks like this:
 
 ```bash
-# Install the framework (Apache 2.0, no Java required)
-brew install naftiko/tap/naftiko
+# Pull the Naftiko engine image
+docker pull ghcr.io/naftiko/naftiko-framework:v1.0.0-alpha2
 
 # Pull a capability YAML — pick one from capabilities.apis.io
 curl -O https://raw.githubusercontent.com/api-evangelist/1password/main/capabilities/1password-secrets-management.yaml
 
-# Set the credentials the spec binds to
-export CONNECT_TOKEN=...
-export EVENTS_TOKEN=...
-export PARTNERSHIP_TOKEN=...
-
-# Run it. The framework reads the `exposes:` block and starts the surfaces.
-naftiko run 1password-secrets-management.yaml
+# Run the engine, mounting the capability as a volume.
+# Forward the port the capability's `exposes:` block declares.
+docker run -p 8081:3001 \
+  -v $(pwd)/1password-secrets-management.yaml:/app/test.capability.yaml \
+  -e CONNECT_TOKEN=... -e EVENTS_TOKEN=... -e PARTNERSHIP_TOKEN=... \
+  ghcr.io/naftiko/naftiko-framework:v1.0.0-alpha2 /app/test.capability.yaml
 ```
 
-What that gives you, on the same command, is whatever surfaces the capability declares — the REST API on the port specified in `exposes`, an MCP server addressable by Claude, Copilot, or any other MCP client, and (if the spec includes a `type: skill` block) an agent skill ready for IDE consumption. Three protocols from a single command and a single YAML file.
+A couple of practical notes from the install docs: if the capability's `consumes:` block points at a service running on your local machine, use `host.docker.internal` rather than `localhost` (the engine runs in an isolated container). And if the capability `exposes:` itself locally, bind the listener to `0.0.0.0` rather than `localhost` so requests forwarded from outside the container reach it.
+
+What that command gives you, all at once, is whatever surfaces the capability declares — the REST API on the forwarded port, an MCP server addressable by Claude, Copilot, or any other MCP client, and (if the spec includes a `type: skill` block) an agent skill ready for IDE consumption. Three protocols from a single docker run and a single YAML file.
+
+The optional [Naftiko CLI](https://github.com/naftiko/framework/wiki/Installation#naftiko-cli) is a separate tool — installed via `curl` and `chmod` — that helps you scaffold and validate capability YAML before you run it (`naftiko create capability`, `naftiko validate <file>`), and it can also bootstrap a Naftiko `consumes` adapter directly from an existing OpenAPI document with `naftiko import openapi <file>`. Useful if you're authoring new capabilities, not strictly required to run the ones already in the catalog.
 
 ### Running fleets, not just specs
 
