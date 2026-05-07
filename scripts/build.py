@@ -40,6 +40,9 @@ SCHEMAS_DIR = os.path.join(ROOT_DIR, 'schemas', '_schemas')
 ASYNCAPIS_DIR = os.path.join(ROOT_DIR, 'asyncapi', '_asyncapis')
 JSONLD_DIR = os.path.join(ROOT_DIR, 'json-ld', '_jsonld')
 RULES_DIR = os.path.join(ROOT_DIR, 'rules', '_rules')
+PLANS_DIR = os.path.join(ROOT_DIR, 'plans', '_plans')
+RATELIMITS_DIR = os.path.join(ROOT_DIR, 'rate-limits', '_ratelimits')
+FINOPS_DIR = os.path.join(ROOT_DIR, 'finops', '_finops')
 
 # Canonical capability taxonomy + suggestions for the category aggregation layer.
 CANONICAL_CAPS_PATH = os.path.join(NETWORK_DIR, '_data', 'canonical-capabilities.yml')
@@ -89,6 +92,9 @@ SUBDOMAINS = {
     'json-ld': 'https://json-ld.apis.io',
     'rules': 'https://rules.apis.io',
     'vocabularies': 'https://vocabularies.apis.io',
+    'plans': 'https://plans.apis.io',
+    'rate-limits': 'https://rate-limits.apis.io',
+    'finops': 'https://finops.apis.io',
 }
 
 
@@ -138,6 +144,108 @@ def extract_api_slug(aid):
     if ':' in aid:
         return aid.split(':', 1)[1]
     return aid
+
+
+def _derive_plans_meta(data):
+    """Pull plans-specific metadata into the front matter."""
+    plans = data.get('plans', []) if isinstance(data.get('plans'), list) else []
+    return {
+        'plan_count': len(plans),
+        'plans': plans,
+        'specification': data.get('specification', ''),
+        'sources': data.get('sources', []),
+    }
+
+
+def _derive_ratelimits_meta(data):
+    """Pull rate-limit-specific metadata into the front matter."""
+    limits = data.get('limits', []) if isinstance(data.get('limits'), list) else []
+    return {
+        'limit_count': len(limits),
+        'limits': limits,
+        'policies': data.get('policies', []),
+        'response_codes': data.get('responseCodes', {}) or {},
+        'specification': data.get('specification', ''),
+        'sources': data.get('sources', []),
+    }
+
+
+def _derive_finops_meta(data):
+    """Pull FinOps-specific metadata into the front matter."""
+    fc = data.get('focusColumns', {}) or {}
+    return {
+        'service_category': data.get('serviceCategory', ''),
+        'publisher_name': data.get('publisherName', ''),
+        'aligned_with': data.get('alignedWith', {}) or {},
+        'billing_model': data.get('billingModel', {}) or {},
+        'focus_columns': fc,
+        'meters': data.get('meters', []),
+        'specification': data.get('specification', ''),
+        'sources': data.get('sources', []),
+    }
+
+
+def _process_provider_subdir(provider_dir, provider_slug, provider_name,
+                             provider_data, provider_api_specs, github_raw_base,
+                             subdir, out_dir, layout, source_heading, derive_meta):
+    """Generic processor for plans/, rate-limits/, finops/ provider subdirs.
+
+    Reads YAML files from <provider_dir>/<subdir>/, derives layout-specific
+    metadata via derive_meta(yaml_data), and writes one Markdown file per
+    source YAML to out_dir/<provider_slug>/<slug>.md.
+    """
+    src_dir = os.path.join(provider_dir, subdir)
+    if not os.path.isdir(src_dir):
+        return []
+
+    files = sorted(glob.glob(os.path.join(src_dir, '*.yml')) +
+                   glob.glob(os.path.join(src_dir, '*.yaml')))
+    entries = []
+    provider_tags = filter_tags(provider_data.get('tags', []) or [])
+
+    for src_file in files:
+        filename = os.path.basename(src_file)
+        slug = os.path.splitext(filename)[0]
+        try:
+            data = load_yaml(src_file)
+        except Exception:
+            continue
+        if not isinstance(data, dict):
+            continue
+
+        title = slug.replace('-', ' ').title()
+        entry = {
+            'layout': layout,
+            'slug': slug,
+            'name': title,
+            'description': data.get('description', '') or '',
+            'provider_name': provider_name,
+            'provider_slug': provider_slug,
+            'tags': filter_tags(data.get('tags', []) or []) or provider_tags,
+            'source_filename': filename,
+            'source_heading': source_heading,
+        }
+        # Layout-specific fields
+        entry.update(derive_meta(data))
+
+        # Cap embedded source for the YAML widget
+        source_url = f"{github_raw_base}/{subdir}/{filename}"
+        try:
+            with open(src_file) as fh:
+                entry['source_yaml'] = cap_source(fh.read(), source_url)
+        except OSError:
+            entry['source_yaml'] = ''
+        entry['source_yaml_url'] = source_url
+        entry['source_url'] = data.get('sources', [None])[0] if data.get('sources') else ''
+
+        if provider_api_specs:
+            entry['api_specs'] = provider_api_specs
+
+        out_file = os.path.join(out_dir, provider_slug, f"{slug}.md")
+        write_frontmatter_file(out_file, entry)
+        entries.append(entry)
+
+    return entries
 
 
 def extract_schema_slug(filename):
@@ -934,6 +1042,47 @@ def process_provider(provider_dir, icon_manifest=None, category_suggestions=None
             for r in rules_entries
         ]
 
+    # ---- Plans / Rate Limits / FinOps ----
+    # Each provider can publish API Commons Plans, Rate Limits, and FOCUS-aligned
+    # FinOps profiles in their respective subdirs. These get aggregated into
+    # plans.apis.io, rate-limits.apis.io, finops.apis.io.
+
+    plans_entries = _process_provider_subdir(
+        provider_dir, provider_slug, provider_name, provider_data, provider_api_specs,
+        github_raw_base, subdir='plans', out_dir=PLANS_DIR, layout='plan',
+        source_heading='Pricing Plans',
+        derive_meta=_derive_plans_meta,
+    )
+    if plans_entries:
+        provider_data['plans'] = [
+            {'slug': p['slug'], 'name': p['name'], 'plan_count': p.get('plan_count', 0)}
+            for p in plans_entries
+        ]
+
+    ratelimits_entries = _process_provider_subdir(
+        provider_dir, provider_slug, provider_name, provider_data, provider_api_specs,
+        github_raw_base, subdir='rate-limits', out_dir=RATELIMITS_DIR, layout='ratelimit',
+        source_heading='Rate Limits',
+        derive_meta=_derive_ratelimits_meta,
+    )
+    if ratelimits_entries:
+        provider_data['rate_limits'] = [
+            {'slug': r['slug'], 'name': r['name'], 'limit_count': r.get('limit_count', 0)}
+            for r in ratelimits_entries
+        ]
+
+    finops_entries = _process_provider_subdir(
+        provider_dir, provider_slug, provider_name, provider_data, provider_api_specs,
+        github_raw_base, subdir='finops', out_dir=FINOPS_DIR, layout='finops',
+        source_heading='FinOps Profile',
+        derive_meta=_derive_finops_meta,
+    )
+    if finops_entries:
+        provider_data['finops'] = [
+            {'slug': f['slug'], 'name': f['name'], 'service_category': f.get('service_category', '')}
+            for f in finops_entries
+        ]
+
     # Apply icon override from manifest
     if icon_manifest and provider_slug in icon_manifest:
         provider_data['image'] = f"/assets/icons/{provider_slug}.png"
@@ -1390,6 +1539,9 @@ def main():
     total_jsonld = count_md(JSONLD_DIR)
     total_rules = count_md(RULES_DIR)
     total_categories = count_md(CATEGORIES_DIR)
+    total_plans = count_md(PLANS_DIR)
+    total_ratelimits = count_md(RATELIMITS_DIR)
+    total_finops = count_md(FINOPS_DIR)
 
     # Write stats to network _data for homepage counts
     network_data_dir = os.path.join(NETWORK_DIR, '_data')
@@ -1403,6 +1555,9 @@ def main():
         'asyncapis': total_asyncapis,
         'jsonld': total_jsonld,
         'rules': total_rules,
+        'plans': total_plans,
+        'rate_limits': total_ratelimits,
+        'finops': total_finops,
     }
     with open(os.path.join(network_data_dir, 'stats.json'), 'w') as f:
         json.dump(stats, f, indent=2)
@@ -1419,6 +1574,9 @@ def main():
     print(f"AsyncAPIs:    {total_asyncapis}")
     print(f"JSON-LD:      {total_jsonld}")
     print(f"Rules:        {total_rules}")
+    print(f"Plans:        {total_plans}")
+    print(f"Rate Limits:  {total_ratelimits}")
+    print(f"FinOps:       {total_finops}")
 
 
 if __name__ == '__main__':

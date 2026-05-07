@@ -1,10 +1,13 @@
 {
-  "providers": 3779,
-  "apis": 14517,
-  "capabilities": 2136,
+  "providers": 3790,
+  "apis": 14549,
+  "capabilities": 2149,
   "categories": 26,
-  "schemas": 42192,
+  "schemas": 42273,
   "asyncapis": 196,
-  "jsonld": 3621,
-  "rules": 1312
+  "jsonld": 3631,
+  "rules": 1320,
+  "plans": 3786,
+  "rate_limits": 3786,
+  "finops": 3786
 }
