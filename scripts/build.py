@@ -499,18 +499,33 @@ def process_provider(provider_dir, icon_manifest=None, category_suggestions=None
                     spec_filename = os.path.basename(clean) or (ptype_target + '.yaml')
                     break
                 local_path = os.path.join(provider_dir, purl)
+                resolved_purl = purl
                 if not os.path.exists(local_path):
-                    continue
+                    # Some providers (Stripe, Mastercard, Microsoft Graph, Anthropic,
+                    # SendGrid, OpenAI, etc.) reference OpenAPI specs at
+                    # properties/<file> in apis.yml but ship the actual file at
+                    # openapi/<file>. Try common fallback dirs by basename
+                    # before giving up on the local spec.
+                    basename = os.path.basename(purl)
+                    fallback_dirs = ['openapi', 'asyncapi', 'postman']
+                    for d in fallback_dirs:
+                        candidate = os.path.join(provider_dir, d, basename)
+                        if os.path.exists(candidate):
+                            local_path = candidate
+                            resolved_purl = f"{d}/{basename}"
+                            break
+                    else:
+                        continue
                 try:
                     with open(local_path) as fh:
                         spec_text = fh.read()
                 except OSError:
                     continue
-                ext = os.path.splitext(purl)[1].lower()
+                ext = os.path.splitext(resolved_purl)[1].lower()
                 spec_format = 'json' if ext == '.json' else 'yaml'
-                spec_url = f"{github_raw_base}/{purl}"
+                spec_url = f"{github_raw_base}/{resolved_purl}"
                 spec_heading = heading
-                spec_filename = os.path.basename(purl)
+                spec_filename = os.path.basename(resolved_purl)
                 break
             if spec_text or spec_url:
                 break
