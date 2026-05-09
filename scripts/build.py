@@ -501,21 +501,42 @@ def process_provider(provider_dir, icon_manifest=None, category_suggestions=None
                 local_path = os.path.join(provider_dir, purl)
                 resolved_purl = purl
                 if not os.path.exists(local_path):
-                    # Some providers (Stripe, Mastercard, Microsoft Graph, Anthropic,
-                    # SendGrid, OpenAI, etc.) reference OpenAPI specs at
-                    # properties/<file> in apis.yml but ship the actual file at
-                    # openapi/<file>. Try common fallback dirs by basename
-                    # before giving up on the local spec.
-                    basename = os.path.basename(purl)
+                    # Try fallbacks for malformed paths in apis.yml:
+                    # 1) Some providers (Stripe, Mastercard, Microsoft Graph,
+                    #    Anthropic, SendGrid, OpenAI, etc.) reference OpenAPI
+                    #    specs at properties/<file> but ship the actual file
+                    #    at openapi/<file>.
+                    # 2) Some providers (Microsoft Azure, Walmart) have
+                    #    apis.yml entries like "openapifoo.yml" missing the
+                    #    slash — `openapi<filename>` instead of `openapi/<filename>`.
                     fallback_dirs = ['openapi', 'asyncapi', 'postman']
+                    candidate_path = None
+                    candidate_purl = None
+
+                    # Pattern (2): no-slash prefix
                     for d in fallback_dirs:
-                        candidate = os.path.join(provider_dir, d, basename)
-                        if os.path.exists(candidate):
-                            local_path = candidate
-                            resolved_purl = f"{d}/{basename}"
-                            break
-                    else:
+                        if purl.startswith(d) and not purl.startswith(d + '/'):
+                            rest = purl[len(d):]
+                            cand = os.path.join(provider_dir, d, rest)
+                            if os.path.exists(cand):
+                                candidate_path = cand
+                                candidate_purl = f"{d}/{rest}"
+                                break
+
+                    # Pattern (1): wrong dir, same basename
+                    if candidate_path is None:
+                        basename = os.path.basename(purl)
+                        for d in fallback_dirs:
+                            cand = os.path.join(provider_dir, d, basename)
+                            if os.path.exists(cand):
+                                candidate_path = cand
+                                candidate_purl = f"{d}/{basename}"
+                                break
+
+                    if candidate_path is None:
                         continue
+                    local_path = candidate_path
+                    resolved_purl = candidate_purl
                 try:
                     with open(local_path) as fh:
                         spec_text = fh.read()
