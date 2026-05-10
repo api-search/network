@@ -11,10 +11,6 @@ tags:
 - Roundup
 title: 'AI Governance Has Operational Stakes Now: 8 Stories From One Week'
 ---
-
-
-# AI Governance Has Operational Stakes Now: 8 Stories From One Week
-
 The AI governance conversation has stopped being a slide deck. The week of May 4-8, 2026 produced 8 stories across the API Evangelist network where the framing has shifted from "we should govern AI" to "here is the tool, the framework, the evaluation harness, or the threat model that does it." Vendors are shipping. Auditors are showing up. Regulators are turning the screws. And the operational tooling has started arriving.
 
 This roundup organizes the week into three themes — the principles-and-frameworks layer, the evaluation and guardrails machinery, and the threat models that ground the governance conversation in real failure modes.

@@ -11,10 +11,6 @@ tags:
 - Roundup
 title: 'Incident Response in the Agentic Era: 13 Stories From One Week'
 ---
-
-
-# Incident Response in the Agentic Era: 13 Stories From One Week
-
 Incident response is going through a quiet transition. The week of May 4-8, 2026 produced 13 stories across the API Evangelist network about MTTR, on-call, post-incident reviews, and the operational discipline of running production systems — and a meaningful share of them are about how AI agents are starting to triage, respond, and write up incidents alongside humans. The story is no longer just "PagerDuty pages a human"; it is increasingly "an SRE agent triages first, the human gets paged only for the calls the agent can't make."
 
 This roundup organizes the week into four themes — PagerDuty's content cadence, agent-assisted triage and response, the cross-tool orchestration problem, and a real-world outage that grounded the conversation.

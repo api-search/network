@@ -11,10 +11,6 @@ tags:
 - Roundup
 title: 'AI Cost Is the Story No One Wants to Tell: 8 Stories From One Week'
 ---
-
-
-# AI Cost Is the Story No One Wants to Tell: 8 Stories From One Week
-
 The week of May 4-8, 2026 produced 8 stories across the API Evangelist network about the cost side of AI — what it costs to run, who pays for it, how to attribute it, and what the infrastructure utilization actually looks like under the hood. Smaller corpus than MCP or skills, but the implications are large. The bills are starting to land, and the organizations that haven't built attribution machinery are about to be in a bad spot at the next budget review.
 
 This roundup organizes the week into four themes — the GPU-utilization elephant in the room, per-user attribution finally arriving, the FinOps tooling wave, and the pricing repositioning happening at the agent-CLI layer.

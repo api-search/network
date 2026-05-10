@@ -11,10 +11,6 @@ tags:
 - Roundup
 title: 'Data Platforms Are Going Agent: 16 Stories From One Week'
 ---
-
-
-# Data Platforms Are Going Agent: 16 Stories From One Week
-
 The big data platforms — Snowflake, Databricks, Airbyte — published 16 stories during the week of May 4-8, 2026 that point in the same direction: their next chapter is about agents reading from, writing to, and reasoning over the data they hold. The classic data-platform conversation about pipelines, warehouses, and lakehouses is being absorbed into the broader agentic AI narrative, and the vendors are reframing their product surfaces accordingly.
 
 This roundup organizes the week into four themes — Snowflake's agentic data foundation push, Databricks pushing data agents up the stack, Airbyte's full agentic pivot, and the cross-vendor patterns that sit underneath the launches.

@@ -10,10 +10,6 @@ tags:
 - Roundup
 title: 'The Runtime Below MCP: 15 Stories on Agent Frameworks and SDKs From One Week'
 ---
-
-
-# The Runtime Below MCP: 15 Stories on Agent Frameworks and SDKs From One Week
-
 Below the MCP surface and the skill bundle, there is a runtime layer — agent frameworks, agent SDKs, agent gateways, and the orchestration primitives that hold the whole stack together. The week of May 4-8, 2026 produced 15 stories about that runtime layer across the API Evangelist network. AWS Bedrock AgentCore, Microsoft Agent Framework, and a long tail of vendor-specific agent SDKs are all converging on a similar shape, and the competitive landscape underneath agentic AI is starting to crystallize.
 
 This roundup organizes the week into four themes — the cloud-platform agent runtimes, the framework-and-SDK launches from independent vendors, the orchestration and handoff patterns, and the meta-question of which framework an organization should pick.

@@ -11,10 +11,6 @@ tags:
 - Roundup
 title: 'Open Source in the Agent Era: 14 Stories From One Week'
 ---
-
-
-# Open Source in the Agent Era: 14 Stories From One Week
-
 The week of May 4-8, 2026 produced 14 stories across the API Evangelist network about the state of open source — CNCF graduations and incubations, Kubernetes releases, supply-chain security incidents, maintainer celebrations, and the new and uncomfortable category of agent-driven supply chain attacks. Open source is in a period of rapid change, and the agent ecosystem is forcing the community to revisit a lot of assumptions that worked fine for the last decade.
 
 This roundup organizes the week into four themes — the project graduation and release news, the supply-chain security pressure (which is now agent-shaped), the maintainer ecosystem story, and the open-source agent frameworks arriving as community-built alternatives.

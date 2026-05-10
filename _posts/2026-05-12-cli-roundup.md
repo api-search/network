@@ -11,10 +11,6 @@ tags:
 - Roundup
 title: 'The CLI Just Got Interesting Again: 16 Stories From One Week'
 ---
-
-
-# The CLI Just Got Interesting Again: 16 Stories From One Week
-
 For most of the last decade the command line was a stable, slightly boring corner of the developer toolchain. Then Claude Code, Cursor, and OpenAI Codex showed up, and the CLI is suddenly the most contested surface in software development. The week of May 4-8, 2026 produced 16 distinct stories across the API Evangelist network about the agent-CLI shift — capacity expansion at the platforms, vendor integrations into specific CLIs, generators that ship CLIs as a first-class output, and meta-pieces about whether the terminal still matters.
 
 The short answer is that the terminal matters more, not less, because it has become the dominant surface for human-agent collaboration. This roundup organizes the week's CLI coverage into five themes.

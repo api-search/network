@@ -11,10 +11,6 @@ tags:
 - Roundup
 title: 'Observability for the Agent Era: 14 Stories From One Week'
 ---
-
-
-# Observability for the Agent Era: 14 Stories From One Week
-
 Observability is one of the busiest categories in the API Evangelist network, and the week of May 4-8, 2026 was no exception — 14 stories worth tracking, ranging from agent-runtime monitoring to cloud-cost analytics, FedRAMP certifications, and the long-running grievance that most cloud-native teams still run three observability stacks. The shape of the conversation has shifted: vendors are explicitly framing their products around "observability for AI" rather than just observability, and the OpenTelemetry standard is winning enough that it shows up across nearly every vendor.
 
 This roundup organizes the week into four themes — agent-and-AI-specific observability, the OpenTelemetry standardization wave, the major-vendor moves, and the database-and-data-store observability subspace.

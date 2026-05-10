@@ -10,10 +10,6 @@ tags:
 - Roundup
 title: 'Agent Identity Is the Next Layer: 11 Stories From One Week'
 ---
-
-
-# Agent Identity Is the Next Layer: 11 Stories From One Week
-
 While the discourse has been eating MCP and skills, a quieter story has been forming underneath them: which agent is acting as whom, with what credentials, and on whose behalf. The week of May 4-8, 2026 produced 11 stories across the API Evangelist network about agent identity, scoped credentials, and the auth machinery that determines whether an agent population is safe to run in production.
 
 Identity for agents is not the same problem as API keys for humans. An agent inherits some authority from a user, exercises it autonomously across many tools, and leaves an audit trail that needs to be attestable. Vendors are beginning to publish on this in earnest, and the pattern across this week's coverage is consistent — credentials are getting scoped tighter, identity is getting separated from the human user, and the auth layer for agent runtimes is becoming a first-class infrastructure concern.

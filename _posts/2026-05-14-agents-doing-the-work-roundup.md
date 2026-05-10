@@ -10,10 +10,6 @@ tags:
 - Roundup
 title: 'Agents Are Doing the Work: 11 Stories From One Week of the New Workforce'
 ---
-
-
-# Agents Are Doing the Work: 11 Stories From One Week of the New Workforce
-
 The week of May 4-8, 2026 produced 11 stories across the API Evangelist network where the framing was not "agents are coming" but "agents are doing the work, and the org chart is reflecting it." Cloudflare cut 1,100 jobs while citing agent productivity, PostHog reported 4,063 errors closed without a human, Microsoft moved Agent 365 out of preview as enterprise customers asked for it, and Cast.ai started writing about agentic operations in Kubernetes as a real practice rather than a thought experiment.
 
 This is the cultural and operational counterweight to the technical roundups about MCP, skills, and frameworks. The technical work is necessary but not sufficient. What is happening above it — the labor shift, the shadow-AI crisis, the productivity gains, the workforce restructuring — is what determines whether the technical work matters.

@@ -12,10 +12,6 @@ tags:
 - Roundup
 title: 'Just APIs: 30 Stories From One Week That Are Not About MCP, Skills, or CLIs'
 ---
-
-
-# Just APIs: 30 Stories From One Week That Are Not About MCP, Skills, or CLIs
-
 It is easy this year to read every API story through the lens of MCP, skills, and the agent surface. Useful as that lens is, it can hide what is happening at the foundational layer — the actual REST endpoints, OpenAPI specs, SDKs, gateways, credentials, and documentation that make up the API economy. The week of May 4-8, 2026 produced 30 stories worth tracking that have nothing directly to do with MCP, agent skills, or AI-coding CLIs. Those 30 stories tell a different and equally important story about where the foundation is moving.
 
 This roundup organizes them into six themes — API keys and credentials, API specs and documentation, GraphQL and federation, API management and gateways, API quality and testing, and the SDK launches that landed this week.

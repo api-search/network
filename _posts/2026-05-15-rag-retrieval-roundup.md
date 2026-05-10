@@ -11,10 +11,6 @@ tags:
 - Roundup
 title: 'RAG Grows Up: 11 Stories From One Week on Retrieval, Vectors, and Knowledge'
 ---
-
-
-# RAG Grows Up: 11 Stories From One Week on Retrieval, Vectors, and Knowledge
-
 The retrieval layer is doing the heavy lifting in agent systems, and the publication cadence is starting to reflect that. The week of May 4-8, 2026 produced 11 stories across the API Evangelist network about RAG, vector search, semantic retrieval, and the data quality work that determines whether an agent's answers are grounded or hallucinated. The pattern is consistent — vendors are past the "what is RAG" stage and into the "how do you operate RAG safely at scale" stage.
 
 This roundup organizes the week into four themes — the operations and governance of RAG pipelines, the technical questions of how to combine retrieval modes, the quality work that determines whether retrieval actually helps, and the conceptual primers still being written for newer audiences.

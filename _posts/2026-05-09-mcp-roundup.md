@@ -10,10 +10,6 @@ tags:
 - Roundup
 title: 'The MCP Surface, Mapped: 31 Stories From One Week'
 ---
-
-
-# The MCP Surface, Mapped: 31 Stories From One Week
-
 The week of May 4-8, 2026 produced 31 distinct stories across the API Evangelist network about Model Context Protocol — vendors shipping servers, building gateways, writing how-to guides, hardening the auth and testing layers, and curating "best of" lists. That is a third of the API-keyword-relevant volume for the week in one topic. A year ago MCP was an emerging idea. Today it is the surface that vendors with serious developer ambitions are actively shipping into.
 
 We use apis.io to keep track of where the API economy is moving. This week the answer is loud: it is moving toward MCP, and the shape of that movement matters more than the volume.

@@ -10,10 +10,6 @@ tags:
 - Roundup
 title: 'Agent Skills, This Week: 8 Stories From the Layer Above MCP'
 ---
-
-
-# Agent Skills, This Week: 8 Stories From the Layer Above MCP
-
 If MCP is the surface that defines what tools exist, **skills** are the layer that defines how to use those tools well. The week of May 4-8, 2026 produced fewer skill-related stories than MCP-related ones (8 vs 31), but the skills coverage carries more weight per post — security incidents, conceptual primers, vendor-bundle launches, and some of the first credible "skills in production" content. The volume gap is itself a signal. The MCP layer is loud because vendors are racing to ship surfaces. The skill layer is quieter because there is real work involved in producing one that does what an agent actually needs.
 
 This roundup organizes the week's skill coverage into four themes — vendor bundles pairing skills with MCP, end-user skill playbooks, the security and supply-chain concerns that are starting to surface, and the conceptual work clarifying what skills even are.
