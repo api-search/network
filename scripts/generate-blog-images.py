@@ -93,22 +93,33 @@ def generate_image(title, tags, image_slug, api_key):
 
 
 def update_post_image(filepath, new_image_path):
-    """Update the image field in a blog post's front matter."""
+    """Update the image field in a blog post's front matter.
+
+    Splits on the front-matter delimiters only (start and the matching
+    closing `\\n---\\n`). A naive content.split('---') would also split
+    on markdown table row separators in the body (e.g. `|---|---|`),
+    truncating the post.
+    """
     with open(filepath) as f:
         content = f.read()
 
-    parts = content.split('---')
-    if len(parts) < 3:
+    if not content.startswith('---\n'):
+        return
+    end = content.find('\n---\n', 4)
+    if end == -1:
         return
 
-    data = yaml.safe_load(parts[1])
+    fm_text = content[4:end]
+    body = content[end + 5:]
+
+    data = yaml.safe_load(fm_text)
     data['image'] = new_image_path
 
     with open(filepath, 'w') as f:
         f.write('---\n')
         yaml.dump(data, f, default_flow_style=False, allow_unicode=True, width=1000)
         f.write('---\n')
-        f.write(parts[2])
+        f.write(body)
 
 
 def main():
