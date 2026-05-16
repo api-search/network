@@ -551,6 +551,33 @@ def process_provider(provider_dir, icon_manifest=None, category_suggestions=None
             if spec_text or spec_url:
                 break
 
+        # Auto-discover: if apis.yml didn't list a spec property but the provider
+        # ships an exactly-named OpenAPI in openapi/<slug>{.yml,.yaml,.json} or
+        # openapi/<slug>-openapi.{yml,yaml,json}, link it. Exact-match only —
+        # fuzzy matching risks attaching the wrong spec to the wrong API.
+        if not (spec_text or spec_url):
+            for rel in (
+                f"openapi/{api_slug}.yml",
+                f"openapi/{api_slug}.yaml",
+                f"openapi/{api_slug}.json",
+                f"openapi/{api_slug}-openapi.yml",
+                f"openapi/{api_slug}-openapi.yaml",
+                f"openapi/{api_slug}-openapi.json",
+            ):
+                local_path = os.path.join(provider_dir, rel)
+                if not os.path.exists(local_path):
+                    continue
+                try:
+                    with open(local_path, encoding='utf-8', errors='replace') as fh:
+                        spec_text = fh.read()
+                except Exception:
+                    continue
+                spec_format = 'json' if rel.endswith('.json') else 'yaml'
+                spec_url = f"{github_raw_base}/{rel}"
+                spec_heading = 'OpenAPI Specification'
+                spec_filename = os.path.basename(rel)
+                break
+
         api_data = {
             'layout': 'api',
             'aid': api_aid,
