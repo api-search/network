@@ -1504,6 +1504,27 @@ def build_vocabulary_index(provider_dirs):
     }
 
 
+def pull_all_provider_repos():
+    """Refresh the provider mirror with git pull --ff-only before building.
+
+    Skipped if SKIP_PULL=1 is set in the environment. The mirror is the source
+    of truth for the build; if it's stale, the network publishes stale content
+    even when GitHub Pages successfully rebuilds.
+    """
+    if os.environ.get('SKIP_PULL') == '1':
+        print("Skipping provider-repo pull (SKIP_PULL=1)")
+        return
+    import subprocess
+    pull_script = os.path.join(SCRIPT_DIR, 'pull-all.sh')
+    if not os.path.exists(pull_script):
+        print(f"WARNING: pull-all.sh not found at {pull_script}; skipping pull")
+        return
+    print(f"\nRefreshing provider mirror at {EVANGELIST_DIR}...")
+    env = os.environ.copy()
+    env['EVANGELIST_DIR'] = EVANGELIST_DIR
+    subprocess.run(['bash', pull_script], env=env, check=False)
+
+
 def main():
     print("=== APIs.io Build Script (Subdomain Architecture) ===")
     print(f"Source: {EVANGELIST_DIR}")
@@ -1512,6 +1533,8 @@ def main():
     if not os.path.isdir(EVANGELIST_DIR):
         print(f"ERROR: api-evangelist directory not found at {EVANGELIST_DIR}")
         sys.exit(1)
+
+    pull_all_provider_repos()
 
     # Discover provider repos
     provider_dirs = sorted([
