@@ -323,7 +323,7 @@ def extract_capability_search_terms(cap_data, vocab_data, provider_tags):
         term = term.strip()
         if term and len(term) > 1:
             cleaned.append(term)
-    return cleaned
+    return sorted(cleaned)
 
 
 def extract_operations_from_capability(cap_data):
@@ -449,8 +449,10 @@ def process_provider(provider_dir, icon_manifest=None, category_suggestions=None
     api_entries = []
     for api in apis_list:
         api_aid = api.get('aid', '')
-        api_slug = extract_api_slug(api_aid)
+        api_slug = extract_api_slug(api_aid) if api_aid else ''
         api_name = api.get('name', '')
+        if not api_slug:
+            api_slug = slugify(api_name) or f"{provider_slug}-api"
         api_desc = clean_description(api.get('description', ''))
 
         provider_data['apis'].append({
