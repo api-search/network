@@ -146,12 +146,21 @@ def copy_shared(site_dir):
             shutil.rmtree(site_includes)
         shutil.copytree(network_includes, site_includes)
 
-    # Assets
+    # Assets — sync only the entries that live in _shared/assets so we don't
+    # clobber site-specific subdirs (e.g. providers/assets/icons/, which
+    # build.py copies in after this step from network/assets/icons/).
     shared_assets = os.path.join(SHARED_DIR, 'assets')
     site_assets = os.path.join(site_dir, 'assets')
-    if os.path.exists(site_assets):
-        shutil.rmtree(site_assets)
-    shutil.copytree(shared_assets, site_assets)
+    os.makedirs(site_assets, exist_ok=True)
+    for entry in os.listdir(shared_assets):
+        src = os.path.join(shared_assets, entry)
+        dst = os.path.join(site_assets, entry)
+        if os.path.isdir(src):
+            if os.path.exists(dst):
+                shutil.rmtree(dst)
+            shutil.copytree(src, dst)
+        else:
+            shutil.copy2(src, dst)
 
 
 def write_config(site_dir, site):
